@@ -1,0 +1,104 @@
+site_name: Incidents
+site_url: https://eg-etcs.github.io/incident/
+theme:
+  favicon: alarm.png
+  logo: alarm.png
+  name: material
+  icon:
+    annotation: material/arrow-right-circle
+  features:
+    # - toc.integrate
+    - content.code.copy
+    - content.code.annotate
+    - navigation.tabs
+    - navigation.tracking
+    - content.math
+    - navigation.tabs.sticky
+    
+  palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+extra_css:
+  - stylesheets/extra.css
+    
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+plugins:
+  - search
+  - mkdocs-pdf
+  - mkdocs-video:
+      is_video: True
+      video_muted: False
+      is_video: True
+      video_controls: True
+      css_style:
+        width: "100%"
+
+
+nav:
+  - Today's Incidents:
+    - index.md
+  - This Week:
+    - This-Week.md
+  - Last Week:
+    - Last-Week.md
+  - Incidents:
+    - "2025" : 
+      - "October": 
+        - "week44": 
+          - "Nihon Kohden CNS-6201": Week44/nihon-kohden-cns-6201.md
+          - "ASKI Energy ALS-Mini": Week44/aski-energy-als-mini.md
+          - "Delta Electronics ASDA-Soft": Week44/delta-electronics-asda-soft.md
+          - "Windows Server WSUS": Week44/windows-server-wsus.md
+          - "BlueNoroff Campaigns": Week44/bluenoroff-ghostcall-ghosthire.md
+          - "Everest AT&T Aviation Leaks": Week44/everest-att-aviation-leaks.md
+          - "HSBC USA Data Breach": Week44/hsbc-usa-data-breach.md
+          - "Vertikal Hospital Manager": Week44/vertikal-hospital-manager.md
+      - "Nov": 
+         - "week45": 
+            - "Cisco IOS XE": Week45/Cisco-IOS-XE.md
+            - "VMware Aria Operations and VMware Tools": Week45/VMware-tools.md
+            - "Android/BankBot-YNRK malware": Week45/Android-BankBot.md
+            - "Cisco ASA Secure Firewall":  Week45/Cisco-ASA.md
+  
+  
