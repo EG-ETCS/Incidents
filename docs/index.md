@@ -8,23 +8,22 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Android BankBot](Week45/images/android-bankbot.png)
-    :material-cellphone:{ .lg .middle } __Android/BankBot-YNRK Malware__
+-   ![Moxa Multiple Critical](Week45/images/Moxa.png)
+    :material-shield:{ .lg .middle } __Multiple Critical Vulnerabilities in Moxa ICS Network Appliances and Routers__
 
-    **Advanced Android banking trojan**{.cve-chip}
-    **Credential and fund theft**{.cve-chip}
-    **Accessibility abuse**{.cve-chip}
+    **Administrative takeover**{.cve-chip}
+    **High severity CVEs**{.cve-chip}
     ---
-    Sophisticated Android banking trojan disguised as the Indonesian government's "Identitas Kependudukan Digital" (Digital ID) app; automates theft of credentials and funds from banking and crypto apps using accessibility abuse, environment detection, persistent C2, and advanced social engineering.
-    [:octicons-arrow-right-24: View Full Details](Week45/Android-BankBot.md)
+    Five high-severity vulnerabilities affecting Moxa industrial routers and gateways that allow authentication bypass, privilege escalation, and admin account creation. Patch to v3.21 or later.
+    [:octicons-arrow-right-24: View Full Details](Week45/Moxa.md)
 
--   ![Cisco ASA](Week45/images/cisco-asa.png)
-    :material-fire:{ .lg .middle } __Storm-1849/UAT4356 Exploiting Cisco ASA Secure Firewall__
+-   ![Super Value Co.](Week45/images/SuperValue.png)
+    :material-lock:{ .lg .middle } __Super Value Co. Ransomware Breach__
 
-    **Critical RCE and persistent access**{.cve-chip}
-    **ArcaneDoor campaign**{.cve-chip}
+    **Qilin ransomware**{.cve-chip}
+    **Data leak & extortion**{.cve-chip}
     ---
-    Chinese threat actor Storm-1849 (UAT4356) exploits Cisco ASA Secure Firewalls worldwide, chaining VPN Web Server vulnerabilities for persistent access and remote code execution, even after device reboots/upgrades.
-    [:octicons-arrow-right-24: View Full Details](Week45/Cisco-ASA.md)
+    Qilin actors published internal documents from Super Value Co.; double-extortion data theft and leak site publication. Investigate exfiltration and restore from immutable backups.
+    [:octicons-arrow-right-24: View Full Details](Week45/Super-Value.md)
 
 </div>
