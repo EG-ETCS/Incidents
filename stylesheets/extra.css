@@ -377,3 +377,197 @@
 [data-md-color-scheme="slate"] .md-header {
     background: linear-gradient(135deg, #8b0000 0%, #a00000 25%, #b71c1c 75%, #c62828 100%) !important;
 }
+
+/* ---------------------------
+   Default incident/card layout
+   (applies to single or multiple cards)
+   --------------------------- */
+
+:where(.md-typeset .grid.cards > ul > li,
+       .md-typeset .grid.cards > ol > li,
+       .incident-card,
+       .card) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 520px;            /* reasonable max width for single card */
+    margin: 0 auto;              /* center single cards */
+    padding: 1rem;
+    border-radius: 12px;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    box-shadow: var(--cover-shadow);
+    backdrop-filter: blur(6px);
+    overflow: hidden;
+    transition: transform .25s ease, box-shadow .25s ease;
+    box-sizing: border-box;
+}
+
+/* card hover lift (keeps consistent whether single or in grid) */
+:where(.md-typeset .grid.cards > ul > li:hover,
+       .md-typeset .grid.cards > ol > li:hover,
+       .incident-card:hover,
+       .card:hover) {
+    transform: translateY(-6px) scale(1.01);
+    box-shadow: 0 18px 50px rgba(0,0,0,0.45);
+}
+
+/* Top cover image with rounded top corners */
+:where(.md-typeset .grid.cards img,
+       .incident-card .card-image img,
+       .card .card-image img) {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 0.4rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
+/* If image is used inside the card and you want full rounded top corners */
+:where(.md-typeset .grid.cards > ul > li img,
+       .md-typeset .grid.cards > ol > li img,
+       .incident-card .card-image img,
+       .card .card-image img) {
+    border-radius: 12px 12px 8px 8px;
+}
+
+/* Header row: icon + title */
+:where(.md-typeset .grid.cards .card-header,
+       .incident-card .card-header,
+       .card .card-header) {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0 0.2rem;
+}
+
+:where(.md-typeset .grid.cards .card-header .material-icons,
+       .incident-card .card-header .material-icons,
+       .card .card-header .material-icons) {
+    font-size: 1.05rem;
+    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.45));
+    opacity: 0.95;
+}
+
+/* Title styling */
+:where(.md-typeset .grid.cards .card-header h3,
+       .incident-card .card-header h3,
+       .card .card-header h3) {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--cover-subtitle-color);
+    line-height: 1.1;
+}
+
+/* Tag row (chips/buttons) */
+:where(.md-typeset .grid.cards .card-tags,
+       .incident-card .card-tags,
+       .card .card-tags) {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0 0.2rem;
+}
+
+:where(.md-typeset .grid.cards .card-tags .chip,
+       .incident-card .card-tags .chip,
+       .card .card-tags .chip,
+       .cve-chip) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.28rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.64rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+    border: 1px solid rgba(255,255,255,0.06);
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    backdrop-filter: blur(4px);
+}
+
+/* thin separator line */
+:where(.md-typeset .grid.cards .card-divider,
+       .incident-card .card-divider,
+       .card .card-divider) {
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+    margin: 0.6rem 0;
+    border-radius: 1px;
+    width: 100%;
+}
+
+/* description block */
+:where(.md-typeset .grid.cards .card-body,
+       .incident-card .card-body,
+       .card .card-body) {
+    padding: 0 0.2rem;
+    color: var(--cover-description-color);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-height: 6.6rem; /* clamp length for neat cards */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* footer / link row */
+:where(.md-typeset .grid.cards .card-footer,
+       .incident-card .card-footer,
+       .card .card-footer) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.2rem;
+    gap: 0.5rem;
+}
+
+/* CTA link */
+:where(.md-typeset .grid.cards .card-footer a,
+       .incident-card .card-footer a,
+       .card .card-footer a) {
+    color: var(--cover-accent-cool);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+/* Make sure single-card containers don't expand or override */
+.md-content,
+.md-main,
+.md-typeset {
+    /* keep content predictable when a single card is present */
+    min-width: 0;
+}
+
+/* Accessibility: focus outline for keyboard nav */
+:where(.md-typeset .grid.cards > ul > li:focus,
+       .md-typeset .grid.cards > ol > li:focus,
+       .incident-card:focus,
+       .card:focus) {
+    outline: 3px solid rgba(66,153,225,0.18);
+    outline-offset: 2px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    :where(.md-typeset .grid.cards > ul > li,
+           .md-typeset .grid.cards > ol > li,
+           .incident-card,
+           .card) {
+        padding: 0.8rem;
+        max-width: 100%;
+    }
+
+    :where(.md-typeset .grid.cards img,
+           .incident-card .card-image img,
+           .card .card-image img) {
+        height: 160px;
+    }
+}
