@@ -16,11 +16,6 @@ python -m pip install pymdown-extensions
 python -m pip install mkdocs-material
 pip install mkdocs-video mkdocs-pdf-export-plugin mkdocs-pdf
 python -m mkdocs --version
-
-
-pip install notebook jupyterhub
-pip install bash_kernel
-
 ```
 
 ### run and serve the book locally
@@ -35,6 +30,4 @@ python -m mkdocs serve
 [check this link](https://pypi.org/project/mkdocs-video/)
 
 
-mkdocs gh-deploy  
-
-
+mkdocs gh-deploy --clean 

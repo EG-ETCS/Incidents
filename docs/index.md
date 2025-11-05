@@ -8,22 +8,13 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Moxa Multiple Critical](Week45/images/Moxa.png)
-    :material-shield:{ .lg .middle } __Multiple Critical Vulnerabilities in Moxa ICS Network Appliances and Routers__
+-   ![Android Security Bulletin](Week45/images/Android.png)
+    :material-android:{ .lg .middle } __Android Security Bulletin - November 2025__
 
-    **Administrative takeover**{.cve-chip}
-    **High severity CVEs**{.cve-chip}
+    **Zero-Click RCE**{.cve-chip}
+    **Critical Severity**{.cve-chip}
     ---
-    Five high-severity vulnerabilities affecting Moxa industrial routers and gateways that allow authentication bypass, privilege escalation, and admin account creation. Patch to v3.21 or later.
-    [:octicons-arrow-right-24: View Full Details](Week45/Moxa.md)
-
--   ![Super Value Co.](Week45/images/SuperValue.png)
-    :material-lock:{ .lg .middle } __Super Value Co. Ransomware Breach__
-
-    **Qilin ransomware**{.cve-chip}
-    **Data leak & extortion**{.cve-chip}
-    ---
-    Qilin actors published internal documents from Super Value Co.; double-extortion data theft and leak site publication. Investigate exfiltration and restore from immutable backups.
-    [:octicons-arrow-right-24: View Full Details](Week45/Super-Value.md)
+    Critical remote code execution vulnerability in Android System component affects versions 13-16, allowing zero-click exploitation without user interaction. Patch to 2025-11-01 level required.
+    [:octicons-arrow-right-24: View Full Details](Week45/Android-Security-Bulletin.md)
 
 </div>
