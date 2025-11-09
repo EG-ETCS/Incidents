@@ -105,5 +105,9 @@ nav:
             - "Super Value Co. Ransomware Breach" : Week45/Super-Value.md
             - "Android Security Bulletin": Week45/Android-Security-Bulletin.md
             - "Cyber Toufan – Maya Engineering Surveillance Breach" : Week45/maya-engineering-breach.md
+         - "week46":
+            - "Samsung Mobile Zero-Day Exploited to Deploy LANDFALL Spyware": Week46/samsung-spyware.md
+            - "Cisco Unified Contact Center Express (Unified CCX) Vulnerabilities": Week46/cisco-ccx.md
+
   
   

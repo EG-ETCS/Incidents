@@ -44,6 +44,6 @@ Five high-severity vulnerabilities (CVE-2025-6892 → CVE-2025-6950) were found 
 
 ## Resources
 
-1. CVE-2025-6892, CVE-2025-6893, CVE-2025-6894, CVE-2025-6949, CVE-2025-6950: Multiple Vulnerabilities in Network Security Appliances and Routers
-2. Warning: Multiple Critical Vulnerabilities in Moxa Inc. ICS Network Appliances and Routers, Patch Immediately! | CCB Safeonweb
-3. NVD - CVE-2025-6893
+1. [Multiple Vulnerabilities in Network Security Appliances and Routers](https://www.moxa.com/en/support/product-support/security-advisory/mpsa-258121-cve-2025-6892,-cve-2025-6893,-cve-2025-6894,-cve-2025-6949,-cve-2025-6950-multiple-vulnerabilities-in-netwo)
+2. [Multiple Critical Vulnerabilities in Moxa Inc. ICS Network Appliances and Routers - CCB Safeonweb](https://ccb.belgium.be/advisories/warning-multiple-critical-vulnerabilities-moxa-inc-ics-network-appliances-and-routers)
+3. [NVD - CVE-2025-6893](https://nvd.nist.gov/vuln/detail/CVE-2025-6893)

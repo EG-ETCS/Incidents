@@ -84,10 +84,10 @@ While the authenticity of the leaked data remains **unverified**, the operation 
 ## Resources and References
 
 !!! info "Related Coverage"
-    1. [Threat Group Claims Breach Of Israeli Defense Contractor](#)
-    2. [Iran-linked Hackers Leak Data from Israeli Defense Contractor](#)
-    3. [Pro-Gaza Hackers “Cyber Toufan” Claim Breach of Israeli Defense Firm Maya – TheHackerWire](#)
-    4. [Israeli Defense Contractor Maya Suffers Devastating Breach: 18 Months of Surveillance Exposed](#)
+    1. [Threat Group Claims Breach Of Israeli Defense Contractor](https://thecyberexpress.com/israeli-defense-contractors-breach/)
+    2. [Iran-linked Hackers Leak Data from Israeli Defense Contractor](https://san.com/cc/iran-linked-hackers-leak-cctv-footage-from-inside-israeli-defense-contractor/)
+    3. [Pro-Gaza Hackers “Cyber Toufan” Claim Breach of Israeli Defense Firm Maya – TheHackerWire](https://www.thehackerwire.com/pro-gaza-hackers-cyber-toufan-claim-breach-of-israeli-defense-firm-maya/)
+    4. [Israeli Defense Contractor Maya Suffers Devastating Breach: 18 Months of Surveillance Exposed](https://breached.company/israeli-defense-contractor-maya-suffers-devastating-breach-18-months-of-surveillance-exposed/)
 
 !!! danger "Critical Note"
     The claims of breach remain **unverified**. However, the operation aligns with **broader Iranian cyber espionage trends** targeting **Israeli defense industries** and **dual-use technology firms**.

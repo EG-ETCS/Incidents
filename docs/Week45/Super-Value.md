@@ -43,6 +43,6 @@ The exposed samples include financial, operational, and employee-related documen
 
 ## Resources
 
-1. Qilin Ransomware Claims Hack on Japan’s Super Value Supermarket, Leaks Payroll & P&L Data
-2. Japan’s supermarkets got hacked, say Russian hackers | Cybernews
-3. Qilin Ransomware: Tactics, Attack Methods & Mitigation Strategies
+1. [Qilin Ransomware Claims Hack on Japan’s Super Value Supermarket, Leaks Payroll & P&L Data](https://meterpreter.org/qilin-ransomware-claims-hack-on-japans-super-value-supermarket-leaks-payroll-pl-data/)
+2. [Japan’s supermarkets got hacked, say Russian hackers | Cybernews](https://cybernews.com/security/qilin-super-value-japan-breach/)
+3. [Qilin Ransomware: Tactics, Attack Methods & Mitigation Strategies](https://www.group-ib.com/blog/qilin-ransomware/)
