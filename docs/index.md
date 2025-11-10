@@ -8,6 +8,15 @@ hide:
 
 <div class="grid cards" markdown>
 
+-   ![Delhi Airport GPS Spoofing Crisis](Week46/images/delhi.png)
+    :material-airplane-alert:{ .lg .middle } __Delhi Airport GPS Spoofing Crisis__
+
+    **GPS Spoofing**{.cve-chip}
+    **Critical Aviation Disruption**{.cve-chip}
+    ---
+    Severe GPS spoofing at Delhi airport caused fake signals, misleading aircraft navigation and leading to positional confusion, diverted flights, delays, and manual air traffic control. Safety risk extended to over 400 flights in one week. Urgent mitigation included ILS upgrades, regulatory action, and GNSS redundancy.
+    [:octicons-arrow-right-24: View Full Details](Week46/delhi.md)
+
 -   ![Multiple Vulnerabilities in Apple Products](Week46/images/apple.png)
     :material-apple:{ .lg .middle } __Multiple Vulnerabilities in Apple Products__
 
