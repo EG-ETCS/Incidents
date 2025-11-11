@@ -8,8 +8,8 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![ClickFix Hospitality Phishing](Week46/images/clickfix.png)
-    :material-hotel:{ .lg .middle } __ClickFix Hospitality Phishing Campaign (a.k.a. “I Paid Twice” campaign)__
+-   ![ClickFix Hospitality Phishing](Week46/images/hotel.png)
+    __ClickFix Hospitality Phishing Campaign (a.k.a. “I Paid Twice” campaign)__
 
     **Hospitality Phishing / Booking Impersonation**{.cve-chip}
     **Infostealer / RAT Delivery**{.cve-chip}

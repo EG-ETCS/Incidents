@@ -46,6 +46,8 @@ The ClickFix campaign targets hotels and accommodation providers via phishing em
 5. Compromised hotel accounts are used to alter bookings, send fraudulent emails to guests, or harvest payment data.
 6. Stolen guest data fuels secondary phishing or payment fraud campaigns against customers.
 
+![](images/clickfix.png)
+
 ## Impact
 
 - Hotels / Lodging Providers:
