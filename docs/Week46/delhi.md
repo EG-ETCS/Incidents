@@ -2,13 +2,13 @@
 
 ## Overview
 
-A significant incident at Delhi airport involved "severe" GPS spoofing attacks in December 2024, resulting in major navigation disruptions for commercial aircraft. Fake satellite signals broadcast in the airport's airspace caused navigation systems to report inaccurate positions, undermining pilot trust and forcing widespread flight diversions, delays, and manual traffic handling.
+A significant incident at Delhi airport involved "severe" GPS spoofing attacks in November 2025, resulting in major navigation disruptions for commercial aircraft. Fake satellite signals broadcast in the airport's airspace caused navigation systems to report inaccurate positions, undermining pilot trust and forcing widespread flight diversions, delays, and manual traffic handling.
 
 ## Technical Details
 
 | **Attribute** | **Details** |
 |---------------|-------------|
-| **Incident** | Delhi Airport GPS Spoofing Crisis, December 2024 |
+| **Incident** | Delhi Airport GPS Spoofing Crisis|
 | **Vulnerability Type** | GPS Spoofing (Counterfeit Satellite Signals) |
 | **Attack Vector** | Radio frequency broadcast within airport airspace |
 | **Navigation Systems Impacted** | GPS, RNP-based navigation |

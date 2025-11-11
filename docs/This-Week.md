@@ -8,6 +8,15 @@ hide:
  
 <div class="grid cards" markdown>
 
+-   ![ClickFix Hospitality Phishing](Week46/images/clickfix.png)
+    :material-hotel:{ .lg .middle } __ClickFix Hospitality Phishing Campaign (a.k.a. “I Paid Twice” campaign)__
+
+    **Hospitality Phishing / Booking Impersonation**{.cve-chip}
+    **Infostealer / RAT Delivery**{.cve-chip}
+    ---
+    The ClickFix campaign targets hotels with spear‑phishing emails impersonating Booking.com. Staff who follow the lure run a clipboard/PowerShell payload that installs infostealers and RATs, leading to credential theft, booking compromise, and secondary phishing against guests.
+    [:octicons-arrow-right-24: View Full Details](Week46/clickfix.md)
+
 -   ![Delhi Airport GPS Spoofing Crisis](Week46/images/delhi.png)
     :material-airplane-alert:{ .lg .middle } __Delhi Airport GPS Spoofing Crisis__
 
