@@ -8,22 +8,28 @@
       
       
       
+        <link rel="canonical" href="https://eg-etcs.github.io/incident/Week46/kernel/">
       
       
+        <link rel="prev" href="../clickfix/">
       
-      <link rel="icon" href="/incident/alarm.png">
+      
+        <link rel="next" href="../whisper/">
+      
+      
+      <link rel="icon" href="../../alarm.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
-        <title>Incidents</title>
+        <title>Actively Exploited Windows Kernel Zero‑Day - Incidents</title>
       
     
     
-      <link rel="stylesheet" href="/incident/assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="/incident/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,9 +54,9 @@
       
     
     
-      <link rel="stylesheet" href="/incident/stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("/incident/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -75,6 +81,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#actively-exploited-windows-kernel-zeroday-cve-2025-62215-and-critical-zeroclick-bugs" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -87,9 +98,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/incident/." title="Incidents" class="md-header__button md-logo" aria-label="Incidents" data-md-component="logo">
+    <a href="../.." title="Incidents" class="md-header__button md-logo" aria-label="Incidents" data-md-component="logo">
       
-  <img src="/incident/alarm.png" alt="logo">
+  <img src="../../alarm.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -106,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Actively Exploited Windows Kernel Zero‑Day
             
           </span>
         </div>
@@ -201,7 +212,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/incident/." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
   
@@ -221,7 +232,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/incident/This-Week/" class="md-tabs__link">
+        <a href="../../This-Week/" class="md-tabs__link">
           
   
   
@@ -241,7 +252,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/incident/Last-Week/" class="md-tabs__link">
+        <a href="../../Last-Week/" class="md-tabs__link">
           
   
   
@@ -257,11 +268,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/incident/default/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../default/" class="md-tabs__link">
           
   
   
@@ -301,9 +314,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/incident/." title="Incidents" class="md-nav__button md-logo" aria-label="Incidents" data-md-component="logo">
+    <a href="../.." title="Incidents" class="md-nav__button md-logo" aria-label="Incidents" data-md-component="logo">
       
-  <img src="/incident/alarm.png" alt="logo">
+  <img src="../../alarm.png" alt="logo">
 
     </a>
     Incidents
@@ -359,7 +372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   
@@ -430,7 +443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/This-Week/" class="md-nav__link">
+      <a href="../../This-Week/" class="md-nav__link">
         
   
   
@@ -501,7 +514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Last-Week/" class="md-nav__link">
+      <a href="../../Last-Week/" class="md-nav__link">
         
   
   
@@ -528,24 +541,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   
@@ -558,7 +576,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Incidents
@@ -572,7 +590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/default/" class="md-nav__link">
+      <a href="../../default/" class="md-nav__link">
         
   
   
@@ -592,6 +610,8 @@
                 
   
   
+    
+  
   
   
     
@@ -602,11 +622,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
         
           
           <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
@@ -622,7 +642,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_2">
             <span class="md-nav__icon md-icon"></span>
             2025
@@ -718,7 +738,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week44/nihon-kohden-cns-6201/" class="md-nav__link">
+      <a href="../../Week44/nihon-kohden-cns-6201/" class="md-nav__link">
         
   
   
@@ -741,7 +761,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week44/aski-energy-als-mini/" class="md-nav__link">
+      <a href="../../Week44/aski-energy-als-mini/" class="md-nav__link">
         
   
   
@@ -764,7 +784,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week44/delta-electronics-asda-soft/" class="md-nav__link">
+      <a href="../../Week44/delta-electronics-asda-soft/" class="md-nav__link">
         
   
   
@@ -787,7 +807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week44/windows-server-wsus/" class="md-nav__link">
+      <a href="../../Week44/windows-server-wsus/" class="md-nav__link">
         
   
   
@@ -810,7 +830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week44/bluenoroff-ghostcall-ghosthire/" class="md-nav__link">
+      <a href="../../Week44/bluenoroff-ghostcall-ghosthire/" class="md-nav__link">
         
   
   
@@ -833,7 +853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week44/everest-att-aviation-leaks/" class="md-nav__link">
+      <a href="../../Week44/everest-att-aviation-leaks/" class="md-nav__link">
         
   
   
@@ -856,7 +876,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week44/hsbc-usa-data-breach/" class="md-nav__link">
+      <a href="../../Week44/hsbc-usa-data-breach/" class="md-nav__link">
         
   
   
@@ -879,7 +899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week44/vertikal-hospital-manager/" class="md-nav__link">
+      <a href="../../Week44/vertikal-hospital-manager/" class="md-nav__link">
         
   
   
@@ -915,6 +935,8 @@
                 
   
   
+    
+  
   
   
     
@@ -925,11 +947,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_4_2_2" id="__nav_4_2_2_label" tabindex="0">
@@ -945,7 +967,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_2_2">
             <span class="md-nav__icon md-icon"></span>
             Nov
@@ -1000,7 +1022,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week45/Cisco-IOS-XE/" class="md-nav__link">
+      <a href="../../Week45/Cisco-IOS-XE/" class="md-nav__link">
         
   
   
@@ -1023,7 +1045,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week45/VMware-tools/" class="md-nav__link">
+      <a href="../../Week45/VMware-tools/" class="md-nav__link">
         
   
   
@@ -1046,7 +1068,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week45/Android-BankBot/" class="md-nav__link">
+      <a href="../../Week45/Android-BankBot/" class="md-nav__link">
         
   
   
@@ -1069,7 +1091,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week45/Cisco-ASA/" class="md-nav__link">
+      <a href="../../Week45/Cisco-ASA/" class="md-nav__link">
         
   
   
@@ -1092,7 +1114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week45/Moxa/" class="md-nav__link">
+      <a href="../../Week45/Moxa/" class="md-nav__link">
         
   
   
@@ -1115,7 +1137,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week45/Super-Value/" class="md-nav__link">
+      <a href="../../Week45/Super-Value/" class="md-nav__link">
         
   
   
@@ -1138,7 +1160,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week45/Android-Security-Bulletin/" class="md-nav__link">
+      <a href="../../Week45/Android-Security-Bulletin/" class="md-nav__link">
         
   
   
@@ -1161,7 +1183,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week45/maya-engineering-breach/" class="md-nav__link">
+      <a href="../../Week45/maya-engineering-breach/" class="md-nav__link">
         
   
   
@@ -1189,6 +1211,8 @@
                 
   
   
+    
+  
   
   
     
@@ -1199,11 +1223,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_4_2_2_2" id="__nav_4_2_2_2_label" tabindex="0">
@@ -1219,7 +1243,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_2_2_2">
             <span class="md-nav__icon md-icon"></span>
             week46
@@ -1233,7 +1257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week46/samsung-spyware/" class="md-nav__link">
+      <a href="../samsung-spyware/" class="md-nav__link">
         
   
   
@@ -1256,7 +1280,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week46/cisco-ccx/" class="md-nav__link">
+      <a href="../cisco-ccx/" class="md-nav__link">
         
   
   
@@ -1279,7 +1303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week46/apple/" class="md-nav__link">
+      <a href="../apple/" class="md-nav__link">
         
   
   
@@ -1302,7 +1326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week46/abb-fbxi/" class="md-nav__link">
+      <a href="../abb-fbxi/" class="md-nav__link">
         
   
   
@@ -1325,7 +1349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week46/delhi/" class="md-nav__link">
+      <a href="../delhi/" class="md-nav__link">
         
   
   
@@ -1348,7 +1372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week46/clickfix/" class="md-nav__link">
+      <a href="../clickfix/" class="md-nav__link">
         
   
   
@@ -1368,10 +1392,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/incident/Week46/kernel/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Actively Exploited Windows Kernel Zero‑Day
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1382,6 +1428,155 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#versions-affected" class="md-nav__link">
+    <span class="md-ellipsis">
+      Versions Affected
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#details-by-vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Details by vulnerability
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attack-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attack Scenario
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impact-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impact Assessment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mitigation-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mitigation Strategies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mitigation Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#immediate-patch-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Immediate Patch Deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restrict-privileged-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      Restrict Privileged Access
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitor-for-exploitation-indicators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitor for Exploitation Indicators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-service-hardening" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network &amp; Service Hardening
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#active-directory-kerberos-hardening" class="md-nav__link">
+    <span class="md-ellipsis">
+      Active Directory &amp; Kerberos Hardening
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources &amp; References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1394,7 +1589,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/incident/Week46/whisper/" class="md-nav__link">
+      <a href="../whisper/" class="md-nav__link">
         
   
   
@@ -1458,6 +1653,145 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#versions-affected" class="md-nav__link">
+    <span class="md-ellipsis">
+      Versions Affected
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#details-by-vulnerability" class="md-nav__link">
+    <span class="md-ellipsis">
+      Details by vulnerability
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attack-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attack Scenario
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impact-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impact Assessment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mitigation-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mitigation Strategies
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mitigation Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#immediate-patch-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Immediate Patch Deployment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#restrict-privileged-access" class="md-nav__link">
+    <span class="md-ellipsis">
+      Restrict Privileged Access
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitor-for-exploitation-indicators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monitor for Exploitation Indicators
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-service-hardening" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network &amp; Service Hardening
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#active-directory-kerberos-hardening" class="md-nav__link">
+    <span class="md-ellipsis">
+      Active Directory &amp; Kerberos Hardening
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resources &amp; References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1469,8 +1803,149 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<div><h1 id="actively-exploited-windows-kernel-zeroday-cve-2025-62215-and-critical-zeroclick-bugs">Actively Exploited Windows Kernel Zero‑Day (CVE-2025-62215) and Critical Zero‑Click Bugs</h1>
+<h2 id="versions-affected">Versions Affected</h2>
+<ul>
+<li><strong>Windows 10</strong> (versions 21H2, 22H2)</li>
+<li><strong>Windows 11</strong> (versions 22H2, 23H2, and 24H2)</li>
+<li><strong>Windows Server 2019</strong> (Core and Desktop Experience)</li>
+<li><strong>Windows Server 2022</strong> (Core and Desktop Experience)</li>
+<li><strong>Windows Server 2025 Preview Builds</strong></li>
+</ul>
+<h2 id="description">Description</h2>
+<p>Microsoft’s November 2025 security update fixes over 60 vulnerabilities, including an actively exploited zero‑day in the Windows Kernel (CVE-2025-62215) and several critical zero‑click vulnerabilities in Windows components like GDI+ and Kerberos.</p>
+<p>The kernel vulnerability allows attackers to gain elevated (SYSTEM) privileges on affected systems. The GDI+ vulnerability (CVE-2025-60724) enables remote code execution without user interaction through malicious metafiles. Another Kerberos privilege escalation flaw (CVE-2025-60704, “CheckSum”) affects enterprise authentication.</p>
+<h2 id="technical-details">Technical Details</h2>
+<table>
+<thead>
+<tr>
+<th><strong>CVE / Component</strong></th>
+<th><strong>Type</strong></th>
+<th><strong>Impact / Notes</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CVE-2025-62215</strong> (Windows Kernel Privilege Escalation)</td>
+<td>Race‑condition in kernel</td>
+<td>Local privilege escalation to SYSTEM. Exploited in the wild prior to patch release. Requires local access.</td>
+</tr>
+<tr>
+<td><strong>CVE-2025-60724</strong> (GDI+ Remote Code Execution)</td>
+<td>RCE in GDI+ image parsing</td>
+<td>Triggered by opening or rendering a malicious metafile; zero‑click possible in some contexts. CVSS ~9.8 (Critical). Attack surface: network/file upload/rendering.</td>
+</tr>
+<tr>
+<td><strong>CVE-2025-60704</strong> (Kerberos CheckSum Privilege Escalation)</td>
+<td>Authentication logic flaw</td>
+<td>Enables forging/impersonation of privileged accounts in AD. Affects domain environments and enterprise authentication.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="details-by-vulnerability">Details by vulnerability</h3>
+<p><strong>CVE-2025-62215 – Windows Kernel Privilege Escalation</strong></p>
+<ul>
+<li>Type: Race‑condition vulnerability in Windows Kernel.</li>
+<li>Impact: Local privilege escalation to SYSTEM.</li>
+<li>Exploited in the wild before patch release.</li>
+<li>Attack vector: Local — requires prior access to the system.</li>
+</ul>
+<p><strong>CVE-2025-60724 – GDI+ Remote Code Execution</strong></p>
+<ul>
+<li>Type: Remote code execution (RCE) in GDI+ image parsing.</li>
+<li>Trigger: Opening or rendering a malicious metafile; zero‑click possible in certain contexts.</li>
+<li>Severity: High (Critical).</li>
+<li>Attack vector: Network or file upload interface.</li>
+</ul>
+<p><strong>CVE-2025-60704 – Kerberos Privilege Escalation (“CheckSum”)</strong></p>
+<ul>
+<li>Type: Authentication logic flaw in Kerberos CheckSum validation.</li>
+<li>Impact: Allows impersonation of privileged users in Active Directory.</li>
+<li>Affects: Domain environments and enterprise networks.</li>
+</ul>
+<h2 id="attack-scenario">Attack Scenario</h2>
+<p><strong>Kernel Zero‑Day (CVE-2025-62215)</strong>
+An attacker who has gained initial access (via phishing, malware, or another vulnerability) runs a crafted local exploit to trigger a race‑condition in the Windows kernel, escalating privileges from a standard user to SYSTEM.</p>
+<p><strong>GDI+ Zero‑Click RCE (CVE-2025-60724)</strong>
+An attacker sends or hosts a document/image containing a malicious metafile. When a vulnerable Windows component processes it (even without user interaction in some cases), arbitrary code executes with the current user’s privileges.</p>
+<p><strong>Kerberos Privilege Escalation (CVE-2025-60704)</strong>
+Within an enterprise network, attackers exploit the flawed checksum validation to forge authentication tokens, impersonate domain accounts, and gain lateral movement or full domain admin access.</p>
+<h2 id="impact-assessment">Impact Assessment</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">System Compromise</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<ul>
+<li>Full system compromise via local privilege escalation (CVE-2025-62215)</li>
+<li>Remote code execution and initial compromise (CVE-2025-60724)</li>
+<li>Domain‑wide compromise and account impersonation (CVE-2025-60704)</li>
+<li>Secondary impacts: data exfiltration, ransomware deployment, persistence, and lateral movement</li>
+</ul>
+<h2 id="mitigation-strategies">Mitigation Strategies</h2>
+<h3 id="immediate-patch-deployment"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 10.12h-6.78l2.74-2.82c-2.73-2.7-7.15-2.8-9.88-.1a6.887 6.887 0 0 0 0 9.8c2.73 2.7 7.15 2.7 9.88 0 1.36-1.35 2.04-2.92 2.04-4.9h2c0 1.98-.88 4.55-2.64 6.29-3.51 3.48-9.21 3.48-12.72 0-3.5-3.47-3.53-9.11-.02-12.58a8.987 8.987 0 0 1 12.65 0L21 3zM12.5 8v4.25l3.5 2.08-.72 1.21L11 13V8z"></path></svg></span> Immediate Patch Deployment</h3>
+<ul>
+<li>Apply Microsoft’s November 2025 security updates across all Windows systems as a priority.</li>
+</ul>
+<h3 id="restrict-privileged-access"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13 19h1a1 1 0 0 1 1 1h7v2h-7a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-1.66C8.07 16.13 6 13 6 9.67v-4L12 3l6 2.67v4c0 3.33-2.07 6.46-5 7.67zM12 5 8 6.69V10h4zm0 5v6c1.91-.47 4-2.94 4-5v-1z"></path></svg></span> Restrict Privileged Access</h3>
+<ul>
+<li>Limit administrator privileges and enforce least‑privilege access models.</li>
+</ul>
+<h3 id="monitor-for-exploitation-indicators"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 16V4H3v12zm0-14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-7v2h2v2H8v-2h2v-2H3a2 2 0 0 1-2-2V4c0-1.11.89-2 2-2zM5 6h9v5H5zm10 0h4v2h-4zm4 3v5h-4V9zM5 12h4v2H5zm5 0h4v2h-4z"></path></svg></span> Monitor for Exploitation Indicators</h3>
+<ul>
+<li>Watch for unusual privilege escalation events, unexpected SYSTEM process creations, suspicious Kerberos ticket activity, and GDI+/application crashes.</li>
+</ul>
+<h3 id="network-service-hardening"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13 19h1a1 1 0 0 1 1 1h7v2h-7a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-1.66C8.07 16.13 6 13 6 9.67v-4L12 3l6 2.67v4c0 3.33-2.07 6.46-5 7.67zM12 5 8 6.69V10h4zm0 5v6c1.91-.47 4-2.94 4-5v-1z"></path></svg></span> Network &amp; Service Hardening</h3>
+<ul>
+<li>Disable or restrict services that automatically render user‑supplied images/metafiles (file upload parsers, preview services).</li>
+<li>Block or closely inspect common file upload vectors.</li>
+</ul>
+<h3 id="active-directory-kerberos-hardening"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13 19h1a1 1 0 0 1 1 1h7v2h-7a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1H2v-2h7a1 1 0 0 1 1-1h1v-1.66C8.07 16.13 6 13 6 9.67v-4L12 3l6 2.67v4c0 3.33-2.07 6.46-5 7.67zM12 5 8 6.69V10h4zm0 5v6c1.91-.47 4-2.94 4-5v-1z"></path></svg></span> Active Directory &amp; Kerberos Hardening</h3>
+<ul>
+<li>Review delegation, constrained delegation, and Kerberos settings.</li>
+<li>Follow Microsoft guidance for CVE‑2025‑60704 mitigation, including any recommended configuration changes and monitoring controls.</li>
+</ul>
+<h2 id="resources-references">Resources &amp; References</h2>
+<div class="admonition info">
+<p class="admonition-title">Official &amp; Media Reports</p>
+<ul>
+<li><a href="https://www.securityweek.com/microsoft-patches-actively-exploited-windows-kernel-zero-day/">Microsoft Patches Actively Exploited Windows Kernel Zero-Day - SecurityWeek</a></li>
+<li><a href="https://msrc.microsoft.com/update-guide">Security Update Guide - Microsoft</a></li>
+<li><a href="https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2025-60724">CVE-2025-60724 - Security Update Guide - Microsoft - GDI+ Remote Code Execution Vulnerability</a></li>
+<li><a href="https://www.cve.org/CVERecord?id=CVE-2025-60724">CVE Record: CVE-2025-60724</a></li>
+<li><a href="https://www.darkreading.com/vulnerabilities-threats/patch-now-microsoft-zero-day-critical-zero-click-bugs">Patch Now: Microsoft Flags Zero-Day &amp; Zero-Click Bugs</a></li>
+</ul>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Critical</p>
+</div>
+<p>Systems not patched remain at high risk of exploitation. Prioritize patching, monitoring, and access restriction.</p>
+<div class="admonition tip">
+<p class="admonition-title">Response Checklist</p>
+</div>
+<ol>
+<li>Patch affected systems immediately.</li>
+<li>Audit privileged accounts and recent privilege escalation events.</li>
+<li>Inspect logs for signs of exploitation and unusual Kerberos activity.</li>
+<li>Isolate suspected compromised hosts and perform forensic analysis.</li>
+</ol></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1506,10 +1981,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/incident/", "features": ["content.code.copy", "content.code.annotate", "navigation.tabs", "navigation.tracking", "content.math", "navigation.tabs.sticky"], "search": "/incident/assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.annotate", "navigation.tabs", "navigation.tracking", "content.math", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/incident/assets/javascripts/bundle.56ea9cef.min.js"></script>
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

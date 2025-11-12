@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../alarm.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -1394,6 +1394,52 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Week46/kernel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Actively Exploited Windows Kernel Zero‑Day
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Week46/whisper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Whisper Leak — LLM Side‑Channel Attack
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1466,6 +1512,24 @@
 <div><h1 id="this-weeks-security-incidents">This Week's Security Incidents</h1>
 <div class="grid cards">
 <ul>
+<li>
+<p><img alt="Actively Exploited Windows Kernel Zero-Day" src="../Week46/images/kernel.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M3 12V6.75l6-1.32v6.48zm17-9v8.75l-10 .15V5.21zM3 13l6 .09v6.81l-6-1.15zm17 .25V22l-10-1.91V13.1z"></path></svg></span> <strong>Actively Exploited Windows Kernel Zero-Day and Critical Zero-Click Bugs</strong></p>
+<p><strong class="cve-chip">Zero-Day Exploited</strong>
+<strong class="cve-chip">Critical Severity</strong></p>
+<hr>
+<p>Actively exploited Windows Kernel zero-day (CVE-2025-62215) and multiple critical zero-click vulnerabilities in GDI+ and Kerberos reported and patched in Microsoft’s November 2025 update. Exploitation can result in SYSTEM privilege escalation, remote code execution, or full domain compromise in enterprise networks. Immediate patching is strongly advised.</p>
+<p><a href="../Week46/kernel/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+</li>
+<li>
+<p><img alt="Whisper Leak LLM Side-Channel Attack" src="../Week46/images/whisper.png">
+    :material-privacy:{ .lg .middle } <strong>Whisper Leak — LLM Side‑Channel Attack</strong></p>
+<p><strong class="cve-chip">Traffic Metadata Leak</strong>
+<strong class="cve-chip">High Privacy Risk</strong></p>
+<hr>
+<p>Whisper Leak is a new side‑channel attack that infers conversation topics (and sometimes sensitive attributes) from encrypted streaming LLM traffic by analyzing packet sizes and timing. Affects many cloud streaming LLM APIs — immediate attention recommended for privacy‑sensitive use cases.</p>
+<p><a href="../Week46/whisper/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+</li>
 <li>
 <p><img alt="ClickFix Hospitality Phishing" src="../Week46/images/hotel.png">
     <strong>ClickFix Hospitality Phishing Campaign (a.k.a. “I Paid Twice” campaign)</strong></p>
@@ -1579,10 +1643,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.annotate", "navigation.tabs", "navigation.tracking", "content.math", "navigation.tabs.sticky"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.annotate", "navigation.tabs", "navigation.tracking", "content.math", "navigation.tabs.sticky"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
