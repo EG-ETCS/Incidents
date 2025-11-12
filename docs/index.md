@@ -8,22 +8,25 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![ClickFix Hospitality Phishing](Week46/images/hotel.png)
-    __ClickFix Hospitality Phishing Campaign (a.k.a. “I Paid Twice” campaign)__
+-   ![Actively Exploited Windows Kernel Zero-Day](Week46/images/kernel.png)
+    :material-microsoft-windows:{ .lg .middle } __Actively Exploited Windows Kernel Zero-Day and Critical Zero-Click Bugs__
 
-    **Hospitality Phishing / Booking Impersonation**{.cve-chip}
-    **Infostealer / RAT Delivery**{.cve-chip}
+    **Zero-Day Exploited**{.cve-chip}
+    **Critical Severity**{.cve-chip}
     ---
-    The ClickFix campaign targets hotels with spear‑phishing emails impersonating Booking.com. Staff who follow the lure run a clipboard/PowerShell payload that installs infostealers and RATs, leading to credential theft, booking compromise, and secondary phishing against guests.
-    [:octicons-arrow-right-24: View Full Details](Week46/clickfix.md)
+    Actively exploited Windows Kernel zero-day (CVE-2025-62215) and multiple critical zero-click vulnerabilities in GDI+ and Kerberos reported and patched in Microsoft’s November 2025 update. Exploitation can result in SYSTEM privilege escalation, remote code execution, or full domain compromise in enterprise networks. Immediate patching is strongly advised.
 
--   ![Delhi Airport GPS Spoofing Crisis](Week46/images/delhi.png)
-    :material-airplane-alert:{ .lg .middle } __Delhi Airport GPS Spoofing Crisis__
+    [:octicons-arrow-right-24: View Full Details](Week46/kernel.md)
 
-    **GPS Spoofing**{.cve-chip}
-    **Critical Aviation Disruption**{.cve-chip}
-    ---
-    Severe GPS spoofing at Delhi airport caused fake signals, misleading aircraft navigation and leading to positional confusion, diverted flights, delays, and manual air traffic control. Safety risk extended to over 400 flights in one week. Urgent mitigation included ILS upgrades, regulatory action, and GNSS redundancy.
-    [:octicons-arrow-right-24: View Full Details](Week46/delhi.md)
+-   ![Whisper Leak LLM Side-Channel Attack](Week46/images/whisper.png)
+    :material-privacy:{ .lg .middle } **Whisper Leak — LLM Side‑Channel Attack**
+
+    **Traffic Metadata Leak**{.cve-chip}
+    **High Privacy Risk**{.cve-chip}
+    --------------------------------
+
+    Whisper Leak is a new side‑channel attack that infers conversation topics (and sometimes sensitive attributes) from encrypted streaming LLM traffic by analyzing packet sizes and timing. Affects many cloud streaming LLM APIs — immediate attention recommended for privacy‑sensitive use cases.
+
+    [:octicons-arrow-right-24: View Full Details](Week46/whisper.md)
 
 </div>

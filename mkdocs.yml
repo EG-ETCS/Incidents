@@ -112,7 +112,8 @@ nav:
             - "ABB FLXeon Controllers Vulnerabilities": Week46/abb-fbxi.md
             - "Delhi Airport GPS Spoofing Crisis": Week46/delhi.md
             - "ClickFix Hospitality Phishing Campaign": Week46/clickfix.md
-
+            - "Actively Exploited Windows Kernel Zero‑Day": Week46/kernel.md
+            - "Whisper Leak — LLM Side‑Channel Attack": Week46/whisper.md
 
   
   
