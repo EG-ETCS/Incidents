@@ -19,7 +19,7 @@ hide:
     [:octicons-arrow-right-24: View Full Details](Week46/kernel.md)
 
 -   ![Whisper Leak LLM Side-Channel Attack](Week46/images/whisper.png)
-    :material-privacy:{ .lg .middle } **Whisper Leak — LLM Side‑Channel Attack**
+    :material-network:{ .lg .middle } **Whisper Leak — LLM Side‑Channel Attack**
 
     **Traffic Metadata Leak**{.cve-chip}
     **High Privacy Risk**{.cve-chip}

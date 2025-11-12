@@ -19,7 +19,7 @@ hide:
     [:octicons-arrow-right-24: View Full Details](Week46/kernel.md)
 
 -   ![Whisper Leak LLM Side-Channel Attack](Week46/images/whisper.png)
-    :material-privacy:{ .lg .middle } **Whisper Leak — LLM Side‑Channel Attack**
+    :material-network:{ .lg .middle } **Whisper Leak — LLM Side‑Channel Attack**
 
     **Traffic Metadata Leak**{.cve-chip}
     **High Privacy Risk**{.cve-chip}
@@ -30,7 +30,7 @@ hide:
     [:octicons-arrow-right-24: View Full Details](Week46/whisper.md)
 
 -   ![ClickFix Hospitality Phishing](Week46/images/hotel.png)
-    __ClickFix Hospitality Phishing Campaign (a.k.a. “I Paid Twice” campaign)__
+    :material-card:{ .lg .middle }__ClickFix Hospitality Phishing Campaign (a.k.a. “I Paid Twice” campaign)__
 
     **Hospitality Phishing / Booking Impersonation**{.cve-chip}
     **Infostealer / RAT Delivery**{.cve-chip}
