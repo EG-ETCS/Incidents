@@ -8,7 +8,7 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Lighthouse PhaaS Phishing Operation](Week46/images/Lighthouse.png)
+-   ![Lighthouse PhaaS Phishing Operation](Week46/images/Lighthousemap.png)
     :material-security-network:{ .lg .middle } __Lighthouse Phishing-as-a-Service (PhaaS) Operation__
 
     **Phishing-as-a-Service (PhaaS)**{.cve-chip}
