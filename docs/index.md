@@ -8,14 +8,15 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Lighthouse PhaaS Phishing Operation](Week46/images/Lighthousemap.png)
-    :material-security-network:{ .lg .middle } __Lighthouse Phishing-as-a-Service (PhaaS) Operation__
+-   ![Fortinet FortiWeb Authentication Bypass](Week47/images/fortiweb.png)
+    :material-shield-lock:{ .lg .middle } **Fortinet FortiWeb Authentication Bypass (CVE-2025-64446)**
 
-    **Phishing-as-a-Service (PhaaS)**{.cve-chip}
-    **Critical Global Smishing Campaign**{.cve-chip}
-    ------------------------------------------------
+    **Authentication Bypass**{.cve-chip}
+    **Critical Severity**{.cve-chip}
+    --------------------------------
 
-    Google filed suit in Nov 2025 to dismantle *Lighthouse* — a China-linked PhaaS that powered mass SMS (“smishing”) campaigns, spun up ~200k phishing sites in weeks, and impersonated 400+ brands to steal millions of payment/credential records worldwide. Legal injunctions, domain takedowns, and cross-provider coordination were pursued to disrupt the service.
-    [:octicons-arrow-right-24: View Full Details](Week46/Lighthouse.md)
+    A critical authentication bypass vulnerability (CVE-2025-64446) in Fortinet FortiWeb is being actively exploited in the wild. Attackers abuse a path traversal flaw and a crafted CGIINFO header to impersonate the built-in admin account, create rogue administrator users, and gain persistent full control over the Web Application Firewall (WAF). Immediate patching is mandatory to prevent compromise of network perimeter defenses.
+
+    [:octicons-arrow-right-24: View Full Details](Week47/fortiweb.md)
 
 </div>
