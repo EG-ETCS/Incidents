@@ -1535,6 +1535,52 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Week47/aix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Critical IBM AIX NIM Vulnerabilities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Week47/dlink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    D‑Link DIR-816L
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1615,6 +1661,25 @@
 <hr>
 <p>A critical authentication bypass vulnerability (CVE-2025-64446) in Fortinet FortiWeb is being actively exploited in the wild. Attackers abuse a path traversal flaw and a crafted CGIINFO header to impersonate the built-in admin account, create rogue administrator users, and gain persistent full control over the Web Application Firewall (WAF). Immediate patching is mandatory to prevent compromise of network perimeter defenses.</p>
 <p><a href="../Week47/fortiweb/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+</li>
+<li>
+<p><img alt="IBM AIX NIM Vulnerabilities" src="../Week47/images/aix.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M3 1h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1m0 8h16a1 1 0 0 1 1 1v.67l-2.5-1.11-6.5 2.88V15H3a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1m0 8h8c.06 2.25 1 4.4 2.46 6H3a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1M8 5h1V3H8zm0 8h1v-2H8zm0 8h1v-2H8zM4 3v2h2V3zm0 8v2h2v-2zm0 8v2h2v-2zm13.5-7 4.5 2v3c0 2.78-1.92 5.37-4.5 6-2.58-.63-4.5-3.22-4.5-6v-3zm0 1.94L15 15.06v2.66c0 1.54 1.07 2.98 2.5 3.34z"></path></svg></span> <strong>Critical IBM AIX NIM Remote Code Execution (CVE-2025-36250)</strong></p>
+<p><strong class="cve-chip">Remote Code Execution</strong>
+<strong class="cve-chip">CVSS 10.0 Critical</strong></p>
+<hr>
+<p>A critical vulnerability (CVE-2025-36250) in IBM AIX’s Network Installation Manager (NIM) allows <strong>unauthenticated remote code execution</strong> due to improper process controls in the <em>nimesis</em> service. Combined with related flaws (CVE-2025-36251, CVE-2025-36096, CVE-2025-36236), attackers can <strong>execute commands remotely</strong>, <strong>steal NIM private keys</strong>, and <strong>write arbitrary files via directory traversal</strong>, enabling full compromise of AIX and VIOS systems.
+Immediate patching of all AIX/VIOS installations and rotation of NIM keys is critical to prevent exploitation.</p>
+<p><a href="../Week47/aix/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+</li>
+<li>
+<p><img alt="D-Link DIR-816L Buffer Overflow" src="../Week47/images/dlink.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68zm-10 5h-2v-2h2zm0-4h-2V7h2z"></path></svg></span> <strong>D-Link DIR-816L Stack-Based Buffer Overflow (CVE-2025-13189)</strong></p>
+<p><strong class="cve-chip">Stack Buffer Overflow</strong><br>
+<strong class="cve-chip">High Severity</strong></p>
+<hr>
+<p>A high-severity vulnerability (CVE-2025-13189) in the D-Link DIR-816L router allows remote attackers to trigger a <strong>stack-based buffer overflow</strong> via crafted <code>SERVER_ID</code> or <code>HTTP_SID</code> parameters in the <code>gena.cgi</code> script. Exploitation can lead to <strong>remote code execution</strong>, device takeover, or denial-of-service. The router is <strong>end-of-life</strong>, and <strong>no security patch will be released</strong>.</p>
+<p><a href="../Week47/dlink/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
 </li>
 </ul>
 </div></div>
