@@ -116,7 +116,9 @@ nav:
             - "Whisper Leak — LLM Side‑Channel Attack": Week46/whisper.md
             - "Google vs. Lighthouse Phishing-as-a-Service Operation": Week46/Lighthouse.md
          - "week47":
-            - "Multiple Vulnerabilities in Schneider Electric Products": Week47/fortiweb.md
+            - "Fortinet FortiWeb Authentication Bypass": Week47/fortiweb.md
+            - "Critical IBM AIX NIM Vulnerabilities": Week47/aix.md
+            - "D‑Link DIR-816L": Week47/dlink.md
 
   
   
