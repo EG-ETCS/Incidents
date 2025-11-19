@@ -148,20 +148,20 @@ The most severe vulnerability (**CVE-2025-36250**) is rated **CVSS 10.0**, enabl
 
 !!! info "Official Documentation"
 
-* [Critical IBM AIX RCE (CVE-2025-36250, CVSS 10.0) Flaw Exposes NIM Private Keys and Risks Directory Traversal](https://securityonline.info/critical-ibm-aix-rce-cve-2025-36250-cvss-10-0-flaw-exposes-nim-private-keys-and-risks-directory-traversal/)
-* [Security Bulletin: AIX is vulnerable to arbitrary command execution, insufficiently protected credentials, and path traversal](https://www.ibm.com/support/pages/node/7251173)
-* [NVD- CVE-2025-36250](https://nvd.nist.gov/vuln/detail/CVE-2025-36250)
-* [NVD- CVE-2025-36251](https://nvd.nist.gov/vuln/detail/CVE-2025-36251)
+    * [Critical IBM AIX RCE (CVE-2025-36250, CVSS 10.0) Flaw Exposes NIM Private Keys and Risks Directory Traversal](https://securityonline.info/critical-ibm-aix-rce-cve-2025-36250-cvss-10-0-flaw-exposes-nim-private-keys-and-risks-directory-traversal/)
+    * [Security Bulletin: AIX is vulnerable to arbitrary command execution, insufficiently protected credentials, and path traversal](https://www.ibm.com/support/pages/node/7251173)
+    * [NVD- CVE-2025-36250](https://nvd.nist.gov/vuln/detail/CVE-2025-36250)
+    * [NVD- CVE-2025-36251](https://nvd.nist.gov/vuln/detail/CVE-2025-36251)
 
 !!! danger "Critical Warning"
-These vulnerabilities include a **CVSS 10.0 RCE**.
-If NIM services are exposed on the network without patching, attackers can gain **full remote root access**.
+    These vulnerabilities include a **CVSS 10.0 RCE**.
+    If NIM services are exposed on the network without patching, attackers can gain **full remote root access**.
 
 !!! tip "Emergency Response"
-If exploitation is suspected:
+    If exploitation is suspected:
 
-1. Isolate the NIM server immediately
-2. Rotate all NIM private keys
-3. Inspect deployment logs and file integrity
-4. Reinstall or verify LPAR images
-5. Apply APARs before reconnecting
+    1. Isolate the NIM server immediately
+    2. Rotate all NIM private keys
+    3. Inspect deployment logs and file integrity
+    4. Reinstall or verify LPAR images
+    5. Apply APARs before reconnecting

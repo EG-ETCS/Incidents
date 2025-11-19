@@ -149,19 +149,19 @@ The product is **End-of-Life**, and no patches will be issued.
 
 !!! info "Vulnerability Documentation"
 
-* [NVD- CVE-2025-13189](https://nvd.nist.gov/vuln/detail/CVE-2025-13189)
-* [CVE-2025-13189 — Buffer Overflow in Dir-816 | dbugs](https://dbugs.ptsecurity.com/vulnerability/PT-2025-47043)
-* [CVE-2025-13189 - vulnerability database | Vulners.com](https://vulners.com/cve/CVE-2025-13189)
-* [4.	Threat Radar | OffSeq — Live Threat Intelligence](https://radar.offseq.com/threat/cve-2025-13189-stack-based-buffer-overflow-in-d-li-31fd3f4b)
+      * [NVD- CVE-2025-13189](https://nvd.nist.gov/vuln/detail/CVE-2025-13189)
+      * [CVE-2025-13189 — Buffer Overflow in Dir-816 | dbugs](https://dbugs.ptsecurity.com/vulnerability/PT-2025-47043)
+      * [CVE-2025-13189 - vulnerability database | Vulners.com](https://vulners.com/cve/CVE-2025-13189)
+      * [4.	Threat Radar | OffSeq — Live Threat Intelligence](https://radar.offseq.com/threat/cve-2025-13189-stack-based-buffer-overflow-in-d-li-31fd3f4b)
 
 !!! danger "Critical Warning"
-This device is **End-of-Life** and will **never** receive security patches.
-The only secure long-term option is **replacement**.
+      This device is **End-of-Life** and will **never** receive security patches.
+      The only secure long-term option is **replacement**.
 
 !!! tip "Emergency Response"
-If compromise is suspected:
+      If compromise is suspected:
 
-1. Immediately disconnect the router
-2. Reset configuration to a known-good baseline
-3. Inspect network for suspicious traffic
-4. Replace the device before reconnecting
+      1. Immediately disconnect the router
+      2. Reset configuration to a known-good baseline
+      3. Inspect network for suspicious traffic
+      4. Replace the device before reconnecting

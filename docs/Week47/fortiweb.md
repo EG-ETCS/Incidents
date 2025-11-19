@@ -116,9 +116,9 @@ Upgrade to fixed versions:
 
 !!! info "Official & Media Reports"
 
-* [PSIRT | FortiGuard Labs](https://fortiguard.fortinet.com/psirt/FG-IR-25-910)
-* [Now-Patched Fortinet FortiWeb Flaw Exploited in Attacks to Create Admin Accounts](https://thehackernews.com/2025/11/fortinet-fortiweb-flaw-actively.html)
-* [CVE Record: **CVE-2025-64446**](https://www.cve.org/CVERecord?id=CVE-2025-64446)
-* [CISA Known Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-64446)
-* [CVE-2025-64446 in Fortinet FortiWeb: Details, Next Steps](https://www.bitsight.com/blog/critical-vulnerability-alert-cve-2025-64446-fortinet-fortiweb-vulnerability)
-* [Unauthenticated Authentication Bypass in Fortinet FortiWeb Exploited in the Wild — Qualys](https://blog.qualys.com/vulnerabilities-threat-research/2025/11/14/unauthenticated-authentication-bypass-in-fortinet-fortiweb-cve-2025-64446-exploited-in-the-wild)
+      * [PSIRT | FortiGuard Labs](https://fortiguard.fortinet.com/psirt/FG-IR-25-910)
+      * [Now-Patched Fortinet FortiWeb Flaw Exploited in Attacks to Create Admin Accounts](https://thehackernews.com/2025/11/fortinet-fortiweb-flaw-actively.html)
+      * [CVE Record: **CVE-2025-64446**](https://www.cve.org/CVERecord?id=CVE-2025-64446)
+      * [CISA Known Exploited Vulnerabilities Catalog](https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-64446)
+      * [CVE-2025-64446 in Fortinet FortiWeb: Details, Next Steps](https://www.bitsight.com/blog/critical-vulnerability-alert-cve-2025-64446-fortinet-fortiweb-vulnerability)
+      * [Unauthenticated Authentication Bypass in Fortinet FortiWeb Exploited in the Wild — Qualys](https://blog.qualys.com/vulnerabilities-threat-research/2025/11/14/unauthenticated-authentication-bypass-in-fortinet-fortiweb-cve-2025-64446-exploited-in-the-wild)
