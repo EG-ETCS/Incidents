@@ -1,0 +1,87 @@
+## Lynx+ Gateway Critical Vulnerabilities
+
+**Unauthorized Access & Info Disclosure**{.cve-chip}  
+**CVSS 9.2 Critical**{.cve-chip}  
+
+### Overview
+A critical security vulnerability in GIC Lynx+ Gateway devices allows remote attackers to gain unauthorized access, reset devices, exfiltrate sensitive information, and capture plaintext credentials. The vulnerabilities affect multiple versions (R08, V03, V05, V18).
+
+**Technical Specifications**  
+
+| **Attribute** | **Details** |
+|---------------|-------------|
+| **CVE ID** | CVE-2025-55034, CVE-2025-58083, CVE-2025-59780, CVE-2025-62765 |
+| **Vulnerability Type** | Weak Password Requirements, Missing Authentication, Information Disclosure, Cleartext Transmission |
+| **Attack Vector** | Network, Remote/Passive, Over IP |
+| **Authentication** | None required (multiple scenarios) |
+| **Complexity** | Low |
+| **User Interaction** | Not required |
+| **Affected Component** | Lynx+ Gateway R08, V03, V05, V18 |
+
+### Technical Specifications
+
+- Weak password requirements allow brute-force login (CVE-2025-55034)
+- No authentication required for remote device reset (CVE-2025-58083)
+- No authentication for device information disclosure endpoints (CVE-2025-59780)
+- Credentials transferred in cleartext (CVE-2025-62765)
+
+###  Affected Products
+
+- Lynx+ Gateway R08
+- Lynx+ Gateway V03
+- Lynx+ Gateway V05
+- Lynx+ Gateway V18
+
+### Attack Scenario
+
+1. Attacker connects to the same network as the Lynx+ device
+2. Exploits weak password requirements to brute-force login
+3. Remotely resets the device without authentication, causing denial-of-service
+4. Retrieves sensitive device information via unauthenticated HTTP GET requests
+5. Sniffs network traffic to capture credentials sent in cleartext
+6. Gains further access and potentially pivots into wider OT network
+
+### Impact Assessment
+
+- **Integrity:** Full compromise of device configuration and operational logic
+- **Confidentiality:** Exposure of sensitive device information and credentials
+- **Availability:** Device/service disruption through remote reset (DoS)
+- **Network Security:** Entry point for deeper OT network attacks, lateral movement, and critical infrastructure exposure
+
+### Mitigation Strategies
+
+- **Network Isolation:** Never expose devices to the internet; place behind firewalls with strict rules
+- **Access Controls:** Limit remote access to VPN-authenticated connections; segment OT from corporate IT
+- **Password Policy:** Enforce strong passwords externally; monitor authentication logs
+- **Encryption:** Encrypt all device communications where possible
+- **Monitoring:** Deploy network monitoring for device access; alert on suspicious activity
+- **Updates:** Track vendor updates/patches; apply firmware updates promptly
+- **Asset Inventory:** Identify all affected devices in the environment
+- **Incident Response:** Prepare procedures for potential compromise
+
+### Technical Recommendations
+
+1. **Immediate Actions:**  
+   - Implement strict ingress/egress filtering  
+   - Deploy network monitoring for device access  
+   - Document all devices and their network configurations  
+   - Prepare incident response procedures
+
+2. **Short-term Measures:**  
+   - Audit network exposure and access controls  
+   - Review and update firewall rules  
+   - Conduct vulnerability assessments
+
+3. **Long-term Strategy:**  
+   - Replace with newer, supported models  
+   - Plan for end-of-life device replacement  
+   - Engage with vendor for migration assistance  
+   - Train staff on secure industrial device management
+
+### Resources and References
+
+!!! info "Official Sources"
+        1. [Critical Lynx+ Gateway Vulnerability Exposes Data in Cleartext, CISA Warns](https://cyberpress.org/critical-lynx-gateway-vulnerability/)
+        2. [General Industrial Controls Lynx+ Gateway | CISA](https://www.cisa.gov/news-events/ics-advisories/icsa-25-317-08)
+        3. [NVD - CVE-2025-58083](https://nvd.nist.gov/vuln/detail/CVE-2025-58083)
+        4. [NVD - CVE-2025-55034](https://nvd.nist.gov/vuln/detail/CVE-2025-55034)

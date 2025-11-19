@@ -8,6 +8,17 @@ hide:
  
 <div class="grid cards" markdown>
 
+-   ![Lynx+ Gateway](Week47/images/lynx.png)
+    :material-lock-alert:{ .lg .middle } **Critical Lynx+ Gateway Vulnerabilities (CVE-2025-55034, CVE-2025-58083, CVE-2025-59780, CVE-2025-62765)**
+
+    **Unauthorized Access & Info Disclosure**{.cve-chip}  
+    **CVSS 9.2 Critical**{.cve-chip}  
+    ---------------------------------
+
+    Multiple flaws in General Industrial Controls Lynx+ Gateway allow a remote, unauthenticated attacker to brute‑force weak passwords, reset devices without authentication, retrieve sensitive configuration data, and capture plaintext credentials over the network. Affected versions (R08, V03, V05, V18) are widely deployed in OT environments, making coordinated attacks and lateral movement into industrial networks a serious risk.
+
+    [:octicons-arrow-right-24: View Full Details](Week47/lynx.md)
+
 -   ![Microsoft Graphics Component](Week47/images/ms-gfx.png)
     :material-server-security:{ .lg .middle } **Critical Microsoft Graphics Component Heap Buffer Overflow (CVE-2025-60724)**
 
