@@ -81,7 +81,7 @@ A critical security vulnerability in GIC Lynx+ Gateway devices allows remote att
 ### Resources and References
 
 !!! info "Official Sources"
-        1. [Critical Lynx+ Gateway Vulnerability Exposes Data in Cleartext, CISA Warns](https://cyberpress.org/critical-lynx-gateway-vulnerability/)
-        2. [General Industrial Controls Lynx+ Gateway | CISA](https://www.cisa.gov/news-events/ics-advisories/icsa-25-317-08)
-        3. [NVD - CVE-2025-58083](https://nvd.nist.gov/vuln/detail/CVE-2025-58083)
-        4. [NVD - CVE-2025-55034](https://nvd.nist.gov/vuln/detail/CVE-2025-55034)
+      - [Critical Lynx+ Gateway Vulnerability Exposes Data in Cleartext, CISA Warns](https://cyberpress.org/critical-lynx-gateway-vulnerability/)
+      - [General Industrial Controls Lynx+ Gateway | CISA](https://www.cisa.gov/news-events/ics-advisories/icsa-25-317-08)
+      - [NVD - CVE-2025-58083](https://nvd.nist.gov/vuln/detail/CVE-2025-58083)
+      - [NVD - CVE-2025-55034](https://nvd.nist.gov/vuln/detail/CVE-2025-55034)

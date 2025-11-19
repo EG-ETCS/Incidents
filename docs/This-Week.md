@@ -20,7 +20,7 @@ hide:
     [:octicons-arrow-right-24: View Full Details](Week47/lynx.md)
 
 -   ![Microsoft Graphics Component](Week47/images/ms-gfx.png)
-    :material-server-security:{ .lg .middle } **Critical Microsoft Graphics Component Heap Buffer Overflow (CVE-2025-60724)**
+    :material-microsoft:{ .lg .middle } **Critical Microsoft Graphics Component Heap Buffer Overflow (CVE-2025-60724)**
 
     **Remote Code Execution**{.cve-chip}  
     **CVSS 9.8 Critical**{.cve-chip}  
@@ -31,7 +31,7 @@ hide:
     [:octicons-arrow-right-24: View Full Details](Week47/ms-gfx.md)
 
 -   ![Google Chrome V8 Zero-Day](Week47/images/chrome-v8.png)
-    :material-server-security:{ .lg .middle } **Critical Google Chrome V8 Engine Zero-Day (CVE-2025-13223)**
+    :material-google:{ .lg .middle } **Critical Google Chrome V8 Engine Zero-Day (CVE-2025-13223)**
 
     **Remote Code Execution**{.cve-chip}  
     **CVSS 9.8 Critical**{.cve-chip}  
