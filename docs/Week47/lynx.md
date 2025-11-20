@@ -62,21 +62,22 @@ A critical security vulnerability in GIC Lynx+ Gateway devices allows remote att
 ### Technical Recommendations
 
 1. **Immediate Actions:**  
-   - Implement strict ingress/egress filtering  
-   - Deploy network monitoring for device access  
-   - Document all devices and their network configurations  
-   - Prepare incident response procedures
+      - Restrict internet-facing access to control systems.
+      - Deploy firewalls between operational and other network segments.
+      - Utilize VPN solutions for any remote access.
+      - Document all devices and their network configurations.
+      - Monitor network activity for unauthorized access attempts.
+      - Establish incident response plans and procedures.
+      - Contact vendors directly for updates and patches if available.
 
 2. **Short-term Measures:**  
-   - Audit network exposure and access controls  
-   - Review and update firewall rules  
-   - Conduct vulnerability assessments
+      - Implement network segmentation to keep operational technology and corporate networks separate.
+      - Conduct thorough impact assessments before applying mitigation measures.
+      - Regularly audit and update firewall rules and vulnerability assessments.
 
 3. **Long-term Strategy:**  
-   - Replace with newer, supported models  
-   - Plan for end-of-life device replacement  
-   - Engage with vendor for migration assistance  
-   - Train staff on secure industrial device management
+      - Plan for replacing unsupported or end-of-life devices, engaging with vendors for migration assistance.
+      - As of the advisory release, no public exploitation has been reported, but maintain vigilance for emerging threats.
 
 ### Resources and References
 

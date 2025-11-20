@@ -122,3 +122,4 @@ nav:
             - "Microsoft Graphics Component Vulnerability – CVE-2025-60724": Week47/ms-gfx.md
             - "Google Chrome V8 Zero-Day – CVE-2025-13223": Week47/chrome-v8.md
             - "Lynx+ Gateway Critical Vulnerabilities": Week47/lynx.md
+            - "FortiWeb OS Command Injection (CVE-2025-58034)": Week47/fortiwebzero.md
