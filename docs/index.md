@@ -8,26 +8,26 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![FortiWeb Exploitation](Week47/images/fortiwebzero.png)
-    :material-security:{ .lg .middle } **Critical FortiWeb Exploitation (CVE-2025-58034)**
+-   ![ABB Ability Edgenius](Week48/images/abb.png)
+    :material-factory:{ .lg .middle } **Critical ABB Ability Edgenius Authentication Bypass (CVE-2025-10571)**
 
-    **OS Command Injection**{.cve-chip}  
-    **CVSS 7.2 High**{.cve-chip}  
+    **Authentication Bypass**{.cve-chip}  
+    **Adjacent Network Access**{.cve-chip}  
     ---------------------------------
 
-    Fortinet’s FortiWeb Web Application Firewall (WAF) is vulnerable to an authenticated OS command injection flaw (**CVE-2025-58034**). Attackers can execute arbitrary OS commands via crafted HTTP requests or CLI commands, enabling full compromise of the device. Affected versions (8.0.0–8.0.1, 7.6.0–7.6.5, 7.4.0–7.4.10, 7.2.0–7.2.11, 7.0.0–7.0.11) are widely deployed, posing significant risks to enterprise environments.
+    CVE-2025-10571 is a critical authentication bypass vulnerability in ABB Ability Edgenius, an industrial edge computing and management platform. Due to improper access controls, an attacker on the adjacent network can directly interact with the Edgenius Management Portal and execute privileged operations without authentication. This allows attackers to install, modify, or uninstall software packages, reconfigure systems, or take control of edge nodes within an industrial environment.
 
-    [:octicons-arrow-right-24: View Full Details](Week47/fortiwebzero.md)
+    [:octicons-arrow-right-24: View Full Details](Week48/abb.md)
 
--   ![Lynx+ Gateway](Week47/images/lynx.png)
-    :material-lock-alert:{ .lg .middle } **Critical Lynx+ Gateway Vulnerabilities (CVE-2025-55034, CVE-2025-58083, CVE-2025-59780, CVE-2025-62765)**
+-   ![Oracle Identity Manager](Week48/images/oracle.png)
+    :material-shield-lock:{ .lg .middle } **Critical Oracle Identity Manager Authentication Bypass (CVE-2025-61757)**
 
-    **Unauthorized Access & Info Disclosure**{.cve-chip}  
-    **CVSS 9.2 Critical**{.cve-chip}  
+    **Authentication Bypass**{.cve-chip}  
+    **Network Attack Vector**{.cve-chip}  
     ---------------------------------
 
-    Multiple flaws in General Industrial Controls Lynx+ Gateway allow a remote, unauthenticated attacker to brute‑force weak passwords, reset devices without authentication, retrieve sensitive configuration data, and capture plaintext credentials over the network. Affected versions (R08, V03, V05, V18) are widely deployed in OT environments, making coordinated attacks and lateral movement into industrial networks a serious risk.
+    CVE-2025-61757 is a critical authentication bypass vulnerability in Oracle Identity Manager (OIM) REST WebServices, part of Oracle Fusion Middleware. Due to a logic flaw, certain sensitive API endpoints can be accessed without authentication, allowing attackers to invoke privileged identity management functions over the network. Because OIM controls the authentication and provisioning of enterprise accounts, exploitation can result in complete identity takeover across the environment.
 
-    [:octicons-arrow-right-24: View Full Details](Week47/lynx.md)
+    [:octicons-arrow-right-24: View Full Details](Week48/oracle.md)
 
 </div>

@@ -8,101 +8,84 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![Lighthouse PhaaS Phishing Operation](Week46/images/Lighthousemap.png)
-    :material-security-network:{ .lg .middle } __Lighthouse Phishing-as-a-Service (PhaaS) Operation__
+-   ![FortiWeb Exploitation](Week47/images/fortiwebzero.png)
+    :material-security:{ .lg .middle } **Critical FortiWeb Exploitation (CVE-2025-58034)**
 
-    **Phishing-as-a-Service (PhaaS)**{.cve-chip}
-    **Critical Global Smishing Campaign**{.cve-chip}
-    ------------------------------------------------
+    **OS Command Injection**{.cve-chip}  
+    **CVSS 7.2 High**{.cve-chip}  
+    ---------------------------------
 
-    Google filed suit in Nov 2025 to dismantle *Lighthouse* — a China-linked PhaaS that powered mass SMS (“smishing”) campaigns, spun up ~200k phishing sites in weeks, and impersonated 400+ brands to steal millions of payment/credential records worldwide. Legal injunctions, domain takedowns, and cross-provider coordination were pursued to disrupt the service.
-    [:octicons-arrow-right-24: View Full Details](Week46/Lighthouse.md)
+    Fortinet’s FortiWeb Web Application Firewall (WAF) is vulnerable to an authenticated OS command injection flaw (**CVE-2025-58034**). Attackers can execute arbitrary OS commands via crafted HTTP requests or CLI commands, enabling full compromise of the device. Affected versions (8.0.0–8.0.1, 7.6.0–7.6.5, 7.4.0–7.4.10, 7.2.0–7.2.11, 7.0.0–7.0.11) are widely deployed, posing significant risks to enterprise environments.
 
+    [:octicons-arrow-right-24: View Full Details](Week47/fortiwebzero.md)
 
--   ![Actively Exploited Windows Kernel Zero-Day](Week46/images/kernel.png)
-    :material-microsoft-windows:{ .lg .middle } __Actively Exploited Windows Kernel Zero-Day and Critical Zero-Click Bugs__
+-   ![Lynx+ Gateway](Week47/images/lynx.png)
+    :material-lock-alert:{ .lg .middle } **Critical Lynx+ Gateway Vulnerabilities (CVE-2025-55034, CVE-2025-58083, CVE-2025-59780, CVE-2025-62765)**
 
-    **Zero-Day Exploited**{.cve-chip}
-    **Critical Severity**{.cve-chip}
-    ---
-    Actively exploited Windows Kernel zero-day (CVE-2025-62215) and multiple critical zero-click vulnerabilities in GDI+ and Kerberos reported and patched in Microsoft’s November 2025 update. Exploitation can result in SYSTEM privilege escalation, remote code execution, or full domain compromise in enterprise networks. Immediate patching is strongly advised.
+    **Unauthorized Access & Info Disclosure**{.cve-chip}  
+    **CVSS 9.2 Critical**{.cve-chip}  
+    ---------------------------------
 
-    [:octicons-arrow-right-24: View Full Details](Week46/kernel.md)
+    Multiple flaws in General Industrial Controls Lynx+ Gateway allow a remote, unauthenticated attacker to brute‑force weak passwords, reset devices without authentication, retrieve sensitive configuration data, and capture plaintext credentials over the network. Affected versions (R08, V03, V05, V18) are widely deployed in OT environments, making coordinated attacks and lateral movement into industrial networks a serious risk.
 
--   ![Whisper Leak LLM Side-Channel Attack](Week46/images/whisper.png)
-    :material-network:{ .lg .middle } **Whisper Leak — LLM Side‑Channel Attack**
+    [:octicons-arrow-right-24: View Full Details](Week47/lynx.md)
 
-    **Traffic Metadata Leak**{.cve-chip}
-    **High Privacy Risk**{.cve-chip}
+-   ![Microsoft Graphics Component](Week47/images/ms-gfx.png)
+    :material-microsoft:{ .lg .middle } **Critical Microsoft Graphics Component Heap Buffer Overflow (CVE-2025-60724)**
+
+    **Remote Code Execution**{.cve-chip}  
+    **CVSS 9.8 Critical**{.cve-chip}  
+    ---------------------------------
+
+    A heap-based buffer overflow in the Microsoft Graphics Component (GDI+) allows a **remote, unauthenticated attacker** to execute arbitrary code over a network. The vulnerability is triggered when the system processes a specially crafted graphics file such as a metafile (WMF/EMF). It affects both desktop and server environments, and in some cases **does not require user interaction**.
+
+    [:octicons-arrow-right-24: View Full Details](Week47/ms-gfx.md)
+
+-   ![Google Chrome V8 Zero-Day](Week47/images/chrome-v8.png)
+    :material-google:{ .lg .middle } **Critical Google Chrome V8 Engine Zero-Day (CVE-2025-13223)**
+
+    **Remote Code Execution**{.cve-chip}  
+    **CVSS 9.8 Critical**{.cve-chip}  
+    ---------------------------------
+
+    A **zero-day vulnerability** in Google Chrome’s V8 JavaScript engine allows **remote attackers** to execute arbitrary code on affected systems. The flaw is triggered by **maliciously crafted web content** that can bypass Chrome’s security mechanisms. Exploitation can lead to **full compromise of the browser process**, potentially allowing attackers to execute code in the context of the logged-in user.  
+
+    Users should **update Chrome immediately** to the latest patched version to mitigate the risk.
+
+    [:octicons-arrow-right-24: View Full Details](Week47/chrome-v8.md)
+
+-   ![IBM AIX NIM Vulnerabilities](Week47/images/aix.png)
+    :material-server-security:{ .lg .middle } **Critical IBM AIX NIM Remote Code Execution (CVE-2025-36250)**
+
+    **Remote Code Execution**{.cve-chip}
+    **CVSS 10.0 Critical**{.cve-chip}
+    ---------------------------------
+
+    A critical vulnerability (CVE-2025-36250) in IBM AIX’s Network Installation Manager (NIM) allows **unauthenticated remote code execution** due to improper process controls in the *nimesis* service. Combined with related flaws (CVE-2025-36251, CVE-2025-36096, CVE-2025-36236), attackers can **execute commands remotely**, **steal NIM private keys**, and **write arbitrary files via directory traversal**, enabling full compromise of AIX and VIOS systems.
+    Immediate patching of all AIX/VIOS installations and rotation of NIM keys is critical to prevent exploitation.
+
+    [:octicons-arrow-right-24: View Full Details](Week47/aix.md)
+
+-   ![D-Link DIR-816L Buffer Overflow](Week47/images/dlink.png)
+    :material-alert-decagram:{ .lg .middle } **D-Link DIR-816L Stack-Based Buffer Overflow (CVE-2025-13189)**
+
+    **Stack Buffer Overflow**{.cve-chip}  
+    **High Severity**{.cve-chip}
     --------------------------------
 
-    Whisper Leak is a new side‑channel attack that infers conversation topics (and sometimes sensitive attributes) from encrypted streaming LLM traffic by analyzing packet sizes and timing. Affects many cloud streaming LLM APIs — immediate attention recommended for privacy‑sensitive use cases.
+    A high-severity vulnerability (CVE-2025-13189) in the D-Link DIR-816L router allows remote attackers to trigger a **stack-based buffer overflow** via crafted `SERVER_ID` or `HTTP_SID` parameters in the `gena.cgi` script. Exploitation can lead to **remote code execution**, device takeover, or denial-of-service. The router is **end-of-life**, and **no security patch will be released**.
 
-    [:octicons-arrow-right-24: View Full Details](Week46/whisper.md)
+    [:octicons-arrow-right-24: View Full Details](Week47/dlink.md)
 
--   ![ClickFix Hospitality Phishing](Week46/images/hotel.png)
-    :material-card:{ .lg .middle }__ClickFix Hospitality Phishing Campaign (a.k.a. “I Paid Twice” campaign)__
+-   ![Fortinet FortiWeb Authentication Bypass](Week47/images/fortiweb.png)
+    :material-shield-lock:{ .lg .middle } **Fortinet FortiWeb Authentication Bypass (CVE-2025-64446)**
 
-    **Hospitality Phishing / Booking Impersonation**{.cve-chip}
-    **Infostealer / RAT Delivery**{.cve-chip}
-    ---
-    The ClickFix campaign targets hotels with spear‑phishing emails impersonating Booking.com. Staff who follow the lure run a clipboard/PowerShell payload that installs infostealers and RATs, leading to credential theft, booking compromise, and secondary phishing against guests.
-    [:octicons-arrow-right-24: View Full Details](Week46/clickfix.md)
-
--   ![Delhi Airport GPS Spoofing Crisis](Week46/images/delhi.png)
-    :material-airplane-alert:{ .lg .middle } __Delhi Airport GPS Spoofing Crisis__
-
-    **GPS Spoofing**{.cve-chip}
-    **Critical Aviation Disruption**{.cve-chip}
-    ---
-    Severe GPS spoofing at Delhi airport caused fake signals, misleading aircraft navigation and leading to positional confusion, diverted flights, delays, and manual air traffic control. Safety risk extended to over 400 flights in one week. Urgent mitigation included ILS upgrades, regulatory action, and GNSS redundancy.
-    [:octicons-arrow-right-24: View Full Details](Week46/delhi.md)
-
--   ![Multiple Vulnerabilities in Apple Products](Week46/images/apple.png)
-    :material-apple:{ .lg .middle } __Multiple Vulnerabilities in Apple Products__
-
-    **Multiple Vulnerabilities**{.cve-chip}
-    **Critical Severity**{.cve-chip}
-    ---
-    Multiple critical vulnerabilities disclosed and patched in iOS, iPadOS, macOS, watchOS, tvOS, visionOS, and Safari. Exploitation can lead to device compromise, privacy violations, information leakage, and remote code execution. Update to latest versions immediately.
-    [:octicons-arrow-right-24: View Full Details](Week46/apple.md)
-
--   ![ABB FLXeon Controllers Vulnerabilities](Week46/images/abb-fbxi.png)
-    :material-factory:{ .lg .middle } __ABB FLXeon Controllers Vulnerabilities__
-
-    **Multiple Vulnerabilities**{.cve-chip}
-    **Critical Severity**{.cve-chip}
-    **Remote Code Execution**{.cve-chip}
-    ---
-    Multiple high-severity vulnerabilities—including hard-coded credentials, improper input validation, weak password hashing, and file path manipulation—impact ABB FLXeon series controllers (FBXi, FBVi, FBTi, CBXi) running firmware version 9.3.5 and earlier. Attackers may achieve full system compromise, code execution, or disrupt industrial operations. Firmware update and strict access controls are urgently advised.
-    [:octicons-arrow-right-24: View Full Details](Week46/abb-fbxi.md)
-
--   ![Samsung Mobile Zero-Day Exploited to Deploy LANDFALL Spyware](Week46/images/samsung-spyware.png)
-
-    :material-cellphone:{ .lg .middle } **LANDFALL Android Spyware — Samsung Galaxy Zero‑Day Campaign**
-
-    **CVE-2025-21042**{.cve-chip}
-    **Full device takeover**{.cve-chip}
-    **Persistent surveillance**{.cve-chip}
-    --------------------------------------
-
-    A previously unknown Android spyware family, **LANDFALL**, exploited a zero‑day in Samsung's image decoder (`libimagecodec.quram.so`) to achieve remote code execution via crafted DNG images. Targets included Samsung Galaxy devices in Iraq, Iran, Turkey, and Morocco. Patch with April 2025 security update.
-
-    [:octicons-arrow-right-24: View Full Details](Week46/samsung-spyware.md)
-
-
--   ![Cisco Unified Contact Center Express (Unified CCX) Vulnerabilities](Week46/images/cisco-ccx.png)
-
-    :material-lock-alert:{ .lg .middle } **Cisco Unified Contact Center Express (Unified CCX) Critical Vulnerabilities**
-
-    **CVE-2025-20354**{.cve-chip}
-    **CVE-2025-20358**{.cve-chip}
-    **Remote Code Execution**{.cve-chip}
     **Authentication Bypass**{.cve-chip}
-    ------------------------------------
+    **Critical Severity**{.cve-chip}
+    --------------------------------
 
-    Cisco disclosed two critical vulnerabilities in its **Unified Contact Center Express (Unified CCX)** appliance that could allow remote attackers to execute arbitrary commands or gain administrative control without authentication. The flaws reside in the **Java RMI process** and the **CCX Editor authentication flow**. Cisco released fixed versions **12.5 SU3 ES07** and **15.0 ES01**. No exploitation has been observed in the wild at publication time.
+    A critical authentication bypass vulnerability (CVE-2025-64446) in Fortinet FortiWeb is being actively exploited in the wild. Attackers abuse a path traversal flaw and a crafted CGIINFO header to impersonate the built-in admin account, create rogue administrator users, and gain persistent full control over the Web Application Firewall (WAF). Immediate patching is mandatory to prevent compromise of network perimeter defenses.
 
-    [:octicons-arrow-right-24: View Full Details](Week46/cisco-ccx.md)
+    [:octicons-arrow-right-24: View Full Details](Week47/fortiweb.md)
 
 </div>

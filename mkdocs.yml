@@ -123,3 +123,6 @@ nav:
             - "Google Chrome V8 Zero-Day – CVE-2025-13223": Week47/chrome-v8.md
             - "Lynx+ Gateway Critical Vulnerabilities": Week47/lynx.md
             - "FortiWeb OS Command Injection (CVE-2025-58034)": Week47/fortiwebzero.md
+         - "week48":
+            - "ABB Ability Edgenius – Authentication Bypass (CVE-2025-10571)": Week48/abb.md
+            - "Oracle Fusion Middleware – Missing Authentication for Critical Function (CVE-2025-61757)": Week48/oracle.md
