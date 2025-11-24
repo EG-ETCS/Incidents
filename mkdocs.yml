@@ -126,3 +126,5 @@ nav:
          - "week48":
             - "ABB Ability Edgenius – Authentication Bypass (CVE-2025-10571)": Week48/abb.md
             - "Oracle Fusion Middleware – Missing Authentication for Critical Function (CVE-2025-61757)": Week48/oracle.md
+            - "China-Linked APT31 Stealth Cyberattacks on Russian IT – Using Cloud Services": Week48/apt31.md
+            - "Oracle EBS Zero-Day Exploitation – CVE-2025-61882": Week48/oracle-ebs.md
