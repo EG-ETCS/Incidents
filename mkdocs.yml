@@ -130,3 +130,4 @@ nav:
             - "Oracle EBS Zero-Day Exploitation – CVE-2025-61882": Week48/oracle-ebs.md
             - "CISA Warning: Spyware Campaigns Targeting Messaging App Users": Week48/spyware.md
             - "Festo Compact Vision System – Insecure Configuration Vulnerabilities": Week48/festo.md
+            - "ShadowV2 IoT Botnet Opportunistic Attack During AWS Outage": Week48/shadowV2.md
