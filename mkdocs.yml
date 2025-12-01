@@ -131,3 +131,7 @@ nav:
             - "CISA Warning: Spyware Campaigns Targeting Messaging App Users": Week48/spyware.md
             - "Festo Compact Vision System – Insecure Configuration Vulnerabilities": Week48/festo.md
             - "ShadowV2 IoT Botnet Opportunistic Attack During AWS Outage": Week48/shadowV2.md
+         - "week49":
+            - "node-forge ASN.1 Validation Bypass Vulnerability": Week49/forge.md
+            - "Contagious Interview (2025 npm-registry wave)": Week49/npm.md
+

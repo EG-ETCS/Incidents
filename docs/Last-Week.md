@@ -8,84 +8,81 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![FortiWeb Exploitation](Week47/images/fortiwebzero.png)
-    :material-security:{ .lg .middle } **Critical FortiWeb Exploitation (CVE-2025-58034)**
+-   ![ShadowV2 Botnet](Week48/images/shadowV2.png)
+    :material-robot-angry:{ .lg .middle } **ShadowV2 IoT Botnet Opportunistic Attack During AWS Outage**
 
-    **OS Command Injection**{.cve-chip}  
-    **CVSS 7.2 High**{.cve-chip}  
+    **IoT Botnet**{.cve-chip}  
+    **Global Attack**{.cve-chip}  
     ---------------------------------
 
-    Fortinet’s FortiWeb Web Application Firewall (WAF) is vulnerable to an authenticated OS command injection flaw (**CVE-2025-58034**). Attackers can execute arbitrary OS commands via crafted HTTP requests or CLI commands, enabling full compromise of the device. Affected versions (8.0.0–8.0.1, 7.6.0–7.6.5, 7.4.0–7.4.10, 7.2.0–7.2.11, 7.0.0–7.0.11) are widely deployed, posing significant risks to enterprise environments.
+    ShadowV2 is a Mirai-derived botnet that exploited the global AWS outage (Oct 2025) to compromise vulnerable IoT devices worldwide, including routers, NAS, and DVR systems. The attack affected multiple regions: **North & South America, Europe, Middle East & Africa (including Egypt), and Asia**. Infected devices joined a DDoS-capable botnet by exploiting unpatched vulnerabilities in D-Link, TP-Link, DD-WRT, DigiEver, and TBK DVR devices, many of which are end-of-life with no vendor patches available.
 
-    [:octicons-arrow-right-24: View Full Details](Week47/fortiwebzero.md)
+    [:octicons-arrow-right-24: View Full Details](Week48/shadowV2.md)
 
--   ![Lynx+ Gateway](Week47/images/lynx.png)
-    :material-lock-alert:{ .lg .middle } **Critical Lynx+ Gateway Vulnerabilities (CVE-2025-55034, CVE-2025-58083, CVE-2025-59780, CVE-2025-62765)**
+-   ![CISA Spyware Warning](Week48/images/spyware.png)
+    :material-cellphone-lock:{ .lg .middle } **CISA Warning: Spyware Campaigns Targeting Messaging App Users**
 
-    **Unauthorized Access & Info Disclosure**{.cve-chip}  
-    **CVSS 9.2 Critical**{.cve-chip}  
+    **Commercial Spyware**{.cve-chip}  
+    **Zero-Click Exploits**{.cve-chip}  
     ---------------------------------
 
-    Multiple flaws in General Industrial Controls Lynx+ Gateway allow a remote, unauthenticated attacker to brute‑force weak passwords, reset devices without authentication, retrieve sensitive configuration data, and capture plaintext credentials over the network. Affected versions (R08, V03, V05, V18) are widely deployed in OT environments, making coordinated attacks and lateral movement into industrial networks a serious risk.
+    CISA warns that multiple cyber-threat actors are actively leveraging commercial spyware to target users of mobile messaging applications (e.g., WhatsApp, Signal). They use advanced methods — social engineering, zero-click exploits, impersonation — to deliver spyware and gain unauthorized access to victims' messaging apps and devices. Known vulnerabilities include **CVE-2025-55177**, **CVE-2025-43300**, and **CVE-2025-21042**, affecting both iOS and Android platforms.
 
-    [:octicons-arrow-right-24: View Full Details](Week47/lynx.md)
+    [:octicons-arrow-right-24: View Full Details](Week48/spyware.md)
 
--   ![Microsoft Graphics Component](Week47/images/ms-gfx.png)
-    :material-microsoft:{ .lg .middle } **Critical Microsoft Graphics Component Heap Buffer Overflow (CVE-2025-60724)**
+-   ![Festo ICS Vulnerability](Week48/images/festo.png)
+    :material-cog-outline:{ .lg .middle } **Festo Compact Vision System – Insecure Configuration Vulnerabilities**
+
+    **Exposure of Resources**{.cve-chip}  
+    **ICS/OT Systems**{.cve-chip}  
+    ---------------------------------
+
+    CISA warns that certain Festo products — **Compact Vision System**, **Control Block**, **Controller**, and **Operator Unit** — contain vulnerabilities related to insecure configuration or exposure of resources. Internal resources (configuration interfaces, control endpoints, services) are exposed without proper authentication or access control, creating a weakness that attackers could exploit remotely to gain unauthorized access or control over critical industrial control systems.
+
+    [:octicons-arrow-right-24: View Full Details](Week48/festo.md)
+
+-   ![APT31 Campaign](Week48/images/apt31.png)
+    :material-cloud-alert:{ .lg .middle } **China-Linked APT31 Stealth Cyberattacks on Russian IT Using Cloud Services**
+
+    **State-Sponsored Espionage**{.cve-chip}  
+    **Multi-Year Campaign**{.cve-chip}  
+    ---------------------------------
+
+    APT31 (a China-linked threat group) conducted a **multi-year cyber espionage campaign** targeting the Russian IT sector. They used legitimate cloud services (notably **Yandex Cloud** and **Microsoft OneDrive**) to blend malicious traffic with normal traffic, enabling long-term persistence and data exfiltration. They also used encrypted payloads hidden in social media, and timed attacks during weekends and holidays to lower detection risk.
+
+    [:octicons-arrow-right-24: View Full Details](Week48/apt31.md)
+
+-   ![Oracle EBS Zero-Day](Week48/images/oracle-ebs.png)
+    :material-database-alert:{ .lg .middle } **Critical Oracle EBS Zero-Day Exploitation (CVE-2025-61882)**
 
     **Remote Code Execution**{.cve-chip}  
-    **CVSS 9.8 Critical**{.cve-chip}  
+    **Active Exploitation**{.cve-chip}  
     ---------------------------------
 
-    A heap-based buffer overflow in the Microsoft Graphics Component (GDI+) allows a **remote, unauthenticated attacker** to execute arbitrary code over a network. The vulnerability is triggered when the system processes a specially crafted graphics file such as a metafile (WMF/EMF). It affects both desktop and server environments, and in some cases **does not require user interaction**.
+    The vulnerability resides in the Oracle Concurrent Processing component (BI Publisher Integration) of Oracle E-Business Suite (EBS). It allows an attacker with network access (no credentials, no user interaction) to execute arbitrary code on the system. The flaw is being **actively exploited in the wild** by threat actors (including those using the **Cl0p brand**) in extortion and data-theft campaigns targeting global enterprises.
 
-    [:octicons-arrow-right-24: View Full Details](Week47/ms-gfx.md)
+    [:octicons-arrow-right-24: View Full Details](Week48/oracle-ebs.md)
 
--   ![Google Chrome V8 Zero-Day](Week47/images/chrome-v8.png)
-    :material-google:{ .lg .middle } **Critical Google Chrome V8 Engine Zero-Day (CVE-2025-13223)**
+-   ![ABB Ability Edgenius](Week48/images/abb.png)
+    :material-factory:{ .lg .middle } **Critical ABB Ability Edgenius Authentication Bypass (CVE-2025-10571)**
 
-    **Remote Code Execution**{.cve-chip}  
-    **CVSS 9.8 Critical**{.cve-chip}  
+    **Authentication Bypass**{.cve-chip}  
+    **Adjacent Network Access**{.cve-chip}  
     ---------------------------------
 
-    A **zero-day vulnerability** in Google Chrome’s V8 JavaScript engine allows **remote attackers** to execute arbitrary code on affected systems. The flaw is triggered by **maliciously crafted web content** that can bypass Chrome’s security mechanisms. Exploitation can lead to **full compromise of the browser process**, potentially allowing attackers to execute code in the context of the logged-in user.  
+    CVE-2025-10571 is a critical authentication bypass vulnerability in ABB Ability Edgenius, an industrial edge computing and management platform. Due to improper access controls, an attacker on the adjacent network can directly interact with the Edgenius Management Portal and execute privileged operations without authentication. This allows attackers to install, modify, or uninstall software packages, reconfigure systems, or take control of edge nodes within an industrial environment.
 
-    Users should **update Chrome immediately** to the latest patched version to mitigate the risk.
+    [:octicons-arrow-right-24: View Full Details](Week48/abb.md)
 
-    [:octicons-arrow-right-24: View Full Details](Week47/chrome-v8.md)
+-   ![Oracle Identity Manager](Week48/images/oracle.png)
+    :material-shield-lock:{ .lg .middle } **Critical Oracle Identity Manager Authentication Bypass (CVE-2025-61757)**
 
--   ![IBM AIX NIM Vulnerabilities](Week47/images/aix.png)
-    :material-server-security:{ .lg .middle } **Critical IBM AIX NIM Remote Code Execution (CVE-2025-36250)**
-
-    **Remote Code Execution**{.cve-chip}
-    **CVSS 10.0 Critical**{.cve-chip}
+    **Authentication Bypass**{.cve-chip}  
+    **Network Attack Vector**{.cve-chip}  
     ---------------------------------
 
-    A critical vulnerability (CVE-2025-36250) in IBM AIX’s Network Installation Manager (NIM) allows **unauthenticated remote code execution** due to improper process controls in the *nimesis* service. Combined with related flaws (CVE-2025-36251, CVE-2025-36096, CVE-2025-36236), attackers can **execute commands remotely**, **steal NIM private keys**, and **write arbitrary files via directory traversal**, enabling full compromise of AIX and VIOS systems.
-    Immediate patching of all AIX/VIOS installations and rotation of NIM keys is critical to prevent exploitation.
+    CVE-2025-61757 is a critical authentication bypass vulnerability in Oracle Identity Manager (OIM) REST WebServices, part of Oracle Fusion Middleware. Due to a logic flaw, certain sensitive API endpoints can be accessed without authentication, allowing attackers to invoke privileged identity management functions over the network. Because OIM controls the authentication and provisioning of enterprise accounts, exploitation can result in complete identity takeover across the environment.
 
-    [:octicons-arrow-right-24: View Full Details](Week47/aix.md)
-
--   ![D-Link DIR-816L Buffer Overflow](Week47/images/dlink.png)
-    :material-alert-decagram:{ .lg .middle } **D-Link DIR-816L Stack-Based Buffer Overflow (CVE-2025-13189)**
-
-    **Stack Buffer Overflow**{.cve-chip}  
-    **High Severity**{.cve-chip}
-    --------------------------------
-
-    A high-severity vulnerability (CVE-2025-13189) in the D-Link DIR-816L router allows remote attackers to trigger a **stack-based buffer overflow** via crafted `SERVER_ID` or `HTTP_SID` parameters in the `gena.cgi` script. Exploitation can lead to **remote code execution**, device takeover, or denial-of-service. The router is **end-of-life**, and **no security patch will be released**.
-
-    [:octicons-arrow-right-24: View Full Details](Week47/dlink.md)
-
--   ![Fortinet FortiWeb Authentication Bypass](Week47/images/fortiweb.png)
-    :material-shield-lock:{ .lg .middle } **Fortinet FortiWeb Authentication Bypass (CVE-2025-64446)**
-
-    **Authentication Bypass**{.cve-chip}
-    **Critical Severity**{.cve-chip}
-    --------------------------------
-
-    A critical authentication bypass vulnerability (CVE-2025-64446) in Fortinet FortiWeb is being actively exploited in the wild. Attackers abuse a path traversal flaw and a crafted CGIINFO header to impersonate the built-in admin account, create rogue administrator users, and gain persistent full control over the Web Application Firewall (WAF). Immediate patching is mandatory to prevent compromise of network perimeter defenses.
-
-    [:octicons-arrow-right-24: View Full Details](Week47/fortiweb.md)
+    [:octicons-arrow-right-24: View Full Details](Week48/oracle.md)
 
 </div>

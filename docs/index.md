@@ -8,16 +8,26 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![ShadowV2 Botnet](Week48/images/shadowV2.png)
-    :material-robot-angry:{ .lg .middle } **ShadowV2 IoT Botnet Opportunistic Attack During AWS Outage**
+-   ![node-forge ASN.1](Week49/images/forge.png)
+    :material-lock:{ .lg .middle } **node-forge ASN.1 Validation Bypass (CVE-2025-12816)**
 
-    **IoT Botnet**{.cve-chip}  
-    **Global Attack**{.cve-chip}  
+    **Cryptographic Verification Bypass**{.cve-chip}  
+    **Integrity Compromise**{.cve-chip}  
     ---------------------------------
 
-    ShadowV2 is a Mirai-derived botnet that exploited the global AWS outage (Oct 2025) to compromise vulnerable IoT devices worldwide, including routers, NAS, and DVR systems. The attack affected multiple regions: **North & South America, Europe, Middle East & Africa (including Egypt), and Asia**. Infected devices joined a DDoS-capable botnet by exploiting unpatched vulnerabilities in D-Link, TP-Link, DD-WRT, DigiEver, and TBK DVR devices, many of which are end-of-life with no vendor patches available.
+    A desynchronization bug in node-forge's ASN.1 validator (asn1.validate) can allow malformed ASN.1 structures (e.g., PKCS#12, certificates) to be treated as valid, bypassing MAC/signature/certificate checks and risking forged credentials or package tampering.
 
-    [:octicons-arrow-right-24: View Full Details](Week48/shadowV2.md)
-    [:octicons-arrow-right-24: View Full Details](Week48/festo.md)
+    [:octicons-arrow-right-24: View Full Details](Week49/forge.md)
+
+-   ![Contagious Interview npm](Week49/images/npm.png)
+    :material-package:{ .lg .middle } **Contagious Interview (2025 npm-registry wave)**
+
+    **Supply-Chain / npm Registry Campaign**{.cve-chip}  
+    **Loader Malware (OtterCookie / BeaverTail merge)**{.cve-chip}  
+    ---------------------------------
+
+    197 malicious npm packages added to the registry (≈31,000 downloads). Packages act as loaders that fetch OtterCookie payloads from Vercel/GitHub after developers install or run them, compromising developer machines and CI pipelines.
+
+    [:octicons-arrow-right-24: View Full Details](Week49/npm.md)
 
 </div>
