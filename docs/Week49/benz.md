@@ -31,22 +31,22 @@ According to the claim by threat actor **'zestix'**, about **18.3 GB of data** w
 ### Claimed Data Contents
 
 1. **Internal Legal Documents**:
-   - Active and closed litigation files across 48 U.S. states
-   - Defensive strategies
-   - Settlement policies
+    - Active and closed litigation files across 48 U.S. states
+    - Defensive strategies
+    - Settlement policies
 
 2. **Customer Data / PII**:
-   - Personal identifiable information
-   - Warranty claim data
+    - Personal identifiable information
+    - Warranty claim data
 
 3. **Vendor Information**:
-   - Vendor forms
-   - Billing rates
-   - Financial data
+    - Vendor forms
+    - Billing rates
+    - Financial data
 
 4. **Regulatory Documents**:
-   - Documents related to Magnuson-Moss Warranty Act
-   - Song-Beverly Consumer Warranty Act compliance
+    - Documents related to Magnuson-Moss Warranty Act
+    - Song-Beverly Consumer Warranty Act compliance
 
 ## Attack Scenario
 
@@ -55,8 +55,8 @@ According to the claim by threat actor **'zestix'**, about **18.3 GB of data** w
 2. **Dark Web Posting**: The data was posted for sale on a dark-web forum for USD 5,000.
 
 3. **Data Exposure**: The breach supposedly compromises:
-   - MBUSA's legal infrastructure (defense strategies, litigation history, vendor data)
-   - Customer PII
+    - MBUSA's legal infrastructure (defense strategies, litigation history, vendor data)
+    - Customer PII
 
 ## Impact Assessment
 

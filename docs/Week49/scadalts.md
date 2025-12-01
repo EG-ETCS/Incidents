@@ -42,15 +42,15 @@ The vulnerability resides in the `Common.getHomeDir` function (in `ZIPProjectMan
 2. **Path Traversal**: Because of the path-traversal bug, the system writes or reads files outside the intended project directory.
 
 3. **File System Access**: Attacker gains access to:
-   - System configuration files
-   - Credentials
-   - Logs
-   - Other sensitive files on the server
+    - System configuration files
+    - Credentials
+    - Logs
+    - Other sensitive files on the server
 
 4. **Further Exploitation**: Once file system access is gained, attacker may:
-   - Further pivot
-   - Extract credentials or configs
-   - Compromise SCADA system integrity or availability
+    - Further pivot
+    - Extract credentials or configs
+    - Compromise SCADA system integrity or availability
 
 5. **Remote Execution**: No local privileges required — so if the SCADA server is exposed (Internet-connected / reachable), attacker can exploit from anywhere.
 

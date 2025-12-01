@@ -49,8 +49,8 @@ In September 2025, **TwoNet** attacked a honeypot configured to mimic a water-tr
 2. **Persistence**: Creation of a new user account named **"BARLATI"** for persistence.
 3. **Exploitation**: Exploitation of CVE-2021-26829 to inject malicious script.
 4. **Impact**:
-   - Defacement of the HMI login page (e.g., a pop-up "Hacked by Barlati")
-   - Modification of system settings to disable HMI logs and alarms
+    - Defacement of the HMI login page (e.g., a pop-up "Hacked by Barlati")
+    - Modification of system settings to disable HMI logs and alarms
 5. **Scope**: According to the report, they did not escalate privileges to the underlying host: all abuse stayed at the web-application layer (HMI).
 
 Because the target was a **honeypot (a decoy)**, it's unclear whether a real industrial facility has been compromised — but the behavior demonstrates that even "just" XSS can lead to meaningful OT impact if exploited.
