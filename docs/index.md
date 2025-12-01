@@ -8,7 +8,6 @@ hide:
 
 <div class="grid cards" markdown>
 
-<<<<<<< HEAD
 -   ![ShadowV2 Botnet](Week48/images/shadowV2.png)
     :material-robot-angry:{ .lg .middle } **ShadowV2 IoT Botnet Opportunistic Attack During AWS Outage**
 
@@ -41,6 +40,5 @@ hide:
     CISA warns that certain Festo products — **Compact Vision System**, **Control Block**, **Controller**, and **Operator Unit** — contain vulnerabilities related to insecure configuration or exposure of resources. Internal resources (configuration interfaces, control endpoints, services) are exposed without proper authentication or access control, creating a weakness that attackers could exploit remotely to gain unauthorized access or control over critical industrial control systems.
 
     [:octicons-arrow-right-24: View Full Details](Week48/festo.md)
->>>>>>> parent of 9ada367 (update 30/11)
 
 </div>
