@@ -134,4 +134,6 @@ nav:
          - "week49":
             - "node-forge ASN.1 Validation Bypass Vulnerability": Week49/forge.md
             - "Contagious Interview (2025 npm-registry wave)": Week49/npm.md
-
+            - "OpenPLC ScadaBR CVE-2021-26829 Active Exploitation": Week49/openplc.md
+            - "Scada-LTS Project Import Path Traversal – CVE-2025-13791": Week49/scadalts.md
+            - "Mercedes-Benz USA Breach Claim by Threat Actor 'zestix'": Week49/benz.md
