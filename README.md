@@ -14,7 +14,7 @@ This repository contains the documentation for Cybersecurity Fundamentals using 
 python -m pip install mkdocs
 python -m pip install pymdown-extensions
 python -m pip install mkdocs-material
-python -m pip install mkdocs-video mkdocs-pdf-export-plugin mkdocs-pdf
+pip install mkdocs-video mkdocs-pdf-export-plugin mkdocs-pdf
 python -m mkdocs --version
 ```
 
