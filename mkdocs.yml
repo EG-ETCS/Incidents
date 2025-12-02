@@ -137,3 +137,4 @@ nav:
             - "OpenPLC ScadaBR CVE-2021-26829 Active Exploitation": Week49/openplc.md
             - "Scada-LTS Project Import Path Traversal – CVE-2025-13791": Week49/scadalts.md
             - "Mercedes-Benz USA Breach Claim by Threat Actor 'zestix'": Week49/benz.md
+            - "OnSolve CodeRED Ransomware Attack": Week49/onsolve.md
