@@ -138,3 +138,5 @@ nav:
             - "Scada-LTS Project Import Path Traversal – CVE-2025-13791": Week49/scadalts.md
             - "Mercedes-Benz USA Breach Claim by Threat Actor 'zestix'": Week49/benz.md
             - "OnSolve CodeRED Ransomware Attack": Week49/onsolve.md
+            - "MuddyWater MuddyViper Backdoor Campaign": Week49/muddy.md
+            - "Hacking of ~120,000 IP Cameras in South Korea for Sale of Intimate Content": Week49/knpa.md
