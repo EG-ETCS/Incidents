@@ -8,26 +8,26 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![MuddyWater Campaign](Week49/images/muddy.png)
-    :material-shield-alert:{ .lg .middle } **MuddyWater MuddyViper Backdoor Campaign**
+-   ![GoldFactory](Week50/images/goldfactory.png)
+    :material-bank-transfer:{ .lg .middle } **GoldFactory Hits Southeast Asia with Modified Banking Apps Driving 11,000+ Infections**
 
-    **APT Campaign**{.cve-chip}  
-    **Iran-Aligned Threat Actor**{.cve-chip}  
+    **Modified Banking Apps**{.cve-chip}  
+    **Hooking Malware**{.cve-chip}  
     ---------------------------------
 
-    Iran-aligned APT MuddyWater launched a targeted espionage campaign against Israeli organizations and Egyptian critical infrastructure. The group deployed a new custom malware toolkit centered around **MuddyViper** backdoor, using memory-only loaders (Fooder disguised as Snake game), credential stealers (CE-Notes, LP-Notes, Blub), and reverse tunneling for data exfiltration. Initial access via spear-phishing with RMM tool installers. In some cases, MuddyWater acted as initial access broker for Lyceum/OilRig.
+    GoldFactory distributed modified versions of legitimate banking apps in Indonesia, Vietnam, and Thailand. Over **27 banking apps** were injected with malicious hooking code (FriHook, SkyHook, PineHook) that enables remote access, intercepts app logic, steals credentials, and views balances. Social engineering (vishing) tricks victims into side-loading fake apps. Two-stage infection uses dropper trojans (Gigabud, Remo, MMRat) followed by modified banking apps. **11,000+ documented infections** with ~63% targeting Indonesian users.
 
-    [:octicons-arrow-right-24: View Full Details](Week49/muddy.md)
+    [:octicons-arrow-right-24: View Full Details](Week50/goldfactory.md)
 
--   ![South Korea IP Cameras](Week49/images/knpa.png)
-    :material-cctv:{ .lg .middle } **Hacking of ~120,000 IP Cameras in South Korea for Sale of Intimate Content**
+-   ![Water Saci WhatsApp](Week50/images/watersaci.png)
+    :material-whatsapp:{ .lg .middle } **WhatsApp-Based Malware Campaign by Water Saci**
 
-    **Mass IP Camera Hack**{.cve-chip}  
-    **Privacy Violation**{.cve-chip}  
+    **Banking Trojan**{.cve-chip}  
+    **WhatsApp Worm**{.cve-chip}  
     ---------------------------------
 
-    Four individuals arrested by the Korean National Police Agency for hacking over **120,000 IP cameras** in private homes and commercial facilities. Attackers exploited weak/default passwords to access video feeds, producing hundreds of sexually exploitative videos (some involving minors) sold on foreign adult websites. One suspect hacked ~63,000 cameras and sold 545 videos; another hacked ~70,000 cameras and sold 648 videos. Payment received in cryptocurrency.
+    Sophisticated multi-stage campaign targeting Brazilian WhatsApp users. Attackers send malicious PDF or HTA attachments via WhatsApp from compromised contacts. If opened, triggers download of MSI installer + Python script that installs a banking trojan and auto-propagates to all contacts via WhatsApp Web (Selenium automation). Trojan monitors for Brazilian banking/crypto sites, creates fake overlays, performs keylogging, and screen capture. **Worm-like spread** through contact lists enables rapid, large-scale compromise.
 
-    [:octicons-arrow-right-24: View Full Details](Week49/knpa.md)
+    [:octicons-arrow-right-24: View Full Details](Week50/watersaci.md)
 
 </div>

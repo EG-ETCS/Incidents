@@ -8,81 +8,92 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![ShadowV2 Botnet](Week48/images/shadowV2.png)
-    :material-robot-angry:{ .lg .middle } **ShadowV2 IoT Botnet Opportunistic Attack During AWS Outage**
+-   ![MuddyWater Campaign](Week49/images/muddy.png)
+    :material-shield-alert:{ .lg .middle } **MuddyWater MuddyViper Backdoor Campaign**
 
-    **IoT Botnet**{.cve-chip}  
-    **Global Attack**{.cve-chip}  
+    **APT Campaign**{.cve-chip}  
+    **Iran-Aligned Threat Actor**{.cve-chip}  
     ---------------------------------
 
-    ShadowV2 is a Mirai-derived botnet that exploited the global AWS outage (Oct 2025) to compromise vulnerable IoT devices worldwide, including routers, NAS, and DVR systems. The attack affected multiple regions: **North & South America, Europe, Middle East & Africa (including Egypt), and Asia**. Infected devices joined a DDoS-capable botnet by exploiting unpatched vulnerabilities in D-Link, TP-Link, DD-WRT, DigiEver, and TBK DVR devices, many of which are end-of-life with no vendor patches available.
+    Iran-aligned APT MuddyWater launched a targeted espionage campaign against Israeli organizations and Egyptian critical infrastructure. The group deployed a new custom malware toolkit centered around **MuddyViper** backdoor, using memory-only loaders (Fooder disguised as Snake game), credential stealers (CE-Notes, LP-Notes, Blub), and reverse tunneling for data exfiltration. Initial access via spear-phishing with RMM tool installers. In some cases, MuddyWater acted as initial access broker for Lyceum/OilRig.
 
-    [:octicons-arrow-right-24: View Full Details](Week48/shadowV2.md)
+    [:octicons-arrow-right-24: View Full Details](Week49/muddy.md)
 
--   ![CISA Spyware Warning](Week48/images/spyware.png)
-    :material-cellphone-lock:{ .lg .middle } **CISA Warning: Spyware Campaigns Targeting Messaging App Users**
+-   ![South Korea IP Cameras](Week49/images/knpa.png)
+    :material-cctv:{ .lg .middle } **Hacking of ~120,000 IP Cameras in South Korea for Sale of Intimate Content**
 
-    **Commercial Spyware**{.cve-chip}  
-    **Zero-Click Exploits**{.cve-chip}  
+    **Mass IP Camera Hack**{.cve-chip}  
+    **Privacy Violation**{.cve-chip}  
     ---------------------------------
 
-    CISA warns that multiple cyber-threat actors are actively leveraging commercial spyware to target users of mobile messaging applications (e.g., WhatsApp, Signal). They use advanced methods — social engineering, zero-click exploits, impersonation — to deliver spyware and gain unauthorized access to victims' messaging apps and devices. Known vulnerabilities include **CVE-2025-55177**, **CVE-2025-43300**, and **CVE-2025-21042**, affecting both iOS and Android platforms.
+    Four individuals arrested by the Korean National Police Agency for hacking over **120,000 IP cameras** in private homes and commercial facilities. Attackers exploited weak/default passwords to access video feeds, producing hundreds of sexually exploitative videos (some involving minors) sold on foreign adult websites. One suspect hacked ~63,000 cameras and sold 545 videos; another hacked ~70,000 cameras and sold 648 videos. Payment received in cryptocurrency.
 
-    [:octicons-arrow-right-24: View Full Details](Week48/spyware.md)
+    [:octicons-arrow-right-24: View Full Details](Week49/knpa.md)
 
--   ![Festo ICS Vulnerability](Week48/images/festo.png)
-    :material-cog-outline:{ .lg .middle } **Festo Compact Vision System – Insecure Configuration Vulnerabilities**
+-   ![OnSolve CodeRED](Week49/images/onsolve.png)
+    :material-alert-circle:{ .lg .middle } **OnSolve CodeRED Ransomware Attack**
 
-    **Exposure of Resources**{.cve-chip}  
-    **ICS/OT Systems**{.cve-chip}  
+    **Ransomware Attack**{.cve-chip}  
+    **INC Ransom**{.cve-chip}  
     ---------------------------------
 
-    CISA warns that certain Festo products — **Compact Vision System**, **Control Block**, **Controller**, and **Operator Unit** — contain vulnerabilities related to insecure configuration or exposure of resources. Internal resources (configuration interfaces, control endpoints, services) are exposed without proper authentication or access control, creating a weakness that attackers could exploit remotely to gain unauthorized access or control over critical industrial control systems.
+    Crisis24's CodeRED emergency alert platform suffered a ransomware attack by INC Ransom, disrupting alert systems across multiple U.S. states. The legacy platform was compromised, exfiltrating user data (names, addresses, emails, phones, **plain-text passwords**) of hundreds of thousands of users. Municipalities lost emergency notification capabilities for floods, fires, evacuations, and other critical alerts. Ransom demand: USD $100,000. Legacy platform permanently decommissioned.
 
-    [:octicons-arrow-right-24: View Full Details](Week48/festo.md)
+    [:octicons-arrow-right-24: View Full Details](Week49/onsolve.md)
 
--   ![APT31 Campaign](Week48/images/apt31.png)
-    :material-cloud-alert:{ .lg .middle } **China-Linked APT31 Stealth Cyberattacks on Russian IT Using Cloud Services**
+-   ![OpenPLC ScadaBR](Week49/images/openplc.png)
+    :material-bug:{ .lg .middle } **OpenPLC ScadaBR CVE-2021-26829 Active Exploitation**
 
-    **State-Sponsored Espionage**{.cve-chip}  
-    **Multi-Year Campaign**{.cve-chip}  
+    **Stored XSS**{.cve-chip}  
+    **SCADA/HMI Compromise**{.cve-chip}  
     ---------------------------------
 
-    APT31 (a China-linked threat group) conducted a **multi-year cyber espionage campaign** targeting the Russian IT sector. They used legitimate cloud services (notably **Yandex Cloud** and **Microsoft OneDrive**) to blend malicious traffic with normal traffic, enabling long-term persistence and data exfiltration. They also used encrypted payloads hidden in social media, and timed attacks during weekends and holidays to lower detection risk.
+    Stored XSS vulnerability in OpenPLC ScadaBR's `system_settings.shtm` page (versions up to 1.12.4 on Windows, 0.9.1 on Linux). Actively exploited by TwoNet against honeypots mimicking water-treatment facilities. Attackers inject malicious JavaScript to manipulate HMI interfaces, disable logs/alarms, steal credentials, and create backdoor accounts—all at the web-application layer without host-level access.
 
-    [:octicons-arrow-right-24: View Full Details](Week48/apt31.md)
+    [:octicons-arrow-right-24: View Full Details](Week49/openplc.md)
 
--   ![Oracle EBS Zero-Day](Week48/images/oracle-ebs.png)
-    :material-database-alert:{ .lg .middle } **Critical Oracle EBS Zero-Day Exploitation (CVE-2025-61882)**
+-   ![Scada-LTS](Week49/images/scadalts.png)
+    :material-folder-alert:{ .lg .middle } **Scada-LTS Project Import Path Traversal (CVE-2025-13791)**
 
-    **Remote Code Execution**{.cve-chip}  
-    **Active Exploitation**{.cve-chip}  
+    **Path Traversal**{.cve-chip}  
+    **Remote Exploitation**{.cve-chip}  
     ---------------------------------
 
-    The vulnerability resides in the Oracle Concurrent Processing component (BI Publisher Integration) of Oracle E-Business Suite (EBS). It allows an attacker with network access (no credentials, no user interaction) to execute arbitrary code on the system. The flaw is being **actively exploited in the wild** by threat actors (including those using the **Cl0p brand**) in extortion and data-theft campaigns targeting global enterprises.
+    Path traversal vulnerability in Scada-LTS (up to 2.7.8.1) Project Import component. Malicious ZIP or crafted import requests can traverse outside intended directories, allowing remote attackers to read/write sensitive configuration files, credentials, and logs. Public exploit code available. Vendor reportedly unresponsive to disclosure.
 
-    [:octicons-arrow-right-24: View Full Details](Week48/oracle-ebs.md)
+    [:octicons-arrow-right-24: View Full Details](Week49/scadalts.md)
 
--   ![ABB Ability Edgenius](Week48/images/abb.png)
-    :material-factory:{ .lg .middle } **Critical ABB Ability Edgenius Authentication Bypass (CVE-2025-10571)**
+-   ![Mercedes-Benz USA](Week49/images/benz.png)
+    :material-file-document-alert:{ .lg .middle } **Mercedes-Benz USA Breach Claim by Threat Actor 'zestix'**
 
-    **Authentication Bypass**{.cve-chip}  
-    **Adjacent Network Access**{.cve-chip}  
+    **Data Breach Claim**{.cve-chip}  
+    **Legal & Customer Data**{.cve-chip}  
     ---------------------------------
 
-    CVE-2025-10571 is a critical authentication bypass vulnerability in ABB Ability Edgenius, an industrial edge computing and management platform. Due to improper access controls, an attacker on the adjacent network can directly interact with the Edgenius Management Portal and execute privileged operations without authentication. This allows attackers to install, modify, or uninstall software packages, reconfigure systems, or take control of edge nodes within an industrial environment.
+    Threat actor 'zestix' claims to have exfiltrated **18.3 GB of data** from Mercedes-Benz USA, including internal legal documents (litigation files across 48 U.S. states), customer PII, vendor forms, defensive strategies, billing rates, and warranty claim documents. The data is reportedly being sold on a dark-web forum for USD 5,000. **Breach claim remains unconfirmed** by MBUSA.
 
-    [:octicons-arrow-right-24: View Full Details](Week48/abb.md)
+    [:octicons-arrow-right-24: View Full Details](Week49/benz.md)
 
--   ![Oracle Identity Manager](Week48/images/oracle.png)
-    :material-shield-lock:{ .lg .middle } **Critical Oracle Identity Manager Authentication Bypass (CVE-2025-61757)**
+-   ![node-forge ASN.1](Week49/images/forge.png)
+    :material-lock:{ .lg .middle } **node-forge ASN.1 Validation Bypass (CVE-2025-12816)**
 
-    **Authentication Bypass**{.cve-chip}  
-    **Network Attack Vector**{.cve-chip}  
+    **Cryptographic Verification Bypass**{.cve-chip}  
+    **Integrity Compromise**{.cve-chip}  
     ---------------------------------
 
-    CVE-2025-61757 is a critical authentication bypass vulnerability in Oracle Identity Manager (OIM) REST WebServices, part of Oracle Fusion Middleware. Due to a logic flaw, certain sensitive API endpoints can be accessed without authentication, allowing attackers to invoke privileged identity management functions over the network. Because OIM controls the authentication and provisioning of enterprise accounts, exploitation can result in complete identity takeover across the environment.
+    A desynchronization bug in node-forge's ASN.1 validator (asn1.validate) can allow malformed ASN.1 structures (e.g., PKCS#12, certificates) to be treated as valid, bypassing MAC/signature/certificate checks and risking forged credentials or package tampering.
 
-    [:octicons-arrow-right-24: View Full Details](Week48/oracle.md)
+    [:octicons-arrow-right-24: View Full Details](Week49/forge.md)
+
+-   ![Contagious Interview npm](Week49/images/npm.png)
+    :material-package:{ .lg .middle } **Contagious Interview (2025 npm-registry wave)**
+
+    **Supply-Chain / npm Registry Campaign**{.cve-chip}  
+    **Loader Malware (OtterCookie / BeaverTail merge)**{.cve-chip}  
+    ---------------------------------
+
+    197 malicious npm packages added to the registry (≈31,000 downloads). Packages act as loaders that fetch OtterCookie payloads from Vercel/GitHub after developers install or run them, compromising developer machines and CI pipelines.
+
+    [:octicons-arrow-right-24: View Full Details](Week49/npm.md)
 
 </div>
