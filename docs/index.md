@@ -8,6 +8,17 @@ hide:
 
 <div class="grid cards" markdown>
 
+-   ![UDPGangster](Week50/images/muddyudp.png)
+    :material-network-off:{ .lg .middle } **UDPGangster Campaigns Target Multiple Countries**
+
+    **Windows Backdoor**{.cve-chip}  
+    **UDP-Based C2**{.cve-chip}  
+    ---------------------------------
+
+    MuddyWater (Iran-aligned APT) deploys UDPGangster backdoor using spear-phishing with malicious Word documents. Unusual **UDP-based C2** (port 1269) evades traditional detection. Extensive anti-analysis checks detect VMs, sandboxes, debuggers. Targets Turkey, Israel, Azerbaijan impersonating government entities. Supports remote command execution, file exfiltration, and payload deployment. Persistence via registry and %AppData%. **Block macro-enabled documents** and monitor unusual UDP traffic.
+
+    [:octicons-arrow-right-24: View Full Details](Week50/muddyudp.md)
+
 -   ![React2Shell](Week50/images/react2shell.png)
     :material-react:{ .lg .middle } **React2Shell (CVE-2025-55182)**
 
