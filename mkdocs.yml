@@ -140,7 +140,9 @@ nav:
             - "OnSolve CodeRED Ransomware Attack": Week49/onsolve.md
             - "MuddyWater MuddyViper Backdoor Campaign": Week49/muddy.md
             - "Hacking of ~120,000 IP Cameras in South Korea for Sale of Intimate Content": Week49/knpa.md
+      - "Dec":
          - "week50":
             - "GoldFactory Hits Southeast Asia with Modified Banking Apps Driving 11,000+ Infections": Week50/goldfactory.md
             - "WhatsApp-Based Malware Campaign by Water Saci": Week50/watersaci.md
-
+            - "Johnson Controls FX80 / FX90 Vulnerability (CVE-2025-43867)": Week50/johnson.md
+            - "React2Shell (CVE-2025-55182)": Week50/react2shell.md
