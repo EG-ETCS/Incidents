@@ -147,3 +147,5 @@ nav:
             - "Johnson Controls FX80 / FX90 Vulnerability (CVE-2025-43867)": Week50/johnson.md
             - "React2Shell (CVE-2025-55182)": Week50/react2shell.md
             - "UDPGangster Campaigns Target Multiple Countries": Week50/muddyudp.md
+            - "Android Malware Surge: FvncBot, SeedSnatcher, and Upgraded ClayRat": Week50/andSurge.md
+            - "ArrayOS AG VPN (CVE-2025-66644)": Week50/arrayos.md
