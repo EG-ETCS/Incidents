@@ -2329,6 +2329,52 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Week50/andSurge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Android Malware Surge: FvncBot, SeedSnatcher, and Upgraded ClayRat
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Week50/arrayos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ArrayOS AG VPN (CVE-2025-66644)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2401,6 +2447,24 @@
 <div><h1 id="this-weeks-security-incidents">This Week's Security Incidents</h1>
 <div class="grid cards">
 <ul>
+<li>
+<p><img alt="Android Malware" src="../Week50/images/andSurge.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M16.61 15.15c-.46 0-.84-.37-.84-.83s.38-.82.84-.82.84.36.84.82-.38.83-.84.83m-9.2 0c-.46 0-.84-.37-.84-.83s.38-.82.84-.82.83.36.83.82-.37.83-.83.83m9.5-5.01 1.67-2.88c.09-.17.03-.38-.13-.47-.17-.1-.38-.04-.45.13l-1.71 2.91A10.15 10.15 0 0 0 12 8.91c-1.53 0-3 .33-4.27.91L6.04 6.91a.334.334 0 0 0-.47-.13c-.17.09-.22.3-.13.47l1.66 2.88C4.25 11.69 2.29 14.58 2 18h20c-.28-3.41-2.23-6.3-5.09-7.86"></path></svg></span> <strong>Android Malware Surge: FvncBot, SeedSnatcher, and Upgraded ClayRat</strong></p>
+<p><strong class="cve-chip">Banking Trojan</strong><br>
+<strong class="cve-chip">Cryptocurrency Stealer</strong>  </p>
+<hr>
+<p>Three major Android malware strains circulating globally. <strong>FvncBot</strong> poses as Polish mBank app, abuses Accessibility Services for hidden VNC remote control and automated banking fraud. <strong>SeedSnatcher</strong> distributed via Telegram steals crypto seed phrases and intercepts SMS/OTP. <strong>Upgraded ClayRat</strong> spyware with keylogging, screen recording, overlay attacks, and PIN bypass. Full device compromise enabling financial theft, account takeover, and remote control. <strong>Avoid sideloading APKs</strong> and never grant Accessibility Services to untrusted apps.</p>
+<p><a href="../Week50/andSurge/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+</li>
+<li>
+<p><img alt="ArrayOS AG VPN" src="../Week50/images/arrayos.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M9 5h6l-3 3zm1.5 9.66c-.3.34-.5.84-.5 1.34a2 2 0 0 0 2 2 2 2 0 0 0 2-2c0-.55-.22-1.05-.59-1.41l1.42-1.42C15.55 13.9 16 14.9 16 16a4 4 0 0 1-4 4 4 4 0 0 1-4-4c0-1.07.42-2.04 1.1-2.75l-.01-.01 7.08-7.07A4 4 0 0 1 19 5a4 4 0 0 1 4 4 4 4 0 0 1-4 4c-1.1 0-2.1-.45-2.83-1.17l1.42-1.42c.36.37.86.59 1.41.59a2 2 0 0 0 2-2 2 2 0 0 0-2-2c-.55 0-1.05.22-1.41.59zM6.41 7.59C6.05 7.22 5.55 7 5 7a2 2 0 0 0-2 2 2 2 0 0 0 2 2c.55 0 1.05-.22 1.41-.59l1.42 1.42C7.1 12.55 6.1 13 5 13a4 4 0 0 1-4-4 4 4 0 0 1 4-4c1.11 0 2.11.45 2.83 1.17l2.76 2.76-1.42 1.42z"></path></svg></span> <strong>ArrayOS AG VPN (CVE-2025-66644)</strong></p>
+<p><strong class="cve-chip">Command Injection</strong><br>
+<strong class="cve-chip">VPN Gateway Compromise</strong>  </p>
+<hr>
+<p>Command-injection flaw in ArrayOS AG (versions before 9.4.5.9) affecting <strong>DesktopDirect</strong> remote-access feature. Remotely authenticated attackers inject OS commands leading to arbitrary code execution on the gateway. Attackers drop <strong>webshells</strong> under <code>/ca/aproxy/webapp/</code> and create unauthorized user accounts for persistent access. <strong>Active exploitation confirmed</strong> - Added to CISA KEV. Full gateway compromise exposes internal networks. <strong>Patch immediately to 9.4.5.9</strong> and conduct forensic inspection for webshells and rogue accounts.</p>
+<p><a href="../Week50/arrayos/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+</li>
 <li>
 <p><img alt="UDPGangster" src="../Week50/images/muddyudp.png">
     <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m1 5.27 4 4V15a2 2 0 0 0 2 2h4v2h-1a1 1 0 0 0-1 1H2v2h7a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1h2.73l2 2L21 22.72 2.28 4zM15 20a1 1 0 0 0-1-1h-1v-1.73L15.73 20zm2.69-3.13L5.13 4.31C5.41 3.55 6.14 3 7 3h10a2 2 0 0 1 2 2v10c0 .86-.55 1.59-1.31 1.87M22 20v1.18L20.82 20z"></path></svg></span> <strong>UDPGangster Campaigns Target Multiple Countries</strong></p>

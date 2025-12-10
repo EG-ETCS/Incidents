@@ -2327,6 +2327,52 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Week50/andSurge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Android Malware Surge: FvncBot, SeedSnatcher, and Upgraded ClayRat
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Week50/arrayos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ArrayOS AG VPN (CVE-2025-66644)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2400,31 +2446,22 @@
 <div class="grid cards">
 <ul>
 <li>
-<p><img alt="UDPGangster" src="Week50/images/muddyudp.png">
-    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m1 5.27 4 4V15a2 2 0 0 0 2 2h4v2h-1a1 1 0 0 0-1 1H2v2h7a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1h2.73l2 2L21 22.72 2.28 4zM15 20a1 1 0 0 0-1-1h-1v-1.73L15.73 20zm2.69-3.13L5.13 4.31C5.41 3.55 6.14 3 7 3h10a2 2 0 0 1 2 2v10c0 .86-.55 1.59-1.31 1.87M22 20v1.18L20.82 20z"></path></svg></span> <strong>UDPGangster Campaigns Target Multiple Countries</strong></p>
-<p><strong class="cve-chip">Windows Backdoor</strong><br>
-<strong class="cve-chip">UDP-Based C2</strong>  </p>
+<p><img alt="Android Malware" src="Week50/images/andSurge.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M16.61 15.15c-.46 0-.84-.37-.84-.83s.38-.82.84-.82.84.36.84.82-.38.83-.84.83m-9.2 0c-.46 0-.84-.37-.84-.83s.38-.82.84-.82.83.36.83.82-.37.83-.83.83m9.5-5.01 1.67-2.88c.09-.17.03-.38-.13-.47-.17-.1-.38-.04-.45.13l-1.71 2.91A10.15 10.15 0 0 0 12 8.91c-1.53 0-3 .33-4.27.91L6.04 6.91a.334.334 0 0 0-.47-.13c-.17.09-.22.3-.13.47l1.66 2.88C4.25 11.69 2.29 14.58 2 18h20c-.28-3.41-2.23-6.3-5.09-7.86"></path></svg></span> <strong>Android Malware Surge: FvncBot, SeedSnatcher, and Upgraded ClayRat</strong></p>
+<p><strong class="cve-chip">Banking Trojan</strong><br>
+<strong class="cve-chip">Cryptocurrency Stealer</strong>  </p>
 <hr>
-<p>MuddyWater (Iran-aligned APT) deploys UDPGangster backdoor using spear-phishing with malicious Word documents. Unusual <strong>UDP-based C2</strong> (port 1269) evades traditional detection. Extensive anti-analysis checks detect VMs, sandboxes, debuggers. Targets Turkey, Israel, Azerbaijan impersonating government entities. Supports remote command execution, file exfiltration, and payload deployment. Persistence via registry and %AppData%. <strong>Block macro-enabled documents</strong> and monitor unusual UDP traffic.</p>
-<p><a href="Week50/muddyudp/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+<p>Three major Android malware strains circulating globally. <strong>FvncBot</strong> poses as Polish mBank app, abuses Accessibility Services for hidden VNC remote control and automated banking fraud. <strong>SeedSnatcher</strong> distributed via Telegram steals crypto seed phrases and intercepts SMS/OTP. <strong>Upgraded ClayRat</strong> spyware with keylogging, screen recording, overlay attacks, and PIN bypass. Full device compromise enabling financial theft, account takeover, and remote control. <strong>Avoid sideloading APKs</strong> and never grant Accessibility Services to untrusted apps.</p>
+<p><a href="Week50/andSurge/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
 </li>
 <li>
-<p><img alt="React2Shell" src="Week50/images/react2shell.png">
-    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 10.11c1.03 0 1.87.84 1.87 1.89 0 1-.84 1.85-1.87 1.85S10.13 13 10.13 12c0-1.05.84-1.89 1.87-1.89M7.37 20c.63.38 2.01-.2 3.6-1.7-.52-.59-1.03-1.23-1.51-1.9a23 23 0 0 1-2.4-.36c-.51 2.14-.32 3.61.31 3.96m.71-5.74-.29-.51c-.11.29-.22.58-.29.86.27.06.57.11.88.16zm6.54-.76.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17 9 12.6 9 12 9s-1.17 0-1.71.03c-.29.47-.61.94-.91 1.47L8.57 12l.81 1.5c.3.53.62 1 .91 1.47.54.03 1.11.03 1.71.03s1.17 0 1.71-.03c.29-.47.61-.94.91-1.47M12 6.78c-.19.22-.39.45-.59.72h1.18c-.2-.27-.4-.5-.59-.72m0 10.44c.19-.22.39-.45.59-.72h-1.18c.2.27.4.5.59.72M16.62 4c-.62-.38-2 .2-3.59 1.7.52.59 1.03 1.23 1.51 1.9.82.08 1.63.2 2.4.36.51-2.14.32-3.61-.32-3.96m-.7 5.74.29.51c.11-.29.22-.58.29-.86-.27-.06-.57-.11-.88-.16zm1.45-7.05c1.47.84 1.63 3.05 1.01 5.63 2.54.75 4.37 1.99 4.37 3.68s-1.83 2.93-4.37 3.68c.62 2.58.46 4.79-1.01 5.63-1.46.84-3.45-.12-5.37-1.95-1.92 1.83-3.91 2.79-5.38 1.95-1.46-.84-1.62-3.05-1-5.63-2.54-.75-4.37-1.99-4.37-3.68s1.83-2.93 4.37-3.68c-.62-2.58-.46-4.79 1-5.63 1.47-.84 3.46.12 5.38 1.95 1.92-1.83 3.91-2.79 5.37-1.95M17.08 12c.34.75.64 1.5.89 2.26 2.1-.63 3.28-1.53 3.28-2.26s-1.18-1.63-3.28-2.26c-.25.76-.55 1.51-.89 2.26M6.92 12c-.34-.75-.64-1.5-.89-2.26-2.1.63-3.28 1.53-3.28 2.26s1.18 1.63 3.28 2.26c.25-.76.55-1.51.89-2.26m9 2.26-.3.51c.31-.05.61-.1.88-.16-.07-.28-.18-.57-.29-.86zm-2.89 4.04c1.59 1.5 2.97 2.08 3.59 1.7.64-.35.83-1.82.32-3.96-.77.16-1.58.28-2.4.36-.48.67-.99 1.31-1.51 1.9M8.08 9.74l.3-.51c-.31.05-.61.1-.88.16.07.28.18.57.29.86zm2.89-4.04C9.38 4.2 8 3.62 7.37 4c-.63.35-.82 1.82-.31 3.96a23 23 0 0 1 2.4-.36c.48-.67.99-1.31 1.51-1.9"></path></svg></span> <strong>React2Shell (CVE-2025-55182)</strong></p>
-<p><strong class="cve-chip">Remote Code Execution</strong><br>
-<strong class="cve-chip">Unsafe Deserialization</strong>  </p>
+<p><img alt="ArrayOS AG VPN" src="Week50/images/arrayos.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M9 5h6l-3 3zm1.5 9.66c-.3.34-.5.84-.5 1.34a2 2 0 0 0 2 2 2 2 0 0 0 2-2c0-.55-.22-1.05-.59-1.41l1.42-1.42C15.55 13.9 16 14.9 16 16a4 4 0 0 1-4 4 4 4 0 0 1-4-4c0-1.07.42-2.04 1.1-2.75l-.01-.01 7.08-7.07A4 4 0 0 1 19 5a4 4 0 0 1 4 4 4 4 0 0 1-4 4c-1.1 0-2.1-.45-2.83-1.17l1.42-1.42c.36.37.86.59 1.41.59a2 2 0 0 0 2-2 2 2 0 0 0-2-2c-.55 0-1.05.22-1.41.59zM6.41 7.59C6.05 7.22 5.55 7 5 7a2 2 0 0 0-2 2 2 2 0 0 0 2 2c.55 0 1.05-.22 1.41-.59l1.42 1.42C7.1 12.55 6.1 13 5 13a4 4 0 0 1-4-4 4 4 0 0 1 4-4c1.11 0 2.11.45 2.83 1.17l2.76 2.76-1.42 1.42z"></path></svg></span> <strong>ArrayOS AG VPN (CVE-2025-66644)</strong></p>
+<p><strong class="cve-chip">Command Injection</strong><br>
+<strong class="cve-chip">VPN Gateway Compromise</strong>  </p>
 <hr>
-<p>Critical vulnerability in React Server Components (RSC) "Flight" protocol allowing <strong>unauthenticated remote code execution</strong> via unsafe deserialization. Affects react-server-dom-webpack/parcel/turbopack (versions 19.0-19.2.0) and Next.js. Single malicious HTTP request triggers arbitrary code execution on server. <strong>Public PoC available, active exploitation confirmed</strong> by multiple threat actors including state-linked groups. ~39% of cloud environments vulnerable. <strong>Patch immediately</strong> to React 19.0.1/19.1.2/19.2.1 or Next.js fixed versions.</p>
-<p><a href="Week50/react2shell/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
-</li>
-<li>
-<p><img alt="Johnson Controls" src="Week50/images/johnson.png">
-    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M5 3v18h6v-3.5h2V21h6V3zm2 2h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2zM7 9h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2zm-8 4h2v2H7zm4 0h2v2h-2zm4 0h2v2h-2zm-8 4h2v2H7zm8 0h2v2h-2z"></path></svg></span> <strong>Johnson Controls FX80 / FX90 Vulnerability (CVE-2025-43867)</strong></p>
-<p><strong class="cve-chip">Configuration File Compromise</strong><br>
-<strong class="cve-chip">Building Automation</strong>  </p>
-<hr>
-<p>Vulnerability in Johnson Controls FX80 and FX90 building-automation controllers running FX14.10.10 or FX14.14.1. Attackers with network or local access could compromise device configuration files (read/write/tamper). Affects HVAC, climate control, and access control systems. Exploitation may trigger additional CVEs (CVE-2025-3936 through CVE-2025-3945). <strong>Update to 14.10.11 or 14.14.2</strong> to mitigate. Risk to critical infrastructure in commercial buildings and industrial facilities.</p>
-<p><a href="Week50/johnson/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+<p>Command-injection flaw in ArrayOS AG (versions before 9.4.5.9) affecting <strong>DesktopDirect</strong> remote-access feature. Remotely authenticated attackers inject OS commands leading to arbitrary code execution on the gateway. Attackers drop <strong>webshells</strong> under <code>/ca/aproxy/webapp/</code> and create unauthorized user accounts for persistent access. <strong>Active exploitation confirmed</strong> - Added to CISA KEV. Full gateway compromise exposes internal networks. <strong>Patch immediately to 9.4.5.9</strong> and conduct forensic inspection for webshells and rogue accounts.</p>
+<p><a href="Week50/arrayos/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
 </li>
 </ul>
 </div></div>
