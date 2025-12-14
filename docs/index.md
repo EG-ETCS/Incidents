@@ -8,26 +8,26 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Android Malware](Week50/images/andSurge.png)
-    :material-android:{ .lg .middle } **Android Malware Surge: FvncBot, SeedSnatcher, and Upgraded ClayRat**
+-   ![GeoServer](Week51/images/geoserver.png)
+    :material-earth:{ .lg .middle } **GeoServer XXE Vulnerability Exploitation (CVE-2025-58360)**
 
-    **Banking Trojan**{.cve-chip}  
-    **Cryptocurrency Stealer**{.cve-chip}  
+    **XML External Entity (XXE)**{.cve-chip}  
+    **Unauthenticated File Access**{.cve-chip}  
     ---------------------------------
 
-    Three major Android malware strains circulating globally. **FvncBot** poses as Polish mBank app, abuses Accessibility Services for hidden VNC remote control and automated banking fraud. **SeedSnatcher** distributed via Telegram steals crypto seed phrases and intercepts SMS/OTP. **Upgraded ClayRat** spyware with keylogging, screen recording, overlay attacks, and PIN bypass. Full device compromise enabling financial theft, account takeover, and remote control. **Avoid sideloading APKs** and never grant Accessibility Services to untrusted apps.
+    Critical unauthenticated XXE vulnerability in OSGeo GeoServer's `/geoserver/wms` GetMap endpoint. Crafted XML enables **arbitrary file access, SSRF, and DoS** without authentication. Affects versions before 2.25.6 and 2.26.0-2.26.1. **Active exploitation confirmed** - Added to CISA KEV. Over **14,000 instances exposed** online. **Federal agencies must patch by Jan 1, 2026**. Upgrade to 2.25.6+, 2.26.2+, 2.27.0+, or 2.28.1+ immediately. CVSS 9.8 (Critical).
 
-    [:octicons-arrow-right-24: View Full Details](Week50/andSurge.md)
+    [:octicons-arrow-right-24: View Full Details](Week51/geoserver.md)
 
--   ![ArrayOS AG VPN](Week50/images/arrayos.png)
-    :material-vpn:{ .lg .middle } **ArrayOS AG VPN (CVE-2025-66644)**
+-   ![Sierra Wireless](Week51/images/sierra.png)
+    :material-router-wireless:{ .lg .middle } **CVE-2018-4063 Sierra Wireless AirLink ALEOS Remote Code Execution**
 
-    **Command Injection**{.cve-chip}  
-    **VPN Gateway Compromise**{.cve-chip}  
+    **Remote Code Execution**{.cve-chip}  
+    **Unrestricted File Upload**{.cve-chip}  
     ---------------------------------
 
-    Command-injection flaw in ArrayOS AG (versions before 9.4.5.9) affecting **DesktopDirect** remote-access feature. Remotely authenticated attackers inject OS commands leading to arbitrary code execution on the gateway. Attackers drop **webshells** under `/ca/aproxy/webapp/` and create unauthorized user accounts for persistent access. **Active exploitation confirmed** - Added to CISA KEV. Full gateway compromise exposes internal networks. **Patch immediately to 9.4.5.9** and conduct forensic inspection for webshells and rogue accounts.
+    Vulnerability in Sierra Wireless AirLink ALEOS router firmware's web management interface (`upload.cgi`) allows authenticated attackers to upload arbitrary executable files. Attackers can replace system scripts and execute code as **root**, gaining full device control. Affects ES450 and related models in **OT/ICS environments** (utilities, transportation). **Active exploitation confirmed** - Added to CISA KEV. **Patch to latest ALEOS firmware** immediately, change default credentials, and restrict management interface access. CVSS 8.8 (High).
 
-    [:octicons-arrow-right-24: View Full Details](Week50/arrayos.md)
+    [:octicons-arrow-right-24: View Full Details](Week51/sierra.md)
 
 </div>

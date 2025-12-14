@@ -149,3 +149,6 @@ nav:
             - "UDPGangster Campaigns Target Multiple Countries": Week50/muddyudp.md
             - "Android Malware Surge: FvncBot, SeedSnatcher, and Upgraded ClayRat": Week50/andSurge.md
             - "ArrayOS AG VPN (CVE-2025-66644)": Week50/arrayos.md
+         - "week51":
+            - "GeoServer XXE Vulnerability Exploitation (CVE-2025-58360)": Week51/geoserver.md
+            - "CVE-2018-4063 Sierra Wireless AirLink ALEOS Remote Code Execution": Week51/sierra.md
