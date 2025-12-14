@@ -2381,6 +2381,101 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3_2" id="__nav_4_2_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    week51
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            week51
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Week51/geoserver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GeoServer XXE Vulnerability Exploitation (CVE-2025-58360)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Week51/sierra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CVE-2018-4063 Sierra Wireless AirLink ALEOS Remote Code Execution
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2446,22 +2541,22 @@
 <div class="grid cards">
 <ul>
 <li>
-<p><img alt="Android Malware" src="Week50/images/andSurge.png">
-    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M16.61 15.15c-.46 0-.84-.37-.84-.83s.38-.82.84-.82.84.36.84.82-.38.83-.84.83m-9.2 0c-.46 0-.84-.37-.84-.83s.38-.82.84-.82.83.36.83.82-.37.83-.83.83m9.5-5.01 1.67-2.88c.09-.17.03-.38-.13-.47-.17-.1-.38-.04-.45.13l-1.71 2.91A10.15 10.15 0 0 0 12 8.91c-1.53 0-3 .33-4.27.91L6.04 6.91a.334.334 0 0 0-.47-.13c-.17.09-.22.3-.13.47l1.66 2.88C4.25 11.69 2.29 14.58 2 18h20c-.28-3.41-2.23-6.3-5.09-7.86"></path></svg></span> <strong>Android Malware Surge: FvncBot, SeedSnatcher, and Upgraded ClayRat</strong></p>
-<p><strong class="cve-chip">Banking Trojan</strong><br>
-<strong class="cve-chip">Cryptocurrency Stealer</strong>  </p>
+<p><img alt="GeoServer" src="Week51/images/geoserver.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M17.9 17.39c-.26-.8-1.01-1.39-1.9-1.39h-1v-3a1 1 0 0 0-1-1H8v-2h2a1 1 0 0 0 1-1V7h2a2 2 0 0 0 2-2v-.41a7.984 7.984 0 0 1 2.9 12.8M11 19.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.22.21-1.79L9 15v1a2 2 0 0 0 2 2m1-16A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2"></path></svg></span> <strong>GeoServer XXE Vulnerability Exploitation (CVE-2025-58360)</strong></p>
+<p><strong class="cve-chip">XML External Entity (XXE)</strong><br>
+<strong class="cve-chip">Unauthenticated File Access</strong>  </p>
 <hr>
-<p>Three major Android malware strains circulating globally. <strong>FvncBot</strong> poses as Polish mBank app, abuses Accessibility Services for hidden VNC remote control and automated banking fraud. <strong>SeedSnatcher</strong> distributed via Telegram steals crypto seed phrases and intercepts SMS/OTP. <strong>Upgraded ClayRat</strong> spyware with keylogging, screen recording, overlay attacks, and PIN bypass. Full device compromise enabling financial theft, account takeover, and remote control. <strong>Avoid sideloading APKs</strong> and never grant Accessibility Services to untrusted apps.</p>
-<p><a href="Week50/andSurge/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+<p>Critical unauthenticated XXE vulnerability in OSGeo GeoServer's <code>/geoserver/wms</code> GetMap endpoint. Crafted XML enables <strong>arbitrary file access, SSRF, and DoS</strong> without authentication. Affects versions before 2.25.6 and 2.26.0-2.26.1. <strong>Active exploitation confirmed</strong> - Added to CISA KEV. Over <strong>14,000 instances exposed</strong> online. <strong>Federal agencies must patch by Jan 1, 2026</strong>. Upgrade to 2.25.6+, 2.26.2+, 2.27.0+, or 2.28.1+ immediately. CVSS 9.8 (Critical).</p>
+<p><a href="Week51/geoserver/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
 </li>
 <li>
-<p><img alt="ArrayOS AG VPN" src="Week50/images/arrayos.png">
-    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M9 5h6l-3 3zm1.5 9.66c-.3.34-.5.84-.5 1.34a2 2 0 0 0 2 2 2 2 0 0 0 2-2c0-.55-.22-1.05-.59-1.41l1.42-1.42C15.55 13.9 16 14.9 16 16a4 4 0 0 1-4 4 4 4 0 0 1-4-4c0-1.07.42-2.04 1.1-2.75l-.01-.01 7.08-7.07A4 4 0 0 1 19 5a4 4 0 0 1 4 4 4 4 0 0 1-4 4c-1.1 0-2.1-.45-2.83-1.17l1.42-1.42c.36.37.86.59 1.41.59a2 2 0 0 0 2-2 2 2 0 0 0-2-2c-.55 0-1.05.22-1.41.59zM6.41 7.59C6.05 7.22 5.55 7 5 7a2 2 0 0 0-2 2 2 2 0 0 0 2 2c.55 0 1.05-.22 1.41-.59l1.42 1.42C7.1 12.55 6.1 13 5 13a4 4 0 0 1-4-4 4 4 0 0 1 4-4c1.11 0 2.11.45 2.83 1.17l2.76 2.76-1.42 1.42z"></path></svg></span> <strong>ArrayOS AG VPN (CVE-2025-66644)</strong></p>
-<p><strong class="cve-chip">Command Injection</strong><br>
-<strong class="cve-chip">VPN Gateway Compromise</strong>  </p>
+<p><img alt="Sierra Wireless" src="Week51/images/sierra.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m20.2 5.9.8-.8C19.6 3.7 17.8 3 16 3s-3.6.7-5 2.1l.8.8C13 4.8 14.5 4.2 16 4.2s3 .6 4.2 1.7m-.9.8c-.9-.9-2.1-1.4-3.3-1.4s-2.4.5-3.3 1.4l.8.8c.7-.7 1.6-1 2.5-1s1.8.3 2.5 1zM19 13h-2V9h-2v4H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2M8 18H6v-2h2zm3.5 0h-2v-2h2zm3.5 0h-2v-2h2z"></path></svg></span> <strong>CVE-2018-4063 Sierra Wireless AirLink ALEOS Remote Code Execution</strong></p>
+<p><strong class="cve-chip">Remote Code Execution</strong><br>
+<strong class="cve-chip">Unrestricted File Upload</strong>  </p>
 <hr>
-<p>Command-injection flaw in ArrayOS AG (versions before 9.4.5.9) affecting <strong>DesktopDirect</strong> remote-access feature. Remotely authenticated attackers inject OS commands leading to arbitrary code execution on the gateway. Attackers drop <strong>webshells</strong> under <code>/ca/aproxy/webapp/</code> and create unauthorized user accounts for persistent access. <strong>Active exploitation confirmed</strong> - Added to CISA KEV. Full gateway compromise exposes internal networks. <strong>Patch immediately to 9.4.5.9</strong> and conduct forensic inspection for webshells and rogue accounts.</p>
-<p><a href="Week50/arrayos/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+<p>Vulnerability in Sierra Wireless AirLink ALEOS router firmware's web management interface (<code>upload.cgi</code>) allows authenticated attackers to upload arbitrary executable files. Attackers can replace system scripts and execute code as <strong>root</strong>, gaining full device control. Affects ES450 and related models in <strong>OT/ICS environments</strong> (utilities, transportation). <strong>Active exploitation confirmed</strong> - Added to CISA KEV. <strong>Patch to latest ALEOS firmware</strong> immediately, change default credentials, and restrict management interface access. CVSS 8.8 (High).</p>
+<p><a href="Week51/sierra/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
 </li>
 </ul>
 </div></div>
