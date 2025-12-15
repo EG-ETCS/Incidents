@@ -152,3 +152,7 @@ nav:
          - "week51":
             - "GeoServer XXE Vulnerability Exploitation (CVE-2025-58360)": Week51/geoserver.md
             - "CVE-2018-4063 Sierra Wireless AirLink ALEOS Remote Code Execution": Week51/sierra.md
+            - "Pro-Russia Hacktivists Conduct Opportunistic Attacks Against Critical Infrastructure": Week51/hacktivists.md
+            - "Google Chromium Out-of-Bounds Memory Access Vulnerability": Week51/chromium.md
+            - "Johnson Controls iSTAR Ultra Vulnerabilities": Week51/istar.md
+            - "Siemens Energy Services Security Advisory": Week51/siemensesa.md
