@@ -8,51 +8,40 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Pro-Russia Hacktivists](Week51/images/hacktivists.png)
-    :material-shield-alert:{ .lg .middle } **Pro-Russia Hacktivists Target Critical Infrastructure via VNC**
+-   ![Apple WebKit](Week51/images/useAfterFree.png)
+    :material-apple:{ .lg .middle } **CVE-2025-43529 Apple WebKit Use-After-Free Vulnerability**
 
-    **Hacktivist Campaign**{.cve-chip}  
-    **VNC Exploitation**{.cve-chip}  
-    **OT/ICS Targeting**{.cve-chip}  
-    ---------------------------------
-
-    Pro-Russia hacktivist groups (CARR, Z-Pentest, NoName057(16), Sector16) exploit **internet-facing VNC services** to access OT/ICS systems in critical infrastructure. Opportunistic attacks use **weak/default credentials and brute force** to compromise HMIs and SCADA devices. Targets include **energy, utilities, water, manufacturing** sectors globally. While less sophisticated than APTs, **impact on physical processes can be significant**. **Remove internet exposure of OT assets**, implement strong authentication, segment OT/IT networks, and deploy continuous monitoring. Joint advisory from NSA, FBI, CISA, and international partners.
-
-    [:octicons-arrow-right-24: View Full Details](Week51/hacktivists.md)
-
--   ![Google Chromium](Week51/images/chromium.png)
-    :material-web:{ .lg .middle } **CVE-2025-14174 Google Chromium ANGLE Out-of-Bounds Memory Access**
-
-    **Out-of-Bounds Memory Access**{.cve-chip}  
+    **Use-After-Free**{.cve-chip}  
     **Remote Code Execution**{.cve-chip}  
     **Actively Exploited**{.cve-chip}  
     ---------------------------------
 
-    High-severity out-of-bounds memory access vulnerability in Chromium's ANGLE graphics component. Remote attacker can trigger memory corruption via **crafted HTML page**, leading to crashes or **arbitrary code execution**. Affects **Chrome, Edge, Opera, Brave** and other Chromium-based browsers. **Actively exploited in the wild** - Added to CISA KEV. Federal agencies must patch by **Jan 2, 2026** per BOD 22-01. **Update Chrome to 143.0.7499.110+** immediately and patch all Chromium-based browsers. Affects desktop and mobile across platforms. CVSS score varies (High severity).
+    Critical use-after-free vulnerability in WebKit HTML parser affects **iOS, iPadOS, macOS, Safari** and third-party apps using WebKit. Malicious web content triggers **memory corruption** leading to crashes or **arbitrary code execution**. **Actively exploited in sophisticated attacks** - Added to CISA KEV. Can lead to **device compromise, spyware installation, and data theft**. Affects both Apple and non-Apple products using WebKit. **Update to Safari 26.2+** and apply latest iOS/iPadOS/macOS patches immediately. Enable automatic updates on all devices. CWE-416.
 
-    [:octicons-arrow-right-24: View Full Details](Week51/chromium.md)
+    [:octicons-arrow-right-24: View Full Details](Week51/useAfterFree.md)
 
--   ![Johnson Controls iSTAR Ultra](Week51/images/istar.png)
-    :material-door:{ .lg .middle } **Johnson Controls iSTAR Ultra Multiple Vulnerabilities**
-
-    **OS Command Injection**{.cve-chip}  
-    **Firmware Authentication Bypass**{.cve-chip}  
-    **Default Credentials**{.cve-chip}  
-    ---------------------------------
-
-    Multiple high-severity vulnerabilities in Johnson Controls iSTAR Ultra series door controllers allow attackers to **modify firmware, gain elevated privileges, and access protected systems**. Flaws include **OS command injection**, insufficient firmware verification, and **default root credentials**. Affects iSTAR Ultra, SE, G2, G2 SE, and Edge G2 models in **physical access control systems**. Exploitation enables **unauthorized door control, device takeover, and lateral movement**. **Upgrade to firmware 6.9.3+**, replace default credentials, isolate devices on dedicated networks, and implement physical security controls. CVSS 8.7 (High).
-
-    [:octicons-arrow-right-24: View Full Details](Week51/istar.md)
-
--   ![Siemens Energy Services](Week51/images/siemensesa.png)
-    :material-flash:{ .lg .middle } **CVE-2025-59392 Siemens Energy Services Authentication Bypass**
+-   ![Fortinet FortiCloud](Week51/images/forticloud.png)
+    :material-shield-lock:{ .lg .middle } **CVE-2025-59718/59719 Fortinet FortiCloud SSO Authentication Bypass**
 
     **Authentication Bypass**{.cve-chip}  
-    **Physical Access Required**{.cve-chip}  
+    **SAML Signature Bypass**{.cve-chip}  
+    **Critical**{.cve-chip}  
     ---------------------------------
 
-    Security vulnerability in Siemens Energy Services Elspec G5 devices allows authentication bypass via alternate path. Attacker with **physical access** can insert USB drive with publicly documented reset string to **reset admin password** and gain full device control. Affects Elspec G5 devices through firmware **1.2.2.19** in **critical infrastructure environments**. Despite requiring physical access, impact on energy systems can be **significant**. **Upgrade firmware beyond 1.2.2.19**, restrict physical access, implement tamper detection, and monitor USB port activity. CVSS score varies (Physical vector).
+    Critical authentication bypass in Fortinet FortiCloud SSO feature. Improper verification of **SAML cryptographic signatures** allows **unauthenticated remote attackers** to gain **full administrative access** by crafting malicious SAML responses. Affects **FortiOS, FortiProxy, FortiSwitchManager, FortiWeb** when FortiCloud SSO enabled. Enables complete device compromise, firewall rule modification, and backdoor creation. **Patch immediately** or disable FortiCloud SSO. Fixed versions: FortiOS 7.6.4+/7.4.9+, FortiProxy 7.6.4+/7.4.11+, FortiWeb 8.0.1+/7.6.5+. CWE-347.
 
-    [:octicons-arrow-right-24: View Full Details](Week51/siemensesa.md)
+    [:octicons-arrow-right-24: View Full Details](Week51/forticloud.md)
+
+-   ![SolarEdge SE3680H](Week51/images/solaredge.png)
+    :material-solar-power:{ .lg .middle } **CVE-2025-36745 SolarEdge SE3680H Linux Kernel Vulnerabilities**
+
+    **Unpatched Linux Kernel**{.cve-chip}  
+    **Remote Code Execution**{.cve-chip}  
+    **Unmaintained Components**{.cve-chip}  
+    ---------------------------------
+
+    Solar inverter shipped with **outdated, unpatched Linux kernel** containing multiple vulnerabilities. Allows attackers to achieve **remote code execution, privilege escalation, and information disclosure** without authentication. Affects SolarEdge SE3680H inverters up to firmware **v4.21** in **solar power installations**. Risks include **grid stability concerns, safety hazards, and lateral movement** in networks. Use of unmaintained third-party components (CWE-1104). **Contact SolarEdge for firmware updates**, isolate devices on segmented networks, and restrict management access. CVSS 8.6 (High).
+
+    [:octicons-arrow-right-24: View Full Details](Week51/solaredge.md)
 
 </div>

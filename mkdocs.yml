@@ -156,3 +156,6 @@ nav:
             - "Google Chromium Out-of-Bounds Memory Access Vulnerability": Week51/chromium.md
             - "Johnson Controls iSTAR Ultra Vulnerabilities": Week51/istar.md
             - "Siemens Energy Services Security Advisory": Week51/siemensesa.md
+            - "Apple Multiple Products Use-After-Free WebKit Vulnerability": Week51/useAfterFree.md
+            - "Fortinet FortiCloud SSO Login Authentication Bypass Vulnerabilities": Week51/forticloud.md
+            - "SolarEdge SE3680H Contains Linux Kernel Vulnerabilities": Week51/solaredge.md
