@@ -2631,6 +2631,52 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Week51/RussianGRU/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Russian GRU Cyber Campaign Targeting Critical Infrastructure via Edge Network Devices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Week51/sandbox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    OS Command Injection in Fortinet FortiSandbox
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2703,6 +2749,26 @@
 <div><h1 id="this-weeks-security-incidents">This Week's Security Incidents</h1>
 <div class="grid cards">
 <ul>
+<li>
+<p><img alt="Russian GRU Campaign" src="../Week51/images/RussianGRU.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5M11 7h2v6h-2m0 2h2v2h-2"></path></svg></span> <strong>Russian GRU Cyber Campaign Targeting Critical Infrastructure</strong></p>
+<p><strong class="cve-chip">Russian GRU</strong><br>
+<strong class="cve-chip">State-Sponsored</strong><br>
+<strong class="cve-chip">Edge Device Targeting</strong>  </p>
+<hr>
+<p>Multi-year <strong>Russian military intelligence (GRU)</strong> campaign targeting Western critical infrastructure via <strong>misconfigured network edge devices</strong>. Tactical evolution from vulnerability exploitation (2021-2024) to sustained focus on <strong>misconfigurations in routers, VPN gateways, and network appliances</strong> (2025). Uses <strong>passive packet capture for credential harvesting</strong> and <strong>replay attacks</strong> against cloud and energy sectors. Exposed by Amazon Threat Intelligence. Linked to <strong>Curly COMrades</strong> and other GRU clusters. <strong>Harden edge device configurations</strong>, implement MFA, restrict management interfaces, and deploy continuous monitoring for state-sponsored threats.</p>
+<p><a href="../Week51/RussianGRU/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+</li>
+<li>
+<p><img alt="Fortinet FortiSandbox" src="../Week51/images/sandbox.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M11 13h2v1h-2zm10-8v6c0 5.5-3.8 10.7-9 12-5.2-1.3-9-6.5-9-12V5l9-4zm-4 5h-2.2c-.2-.6-.6-1.1-1.1-1.5l1.2-1.2-.7-.7L12.8 8H12c-.2 0-.5 0-.7.1L9.9 6.6l-.8.8 1.2 1.2c-.5.3-.9.8-1.1 1.4H7v1h2v1H7v1h2v1H7v1h2.2c.4 1.2 1.5 2 2.8 2s2.4-.8 2.8-2H17v-1h-2v-1h2v-1h-2v-1h2zm-6 2h2v-1h-2z"></path></svg></span> <strong>CVE-2025-53949 Fortinet FortiSandbox OS Command Injection</strong></p>
+<p><strong class="cve-chip">OS Command Injection</strong><br>
+<strong class="cve-chip">Remote Code Execution</strong><br>
+<strong class="cve-chip">Critical</strong>  </p>
+<hr>
+<p>Critical OS command injection in FortiSandbox <code>upload_vdi_file</code> endpoint. Authenticated attackers can inject malicious commands due to <strong>improper input validation</strong>, achieving <strong>root-level code execution</strong> on the appliance. Affects FortiSandbox <strong>5.0.0-5.0.2, 4.4.0-4.4.7, and all 4.2/4.0 versions</strong>. Compromises <strong>security infrastructure</strong>, disrupts malware analysis, and enables <strong>lateral movement</strong>. <strong>Patch immediately</strong> to FortiSandbox 5.0.3+, 4.4.8+. Restrict management access, implement MFA, and monitor for suspicious activity. CWE-78.</p>
+<p><a href="../Week51/sandbox/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+</li>
 <li>
 <p><img alt="Apple WebKit" src="../Week51/images/useAfterFree.png">
     <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"></path></svg></span> <strong>CVE-2025-43529 Apple WebKit Use-After-Free Vulnerability</strong></p>
