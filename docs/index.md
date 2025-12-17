@@ -8,40 +8,28 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Apple WebKit](Week51/images/useAfterFree.png)
-    :material-apple:{ .lg .middle } **CVE-2025-43529 Apple WebKit Use-After-Free Vulnerability**
+-   ![Russian GRU Campaign](Week51/images/RussianGRU.png)
+    :material-shield-alert:{ .lg .middle } **Russian GRU Cyber Campaign Targeting Critical Infrastructure**
 
-    **Use-After-Free**{.cve-chip}  
-    **Remote Code Execution**{.cve-chip}  
-    **Actively Exploited**{.cve-chip}  
+    **Russian GRU**{.cve-chip}  
+    **State-Sponsored**{.cve-chip}  
+    **Edge Device Targeting**{.cve-chip}  
     ---------------------------------
 
-    Critical use-after-free vulnerability in WebKit HTML parser affects **iOS, iPadOS, macOS, Safari** and third-party apps using WebKit. Malicious web content triggers **memory corruption** leading to crashes or **arbitrary code execution**. **Actively exploited in sophisticated attacks** - Added to CISA KEV. Can lead to **device compromise, spyware installation, and data theft**. Affects both Apple and non-Apple products using WebKit. **Update to Safari 26.2+** and apply latest iOS/iPadOS/macOS patches immediately. Enable automatic updates on all devices. CWE-416.
+    Multi-year **Russian military intelligence (GRU)** campaign targeting Western critical infrastructure via **misconfigured network edge devices**. Tactical evolution from vulnerability exploitation (2021-2024) to sustained focus on **misconfigurations in routers, VPN gateways, and network appliances** (2025). Uses **passive packet capture for credential harvesting** and **replay attacks** against cloud and energy sectors. Exposed by Amazon Threat Intelligence. Linked to **Curly COMrades** and other GRU clusters. **Harden edge device configurations**, implement MFA, restrict management interfaces, and deploy continuous monitoring for state-sponsored threats.
 
-    [:octicons-arrow-right-24: View Full Details](Week51/useAfterFree.md)
+    [:octicons-arrow-right-24: View Full Details](Week51/RussianGRU.md)
 
--   ![Fortinet FortiCloud](Week51/images/forticloud.png)
-    :material-shield-lock:{ .lg .middle } **CVE-2025-59718/59719 Fortinet FortiCloud SSO Authentication Bypass**
+-   ![Fortinet FortiSandbox](Week51/images/sandbox.png)
+    :material-shield-bug:{ .lg .middle } **CVE-2025-53949 Fortinet FortiSandbox OS Command Injection**
 
-    **Authentication Bypass**{.cve-chip}  
-    **SAML Signature Bypass**{.cve-chip}  
+    **OS Command Injection**{.cve-chip}  
+    **Remote Code Execution**{.cve-chip}  
     **Critical**{.cve-chip}  
     ---------------------------------
 
-    Critical authentication bypass in Fortinet FortiCloud SSO feature. Improper verification of **SAML cryptographic signatures** allows **unauthenticated remote attackers** to gain **full administrative access** by crafting malicious SAML responses. Affects **FortiOS, FortiProxy, FortiSwitchManager, FortiWeb** when FortiCloud SSO enabled. Enables complete device compromise, firewall rule modification, and backdoor creation. **Patch immediately** or disable FortiCloud SSO. Fixed versions: FortiOS 7.6.4+/7.4.9+, FortiProxy 7.6.4+/7.4.11+, FortiWeb 8.0.1+/7.6.5+. CWE-347.
+    Critical OS command injection in FortiSandbox `upload_vdi_file` endpoint. Authenticated attackers can inject malicious commands due to **improper input validation**, achieving **root-level code execution** on the appliance. Affects FortiSandbox **5.0.0-5.0.2, 4.4.0-4.4.7, and all 4.2/4.0 versions**. Compromises **security infrastructure**, disrupts malware analysis, and enables **lateral movement**. **Patch immediately** to FortiSandbox 5.0.3+, 4.4.8+. Restrict management access, implement MFA, and monitor for suspicious activity. CWE-78.
 
-    [:octicons-arrow-right-24: View Full Details](Week51/forticloud.md)
-
--   ![SolarEdge SE3680H](Week51/images/solaredge.png)
-    :material-solar-power:{ .lg .middle } **CVE-2025-36745 SolarEdge SE3680H Linux Kernel Vulnerabilities**
-
-    **Unpatched Linux Kernel**{.cve-chip}  
-    **Remote Code Execution**{.cve-chip}  
-    **Unmaintained Components**{.cve-chip}  
-    ---------------------------------
-
-    Solar inverter shipped with **outdated, unpatched Linux kernel** containing multiple vulnerabilities. Allows attackers to achieve **remote code execution, privilege escalation, and information disclosure** without authentication. Affects SolarEdge SE3680H inverters up to firmware **v4.21** in **solar power installations**. Risks include **grid stability concerns, safety hazards, and lateral movement** in networks. Use of unmaintained third-party components (CWE-1104). **Contact SolarEdge for firmware updates**, isolate devices on segmented networks, and restrict management access. CVSS 8.6 (High).
-
-    [:octicons-arrow-right-24: View Full Details](Week51/solaredge.md)
+    [:octicons-arrow-right-24: View Full Details](Week51/sandbox.md)
 
 </div>

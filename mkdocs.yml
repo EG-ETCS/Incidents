@@ -159,3 +159,5 @@ nav:
             - "Apple Multiple Products Use-After-Free WebKit Vulnerability": Week51/useAfterFree.md
             - "Fortinet FortiCloud SSO Login Authentication Bypass Vulnerabilities": Week51/forticloud.md
             - "SolarEdge SE3680H Contains Linux Kernel Vulnerabilities": Week51/solaredge.md
+            - "Russian GRU Cyber Campaign Targeting Critical Infrastructure via Edge Network Devices": Week51/RussianGRU.md
+            - "OS Command Injection in Fortinet FortiSandbox": Week51/sandbox.md
