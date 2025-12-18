@@ -2677,6 +2677,75 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Week51/AsyncOS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cisco AsyncOS Zero-Day Exploitation Campaign
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Week51/asus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ASUS Live Update Embedded Malicious Code Vulnerability
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Week51/sonicWall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    SonicWall SMA1000 Zero-Day Vulnerabilities
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2749,6 +2818,36 @@
 <div><h1 id="this-weeks-security-incidents">This Week's Security Incidents</h1>
 <div class="grid cards">
 <ul>
+<li>
+<p><img alt="Cisco AsyncOS" src="../Week51/images/AsyncOS.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m18 8-8 5-8-5V6l8 5 8-5m0-2H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m6 3h-2v6h2zm0 8h-2v2h2z"></path></svg></span> <strong>CVE-2025-20393 Cisco AsyncOS Zero-Day Actively Exploited</strong></p>
+<p><strong class="cve-chip">Zero-Day</strong><br>
+<strong class="cve-chip">Remote Code Execution</strong><br>
+<strong class="cve-chip">No Patch Available</strong>  </p>
+<hr>
+<p>Critical <strong>zero-day</strong> in Cisco AsyncOS email security appliances enables <strong>unauthenticated remote attackers</strong> to execute arbitrary commands with <strong>root privileges</strong>. <strong>Actively exploited</strong> by China-linked APT group <strong>UAT-9686</strong> deploying sophisticated toolset: <strong>AquaShell</strong> backdoor, <strong>AquaTunnel</strong> reverse SSH, <strong>Chisel</strong> tunneling, and <strong>AquaPurge</strong> log cleaner. Affects Cisco Secure Email Gateway and Email/Web Manager when <strong>Spam Quarantine exposed to Internet</strong>. <strong>No patch available yet</strong>. <strong>Disable Spam Quarantine</strong>, restrict Internet access, and rebuild compromised devices. Improper input validation (CWE-20).</p>
+<p><a href="../Week51/AsyncOS/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+</li>
+<li>
+<p><img alt="ASUS Live Update" src="../Week51/images/asus.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m13 12.6 6-3.4V13c.7 0 1.4.1 2 .4V7.5c0-.4-.2-.7-.5-.9l-7.9-4.4c-.2-.1-.4-.2-.6-.2s-.4.1-.6.2L3.5 6.6c-.3.2-.5.5-.5.9v9c0 .4.2.7.5.9l7.9 4.4c.2.1.4.2.6.2s.4-.1.6-.2l.9-.5c-.3-.6-.4-1.3-.5-2M12 4.2l6 3.3-2 1.1-5.9-3.4zm-1 15.1-6-3.4V9.2l6 3.4zm1-8.5L6 7.5l2-1.2 6 3.5zm4.9 4.7 2.1 2.1 2.1-2.1 1.4 1.4-2.1 2.1 2.1 2.1-1.4 1.4-2.1-2.1-2.1 2.1-1.4-1.4 2.1-2.1-2.1-2.1z"></path></svg></span> <strong>CVE-2025-59374 ASUS Live Update Supply Chain Compromise</strong></p>
+<p><strong class="cve-chip">Supply Chain Compromise</strong><br>
+<strong class="cve-chip">Embedded Malicious Code</strong><br>
+<strong class="cve-chip">Actively Exploited</strong>  </p>
+<hr>
+<p>Sophisticated <strong>supply chain attack</strong> embedded malicious code in ASUS Live Update installers. Trojanized software contains <strong>hard-coded targeting criteria</strong> (MAC addresses, device IDs) executing malicious payloads only on specific systems. <strong>Actively exploited</strong> per CISA. ASUS Live Update reached <strong>end-of-support</strong> - no future fixes expected. Enables arbitrary code execution, data exfiltration, and lateral movement. <strong>Remove ASUS Live Update entirely</strong> (recommended) or update to v3.6.8+. Use Windows Update instead. APT-level selective targeting suggests espionage objectives. CWE-506.</p>
+<p><a href="../Week51/asus/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+</li>
+<li>
+<p><img alt="SonicWall SMA1000" src="../Week51/images/sonicWall.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M9 5h6l-3 3zm1.5 9.66c-.3.34-.5.84-.5 1.34a2 2 0 0 0 2 2 2 2 0 0 0 2-2c0-.55-.22-1.05-.59-1.41l1.42-1.42C15.55 13.9 16 14.9 16 16a4 4 0 0 1-4 4 4 4 0 0 1-4-4c0-1.07.42-2.04 1.1-2.75l-.01-.01 7.08-7.07A4 4 0 0 1 19 5a4 4 0 0 1 4 4 4 4 0 0 1-4 4c-1.1 0-2.1-.45-2.83-1.17l1.42-1.42c.36.37.86.59 1.41.59a2 2 0 0 0 2-2 2 2 0 0 0-2-2c-.55 0-1.05.22-1.41.59zM6.41 7.59C6.05 7.22 5.55 7 5 7a2 2 0 0 0-2 2 2 2 0 0 0 2 2c.55 0 1.05-.22 1.41-.59l1.42 1.42C7.1 12.55 6.1 13 5 13a4 4 0 0 1-4-4 4 4 0 0 1 4-4c1.11 0 2.11.45 2.83 1.17l2.76 2.76-1.42 1.42z"></path></svg></span> <strong>CVE-2025-40602/23006 SonicWall SMA1000 Exploit Chain</strong></p>
+<p><strong class="cve-chip">Zero-Day</strong><br>
+<strong class="cve-chip">Exploit Chain</strong><br>
+<strong class="cve-chip">Actively Exploited</strong>  </p>
+<hr>
+<p><strong>Actively exploited</strong> exploit chain targeting SonicWall SMA1000 remote access gateways. Attackers chain <strong>CVE-2025-23006</strong> (deserialization RCE) with <strong>CVE-2025-40602</strong> (zero-day privilege escalation) achieving <strong>unauthenticated root access</strong>. Missing authorization checks in Appliance Management Console enable escalation. Compromises critical <strong>VPN gateways</strong> enabling credential harvesting, backdoor installation, and <strong>lateral movement</strong> into corporate networks. <strong>Patch immediately</strong> to firmware 12.4.3-03245+, 12.5.0-02283+. Restrict management interfaces, disable public AMC access, and monitor for compromise. Trust boundary breach.</p>
+<p><a href="../Week51/sonicWall/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+</li>
 <li>
 <p><img alt="Russian GRU Campaign" src="../Week51/images/RussianGRU.png">
     <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5M11 7h2v6h-2m0 2h2v2h-2"></path></svg></span> <strong>Russian GRU Cyber Campaign Targeting Critical Infrastructure</strong></p>
