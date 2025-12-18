@@ -161,3 +161,6 @@ nav:
             - "SolarEdge SE3680H Contains Linux Kernel Vulnerabilities": Week51/solaredge.md
             - "Russian GRU Cyber Campaign Targeting Critical Infrastructure via Edge Network Devices": Week51/RussianGRU.md
             - "OS Command Injection in Fortinet FortiSandbox": Week51/sandbox.md
+            - "Cisco AsyncOS Zero-Day Exploitation Campaign": Week51/AsyncOS.md
+            - "ASUS Live Update Embedded Malicious Code Vulnerability": Week51/asus.md
+            - "SonicWall SMA1000 Zero-Day Vulnerabilities": Week51/sonicWall.md
