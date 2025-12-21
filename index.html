@@ -2752,6 +2752,101 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3_3" id="__nav_4_2_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    week52
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            week52
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Week52/ac18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CVE-2025-14993: Tenda AC18 Router Stack Buffer Overflow'
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Week52/watchguard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WatchGuard Firebox Fireware OS IKEv2 Out-of-Bounds Write Vulnerability
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2817,34 +2912,24 @@
 <div class="grid cards">
 <ul>
 <li>
-<p><img alt="Cisco AsyncOS" src="Week51/images/AsyncOS.png">
-    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m18 8-8 5-8-5V6l8 5 8-5m0-2H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m6 3h-2v6h2zm0 8h-2v2h2z"></path></svg></span> <strong>CVE-2025-20393 Cisco AsyncOS Zero-Day Actively Exploited</strong></p>
-<p><strong class="cve-chip">Zero-Day</strong><br>
+<p><img alt="Tenda AC18" src="Week52/images/ac18.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m20.2 5.9.8-.8C19.6 3.7 17.8 3 16 3s-3.6.7-5 2.1l.8.8C13 4.8 14.5 4.2 16 4.2s3 .6 4.2 1.7m-.9.8c-.9-.9-2.1-1.4-3.3-1.4s-2.4.5-3.3 1.4l.8.8c.7-.7 1.6-1 2.5-1s1.8.3 2.5 1zM19 13h-2V9h-2v4H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2M8 18H6v-2h2zm3.5 0h-2v-2h2zm3.5 0h-2v-2h2z"></path></svg></span> <strong>CVE-2025-14993 Tenda AC18 Router Stack Overflow</strong></p>
+<p><strong class="cve-chip">Stack-Based Buffer Overflow</strong><br>
 <strong class="cve-chip">Remote Code Execution</strong><br>
-<strong class="cve-chip">No Patch Available</strong>  </p>
+<strong class="cve-chip">Denial of Service</strong>  </p>
 <hr>
-<p>Critical <strong>zero-day</strong> in Cisco AsyncOS email security appliances enables <strong>unauthenticated remote attackers</strong> to execute arbitrary commands with <strong>root privileges</strong>. <strong>Actively exploited</strong> by China-linked APT group <strong>UAT-9686</strong> deploying sophisticated toolset: <strong>AquaShell</strong> backdoor, <strong>AquaTunnel</strong> reverse SSH, <strong>Chisel</strong> tunneling, and <strong>AquaPurge</strong> log cleaner. Affects Cisco Secure Email Gateway and Email/Web Manager when <strong>Spam Quarantine exposed to Internet</strong>. <strong>No patch available yet</strong>. <strong>Disable Spam Quarantine</strong>, restrict Internet access, and rebuild compromised devices. Improper input validation (CWE-20).</p>
-<p><a href="Week51/AsyncOS/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+<p>Stack-based buffer overflow in Tenda AC18 router firmware <strong>v15.03.05.05</strong> affects <code>/goform/SetDlnaCfg</code> HTTP handler. <strong>Insufficient input validation</strong> allows remote attackers to send <strong>crafted HTTP requests</strong> triggering stack overflow. No authentication required if admin interface exposed. Improper bounds checking in <strong>sprintf-like logic</strong> overwrites stack memory (CWE-121). Enables <strong>DoS via service crash</strong> or <strong>arbitrary code execution</strong> with HTTP daemon privileges. Full <strong>router compromise</strong> allows traffic interception, DNS hijacking, and <strong>lateral movement</strong> to internal networks. <strong>Disable WAN admin access</strong>, update firmware, restrict interface access, and monitor <code>/goform/*</code> endpoints. Perimeter device vulnerability.</p>
+<p><a href="Week52/ac18/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
 </li>
 <li>
-<p><img alt="ASUS Live Update" src="Week51/images/asus.png">
-    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m13 12.6 6-3.4V13c.7 0 1.4.1 2 .4V7.5c0-.4-.2-.7-.5-.9l-7.9-4.4c-.2-.1-.4-.2-.6-.2s-.4.1-.6.2L3.5 6.6c-.3.2-.5.5-.5.9v9c0 .4.2.7.5.9l7.9 4.4c.2.1.4.2.6.2s.4-.1.6-.2l.9-.5c-.3-.6-.4-1.3-.5-2M12 4.2l6 3.3-2 1.1-5.9-3.4zm-1 15.1-6-3.4V9.2l6 3.4zm1-8.5L6 7.5l2-1.2 6 3.5zm4.9 4.7 2.1 2.1 2.1-2.1 1.4 1.4-2.1 2.1 2.1 2.1-1.4 1.4-2.1-2.1-2.1 2.1-1.4-1.4 2.1-2.1-2.1-2.1z"></path></svg></span> <strong>CVE-2025-59374 ASUS Live Update Supply Chain Compromise</strong></p>
-<p><strong class="cve-chip">Supply Chain Compromise</strong><br>
-<strong class="cve-chip">Embedded Malicious Code</strong><br>
+<p><img alt="WatchGuard Firebox" src="Week52/images/watchguard.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M17.66 11.2c-.23-.3-.51-.56-.77-.82-.67-.6-1.43-1.03-2.07-1.66C13.33 7.26 13 4.85 13.95 3c-.95.23-1.78.75-2.49 1.32-2.59 2.08-3.61 5.75-2.39 8.9.04.1.08.2.08.33 0 .22-.15.42-.35.5-.23.1-.47.04-.66-.12a.6.6 0 0 1-.14-.17c-1.13-1.43-1.31-3.48-.55-5.12C5.78 10 4.87 12.3 5 14.47c.06.5.12 1 .29 1.5.14.6.41 1.2.71 1.73 1.08 1.73 2.95 2.97 4.96 3.22 2.14.27 4.43-.12 6.07-1.6 1.83-1.66 2.47-4.32 1.53-6.6l-.13-.26c-.21-.46-.77-1.26-.77-1.26m-3.16 6.3c-.28.24-.74.5-1.1.6-1.12.4-2.24-.16-2.9-.82 1.19-.28 1.9-1.16 2.11-2.05.17-.8-.15-1.46-.28-2.23-.12-.74-.1-1.37.17-2.06.19.38.39.76.63 1.06.77 1 1.98 1.44 2.24 2.8.04.14.06.28.06.43.03.82-.33 1.72-.93 2.27"></path></svg></span> <strong>CVE-2025-14733 WatchGuard Firebox IKEv2 Zero-Day</strong></p>
+<p><strong class="cve-chip">Out-of-Bounds Write</strong><br>
+<strong class="cve-chip">Remote Code Execution</strong><br>
 <strong class="cve-chip">Actively Exploited</strong>  </p>
 <hr>
-<p>Sophisticated <strong>supply chain attack</strong> embedded malicious code in ASUS Live Update installers. Trojanized software contains <strong>hard-coded targeting criteria</strong> (MAC addresses, device IDs) executing malicious payloads only on specific systems. <strong>Actively exploited</strong> per CISA. ASUS Live Update reached <strong>end-of-support</strong> - no future fixes expected. Enables arbitrary code execution, data exfiltration, and lateral movement. <strong>Remove ASUS Live Update entirely</strong> (recommended) or update to v3.6.8+. Use Windows Update instead. APT-level selective targeting suggests espionage objectives. CWE-506.</p>
-<p><a href="Week51/asus/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
-</li>
-<li>
-<p><img alt="SonicWall SMA1000" src="Week51/images/sonicWall.png">
-    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M9 5h6l-3 3zm1.5 9.66c-.3.34-.5.84-.5 1.34a2 2 0 0 0 2 2 2 2 0 0 0 2-2c0-.55-.22-1.05-.59-1.41l1.42-1.42C15.55 13.9 16 14.9 16 16a4 4 0 0 1-4 4 4 4 0 0 1-4-4c0-1.07.42-2.04 1.1-2.75l-.01-.01 7.08-7.07A4 4 0 0 1 19 5a4 4 0 0 1 4 4 4 4 0 0 1-4 4c-1.1 0-2.1-.45-2.83-1.17l1.42-1.42c.36.37.86.59 1.41.59a2 2 0 0 0 2-2 2 2 0 0 0-2-2c-.55 0-1.05.22-1.41.59zM6.41 7.59C6.05 7.22 5.55 7 5 7a2 2 0 0 0-2 2 2 2 0 0 0 2 2c.55 0 1.05-.22 1.41-.59l1.42 1.42C7.1 12.55 6.1 13 5 13a4 4 0 0 1-4-4 4 4 0 0 1 4-4c1.11 0 2.11.45 2.83 1.17l2.76 2.76-1.42 1.42z"></path></svg></span> <strong>CVE-2025-40602/23006 SonicWall SMA1000 Exploit Chain</strong></p>
-<p><strong class="cve-chip">Zero-Day</strong><br>
-<strong class="cve-chip">Exploit Chain</strong><br>
-<strong class="cve-chip">Actively Exploited</strong>  </p>
-<hr>
-<p><strong>Actively exploited</strong> exploit chain targeting SonicWall SMA1000 remote access gateways. Attackers chain <strong>CVE-2025-23006</strong> (deserialization RCE) with <strong>CVE-2025-40602</strong> (zero-day privilege escalation) achieving <strong>unauthenticated root access</strong>. Missing authorization checks in Appliance Management Console enable escalation. Compromises critical <strong>VPN gateways</strong> enabling credential harvesting, backdoor installation, and <strong>lateral movement</strong> into corporate networks. <strong>Patch immediately</strong> to firmware 12.4.3-03245+, 12.5.0-02283+. Restrict management interfaces, disable public AMC access, and monitor for compromise. Trust boundary breach.</p>
-<p><a href="Week51/sonicWall/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+<p>Critical memory corruption in WatchGuard Fireware OS <strong>iked process</strong> enables <strong>unauthenticated remote attackers</strong> to execute arbitrary code via crafted <strong>IKEv2 packets</strong>. <strong>Actively exploited in the wild</strong>. Affects Mobile User VPN and Branch Office VPN with <strong>dynamic gateway peers</strong>. Out-of-bounds write (CWE-787) in IKEv2 handling causes memory corruption leading to <strong>firewall compromise</strong>. Enables VPN traffic interception, credential theft, and <strong>lateral movement</strong>. <strong>Patch Fireware OS immediately</strong>, disable IKEv2 dynamic peers if not needed, restrict VPN access, and monitor for exploitation. Perimeter breach risk.</p>
+<p><a href="Week52/watchguard/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
 </li>
 </ul>
 </div></div>
