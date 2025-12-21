@@ -164,3 +164,6 @@ nav:
             - "Cisco AsyncOS Zero-Day Exploitation Campaign": Week51/AsyncOS.md
             - "ASUS Live Update Embedded Malicious Code Vulnerability": Week51/asus.md
             - "SonicWall SMA1000 Zero-Day Vulnerabilities": Week51/sonicWall.md
+         - "week52":
+            - "CVE-2025-14993: Tenda AC18 Router Stack Buffer Overflow'": Week52/ac18.md
+            - "WatchGuard Firebox Fireware OS IKEv2 Out-of-Bounds Write Vulnerability": Week52/watchguard.md
