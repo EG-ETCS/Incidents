@@ -2839,6 +2839,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Week52/doj/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    U.S. DOJ Charges 54 in ATM Jackpotting Scheme Using Ploutus Malware
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2912,24 +2935,15 @@
 <div class="grid cards">
 <ul>
 <li>
-<p><img alt="Tenda AC18" src="Week52/images/ac18.png">
-    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m20.2 5.9.8-.8C19.6 3.7 17.8 3 16 3s-3.6.7-5 2.1l.8.8C13 4.8 14.5 4.2 16 4.2s3 .6 4.2 1.7m-.9.8c-.9-.9-2.1-1.4-3.3-1.4s-2.4.5-3.3 1.4l.8.8c.7-.7 1.6-1 2.5-1s1.8.3 2.5 1zM19 13h-2V9h-2v4H5a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2M8 18H6v-2h2zm3.5 0h-2v-2h2zm3.5 0h-2v-2h2z"></path></svg></span> <strong>CVE-2025-14993 Tenda AC18 Router Stack Overflow</strong></p>
-<p><strong class="cve-chip">Stack-Based Buffer Overflow</strong><br>
-<strong class="cve-chip">Remote Code Execution</strong><br>
-<strong class="cve-chip">Denial of Service</strong>  </p>
+<p><img alt="DOJ ATM Jackpotting" src="Week52/images/doj.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m2.3 20.28 9.6-9.6-1.4-1.42-.72.71a.996.996 0 0 1-1.41 0l-.71-.71a.996.996 0 0 1 0-1.41l5.66-5.66a.996.996 0 0 1 1.41 0l.71.71c.39.39.39 1.02 0 1.41l-.71.69 1.42 1.43a.996.996 0 0 1 1.41 0c.39.39.39 1.03 0 1.42l1.41 1.41.71-.71c.39-.39 1.03-.39 1.42 0l.7.71c.39.39.39 1.03 0 1.42l-5.65 5.65c-.39.39-1.03.39-1.42 0l-.7-.7a.99.99 0 0 1 0-1.42l.7-.71-1.41-1.41-9.61 9.61a.996.996 0 0 1-1.41 0c-.39-.39-.39-1.03 0-1.42M20 19a2 2 0 0 1 2 2v1H12v-1a2 2 0 0 1 2-2z"></path></svg></span> <strong>U.S. DOJ Charges 54 in $40M ATM Jackpotting Scheme</strong></p>
+<p><strong class="cve-chip">ATM Malware</strong><br>
+<strong class="cve-chip">Physical Attack</strong><br>
+<strong class="cve-chip">Organized Crime</strong><br>
+<strong class="cve-chip">$40.73M Stolen</strong>  </p>
 <hr>
-<p>Stack-based buffer overflow in Tenda AC18 router firmware <strong>v15.03.05.05</strong> affects <code>/goform/SetDlnaCfg</code> HTTP handler. <strong>Insufficient input validation</strong> allows remote attackers to send <strong>crafted HTTP requests</strong> triggering stack overflow. No authentication required if admin interface exposed. Improper bounds checking in <strong>sprintf-like logic</strong> overwrites stack memory (CWE-121). Enables <strong>DoS via service crash</strong> or <strong>arbitrary code execution</strong> with HTTP daemon privileges. Full <strong>router compromise</strong> allows traffic interception, DNS hijacking, and <strong>lateral movement</strong> to internal networks. <strong>Disable WAN admin access</strong>, update firmware, restrict interface access, and monitor <code>/goform/*</code> endpoints. Perimeter device vulnerability.</p>
-<p><a href="Week52/ac18/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
-</li>
-<li>
-<p><img alt="WatchGuard Firebox" src="Week52/images/watchguard.png">
-    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M17.66 11.2c-.23-.3-.51-.56-.77-.82-.67-.6-1.43-1.03-2.07-1.66C13.33 7.26 13 4.85 13.95 3c-.95.23-1.78.75-2.49 1.32-2.59 2.08-3.61 5.75-2.39 8.9.04.1.08.2.08.33 0 .22-.15.42-.35.5-.23.1-.47.04-.66-.12a.6.6 0 0 1-.14-.17c-1.13-1.43-1.31-3.48-.55-5.12C5.78 10 4.87 12.3 5 14.47c.06.5.12 1 .29 1.5.14.6.41 1.2.71 1.73 1.08 1.73 2.95 2.97 4.96 3.22 2.14.27 4.43-.12 6.07-1.6 1.83-1.66 2.47-4.32 1.53-6.6l-.13-.26c-.21-.46-.77-1.26-.77-1.26m-3.16 6.3c-.28.24-.74.5-1.1.6-1.12.4-2.24-.16-2.9-.82 1.19-.28 1.9-1.16 2.11-2.05.17-.8-.15-1.46-.28-2.23-.12-.74-.1-1.37.17-2.06.19.38.39.76.63 1.06.77 1 1.98 1.44 2.24 2.8.04.14.06.28.06.43.03.82-.33 1.72-.93 2.27"></path></svg></span> <strong>CVE-2025-14733 WatchGuard Firebox IKEv2 Zero-Day</strong></p>
-<p><strong class="cve-chip">Out-of-Bounds Write</strong><br>
-<strong class="cve-chip">Remote Code Execution</strong><br>
-<strong class="cve-chip">Actively Exploited</strong>  </p>
-<hr>
-<p>Critical memory corruption in WatchGuard Fireware OS <strong>iked process</strong> enables <strong>unauthenticated remote attackers</strong> to execute arbitrary code via crafted <strong>IKEv2 packets</strong>. <strong>Actively exploited in the wild</strong>. Affects Mobile User VPN and Branch Office VPN with <strong>dynamic gateway peers</strong>. Out-of-bounds write (CWE-787) in IKEv2 handling causes memory corruption leading to <strong>firewall compromise</strong>. Enables VPN traffic interception, credential theft, and <strong>lateral movement</strong>. <strong>Patch Fireware OS immediately</strong>, disable IKEv2 dynamic peers if not needed, restrict VPN access, and monitor for exploitation. Perimeter breach risk.</p>
-<p><a href="Week52/watchguard/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+<p><strong>U.S. Department of Justice</strong> indicted <strong>54 individuals</strong> for conspiracy involving <strong>ATM jackpotting</strong> using <strong>Ploutus malware</strong>. Criminals physically breached ATM cabinets via lock picking, key duplication, or drilling, then installed malware via <strong>hard drive replacement</strong> or <strong>USB deployment</strong>. Ploutus malware issued unauthorized commands to cash dispensers, forcing ATMs to eject currency. <strong>Over 1,500 incidents</strong> since 2021 resulted in <strong>$40.73 million stolen</strong>. Proceeds allegedly laundered and funneled to <strong>Tren de Aragua</strong>, Venezuelan <strong>foreign terrorist organization</strong>. Defendants face <strong>20-335 years imprisonment</strong>. Harden physical security with tamper-proof locks and alarms, phase out <strong>Windows XP</strong>, deploy endpoint protection, enable secure boot, and implement transaction anomaly detection. Cybercrime-terrorism nexus.</p>
+<p><a href="Week52/doj/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
 </li>
 </ul>
 </div></div>
