@@ -167,3 +167,4 @@ nav:
          - "week52":
             - "CVE-2025-14993: Tenda AC18 Router Stack Buffer Overflow'": Week52/ac18.md
             - "WatchGuard Firebox Fireware OS IKEv2 Out-of-Bounds Write Vulnerability": Week52/watchguard.md
+            - "U.S. DOJ Charges 54 in ATM Jackpotting Scheme Using Ploutus Malware" : Week52/doj.md
