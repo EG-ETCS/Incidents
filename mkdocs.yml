@@ -168,3 +168,6 @@ nav:
             - "CVE-2025-14993: Tenda AC18 Router Stack Buffer Overflow'": Week52/ac18.md
             - "WatchGuard Firebox Fireware OS IKEv2 Out-of-Bounds Write Vulnerability": Week52/watchguard.md
             - "U.S. DOJ Charges 54 in ATM Jackpotting Scheme Using Ploutus Malware" : Week52/doj.md
+            - "Romanian Waters Authority Hit by Ransomware Attack": Week52/romanian.md
+            - "Kimwolf Botnet: 1.8 Million Android Devices Hijacked": Week52/kimwolf.md
+            - "China-Linked \"Ink Dragon\" APT Espionage Campaign": Week52/dragon.md
