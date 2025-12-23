@@ -35,7 +35,7 @@ hide:
     [:octicons-arrow-right-24: View Full Details](Week52/kimwolf.md)
 
 -   ![Ink Dragon APT](Week52/images/dragon.png)
-    :material-dragon:{ .lg .middle } **China-Linked Ink Dragon APT Espionage Campaign**
+    :material-shield-alert:{ .lg .middle } **China-Linked Ink Dragon APT Espionage Campaign**
 
     **APT Campaign**{.cve-chip}  
     **China-Linked**{.cve-chip}  
