@@ -2864,6 +2864,75 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Week52/romanian/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Romanian Waters Authority Hit by Ransomware Attack
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Week52/kimwolf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kimwolf Botnet: 1.8 Million Android Devices Hijacked
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Week52/dragon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    China-Linked "Ink Dragon" APT Espionage Campaign
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2936,6 +3005,39 @@
 <div><h1 id="this-weeks-security-incidents">This Week's Security Incidents</h1>
 <div class="grid cards">
 <ul>
+<li>
+<p><img alt="Romanian Waters" src="../Week52/images/romanian.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 20a6 6 0 0 1-6-6c0-4 6-10.75 6-10.75S18 10 18 14a6 6 0 0 1-6 6"></path></svg></span> <strong>Romanian Waters Authority Ransomware Attack</strong></p>
+<p><strong class="cve-chip">Ransomware</strong><br>
+<strong class="cve-chip">BitLocker Abuse</strong><br>
+<strong class="cve-chip">Critical Infrastructure</strong><br>
+<strong class="cve-chip">1,000 Systems</strong>  </p>
+<hr>
+<p><strong>Romanian Waters authority</strong> (Apele Române) suffered ransomware incident compromising <strong>~1,000 IT systems</strong> across national and regional offices. Attackers abused <strong>Windows BitLocker</strong> native encryption to maliciously encrypt systems, avoiding traditional ransomware detection. Affected <strong>GIS servers, databases, email, web, and DNS infrastructure</strong>. Ransom note demanded contact within <strong>7 days</strong>. Website taken offline. <strong>Critical OT systems remained operational</strong> due to proper <strong>IT/OT segregation</strong>—dam control, flood monitoring, and water distribution unaffected. No threat actor claimed responsibility. <strong>DNSC and Romanian Intelligence</strong> investigating. Systems being restored from backups. <strong>Policy: no negotiation</strong>. Integration into national critical infrastructure cyber monitoring underway. BitLocker abuse technique requires enhanced endpoint detection.</p>
+<p><a href="../Week52/romanian/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+</li>
+<li>
+<p><img alt="Kimwolf Botnet" src="../Week52/images/kimwolf.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M22 14h-1c0-3.87-3.13-7-7-7h-1V5.73A2 2 0 1 0 10 4c0 .74.4 1.39 1 1.73V7h-1c-3.87 0-7 3.13-7 7H2c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1h1v1a2 2 0 0 0 2 2h14c1.11 0 2-.89 2-2v-1h1c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1M7.5 18A2.5 2.5 0 0 1 5 15.5c0-.82.4-1.54 1-2l3.83 2.88C9.5 17.32 8.57 18 7.5 18m9 0c-1.07 0-2-.68-2.33-1.62L18 13.5c.6.46 1 1.18 1 2a2.5 2.5 0 0 1-2.5 2.5"></path></svg></span> <strong>Kimwolf Botnet: 1.8M Android Devices Hijacked</strong></p>
+<p><strong class="cve-chip">Android Botnet</strong><br>
+<strong class="cve-chip">1.8M Devices</strong><br>
+<strong class="cve-chip">DDoS</strong><br>
+<strong class="cve-chip">Proxy Network</strong>  </p>
+<hr>
+<p><strong>Kimwolf botnet</strong> compromised <strong>~1.8 million Android devices</strong> (smart TVs, set-top boxes, tablets) into distributed attack network. Built with <strong>Android NDK</strong> native code. Capabilities: <strong>DDoS (TCP/UDP/ICMP)</strong>, <strong>proxy forwarding</strong>, <strong>reverse shell</strong>, file management. Uses <strong>DNS-over-TLS encryption</strong>, <strong>ECDSA-signed commands</strong>, and <strong>Ethereum Name Service (ENS)</strong> blockchain domains (pawsatyou.eth) for resilient C2 (EtherHiding). Linked to <strong>AISURU botnet</strong> via shared code. Issued <strong>~1.7 billion DDoS commands</strong>; <strong>96% of activity is proxy monetization</strong>. C2 domain briefly <strong>ranked above Google</strong> in Cloudflare traffic. Infected via trojanized apps, insecure firmware, or <strong>uncertified Android TV boxes</strong>. Use certified devices, avoid sideloading, update firmware, change default passwords, disable ADB, segment IoT networks.</p>
+<p><a href="../Week52/kimwolf/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+</li>
+<li>
+<p><img alt="Ink Dragon APT" src="../Week52/images/dragon.png">
+    :material-dragon:{ .lg .middle } <strong>China-Linked Ink Dragon APT Espionage Campaign</strong></p>
+<p><strong class="cve-chip">APT Campaign</strong><br>
+<strong class="cve-chip">China-Linked</strong><br>
+<strong class="cve-chip">ShadowPad</strong><br>
+<strong class="cve-chip">Government Targets</strong>  </p>
+<hr>
+<p><strong>Ink Dragon</strong> China-linked APT targeting <strong>government and telecom networks</strong> across Asia, South America, and Europe. Exploits <strong>misconfigured IIS/SharePoint servers</strong> using <strong>ASP.NET ViewState deserialization</strong> (predictable machine keys) for RCE. Deploys <strong>ShadowPad backdoor</strong> and <strong>FINALDRAFT (Squidoor)</strong> malware. Establishes <strong>C2 relay network</strong> converting compromised IIS servers into traffic-forwarding nodes blending with legitimate traffic. Harvests credentials via <strong>LSASS dumps</strong>, registry hive extraction. Maintains <strong>stealthy long-term persistence</strong> via scheduled tasks, services, firewall modifications. Exfiltrates sensitive government data. Harden IIS/SharePoint, rotate machine keys, deploy EDR, segment networks, monitor relay behavior, and reset all credentials after detection.</p>
+<p><a href="../Week52/dragon/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+</li>
 <li>
 <p><img alt="DOJ ATM Jackpotting" src="../Week52/images/doj.png">
     <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m2.3 20.28 9.6-9.6-1.4-1.42-.72.71a.996.996 0 0 1-1.41 0l-.71-.71a.996.996 0 0 1 0-1.41l5.66-5.66a.996.996 0 0 1 1.41 0l.71.71c.39.39.39 1.02 0 1.41l-.71.69 1.42 1.43a.996.996 0 0 1 1.41 0c.39.39.39 1.03 0 1.42l1.41 1.41.71-.71c.39-.39 1.03-.39 1.42 0l.7.71c.39.39.39 1.03 0 1.42l-5.65 5.65c-.39.39-1.03.39-1.42 0l-.7-.7a.99.99 0 0 1 0-1.42l.7-.71-1.41-1.41-9.61 9.61a.996.996 0 0 1-1.41 0c-.39-.39-.39-1.03 0-1.42M20 19a2 2 0 0 1 2 2v1H12v-1a2 2 0 0 1 2-2z"></path></svg></span> <strong>U.S. DOJ Charges 54 in $40M ATM Jackpotting Scheme</strong></p>
