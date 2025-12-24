@@ -171,3 +171,5 @@ nav:
             - "Romanian Waters Authority Hit by Ransomware Attack": Week52/romanian.md
             - "Kimwolf Botnet: 1.8 Million Android Devices Hijacked": Week52/kimwolf.md
             - "China-Linked \"Ink Dragon\" APT Espionage Campaign": Week52/dragon.md
+            - "Cyberattack on La Poste and La Banque Postale": Week52/laposte.md
+            - "CVE-2025-68613: Critical n8n Remote Code Execution Vulnerability": Week52/n8n.md

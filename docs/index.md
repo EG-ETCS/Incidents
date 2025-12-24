@@ -8,43 +8,30 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Romanian Waters](Week52/images/romanian.png)
-    :material-water:{ .lg .middle } **Romanian Waters Authority Ransomware Attack**
+-   ![La Poste Cyberattack](Week52/images/laposte.png)
+    :material-email-fast:{ .lg .middle } **Cyberattack on La Poste and La Banque Postale**
 
-    **Ransomware**{.cve-chip}  
-    **BitLocker Abuse**{.cve-chip}  
+    **DDoS Attack**{.cve-chip}  
     **Critical Infrastructure**{.cve-chip}  
-    **1,000 Systems**{.cve-chip}  
+    **Banking Services**{.cve-chip}  
+    **No Data Breach**{.cve-chip}  
     ---------------------------------
 
-    **Romanian Waters authority** (Apele Române) suffered ransomware incident compromising **~1,000 IT systems** across national and regional offices. Attackers abused **Windows BitLocker** native encryption to maliciously encrypt systems, avoiding traditional ransomware detection. Affected **GIS servers, databases, email, web, and DNS infrastructure**. Ransom note demanded contact within **7 days**. Website taken offline. **Critical OT systems remained operational** due to proper **IT/OT segregation**—dam control, flood monitoring, and water distribution unaffected. No threat actor claimed responsibility. **DNSC and Romanian Intelligence** investigating. Systems being restored from backups. **Policy: no negotiation**. Integration into national critical infrastructure cyber monitoring underway. BitLocker abuse technique requires enhanced endpoint detection.
+    **La Poste** (France's national postal service) and **La Banque Postale** suffered **DDoS cyberattack** disrupting **online and mobile services**. High-volume traffic flooding rendered **postal tracking**, **online banking portals**, **mobile apps**, and **digital identity services** unavailable. **Core banking systems and payment infrastructure remained operational**. **No data breach confirmed**—no malware, data exfiltration, or internal system compromise detected. Physical operations continued with increased branch/call center load. Services gradually restored via **DDoS scrubbing**, rate limiting, traffic rerouting. Strengthen DDoS protection (ISP/cloud-based), improve redundancy, enhance monitoring, stress-test services, and coordinate with ANSSI. Critical infrastructure availability attack.
 
-    [:octicons-arrow-right-24: View Full Details](Week52/romanian.md)
+    [:octicons-arrow-right-24: View Full Details](Week52/laposte.md)
 
--   ![Kimwolf Botnet](Week52/images/kimwolf.png)
-    :material-robot-angry:{ .lg .middle } **Kimwolf Botnet: 1.8M Android Devices Hijacked**
+-   ![n8n RCE Vulnerability](Week52/images/n8n.png)
+    :material-robot-confused:{ .lg .middle } **CVE-2025-68613 n8n Critical RCE Vulnerability**
 
-    **Android Botnet**{.cve-chip}  
-    **1.8M Devices**{.cve-chip}  
-    **DDoS**{.cve-chip}  
-    **Proxy Network**{.cve-chip}  
+    **Remote Code Execution**{.cve-chip}  
+    **CVSS 9.9**{.cve-chip}  
+    **103,000+ Instances**{.cve-chip}  
+    **Authenticated**{.cve-chip}  
     ---------------------------------
 
-    **Kimwolf botnet** compromised **~1.8 million Android devices** (smart TVs, set-top boxes, tablets) into distributed attack network. Built with **Android NDK** native code. Capabilities: **DDoS (TCP/UDP/ICMP)**, **proxy forwarding**, **reverse shell**, file management. Uses **DNS-over-TLS encryption**, **ECDSA-signed commands**, and **Ethereum Name Service (ENS)** blockchain domains (pawsatyou.eth) for resilient C2 (EtherHiding). Linked to **AISURU botnet** via shared code. Issued **~1.7 billion DDoS commands**; **96% of activity is proxy monetization**. C2 domain briefly **ranked above Google** in Cloudflare traffic. Infected via trojanized apps, insecure firmware, or **uncertified Android TV boxes**. Use certified devices, avoid sideloading, update firmware, change default passwords, disable ADB, segment IoT networks.
+    **CVE-2025-68613** critical RCE in **n8n workflow automation platform** allows **authenticated attackers** to execute arbitrary code. **Insufficient sandboxing** of user-supplied workflow expressions enables **sandbox escape** accessing Node.js internal objects (`process`, `require`, `child_process`). Attacker with workflow permissions crafts malicious expression executing **system-level commands** with n8n process privileges. Affects **v0.211.0-v1.120.3** and **v1.121.0** (pre-patch). **~103,000+ exposed instances** globally. Enables **full system compromise**, **credential theft** (API keys, OAuth tokens), **workflow manipulation**, and **lateral movement**. **Upgrade to v1.120.4, v1.121.1, or v1.122.0**, restrict workflow permissions to trusted admins, enforce MFA, run with minimal OS privileges, and monitor for suspicious expressions.
 
-    [:octicons-arrow-right-24: View Full Details](Week52/kimwolf.md)
-
--   ![Ink Dragon APT](Week52/images/dragon.png)
-    :material-shield-alert:{ .lg .middle } **China-Linked Ink Dragon APT Espionage Campaign**
-
-    **APT Campaign**{.cve-chip}  
-    **China-Linked**{.cve-chip}  
-    **ShadowPad**{.cve-chip}  
-    **Government Targets**{.cve-chip}  
-    ---------------------------------
-
-    **Ink Dragon** China-linked APT targeting **government and telecom networks** across Asia, South America, and Europe. Exploits **misconfigured IIS/SharePoint servers** using **ASP.NET ViewState deserialization** (predictable machine keys) for RCE. Deploys **ShadowPad backdoor** and **FINALDRAFT (Squidoor)** malware. Establishes **C2 relay network** converting compromised IIS servers into traffic-forwarding nodes blending with legitimate traffic. Harvests credentials via **LSASS dumps**, registry hive extraction. Maintains **stealthy long-term persistence** via scheduled tasks, services, firewall modifications. Exfiltrates sensitive government data. Harden IIS/SharePoint, rotate machine keys, deploy EDR, segment networks, monitor relay behavior, and reset all credentials after detection.
-
-    [:octicons-arrow-right-24: View Full Details](Week52/dragon.md)
+    [:octicons-arrow-right-24: View Full Details](Week52/n8n.md)
 
 </div>
