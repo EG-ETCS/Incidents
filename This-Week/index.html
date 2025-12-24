@@ -2933,6 +2933,52 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Week52/laposte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cyberattack on La Poste and La Banque Postale
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Week52/n8n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CVE-2025-68613: Critical n8n Remote Code Execution Vulnerability
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3005,6 +3051,28 @@
 <div><h1 id="this-weeks-security-incidents">This Week's Security Incidents</h1>
 <div class="grid cards">
 <ul>
+<li>
+<p><img alt="La Poste Cyberattack" src="../Week52/images/laposte.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M22 5.5H9c-1.1 0-2 .9-2 2v9a2 2 0 0 0 2 2h13c1.11 0 2-.89 2-2v-9a2 2 0 0 0-2-2m0 3.67-6.5 3.33L9 9.17V7.5l6.5 3.31L22 7.5zM5 16.5c0 .17.03.33.05.5H1c-.552 0-1-.45-1-1s.448-1 1-1h4zM3 7h2.05c-.02.17-.05.33-.05.5V9H3c-.55 0-1-.45-1-1s.45-1 1-1m-2 5c0-.55.45-1 1-1h3v2H2c-.55 0-1-.45-1-1"></path></svg></span> <strong>Cyberattack on La Poste and La Banque Postale</strong></p>
+<p><strong class="cve-chip">DDoS Attack</strong><br>
+<strong class="cve-chip">Critical Infrastructure</strong><br>
+<strong class="cve-chip">Banking Services</strong><br>
+<strong class="cve-chip">No Data Breach</strong>  </p>
+<hr>
+<p><strong>La Poste</strong> (France's national postal service) and <strong>La Banque Postale</strong> suffered <strong>DDoS cyberattack</strong> disrupting <strong>online and mobile services</strong>. High-volume traffic flooding rendered <strong>postal tracking</strong>, <strong>online banking portals</strong>, <strong>mobile apps</strong>, and <strong>digital identity services</strong> unavailable. <strong>Core banking systems and payment infrastructure remained operational</strong>. <strong>No data breach confirmed</strong>—no malware, data exfiltration, or internal system compromise detected. Physical operations continued with increased branch/call center load. Services gradually restored via <strong>DDoS scrubbing</strong>, rate limiting, traffic rerouting. Strengthen DDoS protection (ISP/cloud-based), improve redundancy, enhance monitoring, stress-test services, and coordinate with ANSSI. Critical infrastructure availability attack.</p>
+<p><a href="../Week52/laposte/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+</li>
+<li>
+<p><img alt="n8n RCE Vulnerability" src="../Week52/images/n8n.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M20 4h-2V3h2.5c.28 0 .5.22.5.5v2c0 .28-.22.5-.5.5H20v1h-1V5h1zm-1 5h1V8h-1zm-2-6h-1v4h1zm6 12v3c0 .55-.45 1-1 1h-1v1c0 1.11-.89 2-2 2H5a2 2 0 0 1-2-2v-1H2c-.55 0-1-.45-1-1v-3c0-.55.45-1 1-1h1c0-3.87 3.13-7 7-7h1V5.73c-.6-.34-1-.99-1-1.73 0-1.1.9-2 2-2s2 .9 2 2c0 .74-.4 1.39-1 1.73V7h1c.34 0 .67.03 1 .08V10h4.74A6.94 6.94 0 0 1 21 14h1c.55 0 1 .45 1 1m-13 .5a2.5 2.5 0 0 0-5 0 2.5 2.5 0 0 0 5 0m9 0a2.5 2.5 0 0 0-5 0 2.5 2.5 0 0 0 5 0M17 8h-1v1h1z"></path></svg></span> <strong>CVE-2025-68613 n8n Critical RCE Vulnerability</strong></p>
+<p><strong class="cve-chip">Remote Code Execution</strong><br>
+<strong class="cve-chip">CVSS 9.9</strong><br>
+<strong class="cve-chip">103,000+ Instances</strong><br>
+<strong class="cve-chip">Authenticated</strong>  </p>
+<hr>
+<p><strong>CVE-2025-68613</strong> critical RCE in <strong>n8n workflow automation platform</strong> allows <strong>authenticated attackers</strong> to execute arbitrary code. <strong>Insufficient sandboxing</strong> of user-supplied workflow expressions enables <strong>sandbox escape</strong> accessing Node.js internal objects (<code>process</code>, <code>require</code>, <code>child_process</code>). Attacker with workflow permissions crafts malicious expression executing <strong>system-level commands</strong> with n8n process privileges. Affects <strong>v0.211.0-v1.120.3</strong> and <strong>v1.121.0</strong> (pre-patch). <strong>~103,000+ exposed instances</strong> globally. Enables <strong>full system compromise</strong>, <strong>credential theft</strong> (API keys, OAuth tokens), <strong>workflow manipulation</strong>, and <strong>lateral movement</strong>. <strong>Upgrade to v1.120.4, v1.121.1, or v1.122.0</strong>, restrict workflow permissions to trusted admins, enforce MFA, run with minimal OS privileges, and monitor for suspicious expressions.</p>
+<p><a href="../Week52/n8n/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+</li>
 <li>
 <p><img alt="Romanian Waters" src="../Week52/images/romanian.png">
     <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 20a6 6 0 0 1-6-6c0-4 6-10.75 6-10.75S18 10 18 14a6 6 0 0 1-6 6"></path></svg></span> <strong>Romanian Waters Authority Ransomware Attack</strong></p>
