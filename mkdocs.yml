@@ -173,3 +173,6 @@ nav:
             - "China-Linked \"Ink Dragon\" APT Espionage Campaign": Week52/dragon.md
             - "Cyberattack on La Poste and La Banque Postale": Week52/laposte.md
             - "CVE-2025-68613: Critical n8n Remote Code Execution Vulnerability": Week52/n8n.md
+            - "Lotusbail: Malicious npm Package Targeting WhatsApp Web API Developers": Week52/lotusbail.md
+            - "MacSync macOS Stealer: Code-Signed Malware Bypassing Gatekeeper": Week52/macsync.md
+            - "FBI Seizure of Fraud Domain Hosting Stolen Bank Credentials": Week52/fbi.md
