@@ -8,169 +8,145 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![Cisco AsyncOS](Week51/images/AsyncOS.png)
-    :material-email-alert:{ .lg .middle } **CVE-2025-20393 Cisco AsyncOS Zero-Day Actively Exploited**
+-   ![Lotusbail npm Attack](Week52/images/lotusbail.png)
+    :material-package-variant-closed:{ .lg .middle } **Lotusbail Malicious npm Package**
 
-    **Zero-Day**{.cve-chip}  
-    **Remote Code Execution**{.cve-chip}  
-    **No Patch Available**{.cve-chip}  
+    **Supply Chain Attack**{.cve-chip}  
+    **npm Package**{.cve-chip}  
+    **WhatsApp Compromise**{.cve-chip}  
+    **56,000+ Downloads**{.cve-chip}  
     ---------------------------------
 
-    Critical **zero-day** in Cisco AsyncOS email security appliances enables **unauthenticated remote attackers** to execute arbitrary commands with **root privileges**. **Actively exploited** by China-linked APT group **UAT-9686** deploying sophisticated toolset: **AquaShell** backdoor, **AquaTunnel** reverse SSH, **Chisel** tunneling, and **AquaPurge** log cleaner. Affects Cisco Secure Email Gateway and Email/Web Manager when **Spam Quarantine exposed to Internet**. **No patch available yet**. **Disable Spam Quarantine**, restrict Internet access, and rebuild compromised devices. Improper input validation (CWE-20).
+    **Lotusbail** malicious npm package disguised as WhatsApp Web API library downloaded **56,000+ times**. Trojanized fork of **@whiskeysockets/baileys** appeared functional while secretly intercepting WhatsApp traffic. **Malicious WebSocket wrapper** captured **credentials, messages, contacts, media, and session tokens**. Used **hardcoded pairing code** to silently link **attacker's device** to victim's WhatsApp account, creating **persistent access** surviving package removal. Data exfiltrated via custom encryption to attacker servers. **Remove package**, **unlink unknown devices** in WhatsApp settings, rotate credentials, vet packages before installation, use **npm audit** and scanning tools (Snyk, Socket.dev), monitor runtime behavior, and enable WhatsApp two-step verification. Supply chain attack targeting developers.
 
-    [:octicons-arrow-right-24: View Full Details](Week51/AsyncOS.md)
+    [:octicons-arrow-right-24: View Full Details](Week52/lotusbail.md)
 
--   ![ASUS Live Update](Week51/images/asus.png)
-    :material-package-variant-closed-remove:{ .lg .middle } **CVE-2025-59374 ASUS Live Update Supply Chain Compromise**
+-   ![MacSync Malware](Week52/images/macsync.png)
+    :material-apple:{ .lg .middle } **MacSync macOS Stealer: Code-Signed Gatekeeper Bypass**
 
-    **Supply Chain Compromise**{.cve-chip}  
-    **Embedded Malicious Code**{.cve-chip}  
+    **macOS Malware**{.cve-chip}  
+    **Code-Signed**{.cve-chip}  
+    **Gatekeeper Bypass**{.cve-chip}  
+    **Credential Theft**{.cve-chip}  
+    ---------------------------------
+
+    **MacSync** macOS stealer distributed via **digitally signed and Apple-notarized** fake installers (e.g., "zk-call-messenger-installer-3.9.2-lts.dmg"). **Valid Apple Developer ID signature** and notarization bypass **Gatekeeper and XProtect** without warnings. Swift dropper performs environment checks, downloads encoded payload from remote server. **Go-based stealer** (derived from Mac.c) harvests **Keychain passwords**, **browser credentials**, **cryptocurrency wallets**, **SSH keys**, and **cloud tokens**. Establishes **LaunchAgent persistence** and C2 connection. .dmg padded to ~25.5 MB with decoy PDFs. Certificate later revoked. Download from **App Store or official sites only**, verify developer signatures, keep macOS updated, deploy EDR with behavioral monitoring, enable Application Firewall, and monitor LaunchAgents/network connections.
+
+    [:octicons-arrow-right-24: View Full Details](Week52/macsync.md)
+
+-   ![FBI Domain Seizure](Week52/images/fbi.png)
+    :material-bank-remove:{ .lg .middle } **FBI Seizure: $14.6M Bank Fraud Domain**
+
+    **Bank Fraud**{.cve-chip}  
+    **Phishing Campaign**{.cve-chip}  
+    **$14.6M Losses**{.cve-chip}  
+    **Domain Seizure**{.cve-chip}  
+    ---------------------------------
+
+    **FBI seized web3adspanels.org** used to store stolen **online banking credentials** from U.S. victims. Attackers purchased **malicious Google/Bing ads** targeting banking keywords, redirecting to **fake bank websites** mimicking legitimate portals. Victims entered credentials on phishing sites; **JavaScript capture scripts** transmitted data to centralized backend on seized domain. Attackers used credentials for **account takeovers** and **fraudulent wire transfers**. **$14.6M confirmed losses**, **$28M attempted fraud**. Avoid clicking search ads, **bookmark banking URLs**, manually type domains, enable **phishing-resistant MFA**, use password managers, monitor accounts with real-time alerts, and report phishing infrastructure to FBI/IC3.
+
+    [:octicons-arrow-right-24: View Full Details](Week52/fbi.md)
+
+-   ![La Poste Cyberattack](Week52/images/laposte.png)
+    :material-email-fast:{ .lg .middle } **Cyberattack on La Poste and La Banque Postale**
+
+    **DDoS Attack**{.cve-chip}  
+    **Critical Infrastructure**{.cve-chip}  
+    **Banking Services**{.cve-chip}  
+    **No Data Breach**{.cve-chip}  
+    ---------------------------------
+
+    **La Poste** (France's national postal service) and **La Banque Postale** suffered **DDoS cyberattack** disrupting **online and mobile services**. High-volume traffic flooding rendered **postal tracking**, **online banking portals**, **mobile apps**, and **digital identity services** unavailable. **Core banking systems and payment infrastructure remained operational**. **No data breach confirmed**—no malware, data exfiltration, or internal system compromise detected. Physical operations continued with increased branch/call center load. Services gradually restored via **DDoS scrubbing**, rate limiting, traffic rerouting. Strengthen DDoS protection (ISP/cloud-based), improve redundancy, enhance monitoring, stress-test services, and coordinate with ANSSI. Critical infrastructure availability attack.
+
+    [:octicons-arrow-right-24: View Full Details](Week52/laposte.md)
+
+-   ![n8n RCE Vulnerability](Week52/images/n8n.png)
+    :material-robot-confused:{ .lg .middle } **CVE-2025-68613 n8n Critical RCE Vulnerability**
+
+    **Remote Code Execution**{.cve-chip}  
+    **CVSS 9.9**{.cve-chip}  
+    **103,000+ Instances**{.cve-chip}  
+    **Authenticated**{.cve-chip}  
+    ---------------------------------
+
+    **CVE-2025-68613** critical RCE in **n8n workflow automation platform** allows **authenticated attackers** to execute arbitrary code. **Insufficient sandboxing** of user-supplied workflow expressions enables **sandbox escape** accessing Node.js internal objects (`process`, `require`, `child_process`). Attacker with workflow permissions crafts malicious expression executing **system-level commands** with n8n process privileges. Affects **v0.211.0-v1.120.3** and **v1.121.0** (pre-patch). **~103,000+ exposed instances** globally. Enables **full system compromise**, **credential theft** (API keys, OAuth tokens), **workflow manipulation**, and **lateral movement**. **Upgrade to v1.120.4, v1.121.1, or v1.122.0**, restrict workflow permissions to trusted admins, enforce MFA, run with minimal OS privileges, and monitor for suspicious expressions.
+
+    [:octicons-arrow-right-24: View Full Details](Week52/n8n.md)
+
+-   ![Romanian Waters](Week52/images/romanian.png)
+    :material-water:{ .lg .middle } **Romanian Waters Authority Ransomware Attack**
+
+    **Ransomware**{.cve-chip}  
+    **BitLocker Abuse**{.cve-chip}  
+    **Critical Infrastructure**{.cve-chip}  
+    **1,000 Systems**{.cve-chip}  
+    ---------------------------------
+
+    **Romanian Waters authority** (Apele Române) suffered ransomware incident compromising **~1,000 IT systems** across national and regional offices. Attackers abused **Windows BitLocker** native encryption to maliciously encrypt systems, avoiding traditional ransomware detection. Affected **GIS servers, databases, email, web, and DNS infrastructure**. Ransom note demanded contact within **7 days**. Website taken offline. **Critical OT systems remained operational** due to proper **IT/OT segregation**—dam control, flood monitoring, and water distribution unaffected. No threat actor claimed responsibility. **DNSC and Romanian Intelligence** investigating. Systems being restored from backups. **Policy: no negotiation**. Integration into national critical infrastructure cyber monitoring underway. BitLocker abuse technique requires enhanced endpoint detection.
+
+    [:octicons-arrow-right-24: View Full Details](Week52/romanian.md)
+
+-   ![Kimwolf Botnet](Week52/images/kimwolf.png)
+    :material-robot-angry:{ .lg .middle } **Kimwolf Botnet: 1.8M Android Devices Hijacked**
+
+    **Android Botnet**{.cve-chip}  
+    **1.8M Devices**{.cve-chip}  
+    **DDoS**{.cve-chip}  
+    **Proxy Network**{.cve-chip}  
+    ---------------------------------
+
+    **Kimwolf botnet** compromised **~1.8 million Android devices** (smart TVs, set-top boxes, tablets) into distributed attack network. Built with **Android NDK** native code. Capabilities: **DDoS (TCP/UDP/ICMP)**, **proxy forwarding**, **reverse shell**, file management. Uses **DNS-over-TLS encryption**, **ECDSA-signed commands**, and **Ethereum Name Service (ENS)** blockchain domains (pawsatyou.eth) for resilient C2 (EtherHiding). Linked to **AISURU botnet** via shared code. Issued **~1.7 billion DDoS commands**; **96% of activity is proxy monetization**. C2 domain briefly **ranked above Google** in Cloudflare traffic. Infected via trojanized apps, insecure firmware, or **uncertified Android TV boxes**. Use certified devices, avoid sideloading, update firmware, change default passwords, disable ADB, segment IoT networks.
+
+    [:octicons-arrow-right-24: View Full Details](Week52/kimwolf.md)
+
+-   ![Ink Dragon APT](Week52/images/dragon.png)
+    :material-shield-alert:{ .lg .middle } **China-Linked Ink Dragon APT Espionage Campaign**
+
+    **APT Campaign**{.cve-chip}  
+    **China-Linked**{.cve-chip}  
+    **ShadowPad**{.cve-chip}  
+    **Government Targets**{.cve-chip}  
+    ---------------------------------
+
+    **Ink Dragon** China-linked APT targeting **government and telecom networks** across Asia, South America, and Europe. Exploits **misconfigured IIS/SharePoint servers** using **ASP.NET ViewState deserialization** (predictable machine keys) for RCE. Deploys **ShadowPad backdoor** and **FINALDRAFT (Squidoor)** malware. Establishes **C2 relay network** converting compromised IIS servers into traffic-forwarding nodes blending with legitimate traffic. Harvests credentials via **LSASS dumps**, registry hive extraction. Maintains **stealthy long-term persistence** via scheduled tasks, services, firewall modifications. Exfiltrates sensitive government data. Harden IIS/SharePoint, rotate machine keys, deploy EDR, segment networks, monitor relay behavior, and reset all credentials after detection.
+
+    [:octicons-arrow-right-24: View Full Details](Week52/dragon.md)
+
+-   ![DOJ ATM Jackpotting](Week52/images/doj.png)
+    :material-gavel:{ .lg .middle } **U.S. DOJ Charges 54 in $40M ATM Jackpotting Scheme**
+
+    **ATM Malware**{.cve-chip}  
+    **Physical Attack**{.cve-chip}  
+    **Organized Crime**{.cve-chip}  
+    **$40.73M Stolen**{.cve-chip}  
+    ---------------------------------
+
+    **U.S. Department of Justice** indicted **54 individuals** for conspiracy involving **ATM jackpotting** using **Ploutus malware**. Criminals physically breached ATM cabinets via lock picking, key duplication, or drilling, then installed malware via **hard drive replacement** or **USB deployment**. Ploutus malware issued unauthorized commands to cash dispensers, forcing ATMs to eject currency. **Over 1,500 incidents** since 2021 resulted in **$40.73 million stolen**. Proceeds allegedly laundered and funneled to **Tren de Aragua**, Venezuelan **foreign terrorist organization**. Defendants face **20-335 years imprisonment**. Harden physical security with tamper-proof locks and alarms, phase out **Windows XP**, deploy endpoint protection, enable secure boot, and implement transaction anomaly detection. Cybercrime-terrorism nexus.
+
+    [:octicons-arrow-right-24: View Full Details](Week52/doj.md)
+
+-   ![Tenda AC18](Week52/images/ac18.png)
+    :material-router-wireless:{ .lg .middle } **CVE-2025-14993 Tenda AC18 Router Stack Overflow**
+
+    **Stack-Based Buffer Overflow**{.cve-chip}  
+    **Remote Code Execution**{.cve-chip}  
+    **Denial of Service**{.cve-chip}  
+    ---------------------------------
+
+    Stack-based buffer overflow in Tenda AC18 router firmware **v15.03.05.05** affects `/goform/SetDlnaCfg` HTTP handler. **Insufficient input validation** allows remote attackers to send **crafted HTTP requests** triggering stack overflow. No authentication required if admin interface exposed. Improper bounds checking in **sprintf-like logic** overwrites stack memory (CWE-121). Enables **DoS via service crash** or **arbitrary code execution** with HTTP daemon privileges. Full **router compromise** allows traffic interception, DNS hijacking, and **lateral movement** to internal networks. **Disable WAN admin access**, update firmware, restrict interface access, and monitor `/goform/*` endpoints. Perimeter device vulnerability.
+
+    [:octicons-arrow-right-24: View Full Details](Week52/ac18.md)
+
+-   ![WatchGuard Firebox](Week52/images/watchguard.png)
+    :material-fire:{ .lg .middle } **CVE-2025-14733 WatchGuard Firebox IKEv2 Zero-Day**
+
+    **Out-of-Bounds Write**{.cve-chip}  
+    **Remote Code Execution**{.cve-chip}  
     **Actively Exploited**{.cve-chip}  
     ---------------------------------
 
-    Sophisticated **supply chain attack** embedded malicious code in ASUS Live Update installers. Trojanized software contains **hard-coded targeting criteria** (MAC addresses, device IDs) executing malicious payloads only on specific systems. **Actively exploited** per CISA. ASUS Live Update reached **end-of-support** - no future fixes expected. Enables arbitrary code execution, data exfiltration, and lateral movement. **Remove ASUS Live Update entirely** (recommended) or update to v3.6.8+. Use Windows Update instead. APT-level selective targeting suggests espionage objectives. CWE-506.
+    Critical memory corruption in WatchGuard Fireware OS **iked process** enables **unauthenticated remote attackers** to execute arbitrary code via crafted **IKEv2 packets**. **Actively exploited in the wild**. Affects Mobile User VPN and Branch Office VPN with **dynamic gateway peers**. Out-of-bounds write (CWE-787) in IKEv2 handling causes memory corruption leading to **firewall compromise**. Enables VPN traffic interception, credential theft, and **lateral movement**. **Patch Fireware OS immediately**, disable IKEv2 dynamic peers if not needed, restrict VPN access, and monitor for exploitation. Perimeter breach risk.
 
-    [:octicons-arrow-right-24: View Full Details](Week51/asus.md)
-
--   ![SonicWall SMA1000](Week51/images/sonicWall.png)
-    :material-vpn:{ .lg .middle } **CVE-2025-40602/23006 SonicWall SMA1000 Exploit Chain**
-
-    **Zero-Day**{.cve-chip}  
-    **Exploit Chain**{.cve-chip}  
-    **Actively Exploited**{.cve-chip}  
-    ---------------------------------
-
-    **Actively exploited** exploit chain targeting SonicWall SMA1000 remote access gateways. Attackers chain **CVE-2025-23006** (deserialization RCE) with **CVE-2025-40602** (zero-day privilege escalation) achieving **unauthenticated root access**. Missing authorization checks in Appliance Management Console enable escalation. Compromises critical **VPN gateways** enabling credential harvesting, backdoor installation, and **lateral movement** into corporate networks. **Patch immediately** to firmware 12.4.3-03245+, 12.5.0-02283+. Restrict management interfaces, disable public AMC access, and monitor for compromise. Trust boundary breach.
-
-    [:octicons-arrow-right-24: View Full Details](Week51/sonicWall.md)
-
--   ![Russian GRU Campaign](Week51/images/RussianGRU.png)
-    :material-shield-alert:{ .lg .middle } **Russian GRU Cyber Campaign Targeting Critical Infrastructure**
-
-    **Russian GRU**{.cve-chip}  
-    **State-Sponsored**{.cve-chip}  
-    **Edge Device Targeting**{.cve-chip}  
-    ---------------------------------
-
-    Multi-year **Russian military intelligence (GRU)** campaign targeting Western critical infrastructure via **misconfigured network edge devices**. Tactical evolution from vulnerability exploitation (2021-2024) to sustained focus on **misconfigurations in routers, VPN gateways, and network appliances** (2025). Uses **passive packet capture for credential harvesting** and **replay attacks** against cloud and energy sectors. Exposed by Amazon Threat Intelligence. Linked to **Curly COMrades** and other GRU clusters. **Harden edge device configurations**, implement MFA, restrict management interfaces, and deploy continuous monitoring for state-sponsored threats.
-
-    [:octicons-arrow-right-24: View Full Details](Week51/RussianGRU.md)
-
--   ![Fortinet FortiSandbox](Week51/images/sandbox.png)
-    :material-shield-bug:{ .lg .middle } **CVE-2025-53949 Fortinet FortiSandbox OS Command Injection**
-
-    **OS Command Injection**{.cve-chip}  
-    **Remote Code Execution**{.cve-chip}  
-    **Critical**{.cve-chip}  
-    ---------------------------------
-
-    Critical OS command injection in FortiSandbox `upload_vdi_file` endpoint. Authenticated attackers can inject malicious commands due to **improper input validation**, achieving **root-level code execution** on the appliance. Affects FortiSandbox **5.0.0-5.0.2, 4.4.0-4.4.7, and all 4.2/4.0 versions**. Compromises **security infrastructure**, disrupts malware analysis, and enables **lateral movement**. **Patch immediately** to FortiSandbox 5.0.3+, 4.4.8+. Restrict management access, implement MFA, and monitor for suspicious activity. CWE-78.
-
-    [:octicons-arrow-right-24: View Full Details](Week51/sandbox.md)
-
--   ![Apple WebKit](Week51/images/useAfterFree.png)
-    :material-apple:{ .lg .middle } **CVE-2025-43529 Apple WebKit Use-After-Free Vulnerability**
-
-    **Use-After-Free**{.cve-chip}  
-    **Remote Code Execution**{.cve-chip}  
-    **Actively Exploited**{.cve-chip}  
-    ---------------------------------
-
-    Critical use-after-free vulnerability in WebKit HTML parser affects **iOS, iPadOS, macOS, Safari** and third-party apps using WebKit. Malicious web content triggers **memory corruption** leading to crashes or **arbitrary code execution**. **Actively exploited in sophisticated attacks** - Added to CISA KEV. Can lead to **device compromise, spyware installation, and data theft**. Affects both Apple and non-Apple products using WebKit. **Update to Safari 26.2+** and apply latest iOS/iPadOS/macOS patches immediately. Enable automatic updates on all devices. CWE-416.
-
-    [:octicons-arrow-right-24: View Full Details](Week51/useAfterFree.md)
-
--   ![Fortinet FortiCloud](Week51/images/forticloud.png)
-    :material-shield-lock:{ .lg .middle } **CVE-2025-59718/59719 Fortinet FortiCloud SSO Authentication Bypass**
-
-    **Authentication Bypass**{.cve-chip}  
-    **SAML Signature Bypass**{.cve-chip}  
-    **Critical**{.cve-chip}  
-    ---------------------------------
-
-    Critical authentication bypass in Fortinet FortiCloud SSO feature. Improper verification of **SAML cryptographic signatures** allows **unauthenticated remote attackers** to gain **full administrative access** by crafting malicious SAML responses. Affects **FortiOS, FortiProxy, FortiSwitchManager, FortiWeb** when FortiCloud SSO enabled. Enables complete device compromise, firewall rule modification, and backdoor creation. **Patch immediately** or disable FortiCloud SSO. Fixed versions: FortiOS 7.6.4+/7.4.9+, FortiProxy 7.6.4+/7.4.11+, FortiWeb 8.0.1+/7.6.5+. CWE-347.
-
-    [:octicons-arrow-right-24: View Full Details](Week51/forticloud.md)
-
--   ![SolarEdge SE3680H](Week51/images/solaredge.png)
-    :material-solar-power:{ .lg .middle } **CVE-2025-36745 SolarEdge SE3680H Linux Kernel Vulnerabilities**
-
-    **Unpatched Linux Kernel**{.cve-chip}  
-    **Remote Code Execution**{.cve-chip}  
-    **Unmaintained Components**{.cve-chip}  
-    ---------------------------------
-
-    Solar inverter shipped with **outdated, unpatched Linux kernel** containing multiple vulnerabilities. Allows attackers to achieve **remote code execution, privilege escalation, and information disclosure** without authentication. Affects SolarEdge SE3680H inverters up to firmware **v4.21** in **solar power installations**. Risks include **grid stability concerns, safety hazards, and lateral movement** in networks. Use of unmaintained third-party components (CWE-1104). **Contact SolarEdge for firmware updates**, isolate devices on segmented networks, and restrict management access. CVSS 8.6 (High).
-
-    [:octicons-arrow-right-24: View Full Details](Week51/solaredge.md)
-
--   ![Pro-Russia Hacktivists](Week51/images/hacktivists.png)
-    :material-shield-alert:{ .lg .middle } **Pro-Russia Hacktivists Target Critical Infrastructure via VNC**
-
-    **Hacktivist Campaign**{.cve-chip}  
-    **VNC Exploitation**{.cve-chip}  
-    **OT/ICS Targeting**{.cve-chip}  
-    ---------------------------------
-
-    Pro-Russia hacktivist groups (CARR, Z-Pentest, NoName057(16), Sector16) exploit **internet-facing VNC services** to access OT/ICS systems in critical infrastructure. Opportunistic attacks use **weak/default credentials and brute force** to compromise HMIs and SCADA devices. Targets include **energy, utilities, water, manufacturing** sectors globally. While less sophisticated than APTs, **impact on physical processes can be significant**. **Remove internet exposure of OT assets**, implement strong authentication, segment OT/IT networks, and deploy continuous monitoring. Joint advisory from NSA, FBI, CISA, and international partners.
-
-    [:octicons-arrow-right-24: View Full Details](Week51/hacktivists.md)
-
--   ![Google Chromium](Week51/images/chromium.png)
-    :material-web:{ .lg .middle } **CVE-2025-14174 Google Chromium ANGLE Out-of-Bounds Memory Access**
-
-    **Out-of-Bounds Memory Access**{.cve-chip}  
-    **Remote Code Execution**{.cve-chip}  
-    **Actively Exploited**{.cve-chip}  
-    ---------------------------------
-
-    High-severity out-of-bounds memory access vulnerability in Chromium's ANGLE graphics component. Remote attacker can trigger memory corruption via **crafted HTML page**, leading to crashes or **arbitrary code execution**. Affects **Chrome, Edge, Opera, Brave** and other Chromium-based browsers. **Actively exploited in the wild** - Added to CISA KEV. Federal agencies must patch by **Jan 2, 2026** per BOD 22-01. **Update Chrome to 143.0.7499.110+** immediately and patch all Chromium-based browsers. Affects desktop and mobile across platforms. CVSS score varies (High severity).
-
-    [:octicons-arrow-right-24: View Full Details](Week51/chromium.md)
-
--   ![Johnson Controls iSTAR Ultra](Week51/images/istar.png)
-    :material-door:{ .lg .middle } **Johnson Controls iSTAR Ultra Multiple Vulnerabilities**
-
-    **OS Command Injection**{.cve-chip}  
-    **Firmware Authentication Bypass**{.cve-chip}  
-    **Default Credentials**{.cve-chip}  
-    ---------------------------------
-
-    Multiple high-severity vulnerabilities in Johnson Controls iSTAR Ultra series door controllers allow attackers to **modify firmware, gain elevated privileges, and access protected systems**. Flaws include **OS command injection**, insufficient firmware verification, and **default root credentials**. Affects iSTAR Ultra, SE, G2, G2 SE, and Edge G2 models in **physical access control systems**. Exploitation enables **unauthorized door control, device takeover, and lateral movement**. **Upgrade to firmware 6.9.3+**, replace default credentials, isolate devices on dedicated networks, and implement physical security controls. CVSS 8.7 (High).
-
-    [:octicons-arrow-right-24: View Full Details](Week51/istar.md)
-
--   ![Siemens Energy Services](Week51/images/siemensesa.png)
-    :material-flash:{ .lg .middle } **CVE-2025-59392 Siemens Energy Services Authentication Bypass**
-
-    **Authentication Bypass**{.cve-chip}  
-    **Physical Access Required**{.cve-chip}  
-    ---------------------------------
-
-    Security vulnerability in Siemens Energy Services Elspec G5 devices allows authentication bypass via alternate path. Attacker with **physical access** can insert USB drive with publicly documented reset string to **reset admin password** and gain full device control. Affects Elspec G5 devices through firmware **1.2.2.19** in **critical infrastructure environments**. Despite requiring physical access, impact on energy systems can be **significant**. **Upgrade firmware beyond 1.2.2.19**, restrict physical access, implement tamper detection, and monitor USB port activity. CVSS score varies (Physical vector).
-
-    [:octicons-arrow-right-24: View Full Details](Week51/siemensesa.md)
-
--   ![GeoServer](Week51/images/geoserver.png)
-    :material-earth:{ .lg .middle } **GeoServer XXE Vulnerability Exploitation (CVE-2025-58360)**
-
-    **XML External Entity (XXE)**{.cve-chip}  
-    **Unauthenticated File Access**{.cve-chip}  
-    ---------------------------------
-
-    Critical unauthenticated XXE vulnerability in OSGeo GeoServer's `/geoserver/wms` GetMap endpoint. Crafted XML enables **arbitrary file access, SSRF, and DoS** without authentication. Affects versions before 2.25.6 and 2.26.0-2.26.1. **Active exploitation confirmed** - Added to CISA KEV. Over **14,000 instances exposed** online. **Federal agencies must patch by Jan 1, 2026**. Upgrade to 2.25.6+, 2.26.2+, 2.27.0+, or 2.28.1+ immediately. CVSS 9.8 (Critical).
-
-    [:octicons-arrow-right-24: View Full Details](Week51/geoserver.md)
-    
--   ![Sierra Wireless](Week51/images/sierra.png)
-    :material-router-wireless:{ .lg .middle } **CVE-2018-4063 Sierra Wireless AirLink ALEOS Remote Code Execution**
-
-    **Remote Code Execution**{.cve-chip}  
-    **Unrestricted File Upload**{.cve-chip}  
-    ---------------------------------
-
-    Vulnerability in Sierra Wireless AirLink ALEOS router firmware's web management interface (`upload.cgi`) allows authenticated attackers to upload arbitrary executable files. Attackers can replace system scripts and execute code as **root**, gaining full device control. Affects ES450 and related models in **OT/ICS environments** (utilities, transportation). **Active exploitation confirmed** - Added to CISA KEV. **Patch to latest ALEOS firmware** immediately, change default credentials, and restrict management interface access. CVSS 8.8 (High).
-
-    [:octicons-arrow-right-24: View Full Details](Week51/sierra.md)
+    [:octicons-arrow-right-24: View Full Details](Week52/watchguard.md)
 
 </div>

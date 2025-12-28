@@ -176,3 +176,6 @@ nav:
             - "Lotusbail: Malicious npm Package Targeting WhatsApp Web API Developers": Week52/lotusbail.md
             - "MacSync macOS Stealer: Code-Signed Malware Bypassing Gatekeeper": Week52/macsync.md
             - "FBI Seizure of Fraud Domain Hosting Stolen Bank Credentials": Week52/fbi.md
+         - "week53":
+            - "Trust Wallet Chrome Extension Supply-Chain Attack": Week53/wallet.md
+            - "CVE-2025-68664: Critical LangChain Core Serialization Injection Vulnerability": Week53/langchain.md
