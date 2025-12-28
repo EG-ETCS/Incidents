@@ -3054,6 +3054,101 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3_4" id="__nav_4_2_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    week53
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            week53
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Week53/wallet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Trust Wallet Chrome Extension Supply-Chain Attack
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Week53/langchain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CVE-2025-68664: Critical LangChain Core Serialization Injection Vulnerability
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3119,37 +3214,26 @@
 <div class="grid cards">
 <ul>
 <li>
-<p><img alt="Lotusbail npm Attack" src="Week52/images/lotusbail.png">
-    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15l-1.89 1.07L16 8.61l1.96-1.11zM6.04 7.5 12 10.85l1.96-1.1-5.88-3.4zM5 15.91l6 3.38v-6.71L5 9.21zm14 0v-6.7l-6 3.37v6.71z"></path></svg></span> <strong>Lotusbail Malicious npm Package</strong></p>
+<p><img alt="Trust Wallet Hack" src="Week53/images/wallet.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 18v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v1h-9a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2m0-2h10V8H12m4 5.5a1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5 1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5"></path></svg></span> <strong>Trust Wallet Chrome Extension Supply-Chain Attack</strong></p>
 <p><strong class="cve-chip">Supply Chain Attack</strong><br>
-<strong class="cve-chip">npm Package</strong><br>
-<strong class="cve-chip">WhatsApp Compromise</strong><br>
-<strong class="cve-chip">56,000+ Downloads</strong>  </p>
+<strong class="cve-chip">Browser Extension</strong><br>
+<strong class="cve-chip">$7M Stolen</strong><br>
+<strong class="cve-chip">Cryptocurrency Theft</strong>  </p>
 <hr>
-<p><strong>Lotusbail</strong> malicious npm package disguised as WhatsApp Web API library downloaded <strong>56,000+ times</strong>. Trojanized fork of <strong>@whiskeysockets/baileys</strong> appeared functional while secretly intercepting WhatsApp traffic. <strong>Malicious WebSocket wrapper</strong> captured <strong>credentials, messages, contacts, media, and session tokens</strong>. Used <strong>hardcoded pairing code</strong> to silently link <strong>attacker's device</strong> to victim's WhatsApp account, creating <strong>persistent access</strong> surviving package removal. Data exfiltrated via custom encryption to attacker servers. <strong>Remove package</strong>, <strong>unlink unknown devices</strong> in WhatsApp settings, rotate credentials, vet packages before installation, use <strong>npm audit</strong> and scanning tools (Snyk, Socket.dev), monitor runtime behavior, and enable WhatsApp two-step verification. Supply chain attack targeting developers.</p>
-<p><a href="Week52/lotusbail/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+<p><strong>Trust Wallet Chrome extension v2.68</strong> compromised via <strong>malicious update</strong> distributed through <strong>Chrome Web Store</strong>. Injected JavaScript executed when users unlocked wallets, exfiltrating <strong>seed phrases and private keys</strong> to attacker servers disguised as analytics traffic. Attackers used stolen credentials to sign <strong>legitimate blockchain transactions</strong> draining funds. <strong>~$7 million stolen</strong> from <strong>hundreds of wallets</strong> across multiple blockchains. Core mobile app and backend <strong>not compromised</strong>. Patched v2.69 released. <strong>Remove v2.68</strong>, update to v2.69+, <strong>migrate to new wallets with fresh seed phrases</strong>, use <strong>hardware wallets</strong> for significant holdings, never enter seeds on recovery websites, and monitor blockchain transactions. Irreversible cryptocurrency loss.</p>
+<p><a href="Week53/wallet/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
 </li>
 <li>
-<p><img alt="MacSync Malware" src="Week52/images/macsync.png">
-    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"></path></svg></span> <strong>MacSync macOS Stealer: Code-Signed Gatekeeper Bypass</strong></p>
-<p><strong class="cve-chip">macOS Malware</strong><br>
-<strong class="cve-chip">Code-Signed</strong><br>
-<strong class="cve-chip">Gatekeeper Bypass</strong><br>
-<strong class="cve-chip">Credential Theft</strong>  </p>
+<p><img alt="LangChain Vulnerability" src="Week53/images/langchain.png">
+    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M19 8h1v1h-1zm1-3h-1v2h1V6h.5c.28 0 .5-.22.5-.5v-2c0-.28-.22-.5-.5-.5H18v1h2zm-3-2h-1v4h1zm-3.5 12.5a2 2 0 1 0 4 0c0-1.11-.89-2-2-2s-2 .9-2 2M17 8h-1v1h1zm5 6h-1c0-1.5-.47-2.87-1.26-4h-2.77c1.22.91 2.03 2.36 2.03 4v2h2v1h-2v3H5v-3H3v-1h2v-2c0-2.76 2.24-5 5-5h4c.34 0 .68.04 1 .1V7.08c-.33-.05-.66-.08-1-.08h-1V5.73A2 2 0 1 0 10 4c0 .74.4 1.39 1 1.73V7h-1c-3.87 0-7 3.13-7 7H2c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1h1v1a2 2 0 0 0 2 2h14c1.11 0 2-.89 2-2v-1h1c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1m-13.5-.5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.89 2-2-.89-2-2-2"></path></svg></span> <strong>CVE-2025-68664 LangChain Serialization Injection</strong></p>
+<p><strong class="cve-chip">Serialization Injection</strong><br>
+<strong class="cve-chip">Secret Exposure</strong><br>
+<strong class="cve-chip">Code Execution</strong><br>
+<strong class="cve-chip">AI Framework</strong>  </p>
 <hr>
-<p><strong>MacSync</strong> macOS stealer distributed via <strong>digitally signed and Apple-notarized</strong> fake installers (e.g., "zk-call-messenger-installer-3.9.2-lts.dmg"). <strong>Valid Apple Developer ID signature</strong> and notarization bypass <strong>Gatekeeper and XProtect</strong> without warnings. Swift dropper performs environment checks, downloads encoded payload from remote server. <strong>Go-based stealer</strong> (derived from Mac.c) harvests <strong>Keychain passwords</strong>, <strong>browser credentials</strong>, <strong>cryptocurrency wallets</strong>, <strong>SSH keys</strong>, and <strong>cloud tokens</strong>. Establishes <strong>LaunchAgent persistence</strong> and C2 connection. .dmg padded to ~25.5 MB with decoy PDFs. Certificate later revoked. Download from <strong>App Store or official sites only</strong>, verify developer signatures, keep macOS updated, deploy EDR with behavioral monitoring, enable Application Firewall, and monitor LaunchAgents/network connections.</p>
-<p><a href="Week52/macsync/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
-</li>
-<li>
-<p><img alt="FBI Domain Seizure" src="Week52/images/fbi.png">
-    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="m14.46 15.88 1.42-1.42L18 16.59l2.12-2.13 1.42 1.42L19.41 18l2.13 2.12-1.42 1.42L18 19.41l-2.12 2.13-1.42-1.42L16.59 18zM11.5 1 21 6v2H2V6zm4.5 9h3v2.08L18 12c-.7 0-1.37.12-2 .34zM2 22v-3h10.08c.19 1.14.71 2.17 1.45 3zm8-12h3v4.68c-.46.69-.78 1.47-.92 2.32H10zm-6 0h3v7H4z"></path></svg></span> <strong>FBI Seizure: $14.6M Bank Fraud Domain</strong></p>
-<p><strong class="cve-chip">Bank Fraud</strong><br>
-<strong class="cve-chip">Phishing Campaign</strong><br>
-<strong class="cve-chip">$14.6M Losses</strong><br>
-<strong class="cve-chip">Domain Seizure</strong>  </p>
-<hr>
-<p><strong>FBI seized web3adspanels.org</strong> used to store stolen <strong>online banking credentials</strong> from U.S. victims. Attackers purchased <strong>malicious Google/Bing ads</strong> targeting banking keywords, redirecting to <strong>fake bank websites</strong> mimicking legitimate portals. Victims entered credentials on phishing sites; <strong>JavaScript capture scripts</strong> transmitted data to centralized backend on seized domain. Attackers used credentials for <strong>account takeovers</strong> and <strong>fraudulent wire transfers</strong>. <strong><span class="arithmatex">\(14.6M confirmed losses**, **\)</span>28M attempted fraud</strong>. Avoid clicking search ads, <strong>bookmark banking URLs</strong>, manually type domains, enable <strong>phishing-resistant MFA</strong>, use password managers, monitor accounts with real-time alerts, and report phishing infrastructure to FBI/IC3.</p>
-<p><a href="Week52/fbi/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+<p><strong>CVE-2025-68664</strong> critical flaw in <strong>LangChain Core</strong> serialization functions (<code>dumps()</code>/<code>dumpd()</code>) fails to escape dictionaries with <strong>"lc" marker key</strong>. User-controlled data flows into serialization/deserialization cycles (caching, logging, event streaming), treated as <strong>trusted LangChain objects</strong>. Enables <strong>unsafe object instantiation</strong>, <strong>environment secret exposure</strong> (API keys, credentials), and <strong>Jinja2 SSTI code execution</strong>. Affects <strong>langchain-core ≥1.0.0 &lt;1.2.5</strong> and <strong>0.x &lt;0.3.81</strong>. Patched in <strong>1.2.5/0.3.81</strong>. CWE-502. <strong>Update immediately</strong>, apply object allowlists, disable <code>secrets_from_env</code>, block Jinja2, sanitize user inputs, minimize serialization scope, use secret managers, and isolate AI workflows.</p>
+<p><a href="Week53/langchain/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
 </li>
 </ul>
 </div></div>
