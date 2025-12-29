@@ -3141,6 +3141,52 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Week53/ghostpairing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GhostPairing: WhatsApp Account Takeover via Social Engineering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Week53/vpn2fa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Fortinet FortiOS SSL VPN 2FA Bypass (CVE-2020-12812)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -3214,26 +3260,24 @@
 <div class="grid cards">
 <ul>
 <li>
-<p><img alt="Trust Wallet Hack" src="Week53/images/wallet.png">
-    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M21 18v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v1h-9a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2m0-2h10V8H12m4 5.5a1.5 1.5 0 0 1-1.5-1.5 1.5 1.5 0 0 1 1.5-1.5 1.5 1.5 0 0 1 1.5 1.5 1.5 1.5 0 0 1-1.5 1.5"></path></svg></span> <strong>Trust Wallet Chrome Extension Supply-Chain Attack</strong></p>
-<p><strong class="cve-chip">Supply Chain Attack</strong><br>
-<strong class="cve-chip">Browser Extension</strong><br>
-<strong class="cve-chip">$7M Stolen</strong><br>
-<strong class="cve-chip">Cryptocurrency Theft</strong>  </p>
-<hr>
-<p><strong>Trust Wallet Chrome extension v2.68</strong> compromised via <strong>malicious update</strong> distributed through <strong>Chrome Web Store</strong>. Injected JavaScript executed when users unlocked wallets, exfiltrating <strong>seed phrases and private keys</strong> to attacker servers disguised as analytics traffic. Attackers used stolen credentials to sign <strong>legitimate blockchain transactions</strong> draining funds. <strong>~$7 million stolen</strong> from <strong>hundreds of wallets</strong> across multiple blockchains. Core mobile app and backend <strong>not compromised</strong>. Patched v2.69 released. <strong>Remove v2.68</strong>, update to v2.69+, <strong>migrate to new wallets with fresh seed phrases</strong>, use <strong>hardware wallets</strong> for significant holdings, never enter seeds on recovery websites, and monitor blockchain transactions. Irreversible cryptocurrency loss.</p>
-<p><a href="Week53/wallet/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+<p><img alt="GhostPairing Attack" src="Week53/images/ghostpairing.png"></p>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.23 8.23 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23-1.48 0-2.93-.39-4.19-1.15l-.3-.17-3.12.82.83-3.04-.2-.32a8.2 8.2 0 0 1-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24M8.53 7.33c-.16 0-.43.06-.66.31-.22.25-.87.86-.87 2.07 0 1.22.89 2.39 1 2.56.14.17 1.76 2.67 4.25 3.73.59.27 1.05.42 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18s.21-1.07.15-1.18c-.07-.1-.23-.16-.48-.27-.25-.14-1.47-.74-1.69-.82-.23-.08-.37-.12-.56.12-.16.25-.64.81-.78.97-.15.17-.29.19-.53.07-.26-.13-1.06-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.12-.24-.01-.39.11-.5.11-.11.27-.29.37-.44.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.11-.56-1.35-.77-1.84-.2-.48-.4-.42-.56-.43-.14 0-.3-.01-.47-.01"></path></svg></span> <strong>GhostPairing: WhatsApp Account Takeover</strong></p>
+<p><strong class="cve-chip">Social Engineering</strong> 
+<strong class="cve-chip">WhatsApp</strong> 
+<strong class="cve-chip">Account Takeover</strong> 
+<strong class="cve-chip">Device Linking Abuse</strong></p>
+<p>GhostPairing exploits WhatsApp's legitimate device-linking feature through social engineering. Attackers send phishing messages from compromised accounts appearing as trusted contacts, tricking victims into entering pairing codes on fake verification pages. Once linked, attackers gain full access to all chats, media, and real-time messages while victims remain unaware. No malware, SIM swap, or password theft required—purely social manipulation abusing legitimate functionality.</p>
+<p><a href="Week53/ghostpairing/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
 </li>
 <li>
-<p><img alt="LangChain Vulnerability" src="Week53/images/langchain.png">
-    <span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M19 8h1v1h-1zm1-3h-1v2h1V6h.5c.28 0 .5-.22.5-.5v-2c0-.28-.22-.5-.5-.5H18v1h2zm-3-2h-1v4h1zm-3.5 12.5a2 2 0 1 0 4 0c0-1.11-.89-2-2-2s-2 .9-2 2M17 8h-1v1h1zm5 6h-1c0-1.5-.47-2.87-1.26-4h-2.77c1.22.91 2.03 2.36 2.03 4v2h2v1h-2v3H5v-3H3v-1h2v-2c0-2.76 2.24-5 5-5h4c.34 0 .68.04 1 .1V7.08c-.33-.05-.66-.08-1-.08h-1V5.73A2 2 0 1 0 10 4c0 .74.4 1.39 1 1.73V7h-1c-3.87 0-7 3.13-7 7H2c-.55 0-1 .45-1 1v3c0 .55.45 1 1 1h1v1a2 2 0 0 0 2 2h14c1.11 0 2-.89 2-2v-1h1c.55 0 1-.45 1-1v-3c0-.55-.45-1-1-1m-13.5-.5c-1.1 0-2 .9-2 2s.9 2 2 2 2-.89 2-2-.89-2-2-2"></path></svg></span> <strong>CVE-2025-68664 LangChain Serialization Injection</strong></p>
-<p><strong class="cve-chip">Serialization Injection</strong><br>
-<strong class="cve-chip">Secret Exposure</strong><br>
-<strong class="cve-chip">Code Execution</strong><br>
-<strong class="cve-chip">AI Framework</strong>  </p>
-<hr>
-<p><strong>CVE-2025-68664</strong> critical flaw in <strong>LangChain Core</strong> serialization functions (<code>dumps()</code>/<code>dumpd()</code>) fails to escape dictionaries with <strong>"lc" marker key</strong>. User-controlled data flows into serialization/deserialization cycles (caching, logging, event streaming), treated as <strong>trusted LangChain objects</strong>. Enables <strong>unsafe object instantiation</strong>, <strong>environment secret exposure</strong> (API keys, credentials), and <strong>Jinja2 SSTI code execution</strong>. Affects <strong>langchain-core ≥1.0.0 &lt;1.2.5</strong> and <strong>0.x &lt;0.3.81</strong>. Patched in <strong>1.2.5/0.3.81</strong>. CWE-502. <strong>Update immediately</strong>, apply object allowlists, disable <code>secrets_from_env</code>, block Jinja2, sanitize user inputs, minimize serialization scope, use secret managers, and isolate AI workflows.</p>
-<p><a href="Week53/langchain/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
+<p><img alt="Fortinet FortiOS Vulnerability" src="Week53/images/vpn2fa.png"></p>
+<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5M11 7h2v6h-2m0 2h2v2h-2"></path></svg></span> <strong>Fortinet FortiOS SSL VPN 2FA Bypass</strong></p>
+<p><strong class="cve-chip">CVE-2020-12812</strong> 
+<strong class="cve-chip">CVSS 7.7</strong> 
+<strong class="cve-chip">Authentication Bypass</strong> 
+<strong class="cve-chip">2FA Bypass</strong></p>
+<p>Active exploitation of five-year-old vulnerability in Fortinet FortiOS SSL VPN. Improper authentication flaw allows attackers to bypass two-factor authentication by altering username casing. FortiOS treats usernames as case-sensitive while LDAP is case-insensitive, creating authentication logic flaw. Attackers submit valid credentials with altered case (e.g., "Admin" vs "admin"), bypassing local 2FA and authenticating via LDAP without 2FA. Affects misconfigured FortiGate devices with local users + LDAP integration.</p>
+<p><a href="Week53/vpn2fa/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> View Full Details</a></p>
 </li>
 </ul>
 </div></div>
