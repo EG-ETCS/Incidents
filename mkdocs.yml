@@ -181,3 +181,5 @@ nav:
             - "CVE-2025-68664: Critical LangChain Core Serialization Injection Vulnerability": Week53/langchain.md
             - "GhostPairing: WhatsApp Account Takeover via Social Engineering": Week53/ghostpairing.md
             - "Fortinet FortiOS SSL VPN 2FA Bypass (CVE-2020-12812)": Week53/vpn2fa.md
+            - "Digiever DS-2105 Pro NVR Authorization Bypass & Command Injection": Week53/digiever.md
+            - "Malicious npm Packages Abused as Phishing Infrastructure": Week53/npm.md

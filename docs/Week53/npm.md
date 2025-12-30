@@ -38,18 +38,21 @@
 ### Package Distribution and Targeting
 
 **Package Naming Patterns**:
+
 - Generic library names suggesting utility functions: `secure-doc-viewer`, `enterprise-file-access`, `document-portal-utils`
 - Medical/healthcare themes: `healthcare-records-viewer`, `medical-doc-access`
 - Industrial/OT themes: `scada-report-viewer`, `industrial-file-portal`
 - Mimicry of legitimate packages with typosquatting
 
 **Victim Targeting**:
+
 - **Spear-phishing emails**: Highly targeted messages to specific individuals
 - **Context-aware lures**: Emails reference legitimate business processes (contract review, invoice approval, compliance document)
 - **Email spoofing**: Appear from trusted colleagues, vendors, or partners
 - **Pre-filled credentials**: Email links include victim's email address as URL parameter, pre-populating phishing form
 
 **Sector Focus**:
+
 - **Healthcare**: Targeting hospitals, clinics, medical device companies (potential HIPAA data, medical device access)
 - **Industrial/Manufacturing**: Targeting OT environments (potential ICS/SCADA access, intellectual property)
 - **Enterprise IT**: Generic corporate targeting for BEC and data theft
@@ -67,119 +70,126 @@
 
 2. **Target Reconnaissance**  
    Attacker researches target organization and identifies specific victims:
-   - LinkedIn reconnaissance for employee names, roles, email formats
-   - Data breaches / leaks for email addresses
-   - OSINT for business relationships, active projects, vendor contacts
-   
-   Targets in healthcare and industrial sectors selected based on campaign goals (credential theft for BEC, OT access, data exfiltration).
+
+    - LinkedIn reconnaissance for employee names, roles, email formats
+    - Data breaches / leaks for email addresses
+    - OSINT for business relationships, active projects, vendor contacts
+    
+    Targets in healthcare and industrial sectors selected based on campaign goals (credential theft for BEC, OT access, data exfiltration).
 
 3. **Spear-Phishing Email Campaign**  
    Attacker sends highly targeted phishing emails to victims:
    
-   **Email Example**:
-   ```
-   From: contracts@trusted-vendor[.]com (spoofed)
-   To: john.doe@targetcompany.com
-   Subject: ACTION REQUIRED: Q4 Contract Amendment - Review by EOD
+    **Email Example**:
+    ```
+    From: contracts@trusted-vendor[.]com (spoofed)
+    To: john.doe@targetcompany.com
+    Subject: ACTION REQUIRED: Q4 Contract Amendment - Review by EOD
+    
+    Hi John,
+    
+    Please review the attached contract amendment for the Q4 service agreement.
+    This requires your signature by end of day.
+    
+    Secure Document: [Click here to view]
+    
+    Link: https://unpkg.com/secure-doc-viewer@1.2.3/index.html?email=john.doe@targetcompany.com&doc=contract_q4_2024
+    
+    Best regards,
+    Sarah Johnson
+    Vendor Contracts Department
+    ```
    
-   Hi John,
-   
-   Please review the attached contract amendment for the Q4 service agreement.
-   This requires your signature by end of day.
-   
-   Secure Document: [Click here to view]
-   
-   Link: https://unpkg.com/secure-doc-viewer@1.2.3/index.html?email=john.doe@targetcompany.com&doc=contract_q4_2024
-   
-   Best regards,
-   Sarah Johnson
-   Vendor Contracts Department
-   ```
-   
-   **Email crafted to appear legitimate**:
-   - References real business context (Q4 contracts)
-   - Uses urgency (EOD deadline)
-   - Spoofs trusted sender (vendor)
-   - Link goes to **trusted npm CDN domain** (unpkg.com)
+    **Email crafted to appear legitimate**:
+
+    - References real business context (Q4 contracts)
+    - Uses urgency (EOD deadline)
+    - Spoofs trusted sender (vendor)
+    - Link goes to **trusted npm CDN domain** (unpkg.com)
 
 4. **Victim Clicks Phishing Link**  
    Victim receives email, verifies sender appears legitimate (or email passes basic checks), and clicks link. Browser loads `https://unpkg.com/secure-doc-viewer@1.2.3/index.html?email=john.doe@targetcompany.com`. Security tools **do not block** because unpkg.com is trusted developer CDN. Browser loads fake document portal page.
 
 5. **Fake Document Portal Displayed**  
    Victim sees professional-looking document viewer:
-   - Microsoft or corporate branding
-   - "Loading document..." spinner
-   - "Verifying your access..." message
-   - Pre-filled with victim's email: "john.doe@targetcompany.com"
-   - "Access Document" or "Sign In to Continue" button
+    - Microsoft or corporate branding
+    - "Loading document..." spinner
+    - "Verifying your access..." message
+    - Pre-filled with victim's email: "john.doe@targetcompany.com"
+    - "Access Document" or "Sign In to Continue" button
    
-   Victim believes this is legitimate document sharing portal (SharePoint, OneDrive, DocuSign).
+    Victim believes this is legitimate document sharing portal (SharePoint, OneDrive, DocuSign).
 
 6. **Anti-Analysis Validation**  
    JavaScript executes anti-bot checks:
-   - Detects if automated scanner or sandbox (checks for headless browser, Selenium, PhantomJS)
-   - Waits for **human interaction** (mouse movement, touch events)
-   - If bot detected: Redirects to **legitimate Microsoft.com** (evades automated security analysis)
-   - If human detected: Proceeds to Stage 2
+    - Detects if automated scanner or sandbox (checks for headless browser, Selenium, PhantomJS)
+    - Waits for **human interaction** (mouse movement, touch events)
+    - If bot detected: Redirects to **legitimate Microsoft.com** (evades automated security analysis)
+    - If human detected: Proceeds to Stage 2
    
-   Victim moves mouse, clicks button → Passes as human.
+    Victim moves mouse, clicks button → Passes as human.
 
 7. **Redirection to AitM Phishing Page**  
-   After 2-3 second "loading" delay (simulating document preparation), JavaScript redirects to attacker-controlled domain:
-   ```
-   https://login-microsoft365[.]com/auth?email=john.doe@targetcompany.com&redirect=document
-   ```
-   
-   Victim's browser loads **fake Microsoft 365 login page** hosted on attacker infrastructure running **Evilginx-style AitM proxy**.
+    After 2-3 second "loading" delay (simulating document preparation), JavaScript redirects to attacker-controlled domain:
+    ```
+    https://login-microsoft365[.]com/auth?email=john.doe@targetcompany.com&redirect=document
+    ```
+    
+    Victim's browser loads **fake Microsoft 365 login page** hosted on attacker infrastructure running **Evilginx-style AitM proxy**.
 
 8. **Credential Entry and Theft**  
-   Victim sees pixel-perfect Microsoft 365 login page:
-   - Email **pre-filled**: john.doe@targetcompany.com
-   - Prompts for password
-   - Victim enters password → Submitted to AitM proxy
-   
-   **AitM Proxy Actions**:
-   - Captures password
-   - Forwards credentials to **real Microsoft login**
-   - Microsoft validates credentials
-   - Microsoft prompts for **MFA** (if enabled)
+    Victim sees pixel-perfect Microsoft 365 login page:
+    - Email **pre-filled**: john.doe@targetcompany.com
+    - Prompts for password
+    - Victim enters password → Submitted to AitM proxy
+    
+    **AitM Proxy Actions**:
+    - Captures password
+    - Forwards credentials to **real Microsoft login**
+    - Microsoft validates credentials
+    - Microsoft prompts for **MFA** (if enabled)
 
 9. **MFA Bypass via AitM**  
-   Victim completes MFA on proxied real Microsoft page:
-   - Enters TOTP code from authenticator app, OR
-   - Approves push notification on mobile device, OR
-   - Enters SMS code
-   
-   **Microsoft validates MFA** and issues **session tokens/cookies**. AitM proxy **intercepts session tokens** before returning response to victim. Attacker now has:
-   - Valid username/password
-   - Active session tokens (bypass need for MFA in future)
-   
-   Victim sees "Login successful" or fake error ("Service temporarily unavailable, try again later") and session closed.
+    Victim completes MFA on proxied real Microsoft page:
+    - Enters TOTP code from authenticator app, OR
+    - Approves push notification on mobile device, OR
+    - Enters SMS code
+    
+    **Microsoft validates MFA** and issues **session tokens/cookies**. AitM proxy **intercepts session tokens** before returning response to victim. Attacker now has:
+    - Valid username/password
+    - Active session tokens (bypass need for MFA in future)
+    
+    Victim sees "Login successful" or fake error ("Service temporarily unavailable, try again later") and session closed.
 
 10. **Account Takeover and Post-Exploitation**  
     Attacker uses stolen credentials and session tokens for:
     
     **Immediate Access**:
+
     - Login to Microsoft 365 using stolen session tokens
     - Access email, OneDrive, SharePoint, Teams
     - No MFA prompt needed (token already validated)
     
     **Business Email Compromise (BEC)**:
+
     - Send emails from victim's account to colleagues/partners
     - Request wire transfers, gift cards, sensitive information
     - Modify email rules (forward copies to attacker, delete sent items)
     
     **Data Exfiltration**:
+
     - Download sensitive documents from OneDrive/SharePoint
     - Export email archives
     - Access customer data, intellectual property, financial records
     
     **Lateral Movement**:
+
     - Use credentials to access other corporate systems (VPN, internal apps)
     - Reuse credentials against OT/ICS systems if industrial target
     - Compromise supply chain by targeting vendor/partner communications
     
     **Persistence**:
+
     - Create additional admin accounts
     - Register attacker-controlled devices for MFA
     - Modify security settings to reduce monitoring
@@ -190,44 +200,48 @@
 
 === "Confidentiality" 
     Massive credential theft and data exfiltration:
-        - **Enterprise credentials stolen**: Microsoft 365 usernames, passwords, session tokens for targeted victims across healthcare and industrial sectors
-        - **Email access**: Attackers read entire email history, including sensitive business communications, contracts, financial data, customer information
-        - **Cloud storage access**: OneDrive and SharePoint documents exposed (intellectual property, trade secrets, compliance documents, employee records)
-        - **Healthcare data**: If healthcare targets compromised, potential HIPAA-protected patient data, medical records, research data exposed
-        - **Industrial/OT secrets**: Manufacturing processes, SCADA credentials, operational data, vendor relationships
-        - **Supply chain intelligence**: Vendor communications, partner credentials, third-party access tokens
 
-        Confidentiality breach affects not only direct victims but entire organizations and partners.
+    - **Enterprise credentials stolen**: Microsoft 365 usernames, passwords, session tokens for targeted victims across healthcare and industrial sectors
+    - **Email access**: Attackers read entire email history, including sensitive business communications, contracts, financial data, customer information
+    - **Cloud storage access**: OneDrive and SharePoint documents exposed (intellectual property, trade secrets, compliance documents, employee records)
+    - **Healthcare data**: If healthcare targets compromised, potential HIPAA-protected patient data, medical records, research data exposed
+    - **Industrial/OT secrets**: Manufacturing processes, SCADA credentials, operational data, vendor relationships
+    - **Supply chain intelligence**: Vendor communications, partner credentials, third-party access tokens
+
+    Confidentiality breach affects not only direct victims but entire organizations and partners.
 
 === "Integrity"  
     Compromised accounts enable data and system manipulation:
-        - **Email manipulation**: Attackers send fraudulent emails from victim accounts (BEC), modify email rules, delete evidence
-        - **Document tampering**: Alter contracts, financial records, compliance documents in SharePoint/OneDrive
-        - **Business process disruption**: Fraudulent wire transfer requests, altered invoices, fake vendor communications
-        - **Malware distribution**: Compromised accounts used to send malware to colleagues (internal phishing, supply chain attacks)
-        - **Configuration changes**: Modify security settings, authentication policies, access controls to maintain access
 
-        Integrity violations undermine trust in business communications and digital records.
+    - **Email manipulation**: Attackers send fraudulent emails from victim accounts (BEC), modify email rules, delete evidence
+    - **Document tampering**: Alter contracts, financial records, compliance documents in SharePoint/OneDrive
+    - **Business process disruption**: Fraudulent wire transfer requests, altered invoices, fake vendor communications
+    - **Malware distribution**: Compromised accounts used to send malware to colleagues (internal phishing, supply chain attacks)
+    - **Configuration changes**: Modify security settings, authentication policies, access controls to maintain access
+
+    Integrity violations undermine trust in business communications and digital records.
 
 === "Availability" 
     Account lockouts and business disruption:
-        - **Account lockouts**: Victims locked out when attackers change passwords or MFA settings
-        - **Service disruption**: IT teams must reset credentials, revoke tokens across hundreds/thousands of accounts
-        - **Ransomware risk**: Compromised admin accounts could deploy ransomware in cloud environment
-        - **Incident response overhead**: Investigation and remediation consume significant IT resources
-        - **Business interruption**: Email access disruption, halted operations during credential resets
 
-        Availability impact typically escalates during incident response rather than initial compromise.
+    - **Account lockouts**: Victims locked out when attackers change passwords or MFA settings
+    - **Service disruption**: IT teams must reset credentials, revoke tokens across hundreds/thousands of accounts
+    - **Ransomware risk**: Compromised admin accounts could deploy ransomware in cloud environment
+    - **Incident response overhead**: Investigation and remediation consume significant IT resources
+    - **Business interruption**: Email access disruption, halted operations during credential resets
+
+    Availability impact typically escalates during incident response rather than initial compromise.
 
 === "Scope"
     Compromise extends beyond individual victims:
-        - **Trusted infrastructure abuse**: npm CDN exploitation affects trust in developer platforms used by millions
-        - **Healthcare sector**: HIPAA compliance violations, patient safety risks if medical device systems accessed
-        - **Industrial/OT sector**: If credentials reused for ICS/SCADA access, physical process disruption possible
-        - **Supply chain cascade**: Compromised enterprise accounts used to target vendors, partners, customers
-        - **Cross-organizational impact**: Single compromised account can pivot to partner organizations via email trust
 
-        Campaign scope demonstrates convergence of IT, OT, and supply chain security domains.
+    - **Trusted infrastructure abuse**: npm CDN exploitation affects trust in developer platforms used by millions
+    - **Healthcare sector**: HIPAA compliance violations, patient safety risks if medical device systems accessed
+    - **Industrial/OT sector**: If credentials reused for ICS/SCADA access, physical process disruption possible
+    - **Supply chain cascade**: Compromised enterprise accounts used to target vendors, partners, customers
+    - **Cross-organizational impact**: Single compromised account can pivot to partner organizations via email trust
+    
+    Campaign scope demonstrates convergence of IT, OT, and supply chain security domains.
 
 ---
 
