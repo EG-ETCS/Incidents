@@ -8,30 +8,33 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![GhostPairing Attack](Week53/images/ghostpairing.png)
+-   ![Digiever NVR Vulnerability](Week53/images/digiever.png)
 
-    :material-whatsapp:{ .lg .middle } **GhostPairing: WhatsApp Account Takeover**
+    **Digiever DS-2105 Pro NVR Authorization Bypass & Command Injection**
 
-    **Social Engineering**{.cve-chip} 
-    **WhatsApp**{.cve-chip} 
-    **Account Takeover**{.cve-chip} 
-    **Device Linking Abuse**{.cve-chip}
+    **CVE-2023-52163**{.cve-chip} 
+    **CVE-2023-52164**{.cve-chip} 
+    **CVSS 9.8**{.cve-chip} 
+    **CISA KEV**{.cve-chip} 
+    **RCE**{.cve-chip}
 
-    GhostPairing exploits WhatsApp's legitimate device-linking feature through social engineering. Attackers send phishing messages from compromised accounts appearing as trusted contacts, tricking victims into entering pairing codes on fake verification pages. Once linked, attackers gain full access to all chats, media, and real-time messages while victims remain unaware. No malware, SIM swap, or password theft required—purely social manipulation abusing legitimate functionality.
+    Critical vulnerability chain in end-of-life Digiever DS-2105 Pro Network Video Recorders allows unauthenticated attackers to bypass authorization and execute arbitrary OS commands via time_tzsetup.cgi endpoint. CISA confirms active exploitation by Mirai and ShadowV2 botnets. Attackers inject commands without authentication, deploy malware, hijack surveillance footage, harvest credentials via CVE-2023-52164 file read, and pivot to internal networks. No patches available (EoL device).
 
-    [:octicons-arrow-right-24: View Full Details](Week53/ghostpairing.md)
+    [:octicons-arrow-right-24: View Full Details](Week53/digiever.md)
 
--   ![Fortinet FortiOS Vulnerability](Week53/images/vpn2fa.png)
+-   ![npm Phishing Campaign](Week53/images/npm.png)
 
-    :material-shield-alert:{ .lg .middle } **Fortinet FortiOS SSL VPN 2FA Bypass**
+    **Malicious npm Packages Abused as Phishing Infrastructure**
 
-    **CVE-2020-12812**{.cve-chip} 
-    **CVSS 7.7**{.cve-chip} 
-    **Authentication Bypass**{.cve-chip} 
-    **2FA Bypass**{.cve-chip}
+    **npm Supply Chain**{.cve-chip} 
+    **Phishing Infrastructure**{.cve-chip} 
+    **Credential Theft**{.cve-chip} 
+    **CDN Abuse**{.cve-chip}
 
-    Active exploitation of five-year-old vulnerability in Fortinet FortiOS SSL VPN. Improper authentication flaw allows attackers to bypass two-factor authentication by altering username casing. FortiOS treats usernames as case-sensitive while LDAP is case-insensitive, creating authentication logic flaw. Attackers submit valid credentials with altered case (e.g., "Admin" vs "admin"), bypassing local 2FA and authenticating via LDAP without 2FA. Affects misconfigured FortiGate devices with local users + LDAP integration.
+    Sophisticated phishing campaign published 27 malicious npm packages across 6 attacker accounts, abusing npm's CDN as hosting platform for phishing content. Packages hosted HTML/JS payloads (not functional code) mimicking document portals that redirected to fake Microsoft 365 login pages with pre-filled emails. Evilginx-style AitM framework bypasses traditional MFA via session token theft. Anti-analysis techniques include JavaScript obfuscation, bot detection, and user interaction validation. Healthcare and industrial sectors targeted for BEC and potential OT access.
 
-    [:octicons-arrow-right-24: View Full Details](Week53/vpn2fa.md)
+    **Mitigation:** Deploy phishing-resistant MFA (FIDO2/WebAuthn). Implement Conditional Access policies. Use private npm registries with package allowlists. Monitor authentication logs for impossible travel and suspicious token activity. Train users on trusted-platform phishing tactics.
+
+    [:octicons-arrow-right-24: View Full Details](Week53/npm.md)
 
 </div>
