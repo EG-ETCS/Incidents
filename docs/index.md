@@ -8,33 +8,28 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Digiever NVR Vulnerability](Week53/images/digiever.png)
+-   ![Critical SmarterMail Vulnerability](Week53/images/smartermail.png)
 
-    **Digiever DS-2105 Pro NVR Authorization Bypass & Command Injection**
+    :material-email:{ .lg .middle } **Critical SmarterMail Arbitrary File Upload / Remote Code Execution Vulnerability**
 
-    **CVE-2023-52163**{.cve-chip} 
-    **CVE-2023-52164**{.cve-chip} 
-    **CVSS 9.8**{.cve-chip} 
-    **CISA KEV**{.cve-chip} 
-    **RCE**{.cve-chip}
+    **CVE-2025-52691**{.cve-chip} 
+    **CVSS 10.0**{.cve-chip} 
+    **RCE / Arbitrary File Upload**{.cve-chip}
 
-    Critical vulnerability chain in end-of-life Digiever DS-2105 Pro Network Video Recorders allows unauthenticated attackers to bypass authorization and execute arbitrary OS commands via time_tzsetup.cgi endpoint. CISA confirms active exploitation by Mirai and ShadowV2 botnets. Attackers inject commands without authentication, deploy malware, hijack surveillance footage, harvest credentials via CVE-2023-52164 file read, and pivot to internal networks. No patches available (EoL device).
+    A critical unauthenticated arbitrary file upload vulnerability in SmarterTools SmarterMail (Build 9406 and earlier) can allow remote attackers to upload and execute files, leading to full server compromise. Update to Build 9413 or later immediately.
 
-    [:octicons-arrow-right-24: View Full Details](Week53/digiever.md)
+    [:octicons-arrow-right-24: View Full Details](Week53/smartermail.md)
 
--   ![npm Phishing Campaign](Week53/images/npm.png)
+-   ![MongoDB Memory Disclosure](Week53/images/mongo.png)
 
-    **Malicious npm Packages Abused as Phishing Infrastructure**
-
-    **npm Supply Chain**{.cve-chip} 
-    **Phishing Infrastructure**{.cve-chip} 
-    **Credential Theft**{.cve-chip} 
-    **CDN Abuse**{.cve-chip}
-
-    Sophisticated phishing campaign published 27 malicious npm packages across 6 attacker accounts, abusing npm's CDN as hosting platform for phishing content. Packages hosted HTML/JS payloads (not functional code) mimicking document portals that redirected to fake Microsoft 365 login pages with pre-filled emails. Evilginx-style AitM framework bypasses traditional MFA via session token theft. Anti-analysis techniques include JavaScript obfuscation, bot detection, and user interaction validation. Healthcare and industrial sectors targeted for BEC and potential OT access.
-
-    **Mitigation:** Deploy phishing-resistant MFA (FIDO2/WebAuthn). Implement Conditional Access policies. Use private npm registries with package allowlists. Monitor authentication logs for impossible travel and suspicious token activity. Train users on trusted-platform phishing tactics.
-
-    [:octicons-arrow-right-24: View Full Details](Week53/npm.md)
+    :material-database:{ .lg .middle } **MongoBleed — MongoDB Memory Disclosure (CVE-2025-14847)**
+    
+    **CVE-2025-14847**{.cve-chip} 
+    **Memory Disclosure**{.cve-chip} 
+    **Pre-auth Network Leak**{.cve-chip}
+    
+    Critical pre-auth memory disclosure in MongoDB allowing unauthenticated attackers to extract heap memory via specially crafted compressed messages. Patch to fixed versions and restrict network exposure.
+    
+    [:octicons-arrow-right-24: View Full Details](Week53/mongo.md)
 
 </div>
