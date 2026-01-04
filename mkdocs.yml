@@ -87,101 +87,106 @@ nav:
     - "2025" : 
       - "October": 
         - "week44": 
-          - "Nihon Kohden CNS-6201": Week44/nihon-kohden-cns-6201.md
-          - "ASKI Energy ALS-Mini": Week44/aski-energy-als-mini.md
-          - "Delta Electronics ASDA-Soft": Week44/delta-electronics-asda-soft.md
-          - "Windows Server WSUS": Week44/windows-server-wsus.md
-          - "BlueNoroff Campaigns": Week44/bluenoroff-ghostcall-ghosthire.md
-          - "Everest AT&T Aviation Leaks": Week44/everest-att-aviation-leaks.md
-          - "HSBC USA Data Breach": Week44/hsbc-usa-data-breach.md
-          - "Vertikal Hospital Manager": Week44/vertikal-hospital-manager.md
+          - "Nihon Kohden CNS-6201": 2025/Week44/nihon-kohden-cns-6201.md
+          - "ASKI Energy ALS-Mini": 2025/Week44/aski-energy-als-mini.md
+          - "Delta Electronics ASDA-Soft": 2025/Week44/delta-electronics-asda-soft.md
+          - "Windows Server WSUS": 2025/Week44/windows-server-wsus.md
+          - "BlueNoroff Campaigns": 2025/Week44/bluenoroff-ghostcall-ghosthire.md
+          - "Everest AT&T Aviation Leaks": 2025/Week44/everest-att-aviation-leaks.md
+          - "HSBC USA Data Breach": 2025/Week44/hsbc-usa-data-breach.md
+          - "Vertikal Hospital Manager": 2025/Week44/vertikal-hospital-manager.md
       - "November": 
          - "week45": 
-            - "Cisco IOS XE": Week45/Cisco-IOS-XE.md
-            - "VMware Aria Operations and VMware Tools": Week45/VMware-tools.md
-            - "Android/BankBot-YNRK malware": Week45/Android-BankBot.md
-            - "Cisco ASA Secure Firewall":  Week45/Cisco-ASA.md
-            - "Multiple Critical Vulnerabilities in Moxa": Week45/Moxa.md
-            - "Super Value Co. Ransomware Breach" : Week45/Super-Value.md
-            - "Android Security Bulletin": Week45/Android-Security-Bulletin.md
-            - "Cyber Toufan – Maya Engineering Surveillance Breach" : Week45/maya-engineering-breach.md
+            - "Cisco IOS XE": 2025/Week45/Cisco-IOS-XE.md
+            - "VMware Aria Operations and VMware Tools": 2025/Week45/VMware-tools.md
+            - "Android/BankBot-YNRK malware": 2025/Week45/Android-BankBot.md
+            - "Cisco ASA Secure Firewall":  2025/Week45/Cisco-ASA.md
+            - "Multiple Critical Vulnerabilities in Moxa": 2025/Week45/Moxa.md
+            - "Super Value Co. Ransomware Breach" : 2025/Week45/Super-Value.md
+            - "Android Security Bulletin": 2025/Week45/Android-Security-Bulletin.md
+            - "Cyber Toufan – Maya Engineering Surveillance Breach" : 2025/Week45/maya-engineering-breach.md
          - "week46":
-            - "Samsung Mobile Zero-Day Exploited to Deploy LANDFALL Spyware": Week46/samsung-spyware.md
-            - "Cisco Unified Contact Center Express (Unified CCX) Vulnerabilities": Week46/cisco-ccx.md
-            - "Multiple Vulnerabilities in Apple Products": Week46/apple.md
-            - "ABB FLXeon Controllers Vulnerabilities": Week46/abb-fbxi.md
-            - "Delhi Airport GPS Spoofing Crisis": Week46/delhi.md
-            - "ClickFix Hospitality Phishing Campaign": Week46/clickfix.md
-            - "Actively Exploited Windows Kernel Zero‑Day": Week46/kernel.md
-            - "Whisper Leak — LLM Side‑Channel Attack": Week46/whisper.md
-            - "Google vs. Lighthouse Phishing-as-a-Service Operation": Week46/Lighthouse.md
+            - "Samsung Mobile Zero-Day Exploited to Deploy LANDFALL Spyware": 2025/Week46/samsung-spyware.md
+            - "Cisco Unified Contact Center Express (Unified CCX) Vulnerabilities": 2025/Week46/cisco-ccx.md
+            - "Multiple Vulnerabilities in Apple Products": 2025/Week46/apple.md
+            - "ABB FLXeon Controllers Vulnerabilities": 2025/Week46/abb-fbxi.md
+            - "Delhi Airport GPS Spoofing Crisis": 2025/Week46/delhi.md
+            - "ClickFix Hospitality Phishing Campaign": 2025/Week46/clickfix.md
+            - "Actively Exploited Windows Kernel Zero‑Day": 2025/Week46/kernel.md
+            - "Whisper Leak — LLM Side‑Channel Attack": 2025/Week46/whisper.md
+            - "Google vs. Lighthouse Phishing-as-a-Service Operation": 2025/Week46/Lighthouse.md
          - "week47":
-            - "Fortinet FortiWeb Authentication Bypass": Week47/fortiweb.md
-            - "Critical IBM AIX NIM Vulnerabilities": Week47/aix.md
-            - "D‑Link DIR-816L": Week47/dlink.md
-            - "Microsoft Graphics Component Vulnerability – CVE-2025-60724": Week47/ms-gfx.md
-            - "Google Chrome V8 Zero-Day – CVE-2025-13223": Week47/chrome-v8.md
-            - "Lynx+ Gateway Critical Vulnerabilities": Week47/lynx.md
-            - "FortiWeb OS Command Injection (CVE-2025-58034)": Week47/fortiwebzero.md
+            - "Fortinet FortiWeb Authentication Bypass": 2025/Week47/fortiweb.md
+            - "Critical IBM AIX NIM Vulnerabilities": 2025/Week47/aix.md
+            - "D‑Link DIR-816L": 2025/Week47/dlink.md
+            - "Microsoft Graphics Component Vulnerability – CVE-2025-60724": 2025/Week47/ms-gfx.md
+            - "Google Chrome V8 Zero-Day – CVE-2025-13223": 2025/Week47/chrome-v8.md
+            - "Lynx+ Gateway Critical Vulnerabilities": 2025/Week47/lynx.md
+            - "FortiWeb OS Command Injection (CVE-2025-58034)": 2025/Week47/fortiwebzero.md
          - "week48":
-            - "ABB Ability Edgenius – Authentication Bypass (CVE-2025-10571)": Week48/abb.md
-            - "Oracle Fusion Middleware – Missing Authentication for Critical Function (CVE-2025-61757)": Week48/oracle.md
-            - "China-Linked APT31 Stealth Cyberattacks on Russian IT – Using Cloud Services": Week48/apt31.md
-            - "Oracle EBS Zero-Day Exploitation – CVE-2025-61882": Week48/oracle-ebs.md
-            - "CISA Warning: Spyware Campaigns Targeting Messaging App Users": Week48/spyware.md
-            - "Festo Compact Vision System – Insecure Configuration Vulnerabilities": Week48/festo.md
-            - "ShadowV2 IoT Botnet Opportunistic Attack During AWS Outage": Week48/shadowV2.md
+            - "ABB Ability Edgenius – Authentication Bypass (CVE-2025-10571)": 2025/Week48/abb.md
+            - "Oracle Fusion Middleware – Missing Authentication for Critical Function (CVE-2025-61757)": 2025/Week48/oracle.md
+            - "China-Linked APT31 Stealth Cyberattacks on Russian IT – Using Cloud Services": 2025/Week48/apt31.md
+            - "Oracle EBS Zero-Day Exploitation – CVE-2025-61882": 2025/Week48/oracle-ebs.md
+            - "CISA Warning: Spyware Campaigns Targeting Messaging App Users": 2025/Week48/spyware.md
+            - "Festo Compact Vision System – Insecure Configuration Vulnerabilities": 2025/Week48/festo.md
+            - "ShadowV2 IoT Botnet Opportunistic Attack During AWS Outage": 2025/Week48/shadowV2.md
          - "week49":
-            - "node-forge ASN.1 Validation Bypass Vulnerability": Week49/forge.md
-            - "Contagious Interview (2025 npm-registry wave)": Week49/npm.md
-            - "OpenPLC ScadaBR CVE-2021-26829 Active Exploitation": Week49/openplc.md
-            - "Scada-LTS Project Import Path Traversal – CVE-2025-13791": Week49/scadalts.md
-            - "Mercedes-Benz USA Breach Claim by Threat Actor 'zestix'": Week49/benz.md
-            - "OnSolve CodeRED Ransomware Attack": Week49/onsolve.md
-            - "MuddyWater MuddyViper Backdoor Campaign": Week49/muddy.md
-            - "Hacking of ~120,000 IP Cameras in South Korea for Sale of Intimate Content": Week49/knpa.md
+            - "node-forge ASN.1 Validation Bypass Vulnerability": 2025/Week49/forge.md
+            - "Contagious Interview (2025 npm-registry wave)": 2025/Week49/npm.md
+            - "OpenPLC ScadaBR CVE-2021-26829 Active Exploitation": 2025/Week49/openplc.md
+            - "Scada-LTS Project Import Path Traversal – CVE-2025-13791": 2025/Week49/scadalts.md
+            - "Mercedes-Benz USA Breach Claim by Threat Actor 'zestix'": 2025/Week49/benz.md
+            - "OnSolve CodeRED Ransomware Attack": 2025/Week49/onsolve.md
+            - "MuddyWater MuddyViper Backdoor Campaign": 2025/Week49/muddy.md
+            - "Hacking of ~120,000 IP Cameras in South Korea for Sale of Intimate Content": 2025/Week49/knpa.md
       - "December":
          - "week50":
-            - "GoldFactory Hits Southeast Asia with Modified Banking Apps Driving 11,000+ Infections": Week50/goldfactory.md
-            - "WhatsApp-Based Malware Campaign by Water Saci": Week50/watersaci.md
-            - "Johnson Controls FX80 / FX90 Vulnerability (CVE-2025-43867)": Week50/johnson.md
-            - "React2Shell (CVE-2025-55182)": Week50/react2shell.md
-            - "UDPGangster Campaigns Target Multiple Countries": Week50/muddyudp.md
-            - "Android Malware Surge: FvncBot, SeedSnatcher, and Upgraded ClayRat": Week50/andSurge.md
-            - "ArrayOS AG VPN (CVE-2025-66644)": Week50/arrayos.md
+            - "GoldFactory Hits Southeast Asia with Modified Banking Apps Driving 11,000+ Infections": 2025/Week50/goldfactory.md
+            - "WhatsApp-Based Malware Campaign by Water Saci": 2025/Week50/watersaci.md
+            - "Johnson Controls FX80 / FX90 Vulnerability (CVE-2025-43867)": 2025/Week50/johnson.md
+            - "React2Shell (CVE-2025-55182)": 2025/Week50/react2shell.md
+            - "UDPGangster Campaigns Target Multiple Countries": 2025/Week50/muddyudp.md
+            - "Android Malware Surge: FvncBot, SeedSnatcher, and Upgraded ClayRat": 2025/Week50/andSurge.md
+            - "ArrayOS AG VPN (CVE-2025-66644)": 2025/Week50/arrayos.md
          - "week51":
-            - "GeoServer XXE Vulnerability Exploitation (CVE-2025-58360)": Week51/geoserver.md
-            - "CVE-2018-4063 Sierra Wireless AirLink ALEOS Remote Code Execution": Week51/sierra.md
-            - "Pro-Russia Hacktivists Conduct Opportunistic Attacks Against Critical Infrastructure": Week51/hacktivists.md
-            - "Google Chromium Out-of-Bounds Memory Access Vulnerability": Week51/chromium.md
-            - "Johnson Controls iSTAR Ultra Vulnerabilities": Week51/istar.md
-            - "Siemens Energy Services Security Advisory": Week51/siemensesa.md
-            - "Apple Multiple Products Use-After-Free WebKit Vulnerability": Week51/useAfterFree.md
-            - "Fortinet FortiCloud SSO Login Authentication Bypass Vulnerabilities": Week51/forticloud.md
-            - "SolarEdge SE3680H Contains Linux Kernel Vulnerabilities": Week51/solaredge.md
-            - "Russian GRU Cyber Campaign Targeting Critical Infrastructure via Edge Network Devices": Week51/RussianGRU.md
-            - "OS Command Injection in Fortinet FortiSandbox": Week51/sandbox.md
-            - "Cisco AsyncOS Zero-Day Exploitation Campaign": Week51/AsyncOS.md
-            - "ASUS Live Update Embedded Malicious Code Vulnerability": Week51/asus.md
-            - "SonicWall SMA1000 Zero-Day Vulnerabilities": Week51/sonicWall.md
+            - "GeoServer XXE Vulnerability Exploitation (CVE-2025-58360)": 2025/Week51/geoserver.md
+            - "CVE-2018-4063 Sierra Wireless AirLink ALEOS Remote Code Execution": 2025/Week51/sierra.md
+            - "Pro-Russia Hacktivists Conduct Opportunistic Attacks Against Critical Infrastructure": 2025/Week51/hacktivists.md
+            - "Google Chromium Out-of-Bounds Memory Access Vulnerability": 2025/Week51/chromium.md
+            - "Johnson Controls iSTAR Ultra Vulnerabilities": 2025/Week51/istar.md
+            - "Siemens Energy Services Security Advisory": 2025/Week51/siemensesa.md
+            - "Apple Multiple Products Use-After-Free WebKit Vulnerability": 2025/Week51/useAfterFree.md
+            - "Fortinet FortiCloud SSO Login Authentication Bypass Vulnerabilities": 2025/Week51/forticloud.md
+            - "SolarEdge SE3680H Contains Linux Kernel Vulnerabilities": 2025/Week51/solaredge.md
+            - "Russian GRU Cyber Campaign Targeting Critical Infrastructure via Edge Network Devices": 2025/Week51/RussianGRU.md
+            - "OS Command Injection in Fortinet FortiSandbox": 2025/Week51/sandbox.md
+            - "Cisco AsyncOS Zero-Day Exploitation Campaign": 2025/Week51/AsyncOS.md
+            - "ASUS Live Update Embedded Malicious Code Vulnerability": 2025/Week51/asus.md
+            - "SonicWall SMA1000 Zero-Day Vulnerabilities": 2025/Week51/sonicWall.md
          - "week52":
-            - "CVE-2025-14993: Tenda AC18 Router Stack Buffer Overflow'": Week52/ac18.md
-            - "WatchGuard Firebox Fireware OS IKEv2 Out-of-Bounds Write Vulnerability": Week52/watchguard.md
-            - "U.S. DOJ Charges 54 in ATM Jackpotting Scheme Using Ploutus Malware" : Week52/doj.md
-            - "Romanian Waters Authority Hit by Ransomware Attack": Week52/romanian.md
-            - "Kimwolf Botnet: 1.8 Million Android Devices Hijacked": Week52/kimwolf.md
-            - "China-Linked \"Ink Dragon\" APT Espionage Campaign": Week52/dragon.md
-            - "Cyberattack on La Poste and La Banque Postale": Week52/laposte.md
-            - "CVE-2025-68613: Critical n8n Remote Code Execution Vulnerability": Week52/n8n.md
-            - "Lotusbail: Malicious npm Package Targeting WhatsApp Web API Developers": Week52/lotusbail.md
-            - "MacSync macOS Stealer: Code-Signed Malware Bypassing Gatekeeper": Week52/macsync.md
-            - "FBI Seizure of Fraud Domain Hosting Stolen Bank Credentials": Week52/fbi.md
+            - "CVE-2025-14993: Tenda AC18 Router Stack Buffer Overflow'": 2025/Week52/ac18.md
+            - "WatchGuard Firebox Fireware OS IKEv2 Out-of-Bounds Write Vulnerability": 2025/Week52/watchguard.md
+            - "U.S. DOJ Charges 54 in ATM Jackpotting Scheme Using Ploutus Malware" : 2025/Week52/doj.md
+            - "Romanian Waters Authority Hit by Ransomware Attack": 2025/Week52/romanian.md
+            - "Kimwolf Botnet: 1.8 Million Android Devices Hijacked": 2025/Week52/kimwolf.md
+            - "China-Linked \"Ink Dragon\" APT Espionage Campaign": 2025/Week52/dragon.md
+            - "Cyberattack on La Poste and La Banque Postale": 2025/Week52/laposte.md
+            - "CVE-2025-68613: Critical n8n Remote Code Execution Vulnerability": 2025/Week52/n8n.md
+            - "Lotusbail: Malicious npm Package Targeting WhatsApp Web API Developers": 2025/Week52/lotusbail.md
+            - "MacSync macOS Stealer: Code-Signed Malware Bypassing Gatekeeper": 2025/Week52/macsync.md
+            - "FBI Seizure of Fraud Domain Hosting Stolen Bank Credentials": 2025/Week52/fbi.md
          - "week53":
-            - "Trust Wallet Chrome Extension Supply-Chain Attack": Week53/wallet.md
-            - "CVE-2025-68664: Critical LangChain Core Serialization Injection Vulnerability": Week53/langchain.md
-            - "GhostPairing: WhatsApp Account Takeover via Social Engineering": Week53/ghostpairing.md
-            - "Fortinet FortiOS SSL VPN 2FA Bypass (CVE-2020-12812)": Week53/vpn2fa.md
-            - "Digiever DS-2105 Pro NVR Authorization Bypass & Command Injection": Week53/digiever.md
-            - "Malicious npm Packages Abused as Phishing Infrastructure": Week53/npm.md
-            - "Critical SmarterMail Arbitrary File Upload / Remote Code Execution Vulnerability": Week53/smartermail.md
-            - "MongoBleed: MongoDB Memory Disclosure (CVE-2025-14847)": Week53/mongo.md
+            - "Trust Wallet Chrome Extension Supply-Chain Attack": 2025/Week53/wallet.md
+            - "CVE-2025-68664: Critical LangChain Core Serialization Injection Vulnerability": 2025/Week53/langchain.md
+            - "GhostPairing: WhatsApp Account Takeover via Social Engineering": 2025/Week53/ghostpairing.md
+            - "Fortinet FortiOS SSL VPN 2FA Bypass (CVE-2020-12812)": 2025/Week53/vpn2fa.md
+            - "Digiever DS-2105 Pro NVR Authorization Bypass & Command Injection": 2025/Week53/digiever.md
+            - "Malicious npm Packages Abused as Phishing Infrastructure": 2025/Week53/npm.md
+            - "Critical SmarterMail Arbitrary File Upload / Remote Code Execution Vulnerability": 2025/Week53/smartermail.md
+            - "MongoBleed: MongoDB Memory Disclosure (CVE-2025-14847)": 2025/Week53/mongo.md
+    - "2026" : 
+      - "January": 
+        - "week1": 
+          - "IBM API Connect Critical Authentication Bypass (CVE-2025-13915)": 2026/Week1/api_connect.md
+          - "Transparent Tribe RAT Campaign Targeting Indian Government and Academia": 2026/Week1/transparent_tribe.md

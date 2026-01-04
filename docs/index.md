@@ -8,28 +8,38 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Critical SmarterMail Vulnerability](Week53/images/smartermail.png)
+-   ![IBM API Connect Vulnerability](2026/Week1/images/api_connect.png)
 
-    :material-email:{ .lg .middle } **Critical SmarterMail Arbitrary File Upload / Remote Code Execution Vulnerability**
+    **IBM API Connect Critical Authentication Bypass**
 
-    **CVE-2025-52691**{.cve-chip} 
-    **CVSS 10.0**{.cve-chip} 
-    **RCE / Arbitrary File Upload**{.cve-chip}
+    **CVE-2025-13915**{.cve-chip} 
+    **CVSS 9.8**{.cve-chip} 
+    **Authentication Bypass**{.cve-chip} 
+    **API Gateway**{.cve-chip}
 
-    A critical unauthenticated arbitrary file upload vulnerability in SmarterTools SmarterMail (Build 9406 and earlier) can allow remote attackers to upload and execute files, leading to full server compromise. Update to Build 9413 or later immediately.
+    Critical authentication bypass vulnerability in IBM API Connect discovered during internal testing. CVE-2025-13915 allows unauthenticated attackers with network access to bypass authentication mechanisms and gain unauthorized access to applications and APIs protected by the platform. 
 
-    [:octicons-arrow-right-24: View Full Details](Week53/smartermail.md)
+    Affects versions 10.0.8.0-10.0.8.5 and 10.0.11.0.
+    No privileges or user interaction required for exploitation.
 
--   ![MongoDB Memory Disclosure](Week53/images/mongo.png)
+    [:octicons-arrow-right-24: View Full Details](2026/Week1/api_connect.md)
 
-    :material-database:{ .lg .middle } **MongoBleed — MongoDB Memory Disclosure (CVE-2025-14847)**
+-   ![Transparent Tribe APT36 Campaign](2026/Week1/images/transparent_tribe.png)
+
+    **Transparent Tribe RAT Campaign Targeting Indian Government and Academia**
+
+    **APT36**{.cve-chip} 
+    **Transparent Tribe**{.cve-chip} 
+    **RAT**{.cve-chip} 
+    **Spear-Phishing**{.cve-chip} 
+    **Fileless Malware**{.cve-chip}
+
+    Pakistan-attributed APT36 launches sophisticated cyber-espionage campaign against Indian government and academic institutions. 
     
-    **CVE-2025-14847**{.cve-chip} 
-    **Memory Disclosure**{.cve-chip} 
-    **Pre-auth Network Leak**{.cve-chip}
+    Spear-phishing emails deliver weaponized Windows LNK files disguised as PDFs. LNK triggers mshta.exe to execute HTA script that loads RAT (iinneldc.dll) entirely in memory without disk writes, evading traditional AV. 
     
-    Critical pre-auth memory disclosure in MongoDB allowing unauthenticated attackers to extract heap memory via specially crafted compressed messages. Patch to fixed versions and restrict network exposure.
-    
-    [:octicons-arrow-right-24: View Full Details](Week53/mongo.md)
+    Adaptive persistence varies by detected antivirus (Kaspersky, Quick Heal, Avast/AVG/Avira). RAT provides remote control, file manipulation, screenshot/clipboard capture, keylogging, data exfiltration via encrypted HTTP C2. Targets classified government documents and sensitive research.
+
+    [:octicons-arrow-right-24: View Full Details](2026/Week1/transparent_tribe.md)
 
 </div>
