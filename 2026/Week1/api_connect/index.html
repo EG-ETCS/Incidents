@@ -1,0 +1,6225 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://eg-etcs.github.io/incident/2026/Week1/api_connect/">
+      
+      
+        <link rel="prev" href="../../../2025/Week53/mongo/">
+      
+      
+        <link rel="next" href="../transparent_tribe/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../alarm.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>IBM API Connect Critical Authentication Bypass (CVE-2025-13915) - Incidents</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M22%2012a10%2010%200%200%201-10%2010A10%2010%200%200%201%202%2012%2010%2010%200%200%201%2012%202a10%2010%200%200%201%2010%2010M6%2013h8l-3.5%203.5%201.42%201.42L17.84%2012l-5.92-5.92L10.5%207.5%2014%2011H6z%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ibm-api-connect-critical-authentication-bypass-cve-2025-13915" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Incidents" class="md-header__button md-logo" aria-label="Incidents" data-md-component="logo">
+      
+  <img src="../../../alarm.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Incidents
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              IBM API Connect Critical Authentication Bypass (CVE-2025-13915)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  
+  Today's Incidents
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../This-Week/" class="md-tabs__link">
+          
+  
+  
+  This Week
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Last-Week/" class="md-tabs__link">
+          
+  
+  
+  Last Week
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../default/" class="md-tabs__link">
+          
+  
+  
+  Incidents
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Incidents" class="md-nav__button md-logo" aria-label="Incidents" data-md-component="logo">
+      
+  <img src="../../../alarm.png" alt="logo">
+
+    </a>
+    Incidents
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Today's Incidents
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Today's Incidents
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Today's Security Incidents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    This Week
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    This Week
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../This-Week/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    This Week's Security Incidents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Last Week
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Last Week
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Last-Week/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Last Week's Security Incidents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Incidents
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Incidents
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../default/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2025
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_1" id="__nav_4_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    October
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    October
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_1_1" id="__nav_4_2_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week44
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week44
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week44/nihon-kohden-cns-6201/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nihon Kohden CNS-6201
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week44/aski-energy-als-mini/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ASKI Energy ALS-Mini
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week44/delta-electronics-asda-soft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delta Electronics ASDA-Soft
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week44/windows-server-wsus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows Server WSUS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week44/bluenoroff-ghostcall-ghosthire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BlueNoroff Campaigns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week44/everest-att-aviation-leaks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Everest AT&T Aviation Leaks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week44/hsbc-usa-data-breach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HSBC USA Data Breach
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week44/vertikal-hospital-manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vertikal Hospital Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2" id="__nav_4_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    November
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    November
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2_1" id="__nav_4_2_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week45
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week45
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week45/Cisco-IOS-XE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cisco IOS XE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week45/VMware-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VMware Aria Operations and VMware Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week45/Android-BankBot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android/BankBot-YNRK malware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week45/Cisco-ASA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cisco ASA Secure Firewall
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week45/Moxa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multiple Critical Vulnerabilities in Moxa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week45/Super-Value/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Super Value Co. Ransomware Breach
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week45/Android-Security-Bulletin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android Security Bulletin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week45/maya-engineering-breach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cyber Toufan – Maya Engineering Surveillance Breach
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2_2" id="__nav_4_2_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week46
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week46
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week46/samsung-spyware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Samsung Mobile Zero-Day Exploited to Deploy LANDFALL Spyware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week46/cisco-ccx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cisco Unified Contact Center Express (Unified CCX) Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week46/apple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multiple Vulnerabilities in Apple Products
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week46/abb-fbxi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ABB FLXeon Controllers Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week46/delhi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delhi Airport GPS Spoofing Crisis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week46/clickfix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ClickFix Hospitality Phishing Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week46/kernel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Actively Exploited Windows Kernel Zero‑Day
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week46/whisper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Whisper Leak — LLM Side‑Channel Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week46/Lighthouse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google vs. Lighthouse Phishing-as-a-Service Operation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2_3" id="__nav_4_2_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week47
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week47
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week47/fortiweb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fortinet FortiWeb Authentication Bypass
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week47/aix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Critical IBM AIX NIM Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week47/dlink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D‑Link DIR-816L
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week47/ms-gfx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Graphics Component Vulnerability – CVE-2025-60724
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week47/chrome-v8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google Chrome V8 Zero-Day – CVE-2025-13223
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week47/lynx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lynx+ Gateway Critical Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week47/fortiwebzero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FortiWeb OS Command Injection (CVE-2025-58034)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2_4" id="__nav_4_2_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week48
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week48
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week48/abb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ABB Ability Edgenius – Authentication Bypass (CVE-2025-10571)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week48/oracle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oracle Fusion Middleware – Missing Authentication for Critical Function (CVE-2025-61757)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week48/apt31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    China-Linked APT31 Stealth Cyberattacks on Russian IT – Using Cloud Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week48/oracle-ebs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oracle EBS Zero-Day Exploitation – CVE-2025-61882
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week48/spyware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CISA Warning: Spyware Campaigns Targeting Messaging App Users
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week48/festo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Festo Compact Vision System – Insecure Configuration Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week48/shadowV2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ShadowV2 IoT Botnet Opportunistic Attack During AWS Outage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2_5" id="__nav_4_2_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week49
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week49
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week49/forge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    node-forge ASN.1 Validation Bypass Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week49/npm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contagious Interview (2025 npm-registry wave)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week49/openplc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenPLC ScadaBR CVE-2021-26829 Active Exploitation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week49/scadalts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scada-LTS Project Import Path Traversal – CVE-2025-13791
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week49/benz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mercedes-Benz USA Breach Claim by Threat Actor 'zestix'
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week49/onsolve/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OnSolve CodeRED Ransomware Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week49/muddy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MuddyWater MuddyViper Backdoor Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week49/knpa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacking of ~120,000 IP Cameras in South Korea for Sale of Intimate Content
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3" id="__nav_4_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    December
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    December
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3_1" id="__nav_4_2_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week50
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week50
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week50/goldfactory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GoldFactory Hits Southeast Asia with Modified Banking Apps Driving 11,000+ Infections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week50/watersaci/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WhatsApp-Based Malware Campaign by Water Saci
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week50/johnson/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Johnson Controls FX80 / FX90 Vulnerability (CVE-2025-43867)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week50/react2shell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React2Shell (CVE-2025-55182)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week50/muddyudp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UDPGangster Campaigns Target Multiple Countries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week50/andSurge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android Malware Surge: FvncBot, SeedSnatcher, and Upgraded ClayRat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week50/arrayos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ArrayOS AG VPN (CVE-2025-66644)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3_2" id="__nav_4_2_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week51
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week51
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/geoserver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GeoServer XXE Vulnerability Exploitation (CVE-2025-58360)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/sierra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CVE-2018-4063 Sierra Wireless AirLink ALEOS Remote Code Execution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/hacktivists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pro-Russia Hacktivists Conduct Opportunistic Attacks Against Critical Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/chromium/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google Chromium Out-of-Bounds Memory Access Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/istar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Johnson Controls iSTAR Ultra Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/siemensesa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Siemens Energy Services Security Advisory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/useAfterFree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apple Multiple Products Use-After-Free WebKit Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/forticloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fortinet FortiCloud SSO Login Authentication Bypass Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/solaredge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SolarEdge SE3680H Contains Linux Kernel Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/RussianGRU/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Russian GRU Cyber Campaign Targeting Critical Infrastructure via Edge Network Devices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/sandbox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OS Command Injection in Fortinet FortiSandbox
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/AsyncOS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cisco AsyncOS Zero-Day Exploitation Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/asus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ASUS Live Update Embedded Malicious Code Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/sonicWall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SonicWall SMA1000 Zero-Day Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3_3" id="__nav_4_2_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week52
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week52
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/ac18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CVE-2025-14993: Tenda AC18 Router Stack Buffer Overflow'
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/watchguard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WatchGuard Firebox Fireware OS IKEv2 Out-of-Bounds Write Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/doj/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    U.S. DOJ Charges 54 in ATM Jackpotting Scheme Using Ploutus Malware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/romanian/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Romanian Waters Authority Hit by Ransomware Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/kimwolf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kimwolf Botnet: 1.8 Million Android Devices Hijacked
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/dragon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    China-Linked "Ink Dragon" APT Espionage Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/laposte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cyberattack on La Poste and La Banque Postale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/n8n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CVE-2025-68613: Critical n8n Remote Code Execution Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/lotusbail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lotusbail: Malicious npm Package Targeting WhatsApp Web API Developers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/macsync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MacSync macOS Stealer: Code-Signed Malware Bypassing Gatekeeper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/fbi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FBI Seizure of Fraud Domain Hosting Stolen Bank Credentials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3_4" id="__nav_4_2_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week53
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week53
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week53/wallet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trust Wallet Chrome Extension Supply-Chain Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week53/langchain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CVE-2025-68664: Critical LangChain Core Serialization Injection Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week53/ghostpairing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GhostPairing: WhatsApp Account Takeover via Social Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week53/vpn2fa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fortinet FortiOS SSL VPN 2FA Bypass (CVE-2020-12812)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week53/digiever/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Digiever DS-2105 Pro NVR Authorization Bypass & Command Injection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week53/npm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Malicious npm Packages Abused as Phishing Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week53/smartermail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Critical SmarterMail Arbitrary File Upload / Remote Code Execution Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week53/mongo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MongoBleed: MongoDB Memory Disclosure (CVE-2025-14847)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2026
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_1" id="__nav_4_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    January
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    January
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_1_1" id="__nav_4_3_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_1_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_3_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBM API Connect Critical Authentication Bypass (CVE-2025-13915)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBM API Connect Critical Authentication Bypass (CVE-2025-13915)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability Specifications
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ibm-api-connect-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IBM API Connect Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vulnerability-root-cause-cwe-305-authentication-bypass" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability Root Cause: CWE-305 Authentication Bypass
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attack-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attack Scenario
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Attack Scenario">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-exploitation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step-by-Step Exploitation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impact-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Impact Assessment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mitigation-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mitigation Strategies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mitigation Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#immediate-patching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Immediate Patching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temporary-mitigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Temporary Mitigation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-and-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monitoring and Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-control-hardening" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access Control Hardening
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../transparent_tribe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transparent Tribe RAT Campaign Targeting Indian Government and Academia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clickfix_BSOD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ClickFix Attack Uses Fake Windows BSOD to Push Malware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../n8n2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    n8n Critical Python Sandbox Bypass (CVE-2025-68668)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_1_2" id="__nav_4_3_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week2/RustyWater/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MuddyWater RustyWater RAT Campaign – Iran-linked APT Espionage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week2/Astaroth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Astaroth Banking Trojan – WhatsApp Worm Campaign in Brazil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week2/Instagram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instagram 17.5M User Data Leak – API Scraping Incident
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week2/apex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trend Micro Apex Central Unauthenticated RCE (CVE-2025-69258)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week2/Kimsuky/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kimsuky APT Malicious QR Code Spear-Phishing Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week2/APT28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    APT28 Credential-Stealing Campaign Targeting Energy and Policy Organizations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week2/telegram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Telegram Proxy One-Click IP Exposure Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week2/uat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UAT-7290 China-Linked Telecom Espionage Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week2/azmonica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AZ Monica Hospital Cyberattack - Belgium
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week2/gogs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CVE-2025-8110 - Gogs Remote Code Execution via Symlink Traversal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week2/pluggyape/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PLUGGYAPE Malware Campaign Targeting Ukrainian Defense Forces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week2/dolby/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android Dolby Audio Zero-Click Vulnerability (CVE-2025-54957)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_1_3" id="__nav_4_3_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/wordpress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Critical Authentication Bypass in Modular DS WordPress Plugin (CVE-2026-23550)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/chrome/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Credential-Stealing Chrome Extensions Target Enterprise HR Platforms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/stateTV/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Iran State Television Broadcast Hijacking (Badr Satellite Signal Intrusion)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/vigi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TP-Link VIGI Camera Authentication Bypass (CVE-2026-0629)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/crashfix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CrashFix: Malicious Chrome Extension Browser Crash Social Engineering Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/zip/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GootLoader Malware - Malformed ZIP Evasion Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/talos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UAT-8837: China-Linked APT Targeting North American Critical Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/weblogic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oracle HTTP Server / WebLogic Server Proxy Plug-in Vulnerability (CVE-2026-21962)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/gemini/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google Gemini Prompt Injection Flaw via Calendar Invites
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/power/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Power Apps Remote Code Execution Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/cisco/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cisco Unified Communications Products Remote Code Execution Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/linkedin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LinkedIn Phishing Malware Campaign via DLL Sideloading
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/zoom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Command Injection Vulnerability in Zoom Node Multimedia Routers (MMRs)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/gitlab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multiple GitLab Vulnerabilities Enable 2FA Bypass and DoS Attacks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_1_4" id="__nav_4_3_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week4/gnu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CVE-2026-24061 – GNU InetUtils telnetd Remote Authentication Bypass
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week4/dynowiper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DynoWiper Cyberattack on Polish Energy Systems (Sandworm Attribution)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week4/gmail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    48 Million Gmail Usernames And Passwords Leaked Online
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week4/buds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Xiaomi Redmi Buds Bluetooth RFCOMM Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week4/codebreach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CodeBreach – AWS CodeBuild Misconfiguration Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week4/amnesia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Stage Phishing Campaign Deploying Amnesia RAT and Hakuna Matata Ransomware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability Specifications
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ibm-api-connect-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IBM API Connect Architecture
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vulnerability-root-cause-cwe-305-authentication-bypass" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability Root Cause: CWE-305 Authentication Bypass
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attack-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attack Scenario
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Attack Scenario">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-exploitation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step-by-Step Exploitation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impact-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Impact Assessment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mitigation-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mitigation Strategies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mitigation Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#immediate-patching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Immediate Patching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temporary-mitigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Temporary Mitigation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-and-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monitoring and Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-control-hardening" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access Control Hardening
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<div><h1 id="ibm-api-connect-critical-authentication-bypass-cve-2025-13915">IBM API Connect Critical Authentication Bypass (CVE-2025-13915)</h1>
+<p><strong class="cve-chip">CVE-2025-13915</strong> <strong class="cve-chip">CVSS 9.8</strong> <strong class="cve-chip">Authentication Bypass</strong> <strong class="cve-chip">API Gateway</strong> <strong class="cve-chip">IBM</strong></p>
+<h2 id="overview">Overview</h2>
+<p><strong>IBM has disclosed a critical authentication bypass vulnerability</strong> in its <strong>API Connect platform</strong>, a comprehensive API lifecycle management solution used to design, secure, manage, and analyze APIs across cloud, on-premises, and hybrid environments. </p>
+<p><strong>CVE-2025-13915</strong> allows <strong>unauthenticated attackers with network access</strong> to bypass authentication mechanisms and gain <strong>unauthorized access to applications and APIs</strong> protected by the platform. </p>
+<p>The vulnerability was <strong>discovered during IBM's internal security testing</strong> and affects specific versions: <strong>API Connect 10.0.8.0 through 10.0.8.5</strong> and <strong>API Connect 10.0.11.0</strong>. 
+With a <strong>CVSS score of 9.8 (Critical)</strong>, the flaw requires <strong>no privileges, no user interaction</strong>, and is <strong>network-exploitable</strong>, making it an extremely high-severity threat. </p>
+<p>The root cause is classified as <strong>CWE-305: Authentication Bypass by Primary Weakness</strong>, indicating that core authentication logic can be circumvented through crafted requests. 
+API Connect typically serves as the <strong>front-line gateway</strong> for enterprise API infrastructure, enforcing authentication, authorization, rate limiting, and security policies for backend services. 
+Bypassing this gateway <strong>undermines the security assumptions</strong> of downstream systems that rely on API Connect to validate user identity. </p>
+<p>While <strong>no active exploitation has been confirmed</strong>, the widespread deployment of API Connect in <strong>financial services, healthcare, government, and Fortune 500 enterprises</strong> makes this vulnerability a high-priority target once exploit details become public. </p>
+<p>IBM has released <strong>interim fixes (iFixes)</strong> and recommends <strong>immediate patching</strong> along with <strong>temporary mitigation measures</strong> including disabling Developer Portal self-service sign-up and restricting network access to API Connect administrative interfaces.</p>
+<hr>
+<h2 id="vulnerability-specifications">Vulnerability Specifications</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Attribute</strong></th>
+<th><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CVE ID</strong></td>
+<td>CVE-2025-13915</td>
+</tr>
+<tr>
+<td><strong>CVSS Score</strong></td>
+<td>9.8 (Critical)</td>
+</tr>
+<tr>
+<td><strong>CWE Classification</strong></td>
+<td>CWE-305: Authentication Bypass by Primary Weakness</td>
+</tr>
+<tr>
+<td><strong>Vulnerability Type</strong></td>
+<td>Authentication Bypass, Improper Authentication</td>
+</tr>
+<tr>
+<td><strong>Affected Product</strong></td>
+<td>IBM API Connect</td>
+</tr>
+<tr>
+<td><strong>Affected Versions</strong></td>
+<td>10.0.8.0, 10.0.8.1, 10.0.8.2, 10.0.8.3, 10.0.8.4, 10.0.8.5, 10.0.11.0</td>
+</tr>
+<tr>
+<td><strong>Patched Versions</strong></td>
+<td>Available via IBM Fix Central (iFixes for affected versions)</td>
+</tr>
+<tr>
+<td><strong>Discovery Method</strong></td>
+<td>Internal IBM security testing</td>
+</tr>
+<tr>
+<td><strong>Attack Vector</strong></td>
+<td>Network (remote exploitation via HTTP/HTTPS)</td>
+</tr>
+<tr>
+<td><strong>Attack Complexity</strong></td>
+<td>Low (simple crafted requests)</td>
+</tr>
+<tr>
+<td><strong>Privileges Required</strong></td>
+<td>None (unauthenticated exploitation)</td>
+</tr>
+<tr>
+<td><strong>User Interaction</strong></td>
+<td>None</td>
+</tr>
+<tr>
+<td><strong>Scope</strong></td>
+<td>Unchanged (impact limited to API Connect, but affects protected backends)</td>
+</tr>
+<tr>
+<td><strong>Confidentiality Impact</strong></td>
+<td>High (unauthorized access to protected APIs and data)</td>
+</tr>
+<tr>
+<td><strong>Integrity Impact</strong></td>
+<td>High (potential data manipulation via API access)</td>
+</tr>
+<tr>
+<td><strong>Availability Impact</strong></td>
+<td>High (potential denial of service via API abuse)</td>
+</tr>
+<tr>
+<td><strong>Exploit Availability</strong></td>
+<td>Not publicly available (no confirmed active exploitation)</td>
+</tr>
+<tr>
+<td><strong>Exploit Complexity</strong></td>
+<td>Low (once vulnerability details known)</td>
+</tr>
+<tr>
+<td><strong>Affected Component</strong></td>
+<td>Authentication subsystem, Developer Portal (specific attack surface)</td>
+</tr>
+<tr>
+<td><strong>Public Awareness</strong></td>
+<td>High (IBM security bulletin, CVSS 9.8 drives attention)</td>
+</tr>
+<tr>
+<td><strong>Deployment Scope</strong></td>
+<td>Enterprise API gateways (financial, healthcare, government, Fortune 500)</td>
+</tr>
+<tr>
+<td><strong>Advisory Sources</strong></td>
+<td>IBM Security Bulletin, NVD, multiple security outlets</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="technical-details">Technical Details</h2>
+<h3 id="ibm-api-connect-architecture">IBM API Connect Architecture</h3>
+<p>Understanding the vulnerability requires context on <strong>API Connect's role</strong> in enterprise infrastructure:</p>
+<p><strong>API Connect Components</strong>:
+- <strong>API Gateway</strong>: Enforces security policies, authentication, rate limiting for API requests
+- <strong>API Manager</strong>: Administrative console for API lifecycle management, policy configuration
+- <strong>Developer Portal</strong>: Self-service portal for API consumers to discover APIs, register applications, obtain credentials
+- <strong>Analytics</strong>: Monitors API usage, performance metrics, security events
+- <strong>Data Power Gateway</strong>: Optional high-performance gateway component</p>
+<p><strong>Typical Deployment</strong>:
+</p><div class="highlight"><pre><span></span><code>Internet/Partners → Firewall → API Connect Gateway → Backend Services
+                                      ↓
+                              Authentication/Authorization
+                              Rate Limiting
+                              Threat Protection
+                              Analytics
+</code></pre></div>
+<p><strong>Security Function</strong>: API Connect acts as <strong>policy enforcement point</strong> (PEP):
+- Validates <strong>OAuth tokens</strong>, <strong>API keys</strong>, <strong>client certificates</strong>
+- Enforces <strong>role-based access control</strong> (RBAC)
+- Applies <strong>rate limits</strong>, <strong>IP allowlists</strong>, <strong>threat protection rules</strong>
+- Backend services <strong>trust</strong> that API Connect has validated identity and authorization</p>
+<h3 id="vulnerability-root-cause-cwe-305-authentication-bypass">Vulnerability Root Cause: CWE-305 Authentication Bypass</h3>
+<p><strong>CWE-305: Authentication Bypass by Primary Weakness</strong> indicates that <strong>core authentication logic</strong> can be circumvented, not due to secondary issues (like weak crypto or session management) but through <strong>fundamental design or implementation flaws</strong> in authentication checks.</p>
+<h2 id="attack-scenario">Attack Scenario</h2>
+<h3 id="step-by-step-exploitation">Step-by-Step Exploitation</h3>
+<ol>
+<li>
+<p><strong>Reconnaissance: Target Identification</strong><br>
+   Attacker identifies <strong>IBM API Connect</strong> instances exposed to network:</p>
+<ul>
+<li><strong>Public internet</strong>: Internet-facing API gateways serving partner/customer APIs</li>
+<li><strong>Corporate network</strong>: Internal API gateways (if attacker has VPN access or compromised internal host)</li>
+<li><strong>Cloud environments</strong>: API Connect deployed in AWS, Azure, IBM Cloud</li>
+</ul>
+<p><strong>Discovery methods</strong>:</p>
+<ul>
+<li><strong>Port scanning</strong>: Ports 443/tcp (HTTPS), 9443/tcp (API Gateway), 2443/tcp (Cloud Manager)</li>
+<li><strong>Banner grabbing</strong>: HTTP headers reveal "API Connect" or "DataPower" in responses</li>
+<li><strong>Shodan/Censys</strong>: <code>"IBM API Connect"</code>, <code>"DataPower Gateway"</code></li>
+<li><strong>URL patterns</strong>: Recognize API Connect-specific paths (<code>/api/</code>, <code>/manager/</code>, <code>/portal/</code>)</li>
+</ul>
+</li>
+<li>
+<p><strong>Version Fingerprinting</strong><br>
+   Attacker determines if target runs vulnerable version:</p>
+<ul>
+<li><strong>Management console access</strong>: Visit <code>https://api-gateway.targetcompany.com:9443/admin/</code> → Login page reveals version</li>
+<li><strong>HTTP headers</strong>: <code>X-API-Connect-Version: 10.0.8.4</code> in responses</li>
+<li><strong>Developer Portal</strong>: Visit developer portal, inspect HTML/JavaScript comments or API responses for version strings</li>
+<li><strong>API responses</strong>: Call documented API endpoints, analyze response structure/headers for version indicators</li>
+</ul>
+</li>
+<li>
+<p><strong>Authentication Bypass Testing</strong><br>
+   Attacker tests authentication bypass techniques (without knowing exact exploit):</p>
+<p><strong>Test 1: Path Traversal Variants</strong>
+  </p><div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span>https://api-gateway.targetcompany.com/api/v1//protected-endpoint
+curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span>https://api-gateway.targetcompany.com/api/v1/./protected-endpoint
+curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span>https://api-gateway.targetcompany.com/api/v1/../v1/protected-endpoint
+</code></pre></div>
+<p><strong>Test 2: Header Manipulation</strong>
+  </p><div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span>https://api-gateway.targetcompany.com/api/v1/protected-endpoint<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">"X-Internal-Request: true"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">"X-Authenticated-User: admin"</span>
+</code></pre></div>
+<p><strong>Test 3: Developer Portal Bypass</strong>
+  </p><div class="highlight"><pre><span></span><code><span class="c1"># Register account via Developer Portal API</span>
+curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://api-gateway.targetcompany.com/portal/api/register<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">"Content-Type: application/json"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">'{"username": "attacker", "email": "attacker@evil.com", "bypass_approval": true}'</span>
+</code></pre></div>
+<p><strong>Test 4: Direct Management API Access</strong>
+  </p><div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span>https://api-gateway.targetcompany.com:9443/api/admin/users
+curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span>https://api-gateway.targetcompany.com/api/internal/config
+</code></pre></div>
+<p>One of the above techniques returns <strong>HTTP 200</strong> with data instead of <strong>HTTP 401 Unauthorized</strong> → Bypass successful.</p>
+</li>
+<li>
+<p><strong>Successful Authentication Bypass</strong><br>
+   Attacker confirms bypass technique works:
+      </p><div class="highlight"><pre><span></span><code><span class="c1"># Example: Path traversal bypass</span>
+curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span>https://api-gateway.targetcompany.com/api/v1//customer/list
+
+Response<span class="w"> </span><span class="o">(</span>HTTP<span class="w"> </span><span class="m">200</span><span class="o">)</span>:
+<span class="o">{</span>
+<span class="w">  </span><span class="s2">"customers"</span>:<span class="w"> </span><span class="o">[</span>
+<span class="w">    </span><span class="o">{</span><span class="s2">"id"</span>:<span class="w"> </span><span class="m">1</span>,<span class="w"> </span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Acme Corp"</span>,<span class="w"> </span><span class="s2">"email"</span>:<span class="w"> </span><span class="s2">"contact@acme.com"</span><span class="o">}</span>,
+<span class="w">    </span><span class="o">{</span><span class="s2">"id"</span>:<span class="w"> </span><span class="m">2</span>,<span class="w"> </span><span class="s2">"name"</span>:<span class="w"> </span><span class="s2">"Beta Inc"</span>,<span class="w"> </span><span class="s2">"email"</span>:<span class="w"> </span><span class="s2">"info@beta.com"</span><span class="o">}</span>,
+<span class="w">    </span>...
+<span class="w">  </span><span class="o">]</span>
+<span class="o">}</span>
+</code></pre></div>
+</li>
+<li>
+<p><strong>API Enumeration</strong><br>
+   Attacker enumerates available APIs and endpoints:</p>
+<ul>
+<li><strong>OpenAPI/Swagger documentation</strong>: Access API documentation portal (often available unauthenticated)</li>
+<li><strong>Endpoint discovery</strong>: Use tools like <code>ffuf</code>, <code>gobuster</code> to brute-force API paths</li>
+<li><strong>GraphQL introspection</strong>: If GraphQL APIs exposed, run introspection queries to map schema</li>
+<li><strong>API response analysis</strong>: Call discovered endpoints, analyze responses for additional endpoints (HATEOAS links)</li>
+</ul>
+<p>Discovered APIs:</p>
+<ul>
+<li><code>/api/v1/customer/*</code> - Customer data management</li>
+<li><code>/api/v1/orders/*</code> - Order processing</li>
+<li><code>/api/v1/admin/*</code> - Administrative functions</li>
+<li><code>/api/v1/payments/*</code> - Payment processing</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Exfiltration</strong><br>
+      Attacker exploits unauthenticated API access to steal sensitive data:
+      </p><div class="highlight"><pre><span></span><code><span class="c1"># Extract customer database</span>
+curl<span class="w"> </span>https://api-gateway.targetcompany.com/api/v1//customer/list?limit<span class="o">=</span><span class="m">10000</span><span class="w"> </span>&gt;<span class="w"> </span>customers.json
+
+<span class="c1"># Extract order history</span>
+curl<span class="w"> </span>https://api-gateway.targetcompany.com/api/v1//orders/recent?days<span class="o">=</span><span class="m">365</span><span class="w"> </span>&gt;<span class="w"> </span>orders.json
+
+<span class="c1"># Extract payment information (if accessible)</span>
+curl<span class="w"> </span>https://api-gateway.targetcompany.com/api/v1//payments/transactions<span class="w"> </span>&gt;<span class="w"> </span>payments.json
+</code></pre></div>
+<p>Exfiltrated data includes:</p>
+<ul>
+<li>Customer PII (names, emails, addresses, phone numbers)</li>
+<li>Order histories and transaction details</li>
+<li>Payment information (potentially including credit card data if not properly masked)</li>
+<li>Business intelligence (sales data, customer behavior)</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Manipulation</strong><br>
+      Attacker modifies data via unauthenticated API access:
+      </p><div class="highlight"><pre><span></span><code><span class="c1"># Modify customer record</span>
+curl<span class="w"> </span>-X<span class="w"> </span>PUT<span class="w"> </span>https://api-gateway.targetcompany.com/api/v1//customer/123<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">"Content-Type: application/json"</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">'{"email": "attacker@evil.com", "phone": "+1-555-HACKER"}'</span>
+
+<span class="c1"># Cancel orders</span>
+curl<span class="w"> </span>-X<span class="w"> </span>DELETE<span class="w"> </span>https://api-gateway.targetcompany.com/api/v1//orders/456
+
+<span class="c1"># Modify pricing (if API allows)</span>
+curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://api-gateway.targetcompany.com/api/v1//admin/pricing<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">'{"product_id": 789, "price": 0.01}'</span>
+</code></pre></div>
+<p>Integrity violations include:</p>
+<ul>
+<li>Customer data tampering (change contact information to attacker-controlled)</li>
+<li>Order manipulation (cancel legitimate orders, create fraudulent orders)</li>
+<li>Financial fraud (modify pricing, issue refunds to attacker accounts)</li>
+</ul>
+</li>
+<li>
+<p><strong>Credential Harvesting</strong><br>
+      If administrative or management APIs accessible, attacker extracts credentials:
+      </p><div class="highlight"><pre><span></span><code><span class="c1"># Extract user accounts</span>
+curl<span class="w"> </span>https://api-gateway.targetcompany.com/api/v1//admin/users<span class="w"> </span>&gt;<span class="w"> </span>users.json
+
+<span class="c1"># Extract API keys</span>
+curl<span class="w"> </span>https://api-gateway.targetcompany.com/api/v1//admin/api-keys<span class="w"> </span>&gt;<span class="w"> </span>keys.json
+
+<span class="c1"># Extract OAuth client secrets</span>
+curl<span class="w"> </span>https://api-gateway.targetcompany.com/api/v1//admin/oauth-clients<span class="w"> </span>&gt;<span class="w"> </span>oauth.json
+</code></pre></div>
+<p>Harvested credentials:</p>
+<ul>
+<li>Admin usernames and password hashes (if exposed)</li>
+<li>API keys for partner integrations</li>
+<li>OAuth client IDs and secrets</li>
+<li>Service account credentials for backend systems</li>
+</ul>
+</li>
+<li>
+<p><strong>Lateral Movement to Backend Services</strong><br>
+    Attacker uses API access to pivot to backend systems:</p>
+<ul>
+<li><strong>Backend API abuse</strong>: Call backend services directly via API Connect (if it proxies requests)</li>
+<li><strong>Credential reuse</strong>: Use harvested credentials against backend systems (databases, application servers)</li>
+<li><strong>SSRF exploitation</strong>: Craft API requests that cause API Connect to make requests to internal systems</li>
+<li><strong>File upload abuse</strong>: If file upload APIs accessible, upload webshells or malware to backend storage</li>
+</ul>
+<p>Attacker escalates from API gateway compromise to full backend infrastructure access.</p>
+</li>
+<li>
+<p><strong>Persistence and Advanced Exploitation</strong><br>
+    Attacker establishes long-term access:</p>
+<ul>
+<li><strong>Backdoor API keys</strong>: Generate new API keys with attacker-controlled credentials</li>
+<li><strong>Create admin accounts</strong>: Use admin APIs to create privileged accounts</li>
+<li><strong>Modify security policies</strong>: Disable rate limiting, threat protection, audit logging</li>
+<li><strong>Deploy malware</strong>: Upload malicious plugins or extensions to API Connect (if extensible)</li>
+<li><strong>Ransomware preparation</strong>: Map critical APIs and backend systems for potential ransomware deployment</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="impact-assessment">Impact Assessment</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><input id="__tabbed_1_4" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Confidentiality</label><label for="__tabbed_1_2">Integrity</label><label for="__tabbed_1_3">Availability</label><label for="__tabbed_1_4">Scope</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Complete exposure of API-protected data and credentials:</p>
+<ul>
+<li><strong>API data exposure</strong>: All APIs protected by compromised API Connect instance become accessible without authentication, exposing customer data, financial transactions, health records, proprietary business data</li>
+<li><strong>Credential theft</strong>: Admin credentials, API keys, OAuth secrets, service account tokens extracted from management APIs</li>
+<li><strong>Backend system mapping</strong>: Attacker gains complete visibility into backend architecture, service endpoints, data schemas via API documentation and responses</li>
+<li><strong>Intellectual property</strong>: APIs often expose sensitive business logic, algorithms, and proprietary data models</li>
+<li><strong>Compliance violations</strong>: Unauthorized access to protected data violates GDPR, HIPAA, PCI DSS, SOX depending on data types accessed</li>
+</ul>
+<p>Confidentiality breach extends to all systems and data protected by compromised API gateway.</p>
+</div>
+<div class="tabbed-block">
+<p>Unauthorized data and configuration manipulation:</p>
+<ul>
+<li><strong>Data tampering</strong>: Attackers modify customer records, financial transactions, order data via API calls</li>
+<li><strong>Policy manipulation</strong>: Modify API Connect security policies, disable authentication requirements, alter rate limits</li>
+<li><strong>Account creation</strong>: Create backdoor admin accounts or API consumers for persistent access</li>
+<li><strong>Fraud</strong>: Execute fraudulent transactions (orders, refunds, payments) via unauthenticated API access</li>
+<li><strong>Supply chain poisoning</strong>: If APIs manage software updates or package distribution, inject malicious content</li>
+<li><strong>Evidence destruction</strong>: Delete or modify audit logs to hide exploitation</li>
+</ul>
+<p>Integrity violations undermine trust in data accuracy and system configurations.</p>
+</div>
+<div class="tabbed-block">
+<p>Potential denial of service and operational disruption:</p>
+<ul>
+<li><strong>API abuse</strong>: Unauthenticated attackers bypass rate limiting, overwhelm backend services with requests</li>
+<li><strong>Resource exhaustion</strong>: Trigger resource-intensive APIs (database queries, computations) causing performance degradation</li>
+<li><strong>Service disruption</strong>: Delete critical configurations, disable APIs, or modify routing rules</li>
+<li><strong>Ransomware deployment</strong>: Use API access as pivot point for ransomware attack on backend infrastructure</li>
+<li><strong>DDoS amplification</strong>: Abuse APIs to amplify DDoS attacks (e.g., trigger notification APIs sending mass emails/SMS)</li>
+</ul>
+<p>Availability impact escalates if attackers leverage access for destructive actions.</p>
+</div>
+<div class="tabbed-block">
+<p>API gateway compromise affects entire connected ecosystem:</p>
+<ul>
+<li><strong>Backend systems</strong>: All services behind API Connect assume authentication enforced—compromise breaks trust model</li>
+<li><strong>Partner integrations</strong>: If APIs serve partners/vendors, compromise exposes partner data and access</li>
+<li><strong>Mobile/web applications</strong>: Client applications relying on API Connect for backend access become exploitable</li>
+<li><strong>Microservices architecture</strong>: In microservices environments, API gateway compromise grants lateral movement across service mesh</li>
+<li><strong>Cloud infrastructure</strong>: API Connect often manages cloud service APIs—compromise may extend to underlying cloud resources</li>
+</ul>
+<p>Single authentication bypass vulnerability cascades across entire API-driven infrastructure.</p>
+</div>
+</div>
+</div>
+<hr>
+<h2 id="mitigation-strategies">Mitigation Strategies</h2>
+<h3 id="immediate-patching">Immediate Patching</h3>
+<ul>
+<li>
+<p><strong>Apply IBM iFixes</strong>: Download and install interim fixes from <strong>IBM Fix Central</strong></p>
+</li>
+<li>
+<p><strong>Patch Verification</strong>: After applying iFix:</p>
+<ul>
+<li>Review IBM security bulletin for verification steps</li>
+<li>Test authentication on previously vulnerable endpoints</li>
+<li>Check API Connect logs for successful iFix application</li>
+<li>Re-scan with vulnerability scanners to confirm remediation</li>
+</ul>
+</li>
+</ul>
+<h3 id="temporary-mitigation">Temporary Mitigation</h3>
+<ul>
+<li>
+<p><strong>Disable Developer Portal Self-Service Sign-Up</strong>
+  This reduces attack surface while patching is prepared.</p>
+</li>
+<li>
+<p><strong>Network Access Restrictions</strong>: Limit exposure via firewall rule</p>
+</li>
+<li>
+<p><strong>Web Application Firewall (WAF)</strong>: Deploy WAF in front of API Connect:</p>
+<ul>
+<li><strong>Rate limiting</strong>: Aggressive rate limits on all API endpoints</li>
+<li><strong>Anomaly detection</strong>: Flag unusual request patterns (path traversal, header manipulation)</li>
+<li><strong>IP reputation</strong>: Block requests from known malicious IPs</li>
+<li><strong>Geo-blocking</strong>: If legitimate traffic only from specific regions, block others</li>
+</ul>
+</li>
+</ul>
+<h3 id="monitoring-and-detection">Monitoring and Detection</h3>
+<ul>
+<li><strong>API Gateway Log Monitoring</strong>: Analyze API Connect logs for exploitation attempts</li>
+<li><strong>SIEM Integration</strong>: Forward API Connect logs to SIEM (Splunk, QRadar, Sentinel)</li>
+<li><strong>API Traffic Analysis</strong>: Monitor for exploitation indicators</li>
+<li><strong>Backend Service Monitoring</strong>: Monitor services behind API Connect</li>
+</ul>
+<h3 id="access-control-hardening">Access Control Hardening</h3>
+<ul>
+<li>
+<p><strong>Principle of Least Privilege</strong>: Restrict API Connect access:</p>
+<ul>
+<li><strong>Management interfaces</strong>: Limit admin console access to specific IP addresses or VPN-only</li>
+<li><strong>API Gateway</strong>: Expose only necessary APIs to internet; keep internal APIs on private networks</li>
+<li><strong>Developer Portal</strong>: If self-service sign-up required, implement manual approval workflow</li>
+</ul>
+</li>
+<li>
+<p><strong>Network Segmentation</strong>: Isolate API Connect in DMZ:
+  </p><div class="highlight"><pre><span></span><code>Internet → Firewall → DMZ (API Gateway) → Internal Firewall → Backend Services
+
+DMZ Firewall Rules:
+- Allow inbound: Internet → API Gateway (port 443)
+- Allow outbound: API Gateway → Backend Services (specific ports only)
+- Deny: API Gateway → Corporate network (lateral movement prevention)
+- Deny: API Gateway → Internet (except for required external APIs)
+</code></pre></div>
+</li>
+<li>
+<p><strong>API Key Rotation</strong>: Regularly rotate API keys and OAuth credentials:</p>
+<ul>
+<li>Implement key rotation policy (e.g., every 90 days)</li>
+<li>Revoke unused or stale API keys</li>
+<li>Monitor key usage for anomalies</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="resources">Resources</h2>
+<div class="admonition info">
+<p class="admonition-title">Threat Intelligence</p>
+<ul>
+<li><a href="https://www.cysecurity.news/2026/01/ibm-issues-critical-alert-over.html">IBM Issues Critical Alert Over Authentication Bypass Flaw in API Connect Platform - CySecurity News</a></li>
+<li><a href="https://www.csa.gov.sg/alerts-and-advisories/alerts/al-2025-126/">Critical Vulnerability in IBM API Connect | Cyber Security Agency of Singapore</a></li>
+<li><a href="https://www.ibm.com/support/pages/security-bulletin-authentication-bypass-ibm-api-connect-0">Security Bulletin: Authentication bypass in IBM API Connect</a></li>
+<li><a href="https://securityaffairs.com/186417/security/ibm-warns-of-critical-api-connect-bug-enabling-remote-access.html">IBM warns of critical API Connect bug enabling remote access</a></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/ibm-warns-of-critical-api-connect-auth-bypass-vulnerability/">IBM warns of critical API Connect auth bypass vulnerability</a></li>
+<li><a href="https://thehackernews.com/2025/12/ibm-warns-of-critical-api-connect-bug.html">Critical CVSS 9.8 Flaw Found in IBM API Connect Authentication System — The Hacker News</a></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2025-13915">NVD - CVE-2025-13915</a></li>
+</ul>
+</div>
+<hr>
+<p><em>Last Updated: January 4, 2026</em></p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "content.code.annotate", "navigation.tabs", "navigation.tracking", "content.math", "navigation.tabs.sticky"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,6545 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://eg-etcs.github.io/incident/2025/Week53/vpn2fa/">
+      
+      
+        <link rel="prev" href="../ghostpairing/">
+      
+      
+        <link rel="next" href="../digiever/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../alarm.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Fortinet FortiOS SSL VPN 2FA Bypass (CVE-2020-12812) - Incidents</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M22%2012a10%2010%200%200%201-10%2010A10%2010%200%200%201%202%2012%2010%2010%200%200%201%2012%202a10%2010%200%200%201%2010%2010M6%2013h8l-3.5%203.5%201.42%201.42L17.84%2012l-5.92-5.92L10.5%207.5%2014%2011H6z%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#fortinet-fortios-ssl-vpn-2fa-bypass-cve-2020-12812" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Incidents" class="md-header__button md-logo" aria-label="Incidents" data-md-component="logo">
+      
+  <img src="../../../alarm.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Incidents
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Fortinet FortiOS SSL VPN 2FA Bypass (CVE-2020-12812)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  
+  Today's Incidents
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../This-Week/" class="md-tabs__link">
+          
+  
+  
+  This Week
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Last-Week/" class="md-tabs__link">
+          
+  
+  
+  Last Week
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../default/" class="md-tabs__link">
+          
+  
+  
+  Incidents
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Incidents" class="md-nav__button md-logo" aria-label="Incidents" data-md-component="logo">
+      
+  <img src="../../../alarm.png" alt="logo">
+
+    </a>
+    Incidents
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Today's Incidents
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Today's Incidents
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Today's Security Incidents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    This Week
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    This Week
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../This-Week/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    This Week's Security Incidents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Last Week
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Last Week
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Last-Week/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Last Week's Security Incidents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Incidents
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Incidents
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../default/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2025
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_1" id="__nav_4_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    October
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    October
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_1_1" id="__nav_4_2_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week44
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week44
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week44/nihon-kohden-cns-6201/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nihon Kohden CNS-6201
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week44/aski-energy-als-mini/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ASKI Energy ALS-Mini
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week44/delta-electronics-asda-soft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delta Electronics ASDA-Soft
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week44/windows-server-wsus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows Server WSUS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week44/bluenoroff-ghostcall-ghosthire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BlueNoroff Campaigns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week44/everest-att-aviation-leaks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Everest AT&T Aviation Leaks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week44/hsbc-usa-data-breach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HSBC USA Data Breach
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week44/vertikal-hospital-manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vertikal Hospital Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2" id="__nav_4_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    November
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    November
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2_1" id="__nav_4_2_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week45
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week45
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week45/Cisco-IOS-XE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cisco IOS XE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week45/VMware-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VMware Aria Operations and VMware Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week45/Android-BankBot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android/BankBot-YNRK malware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week45/Cisco-ASA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cisco ASA Secure Firewall
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week45/Moxa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multiple Critical Vulnerabilities in Moxa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week45/Super-Value/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Super Value Co. Ransomware Breach
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week45/Android-Security-Bulletin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android Security Bulletin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week45/maya-engineering-breach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cyber Toufan – Maya Engineering Surveillance Breach
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2_2" id="__nav_4_2_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week46
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week46
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week46/samsung-spyware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Samsung Mobile Zero-Day Exploited to Deploy LANDFALL Spyware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week46/cisco-ccx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cisco Unified Contact Center Express (Unified CCX) Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week46/apple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multiple Vulnerabilities in Apple Products
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week46/abb-fbxi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ABB FLXeon Controllers Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week46/delhi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delhi Airport GPS Spoofing Crisis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week46/clickfix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ClickFix Hospitality Phishing Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week46/kernel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Actively Exploited Windows Kernel Zero‑Day
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week46/whisper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Whisper Leak — LLM Side‑Channel Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week46/Lighthouse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google vs. Lighthouse Phishing-as-a-Service Operation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2_3" id="__nav_4_2_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week47
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week47
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week47/fortiweb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fortinet FortiWeb Authentication Bypass
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week47/aix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Critical IBM AIX NIM Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week47/dlink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D‑Link DIR-816L
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week47/ms-gfx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Graphics Component Vulnerability – CVE-2025-60724
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week47/chrome-v8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google Chrome V8 Zero-Day – CVE-2025-13223
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week47/lynx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lynx+ Gateway Critical Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week47/fortiwebzero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FortiWeb OS Command Injection (CVE-2025-58034)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2_4" id="__nav_4_2_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week48
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week48
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week48/abb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ABB Ability Edgenius – Authentication Bypass (CVE-2025-10571)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week48/oracle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oracle Fusion Middleware – Missing Authentication for Critical Function (CVE-2025-61757)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week48/apt31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    China-Linked APT31 Stealth Cyberattacks on Russian IT – Using Cloud Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week48/oracle-ebs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oracle EBS Zero-Day Exploitation – CVE-2025-61882
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week48/spyware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CISA Warning: Spyware Campaigns Targeting Messaging App Users
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week48/festo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Festo Compact Vision System – Insecure Configuration Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week48/shadowV2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ShadowV2 IoT Botnet Opportunistic Attack During AWS Outage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2_5" id="__nav_4_2_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week49
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week49
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week49/forge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    node-forge ASN.1 Validation Bypass Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week49/npm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contagious Interview (2025 npm-registry wave)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week49/openplc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenPLC ScadaBR CVE-2021-26829 Active Exploitation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week49/scadalts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scada-LTS Project Import Path Traversal – CVE-2025-13791
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week49/benz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mercedes-Benz USA Breach Claim by Threat Actor 'zestix'
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week49/onsolve/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OnSolve CodeRED Ransomware Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week49/muddy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MuddyWater MuddyViper Backdoor Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week49/knpa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacking of ~120,000 IP Cameras in South Korea for Sale of Intimate Content
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3" id="__nav_4_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    December
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    December
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3_1" id="__nav_4_2_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week50
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week50
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week50/goldfactory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GoldFactory Hits Southeast Asia with Modified Banking Apps Driving 11,000+ Infections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week50/watersaci/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WhatsApp-Based Malware Campaign by Water Saci
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week50/johnson/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Johnson Controls FX80 / FX90 Vulnerability (CVE-2025-43867)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week50/react2shell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React2Shell (CVE-2025-55182)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week50/muddyudp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UDPGangster Campaigns Target Multiple Countries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week50/andSurge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android Malware Surge: FvncBot, SeedSnatcher, and Upgraded ClayRat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week50/arrayos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ArrayOS AG VPN (CVE-2025-66644)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3_2" id="__nav_4_2_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week51
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week51
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week51/geoserver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GeoServer XXE Vulnerability Exploitation (CVE-2025-58360)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week51/sierra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CVE-2018-4063 Sierra Wireless AirLink ALEOS Remote Code Execution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week51/hacktivists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pro-Russia Hacktivists Conduct Opportunistic Attacks Against Critical Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week51/chromium/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google Chromium Out-of-Bounds Memory Access Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week51/istar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Johnson Controls iSTAR Ultra Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week51/siemensesa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Siemens Energy Services Security Advisory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week51/useAfterFree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apple Multiple Products Use-After-Free WebKit Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week51/forticloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fortinet FortiCloud SSO Login Authentication Bypass Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week51/solaredge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SolarEdge SE3680H Contains Linux Kernel Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week51/RussianGRU/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Russian GRU Cyber Campaign Targeting Critical Infrastructure via Edge Network Devices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week51/sandbox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OS Command Injection in Fortinet FortiSandbox
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week51/AsyncOS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cisco AsyncOS Zero-Day Exploitation Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week51/asus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ASUS Live Update Embedded Malicious Code Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week51/sonicWall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SonicWall SMA1000 Zero-Day Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3_3" id="__nav_4_2_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week52
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week52
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week52/ac18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CVE-2025-14993: Tenda AC18 Router Stack Buffer Overflow'
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week52/watchguard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WatchGuard Firebox Fireware OS IKEv2 Out-of-Bounds Write Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week52/doj/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    U.S. DOJ Charges 54 in ATM Jackpotting Scheme Using Ploutus Malware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week52/romanian/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Romanian Waters Authority Hit by Ransomware Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week52/kimwolf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kimwolf Botnet: 1.8 Million Android Devices Hijacked
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week52/dragon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    China-Linked "Ink Dragon" APT Espionage Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week52/laposte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cyberattack on La Poste and La Banque Postale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week52/n8n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CVE-2025-68613: Critical n8n Remote Code Execution Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week52/lotusbail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lotusbail: Malicious npm Package Targeting WhatsApp Web API Developers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week52/macsync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MacSync macOS Stealer: Code-Signed Malware Bypassing Gatekeeper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week52/fbi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FBI Seizure of Fraud Domain Hosting Stolen Bank Credentials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3_4" id="__nav_4_2_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week53
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week53
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wallet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trust Wallet Chrome Extension Supply-Chain Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../langchain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CVE-2025-68664: Critical LangChain Core Serialization Injection Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ghostpairing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GhostPairing: WhatsApp Account Takeover via Social Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fortinet FortiOS SSL VPN 2FA Bypass (CVE-2020-12812)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fortinet FortiOS SSL VPN 2FA Bypass (CVE-2020-12812)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability Specifications
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#root-cause-case-sensitivity-mismatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Root Cause: Case Sensitivity Mismatch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentication-flow-in-vulnerable-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication Flow in Vulnerable Configurations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authentication Flow in Vulnerable Configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#normal-authentication-correct-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Normal Authentication (Correct Case)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exploited-authentication-altered-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exploited Authentication (Altered Case)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vulnerable-configuration-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerable Configuration Elements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentication-logic-flaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication Logic Flaw
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-variation-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Case Variation Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attack-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attack Scenario
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Attack Scenario">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-exploitation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step-by-Step Exploitation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impact-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Impact Assessment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mitigation-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mitigation Strategies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mitigation Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#immediate-patching-critical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Immediate Patching (Critical)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-hardening" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Hardening
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-control-hardening" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access Control Hardening
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-and-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monitoring and Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#administrative-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Administrative Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-and-admin-education" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User and Admin Education
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../digiever/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Digiever DS-2105 Pro NVR Authorization Bypass & Command Injection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../npm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Malicious npm Packages Abused as Phishing Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../smartermail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Critical SmarterMail Arbitrary File Upload / Remote Code Execution Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mongo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MongoBleed: MongoDB Memory Disclosure (CVE-2025-14847)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2026
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_1" id="__nav_4_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    January
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    January
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_1_1" id="__nav_4_3_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week1/api_connect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBM API Connect Critical Authentication Bypass (CVE-2025-13915)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week1/transparent_tribe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transparent Tribe RAT Campaign Targeting Indian Government and Academia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week1/clickfix_BSOD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ClickFix Attack Uses Fake Windows BSOD to Push Malware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week1/n8n2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    n8n Critical Python Sandbox Bypass (CVE-2025-68668)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_1_2" id="__nav_4_3_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week2/RustyWater/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MuddyWater RustyWater RAT Campaign – Iran-linked APT Espionage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week2/Astaroth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Astaroth Banking Trojan – WhatsApp Worm Campaign in Brazil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week2/Instagram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instagram 17.5M User Data Leak – API Scraping Incident
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week2/apex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trend Micro Apex Central Unauthenticated RCE (CVE-2025-69258)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week2/Kimsuky/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kimsuky APT Malicious QR Code Spear-Phishing Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week2/APT28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    APT28 Credential-Stealing Campaign Targeting Energy and Policy Organizations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week2/telegram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Telegram Proxy One-Click IP Exposure Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week2/uat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UAT-7290 China-Linked Telecom Espionage Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week2/azmonica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AZ Monica Hospital Cyberattack - Belgium
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week2/gogs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CVE-2025-8110 - Gogs Remote Code Execution via Symlink Traversal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week2/pluggyape/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PLUGGYAPE Malware Campaign Targeting Ukrainian Defense Forces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week2/dolby/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android Dolby Audio Zero-Click Vulnerability (CVE-2025-54957)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_1_3" id="__nav_4_3_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week3/wordpress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Critical Authentication Bypass in Modular DS WordPress Plugin (CVE-2026-23550)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week3/chrome/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Credential-Stealing Chrome Extensions Target Enterprise HR Platforms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week3/stateTV/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Iran State Television Broadcast Hijacking (Badr Satellite Signal Intrusion)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week3/vigi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TP-Link VIGI Camera Authentication Bypass (CVE-2026-0629)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week3/crashfix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CrashFix: Malicious Chrome Extension Browser Crash Social Engineering Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week3/zip/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GootLoader Malware - Malformed ZIP Evasion Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week3/talos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UAT-8837: China-Linked APT Targeting North American Critical Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week3/weblogic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oracle HTTP Server / WebLogic Server Proxy Plug-in Vulnerability (CVE-2026-21962)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week3/gemini/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google Gemini Prompt Injection Flaw via Calendar Invites
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week3/power/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Power Apps Remote Code Execution Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week3/cisco/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cisco Unified Communications Products Remote Code Execution Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week3/linkedin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LinkedIn Phishing Malware Campaign via DLL Sideloading
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week3/zoom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Command Injection Vulnerability in Zoom Node Multimedia Routers (MMRs)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week3/gitlab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multiple GitLab Vulnerabilities Enable 2FA Bypass and DoS Attacks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_1_4" id="__nav_4_3_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week4/gnu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CVE-2026-24061 – GNU InetUtils telnetd Remote Authentication Bypass
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week4/dynowiper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DynoWiper Cyberattack on Polish Energy Systems (Sandworm Attribution)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week4/gmail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    48 Million Gmail Usernames And Passwords Leaked Online
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week4/buds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Xiaomi Redmi Buds Bluetooth RFCOMM Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week4/codebreach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CodeBreach – AWS CodeBuild Misconfiguration Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week4/amnesia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Stage Phishing Campaign Deploying Amnesia RAT and Hakuna Matata Ransomware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability Specifications
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#root-cause-case-sensitivity-mismatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Root Cause: Case Sensitivity Mismatch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentication-flow-in-vulnerable-configurations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication Flow in Vulnerable Configurations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authentication Flow in Vulnerable Configurations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#normal-authentication-correct-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Normal Authentication (Correct Case)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exploited-authentication-altered-case" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exploited Authentication (Altered Case)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vulnerable-configuration-elements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerable Configuration Elements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentication-logic-flaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication Logic Flaw
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-variation-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Case Variation Examples
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attack-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attack Scenario
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Attack Scenario">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-exploitation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step-by-Step Exploitation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impact-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Impact Assessment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mitigation-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mitigation Strategies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mitigation Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#immediate-patching-critical" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Immediate Patching (Critical)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-hardening" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration Hardening
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#access-control-hardening" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Access Control Hardening
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-and-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monitoring and Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#administrative-best-practices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Administrative Best Practices
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-and-admin-education" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User and Admin Education
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<div><h1 id="fortinet-fortios-ssl-vpn-2fa-bypass-cve-2020-12812">Fortinet FortiOS SSL VPN 2FA Bypass (CVE-2020-12812)</h1>
+<p><strong class="cve-chip">CVE-2020-12812</strong> <strong class="cve-chip">CVSS 7.7</strong> <strong class="cve-chip">Authentication Bypass</strong> <strong class="cve-chip">2FA Bypass</strong> <strong class="cve-chip">Fortinet</strong></p>
+<h2 id="overview">Overview</h2>
+<p><strong>Threat actors are actively exploiting a five-year-old authentication bypass vulnerability</strong> in <strong>Fortinet FortiOS SSL VPN</strong> that allows attackers to <strong>circumvent two-factor authentication (2FA)</strong> and gain unauthorized access to protected VPN endpoints. <strong>CVE-2020-12812</strong> is an <strong>improper authentication flaw</strong> where FortiOS treats usernames as <strong>case-sensitive</strong>, while <strong>LDAP (Lightweight Directory Access Protocol) directories typically are case-insensitive</strong>. This discrepancy creates an <strong>authentication logic flaw</strong>: when attackers submit valid credentials with <strong>altered username casing</strong> (e.g., "Admin" instead of "admin"), FortiOS fails to match the local user account (which has 2FA enabled) and instead <strong>falls back to LDAP authentication</strong>, which does not enforce 2FA. The vulnerability affects <strong>misconfigured FortiGate devices</strong> where local users with 2FA are linked to LDAP, and the same users exist in LDAP groups configured in authentication policies for SSL VPN or IPsec VPN. Despite being patched in <strong>2020</strong>, the flaw remains exploited in <strong>2025</strong> due to widespread unpatched deployments and persistent misconfigurations. Fortinet has issued warnings about <strong>active exploitation in the wild</strong>, with attackers leveraging the bypass to gain <strong>VPN access, administrative privileges, and establish persistence</strong> for lateral movement within enterprise networks. The vulnerability underscores risks of <strong>legacy vulnerabilities in internet-facing infrastructure</strong> and <strong>authentication configuration weaknesses</strong>.</p>
+<hr>
+<h2 id="vulnerability-specifications">Vulnerability Specifications</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Attribute</strong></th>
+<th><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CVE ID</strong></td>
+<td>CVE-2020-12812</td>
+</tr>
+<tr>
+<td><strong>CVSS Score</strong></td>
+<td>9.8 (Critical)</td>
+</tr>
+<tr>
+<td><strong>CWE Classification</strong></td>
+<td>CWE-287: Improper Authentication</td>
+</tr>
+<tr>
+<td><strong>Vulnerability Type</strong></td>
+<td>Authentication Bypass, 2FA Bypass, Logic Flaw</td>
+</tr>
+<tr>
+<td><strong>Affected Product</strong></td>
+<td>Fortinet FortiOS (FortiGate devices)</td>
+</tr>
+<tr>
+<td><strong>Affected Component</strong></td>
+<td>SSL VPN, IPsec VPN authentication</td>
+</tr>
+<tr>
+<td><strong>Affected Versions</strong></td>
+<td>FortiOS 6.4.0, 6.2.0 - 6.2.3, 6.0.9 and earlier</td>
+</tr>
+<tr>
+<td><strong>Patched Versions</strong></td>
+<td>FortiOS 6.4.1+, 6.2.4+, 6.0.10+</td>
+</tr>
+<tr>
+<td><strong>Attack Vector</strong></td>
+<td>Network (remote exploitation via VPN login interface)</td>
+</tr>
+<tr>
+<td><strong>Attack Complexity</strong></td>
+<td>Low (requires valid username/password but exploits logic flaw)</td>
+</tr>
+<tr>
+<td><strong>Privileges Required</strong></td>
+<td>Low (valid LDAP credentials, no 2FA token needed)</td>
+</tr>
+<tr>
+<td><strong>User Interaction</strong></td>
+<td>None</td>
+</tr>
+<tr>
+<td><strong>Scope</strong></td>
+<td>Changed (attacker gains access beyond authentication boundary)</td>
+</tr>
+<tr>
+<td><strong>Confidentiality Impact</strong></td>
+<td>High (full VPN access, potential data exposure)</td>
+</tr>
+<tr>
+<td><strong>Exploit Availability</strong></td>
+<td>Active exploitation confirmed (2025)</td>
+</tr>
+<tr>
+<td><strong>Patch Date</strong></td>
+<td>2020 (FortiOS 6.0.10, 6.2.4, 6.4.1 releases)</td>
+</tr>
+<tr>
+<td><strong>Disclosure Date</strong></td>
+<td>July 2020</td>
+</tr>
+<tr>
+<td><strong>Exploitation Timeline</strong></td>
+<td>5 years post-disclosure (2020 - 2025)</td>
+</tr>
+<tr>
+<td><strong>Configuration Req.</strong></td>
+<td>Misconfiguration: Local users with 2FA + LDAP group policies</td>
+</tr>
+<tr>
+<td><strong>Authentication Method</strong></td>
+<td>SSL VPN, IPsec VPN</td>
+</tr>
+<tr>
+<td><strong>LDAP Integration</strong></td>
+<td>Required (vulnerability exploits LDAP case-insensitivity)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="technical-details">Technical Details</h2>
+<p><img alt="alt text" src="../images/vpn2fa1.png"></p>
+<h3 id="root-cause-case-sensitivity-mismatch">Root Cause: Case Sensitivity Mismatch</h3>
+<p>CVE-2020-12812 stems from <strong>inconsistent username handling</strong> between FortiOS and LDAP:</p>
+<ul>
+<li><strong>FortiOS Behavior</strong>: FortiOS treats usernames as <strong>case-sensitive</strong> when matching local user accounts</li>
+<li>Local user account "admin" ≠ "Admin" ≠ "ADMIN" in FortiOS internal database</li>
+<li>
+<p>Each casing variant treated as distinct username</p>
+</li>
+<li>
+<p><strong>LDAP Behavior</strong>: LDAP directories (Active Directory, OpenLDAP) typically treat usernames as <strong>case-insensitive</strong></p>
+</li>
+<li>"admin", "Admin", "ADMIN" all resolve to same LDAP user object</li>
+<li>LDAP bind operations succeed regardless of username casing if password correct</li>
+</ul>
+<h3 id="authentication-flow-in-vulnerable-configurations">Authentication Flow in Vulnerable Configurations</h3>
+<p>In misconfigured FortiGate devices with local users + LDAP integration:</p>
+<h4 id="normal-authentication-correct-case">Normal Authentication (Correct Case)</h4>
+<ol>
+<li><strong>User submits credentials</strong>: Username "admin", password "P@ssw0rd"</li>
+<li><strong>FortiOS local database lookup</strong>: Exact match found for "admin"</li>
+<li><strong>2FA enforcement</strong>: FortiOS detects local user has 2FA enabled</li>
+<li><strong>2FA prompt</strong>: User must provide token (TOTP, SMS, hardware token)</li>
+<li><strong>Successful authentication</strong>: After 2FA verification, VPN access granted</li>
+</ol>
+<h4 id="exploited-authentication-altered-case">Exploited Authentication (Altered Case)</h4>
+<ol>
+<li><strong>Attacker submits credentials</strong>: Username "<strong>Admin</strong>" (capital A), password "P@ssw0rd"</li>
+<li><strong>FortiOS local database lookup</strong>: <strong>No exact match</strong> for "Admin" (only "admin" exists)</li>
+<li><strong>Fallback to LDAP</strong>: FortiOS attempts LDAP authentication for "Admin"</li>
+<li><strong>LDAP authentication succeeds</strong>: LDAP case-insensitively matches "Admin" → "admin", password verified</li>
+<li><strong>LDAP group policy applied</strong>: User in LDAP group with VPN access policy</li>
+<li><strong>2FA bypassed</strong>: LDAP authentication path does not enforce local user's 2FA requirement</li>
+<li><strong>Unauthorized access granted</strong>: Attacker gains VPN access without 2FA token</li>
+</ol>
+<h3 id="vulnerable-configuration-elements">Vulnerable Configuration Elements</h3>
+<p>The vulnerability requires <strong>specific misconfigurations</strong> to be exploitable:</p>
+<ol>
+<li>
+<p><strong>Local User with 2FA</strong>: User account created in FortiOS local database with 2FA enabled
+   </p><div class="highlight"><pre><span></span><code>config user local
+    edit "admin"
+        set type password
+        set two-factor fortitoken
+    next
+end
+</code></pre></div>
+</li>
+<li>
+<p><strong>Same Username in LDAP</strong>: Matching user exists in LDAP directory (Active Directory, OpenLDAP)</p>
+</li>
+<li>
+<p>LDAP user: <code>cn=admin,ou=Users,dc=example,dc=com</code></p>
+</li>
+<li>
+<p><strong>LDAP Group Policy</strong>: LDAP group containing user is referenced in authentication policy
+   </p><div class="highlight"><pre><span></span><code>config user group
+    edit "vpn-users-ldap"
+        set member "ldap-server"
+        config match
+            edit 1
+                set server-name "ldap-server"
+                set group-name "CN=VPN Users,OU=Groups,DC=example,DC=com"
+            next
+        end
+    next
+end
+</code></pre></div>
+</li>
+<li>
+<p><strong>VPN Policy Using LDAP Group</strong>: SSL/IPsec VPN policy allows LDAP group without enforcing local 2FA
+   </p><div class="highlight"><pre><span></span><code>config vpn ssl settings
+    set source-interface "wan1"
+    set source-address "all"
+    config authentication-rule
+        edit 1
+            set groups "vpn-users-ldap"
+            set portal "full-access"
+        next
+    end
+end
+</code></pre></div>
+</li>
+</ol>
+<h3 id="authentication-logic-flaw">Authentication Logic Flaw</h3>
+<p>The vulnerability exploits FortiOS authentication decision tree:</p>
+<div class="highlight"><pre><span></span><code>Incoming VPN authentication attempt
+    ↓
+Check local user database (case-sensitive)
+    ↓
+    ├── Match found → Enforce local user settings (2FA required)
+    ↓
+    └── No match → Fallback to LDAP authentication
+        ↓
+        LDAP bind attempt (case-insensitive)
+        ↓
+        ├── LDAP bind success → Check LDAP group policies
+        │   ↓
+        │   └── User in authorized LDAP group → Grant access (NO 2FA)
+        ↓
+        └── LDAP bind failure → Deny access
+</code></pre></div>
+<p>Attacker manipulates case to force "No match" path, bypassing local 2FA enforcement.</p>
+<h3 id="case-variation-examples">Case Variation Examples</h3>
+<p>Attackers test multiple case permutations:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Original Username</strong></th>
+<th><strong>Case Variations</strong></th>
+<th><strong>LDAP Match</strong></th>
+<th><strong>2FA Bypassed</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>admin</td>
+<td>Admin, ADMIN, aDmIn</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>jsmith</td>
+<td>JSmith, JSMITH, jSmith</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>vpnuser</td>
+<td>VpnUser, VPNUSER, VPNuser</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p>Automated tools iterate through common case patterns to identify exploitable accounts.</p>
+<hr>
+<h2 id="attack-scenario">Attack Scenario</h2>
+<h3 id="step-by-step-exploitation">Step-by-Step Exploitation</h3>
+<ol>
+<li>
+<p><strong>Reconnaissance: Target Identification</strong><br>
+   Attacker identifies <strong>Fortinet FortiGate SSL VPN</strong> endpoints exposed to internet via:</p>
+<ul>
+<li><strong>Port scanning</strong>: Ports 443/tcp (HTTPS), 10443/tcp (SSL VPN)</li>
+<li><strong>Service fingerprinting</strong>: Banner grabbing reveals "FortiGate" in HTTP headers or login page</li>
+<li><strong>Search engines</strong>: Shodan, Censys queries: <code>product:"FortiGate"</code>, <code>"FortiGate SSL-VPN"</code></li>
+<li><strong>Mass scanning</strong>: Automated tools scan entire IP ranges for FortiGate VPN portals</li>
+</ul>
+<p>Attacker identifies target: <code>https://vpn.targetcompany.com</code> running FortiOS.</p>
+</li>
+<li>
+<p><strong>Credential Acquisition</strong><br>
+   Attacker obtains <strong>valid LDAP credentials</strong> via:</p>
+<ul>
+<li><strong>Phishing</strong>: Spear-phishing campaigns targeting employees to steal domain credentials</li>
+<li><strong>Credential stuffing</strong>: Testing leaked passwords from data breaches against LDAP usernames</li>
+<li><strong>Password spraying</strong>: Common passwords ("Welcome2025", "CompanyName123") against known usernames</li>
+<li><strong>Prior breach</strong>: Credentials from earlier network compromise or insider threat</li>
+</ul>
+<p>Attacker acquires: Username "admin", Password "P@ssw0rd!2025".</p>
+</li>
+<li>
+<p><strong>Vulnerability Testing: Case Variation</strong><br>
+   Attacker tests <strong>case-altered username</strong> to probe for CVE-2020-12812:</p>
+<ul>
+<li>Navigate to SSL VPN login portal: <code>https://vpn.targetcompany.com</code></li>
+<li><strong>Test #1</strong>: Submit "admin" (lowercase) → Prompted for 2FA token → Indicates local user with 2FA</li>
+<li><strong>Test #2</strong>: Submit "<strong>Admin</strong>" (capital A) with same password → <strong>No 2FA prompt</strong> → Successful login</li>
+</ul>
+<p>Confirmation: Device vulnerable, 2FA bypass successful via case alteration.</p>
+</li>
+<li>
+<p><strong>Authentication Bypass</strong><br>
+   Attacker authenticates using altered case credentials:</p>
+<ul>
+<li>Username: <strong>Admin</strong> (or ADMIN, aDmIn, etc.)</li>
+<li>Password: P@ssw0rd!2025</li>
+<li>FortiOS fails to match local "admin" account (case mismatch)</li>
+<li>FortiOS falls back to LDAP authentication</li>
+<li>LDAP authenticates "Admin" case-insensitively → Binds successfully</li>
+<li>LDAP group membership verified: User in "VPN Users" group</li>
+<li><strong>VPN access granted without 2FA</strong> → Attacker receives VPN IP, tunnel established</li>
+</ul>
+</li>
+<li>
+<p><strong>VPN Access Established</strong><br>
+   Attacker now has <strong>remote network access</strong>:</p>
+<ul>
+<li>VPN tunnel active: Attacker assigned internal IP (e.g., 10.10.10.50)</li>
+<li>Network routes pushed: Access to internal subnets (10.0.0.0/8, 192.168.0.0/16)</li>
+<li>DNS resolution: Internal DNS servers accessible</li>
+<li><strong>Bypassed perimeter defenses</strong>: Firewall, IDS/IPS bypassed via legitimate VPN tunnel</li>
+</ul>
+<p>Attacker operates as <strong>authenticated insider</strong> from external location.</p>
+</li>
+<li>
+<p><strong>Privilege Escalation (If Admin User)</strong><br>
+   If compromised account has administrative privileges:</p>
+<ul>
+<li>Access FortiGate management interface: <code>https://vpn.targetcompany.com:443</code> (admin portal)</li>
+<li>Login with same case-altered credentials: "Admin" / password</li>
+<li>
+<p>Gain <strong>full FortiGate administrative access</strong>:</p>
+<ul>
+<li>Modify firewall rules to allow unrestricted traffic</li>
+<li>Disable security features (IPS, antivirus, web filtering)</li>
+<li>Extract VPN credentials for all users</li>
+<li>Create backdoor accounts for persistence</li>
+<li>Access VPN logs (identify active users, connection times)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Internal Reconnaissance</strong><br>
+   Attacker performs network reconnaissance from VPN session:</p>
+<ul>
+<li><strong>Network scanning</strong>: Nmap scans of internal IP ranges to identify live hosts</li>
+<li><strong>Service enumeration</strong>: Identify SMB shares, databases, web servers, domain controllers</li>
+<li><strong>Active Directory enumeration</strong>: Use BloodHound, PowerView to map AD structure</li>
+<li><strong>Credential harvesting</strong>: Deploy Mimikatz, Impacket to extract credentials from accessible systems</li>
+</ul>
+<p>Attacker identifies: Domain controller at 10.0.0.10, file server at 10.0.0.20, database at 10.0.0.30.</p>
+</li>
+<li>
+<p><strong>Lateral Movement</strong><br>
+   Using VPN access as pivot point:</p>
+<ul>
+<li><strong>SMB exploitation</strong>: Access file shares using compromised credentials</li>
+<li><strong>Pass-the-Hash</strong>: Use harvested NTLM hashes to authenticate to additional systems</li>
+<li><strong>RDP/SSH</strong>: Remote desktop to workstations and servers</li>
+<li><strong>Exploit internal vulnerabilities</strong>: Target unpatched systems (EternalBlue, ZeroLogon)</li>
+<li><strong>Move toward high-value targets</strong>: Domain controllers, backup servers, financial databases</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Exfiltration</strong><br>
+   Attacker exfiltrates sensitive data through VPN tunnel:</p>
+<ul>
+<li><strong>Intellectual property</strong>: Source code, design documents, patents</li>
+<li><strong>Financial data</strong>: Accounting databases, transaction records</li>
+<li><strong>Customer information</strong>: PII, payment card data, email addresses</li>
+<li><strong>Credentials</strong>: Password databases, SSH keys, API tokens</li>
+<li><strong>Exfiltration method</strong>: Data transferred through VPN tunnel to attacker's infrastructure (appears as legitimate VPN traffic)</li>
+</ul>
+</li>
+<li>
+<p><strong>Persistence and Backdoors</strong><br>
+    Attacker establishes long-term access:</p>
+<ul>
+<li><strong>Create backdoor VPN accounts</strong>: Add new local/LDAP users for future access</li>
+<li><strong>Webshells</strong>: Deploy webshells on internal web servers</li>
+<li><strong>C2 implants</strong>: Install Cobalt Strike beacons, Metasploit agents on compromised hosts</li>
+<li><strong>Scheduled tasks</strong>: Create persistence mechanisms on Windows systems</li>
+<li><strong>Maintain VPN access</strong>: Continue using case-altered credentials until detected or patched</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="impact-assessment">Impact Assessment</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><input id="__tabbed_1_4" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Confidentiality</label><label for="__tabbed_1_2">Integrity</label><label for="__tabbed_1_3">Availability</label><label for="__tabbed_1_4">Scope</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Successful 2FA bypass grants attackers <strong>full VPN access</strong> to internal networks, exposing sensitive data:</p>
+<ul>
+<li><strong>Internal network visibility</strong>: Attacker can access any internal resource reachable via VPN (file shares, databases, applications)</li>
+<li><strong>Data exfiltration</strong>: Intellectual property, financial records, customer data, employee information stolen</li>
+<li><strong>Credential theft</strong>: Attackers harvest additional credentials from internal systems, escalating access</li>
+<li><strong>Administrative access</strong>: If admin accounts compromised, attacker gains <strong>full FortiGate configuration access</strong>, exposing all VPN users, firewall policies, IPsec tunnels, and security settings</li>
+</ul>
+<p>Confidentiality breach extends beyond initial compromise to entire network reachable via VPN.</p>
+</div>
+<div class="tabbed-block">
+<p>While vulnerability primarily enables authentication bypass, follow-on actions threaten integrity:</p>
+<ul>
+<li><strong>Configuration tampering</strong>: Attackers with admin access modify firewall rules, disable security features, alter VPN policies</li>
+<li><strong>Backdoor creation</strong>: New accounts, modified policies ensure persistent access</li>
+<li><strong>Log manipulation</strong>: Attackers delete authentication logs to hide exploitation</li>
+<li><strong>Malware deployment</strong>: Ransomware, wipers, or trojans installed on internal systems</li>
+<li><strong>Data modification</strong>: Attackers alter financial records, customer data, or operational databases for fraud</li>
+</ul>
+<p>Integrity impact indirect but significant in multi-stage attacks.</p>
+</div>
+<div class="tabbed-block">
+<p>Direct availability impact limited, but post-exploitation actions can cause disruption:</p>
+<ul>
+<li><strong>Ransomware deployment</strong>: Attackers leverage VPN access to deploy ransomware network-wide, encrypting critical systems</li>
+<li><strong>Resource exhaustion</strong>: VPN tunnel used for excessive traffic, DDoS attacks, or cryptomining</li>
+<li><strong>Service disruption</strong>: Attackers delete configurations, shut down services, or deploy destructive malware</li>
+<li><strong>Incident response overhead</strong>: Investigation and remediation require VPN downtime, network segmentation changes</li>
+</ul>
+<p>Availability typically impacted in later attack stages, not during initial bypass.</p>
+</div>
+<div class="tabbed-block">
+<p>Attacker gains access <strong>beyond intended authentication boundary</strong>:</p>
+<ul>
+<li><strong>Perimeter bypass</strong>: Attacker circumvents VPN 2FA intended to protect network perimeter</li>
+<li><strong>Insider access</strong>: External attacker operates as authenticated insider with network access</li>
+<li><strong>Expanded attack surface</strong>: All internal systems reachable via VPN now accessible</li>
+<li><strong>Trust exploitation</strong>: VPN access often grants elevated privileges or access to sensitive zones</li>
+</ul>
+<p>Scope change from external unauthenticated attacker to internal authenticated user represents critical security boundary breach.</p>
+</div>
+</div>
+</div>
+<hr>
+<h2 id="mitigation-strategies">Mitigation Strategies</h2>
+<h3 id="immediate-patching-critical">Immediate Patching (Critical)</h3>
+<ul>
+<li>
+<p><strong>Apply FortiOS Security Updates</strong>: Update to patched FortiOS versions immediately:</p>
+<ul>
+<li><strong>FortiOS 6.0.x</strong>: Upgrade to <strong>6.0.10 or later</strong></li>
+<li><strong>FortiOS 6.2.x</strong>: Upgrade to <strong>6.2.4 or later</strong></li>
+<li><strong>FortiOS 6.4.x</strong>: Upgrade to <strong>6.4.1 or later</strong></li>
+<li><strong>FortiOS 7.x</strong>: Upgrade to <strong>latest stable release</strong> (all 7.x versions include fix)</li>
+</ul>
+</li>
+<li>
+<p><strong>Patch Verification</strong>: After update, verify CVE-2020-12812 addressed:</p>
+<ul>
+<li>Check FortiOS release notes for CVE-2020-12812 mention</li>
+<li>Test authentication with case-altered usernames (should enforce 2FA regardless)</li>
+<li>Review FortiGate system logs for patch application confirmation</li>
+</ul>
+</li>
+<li>
+<p><strong>Emergency Patching Process</strong>: Prioritize SSL VPN-enabled devices:</p>
+<ul>
+<li>Identify all FortiGate devices with SSL VPN or IPsec VPN enabled</li>
+<li>Schedule emergency maintenance windows for patching</li>
+<li>Test patches in lab environment before production deployment</li>
+<li>Coordinate with stakeholders for minimal business disruption</li>
+</ul>
+</li>
+</ul>
+<h3 id="configuration-hardening">Configuration Hardening</h3>
+<ul>
+<li>
+<p><strong>Disable Username Case Sensitivity</strong>: Configure FortiOS to treat usernames case-insensitively:
+  </p><div class="highlight"><pre><span></span><code>config system global
+    set auth-username-case-insensitive enable
+end
+</code></pre></div>
+  This prevents case-altered usernames from bypassing local user matching.
+</li>
+<li>
+<p><strong>Eliminate Dual Authentication Paths</strong>: Remove configuration overlap between local users and LDAP group policies:</p>
+<ul>
+<li><strong>Option A</strong>: Use <strong>only local users</strong> with 2FA for VPN access (remove LDAP group policies)</li>
+<li><strong>Option B</strong>: Use <strong>only LDAP authentication</strong> with LDAP-enforced 2FA (remove local users from VPN policies)</li>
+<li><strong>Avoid</strong>: Configurations where same username exists in both local database and LDAP with different security policies</li>
+</ul>
+</li>
+<li>
+<p><strong>Enforce 2FA at Multiple Layers</strong>: Enable 2FA enforcement at policy level:
+  </p><div class="highlight"><pre><span></span><code>config vpn ssl settings
+    config authentication-rule
+        edit 1
+            set auth-method two-factor
+        next
+    end
+end
+</code></pre></div>
+  This ensures all VPN access requires 2FA regardless of authentication source.
+</li>
+<li>
+<p><strong>LDAP Attribute Mapping</strong>: Configure LDAP to enforce 2FA via attributes:</p>
+<ul>
+<li>Use LDAP attributes (e.g., <code>mfaRequired=TRUE</code>) to determine 2FA enforcement</li>
+<li>Map LDAP 2FA attribute to FortiGate authentication policies</li>
+</ul>
+</li>
+</ul>
+<h3 id="access-control-hardening">Access Control Hardening</h3>
+<ul>
+<li>
+<p><strong>Limit VPN User Scope</strong>: Apply principle of least privilege:</p>
+<ul>
+<li>Create separate LDAP/local groups for VPN access vs. general users</li>
+<li>Only grant VPN access to users who require remote access</li>
+<li>Remove administrative accounts from VPN authentication policies (admins should access management interface separately, not via SSL VPN)</li>
+</ul>
+</li>
+<li>
+<p><strong>Implement Network Segmentation</strong>: Restrict VPN access to specific zones:</p>
+<ul>
+<li>Create separate VPN portals for different access levels (user VPN, admin VPN)</li>
+<li>Apply firewall policies limiting VPN users to only required resources</li>
+<li>Use VLAN segmentation to isolate VPN traffic from critical systems</li>
+</ul>
+</li>
+<li>
+<p><strong>Conditional Access Policies</strong>: Implement context-aware authentication:</p>
+<ul>
+<li>Require additional authentication factors for access from unknown IPs</li>
+<li>Enforce device posture checks (antivirus, disk encryption) before VPN access</li>
+<li>Implement geo-fencing (block VPN access from unexpected countries)</li>
+</ul>
+</li>
+</ul>
+<h3 id="monitoring-and-detection">Monitoring and Detection</h3>
+<ul>
+<li><strong>Authentication Log Monitoring</strong>: Monitor FortiGate logs for exploitation indicators:<ul>
+<li><strong>Case-altered login attempts</strong>: Unusual username casing (e.g., "Admin" when user normally logs in as "admin")</li>
+<li><strong>Successful LDAP logins without 2FA</strong>: Authentication success via LDAP without 2FA verification</li>
+<li><strong>Repeated login attempts with variations</strong>: Multiple failed attempts followed by case-altered success</li>
+</ul>
+</li>
+</ul>
+<p>FortiOS log example:
+  </p><div class="highlight"><pre><span></span><code>logdesc="Authentication succeeded"
+user="Admin"
+authserver="ldap-server"
+mfa_status="none"
+</code></pre></div>
+<ul>
+<li>
+<p><strong>SIEM Integration</strong>: Forward FortiGate logs to SIEM (Splunk, QRadar, Sentinel) for correlation:</p>
+<ul>
+<li>Create alerts for authentication events with username case mismatches</li>
+<li>Correlate VPN access with unusual network behavior (scanning, lateral movement)</li>
+<li>Alert on VPN logins from unexpected geolocations or times</li>
+</ul>
+</li>
+<li>
+<p><strong>Anomaly Detection</strong>: Baseline normal VPN usage and detect deviations:</p>
+<ul>
+<li>Alert on VPN access outside normal business hours</li>
+<li>Detect unusual data transfer volumes through VPN</li>
+<li>Flag connections to internal systems never previously accessed by user</li>
+</ul>
+</li>
+<li>
+<p><strong>Regular Audit of Linked Devices</strong>: Review FortiGate configurations:</p>
+<ul>
+<li>Weekly audit of local user accounts and LDAP group policies</li>
+<li>Verify no overlapping username configurations exist</li>
+<li>Check for unauthorized accounts or policy changes</li>
+</ul>
+</li>
+</ul>
+<h3 id="administrative-best-practices">Administrative Best Practices</h3>
+<ul>
+<li>
+<p><strong>Separate Admin Accounts</strong>: Do not use VPN-accessible accounts for administration:</p>
+<ul>
+<li>Create dedicated local admin accounts for FortiGate management</li>
+<li>Disable SSL VPN access for admin accounts</li>
+<li>Require admin access via dedicated management network or jump host</li>
+</ul>
+</li>
+<li>
+<p><strong>Principle of Least Privilege</strong>: Limit privileges for VPN users:</p>
+<ul>
+<li>VPN users should not have administrative rights on FortiGate</li>
+<li>Apply role-based access control (RBAC) within internal network</li>
+<li>Separate VPN access from privileged account management</li>
+</ul>
+</li>
+<li>
+<p><strong>Regular Configuration Reviews</strong>: Quarterly security audits:</p>
+<ul>
+<li>Review all authentication policies for misconfigurations</li>
+<li>Verify 2FA enforcement for all remote access</li>
+<li>Check for legacy configurations from pre-patch era</li>
+</ul>
+</li>
+</ul>
+<h3 id="user-and-admin-education">User and Admin Education</h3>
+<ul>
+<li>
+<p><strong>Security Awareness Training</strong>: Educate users on phishing and credential protection:</p>
+<ul>
+<li>Train users to recognize credential phishing attempts</li>
+<li>Emphasize importance of unique passwords for VPN access</li>
+<li>Report suspicious login notifications or unexpected 2FA prompts</li>
+</ul>
+</li>
+<li>
+<p><strong>Admin Training</strong>: Ensure IT staff understand authentication logic:</p>
+<ul>
+<li>Train administrators on proper FortiGate authentication configuration</li>
+<li>Educate on risks of mixing local and LDAP authentication</li>
+<li>Provide guidance on secure VPN deployment</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="resources">Resources</h2>
+<div class="admonition warning">
+<p class="admonition-title">Vendor Security Advisories</p>
+<ul>
+<li><a href="https://thehackernews.com/2025/12/fortinet-warns-of-active-exploitation.html">Fortinet Warns of Active Exploitation of FortiOS SSL VPN 2FA Bypass Vulnerability</a></li>
+<li><a href="https://securityaffairs.com/186117/security/five-year-old-fortinet-fortios-ssl-vpn-flaw-actively-exploited.html">Five-year-old Fortinet FortiOS SSL VPN flaw actively exploited</a></li>
+<li><a href="https://cybersecuritynews.com/fortigate-firewall-vulnerability/">Hackers Exploiting Three-Year-Old FortiGate Vulnerability to Bypass 2FA on Firewalls</a></li>
+<li><a href="https://nvd.nist.gov/vuln/detail/CVE-2020-12812">NVD - CVE-2020-12812</a></li>
+</ul>
+</div>
+<hr></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "content.code.annotate", "navigation.tabs", "navigation.tracking", "content.math", "navigation.tabs.sticky"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

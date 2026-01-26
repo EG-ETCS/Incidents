@@ -1,0 +1,6492 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://eg-etcs.github.io/incident/2026/Week2/telegram/">
+      
+      
+        <link rel="prev" href="../APT28/">
+      
+      
+        <link rel="next" href="../uat/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../alarm.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Telegram Proxy One-Click IP Exposure Vulnerability - Incidents</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+  
+  
+  
+  
+  <style>:root{--md-annotation-icon:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M22%2012a10%2010%200%200%201-10%2010A10%2010%200%200%201%202%2012%2010%2010%200%200%201%2012%202a10%2010%200%200%201%2010%2010M6%2013h8l-3.5%203.5%201.42%201.42L17.84%2012l-5.92-5.92L10.5%207.5%2014%2011H6z%22/%3E%3C/svg%3E');}</style>
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#telegram-proxy-one-click-ip-exposure-vulnerability" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Incidents" class="md-header__button md-logo" aria-label="Incidents" data-md-component="logo">
+      
+  <img src="../../../alarm.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Incidents
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Telegram Proxy One-Click IP Exposure Vulnerability
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  
+  Today's Incidents
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../This-Week/" class="md-tabs__link">
+          
+  
+  
+  This Week
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Last-Week/" class="md-tabs__link">
+          
+  
+  
+  Last Week
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../default/" class="md-tabs__link">
+          
+  
+  
+  Incidents
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Incidents" class="md-nav__button md-logo" aria-label="Incidents" data-md-component="logo">
+      
+  <img src="../../../alarm.png" alt="logo">
+
+    </a>
+    Incidents
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Today's Incidents
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Today's Incidents
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Today's Security Incidents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    This Week
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    This Week
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../This-Week/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    This Week's Security Incidents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Last Week
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Last Week
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Last-Week/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Last Week's Security Incidents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Incidents
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Incidents
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../default/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2025
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2025
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_1" id="__nav_4_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    October
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    October
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_1_1" id="__nav_4_2_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week44
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week44
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week44/nihon-kohden-cns-6201/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nihon Kohden CNS-6201
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week44/aski-energy-als-mini/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ASKI Energy ALS-Mini
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week44/delta-electronics-asda-soft/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delta Electronics ASDA-Soft
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week44/windows-server-wsus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows Server WSUS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week44/bluenoroff-ghostcall-ghosthire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BlueNoroff Campaigns
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week44/everest-att-aviation-leaks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Everest AT&T Aviation Leaks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week44/hsbc-usa-data-breach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HSBC USA Data Breach
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week44/vertikal-hospital-manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vertikal Hospital Manager
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2" id="__nav_4_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    November
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    November
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2_1" id="__nav_4_2_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week45
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week45
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week45/Cisco-IOS-XE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cisco IOS XE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week45/VMware-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VMware Aria Operations and VMware Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week45/Android-BankBot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android/BankBot-YNRK malware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week45/Cisco-ASA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cisco ASA Secure Firewall
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week45/Moxa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multiple Critical Vulnerabilities in Moxa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week45/Super-Value/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Super Value Co. Ransomware Breach
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week45/Android-Security-Bulletin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android Security Bulletin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week45/maya-engineering-breach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cyber Toufan – Maya Engineering Surveillance Breach
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2_2" id="__nav_4_2_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week46
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week46
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week46/samsung-spyware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Samsung Mobile Zero-Day Exploited to Deploy LANDFALL Spyware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week46/cisco-ccx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cisco Unified Contact Center Express (Unified CCX) Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week46/apple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multiple Vulnerabilities in Apple Products
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week46/abb-fbxi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ABB FLXeon Controllers Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week46/delhi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Delhi Airport GPS Spoofing Crisis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week46/clickfix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ClickFix Hospitality Phishing Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week46/kernel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Actively Exploited Windows Kernel Zero‑Day
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week46/whisper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Whisper Leak — LLM Side‑Channel Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week46/Lighthouse/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google vs. Lighthouse Phishing-as-a-Service Operation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2_3" id="__nav_4_2_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week47
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week47
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week47/fortiweb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fortinet FortiWeb Authentication Bypass
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week47/aix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Critical IBM AIX NIM Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week47/dlink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    D‑Link DIR-816L
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week47/ms-gfx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Graphics Component Vulnerability – CVE-2025-60724
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week47/chrome-v8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google Chrome V8 Zero-Day – CVE-2025-13223
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week47/lynx/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lynx+ Gateway Critical Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week47/fortiwebzero/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FortiWeb OS Command Injection (CVE-2025-58034)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2_4" id="__nav_4_2_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week48
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week48
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week48/abb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ABB Ability Edgenius – Authentication Bypass (CVE-2025-10571)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week48/oracle/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oracle Fusion Middleware – Missing Authentication for Critical Function (CVE-2025-61757)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week48/apt31/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    China-Linked APT31 Stealth Cyberattacks on Russian IT – Using Cloud Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week48/oracle-ebs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oracle EBS Zero-Day Exploitation – CVE-2025-61882
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week48/spyware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CISA Warning: Spyware Campaigns Targeting Messaging App Users
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week48/festo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Festo Compact Vision System – Insecure Configuration Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week48/shadowV2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ShadowV2 IoT Botnet Opportunistic Attack During AWS Outage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2_5" id="__nav_4_2_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week49
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week49
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week49/forge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    node-forge ASN.1 Validation Bypass Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week49/npm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contagious Interview (2025 npm-registry wave)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week49/openplc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenPLC ScadaBR CVE-2021-26829 Active Exploitation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week49/scadalts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scada-LTS Project Import Path Traversal – CVE-2025-13791
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week49/benz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mercedes-Benz USA Breach Claim by Threat Actor 'zestix'
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week49/onsolve/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OnSolve CodeRED Ransomware Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week49/muddy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MuddyWater MuddyViper Backdoor Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week49/knpa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hacking of ~120,000 IP Cameras in South Korea for Sale of Intimate Content
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3" id="__nav_4_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    December
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    December
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3_1" id="__nav_4_2_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week50
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week50
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week50/goldfactory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GoldFactory Hits Southeast Asia with Modified Banking Apps Driving 11,000+ Infections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week50/watersaci/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WhatsApp-Based Malware Campaign by Water Saci
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week50/johnson/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Johnson Controls FX80 / FX90 Vulnerability (CVE-2025-43867)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week50/react2shell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    React2Shell (CVE-2025-55182)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week50/muddyudp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UDPGangster Campaigns Target Multiple Countries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week50/andSurge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android Malware Surge: FvncBot, SeedSnatcher, and Upgraded ClayRat
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week50/arrayos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ArrayOS AG VPN (CVE-2025-66644)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3_2" id="__nav_4_2_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week51
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week51
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/geoserver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GeoServer XXE Vulnerability Exploitation (CVE-2025-58360)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/sierra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CVE-2018-4063 Sierra Wireless AirLink ALEOS Remote Code Execution
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/hacktivists/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pro-Russia Hacktivists Conduct Opportunistic Attacks Against Critical Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/chromium/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google Chromium Out-of-Bounds Memory Access Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/istar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Johnson Controls iSTAR Ultra Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/siemensesa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Siemens Energy Services Security Advisory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/useAfterFree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apple Multiple Products Use-After-Free WebKit Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/forticloud/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fortinet FortiCloud SSO Login Authentication Bypass Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/solaredge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SolarEdge SE3680H Contains Linux Kernel Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/RussianGRU/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Russian GRU Cyber Campaign Targeting Critical Infrastructure via Edge Network Devices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/sandbox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OS Command Injection in Fortinet FortiSandbox
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/AsyncOS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cisco AsyncOS Zero-Day Exploitation Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/asus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ASUS Live Update Embedded Malicious Code Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week51/sonicWall/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SonicWall SMA1000 Zero-Day Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3_3" id="__nav_4_2_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week52
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week52
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/ac18/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CVE-2025-14993: Tenda AC18 Router Stack Buffer Overflow'
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/watchguard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WatchGuard Firebox Fireware OS IKEv2 Out-of-Bounds Write Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/doj/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    U.S. DOJ Charges 54 in ATM Jackpotting Scheme Using Ploutus Malware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/romanian/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Romanian Waters Authority Hit by Ransomware Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/kimwolf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kimwolf Botnet: 1.8 Million Android Devices Hijacked
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/dragon/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    China-Linked "Ink Dragon" APT Espionage Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/laposte/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cyberattack on La Poste and La Banque Postale
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/n8n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CVE-2025-68613: Critical n8n Remote Code Execution Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/lotusbail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Lotusbail: Malicious npm Package Targeting WhatsApp Web API Developers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/macsync/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MacSync macOS Stealer: Code-Signed Malware Bypassing Gatekeeper
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week52/fbi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FBI Seizure of Fraud Domain Hosting Stolen Bank Credentials
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3_4" id="__nav_4_2_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week53
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week53
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week53/wallet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trust Wallet Chrome Extension Supply-Chain Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week53/langchain/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CVE-2025-68664: Critical LangChain Core Serialization Injection Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week53/ghostpairing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GhostPairing: WhatsApp Account Takeover via Social Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week53/vpn2fa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fortinet FortiOS SSL VPN 2FA Bypass (CVE-2020-12812)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week53/digiever/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Digiever DS-2105 Pro NVR Authorization Bypass & Command Injection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week53/npm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Malicious npm Packages Abused as Phishing Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week53/smartermail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Critical SmarterMail Arbitrary File Upload / Remote Code Execution Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2025/Week53/mongo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MongoBleed: MongoDB Memory Disclosure (CVE-2025-14847)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2026
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    2026
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_1" id="__nav_4_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    January
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    January
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_1_1" id="__nav_4_3_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week1/api_connect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    IBM API Connect Critical Authentication Bypass (CVE-2025-13915)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week1/transparent_tribe/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transparent Tribe RAT Campaign Targeting Indian Government and Academia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week1/clickfix_BSOD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ClickFix Attack Uses Fake Windows BSOD to Push Malware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week1/n8n2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    n8n Critical Python Sandbox Bypass (CVE-2025-68668)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_1_2" id="__nav_4_3_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_3_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../RustyWater/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MuddyWater RustyWater RAT Campaign – Iran-linked APT Espionage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Astaroth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Astaroth Banking Trojan – WhatsApp Worm Campaign in Brazil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Instagram/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instagram 17.5M User Data Leak – API Scraping Incident
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apex/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trend Micro Apex Central Unauthenticated RCE (CVE-2025-69258)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Kimsuky/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Kimsuky APT Malicious QR Code Spear-Phishing Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../APT28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    APT28 Credential-Stealing Campaign Targeting Energy and Policy Organizations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Telegram Proxy One-Click IP Exposure Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Telegram Proxy One-Click IP Exposure Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability Specifications
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mtproto-proxy-feature-in-telegram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MTProto Proxy Feature in Telegram
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxy-link-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proxy Link Format
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-vulnerability-automatic-direct-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Vulnerability: Automatic Direct Connection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attack-techniques-disguising-proxy-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attack Techniques: Disguising Proxy Links
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Attack Techniques: Disguising Proxy Links">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technique-1-username-disguise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technique 1: Username Disguise
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technique-2-inline-bot-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technique 2: Inline Bot Response
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technique-3-channelgroup-invite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technique 3: Channel/Group Invite
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technique-4-profile-picturemedia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technique 4: Profile Picture/Media
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technique-5-qr-code-combined-attack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technique 5: QR Code (combined attack)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attack-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attack Scenario
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Attack Scenario">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-ip-leak-exploitation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step-by-Step IP Leak Exploitation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impact-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Impact Assessment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mitigation-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mitigation Strategies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mitigation Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#end-user-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        End-User Protection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#device-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Device Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telegram-specific-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Telegram-Specific Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-community-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Community Response
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UAT-7290 China-Linked Telecom Espionage Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../azmonica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AZ Monica Hospital Cyberattack - Belgium
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gogs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CVE-2025-8110 - Gogs Remote Code Execution via Symlink Traversal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pluggyape/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PLUGGYAPE Malware Campaign Targeting Ukrainian Defense Forces
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dolby/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android Dolby Audio Zero-Click Vulnerability (CVE-2025-54957)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_1_3" id="__nav_4_3_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/wordpress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Critical Authentication Bypass in Modular DS WordPress Plugin (CVE-2026-23550)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/chrome/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Credential-Stealing Chrome Extensions Target Enterprise HR Platforms
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/stateTV/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Iran State Television Broadcast Hijacking (Badr Satellite Signal Intrusion)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/vigi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TP-Link VIGI Camera Authentication Bypass (CVE-2026-0629)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/crashfix/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CrashFix: Malicious Chrome Extension Browser Crash Social Engineering Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/zip/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GootLoader Malware - Malformed ZIP Evasion Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/talos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UAT-8837: China-Linked APT Targeting North American Critical Infrastructure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/weblogic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Oracle HTTP Server / WebLogic Server Proxy Plug-in Vulnerability (CVE-2026-21962)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/gemini/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google Gemini Prompt Injection Flaw via Calendar Invites
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/power/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Power Apps Remote Code Execution Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/cisco/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cisco Unified Communications Products Remote Code Execution Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/linkedin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LinkedIn Phishing Malware Campaign via DLL Sideloading
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/zoom/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Command Injection Vulnerability in Zoom Node Multimedia Routers (MMRs)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week3/gitlab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multiple GitLab Vulnerabilities Enable 2FA Bypass and DoS Attacks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_1_4" id="__nav_4_3_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week4/gnu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CVE-2026-24061 – GNU InetUtils telnetd Remote Authentication Bypass
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week4/dynowiper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DynoWiper Cyberattack on Polish Energy Systems (Sandworm Attribution)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week4/gmail/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    48 Million Gmail Usernames And Passwords Leaked Online
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week4/buds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Xiaomi Redmi Buds Bluetooth RFCOMM Vulnerabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week4/codebreach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CodeBreach – AWS CodeBuild Misconfiguration Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week4/amnesia/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi-Stage Phishing Campaign Deploying Amnesia RAT and Hakuna Matata Ransomware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vulnerability-specifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vulnerability Specifications
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Details
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mtproto-proxy-feature-in-telegram" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MTProto Proxy Feature in Telegram
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proxy-link-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proxy Link Format
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-vulnerability-automatic-direct-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Vulnerability: Automatic Direct Connection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attack-techniques-disguising-proxy-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attack Techniques: Disguising Proxy Links
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Attack Techniques: Disguising Proxy Links">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technique-1-username-disguise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technique 1: Username Disguise
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technique-2-inline-bot-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technique 2: Inline Bot Response
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technique-3-channelgroup-invite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technique 3: Channel/Group Invite
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technique-4-profile-picturemedia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technique 4: Profile Picture/Media
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technique-5-qr-code-combined-attack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technique 5: QR Code (combined attack)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attack-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Attack Scenario
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Attack Scenario">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-ip-leak-exploitation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step-by-Step IP Leak Exploitation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#impact-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Impact Assessment
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mitigation-strategies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mitigation Strategies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mitigation Strategies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#end-user-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        End-User Protection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#device-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Device Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#telegram-specific-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Telegram-Specific Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-community-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Community Response
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Resources
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<div><h1 id="telegram-proxy-one-click-ip-exposure-vulnerability">Telegram Proxy One-Click IP Exposure Vulnerability</h1>
+<p><strong class="cve-chip">Telegram</strong> <strong class="cve-chip">IP Leak</strong> <strong class="cve-chip">Privacy Bypass</strong> <strong class="cve-chip">MTProto Proxy</strong> <strong class="cve-chip">Deanonymization</strong> <strong class="cve-chip">Mobile Security</strong></p>
+<p><img alt="alt text" src="../images/telegram1.png"></p>
+<h2 id="overview">Overview</h2>
+<p><strong>Telegram</strong>, one of the world's most popular encrypted messaging applications with over <strong>900 million active users</strong> globally, has a <strong>critical privacy vulnerability</strong> in its <strong>Android and iOS mobile clients</strong> that enables <strong>one-click IP address exposure</strong> through malicious MTProto proxy links. </p>
+<p>The vulnerability resides in Telegram's implementation of <strong>MTProto proxy support</strong>, a feature designed to help users <strong>bypass internet censorship</strong> in restrictive countries (Russia, Iran, China, Belarus, Turkey) by allowing them to route Telegram traffic through trusted proxy servers. Telegram proxy links use the URL format <code>https://t.me/proxy?server=&lt;IP&gt;&amp;port=&lt;PORT&gt;&amp;secret=&lt;SECRET&gt;</code>, which users can share to quickly configure proxy connections without manual setup—a feature particularly valuable for activists, journalists, and dissidents operating under <strong>government surveillance and internet restrictions</strong>. </p>
+<p>However, security researchers discovered that when a user on a <strong>mobile device</strong> (Android or iOS) taps a proxy link—even unintentionally—Telegram's mobile clients automatically perform a <strong>direct connection test</strong> to the specified proxy server to validate its availability <strong>before adding it to the proxy list or prompting the user</strong>. This automatic validation probe <strong>bypasses any configured proxies, VPNs, or Tor connections</strong> the user may have active, instead using the device's <strong>native network interface</strong> to send a test packet directly to the attacker-controlled server, thereby <strong>leaking the user's real public IP address</strong> to the malicious proxy operator. Attackers weaponize this behavior by <strong>disguising proxy links</strong> as seemingly innocuous elements within Telegram conversations—embedding them behind <strong>clickable usernames</strong> (using Telegram's custom URL scheme for usernames that can secretly contain proxy parameters), <strong>channel invites</strong>, <strong>inline bot responses</strong>, <strong>profile pictures</strong>, or <strong>group join links</strong>—tricking users into clicking without realizing they're interacting with a proxy configuration link. </p>
+<p>The vulnerability is particularly dangerous because it requires <strong>no user authentication, no malware installation, and no permissions</strong>—a single misclick instantly reveals the user's identity. For users relying on Telegram's anonymity features in <strong>high-risk environments</strong> (political dissidents in authoritarian regimes, whistleblowers, human rights activists, investigative journalists, opposition leaders), this IP leak represents a <strong>life-threatening deanonymization attack</strong> that can enable <strong>government surveillance, location tracking, targeted harassment, arrest, or physical harm</strong>. </p>
+<p>The vulnerability undermines Telegram's core privacy promise and affects <strong>hundreds of millions of mobile users</strong> who may unknowingly expose their real IP addresses through social engineering attacks, malicious channels, compromised groups, or coordinated disinformation campaigns that spread weaponized proxy links. </p>
+<p>Security researchers warn that <strong>state-sponsored actors, law enforcement, and surveillance agencies</strong> in authoritarian countries are actively exploiting this technique to <strong>deanonymize activists and track dissidents</strong>, with reports of <strong>Telegram groups in Russia, Iran, and Belarus</strong> distributing disguised proxy links to identify opposition movement participants. </p>
+<p>The vulnerability has been <strong>publicly disclosed</strong> as of January 2026, with Telegram acknowledging the issue and stating they plan to add <strong>user warnings</strong> when proxy links are clicked, but <strong>no fix has been deployed yet</strong>—leaving millions of users vulnerable to ongoing exploitation. The attack requires minimal technical sophistication (attackers only need to set up a simple MTProto proxy server and log incoming connection attempts), making it accessible to <strong>script kiddies, doxxing groups, stalkers, and nation-state surveillance programs</strong> alike. </p>
+<p>Unlike traditional phishing or malware attacks, this IP leak is a <strong>design flaw in Telegram's mobile client networking logic</strong>, meaning users cannot protect themselves through traditional security measures—even security-conscious users with <strong>VPNs, firewalls, and Tor</strong> are vulnerable if they use Telegram's mobile apps. </p>
+<p>The vulnerability does <strong>not affect Telegram Desktop</strong> (Windows, macOS, Linux desktop clients), which handle proxy links differently, nor does it affect <strong>Telegram Web</strong> (browser-based version)—the issue is <strong>exclusive to Android and iOS mobile apps</strong>, which represent the <strong>overwhelming majority</strong> of Telegram's user base. This disclosure comes amid growing concerns about <strong>Telegram's security practices</strong>, including ongoing debates about its <strong>encryption implementation</strong>, <strong>data retention policies</strong>, and <strong>cooperation with government requests</strong>—further eroding user trust in the platform as a secure communication tool for sensitive use cases.</p>
+<hr>
+<h2 id="vulnerability-specifications">Vulnerability Specifications</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Attribute</strong></th>
+<th><strong>Details</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Vulnerability Name</strong></td>
+<td>Telegram Proxy One-Click IP Address Exposure</td>
+</tr>
+<tr>
+<td><strong>Vulnerability Type</strong></td>
+<td>Privacy leak, deanonymization, information disclosure</td>
+</tr>
+<tr>
+<td><strong>Affected Software</strong></td>
+<td>Telegram for Android, Telegram for iOS</td>
+</tr>
+<tr>
+<td><strong>Affected Versions</strong></td>
+<td>All versions as of January 2026 (including latest releases)</td>
+</tr>
+<tr>
+<td><strong>Unaffected Platforms</strong></td>
+<td>Telegram Desktop (Windows, macOS, Linux), Telegram Web</td>
+</tr>
+<tr>
+<td><strong>Attack Vector</strong></td>
+<td>Malicious MTProto proxy link embedded in messages, usernames, channels</td>
+</tr>
+<tr>
+<td><strong>User Interaction</strong></td>
+<td>Required (user must click disguised proxy link)</td>
+</tr>
+<tr>
+<td><strong>Attack Complexity</strong></td>
+<td>Low (requires only basic web server setup and social engineering)</td>
+</tr>
+<tr>
+<td><strong>Privileges Required</strong></td>
+<td>None (attacker needs no special access or permissions)</td>
+</tr>
+<tr>
+<td><strong>Disclosure Date</strong></td>
+<td>January 12, 2026</td>
+</tr>
+<tr>
+<td><strong>Public Exploit</strong></td>
+<td>Yes (proof-of-concept demonstrated by security researchers)</td>
+</tr>
+<tr>
+<td><strong>Patch Status</strong></td>
+<td>No fix deployed; Telegram plans to add user warnings (timeline unclear)</td>
+</tr>
+<tr>
+<td><strong>Workaround Available</strong></td>
+<td>Partial (system-wide VPN can mitigate but not eliminate risk)</td>
+</tr>
+<tr>
+<td><strong>Affected User Count</strong></td>
+<td>Hundreds of millions (Telegram mobile users globally)</td>
+</tr>
+<tr>
+<td><strong>Severity Assessment</strong></td>
+<td>High for at-risk users (activists, journalists), Medium for general users</td>
+</tr>
+<tr>
+<td><strong>Exploitation Status</strong></td>
+<td>Active exploitation suspected in authoritarian countries</td>
+</tr>
+<tr>
+<td><strong>Root Cause</strong></td>
+<td>Mobile client performs direct proxy validation bypassing VPN/proxy layers</td>
+</tr>
+<tr>
+<td><strong>Leaked Information</strong></td>
+<td>User's real public IP address, approximate geolocation, ISP information</td>
+</tr>
+<tr>
+<td><strong>Privacy Impact</strong></td>
+<td>Deanonymization of users relying on anonymity for safety</td>
+</tr>
+<tr>
+<td><strong>Threat Actors</strong></td>
+<td>Nation-state surveillance, law enforcement, doxxing groups, stalkers</td>
+</tr>
+<tr>
+<td><strong>Use Cases at Risk</strong></td>
+<td>Political dissidents, whistleblowers, activists, journalists, LGBTQ+ users</td>
+</tr>
+<tr>
+<td><strong>Telegram's Response</strong></td>
+<td>Acknowledged issue, plans to add warnings, no timeline for fix</td>
+</tr>
+<tr>
+<td><strong>Researcher Attribution</strong></td>
+<td>Cybersecurity researchers (disclosed via Cybernews, security media)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="technical-details">Technical Details</h2>
+<h3 id="mtproto-proxy-feature-in-telegram">MTProto Proxy Feature in Telegram</h3>
+<p><strong>What is MTProto Proxy?</strong></p>
+<p>MTProto is Telegram's proprietary encryption protocol for client-server communication. <strong>MTProto proxies</strong> are special proxy servers that:</p>
+<ul>
+<li>Allow users to route Telegram traffic through an intermediary server</li>
+<li>Help bypass internet censorship and ISP-level Telegram blocking</li>
+<li>Provide a way to access Telegram in countries where it's banned or restricted</li>
+<li>Do not decrypt messages (maintain end-to-end encryption for Secret Chats)</li>
+</ul>
+<p><strong>How Telegram Proxies Work</strong> (normal operation):</p>
+<div class="highlight"><pre><span></span><code>User Device → MTProto Proxy Server → Telegram Servers
+
+1. User configures proxy in Telegram settings
+2. All Telegram traffic routed through proxy
+3. Proxy forwards encrypted traffic to Telegram servers
+4. ISP sees connection to proxy (not Telegram), bypassing blocks
+5. Telegram servers see connection from proxy IP (not user's real IP)
+</code></pre></div>
+<h3 id="proxy-link-format">Proxy Link Format</h3>
+<p>Telegram allows sharing proxy configurations via URLs:</p>
+<div class="highlight"><pre><span></span><code>Format:
+https://t.me/proxy?server=&lt;SERVER&gt;&amp;port=&lt;PORT&gt;&amp;secret=&lt;SECRET&gt;
+
+Example:
+https://t.me/proxy?server=192.0.2.100&amp;port=443&amp;secret=ee1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcd
+
+Parameters:
+- server: IP address or domain of MTProto proxy server
+- port: TCP port (commonly 443, 80, 8080, 1080)
+- secret: Hexadecimal secret for proxy authentication (32+ hex characters)
+</code></pre></div>
+<p><strong>Intended User Flow</strong>:</p>
+<ol>
+<li>User receives proxy link (from trusted source, proxy provider, anti-censorship organization)</li>
+<li>User taps link in Telegram</li>
+<li>Telegram prompts: "Add proxy server 192.0.2.100:443?"</li>
+<li>User confirms → Proxy added to settings → User can enable it for connection</li>
+</ol>
+<h3 id="the-vulnerability-automatic-direct-connection">The Vulnerability: Automatic Direct Connection</h3>
+<p><strong>What Actually Happens</strong> (on Android/iOS mobile clients):</p>
+<div class="highlight"><pre><span></span><code>When user taps proxy link:
+
+1. Telegram mobile app receives link: t.me/proxy?server=ATTACKER_IP&amp;port=443&amp;secret=...
+
+2. BEFORE showing user prompt or adding proxy:
+   Telegram automatically sends test packet to validate proxy
+
+3. Test connection logic:
+   - Telegram creates NEW network socket
+   - Socket uses device's DEFAULT network interface (not configured proxy/VPN)
+   - Sends MTProto handshake probe to ATTACKER_IP:443
+   - Packet includes: Source IP (user's real IP), timestamp, Telegram client info
+
+4. Attacker's server logs:
+   [2026-01-12 14:32:15] Connection from 203.0.113.50 (User's real IP)
+   User-Agent: Telegram Android 10.5.0
+   Geolocation: Moscow, Russia (inferred from IP)
+   ISP: Rostelecom (Russian ISP)
+
+5. Telegram receives validation result (success/failure)
+
+6. NOW Telegram shows user prompt: "Add proxy?"
+   (But damage already done—IP leaked in step 3)
+</code></pre></div>
+<p><strong>Why This Bypasses VPN/Proxy</strong>:</p>
+<div class="highlight"><pre><span></span><code>Normal Telegram Traffic (with VPN enabled):
+User Device → VPN Tunnel → VPN Server → Telegram Servers
+(User's real IP hidden, VPN server IP visible)
+
+Proxy Validation Traffic (THE VULNERABILITY):
+User Device → [BYPASSES VPN] → Attacker's Proxy → Logs Real IP
+(VPN/proxy ignored, device's native interface used directly)
+</code></pre></div>
+<p><strong>What Gets Leaked</strong>:</p>
+<div class="highlight"><pre><span></span><code>Information exposed to attacker's proxy server:
+
+1. Real Public IP Address:
+   - User's ISP-assigned IP (not VPN IP)
+   - Example: 203.0.113.50
+
+2. Geolocation (inferred from IP):
+   - Country: Russia
+   - City: Moscow
+   - Coordinates: ~55.7558° N, 37.6173° E (approximate)
+
+3. ISP Information:
+   - Provider: Rostelecom (Russian telecom)
+   - ASN: AS12389
+   - Connection type: Residential/Mobile
+
+4. Device Information (from MTProto handshake):
+   - Telegram version: Android 10.5.0
+   - Operating system: Android 13
+   - Timestamp: 2026-01-12 14:32:15 UTC
+
+5. Network Metadata:
+   - TCP/IP fingerprinting (OS detection via TTL, window size)
+   - Latency (reveals proximity to server)
+</code></pre></div>
+<h3 id="attack-techniques-disguising-proxy-links">Attack Techniques: Disguising Proxy Links</h3>
+<p>Attackers hide proxy links behind seemingly innocent elements:</p>
+<h4 id="technique-1-username-disguise">Technique 1: Username Disguise</h4>
+<div class="highlight"><pre><span></span><code>Telegram allows custom URL schemes:
+
+Normal username mention:
+@john_doe
+
+Malicious disguised proxy:
+@innocent_looking_name
+(Actually contains hidden t.me/proxy?... in internal link structure)
+
+When user taps username expecting to see profile → IP leaked
+</code></pre></div>
+<h4 id="technique-2-inline-bot-response">Technique 2: Inline Bot Response</h4>
+<div class="highlight"><pre><span></span><code>Attacker creates Telegram bot:
+
+User sends query to bot: /search cat videos
+Bot responds with inline result:
+[🎬 Funny Cat Video]
+(Button secretly contains proxy link instead of video URL)
+
+User clicks expecting video → IP leaked
+</code></pre></div>
+<h4 id="technique-3-channelgroup-invite">Technique 3: Channel/Group Invite</h4>
+<div class="highlight"><pre><span></span><code>Malicious channel message:
+"Join our privacy-focused group for secure communication:
+[Join Secure Group] ← This button is actually a proxy link
+
+User clicks to join group → IP leaked
+</code></pre></div>
+<h4 id="technique-4-profile-picturemedia">Technique 4: Profile Picture/Media</h4>
+<div class="highlight"><pre><span></span><code>Attacker posts image with caption:
+"Click to view full resolution"
+[View Image] ← Proxy link disguised as image viewer
+
+User clicks → IP leaked
+</code></pre></div>
+<h4 id="technique-5-qr-code-combined-attack">Technique 5: QR Code (combined attack)</h4>
+<div class="highlight"><pre><span></span><code>Attacker posts QR code image in channel:
+"Scan to configure secure Telegram proxy"
+
+QR code encodes: tg://proxy?server=ATTACKER_IP&amp;...
+
+User scans QR → Telegram opens link → IP leaked
+</code></pre></div>
+<hr>
+<h2 id="attack-scenario">Attack Scenario</h2>
+<h3 id="step-by-step-ip-leak-exploitation">Step-by-Step IP Leak Exploitation</h3>
+<ol>
+<li>
+<p><strong>Target Identification</strong><br>
+<strong>Attacker</strong>: Russian FSB (Federal Security Service) cyber surveillance unit<br>
+<strong>Objective</strong>: Deanonymize participants in opposition Telegram channel coordinating protests<br>
+<strong>Target Profile</strong>:</p>
+<ul>
+<li>"Free Russia" Telegram channel with 50,000 subscribers</li>
+<li>Channel discusses anti-government protests, opposition coordination</li>
+<li>Many participants use VPNs to hide identity from government surveillance</li>
+<li>Key target: Channel admin "Alexei" (pseudonymous activist, real identity unknown)</li>
+</ul>
+</li>
+<li>
+<p><strong>Infrastructure Setup</strong><br>
+   Attacker prepares malicious proxy server:
+   </p><div class="highlight"><pre><span></span><code>- Rent VPS from German cloud host: 192.0.2.100 ($5/month)
+- Install MTProto proxy with logging enabled
+- Configure automated alerts for target IPs
+</code></pre></div>
+</li>
+<li>
+<p><strong>Social Engineering</strong><br>
+   Attacker crafts convincing message:
+   </p><div class="highlight"><pre><span></span><code>"⚠️ URGENT: Telegram Blocking Imminent
+
+Roskomnadzor plans to block our channel within 48 hours.
+Configure secure proxy to maintain access:
+
+👉 @FreeRussiaProxy ← Tap to add secure proxy
+
+Stay safe, stay connected. - Admin Team"
+
+Technical: @FreeRussiaProxy disguises proxy link as username
+</code></pre></div>
+</li>
+<li>
+<p><strong>Distribution</strong><br>
+   Message posted to "Free Russia" channel (50,000 subscribers), forwarded to 20+ opposition channels, reaching 200,000+ activists.</p>
+</li>
+<li>
+<p><strong>Victim Click</strong><br>
+   Target activist "Alexei" (using ProtonVPN + existing proxy) sees urgent message from trusted admin, taps "@FreeRussiaProxy" link at 10:17 AM.</p>
+</li>
+<li>
+<p><strong>Automatic IP Leak</strong><br>
+   Telegram bypasses VPN/proxy, connects directly to attacker server:
+   </p><div class="highlight"><pre><span></span><code>- Leaked IP: 203.0.113.50 (Alexei's real MTS mobile carrier IP)
+- Geolocation: Moscow, Russia
+- ISP lookup: Alexei Ivanov, +7-xxx-xxx-xxxx, Tverskaya St.
+- FSB database: Flagged for arrest
+- Time elapsed: 0.5 seconds (before user prompt shown)
+</code></pre></div>
+</li>
+<li>
+<p><strong>Victim Cancels (Too Late)</strong><br>
+   Alexei becomes suspicious, taps [Cancel] on "Add proxy?" prompt. Believes he avoided trap, but IP already leaked 5 seconds earlier.</p>
+</li>
+<li>
+<p><strong>Mass Collection</strong><br>
+   Over 48 hours: 4,532 unique opposition activists deanonymized across Russia. FSB constructs target list for surveillance and arrests.</p>
+</li>
+</ol>
+<hr>
+<h2 id="impact-assessment">Impact Assessment</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Confidentiality</label><label for="__tabbed_1_2">Integrity</label><label for="__tabbed_1_3">Availability</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Massive privacy breach enabling deanonymization and surveillance:</p>
+<ul>
+<li><strong>IP Address Disclosure</strong>: User's real public IP address leaked to attacker, bypassing VPN/proxy protections</li>
+<li><strong>Geolocation Exposure</strong>: IP address reveals country, city, approximate coordinates (block-level precision)</li>
+<li><strong>ISP Identification</strong>: ISP name exposed (enables cross-referencing with subscriber databases in countries with surveillance infrastructure)</li>
+<li><strong>Identity Correlation</strong>: In authoritarian regimes, ISP subscriber records directly link IP → phone number → real name → physical address</li>
+<li><strong>Real-time Location Tracking</strong>: Mobile carrier IPs enable cell tower triangulation (meter-level precision in urban areas)</li>
+<li><strong>Network Fingerprinting</strong>: TCP/IP characteristics reveal device type, OS version, network configuration (enables persistent tracking)</li>
+<li><strong>Social Graph Mapping</strong>: Mass exploitation reveals entire networks of activists, dissidents, journalists (who belongs to which opposition channels)</li>
+<li><strong>Surveillance Database Enrichment</strong>: Leaked IPs integrated into government watchlists (FSB, IRGC, MSS databases)</li>
+</ul>
+<p>Confidentiality breach is <strong>life-threatening</strong> for high-risk users relying on anonymity for physical safety.</p>
+</div>
+<div class="tabbed-block">
+<p>Limited direct integrity impact (primarily privacy violation):</p>
+<ul>
+<li><strong>Trust Degradation</strong>: Users lose confidence in Telegram's privacy promises (platform reputation damaged)</li>
+<li><strong>Behavioral Modification</strong>: Fear of exposure changes communication patterns (self-censorship, reduced activism)</li>
+<li><strong>Platform Manipulation</strong>: Governments exploit vulnerability to undermine trust in encrypted messaging (chilling effect on free speech)</li>
+<li><strong>Social Engineering Amplification</strong>: Vulnerability enables sophisticated social engineering (disguised proxy links facilitate other attacks)</li>
+</ul>
+<p>No direct data modification or message tampering, but <strong>psychological and social integrity compromised</strong> through surveillance fear.</p>
+</div>
+<div class="tabbed-block">
+<p>No direct service disruption:</p>
+<ul>
+<li><strong>User Abandonment</strong>: At-risk users may stop using Telegram (migration to alternative platforms)</li>
+<li><strong>Network Fragmentation</strong>: Opposition movements fracture due to fear of surveillance (reduced coordination capacity)</li>
+<li><strong>Operational Disruption</strong>: Activists spend time implementing workarounds (system-wide VPNs, avoiding links)</li>
+</ul>
+<p>Availability impact primarily affects <strong>user communities</strong> rather than Telegram infrastructure itself.</p>
+</div>
+</div>
+</div>
+<hr>
+<h2 id="mitigation-strategies">Mitigation Strategies</h2>
+<h3 id="end-user-protection">End-User Protection</h3>
+<ul>
+<li>
+<p><strong>Avoid Clicking Unknown Proxy Links</strong>: Primary defense against exploitation:
+  </p><div class="highlight"><pre><span></span><code>Safe Practices:
+- NEVER tap proxy links from unknown sources (even in trusted channels)
+- Verify proxy providers via independent channels (phone call, website, in-person)
+- Manually configure proxies (Settings → Data and Storage → Proxy → Add Proxy)
+- If you must use shared proxy links, do so on DESKTOP (not mobile)
+- Be suspicious of urgency ("Add this proxy NOW to avoid blocking")
+</code></pre></div>
+</li>
+<li>
+<p><strong>System-Wide VPN (Partial Mitigation)</strong>: Force all traffic through VPN:
+  </p><div class="highlight"><pre><span></span><code>Configure Always-On VPN (Android):
+1. Settings → Network &amp; Internet → VPN
+2. Tap gear icon next to your VPN
+3. Enable "Always-on VPN"
+4. Enable "Block connections without VPN"
+
+Result: Even Telegram's direct proxy validation will route through VPN tunnel
+Limitation: Some VPN apps may still allow bypass; test by monitoring traffic
+
+Configure VPN Killswitch (iOS):
+iOS does not have native killswitch; use VPN app with built-in killswitch:
+- ProtonVPN (Advanced → Kill Switch → Enable)
+- NordVPN (Settings → Kill Switch → Enable)
+- Mullvad VPN (Settings → Always require VPN → Enable)
+
+Verification:
+- Disconnect VPN → Telegram should lose internet access
+- If Telegram still works without VPN → Killswitch not effective
+</code></pre></div>
+</li>
+<li>
+<p><strong>Use Telegram Desktop (Safest Option)</strong>: Avoid vulnerable mobile clients:
+  </p><div class="highlight"><pre><span></span><code>Telegram Desktop (Windows/macOS/Linux):
+- Does NOT automatically validate proxy links
+- Does NOT bypass VPN/proxy layers
+- Prompts user BEFORE making any network connection
+- Not affected by this vulnerability
+
+Recommended workflow for activists:
+- Use Telegram Desktop on laptop with VPN for sensitive communications
+- Disable Telegram mobile app notifications (reduces temptation to tap links on phone)
+- If mobile access necessary, use Telegram Web in mobile browser (not affected)
+</code></pre></div>
+</li>
+<li>
+<p><strong>Link Inspection Before Clicking</strong>: Verify link destinations:
+  </p><div class="highlight"><pre><span></span><code>How to inspect links on mobile:
+1. Long-press link in Telegram (don't tap)
+2. Select "Copy Link" (not "Open")
+3. Paste into notes app to view full URL
+4. Check if URL contains "t.me/proxy?..." (proxy link)
+5. If suspicious, DO NOT open—report to channel admin
+
+Red Flags:
+- Links disguised as usernames (@someone → actually proxy link)
+- Unexpected proxy links in non-technical channels
+- Urgent messaging ("Add proxy NOW")
+- Links from unknown/compromised accounts
+</code></pre></div>
+</li>
+</ul>
+<h3 id="device-configuration">Device Configuration</h3>
+<ul>
+<li>
+<p><strong>Disable Automatic Link Handling</strong>: Prevent automatic actions:
+  </p><div class="highlight"><pre><span></span><code>Android - Disable Telegram as Default Handler:
+1. Settings → Apps → Default Apps → Opening Links
+2. Tap Telegram → Disable "Open supported links"
+3. Result: Telegram links open in browser first (gives inspection opportunity)
+
+iOS - Disable Universal Links:
+1. Settings → Telegram → Siri &amp; Search
+2. Disable "Use with Ask Siri"
+3. Limitation: iOS still auto-opens t.me links in Telegram (Apple limitation)
+
+Alternative: Use Telegram Web (browser version) instead of app
+</code></pre></div>
+</li>
+<li>
+<p><strong>Network Monitoring Tools</strong>: Detect bypass attempts:
+  </p><div class="highlight"><pre><span></span><code>Install Network Monitor Apps:
+
+Android:
+- NetGuard (firewall + network monitor)
+- RethinkDNS (DNS + firewall + network logs)
+- AFWall+ (iptables firewall, requires root)
+
+Configuration:
+1. Install RethinkDNS
+2. Configure firewall to block Telegram's direct connections
+3. Allow Telegram only through VPN interface
+4. Monitor logs for bypass attempts
+
+iOS:
+- Lockdown Privacy (network monitor + firewall)
+- Guardian Firewall (VPN-based filtering)
+
+Limitation: iOS sandboxing limits firewall capabilities (less effective than Android)
+</code></pre></div>
+</li>
+</ul>
+<h3 id="telegram-specific-settings">Telegram-Specific Settings</h3>
+<ul>
+<li>
+<p><strong>Disable Proxy Feature Entirely</strong> (if not needed):
+  </p><div class="highlight"><pre><span></span><code>If you don't live in censored region and don't need proxies:
+
+1. Settings → Data and Storage → Proxy Settings
+2. Disable all configured proxies
+3. Remove proxy list (prevents accidental addition)
+
+Note: Does NOT prevent vulnerability (link still triggers validation)
+Purpose: Reduces attack surface (no reason to configure proxies)
+</code></pre></div>
+</li>
+<li>
+<p><strong>Enable Link Preview Warnings</strong> (when Telegram implements):
+  </p><div class="highlight"><pre><span></span><code>Telegram's Planned Mitigation (not yet released):
+- Warning dialog before proxy validation: "This link will connect to proxy server
+  and may reveal your IP address. Continue?"
+- User must explicitly confirm before test connection occurs
+
+When available:
+Settings → Privacy and Security → Link Warnings → Enable "Warn before proxy connections"
+
+Status: Announced by Telegram, no release date provided (as of Jan 2026)
+</code></pre></div>
+</li>
+</ul>
+<h3 id="technical-community-response">Technical Community Response</h3>
+<ul>
+<li>
+<p><strong>Security Researchers</strong>: Pressure Telegram for fixes:
+  </p><div class="highlight"><pre><span></span><code>Advocacy Actions:
+- Public disclosure (increase pressure on Telegram to fix)
+- CVE assignment (formalize vulnerability tracking)
+- Media coverage (raise awareness among at-risk users)
+- Direct communication with Telegram security team (push for rapid patch)
+
+Proposed Technical Fix:
+- Proxy validation should ALWAYS respect active VPN/proxy/Tor
+- OR require explicit user consent BEFORE any network connection
+- OR perform validation through Telegram's servers (not direct connection)
+</code></pre></div>
+</li>
+<li>
+<p><strong>VPN/Privacy Tool Developers</strong>: Enhance protections:
+  </p><div class="highlight"><pre><span></span><code>Recommended Features:
+
+1. Telegram-Specific Protection Mode:
+   - VPN apps detect Telegram traffic attempting to bypass VPN tunnel
+   - Block and alert user: "Telegram attempted to connect outside VPN"
+
+2. Application Firewall:
+   - Whitelist: Only Telegram connections to known Telegram server IPs
+   - Block: Any Telegram connections to arbitrary IPs (likely proxy validation)
+
+3. User Alerts:
+   - Real-time notification when suspicious network behavior detected
+</code></pre></div>
+</li>
+</ul>
+<hr>
+<h2 id="resources">Resources</h2>
+<div class="admonition info">
+<p class="admonition-title">Vulnerability Disclosure &amp; Analysis</p>
+<ul>
+<li><a href="https://www.bleepingcomputer.com/news/security/hidden-telegram-proxy-links-can-reveal-your-ip-address-in-one-click/amp/">Hidden Telegram Proxy Links Can Reveal Your IP Address in One Click</a></li>
+<li><a href="https://cybernews.com/security/telegram-one-click-vulnerability-leaks-ip-address/">Telegram leaks IP in one click, researchers warn​ | Cybernews</a></li>
+<li><a href="https://cyberinsider.com/telegram-1click-proxy-links-can-expose-users-real-ip-addresses/">Telegram ‘1-Click’ proxy links can expose users’ real IP addresses</a></li>
+<li><a href="https://cybersecuritynews.com/one-click-telegram-flaw/">Telegram Exposes Real Users IP Addresses, Bypassing Proxies on Android and iOS in 1-click</a></li>
+</ul>
+</div>
+<hr>
+<p><em>Last Updated: January 13, 2026</em></p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.code.copy", "content.code.annotate", "navigation.tabs", "navigation.tracking", "content.math", "navigation.tabs.sticky"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
