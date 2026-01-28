@@ -227,3 +227,8 @@ nav:
           - "Xiaomi Redmi Buds Bluetooth RFCOMM Vulnerabilities": 2026/Week4/buds.md
           - "CodeBreach – AWS CodeBuild Misconfiguration Vulnerability": 2026/Week4/codebreach.md
           - "Multi-Stage Phishing Campaign Deploying Amnesia RAT and Hakuna Matata Ransomware": 2026/Week4/amnesia.md
+          - "Google Protocol Buffers JSON Parsing Denial-of-Service Vulnerability": 2026/Week4/protobuf.md
+          - "Microsoft Office Security Feature Bypass Vulnerability": 2026/Week4/office.md
+          - "WinRAR Path Traversal Vulnerability": 2026/Week4/winrar.md
+          - "Critical Grist-Core Vulnerability Allows RCE Attacks via Spreadsheet Formulas": 2026/Week4/grist.md
+          - "vm2 Sandbox Escape Vulnerability": 2026/Week4/vm2.md

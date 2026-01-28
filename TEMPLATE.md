@@ -20,6 +20,7 @@ Your incident markdown files follow this consistent structure:
 |---------------|-------------|
 | **CVE ID** | CVE-XXXX-XXXXX |
 | **Vulnerability Type** | [Type with CWE if applicable] |
+| **CVSS Score**| [0.0 (High/Critical)] |
 | **Attack Vector** | [Network/Local/Physical] |
 | **Authentication** | [None/Low/High] |
 | **Complexity** | [Low/Medium/High] |
@@ -58,22 +59,22 @@ Your incident markdown files follow this consistent structure:
 
 ## Mitigation Strategies
 
-### 🔄 Immediate Actions
+### Immediate Actions
 - [Action 1]
 - [Action 2]
 - [Action 3]
 
-### 🛡️ Short-term Measures
+### Short-term Measures
 - [Measure 1]
 - [Measure 2]
 - [Measure 3]
 
-### 🔍 Monitoring & Detection
+### Monitoring & Detection
 - [Monitoring step 1]
 - [Monitoring step 2]
 - [Monitoring step 3]
 
-### 🔒 Long-term Solutions
+### Long-term Solutions
 - [Solution 1]
 - [Solution 2]
 - [Solution 3]
