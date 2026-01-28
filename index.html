@@ -5254,6 +5254,146 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2026/Week4/protobuf/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Google Protocol Buffers JSON Parsing Denial-of-Service Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2026/Week4/office/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Microsoft Office Security Feature Bypass Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2026/Week4/winrar/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WinRAR Path Traversal Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2026/Week4/grist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Critical Grist-Core Vulnerability Allows RCE Attacks via Spreadsheet Formulas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2026/Week4/vm2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    vm2 Sandbox Escape Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -5328,36 +5468,44 @@
 <div class="grid cards">
 <ul>
 <li>
-<p><img alt="gmail" src="2026/Week4/images/gmail.png"></p>
-<p><strong>48 Million Gmail Usernames And Passwords Leaked Online</strong></p>
-<p><strong class="cve-chip">Data Breach</strong> <strong class="cve-chip">Credential Exposure</strong> <strong class="cve-chip">Infostealer Campaign</strong> <strong class="cve-chip">149M Records</strong> <strong class="cve-chip">No Encryption</strong></p>
-<p>A massive dataset of 149,404,754 unique usernames and passwords was discovered completely unprotected on a cloud server with no authentication or encryption. The leaked credentials include an estimated 48 million Gmail accounts plus millions from Facebook, Instagram, Netflix, TikTok, and other platforms. </p>
-<p>The dataset appears to be aggregated from infostealer malware campaigns (keylogging and password-stealing software) that collected credentials over extended periods. The repository lacked any access controls, remaining publicly accessible to anyone with the direct link, enabling widespread credential stuffing attacks and identity theft.</p>
-<p><a href="2026/Week4/gmail/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
+<p><img alt="protobuf" src="2026/Week4/images/protobuf.png"></p>
+<p><strong>Google Protocol Buffers JSON Parsing Denial-of-Service Vulnerability</strong></p>
+<p><strong class="cve-chip">CVE-2026-0994</strong> <strong class="cve-chip">Denial-of-Service</strong> <strong class="cve-chip">JSON Parsing</strong> <strong class="cve-chip">Python Protobuf</strong> <strong class="cve-chip">Recursion Bypass</strong></p>
+<p>A high-severity vulnerability in Google Protocol Buffers (protobuf) Python implementation allows attackers to crash applications by sending specially crafted JSON payloads. By abusing deeply nested protobuf Any message types, attackers can bypass built-in recursion limits, leading to uncontrolled recursion and service termination.</p>
+<p>The flaw exists in the json_format.ParseDict() function where nested Any messages bypass the recursion counter, causing stack exhaustion and RecursionError. No authentication is required, enabling remote exploitation and persistent denial-of-service attacks against any service parsing untrusted JSON with Python protobuf.</p>
+<p><a href="2026/Week4/protobuf/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
 </li>
 <li>
-<p><img alt="buds" src="2026/Week4/images/buds.png"></p>
-<p><strong>Xiaomi Redmi Buds Bluetooth RFCOMM Vulnerabilities</strong></p>
-<p><strong class="cve-chip">CVE-2025-13834</strong> <strong class="cve-chip">CVE-2025-13328</strong> <strong class="cve-chip">Bluetooth Memory Disclosure</strong> <strong class="cve-chip">Bluetooth DoS</strong> <strong class="cve-chip">Proximity Exploit</strong></p>
-<p>Critical flaws in the proprietary RFCOMM implementation of Xiaomi Redmi Buds allow nearby, unauthenticated attackers to leak device memory (Heartbleed-style) and force persistent denial-of-service without pairing. </p>
-<p>Malformed RFCOMM messages can expose real-time call data (e.g., phone numbers) or push the earbuds into a broken state until the attack stops.</p>
-<p><a href="2026/Week4/buds/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
+<p><img alt="office" src="2026/Week4/images/office.png"></p>
+<p><strong>Microsoft Office Security Feature Bypass Vulnerability</strong></p>
+<p><strong class="cve-chip">CVE-2026-21509</strong> <strong class="cve-chip">Security Feature Bypass</strong> <strong class="cve-chip">COM/OLE Processing</strong> <strong class="cve-chip">User Interaction</strong> <strong class="cve-chip">Zero-Day</strong></p>
+<p>A critical security feature bypass vulnerability in Microsoft Office allows attackers to circumvent built-in security controls designed to block dangerous COM/OLE objects embedded in Office files. The flaw affects Office 2016, 2019, LTSC 2021/2024, and Microsoft 365 Apps for Enterprise.</p>
+<p>Exploitation requires user interaction to open a malicious Office document. Once opened, the vulnerability allows attackers to bypass Office security mitigations, potentially leading to unauthorized code execution, malware deployment, data theft, or system compromise. The vulnerability is actively exploited in the wild.</p>
+<p><a href="2026/Week4/office/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
 </li>
 <li>
-<p><img alt="codebreach" src="2026/Week4/images/codebreach.png"></p>
-<p><strong>CodeBreach – AWS CodeBuild Misconfiguration Vulnerability</strong></p>
-<p><strong class="cve-chip">AWS Misconfiguration</strong> <strong class="cve-chip">Supply Chain Vulnerability</strong> <strong class="cve-chip">Regex Filter Bypass</strong> <strong class="cve-chip">Credential Theft</strong> <strong class="cve-chip">GitHub Hijacking</strong></p>
-<p>A critical misconfiguration in AWS CodeBuild webhook filters allowed unauthenticated actors to trigger build jobs and access privileged credentials. Improperly anchored regex patterns in ACTOR_ID filters accepted any ID containing an approved ID as a substring, enabling attackers to create GitHub accounts with matching numeric IDs and bypass authentication. </p>
-<p>This could have led to hijacking AWS-managed repositories, injecting malicious code into critical supply chain dependencies, and compromising countless users relying on affected packages globally.</p>
-<p><a href="2026/Week4/codebreach/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
+<p><img alt="winrar" src="2026/Week4/images/winrar.png"></p>
+<p><strong>WinRAR Path Traversal Vulnerability</strong></p>
+<p><strong class="cve-chip">CVE-2025-8088</strong> <strong class="cve-chip">Path Traversal</strong> <strong class="cve-chip">Arbitrary Code Execution</strong> <strong class="cve-chip">Active Exploitation</strong> <strong class="cve-chip">State-Sponsored</strong></p>
+<p>A critical path traversal flaw in WinRAR allows attackers to craft malicious RAR archives that extract executable payloads to arbitrary locations on the victim's file system, such as Windows Startup folders. The vulnerability affects WinRAR versions up to 7.12 and is actively exploited by both state-aligned threat actors and cybercriminals.</p>
+<p>Exploitation occurs through spear-phishing campaigns delivering crafted RAR files that abuse NTFS Alternate Data Streams to bypass extraction boundaries. Once opened, malware is automatically placed in startup directories and executes without further user interaction, establishing persistent backdoor access.</p>
+<p><a href="2026/Week4/winrar/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
 </li>
 <li>
-<p><img alt="amnesia" src="2026/Week4/images/amnesia.png"></p>
-<p><strong>Multi-Stage Phishing Campaign Deploying Amnesia RAT and Hakuna Matata Ransomware</strong></p>
-<p><strong class="cve-chip">Phishing Campaign</strong> <strong class="cve-chip">Remote Access Trojan</strong> <strong class="cve-chip">Ransomware</strong> <strong class="cve-chip">Cloud Abuse</strong> <strong class="cve-chip">Defender Bypass</strong> <strong class="cve-chip">Multi-Stage</strong></p>
-<p>A targeted phishing campaign using social engineering and multi-stage malware to compromise Windows systems and deploy both Amnesia RAT (remote access trojan) and Hakuna Matata ransomware. The attack abuses cloud hosting services (GitHub, Dropbox) to host malicious scripts and binaries, and uses the defendnot tool to disable Microsoft Defender. </p>
-<p>Initial delivery occurs via phishing emails with compressed archives and malicious Windows shortcuts using double extensions. The campaign features staged delivery through PowerShell scripts and obfuscated Visual Basic, security tool disablement, reconnaissance via Telegram bots, and dual payload deployment enabling remote control, credential theft, file encryption, and cryptocurrency transaction manipulation.</p>
-<p><a href="2026/Week4/amnesia/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
+<p><img alt="grist" src="2026/Week4/images/grist.png"></p>
+<p><strong>Critical Grist-Core Vulnerability Allows RCE Attacks via Spreadsheet Formulas</strong></p>
+<p><strong class="cve-chip">CVE-2026-24002</strong> <strong class="cve-chip">Remote Code Execution</strong> <strong class="cve-chip">Sandbox Escape</strong> <strong class="cve-chip">Cellbreak</strong> <strong class="cve-chip">Pyodide</strong></p>
+<p>A critical vulnerability in Grist-Core allows attackers to achieve remote code execution through malicious Python formulas in spreadsheets. The "Cellbreak" flaw enables crafted formulas to escape the Pyodide WebAssembly sandbox and run arbitrary OS commands or host JavaScript, collapsing the boundary between spreadsheet logic and server execution.</p>
+<p>The vulnerability stems from improper sandbox isolation allowing class hierarchy traversal and access to dangerous modules like ctypes. Once escaped, attackers gain complete control over the server process, enabling data theft, credential extraction, and lateral movement within networks.</p>
+<p><a href="2026/Week4/grist/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
+</li>
+<li>
+<p><img alt="vm2" src="2026/Week4/images/vm2.png"></p>
+<p><strong>vm2 Sandbox Escape Vulnerability</strong></p>
+<p><strong class="cve-chip">CVE-2026-22709</strong> <strong class="cve-chip">Sandbox Escape</strong> <strong class="cve-chip">Arbitrary Code Execution</strong> <strong class="cve-chip">Node.js</strong> <strong class="cve-chip">Promise Bypass</strong></p>
+<p>A critical sandbox escape vulnerability in vm2, a popular Node.js library for executing JavaScript in isolated contexts, allows attackers to bypass sandbox restrictions and execute arbitrary code on the host system. The flaw stems from incomplete sanitization of Promise callbacks where globalPromise.prototype.then and catch are not properly sanitized.</p>
+<p>Attackers can leverage async functions that return globalPromise objects to attach malicious callbacks, access native constructors, and invoke modules like child_process to execute arbitrary code with full Node.js process privileges. This affects CI/CD pipelines, code execution services, plugin systems, and developer tooling.</p>
+<p><a href="2026/Week4/vm2/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
 </li>
 </ul>
 </div></div>
