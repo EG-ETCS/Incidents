@@ -232,3 +232,8 @@ nav:
           - "WinRAR Path Traversal Vulnerability": 2026/Week4/winrar.md
           - "Critical Grist-Core Vulnerability Allows RCE Attacks via Spreadsheet Formulas": 2026/Week4/grist.md
           - "vm2 Sandbox Escape Vulnerability": 2026/Week4/vm2.md
+      - "February": 
+        - "week5": 
+          - "RedKitten — Iran-Linked Cyber-Espionage Campaign": 2026/Week5/redkitten.md
+          - "eScan Antivirus Update Server Compromise": 2026/Week5/escan.md
+          - "Clawdbot (OpenClaw) 1-Click Remote Code Execution Vulnerability": 2026/Week5/clawdbot.md
