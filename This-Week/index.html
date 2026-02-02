@@ -5412,6 +5412,206 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_2" id="__nav_4_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    February
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    February
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3_2_1" id="__nav_4_3_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    week5
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_3_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    week5
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026/Week5/redkitten/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RedKitten — Iran-Linked Cyber-Espionage Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026/Week5/escan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    eScan Antivirus Update Server Compromise
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026/Week5/clawdbot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clawdbot (OpenClaw) 1-Click Remote Code Execution Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -5470,92 +5670,28 @@
 <div class="grid cards">
 <ul>
 <li>
-<p><img alt="protobuf" src="../2026/Week4/images/protobuf.png"></p>
-<p><strong>Google Protocol Buffers JSON Parsing Denial-of-Service Vulnerability</strong></p>
-<p><strong class="cve-chip">CVE-2026-0994</strong> <strong class="cve-chip">Denial-of-Service</strong> <strong class="cve-chip">JSON Parsing</strong> <strong class="cve-chip">Python Protobuf</strong> <strong class="cve-chip">Recursion Bypass</strong></p>
-<p>A high-severity vulnerability in Google Protocol Buffers (protobuf) Python implementation allows attackers to crash applications by sending specially crafted JSON payloads. By abusing deeply nested protobuf Any message types, attackers can bypass built-in recursion limits, leading to uncontrolled recursion and service termination.</p>
-<p>The flaw exists in the json_format.ParseDict() function where nested Any messages bypass the recursion counter, causing stack exhaustion and RecursionError. No authentication is required, enabling remote exploitation and persistent denial-of-service attacks against any service parsing untrusted JSON with Python protobuf.</p>
-<p><a href="../2026/Week4/protobuf/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
+<p><img alt="redkitten" src="../2026/Week5/images/redkitten.png"></p>
+<p><strong>RedKitten — Iran-Linked Cyber-Espionage Campaign</strong></p>
+<p><strong class="cve-chip">Cyber-Espionage</strong> <strong class="cve-chip">Macro Malware</strong> <strong class="cve-chip">SloppyMIO Backdoor</strong> <strong class="cve-chip">Telegram C2</strong> <strong class="cve-chip">Spear-Phishing</strong></p>
+<p>RedKitten uses weaponized Excel spreadsheets with malicious macros to install the SloppyMIO backdoor. The files are crafted as sensitive data about protesters or missing persons, pressuring victims to enable macros and triggering infection via AppDomainManager injection.</p>
+<p>The malware retrieves configuration hidden in images from GitHub and Google Drive, then uses the Telegram Bot API for C2. Operators can run commands, exfiltrate files, establish persistence, and target civil society organizations.</p>
+<p><a href="../2026/Week5/redkitten/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
 </li>
 <li>
-<p><img alt="office" src="../2026/Week4/images/office.png"></p>
-<p><strong>Microsoft Office Security Feature Bypass Vulnerability</strong></p>
-<p><strong class="cve-chip">CVE-2026-21509</strong> <strong class="cve-chip">Security Feature Bypass</strong> <strong class="cve-chip">COM/OLE Processing</strong> <strong class="cve-chip">User Interaction</strong> <strong class="cve-chip">Zero-Day</strong></p>
-<p>A critical security feature bypass vulnerability in Microsoft Office allows attackers to circumvent built-in security controls designed to block dangerous COM/OLE objects embedded in Office files. The flaw affects Office 2016, 2019, LTSC 2021/2024, and Microsoft 365 Apps for Enterprise.</p>
-<p>Exploitation requires user interaction to open a malicious Office document. Once opened, the vulnerability allows attackers to bypass Office security mitigations, potentially leading to unauthorized code execution, malware deployment, data theft, or system compromise. The vulnerability is actively exploited in the wild.</p>
-<p><a href="../2026/Week4/office/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
+<p><img alt="escan" src="../2026/Week5/images/escan.png"></p>
+<p><strong>eScan Antivirus Update Server Compromise</strong></p>
+<p><strong class="cve-chip">Supply Chain Compromise</strong> <strong class="cve-chip">Malicious Update</strong> <strong class="cve-chip">Persistence</strong> <strong class="cve-chip">AMSI Bypass</strong> <strong class="cve-chip">PowerShell</strong></p>
+<p>Attackers gained access to a regional eScan update server and inserted a trojanized update into the official distribution path. The malicious update replaced a legitimate component (Reload.exe) and executed Base64-encoded PowerShell payloads to disable future updates and establish persistence.</p>
+<p>A downloader contacted attacker infrastructure for additional payloads, while HOSTS and registry modifications interfered with normal update mechanisms. Affected systems required manual remediation after the Jan 20, 2026 update window.</p>
+<p><a href="../2026/Week5/escan/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
 </li>
 <li>
-<p><img alt="winrar" src="../2026/Week4/images/winrar.png"></p>
-<p><strong>WinRAR Path Traversal Vulnerability</strong></p>
-<p><strong class="cve-chip">CVE-2025-8088</strong> <strong class="cve-chip">Path Traversal</strong> <strong class="cve-chip">Arbitrary Code Execution</strong> <strong class="cve-chip">Active Exploitation</strong> <strong class="cve-chip">State-Sponsored</strong></p>
-<p>A critical path traversal flaw in WinRAR allows attackers to craft malicious RAR archives that extract executable payloads to arbitrary locations on the victim's file system, such as Windows Startup folders. The vulnerability affects WinRAR versions up to 7.12 and is actively exploited by both state-aligned threat actors and cybercriminals.</p>
-<p>Exploitation occurs through spear-phishing campaigns delivering crafted RAR files that abuse NTFS Alternate Data Streams to bypass extraction boundaries. Once opened, malware is automatically placed in startup directories and executes without further user interaction, establishing persistent backdoor access.</p>
-<p><a href="../2026/Week4/winrar/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
-</li>
-<li>
-<p><img alt="grist" src="../2026/Week4/images/grist.png"></p>
-<p><strong>Critical Grist-Core Vulnerability Allows RCE Attacks via Spreadsheet Formulas</strong></p>
-<p><strong class="cve-chip">CVE-2026-24002</strong> <strong class="cve-chip">Remote Code Execution</strong> <strong class="cve-chip">Sandbox Escape</strong> <strong class="cve-chip">Cellbreak</strong> <strong class="cve-chip">Pyodide</strong></p>
-<p>A critical vulnerability in Grist-Core allows attackers to achieve remote code execution through malicious Python formulas in spreadsheets. The "Cellbreak" flaw enables crafted formulas to escape the Pyodide WebAssembly sandbox and run arbitrary OS commands or host JavaScript, collapsing the boundary between spreadsheet logic and server execution.</p>
-<p>The vulnerability stems from improper sandbox isolation allowing class hierarchy traversal and access to dangerous modules like ctypes. Once escaped, attackers gain complete control over the server process, enabling data theft, credential extraction, and lateral movement within networks.</p>
-<p><a href="../2026/Week4/grist/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
-</li>
-<li>
-<p><img alt="vm2" src="../2026/Week4/images/vm2.png"></p>
-<p><strong>vm2 Sandbox Escape Vulnerability</strong></p>
-<p><strong class="cve-chip">CVE-2026-22709</strong> <strong class="cve-chip">Sandbox Escape</strong> <strong class="cve-chip">Arbitrary Code Execution</strong> <strong class="cve-chip">Node.js</strong> <strong class="cve-chip">Promise Bypass</strong></p>
-<p>A critical sandbox escape vulnerability in vm2, a popular Node.js library for executing JavaScript in isolated contexts, allows attackers to bypass sandbox restrictions and execute arbitrary code on the host system. The flaw stems from incomplete sanitization of Promise callbacks where globalPromise.prototype.then and catch are not properly sanitized.</p>
-<p>Attackers can leverage async functions that return globalPromise objects to attach malicious callbacks, access native constructors, and invoke modules like child_process to execute arbitrary code with full Node.js process privileges. This affects CI/CD pipelines, code execution services, plugin systems, and developer tooling.</p>
-<p><a href="../2026/Week4/vm2/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
-</li>
-<li>
-<p><img alt="gmail" src="../2026/Week4/images/gmail.png"></p>
-<p><strong>48 Million Gmail Usernames And Passwords Leaked Online</strong></p>
-<p><strong class="cve-chip">Data Breach</strong> <strong class="cve-chip">Credential Exposure</strong> <strong class="cve-chip">Infostealer Campaign</strong> <strong class="cve-chip">149M Records</strong> <strong class="cve-chip">No Encryption</strong></p>
-<p>A massive dataset of 149,404,754 unique usernames and passwords was discovered completely unprotected on a cloud server with no authentication or encryption. The leaked credentials include an estimated 48 million Gmail accounts plus millions from Facebook, Instagram, Netflix, TikTok, and other platforms. </p>
-<p>The dataset appears to be aggregated from infostealer malware campaigns (keylogging and password-stealing software) that collected credentials over extended periods. The repository lacked any access controls, remaining publicly accessible to anyone with the direct link, enabling widespread credential stuffing attacks and identity theft.</p>
-<p><a href="../2026/Week4/gmail/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
-</li>
-<li>
-<p><img alt="buds" src="../2026/Week4/images/buds.png"></p>
-<p><strong>Xiaomi Redmi Buds Bluetooth RFCOMM Vulnerabilities</strong></p>
-<p><strong class="cve-chip">CVE-2025-13834</strong> <strong class="cve-chip">CVE-2025-13328</strong> <strong class="cve-chip">Bluetooth Memory Disclosure</strong> <strong class="cve-chip">Bluetooth DoS</strong> <strong class="cve-chip">Proximity Exploit</strong></p>
-<p>Critical flaws in the proprietary RFCOMM implementation of Xiaomi Redmi Buds allow nearby, unauthenticated attackers to leak device memory (Heartbleed-style) and force persistent denial-of-service without pairing. </p>
-<p>Malformed RFCOMM messages can expose real-time call data (e.g., phone numbers) or push the earbuds into a broken state until the attack stops.</p>
-<p><a href="../2026/Week4/buds/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
-</li>
-<li>
-<p><img alt="codebreach" src="../2026/Week4/images/codebreach.png"></p>
-<p><strong>CodeBreach – AWS CodeBuild Misconfiguration Vulnerability</strong></p>
-<p><strong class="cve-chip">AWS Misconfiguration</strong> <strong class="cve-chip">Supply Chain Vulnerability</strong> <strong class="cve-chip">Regex Filter Bypass</strong> <strong class="cve-chip">Credential Theft</strong> <strong class="cve-chip">GitHub Hijacking</strong></p>
-<p>A critical misconfiguration in AWS CodeBuild webhook filters allowed unauthenticated actors to trigger build jobs and access privileged credentials. Improperly anchored regex patterns in ACTOR_ID filters accepted any ID containing an approved ID as a substring, enabling attackers to create GitHub accounts with matching numeric IDs and bypass authentication. </p>
-<p>This could have led to hijacking AWS-managed repositories, injecting malicious code into critical supply chain dependencies, and compromising countless users relying on affected packages globally.</p>
-<p><a href="../2026/Week4/codebreach/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
-</li>
-<li>
-<p><img alt="amnesia" src="../2026/Week4/images/amnesia.png"></p>
-<p><strong>Multi-Stage Phishing Campaign Deploying Amnesia RAT and Hakuna Matata Ransomware</strong></p>
-<p><strong class="cve-chip">Phishing Campaign</strong> <strong class="cve-chip">Remote Access Trojan</strong> <strong class="cve-chip">Ransomware</strong> <strong class="cve-chip">Cloud Abuse</strong> <strong class="cve-chip">Defender Bypass</strong> <strong class="cve-chip">Multi-Stage</strong></p>
-<p>A targeted phishing campaign using social engineering and multi-stage malware to compromise Windows systems and deploy both Amnesia RAT (remote access trojan) and Hakuna Matata ransomware. The attack abuses cloud hosting services (GitHub, Dropbox) to host malicious scripts and binaries, and uses the defendnot tool to disable Microsoft Defender. </p>
-<p>Initial delivery occurs via phishing emails with compressed archives and malicious Windows shortcuts using double extensions. The campaign features staged delivery through PowerShell scripts and obfuscated Visual Basic, security tool disablement, reconnaissance via Telegram bots, and dual payload deployment enabling remote control, credential theft, file encryption, and cryptocurrency transaction manipulation.</p>
-<p><a href="../2026/Week4/amnesia/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
-</li>
-<li>
-<p><img alt="gnu" src="../2026/Week4/images/gnu.png"></p>
-<p><strong>GNU InetUtils telnetd Remote Authentication Bypass</strong></p>
-<p><strong class="cve-chip">CVE-2026-24061</strong> <strong class="cve-chip">Remote Root Access</strong> <strong class="cve-chip">Authentication Bypass</strong> <strong class="cve-chip">Legacy Systems</strong> <strong class="cve-chip">SCADA Threat</strong></p>
-<p>A critical vulnerability in GNU InetUtils telnetd allows unauthenticated attackers to bypass authentication and gain immediate root access by exploiting improper handling of the USER environment variable. The flaw affects versions 1.9.3 through 2.7 and is particularly dangerous on legacy Unix servers, embedded devices, and industrial SCADA systems.</p>
-<p>Despite Telnet's known security weaknesses, telnetd remains deployed in manufacturing, energy, and healthcare sectors for compatibility with vintage software. Attackers can simply connect with <code>USER="-f root"</code> to bypass login, granting shell access without passwords. Active exploitation emerged within hours of disclosure, with mass scanning and automated exploitation frameworks targeting port 23 globally.</p>
-<p><a href="../2026/Week4/gnu/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
-</li>
-<li>
-<p><img alt="dynowiper" src="../2026/Week4/images/dynowiper.png"></p>
-<p><strong>DynoWiper Cyberattack on Polish Energy Systems</strong></p>
-<p><strong class="cve-chip">Sandworm (APT44)</strong> <strong class="cve-chip">Wiper Malware</strong> <strong class="cve-chip">Critical Infrastructure</strong> <strong class="cve-chip">State-Sponsored</strong> <strong class="cve-chip">Supply Chain</strong></p>
-<p>A sophisticated destructive cyberattack attributed to Sandworm (Russian military GRU Unit 74455) targeted Polish energy infrastructure with newly identified wiper malware (DynoWiper). The operation aimed to disrupt electricity and heating services to 500,000+ residents during winter months through supply chain compromise of SCADA monitoring software.</p>
-<p>Attackers spent 28 days conducting reconnaissance and staging DynoWiper on 46 systems across power substations and control centers. Polish cybersecurity authorities detected the threat before execution and prevented the synchronized wiper attack that would have rendered critical transmission infrastructure inoperable.</p>
-<p><a href="../2026/Week4/dynowiper/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
+<p><img alt="clawdbot" src="../2026/Week5/images/clawdbot.png"></p>
+<p><strong>Clawdbot (OpenClaw) 1-Click Remote Code Execution Vulnerability</strong></p>
+<p><strong class="cve-chip">CVE-2026-25253</strong> <strong class="cve-chip">Remote Code Execution</strong> <strong class="cve-chip">1-Click Exploit</strong> <strong class="cve-chip">Token Hijacking</strong> <strong class="cve-chip">WebSocket</strong></p>
+<p>A critical vulnerability in Clawdbot AI assistant allows attackers to achieve remote code execution with a single user click. By crafting a malicious URL with a rogue gatewayUrl parameter, attackers can hijack authentication tokens through insecure WebSocket handling when a logged-in user clicks the link.</p>
+<p>The stolen token grants full administrative access to the Clawdbot instance, enabling arbitrary command execution on the host system. The flaw affects systems believed to be "localhost-only" due to weak origin checks and implicit trust of local connections.</p>
+<p><a href="../2026/Week5/clawdbot/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
 </li>
 </ul>
 </div></div>
