@@ -5596,6 +5596,90 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026/Week5/apt28/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Russian APT28 Exploit Zero-Day Hours After Microsoft Discloses Office Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026/Week5/ghostchat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GhostChat – Android Spyware Disguised as Chat/Dating Application
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026/Week5/fortinet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Over 3.28 Million Fortinet Devices Exposed via FortiCloud SSO Authentication Bypass
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -5669,6 +5753,30 @@
 <div><h1 id="this-weeks-security-incidents">This Week's Security Incidents</h1>
 <div class="grid cards">
 <ul>
+<li>
+<p><img alt="apt28" src="../2026/Week5/images/apt28.png"></p>
+<p><strong>Russian APT28 Exploit Zero-Day Hours After Microsoft Discloses Office Vulnerability</strong></p>
+<p><strong class="cve-chip">CVE-2026-21509</strong> <strong class="cve-chip">APT28 (Fancy Bear)</strong> <strong class="cve-chip">Zero-Day Exploitation</strong> <strong class="cve-chip">State-Sponsored</strong> <strong class="cve-chip">COVENANT</strong></p>
+<p>Russian state-sponsored APT28 began exploiting CVE-2026-21509, a Microsoft Office security feature bypass, within hours of disclosure. The threat actor targets Ukraine and EU organizations using weaponized documents that bypass OLE mitigations through a sophisticated multi-stage attack chain.</p>
+<p>The exploit connects via WebDAV to download malicious payloads, establishes persistence through COM hijacking, and deploys the COVENANT framework for command-and-control over legitimate cloud infrastructure. This rapid exploitation demonstrates APT28's advanced capabilities and focus on strategic espionage targets.</p>
+<p><a href="../2026/Week5/apt28/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
+</li>
+<li>
+<p><img alt="ghostchat" src="../2026/Week5/images/ghostchat.png"></p>
+<p><strong>GhostChat – Android Spyware Disguised as Chat/Dating Application</strong></p>
+<p><strong class="cve-chip">Android Spyware</strong> <strong class="cve-chip">Sideloaded APK</strong> <strong class="cve-chip">Data Exfiltration</strong> <strong class="cve-chip">Social Engineering</strong> <strong class="cve-chip">WhatsApp</strong></p>
+<p>GhostChat is malicious Android spyware masquerading as a dating application, distributed via sideloaded APKs outside official app stores. The malware displays fake female profiles to lure victims while silently collecting contacts, images, PDFs, and Office documents in the background.</p>
+<p>The spyware establishes persistence through boot receivers and foreground services, continuously monitoring for new content. Victims are redirected to attacker-controlled WhatsApp numbers for additional social engineering while their sensitive data is exfiltrated via HTTPS to command-and-control servers.</p>
+<p><a href="../2026/Week5/ghostchat/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
+</li>
+<li>
+<p><img alt="fortinet" src="../2026/Week5/images/fortinet.png"></p>
+<p><strong>Over 3.28 Million Fortinet Devices Exposed via FortiCloud SSO Authentication Bypass</strong></p>
+<p><strong class="cve-chip">CVE-2026-24858</strong> <strong class="cve-chip">Authentication Bypass</strong> <strong class="cve-chip">Active Exploitation</strong> <strong class="cve-chip">3.28M Devices</strong> <strong class="cve-chip">FortiCloud SSO</strong></p>
+<p>A critical authentication bypass flaw in FortiCloud Single Sign-On affects over 3.28 million internet-exposed Fortinet devices. Attackers with valid FortiCloud credentials can bypass authentication and gain full administrative access to other organizations' FortiGate, FortiManager, FortiAnalyzer, FortiProxy, and FortiWeb devices.</p>
+<p>Active exploitation has been confirmed, with attackers downloading configuration files containing firewall rules and VPN credentials, creating persistent backdoor accounts, and using compromised security appliances to pivot into internal enterprise networks. The vulnerability poses high risk to critical infrastructure and government environments.</p>
+<p><a href="../2026/Week5/fortinet/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
+</li>
 <li>
 <p><img alt="redkitten" src="../2026/Week5/images/redkitten.png"></p>
 <p><strong>RedKitten — Iran-Linked Cyber-Espionage Campaign</strong></p>
