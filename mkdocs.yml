@@ -237,3 +237,6 @@ nav:
           - "RedKitten — Iran-Linked Cyber-Espionage Campaign": 2026/Week5/redkitten.md
           - "eScan Antivirus Update Server Compromise": 2026/Week5/escan.md
           - "Clawdbot (OpenClaw) 1-Click Remote Code Execution Vulnerability": 2026/Week5/clawdbot.md
+          - "Russian APT28 Exploit Zero-Day Hours After Microsoft Discloses Office Vulnerability": 2026/Week5/apt28.md
+          - "GhostChat – Android Spyware Disguised as Chat/Dating Application": 2026/Week5/ghostchat.md
+          - "Over 3.28 Million Fortinet Devices Exposed via FortiCloud SSO Authentication Bypass": 2026/Week5/fortinet.md
