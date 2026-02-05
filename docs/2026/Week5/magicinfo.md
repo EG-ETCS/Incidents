@@ -111,3 +111,7 @@ CVE-2026-25202 is a critical vulnerability in Samsung MagicINFO 9 Server in whic
     - [Samsung MagicINFO 9 Server – database account and password are hardcoded (CVE-2026-25202)](https://www.systemtek.co.uk/2026/02/samsung-magicinfo-9-server-database-account-and-password-are-hardcoded-cve-2026-25202/)
     - [CVE-2026-25202 - Critical Vulnerability - TheHackerWire](https://www.thehackerwire.com/vulnerability/CVE-2026-25202/)
     - [CVE-2026-25202: CWE-798 Use of Hard-coded Credentials in Samsung Electronics MagicINFO 9 Server](https://radar.offseq.com/threat/cve-2026-25202-cwe-798-use-of-hard-coded-credentia-9417c5c1)
+
+---
+
+*Last Updated: February 5, 2026* 

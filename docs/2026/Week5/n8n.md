@@ -123,3 +123,7 @@ The vulnerability exists in n8n's workflow expression evaluation system:
     - [Critical n8n Flaw CVE-2026-25049 Enables System Command Execution via Malicious Workflows](https://thehackernews.com/2026/02/critical-n8n-flaw-cve-2026-25049.html)
     - [Critical n8n flaws disclosed along with public exploits](https://www.bleepingcomputer.com/news/security/critical-n8n-flaws-disclosed-along-with-public-exploits/)
     - [A Deep Dive into CVE-2026-25049: n8n Remote Code Execution](https://blog.securelayer7.net/cve-2026-25049/)
+
+---
+
+*Last Updated: February 5, 2026* 

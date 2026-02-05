@@ -92,3 +92,7 @@ This was not a traditional cyberattack exploiting a software vulnerability. Inst
     - [Flock Safety ALPR Cameras Shut Down Over Data Access Issue](https://thecyberexpress.com/flock-safety-alpr-cameras-shut-down/)
     - [Mountain View police turn off Flock cameras, allege unauthorized use](https://www.sfchronicle.com/bayarea/article/mountain-view-police-flock-license-plate-readers-21330156.php)
     - [Mountain View police turn off license plate cameras after data sharing breach - Mountain View Voice](https://www.mv-voice.com/public-safety/2026/02/02/mountain-view-police-turn-off-license-plate-cameras-after-data-sharing-breach/)
+
+---
+
+*Last Updated: February 5, 2026* 

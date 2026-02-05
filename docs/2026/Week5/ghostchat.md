@@ -118,3 +118,7 @@ GhostChat is malicious Android spyware disguised as a harmless chat or dating ap
     - [GhostChat Spyware Attacking Android Users Via WhatsApp to Exfiltrate Sensitive Details](https://cybersecuritynews.com/ghostchat-spyware-attacking-android-users/amp/)
     - [GhostChat Spyware Targets Android Users Through WhatsApp, Steals Sensitive Data](https://gbhackers.com/ghostchat-targets-whatsapp-users/)
     - [Fake dating app used as lure in spyware campaign targeting](https://www.globenewswire.com/news-release/2026/01/28/3228114/0/en/Fake-dating-app-used-as-lure-in-spyware-campaign-targeting-Pakistan-ESET-Research-discovers.html)
+
+---
+
+*Last Updated: February 3, 2026* 

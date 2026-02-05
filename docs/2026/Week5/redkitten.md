@@ -100,3 +100,7 @@ RedKitten is an Iran-linked cyber-espionage campaign that uses weaponized Excel 
     - [Iran-Linked RedKitten Cyber Campaign Targets Human Rights NGOs and Activists](https://thehackernews.com/2026/01/iran-linked-redkitten-cyber-campaign.html)
     - [Iran-Linked RedKitten Cyber Campaign Targets Human Rights NGOs and Activists - Live Threat Intelligence - Threat Radar | OffSeq.com](https://radar.offseq.com/threat/iran-linked-redkitten-cyber-campaign-targets-human-f0c3bff7)
     - [RedKitten APT Targets Microsoft Excel Vulnerabilities in Cyber-Espionage Campaign Against Iranian Human Rights NGOs and Activists](https://www.rescana.com/post/redkitten-apt-targets-microsoft-excel-vulnerabilities-in-cyber-espionage-campaign-against-iranian-hu)
+
+---
+
+*Last Updated: February 2, 2026* 

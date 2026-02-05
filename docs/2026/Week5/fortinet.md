@@ -119,3 +119,7 @@ Improper trust validation between FortiCloud SSO and registered devices allows a
     - [3.28 Million Fortinet Devices at Risk Due to Exposed Web Properties](https://gbhackers.com/3-28-million-fortinet-devices-at-risk/)
     - [Over 3.28 Million Fortinet Devices Exposed Online With Risky Web Properties](https://cyberpress.org/over-3-28-million-fortinet-devices-exposed/)
     - [Fortinet Confirms Critical FortiCloud SSO Vulnerability(CVE-2026-24858) Actively Exploited in the Wild](https://cybersecuritynews.com/fortinet-forticloud-sso-vulnerability/)
+
+---
+
+*Last Updated: February 3, 2026* 

@@ -97,3 +97,7 @@ Clawdbot's Control UI accepts a `gatewayUrl` parameter from URLs without proper 
     - [CVE-2026-25253 - High Vulnerability - TheHackerWire](https://www.thehackerwire.com/vulnerability/CVE-2026-25253/)
     - [Clawdbot Shodan: Technical Post-Mortem and Defense Architecture for Agentic AI Systems](https://www.penligent.ai/hackinglabs/clawdbot-shodan-technical-post-mortem-and-defense-architecture-for-agentic-ai-systems-2026/)
     - [Clawdbot’s Security Meltdown: How a Viral AI Agent Became Infostealers’ Favorite Target in 48 Hours - techbuddies.io](https://www.techbuddies.io/2026/02/01/clawdbots-security-meltdown-how-a-viral-ai-agent-became-infostealers-favorite-target-in-48-hours/)
+
+---
+
+*Last Updated: February 2, 2026* 

@@ -114,3 +114,7 @@ The exploitation chain involves multiple sophisticated stages:
     - [Actively exploited Microsoft Office Zero‑Day (CVE‑2026‑21509)](https://insights.integrity360.com/threat-advisories/actively-exploited-microsoft-office-zero-day-cve-2026-21509)
     - [APT28 Group Exploits New Microsoft Office Zero-Day in Attacks Targeting Ukraine and EU](https://abit.ee/en/cybersecurity/hackers-and-attacks/apt28-fancy-bear-microsoft-office-vulnerability-cve-2026-21509-cert-ua-cyber-attack-phishing-covenan-en)
     - [Hackers Actively Exploit Microsoft Office Zero-Day to Deliver Malware](https://cyberpress.org/microsoft-office-zero-day-to-deliver-malware/)
+
+---
+
+*Last Updated: February 3, 2026* 

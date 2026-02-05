@@ -89,3 +89,7 @@ Unknown attackers gained unauthorized access to one of eScan’s regional update
     - [AV vendor disputes security shop's update server claims • The Register](https://www.theregister.com/2026/01/29/escan_morphisec_dispute/)
     - [eScan Antivirus Faces Scrutiny After Compromised Update Distribution - IT Security News](https://www.itsecuritynews.info/escan-antivirus-faces-scrutiny-after-compromised-update-distribution/)
     - [Top antivirus hacked to push out a malicious update - TechRadar](https://www.techradar.com/pro/security/top-antivirus-hacked-to-push-out-a-malicious-update-find-out-if-youre-affected)
+
+---
+
+*Last Updated: February 2, 2026* 

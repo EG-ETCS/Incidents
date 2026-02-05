@@ -104,3 +104,7 @@ A critical vulnerability in the file upload handling of Cisco Meeting Management
     - [Cisco Meeting Management Arbitrary File Upload Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-cmm-file-up-kY47n8kK)
     - [CVE-2026-20098 : A vulnerability in the Certificate Management feature of Cisco Meeting Managemen](https://www.cvedetails.com/cve/CVE-2026-20098/)
     - [CVE Alert: CVE-2026-20098 - Cisco - Cisco Meeting Management - RedPacket Security](https://www.redpacketsecurity.com/cve-alert-cve-2026-20098-cisco-cisco-meeting-management/)
+
+---
+
+*Last Updated: February 5, 2026* 
