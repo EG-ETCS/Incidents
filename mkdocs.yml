@@ -240,3 +240,7 @@ nav:
           - "Russian APT28 Exploit Zero-Day Hours After Microsoft Discloses Office Vulnerability": 2026/Week5/apt28.md
           - "GhostChat – Android Spyware Disguised as Chat/Dating Application": 2026/Week5/ghostchat.md
           - "Over 3.28 Million Fortinet Devices Exposed via FortiCloud SSO Authentication Bypass": 2026/Week5/fortinet.md
+          - "Shutdown of Flock Safety ALPR System in Mountain View": 2026/Week5/flock.md
+          - "CVE-2026-25049 – Critical Remote Code Execution in n8n Workflow Expressions": 2026/Week5/n8n.md
+          - "CVE-2026-25202 – MagicINFO 9 Server Hardcoded Database Credentials Vulnerability": 2026/Week5/magicinfo.md
+          - "Cisco Meeting Management Arbitrary File Upload Vulnerability": 2026/Week5/cisco.md
