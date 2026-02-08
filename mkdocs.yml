@@ -244,3 +244,8 @@ nav:
           - "CVE-2026-25049 – Critical Remote Code Execution in n8n Workflow Expressions": 2026/Week5/n8n.md
           - "CVE-2026-25202 – MagicINFO 9 Server Hardcoded Database Credentials Vulnerability": 2026/Week5/magicinfo.md
           - "Cisco Meeting Management Arbitrary File Upload Vulnerability": 2026/Week5/cisco.md
+        - "week6": 
+          - "SmarterMail Unauthenticated Remote Code Execution (RCE)": 2026/Week6/smartermail.md
+          - "DKnife – Linux-based Adversary-in-the-Middle (AiTM) Traffic-Hijacking Toolkit": 2026/Week6/dknife.md
+          - "BridgePay Network Solutions Ransomware Attack": 2026/Week6/bridgepay.md
+          - "Signal Account Hijacking Campaign": 2026/Week6/signal.md

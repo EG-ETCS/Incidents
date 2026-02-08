@@ -86,6 +86,9 @@ Your incident markdown files follow this consistent structure:
     - [Link 2](URL)
     - [Link 3](URL)
 ```
+---
+
+*Last Updated: month day, year* 
 
 ---
 
