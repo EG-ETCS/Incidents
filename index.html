@@ -5960,6 +5960,62 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2026/Week6/forticlientems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fortinet FortiClientEMS Critical SQL Injection (CVE-2026-21643)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2026/Week6/unc3886/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UNC3886 Cyber Espionage Campaign Against Singapore Telcos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -6034,36 +6090,20 @@
 <div class="grid cards">
 <ul>
 <li>
-<p><img alt="smartermail" src="2026/Week6/images/smartermail.png"></p>
-<p><strong>SmarterMail Unauthenticated Remote Code Execution (RCE)</strong></p>
-<p><strong class="cve-chip">CVE-2026-24423</strong> <strong class="cve-chip">Unauthenticated RCE</strong> <strong class="cve-chip">Email Server</strong> <strong class="cve-chip">CVSS 9.3</strong> <strong class="cve-chip">Active Exploitation</strong></p>
-<p>A critical flaw in SmarterMail’s ConnectToHub API allows unauthenticated attackers to submit crafted requests that cause the server to fetch attacker-controlled JSON and execute OS commands. The issue affects all builds prior to 100.0.9511 and has been linked to ransomware activity.</p>
-<p>Successful exploitation enables full server compromise, data theft from email systems, and lateral movement across networks. Patching to Build 9511 or later is required to mitigate the vulnerability.</p>
-<p><a href="2026/Week6/smartermail/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
+<p><img alt="forticlientems" src="2026/Week6/images/forticlientems.png"></p>
+<p><strong>Fortinet FortiClientEMS Critical SQL Injection (CVE-2026-21643)</strong></p>
+<p><strong class="cve-chip">CVE-2026-21643</strong> <strong class="cve-chip">SQL Injection</strong> <strong class="cve-chip">Unauthenticated</strong> <strong class="cve-chip">Remote Code Execution</strong> <strong class="cve-chip">Fortinet</strong></p>
+<p>A critical SQL injection in FortiClientEMS 7.4.4 allows unauthenticated attackers to send crafted HTTP requests to the admin interface and execute arbitrary SQL. The flaw can lead to remote code execution and compromise of the EMS management server.</p>
+<p>Because FortiClientEMS centrally manages endpoints, a successful compromise can cascade into wider enterprise risk. Upgrading to 7.4.5 or later and restricting admin interface exposure are key mitigations.</p>
+<p><a href="2026/Week6/forticlientems/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
 </li>
 <li>
-<p><img alt="dknife" src="2026/Week6/images/dknife.png"></p>
-<p><strong>DKnife – Linux-based Adversary-in-the-Middle (AiTM) Traffic-Hijacking Toolkit</strong></p>
-<p><strong class="cve-chip">Adversary-in-the-Middle</strong> <strong class="cve-chip">Traffic Hijacking</strong> <strong class="cve-chip">Router Malware</strong> <strong class="cve-chip">DNS Manipulation</strong> <strong class="cve-chip">Credential Theft</strong></p>
-<p>DKnife is a modular post-compromise toolkit that runs on Linux-based routers and edge devices, intercepting and manipulating network traffic to spy on users, harvest credentials, and hijack downloads and updates for malware delivery.</p>
-<p>The framework deploys components for DPI, TLS interception, DNS hijacking, and P2P VPN C2. It can swap update manifests, inject payloads like ShadowPad, and maintain persistence via an updater/watchdog on compromised gateways.</p>
-<p><a href="2026/Week6/dknife/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
-</li>
-<li>
-<p><img alt="bridgepay" src="2026/Week6/images/bridgepay.png"></p>
-<p><strong>BridgePay Network Solutions Ransomware Attack</strong></p>
-<p><strong class="cve-chip">Ransomware</strong> <strong class="cve-chip">Payment Systems Outage</strong> <strong class="cve-chip">Critical Infrastructure</strong> <strong class="cve-chip">Service Disruption</strong> <strong class="cve-chip">Forensic Response</strong></p>
-<p>BridgePay confirmed a ransomware attack that knocked key payment services offline, causing nationwide outages of payment APIs, virtual terminals, and hosted payment pages. Early forensic findings show file encryption but no evidence of payment card data compromise.</p>
-<p>Federal law enforcement and external cybersecurity teams are engaged in investigation and recovery. Merchants and municipal billing portals reported outages, with ongoing service degradation and no clear ETA for full restoration.</p>
-<p><a href="2026/Week6/bridgepay/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
-</li>
-<li>
-<p><img alt="signal" src="2026/Week6/images/signal.png"></p>
-<p><strong>Signal Account Hijacking Campaign</strong></p>
-<p><strong class="cve-chip">Phishing</strong> <strong class="cve-chip">Account Takeover</strong> <strong class="cve-chip">Social Engineering</strong> <strong class="cve-chip">QR Code</strong> <strong class="cve-chip">Registration Lock</strong></p>
-<p>German security agencies warned of phishing attacks on Signal that trick victims into handing over PINs or scanning QR codes, allowing attackers to hijack accounts or link their devices. The campaign relies on social engineering rather than malware or software vulnerabilities.</p>
-<p>Once linked, attackers can read chats, access contact lists, impersonate victims, and target group networks. High-risk targets include politicians, military personnel, and journalists.</p>
-<p><a href="2026/Week6/signal/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
+<p><img alt="unc3886" src="2026/Week6/images/unc3886.png"></p>
+<p><strong>UNC3886 Cyber Espionage Campaign Against Singapore Telcos</strong></p>
+<p><strong class="cve-chip">Cyber Espionage</strong> <strong class="cve-chip">Telecommunications</strong> <strong class="cve-chip">Zero-Day Exploitation</strong> <strong class="cve-chip">Rootkits</strong> <strong class="cve-chip">National Security</strong></p>
+<p>Singapore’s CSA and IMDA reported a prolonged UNC3886 espionage campaign targeting telecom networks. Attackers exploited a firewall zero-day, deployed rootkits for stealth persistence, and exfiltrated limited technical network data without disrupting core services.</p>
+<p>While no customer data was exposed and core 5G infrastructure remained segmented, the incident prompted a major national cyber response due to the strategic risk posed to critical infrastructure.</p>
+<p><a href="2026/Week6/unc3886/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
 </li>
 </ul>
 </div></div>
