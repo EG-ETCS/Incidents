@@ -249,3 +249,5 @@ nav:
           - "DKnife – Linux-based Adversary-in-the-Middle (AiTM) Traffic-Hijacking Toolkit": 2026/Week6/dknife.md
           - "BridgePay Network Solutions Ransomware Attack": 2026/Week6/bridgepay.md
           - "Signal Account Hijacking Campaign": 2026/Week6/signal.md
+          - "Fortinet FortiClientEMS Critical SQL Injection (CVE-2026-21643)": 2026/Week6/forticlientems.md
+          - "UNC3886 Cyber Espionage Campaign Against Singapore Telcos": 2026/Week6/unc3886.md
