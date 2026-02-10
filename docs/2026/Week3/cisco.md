@@ -1,4 +1,5 @@
 # Cisco Unified Communications Products Remote Code Execution Vulnerability
+![alt text](images/cisco.png)
 
 **CVE-2026-20045**{.cve-chip} **Remote Code Execution**{.cve-chip} **Unauthenticated**{.cve-chip} **Zero-Day**{.cve-chip} **Active Exploitation**{.cve-chip} **CVSS 8.2**{.cve-chip}
 

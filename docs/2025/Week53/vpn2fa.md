@@ -1,4 +1,5 @@
 # Fortinet FortiOS SSL VPN 2FA Bypass (CVE-2020-12812)
+![FortiOS SSL VPN](images/vpn2fa.png)
 
 **CVE-2020-12812**{.cve-chip} **CVSS 7.7**{.cve-chip} **Authentication Bypass**{.cve-chip} **2FA Bypass**{.cve-chip} **Fortinet**{.cve-chip}
 

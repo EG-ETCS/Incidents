@@ -1,4 +1,5 @@
 # UAT-8837: China-Linked APT Targeting North American Critical Infrastructure
+![alt text](images/talos.png)
 
 **UAT-8837**{.cve-chip} **China APT**{.cve-chip} **Critical Infrastructure**{.cve-chip} **CVE-2025-53690**{.cve-chip} **Sitecore Zero-Day**{.cve-chip} **Credential Theft**{.cve-chip} **Supply Chain Risk**{.cve-chip}
 

@@ -1,4 +1,5 @@
 # Actively Exploited Windows Kernel Zero‑Day (CVE-2025-62215) and Critical Zero‑Click Bugs
+![Windows kernel](images/kernel.png)
 
 ## Versions Affected
 

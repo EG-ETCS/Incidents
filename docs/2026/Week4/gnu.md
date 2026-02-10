@@ -1,4 +1,5 @@
 # CVE-2026-24061 – GNU InetUtils telnetd Remote Authentication Bypass
+![alt text](images/gnu.png)
 
 ## Overview
 

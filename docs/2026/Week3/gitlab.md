@@ -1,4 +1,5 @@
 # Multiple GitLab Vulnerabilities Enable 2FA Bypass and DoS Attacks
+![alt text](images/gitlab.png)
 
 **CVE-2026-0723**{.cve-chip} **2FA Bypass**{.cve-chip} **CWE-252**{.cve-chip} **CVSS 7.4**{.cve-chip} **WebAuthn**{.cve-chip} **Supply Chain**{.cve-chip}
 

@@ -1,4 +1,5 @@
 # Xiaomi Redmi Buds Bluetooth RFCOMM Vulnerabilities
+![alt text](images/buds.png)
 
 **CVE-2025-13834**{.cve-chip}  **CVE-2025-13328**{.cve-chip}  **Bluetooth Memory Disclosure**{.cve-chip}  **Bluetooth Denial of Service**{.cve-chip}
 

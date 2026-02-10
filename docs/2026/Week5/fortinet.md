@@ -1,4 +1,5 @@
 # Over 3.28 Million Fortinet Devices Exposed via FortiCloud SSO Authentication Bypass
+![alt text](images/fortinet.png)
 
 **CVE-2026-24858**{.cve-chip}  **Authentication Bypass**{.cve-chip}  **Active Exploitation**{.cve-chip}
 

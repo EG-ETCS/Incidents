@@ -1,4 +1,5 @@
 # Super Value Co. Ransomware Breach
+![Super Value](images/SuperValue.png)
 
 **Qilin ransomware group — data leak & extortion**{.cve-chip}
 

@@ -1,4 +1,5 @@
 # Delta Electronics ASDA-Soft Vulnerability
+![ASDA-Soft interface](images/asda-soft-interface.png)
 
 ## Overview
 Opening a specially crafted ASDA-Soft project file can trigger a stack-based buffer overflow, allowing data to be written outside the intended stack buffer. The issue exists in ASDA-Soft versions 7.0.2.0 and prior.

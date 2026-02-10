@@ -1,4 +1,5 @@
 # Multiple Vulnerabilities in Apple Products
+![Apple security](images/apple.png)
 
 ## Description
 Apple disclosed and patched multiple critical vulnerabilities impacting iOS, iPadOS, macOS, watchOS, tvOS, visionOS, and Safari, affecting both consumer and enterprise devices. Attackers exploiting these flaws could achieve device compromise, privacy violations, or sensitive data leakage.

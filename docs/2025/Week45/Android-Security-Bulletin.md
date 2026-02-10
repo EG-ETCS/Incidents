@@ -1,4 +1,5 @@
 # Android Security Bulletin - November 2025
+![Android security bulletin](images/Android.png)
 
 **CVE-2025-48593**{.cve-chip}
 **Remote Code Execution**{.cve-chip}

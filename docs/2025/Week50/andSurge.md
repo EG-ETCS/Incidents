@@ -1,4 +1,5 @@
 # Android Malware Surge: FvncBot, SeedSnatcher, and Upgraded ClayRat
+![Android malware surge](images/andSurge.png)
 
 **Banking Trojan**{.cve-chip}  
 **Cryptocurrency Stealer**{.cve-chip}  

@@ -1,4 +1,5 @@
 # Digiever DS-2105 Pro NVR Authorization Bypass & Command Injection
+![Digiever NVR](images/digiever.png)
 
 **CVE-2023-52163**{.cve-chip} **CVE-2023-52164**{.cve-chip} **CVSS 9.8**{.cve-chip} **CISA KEV**{.cve-chip} **RCE**{.cve-chip} **End-of-Life**{.cve-chip}
 

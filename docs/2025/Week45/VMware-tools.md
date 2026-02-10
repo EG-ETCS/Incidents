@@ -1,4 +1,5 @@
 # VMware Aria Operations and VMware Tools Vulnerability
+![VMware Tools](images/vmware-tools.png)
 
 **CVE-2025-41244**{.cve-chip}
 **Privilege escalation**{.cve-chip}

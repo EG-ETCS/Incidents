@@ -1,4 +1,5 @@
 # CVE-2025-68664: Critical LangChain Core Serialization Injection Vulnerability
+![LangChain](images/langchain.png)
 
 **Serialization Injection**{.cve-chip} **Secret Exposure**{.cve-chip} **Code Execution**{.cve-chip} **AI Framework**{.cve-chip}
 

@@ -1,4 +1,5 @@
 # Windows Server Update Service (WSUS) Vulnerability
+![WSUS vulnerability](images/wsus-cve.png)
 
 **CVE-2025-59287**{.cve-chip}
 **Remote Code Execution**{.cve-chip}

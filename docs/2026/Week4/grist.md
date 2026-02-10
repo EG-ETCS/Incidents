@@ -1,4 +1,5 @@
 # Critical Grist-Core Vulnerability Allows RCE Attacks via Spreadsheet Formulas
+![alt text](images/grist.png)
 
 **CVE-2026-24002**{.cve-chip}  **Remote Code Execution**{.cve-chip}  **Sandbox Escape**{.cve-chip}
 

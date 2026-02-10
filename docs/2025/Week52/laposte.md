@@ -1,4 +1,5 @@
 # Cyberattack on La Poste and La Banque Postale
+![La Poste cyberattack](images/laposte.png)
 
 **DDoS Attack**{.cve-chip} 
 **Critical Infrastructure**{.cve-chip} 

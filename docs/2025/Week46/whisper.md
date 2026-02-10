@@ -1,4 +1,5 @@
 # Whisper Leak — LLM Side‑Channel Attack
+![Whisper Leak](images/whisper.png)
 
 ## Description
 

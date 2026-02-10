@@ -1,4 +1,5 @@
 # ShadowV2 IoT Botnet Opportunistic Attack During AWS Outage
+![ShadowV2 botnet](images/shadowV2.png)
 
 **IoT Botnet**{.cve-chip}  
 **Mirai Variant**{.cve-chip}  

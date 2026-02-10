@@ -1,4 +1,5 @@
 # Russian GRU Cyber Campaign Targeting Critical Infrastructure via Edge Network Devices
+![Russian GRU](images/RussianGRU.png)
 
 **Russian GRU**{.cve-chip}
 **State-Sponsored**{.cve-chip}

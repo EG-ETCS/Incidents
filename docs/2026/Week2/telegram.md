@@ -1,8 +1,7 @@
 # Telegram Proxy One-Click IP Exposure Vulnerability
+![alt text](images/telegram1.png)
 
 **Telegram**{.cve-chip} **IP Leak**{.cve-chip} **Privacy Bypass**{.cve-chip} **MTProto Proxy**{.cve-chip} **Deanonymization**{.cve-chip} **Mobile Security**{.cve-chip}
-
-![alt text](images/telegram1.png)
 
 ## Overview
 

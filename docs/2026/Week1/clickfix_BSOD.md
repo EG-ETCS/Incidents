@@ -1,4 +1,5 @@
 # ClickFix Attack Uses Fake Windows BSOD to Push Malware
+![alt text](images/clickfix_BSOD.png)
 
 **ClickFix**{.cve-chip} **Social Engineering**{.cve-chip} **DCRAT**{.cve-chip} **Phishing**{.cve-chip} **Fake BSOD**{.cve-chip} **Hospitality Sector**{.cve-chip}
 

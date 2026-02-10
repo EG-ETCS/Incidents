@@ -1,4 +1,5 @@
 # DynoWiper Cyberattack on Polish Energy Systems (Sandworm Attribution)
+![alt text](images/dynowiper.png)
 
 ## Overview
 

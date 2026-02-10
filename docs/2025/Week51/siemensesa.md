@@ -1,4 +1,5 @@
 # Siemens Energy Services Security Advisory
+![Siemens Energy](images/siemensesa.png)
 
 **CVE-2025-59392**{.cve-chip}
 **Authentication Bypass**{.cve-chip}

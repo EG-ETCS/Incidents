@@ -1,4 +1,5 @@
 # Everest Ransomware Leaks AT&T and Aviation Records
+![Everest leak](images/everest-leak.png)
 
 **Data Breach**{.cve-chip}
 **Ransomware Group**{.cve-chip}

@@ -1,4 +1,5 @@
 # HSBC USA Data Breach Allegation
+![HSBC leak](images/hsbc-leak.png)
 
 **Data Breach**{.cve-chip}
 **Financial Records**{.cve-chip}

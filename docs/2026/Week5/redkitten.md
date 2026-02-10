@@ -1,4 +1,5 @@
 # RedKitten — Iran-Linked Cyber-Espionage Campaign
+![alt text](images/redkitten.png)
 
 **Cyber-Espionage**{.cve-chip}  **Macro Malware**{.cve-chip}  **SloppyMIO Backdoor**{.cve-chip}
 

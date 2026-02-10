@@ -1,4 +1,5 @@
 # Cisco Meeting Management Arbitrary File Upload Vulnerability
+![alt text](images/cisco.png)
 
 **CVE-2026-20098**{.cve-chip}  **Arbitrary File Upload**{.cve-chip}  **Remote Code Execution**{.cve-chip}
 

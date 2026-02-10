@@ -1,4 +1,5 @@
 # Credential-Stealing Chrome Extensions Target Enterprise HR Platforms
+![alt text](images/chrome.png)
 
 **Chrome Extensions**{.cve-chip} **Session Hijacking**{.cve-chip} **Cookie Theft**{.cve-chip} **Enterprise HR**{.cve-chip} **Workday**{.cve-chip} **NetSuite**{.cve-chip} **SuccessFactors**{.cve-chip} **Supply Chain**{.cve-chip}
 

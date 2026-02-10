@@ -1,4 +1,5 @@
 # Google Chromium Out-of-Bounds Memory Access Vulnerability
+![Chromium](images/chromium.png)
 
 **CVE-2025-14174**{.cve-chip}
 **Out-of-Bounds Memory Access**{.cve-chip}

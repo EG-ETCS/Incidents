@@ -1,4 +1,5 @@
 # FortiWeb OS Command Injection (CVE-2025-58034)
+![FortiWeb command injection](images/fortiwebzero.png)
 
 ## Description
 

@@ -1,4 +1,5 @@
 # Scada-LTS Project Import Path Traversal – CVE-2025-13791
+![Scada-LTS](images/scadalts.png)
 
 **Path Traversal**{.cve-chip}  
 **SCADA System**{.cve-chip}  

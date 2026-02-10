@@ -1,4 +1,5 @@
 # Hacking of ~120,000 IP Cameras in South Korea for Sale of Intimate Content
+![IP camera hack](images/knpa.png)
 
 **Mass IP Camera Hack**{.cve-chip}  
 **Privacy Violation**{.cve-chip}  

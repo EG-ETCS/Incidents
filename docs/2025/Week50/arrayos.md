@@ -1,4 +1,5 @@
 # ArrayOS AG VPN (CVE-2025-66644)
+![ArrayOS AG VPN](images/arrayos.png)
 
 **Command Injection**{.cve-chip}  
 **VPN Gateway Compromise**{.cve-chip}  

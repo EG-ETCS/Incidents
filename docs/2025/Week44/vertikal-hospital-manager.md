@@ -1,4 +1,5 @@
 # Vertikal Systems Hospital Manager Backend Vulnerabilities
+![Hospital management](images/hospital-management-benefits.png)
 
 **CVE-2025-54459**{.cve-chip}
 **Information Disclosure**{.cve-chip}

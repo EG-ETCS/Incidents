@@ -1,4 +1,5 @@
 # CVE-2026-25202 – MagicINFO 9 Server Hardcoded Database Credentials Vulnerability
+![alt text](images/magicinfo.png)
 
 **CVE-2026-25202**{.cve-chip}  **Hardcoded Credentials**{.cve-chip}  **Database Compromise**{.cve-chip}
 

@@ -1,4 +1,5 @@
 # GoldFactory Hits Southeast Asia with Modified Banking Apps Driving 11,000+ Infections
+![GoldFactory](images/goldfactory.png)
 
 **Modified Banking Apps**{.cve-chip}  
 **Hooking Malware**{.cve-chip}  

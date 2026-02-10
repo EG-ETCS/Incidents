@@ -1,4 +1,5 @@
 # Pro-Russia Hacktivists Conduct Opportunistic Attacks Against Critical Infrastructure
+![Hacktivists](images/hacktivists.png)
 
 **Hacktivist Campaign**{.cve-chip}
 **VNC Exploitation**{.cve-chip}

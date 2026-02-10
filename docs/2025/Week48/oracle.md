@@ -1,4 +1,5 @@
 # Oracle Identity Manager Authentication Bypass – CVE-2025-61757
+![Oracle Identity Manager](images/oracle.png)
 
 **CVE-2025-61757**{.cve-chip}  
 **Authentication Bypass**{.cve-chip}  

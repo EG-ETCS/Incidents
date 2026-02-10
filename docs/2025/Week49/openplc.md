@@ -1,4 +1,5 @@
 # OpenPLC ScadaBR CVE-2021-26829 Active Exploitation
+![OpenPLC](images/openplc.png)
 
 **Stored XSS**{.cve-chip}  
 **SCADA/HMI Compromise**{.cve-chip}  

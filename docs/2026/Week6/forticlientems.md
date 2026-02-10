@@ -1,4 +1,5 @@
 # Fortinet FortiClientEMS Critical SQL Injection (CVE-2026-21643)
+![alt text](images/forticlientems.png)
 
 **CVE-2026-21643**{.cve-chip}  **SQL Injection**{.cve-chip}  **Unauthenticated**{.cve-chip}
 

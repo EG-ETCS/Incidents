@@ -1,4 +1,5 @@
 # Command Injection Vulnerability in Zoom Node Multimedia Routers (MMRs)
+![alt text](images/zoom.png)
 
 **CVE-2026-22844**{.cve-chip} **Command Injection**{.cve-chip} **CWE-78**{.cve-chip} **CVSS 9.9**{.cve-chip} **Meeting Interception**{.cve-chip} **Critical**{.cve-chip}
 

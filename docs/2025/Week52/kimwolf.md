@@ -1,4 +1,5 @@
 # Kimwolf Botnet: 1.8 Million Android Devices Hijacked
+![Kimwolf botnet](images/kimwolf.png)
 
 **Android Botnet**{.cve-chip} 
 **1.8M Devices**{.cve-chip} 

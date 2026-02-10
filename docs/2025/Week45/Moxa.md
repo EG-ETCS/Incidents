@@ -1,4 +1,5 @@
 # Multiple Critical Vulnerabilities in Moxa ICS Network Appliances and Routers
+![Moxa](images/Moxa.png)
 
 **Multiple critical/high severity issues**{.cve-chip}
 **Administrative takeover, lateral movement potential**{.cve-chip}

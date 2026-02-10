@@ -1,4 +1,5 @@
 # Astaroth Banking Trojan – WhatsApp Worm Campaign in Brazil
+![alt text](images/Astaroth.png)
 
 **Astaroth**{.cve-chip} **Banking Trojan**{.cve-chip} **WhatsApp Worm**{.cve-chip} **Brazil**{.cve-chip} **Credential Theft**{.cve-chip} **Social Engineering**{.cve-chip}
 

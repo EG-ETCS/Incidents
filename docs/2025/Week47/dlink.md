@@ -1,4 +1,5 @@
 # **D-Link DIR-816L Stack-Based Buffer Overflow**
+![D-Link DIR-816L](images/dlink.png)
 
 **CVE-2025-13189**{.cve-chip}
 **Stack Buffer Overflow**{.cve-chip}

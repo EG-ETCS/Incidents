@@ -1,4 +1,5 @@
 # CISA Warning: Spyware Campaigns Targeting Messaging App Users
+![Spyware campaign](images/spyware.png)
 
 **Commercial Spyware**{.cve-chip}  
 **Zero-Click Exploits**{.cve-chip}  

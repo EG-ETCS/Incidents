@@ -1,4 +1,5 @@
 # React2Shell (CVE-2025-55182)
+![React2Shell](images/react2shell.png)
 
 **Remote Code Execution**{.cve-chip}  
 **Unsafe Deserialization**{.cve-chip}  

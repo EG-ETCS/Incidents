@@ -1,4 +1,5 @@
 # node-forge ASN.1 Validation Bypass Vulnerability
+![node-forge](images/forge.png)
 
 **CVE-2025-12816**{.cve-chip}  
 **node-forge ASN.1 Validator Desynchronization**{.cve-chip}  

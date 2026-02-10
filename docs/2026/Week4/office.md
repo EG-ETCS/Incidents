@@ -1,4 +1,5 @@
 # Microsoft Office Security Feature Bypass Vulnerability
+![alt text](images/office.png)
 
 **CVE-2026-21509**{.cve-chip}  **Security Feature Bypass**{.cve-chip}  **COM/OLE Processing**{.cve-chip}
 

@@ -1,4 +1,5 @@
 # Android Dolby Audio Zero-Click Vulnerability (CVE-2025-54957)
+![alt text](images/dolby.png)
 
 **CVE-2025-54957**{.cve-chip} **Android**{.cve-chip} **Zero-Click**{.cve-chip} **Remote Code Execution**{.cve-chip} **Dolby Digital Plus**{.cve-chip} **Buffer Overflow**{.cve-chip} **CERT-In Warning**{.cve-chip}
 

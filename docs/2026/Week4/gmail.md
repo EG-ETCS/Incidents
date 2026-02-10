@@ -1,4 +1,5 @@
 # 48 Million Gmail Usernames And Passwords Leaked Online
+![alt text](images/gmail.png)
 
 **Data Breach**{.cve-chip} **Credential Exposure**{.cve-chip} **Infostealer Campaign**{.cve-chip}
 

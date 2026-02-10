@@ -1,4 +1,5 @@
 # Clawdbot (OpenClaw) 1-Click Remote Code Execution Vulnerability
+![alt text](images/clawdbot.png)
 
 **CVE-2026-25253**{.cve-chip}  **Remote Code Execution**{.cve-chip}  **1-Click Exploit**{.cve-chip}
 

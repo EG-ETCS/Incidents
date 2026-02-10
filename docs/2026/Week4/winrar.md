@@ -1,4 +1,5 @@
 # WinRAR Path Traversal Vulnerability
+![alt text](images/winrar.png)
 
 **CVE-2025-8088**{.cve-chip}  **Path Traversal**{.cve-chip}  **Arbitrary Code Execution**{.cve-chip}
 

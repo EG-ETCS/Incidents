@@ -1,4 +1,5 @@
 # **Critical IBM AIX NIM Vulnerabilities (CVE-2025-36250, CVSS 10.0)**
+![IBM AIX NIM](images/aix.png)
 
 **CVE-2025-36250**{.cve-chip}
 **Remote Code Execution**{.cve-chip}

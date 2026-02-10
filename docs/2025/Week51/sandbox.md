@@ -1,4 +1,5 @@
 # OS Command Injection in Fortinet FortiSandbox
+![FortiSandbox](images/sandbox.png)
 
 **CVE-2025-53949**{.cve-chip}
 **OS Command Injection**{.cve-chip}

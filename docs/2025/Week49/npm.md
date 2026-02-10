@@ -1,4 +1,5 @@
 # Contagious Interview (2025 npm-registry wave)
+![npm registry](images/npm.png)
 
 **Supply-Chain / npm Registry Campaign**{.campaign-chip}  
 **Loader Malware (OtterCookie / BeaverTail merge)**{.campaign-chip}  

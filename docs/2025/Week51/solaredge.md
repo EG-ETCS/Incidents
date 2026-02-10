@@ -1,4 +1,5 @@
 # SolarEdge SE3680H Contains Linux Kernel Vulnerabilities
+![SolarEdge](images/solaredge.png)
 
 **CVE-2025-36745**{.cve-chip}
 **Unpatched Linux Kernel**{.cve-chip}

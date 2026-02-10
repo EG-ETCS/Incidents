@@ -1,4 +1,5 @@
 # ABB Ability Edgenius Authentication Bypass – CVE-2025-10571
+![ABB Edgenius](images/abb.png)
 
 **CVE-2025-10571**{.cve-chip}  
 **Authentication Bypass**{.cve-chip}  

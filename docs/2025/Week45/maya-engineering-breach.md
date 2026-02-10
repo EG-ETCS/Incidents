@@ -1,4 +1,5 @@
 # Cyber Toufan – Maya Engineering Surveillance Breach
+![Maya Engineering](images/maya.png)
 
 **Espionage Operation**{.cve-chip}
 **Data Exfiltration**{.cve-chip}

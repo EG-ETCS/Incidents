@@ -1,4 +1,5 @@
 # Russian APT28 Exploit Zero-Day Hours After Microsoft Discloses Office Vulnerability
+![alt text](images/apt28.png)
 
 **CVE-2026-21509**{.cve-chip}  **APT28 (Fancy Bear)**{.cve-chip}  **Zero-Day Exploitation**{.cve-chip}
 

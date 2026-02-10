@@ -1,4 +1,5 @@
 # LinkedIn Phishing Malware Campaign via DLL Sideloading
+![alt text](images/linkedin.png)
 
 **Social Engineering**{.cve-chip} **DLL Sideloading**{.cve-chip} **Remote Access Trojan**{.cve-chip} **In-Memory Execution**{.cve-chip} **Python RAT**{.cve-chip} **Executive Targeting**{.cve-chip}
 

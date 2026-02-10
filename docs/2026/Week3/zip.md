@@ -1,4 +1,5 @@
 # GootLoader Malware - Malformed ZIP Evasion Campaign
+![alt text](images/zip.png)
 
 **GootLoader**{.cve-chip} **Malformed ZIP**{.cve-chip} **JavaScript Malware**{.cve-chip} **SEO Poisoning**{.cve-chip} **Evasion Technique**{.cve-chip} **ZIP Bomb**{.cve-chip} **Loader Malware**{.cve-chip}
 

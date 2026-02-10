@@ -1,4 +1,5 @@
 # CVE-2025-8110 - Gogs Remote Code Execution via Symlink Traversal
+![alt text](images/gogs.png)
 
 **CVE-2025-8110**{.cve-chip} **Gogs**{.cve-chip} **Remote Code Execution**{.cve-chip} **Symlink Traversal**{.cve-chip} **CISA KEV**{.cve-chip} **Active Exploitation**{.cve-chip}
 

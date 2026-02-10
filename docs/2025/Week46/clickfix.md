@@ -1,4 +1,5 @@
 # ClickFix Hospitality Phishing Campaign (a.k.a. “I Paid Twice” campaign)
+![ClickFix](images/clickfix.png)
 
 **Hospitality Phishing / Booking Impersonation**{.campaign-chip}
 **Infostealer / RAT Delivery**{.campaign-chip}

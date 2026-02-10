@@ -1,4 +1,5 @@
 # Oracle HTTP Server / WebLogic Server Proxy Plug-in Vulnerability (CVE-2026-21962)
+![alt text](images/weblogic.png)
 
 **CVE-2026-21962**{.cve-chip} **Oracle HTTP Server**{.cve-chip} **WebLogic**{.cve-chip} **Proxy Plug-in**{.cve-chip} **Unauthenticated RCE**{.cve-chip} **Critical**{.cve-chip} **Scope Change**{.cve-chip}
 

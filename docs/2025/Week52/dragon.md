@@ -1,4 +1,5 @@
 # China-Linked "Ink Dragon" APT Espionage Campaign
+![Ink Dragon](images/dragon.png)
 
 **APT Campaign**{.cve-chip} 
 **China-Linked**{.cve-chip} 

@@ -1,4 +1,5 @@
 ## Lynx+ Gateway Critical Vulnerabilities
+![Lynx+ gateway](images/lynx.png)
 
 **Unauthorized Access & Info Disclosure**{.cve-chip}  
 **CVSS 9.2 Critical**{.cve-chip}  

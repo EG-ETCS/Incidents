@@ -1,4 +1,5 @@
 # LANDFALL Android Spyware — Samsung Galaxy Zero-Day Campaign
+![Samsung spyware](images/samsung-spyware.png)
 
 **CVE-2025-21042**{.cve-chip}
 **Android Spyware / Zero-day Exploit**{.cve-chip}

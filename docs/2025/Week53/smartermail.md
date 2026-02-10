@@ -1,4 +1,5 @@
 # Critical SmarterMail Arbitrary File Upload / Remote Code Execution Vulnerability
+![SmarterMail](images/smartermail.png)
 
 **CVE-2025-52691**{.cve-chip}  
 **Remote Code Execution**{.cve-chip}  

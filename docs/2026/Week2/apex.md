@@ -1,4 +1,5 @@
 # Trend Micro Apex Central Unauthenticated RCE (CVE-2025-69258)
+![alt text](images/apex.png)
 
 **CVE-2025-69258**{.cve-chip} **CVSS 9.8**{.cve-chip} **RCE**{.cve-chip} **Unauthenticated**{.cve-chip} **DLL Loading**{.cve-chip} **Trend Micro**{.cve-chip}
 

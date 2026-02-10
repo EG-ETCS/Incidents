@@ -1,4 +1,5 @@
 # UDPGangster Campaigns Target Multiple Countries
+![UDPGangster](images/muddyudp.png)
 
 **Windows Backdoor**{.cve-chip}  
 **UDP-Based C2**{.cve-chip}  

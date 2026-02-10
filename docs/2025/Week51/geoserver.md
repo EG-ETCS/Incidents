@@ -1,4 +1,5 @@
 # GeoServer XXE Vulnerability Exploitation (CVE-2025-58360)
+![GeoServer](images/geoserver.png)
 
 **XML External Entity (XXE)**{.cve-chip}  
 **Unauthenticated File Access**{.cve-chip}  

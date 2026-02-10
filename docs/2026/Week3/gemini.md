@@ -1,4 +1,5 @@
 # Google Gemini Prompt Injection Flaw via Calendar Invites
+![alt text](images/gemini.png)
 
 **Gemini Prompt Injection**{.cve-chip} **Indirect Prompt Injection**{.cve-chip} **Google Calendar**{.cve-chip} **AI Security**{.cve-chip} **LLM Vulnerability**{.cve-chip} **Privacy Breach**{.cve-chip} **Data Exfiltration**{.cve-chip}
 

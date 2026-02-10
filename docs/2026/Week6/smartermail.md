@@ -1,4 +1,5 @@
 # SmarterMail Unauthenticated Remote Code Execution (RCE)
+![alt text](images/smartermail.png)
 
 **CVE-2026-24423**{.cve-chip}  **Unauthenticated RCE**{.cve-chip}  **Email Server**{.cve-chip}
 

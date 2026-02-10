@@ -1,4 +1,5 @@
 # Signal Account Hijacking Campaign
+![alt text](images/signal.png)
 
 **Phishing**{.cve-chip}  **Account Takeover**{.cve-chip}  **Social Engineering**{.cve-chip}
 

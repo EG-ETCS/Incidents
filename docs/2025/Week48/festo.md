@@ -1,4 +1,5 @@
 # Festo Compact Vision System – Insecure Configuration Vulnerabilities
+![Festo compact vision](images/festo.png)
 
 **Exposure of Resources**{.cve-chip}  
 **Insecure Defaults**{.cve-chip}  

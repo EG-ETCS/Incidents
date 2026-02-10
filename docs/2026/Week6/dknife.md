@@ -1,4 +1,5 @@
 # DKnife – Linux-based Adversary-in-the-Middle (AiTM) Traffic-Hijacking Toolkit
+![alt text](images/dknife.png)
 
 **Adversary-in-the-Middle**{.cve-chip}  **Traffic Hijacking**{.cve-chip}  **Router Malware**{.cve-chip}
 

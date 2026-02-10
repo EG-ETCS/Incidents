@@ -1,4 +1,5 @@
 # MacSync macOS Stealer: Code-Signed Malware Bypassing Gatekeeper
+![MacSync stealer](images/macsync.png)
 
 **macOS Malware**{.cve-chip} **Code-Signed**{.cve-chip} **Gatekeeper Bypass**{.cve-chip} **Credential Theft**{.cve-chip}
 

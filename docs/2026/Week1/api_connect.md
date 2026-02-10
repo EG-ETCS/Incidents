@@ -1,4 +1,5 @@
 # IBM API Connect Critical Authentication Bypass (CVE-2025-13915)
+![alt text](images/api_connect.png)
 
 **CVE-2025-13915**{.cve-chip} **CVSS 9.8**{.cve-chip} **Authentication Bypass**{.cve-chip} **API Gateway**{.cve-chip} **IBM**{.cve-chip}
 

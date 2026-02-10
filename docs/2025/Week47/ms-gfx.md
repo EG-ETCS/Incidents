@@ -1,4 +1,5 @@
 # Microsoft Graphics Component Vulnerability – CVE-2025-60724
+![Microsoft graphics](images/ms-gfx.png)
 
 **CVE-2025-60724**{.cve-chip}  
 **Heap-Based Buffer Overflow**{.cve-chip}  

@@ -1,4 +1,5 @@
 # Shutdown of Flock Safety ALPR System in Mountain View
+![alt text](images/flock.png)
 
 **Misconfiguration**{.cve-chip}  **Access Control Failure**{.cve-chip}  **Privacy Breach**{.cve-chip}
 

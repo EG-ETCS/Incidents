@@ -1,4 +1,5 @@
 # TP-Link VIGI Camera Authentication Bypass (CVE-2026-0629)
+![alt text](images/vigi.png)
 
 **CVE-2026-0629**{.cve-chip} **Authentication Bypass**{.cve-chip} **TP-Link VIGI**{.cve-chip} **IP Camera**{.cve-chip} **Password Recovery**{.cve-chip} **Client-Side Bypass**{.cve-chip} **IoT Security**{.cve-chip}
 

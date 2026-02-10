@@ -1,4 +1,5 @@
 # CVE-2018-4063 Sierra Wireless AirLink ALEOS Remote Code Execution
+![Sierra Wireless](images/sierra.png)
 
 **Remote Code Execution**{.cve-chip}  
 **Unrestricted File Upload**{.cve-chip}  

@@ -1,4 +1,5 @@
 # ASUS Live Update Embedded Malicious Code Vulnerability
+![ASUS Live Update](images/asus.png)
 
 **CVE-2025-59374**{.cve-chip}
 **Supply Chain Compromise**{.cve-chip}

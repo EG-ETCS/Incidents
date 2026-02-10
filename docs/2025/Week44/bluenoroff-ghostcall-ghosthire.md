@@ -1,4 +1,5 @@
 # BlueNoroff GhostCall and GhostHire Campaigns
+![GhostCall logo](images/ghostcall-logo.png)
 
 **APT Campaign**{.cve-chip}
 **AI-Enhanced**{.cve-chip}

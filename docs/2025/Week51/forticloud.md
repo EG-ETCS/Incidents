@@ -1,4 +1,5 @@
 # Fortinet FortiCloud SSO Login Authentication Bypass Vulnerabilities
+![FortiCloud](images/forticloud.png)
 
 **CVE-2025-59718**{.cve-chip}
 **CVE-2025-59719**{.cve-chip}

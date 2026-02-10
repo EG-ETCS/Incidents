@@ -1,4 +1,5 @@
 # Critical Authentication Bypass in Modular DS WordPress Plugin (CVE-2026-23550)
+![alt text](images/wordpress.png)
 
 **CVE-2026-23550**{.cve-chip} **WordPress**{.cve-chip} **Authentication Bypass**{.cve-chip} **Admin Takeover**{.cve-chip} **Active Exploitation**{.cve-chip} **REST API**{.cve-chip} **Zero-Day**{.cve-chip}
 

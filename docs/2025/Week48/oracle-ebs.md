@@ -1,4 +1,5 @@
 # Oracle EBS Zero-Day Exploitation – CVE-2025-61882
+![Oracle EBS](images/oracle-ebs.png)
 
 **CVE-2025-61882**{.cve-chip}  
 **Remote Code Execution**{.cve-chip}  

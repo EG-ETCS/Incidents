@@ -1,4 +1,5 @@
 # Microsoft Power Apps Remote Code Execution Vulnerability
+![alt text](images/power.png)
 
 ## Overview
 

@@ -1,4 +1,5 @@
 # WatchGuard Firebox Fireware OS IKEv2 Out-of-Bounds Write Vulnerability
+![WatchGuard Firebox](images/watchguard.png)
 
 **CVE-2025-14733**{.cve-chip}
 **Out-of-Bounds Write**{.cve-chip}

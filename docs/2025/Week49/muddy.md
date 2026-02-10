@@ -1,4 +1,5 @@
 # MuddyWater MuddyViper Backdoor Campaign
+![MuddyWater](images/muddy.png)
 
 **APT Campaign**{.cve-chip}  
 **Iran-Aligned Threat Actor**{.cve-chip}  

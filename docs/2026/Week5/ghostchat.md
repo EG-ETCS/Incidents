@@ -1,4 +1,5 @@
 # GhostChat – Android Spyware Disguised as Chat/Dating Application
+![alt text](images/ghostchat.png)
 
 **Android Spyware**{.cve-chip}  **Sideloaded APK**{.cve-chip}  **Data Exfiltration**{.cve-chip}
 

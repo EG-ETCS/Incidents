@@ -1,4 +1,5 @@
 # Johnson Controls FX80 / FX90 Vulnerability (CVE-2025-43867)
+![Johnson Controls](images/johnson.png)
 
 **Configuration File Compromise**{.cve-chip}  
 **Building Automation**{.cve-chip}  

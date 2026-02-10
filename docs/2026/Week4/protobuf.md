@@ -1,4 +1,5 @@
 # Google Protocol Buffers JSON Parsing Denial-of-Service Vulnerability
+![alt text](images/protobuf.png)
 
 **CVE-2026-0994**{.cve-chip} **Denial-of-Service**{.cve-chip} **JSON Parsing**{.cve-chip}
 

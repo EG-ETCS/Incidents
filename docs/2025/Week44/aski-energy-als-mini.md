@@ -1,4 +1,5 @@
 # ASKI Energy ALS-Mini-S8 and ALS-Mini-S4 Vulnerability
+![ASKI ALS-Mini device](images/aski-als-mini-device.png)
 
 **CVE-2025-62579**{.cve-chip}
 **Code execution**{.cve-chip}

@@ -1,4 +1,5 @@
 # Cisco Unified Contact Center Express (Unified CCX) Vulnerabilities
+![Cisco CCX](images/cisco-ccx.png)
 
 **CVE-2025-20354**{.cve-chip}
 **CVE-2025-20358**{.cve-chip}

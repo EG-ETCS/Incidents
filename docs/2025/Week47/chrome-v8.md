@@ -1,4 +1,5 @@
 # Google Chrome V8 Zero-Day – CVE-2025-13223
+![Chrome V8](images/chrome-v8.png)
 
 **CVE-2025-13223**{.cve-chip}  
 **Remote Code Execution**{.cve-chip}  

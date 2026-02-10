@@ -1,4 +1,5 @@
 # Fortinet FortiWeb Authentication Bypass (CVE-2025-64446)
+![FortiWeb](images/fortiweb.png)
 
 ## Description
 

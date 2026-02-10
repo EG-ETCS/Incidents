@@ -1,4 +1,5 @@
 # APT28 Credential-Stealing Campaign Targeting Energy and Policy Organizations
+![alt text](images/APT28.png)
 
 **APT28**{.cve-chip} **GRU**{.cve-chip} **Russia**{.cve-chip} **Credential Theft**{.cve-chip} **Spearphishing**{.cve-chip} **Phishing**{.cve-chip} **Energy Sector**{.cve-chip}
 

@@ -1,4 +1,5 @@
 # Storm-1849/UAT4356 Exploiting Cisco ASA Secure Firewall Devices
+![Cisco ASA](images/cisco-asa.png)
 
 **Advanced persistent threat**{.cve-chip}
 **Critical RCE and persistent access**{.cve-chip}

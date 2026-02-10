@@ -1,4 +1,5 @@
 # China-Linked APT31 Stealth Cyberattacks on Russian IT – Using Cloud Services
+![APT31](images/apt31.png)
 
 **APT31**{.cve-chip}  
 **State-Sponsored Espionage**{.cve-chip}  

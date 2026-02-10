@@ -1,4 +1,5 @@
 # Transparent Tribe RAT Campaign Targeting Indian Government and Academia
+![alt text](images/transparent_tribe.png)
 
 **APT36**{.cve-chip} **Transparent Tribe**{.cve-chip} **RAT**{.cve-chip} **Spear-Phishing**{.cve-chip} **Fileless Malware**{.cve-chip} **India**{.cve-chip}
 

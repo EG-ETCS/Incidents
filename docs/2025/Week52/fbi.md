@@ -1,4 +1,5 @@
 # FBI Seizure of Fraud Domain Hosting Stolen Bank Credentials
+![FBI domain seizure](images/fbi.png)
 
 **Bank Fraud**{.cve-chip} **Phishing Campaign**{.cve-chip} **$14.6M Losses**{.cve-chip} **Domain Seizure**{.cve-chip}
 

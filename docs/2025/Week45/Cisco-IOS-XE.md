@@ -1,4 +1,5 @@
 # Cisco IOS XE BADCANDY Web Shell Implant
+![Cisco IOS XE](images/cisco-ios-xe.png)
 
 **CVE-2023-20198**{.cve-chip}
 **Remote full system compromise**{.cve-chip}

@@ -1,4 +1,5 @@
 # AZ Monica Hospital Cyberattack - Belgium
+![alt text](images/azmonica.png)
 
 **AZ Monica**{.cve-chip} **Belgium**{.cve-chip} **Healthcare Cyberattack**{.cve-chip} **Hospital Ransomware**{.cve-chip} **IT Shutdown**{.cve-chip}
 

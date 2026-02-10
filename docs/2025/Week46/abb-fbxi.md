@@ -1,4 +1,5 @@
 # ABB FLXeon Controllers Vulnerabilities
+![ABB FLXeon](images/abb-fbxi.png)
 
 **CVE-2024-48842** {.cve-chip}
 **CVE-2024-48851** {.cve-chip}

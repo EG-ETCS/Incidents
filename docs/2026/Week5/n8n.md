@@ -1,4 +1,5 @@
 # CVE-2026-25049 – Critical Remote Code Execution in n8n Workflow Expressions
+![alt text](images/n8n.png)
 
 **CVE-2026-25049**{.cve-chip}  **Remote Code Execution**{.cve-chip}  **Workflow Automation**{.cve-chip}
 

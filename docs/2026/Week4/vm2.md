@@ -1,4 +1,5 @@
 # vm2 Sandbox Escape Vulnerability
+![alt text](images/vm2.png)
 
 **CVE-2026-22709**{.cve-chip}  **Sandbox Escape**{.cve-chip}  **Arbitrary Code Execution**{.cve-chip}
 

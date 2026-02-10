@@ -1,4 +1,5 @@
 # SonicWall SMA1000 Zero-Day Vulnerabilities
+![SonicWall](images/sonicWall.png)
 
 **CVE-2025-40602**{.cve-chip}
 **CVE-2025-23006**{.cve-chip}

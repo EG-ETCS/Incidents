@@ -1,4 +1,5 @@
 # Romanian Waters Authority Hit by Ransomware Attack
+![Romanian Waters ransomware](images/romanian.png)
 
 **Ransomware**{.cve-chip} 
 **BitLocker Abuse**{.cve-chip} 

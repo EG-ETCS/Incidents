@@ -1,4 +1,5 @@
 # Android/BankBot-YNRK Malware
+![Android BankBot](images/android-bankbot.png)
 
 **Advanced Android banking trojan**{.cve-chip}
 **Credential and fund theft**{.cve-chip}

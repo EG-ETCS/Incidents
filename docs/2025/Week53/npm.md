@@ -1,4 +1,5 @@
 # Malicious npm Packages Abused as Phishing Infrastructure
+![npm phishing](images/npm.png)
 
 **npm Supply Chain**{.cve-chip} **Phishing Infrastructure**{.cve-chip} **Credential Theft**{.cve-chip} **CDN Abuse**{.cve-chip} **Microsoft 365**{.cve-chip}
 

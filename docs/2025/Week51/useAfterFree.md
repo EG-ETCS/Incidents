@@ -1,4 +1,5 @@
 # Apple Multiple Products Use-After-Free WebKit Vulnerability
+![Apple WebKit](images/useAfterFree.png)
 
 **CVE-2025-43529**{.cve-chip}
 **Use-After-Free**{.cve-chip}

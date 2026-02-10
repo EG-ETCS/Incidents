@@ -1,4 +1,5 @@
 # Johnson Controls iSTAR Ultra Vulnerabilities
+![iSTAR Ultra](images/istar.png)
 
 **OS Command Injection**{.cve-chip}
 **Firmware Authentication Bypass**{.cve-chip}

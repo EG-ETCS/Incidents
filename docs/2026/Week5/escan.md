@@ -1,4 +1,5 @@
 # eScan Antivirus Update Server Compromise
+![alt text](images/escan.png)
 
 **Supply Chain Compromise**{.cve-chip}  **Malicious Update**{.cve-chip}  **Persistence**{.cve-chip}
 

@@ -1,4 +1,5 @@
 # Mercedes-Benz USA Breach Claim by Threat Actor 'zestix'
+![Mercedes-Benz breach](images/benz.png)
 
 **Data Breach Claim**{.cve-chip}  
 **Legal & Customer Data**{.cve-chip}  

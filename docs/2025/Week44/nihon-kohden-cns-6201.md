@@ -1,5 +1,5 @@
 # Nihon Kohden CNS-6201 Central Monitor Vulnerability
-
+![Nihon Kohden monitor](images/nihon-kohden-monitor.png)
 
 ## Overview
 A critical vulnerability in the Nihon Kohden CNS-6201 central monitoring system allows remote attackers to crash the system through malformed UDP packets, resulting in loss of patient monitoring capabilities.

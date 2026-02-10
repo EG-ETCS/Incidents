@@ -1,4 +1,5 @@
 # Cisco AsyncOS Zero-Day Exploitation Campaign
+![Cisco AsyncOS](images/AsyncOS.png)
 
 **CVE-2025-20393**{.cve-chip}
 **Zero-Day**{.cve-chip}
