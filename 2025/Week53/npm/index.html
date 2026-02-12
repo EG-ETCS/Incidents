@@ -6209,6 +6209,118 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/notepad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows 11 Notepad Markdown Remote Code Execution Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/senegal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Senegal National ID Office Ransomware Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/apple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apple Zero-Day Exploitation (CVE-2026-20700)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/zerodayrat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZeroDayRAT Spyware Grants Attackers Total Access to Mobile Devices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -6434,6 +6546,7 @@
 
 
 <div><h1 id="malicious-npm-packages-abused-as-phishing-infrastructure">Malicious npm Packages Abused as Phishing Infrastructure</h1>
+<p><img alt="npm phishing" src="../images/npm.png"></p>
 <p><strong class="cve-chip">npm Supply Chain</strong> <strong class="cve-chip">Phishing Infrastructure</strong> <strong class="cve-chip">Credential Theft</strong> <strong class="cve-chip">CDN Abuse</strong> <strong class="cve-chip">Microsoft 365</strong></p>
 <h2 id="overview">Overview</h2>
 <p><strong>A sophisticated phishing campaign abused the npm package registry</strong> to establish <strong>trusted phishing infrastructure</strong> by publishing <strong>27 malicious JavaScript packages</strong> across <strong>6 attacker-controlled accounts</strong>. Unlike traditional supply chain attacks targeting developers through malicious code execution, this campaign repurposed npm's <strong>content delivery network (CDN) as a hosting platform</strong> for phishing payloads. Attackers leveraged npm's <strong>trusted domain reputation</strong> to serve HTML and JavaScript that impersonated <strong>document-sharing portals</strong> and redirected victims to <strong>fake Microsoft 365 login pages</strong> with <strong>pre-filled email addresses</strong>, indicating <strong>highly targeted credential harvesting operations</strong>. The malicious packages did not contain functional library code; instead, they hosted <strong>phishing HTML/JavaScript files</strong> accessible via npm's public CDN endpoints (<code>unpkg.com</code>, <code>cdn.jsdelivr.net</code>). Victims received <strong>targeted phishing emails</strong> with links to npm-hosted content, saw convincing fake document viewers, and were redirected to credential-stealing pages. The campaign employed <strong>anti-analysis techniques</strong> including <strong>obfuscated JavaScript</strong>, <strong>bot detection</strong>, and <strong>user interaction checks</strong> (mouse/touch validation) to evade automated security scanning. Infrastructure analysis linked the operation to <strong>Evilginx-style adversary-in-the-middle (AitM) frameworks</strong> designed for session token theft. Primary targets included <strong>healthcare and industrial sectors</strong>, suggesting motivation beyond generic credential theft to <strong>business email compromise (BEC)</strong>, <strong>supply chain infiltration</strong>, and potential <strong>operational technology (OT) access</strong>. The abuse of npm's trusted infrastructure demonstrates evolving phishing tactics that exploit <strong>legitimate developer platforms</strong> to bypass traditional security controls relying on domain reputation.</p>

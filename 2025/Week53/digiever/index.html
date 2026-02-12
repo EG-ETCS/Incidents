@@ -6320,6 +6320,118 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/notepad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows 11 Notepad Markdown Remote Code Execution Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/senegal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Senegal National ID Office Ransomware Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/apple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apple Zero-Day Exploitation (CVE-2026-20700)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/zerodayrat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZeroDayRAT Spyware Grants Attackers Total Access to Mobile Devices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -6656,6 +6768,7 @@
 
 
 <div><h1 id="digiever-ds-2105-pro-nvr-authorization-bypass-command-injection">Digiever DS-2105 Pro NVR Authorization Bypass &amp; Command Injection</h1>
+<p><img alt="Digiever NVR" src="../images/digiever.png"></p>
 <p><strong class="cve-chip">CVE-2023-52163</strong> <strong class="cve-chip">CVE-2023-52164</strong> <strong class="cve-chip">CVSS 9.8</strong> <strong class="cve-chip">CISA KEV</strong> <strong class="cve-chip">RCE</strong> <strong class="cve-chip">End-of-Life</strong></p>
 <h2 id="overview">Overview</h2>
 <p><strong>A critical vulnerability chain in Digiever DS-2105 Pro Network Video Recorders (NVRs)</strong> enables attackers to <strong>bypass authorization checks</strong> and <strong>execute arbitrary system commands</strong> with elevated privileges, leading to <strong>full device compromise</strong>. <strong>CVE-2023-52163</strong> is a <strong>missing authorization vulnerability</strong> combined with <strong>OS command injection</strong> affecting the <code>time_tzsetup.cgi</code> endpoint. Attackers can send <strong>crafted HTTP requests</strong> to the vulnerable CGI script without authentication, injecting malicious commands that execute with root privileges on the underlying Linux system. The vulnerability is compounded by <strong>CVE-2023-52164</strong>, an <strong>arbitrary file read</strong> flaw, allowing attackers to exfiltrate sensitive data including credentials and configuration files. <strong>CISA (Cybersecurity and Infrastructure Security Agency) confirmed active exploitation</strong>, adding CVE-2023-52163 to the <strong>Known Exploited Vulnerabilities (KEV) catalog</strong> on <strong>December 2024</strong>. The DS-2105 Pro NVR is <strong>end-of-life (EoL)</strong> and <strong>no longer supported by Digiever</strong>, meaning <strong>no security patches will be released</strong>. Threat actors are leveraging the vulnerability to deploy <strong>Mirai and ShadowV2 botnet malware</strong>, conscripting NVRs into DDoS armies and using compromised devices as <strong>pivot points for lateral movement</strong> into enterprise and operational technology (OT) networks. The widespread exposure of surveillance systems on the internet exacerbates the threat, with thousands of vulnerable devices accessible to attackers. Organizations using Digiever DS-2105 Pro NVRs face <strong>immediate risk</strong> of surveillance compromise, data theft, and network infiltration.</p>

@@ -6275,6 +6275,118 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/notepad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows 11 Notepad Markdown Remote Code Execution Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/senegal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Senegal National ID Office Ransomware Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/apple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apple Zero-Day Exploitation (CVE-2026-20700)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/zerodayrat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZeroDayRAT Spyware Grants Attackers Total Access to Mobile Devices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -6566,6 +6678,7 @@
 
 
 <div><h1 id="macsync-macos-stealer-code-signed-malware-bypassing-gatekeeper">MacSync macOS Stealer: Code-Signed Malware Bypassing Gatekeeper</h1>
+<p><img alt="MacSync stealer" src="../images/macsync.png"></p>
 <p><strong class="cve-chip">macOS Malware</strong> <strong class="cve-chip">Code-Signed</strong> <strong class="cve-chip">Gatekeeper Bypass</strong> <strong class="cve-chip">Credential Theft</strong></p>
 <h2 id="overview">Overview</h2>
 <p><strong>MacSync</strong> is a <strong>macOS stealer malware</strong> distributed through <strong>digitally signed and Apple-notarized applications</strong> disguised as legitimate installers (e.g., "zk-call-messenger-installer-3.9.2-lts.dmg"). The malware leverages <strong>valid Apple developer signatures and notarization</strong> to bypass <strong>Gatekeeper and XProtect protections</strong>, allowing execution on unsuspecting macOS systems without security warnings. The dropper, a <strong>code-signed Swift application</strong> packaged in a .dmg disk image, performs environment checks before downloading and executing an encoded payload from remote servers. The core malware is a <strong>Go-based agent</strong> derived from earlier Mac.c malware, supporting <strong>credential theft</strong>, <strong>cryptocurrency wallet exfiltration</strong>, and <strong>remote command-and-control capabilities</strong>. The distribution method exploits user trust in Apple's security infrastructure, demonstrating how <strong>legitimate code-signing processes can be abused</strong> for malware distribution until certificate revocation occurs.</p>

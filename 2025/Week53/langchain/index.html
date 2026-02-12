@@ -6314,6 +6314,118 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/notepad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows 11 Notepad Markdown Remote Code Execution Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/senegal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Senegal National ID Office Ransomware Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/apple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apple Zero-Day Exploitation (CVE-2026-20700)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/zerodayrat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZeroDayRAT Spyware Grants Attackers Total Access to Mobile Devices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -6644,6 +6756,7 @@
 
 
 <div><h1 id="cve-2025-68664-critical-langchain-core-serialization-injection-vulnerability">CVE-2025-68664: Critical LangChain Core Serialization Injection Vulnerability</h1>
+<p><img alt="LangChain" src="../images/langchain.png"></p>
 <p><strong class="cve-chip">Serialization Injection</strong> <strong class="cve-chip">Secret Exposure</strong> <strong class="cve-chip">Code Execution</strong> <strong class="cve-chip">AI Framework</strong></p>
 <h2 id="overview">Overview</h2>
 <p><strong>CVE-2025-68664</strong> is a <strong>critical serialization injection vulnerability</strong> in <strong>LangChain Core</strong>, a fundamental Python package used to build AI agents and workflows. The flaw exists in LangChain's <strong>serialization functions</strong> (<code>dumps()</code> / <code>dumpd()</code>), which fail to properly escape dictionaries containing the internal marker key <strong>"lc"</strong>. During deserialization, attacker-controlled data with this key is erroneously treated as a <strong>trusted LangChain object</strong> instead of plain user data, resulting in <strong>unsafe object instantiation</strong>, <strong>exposure of environment secrets</strong>, and <strong>potential arbitrary code execution</strong> via template rendering (e.g., Jinja2). The vulnerability becomes exploitable when <strong>user-controlled data</strong> (e.g., from prompts, metadata, or LLM outputs) flows into serialization/deserialization cycles in application logic such as <strong>event streaming, caching, or logging</strong>. The flaw is classified as <strong>CWE-502 (Deserialization of Untrusted Data)</strong> and affects <strong>langchain-core ≥1.0.0 and &lt;1.2.5</strong> and older <strong>0.x builds &lt;0.3.81</strong>, with patches available in <strong>versions 1.2.5 and 0.3.81</strong>.</p>

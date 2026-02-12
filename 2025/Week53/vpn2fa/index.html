@@ -6314,6 +6314,118 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/notepad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows 11 Notepad Markdown Remote Code Execution Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/senegal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Senegal National ID Office Ransomware Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/apple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apple Zero-Day Exploitation (CVE-2026-20700)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../2026/Week6/zerodayrat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZeroDayRAT Spyware Grants Attackers Total Access to Mobile Devices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -6644,6 +6756,7 @@
 
 
 <div><h1 id="fortinet-fortios-ssl-vpn-2fa-bypass-cve-2020-12812">Fortinet FortiOS SSL VPN 2FA Bypass (CVE-2020-12812)</h1>
+<p><img alt="FortiOS SSL VPN" src="../images/vpn2fa.png"></p>
 <p><strong class="cve-chip">CVE-2020-12812</strong> <strong class="cve-chip">CVSS 7.7</strong> <strong class="cve-chip">Authentication Bypass</strong> <strong class="cve-chip">2FA Bypass</strong> <strong class="cve-chip">Fortinet</strong></p>
 <h2 id="overview">Overview</h2>
 <p><strong>Threat actors are actively exploiting a five-year-old authentication bypass vulnerability</strong> in <strong>Fortinet FortiOS SSL VPN</strong> that allows attackers to <strong>circumvent two-factor authentication (2FA)</strong> and gain unauthorized access to protected VPN endpoints. <strong>CVE-2020-12812</strong> is an <strong>improper authentication flaw</strong> where FortiOS treats usernames as <strong>case-sensitive</strong>, while <strong>LDAP (Lightweight Directory Access Protocol) directories typically are case-insensitive</strong>. This discrepancy creates an <strong>authentication logic flaw</strong>: when attackers submit valid credentials with <strong>altered username casing</strong> (e.g., "Admin" instead of "admin"), FortiOS fails to match the local user account (which has 2FA enabled) and instead <strong>falls back to LDAP authentication</strong>, which does not enforce 2FA. The vulnerability affects <strong>misconfigured FortiGate devices</strong> where local users with 2FA are linked to LDAP, and the same users exist in LDAP groups configured in authentication policies for SSL VPN or IPsec VPN. Despite being patched in <strong>2020</strong>, the flaw remains exploited in <strong>2025</strong> due to widespread unpatched deployments and persistent misconfigurations. Fortinet has issued warnings about <strong>active exploitation in the wild</strong>, with attackers leveraging the bypass to gain <strong>VPN access, administrative privileges, and establish persistence</strong> for lateral movement within enterprise networks. The vulnerability underscores risks of <strong>legacy vulnerabilities in internet-facing infrastructure</strong> and <strong>authentication configuration weaknesses</strong>.</p>

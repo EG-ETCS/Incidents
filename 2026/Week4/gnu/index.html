@@ -6253,6 +6253,118 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week6/notepad/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Windows 11 Notepad Markdown Remote Code Execution Vulnerability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week6/senegal/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Senegal National ID Office Ransomware Attack
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week6/apple/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Apple Zero-Day Exploitation (CVE-2026-20700)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Week6/zerodayrat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ZeroDayRAT Spyware Grants Attackers Total Access to Mobile Devices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -6522,6 +6634,7 @@
 
 
 <div><h1 id="cve-2026-24061-gnu-inetutils-telnetd-remote-authentication-bypass">CVE-2026-24061 – GNU InetUtils telnetd Remote Authentication Bypass</h1>
+<p><img alt="alt text" src="../images/gnu.png"></p>
 <h2 id="overview">Overview</h2>
 <p>A critical remote authentication bypass vulnerability (CVE-2026-24061) has been discovered in the Telnet daemon (telnetd) component of GNU InetUtils, a suite of common networking utilities maintained by the GNU Project. This 11-year-old vulnerability, present in the codebase since 2014 but only recently identified in 2026, allows unauthenticated remote attackers to obtain root shell access on vulnerable systems by exploiting improper handling of the USER environment variable during the authentication handshake. The flaw enables complete system compromise without requiring any credentials, making it one of the most severe authentication bypass vulnerabilities affecting Unix-like operating systems in recent years.</p>
 <p>GNU InetUtils provides fundamental networking tools including telnet, telnetd, ftp, ftpd, rsh, rshd, rlogin, rlogind, tftp, tftpd, talk, talkd, inetd, ping, traceroute, hostname, dnsdomainname, ifconfig, and logger. The telnetd daemon specifically implements the server-side Telnet protocol (RFC 854) for remote terminal access, historically used for system administration before SSH became the standard secure alternative. Despite Telnet's well-known security weaknesses—including transmission of credentials in plaintext and lack of encryption—telnetd remains deployed on legacy systems, embedded devices, industrial control systems, network equipment, and enterprise environments where compatibility with vintage software is required.</p>
