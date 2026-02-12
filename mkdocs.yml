@@ -251,3 +251,7 @@ nav:
           - "Signal Account Hijacking Campaign": 2026/Week6/signal.md
           - "Fortinet FortiClientEMS Critical SQL Injection (CVE-2026-21643)": 2026/Week6/forticlientems.md
           - "UNC3886 Cyber Espionage Campaign Against Singapore Telcos": 2026/Week6/unc3886.md
+          - "Windows 11 Notepad Markdown Remote Code Execution Vulnerability": 2026/Week6/notepad.md
+          - "Senegal National ID Office Ransomware Attack": 2026/Week6/senegal.md
+          - "Apple Zero-Day Exploitation (CVE-2026-20700)": 2026/Week6/apple.md
+          - "ZeroDayRAT Spyware Grants Attackers Total Access to Mobile Devices": 2026/Week6/zerodayrat.md
