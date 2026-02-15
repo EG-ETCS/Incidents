@@ -255,3 +255,7 @@ nav:
           - "Senegal National ID Office Ransomware Attack": 2026/Week6/senegal.md
           - "Apple Zero-Day Exploitation (CVE-2026-20700)": 2026/Week6/apple.md
           - "ZeroDayRAT Spyware Grants Attackers Total Access to Mobile Devices": 2026/Week6/zerodayrat.md
+        - "week7":
+          - "Russian Government Attempts to Block WhatsApp and Restrict Telegram": 2026/Week7/russian.md
+          - "CVE-2026-1731 – BeyondTrust Pre-Authentication RCE Vulnerability": 2026/Week7/beyondtrust.md
+          - "Google Links China, Iran, Russia, North Korea to Coordinated Defense Sector Cyber Operations": 2026/Week7/google.md
