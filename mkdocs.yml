@@ -259,3 +259,5 @@ nav:
           - "Russian Government Attempts to Block WhatsApp and Restrict Telegram": 2026/Week7/russian.md
           - "CVE-2026-1731 – BeyondTrust Pre-Authentication RCE Vulnerability": 2026/Week7/beyondtrust.md
           - "Google Links China, Iran, Russia, North Korea to Coordinated Defense Sector Cyber Operations": 2026/Week7/google.md
+          - "Suspected Russian Hackers Deploy CANFAIL Malware Against Ukraine": 2026/Week7/canfail.md
+          - "UAT-9921 Deploys VoidLink Malware to Target Technology and Financial Sectors": 2026/Week7/uat9921.md

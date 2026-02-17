@@ -48,6 +48,9 @@ Google's Threat Intelligence Group discovered persistent, multi-vector cyber ope
 - **APT45 (Andariel)**: Targeted South Korean defense, semiconductor, and automotive sectors with SmallTiger malware
 - **APT43 (Kimsuky)**: Deployed THINWAVE backdoor via infrastructure mimicking German and U.S. defense entities
 
+![alt text](images/google1.png)
+
+![alt text](images/google2.png)
 
 ## Affected Products
 - Defense sector organizations and contractors
@@ -220,6 +223,7 @@ Google's Threat Intelligence Group discovered persistent, multi-vector cyber ope
     - [Hacktivists, State Actors, Cybercriminals Target Global Defense Industry - SecurityWeek](https://www.securityweek.com/hacktivists-state-actors-cybercriminals-target-global-defense-industry-google-warns/)
     - [Google flags sustained cyber pressure on defense industrial base - Industrial Cyber](https://industrialcyber.co/reports/google-flags-sustained-cyber-pressure-on-defense-industrial-base-from-russia-china-linked-actors/)
     - [State-sponsored hackers targeting defence sector employees, Google says - The Guardian](https://www.theguardian.com/world/2026/feb/10/state-sponsored-hackers-targeting-defence-sector-employees-google-says)
+    - [Threats to the Defense Industrial Base - Google Cloud Blog](https://cloud.google.com/blog/topics/threat-intelligence/threats-to-defense-industrial-base)
 
 ---
 
