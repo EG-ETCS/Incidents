@@ -6354,6 +6354,62 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2026/Week7/recoverPoint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dell RecoverPoint for Virtual Machines Zero-Day Exploitation (CVE-2026-22769)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2026/Week7/keenadu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Keenadu — An Android Firmware-Embedded Backdoor Malware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -6428,12 +6484,20 @@
 <div class="grid cards">
 <ul>
 <li>
-<p><img alt="ivanti" src="2026/Week7/images/ivanti.png"></p>
-<p><strong>CVE-2026-1340 — Ivanti Endpoint Manager Mobile (EPMM) Pre-Auth Remote Code Execution</strong></p>
-<p><strong class="cve-chip">CVE-2026-1340</strong> <strong class="cve-chip">CVE-2026-1281</strong> <strong class="cve-chip">Remote Code Execution</strong> <strong class="cve-chip">Pre-Authentication</strong> <strong class="cve-chip">Zero-Day</strong></p>
-<p>A severe code-injection vulnerability in Ivanti Endpoint Manager Mobile allows unauthenticated attackers to execute arbitrary system commands via crafted HTTP requests. Actively exploited in the wild with 83% of activity linked to a single threat actor conducting mass exploitation using 300 rotating User-Agents and DNS callbacks for verification.</p>
-<p>Often chained with CVE-2026-1281, the vulnerability stems from improper input handling in legacy EPMM scripts. Exploitation enables complete server compromise, ransomware deployment, unauthorized control of managed mobile devices, credential theft, and lateral movement across enterprise networks. Government and enterprise breaches already reported.</p>
-<p><a href="2026/Week7/ivanti/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
+<p><img alt="recoverpoint" src="2026/Week7/images/recoverPoint.png"></p>
+<p><strong>Dell RecoverPoint for Virtual Machines Zero-Day Exploitation (CVE-2026-22769)</strong></p>
+<p><strong class="cve-chip">CVE-2026-22769</strong> <strong class="cve-chip">Zero-Day</strong> <strong class="cve-chip">Hardcoded Credentials</strong> <strong class="cve-chip">Backup Infrastructure</strong> <strong class="cve-chip">China-Linked</strong></p>
+<p>A zero-day in Dell RecoverPoint for Virtual Machines allowed attackers to authenticate using embedded hardcoded credentials and gain full administrative access to appliances. The activity was attributed to a China-linked cluster (UNC6201) focused on long-term intelligence collection rather than disruptive ransomware.</p>
+<p>Post-exploitation, operators deployed web shells and C# backdoors (GRIMBOLT, BRICKSTORM variants), created temporary "ghost" virtual NICs for stealth pivoting, and used the appliance as a bridge into VMware environments and internal networks.</p>
+<p><a href="2026/Week7/recoverPoint/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
+</li>
+<li>
+<p><img alt="keenadu" src="2026/Week7/images/keenadu.png"></p>
+<p><strong>Keenadu — An Android Firmware-Embedded Backdoor Malware</strong></p>
+<p><strong class="cve-chip">Supply Chain Compromise</strong> <strong class="cve-chip">Android Backdoor</strong> <strong class="cve-chip">Firmware-Level</strong> <strong class="cve-chip">Preinstalled Malware</strong></p>
+<p>Keenadu is a sophisticated backdoor malware pre-installed in Android firmware due to a supply-chain compromise. It embeds into core system components, loads into every app process via Zygote, and bypasses Android sandboxing while persisting across factory resets.</p>
+<p>Operators can deliver additional modules for ad fraud, surveillance, or data theft. Infection spreads through compromised firmware images, signed OTA updates, and modified system apps, with 13,000+ devices reportedly affected worldwide.</p>
+<p><a href="2026/Week7/keenadu/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
 </li>
 </ul>
 </div></div>
