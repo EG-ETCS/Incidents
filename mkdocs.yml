@@ -262,3 +262,5 @@ nav:
           - "Suspected Russian Hackers Deploy CANFAIL Malware Against Ukraine": 2026/Week7/canfail.md
           - "UAT-9921 Deploys VoidLink Malware to Target Technology and Financial Sectors": 2026/Week7/uat9921.md
           - "CVE-2026-1340 — Ivanti Endpoint Manager Mobile (EPMM) Pre-Auth Remote Code Execution": 2026/Week7/ivanti.md
+          - "Dell RecoverPoint for Virtual Machines Zero-Day Exploitation (CVE-2026-22769)": 2026/Week7/recoverPoint.md
+          - "Keenadu — An Android Firmware-Embedded Backdoor Malware": 2026/Week7/keenadu.md
