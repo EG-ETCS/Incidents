@@ -8,124 +8,100 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![notepad](2026/Week6/images/notepad.png)
+-   ![recoverpoint](2026/Week7/images/recoverPoint.png)
 
-    **Windows 11 Notepad Markdown Remote Code Execution Vulnerability**
+    **Dell RecoverPoint for Virtual Machines Zero-Day Exploitation (CVE-2026-22769)**
 
-    **CVE-2026-20841**{.cve-chip} **Remote Code Execution**{.cve-chip} **Markdown Link Handling**{.cve-chip} **CVSS 8.8**{.cve-chip} **Windows 11**{.cve-chip}
+    **CVE-2026-22769**{.cve-chip} **Zero-Day**{.cve-chip} **Hardcoded Credentials**{.cve-chip} **Backup Infrastructure**{.cve-chip} **China-Linked**{.cve-chip}
 
-    A critical flaw in Windows 11 Notepad's Markdown link handling allowed attackers to trick users into executing malicious links in .md files. Clicking specially crafted links could launch unverified protocols and run remote or local files without normal Windows security warnings.
+    A zero-day in Dell RecoverPoint for Virtual Machines allowed attackers to authenticate using embedded hardcoded credentials and gain full administrative access to appliances. The activity was attributed to a China-linked cluster (UNC6201) focused on long-term intelligence collection rather than disruptive ransomware.
 
-    The vulnerability, patched in February 2026, required user interaction but could lead to full system compromise if the user had administrative privileges. Post-fix Notepad versions display warnings when clicking non-HTTP/HTTPS links.
+    Post-exploitation, operators deployed web shells and C# backdoors (GRIMBOLT, BRICKSTORM variants), created temporary "ghost" virtual NICs for stealth pivoting, and used the appliance as a bridge into VMware environments and internal networks.
 
-    [:octicons-arrow-right-24: Read more](2026/Week6/notepad.md)
+    [:octicons-arrow-right-24: Read more](2026/Week7/recoverPoint.md)
 
--   ![senegal](2026/Week6/images/senegal.png)
+-   ![keenadu](2026/Week7/images/keenadu.png)
 
-    **Senegal National ID Office Ransomware Attack**
+    **Keenadu — An Android Firmware-Embedded Backdoor Malware**
 
-    **Ransomware**{.cve-chip} **National ID Systems**{.cve-chip} **Data Breach**{.cve-chip} **Green Blood Group**{.cve-chip} **Biometric Data**{.cve-chip}
+    **Supply Chain Compromise**{.cve-chip} **Android Backdoor**{.cve-chip} **Firmware-Level**{.cve-chip} **Preinstalled Malware**{.cve-chip}
 
-    Senegal's Directorate of File Automation (DAF) was hit by a ransomware attack that forced suspension of national ID and passport issuance. The Green Blood Group claimed exfiltration of approximately 139 GB of sensitive citizen data including biometric records, immigration documents, and ID card information.
+    Keenadu is a sophisticated backdoor malware pre-installed in Android firmware due to a supply-chain compromise. It embeds into core system components, loads into every app process via Zygote, and bypasses Android sandboxing while persisting across factory resets.
 
-    The breach compromised card personalization servers and prompted immediate network isolation, credential rotation, and deployment of Malaysian cybersecurity experts from IRIS Corporation for forensic investigation and recovery.
+    Operators can deliver additional modules for ad fraud, surveillance, or data theft. Infection spreads through compromised firmware images, signed OTA updates, and modified system apps, with 13,000+ devices reportedly affected worldwide.
 
-    [:octicons-arrow-right-24: Read more](2026/Week6/senegal.md)
+    [:octicons-arrow-right-24: Read more](2026/Week7/keenadu.md)
 
--   ![apple](2026/Week6/images/apple.png)
+-   ![ivanti](2026/Week7/images/ivanti.png)
 
-    **Apple Zero-Day Exploitation (CVE-2026-20700)**
+    **CVE-2026-1340 — Ivanti Endpoint Manager Mobile (EPMM) Pre-Auth Remote Code Execution**
 
-    **CVE-2026-20700**{.cve-chip} **Zero-Day**{.cve-chip} **dyld Memory Corruption**{.cve-chip} **Targeted Attacks**{.cve-chip} **Spyware**{.cve-chip}
+    **CVE-2026-1340**{.cve-chip} **CVE-2026-1281**{.cve-chip} **Remote Code Execution**{.cve-chip} **Pre-Authentication**{.cve-chip} **Zero-Day**{.cve-chip}
 
-    Apple patched a zero-day flaw in dyld (Dynamic Link Editor) used in extremely sophisticated attacks targeting specific individuals. The memory corruption vulnerability allowed attackers with memory write capability to execute arbitrary code, likely chained with WebKit exploits for full system compromise.
+    A severe code-injection vulnerability in Ivanti Endpoint Manager Mobile allows unauthenticated attackers to execute arbitrary system commands via crafted HTTP requests. Actively exploited in the wild with 83% of activity linked to a single threat actor conducting mass exploitation using 300 rotating User-Agents and DNS callbacks for verification.
 
-    The attacks are believed to be associated with commercial surveillance or mercenary spyware campaigns. Emergency patches released for iOS, iPadOS, macOS, watchOS, tvOS, and visionOS address the actively exploited vulnerability.
+    Often chained with CVE-2026-1281, the vulnerability stems from improper input handling in legacy EPMM scripts. Exploitation enables complete server compromise, ransomware deployment, unauthorized control of managed mobile devices, credential theft, and lateral movement across enterprise networks. Government and enterprise breaches already reported.
 
-    [:octicons-arrow-right-24: Read more](2026/Week6/apple.md)
+    [:octicons-arrow-right-24: Read more](2026/Week7/ivanti.md)
 
--   ![zerodayrat](2026/Week6/images/zerodayrat.png)
+-   ![canfail](2026/Week7/images/canfail.png)
 
-    **ZeroDayRAT Spyware Grants Attackers Total Access to Mobile Devices**
+    **Suspected Russian Hackers Deploy CANFAIL Malware Against Ukraine**
 
-    **Mobile Spyware**{.cve-chip} **Remote Access Trojan**{.cve-chip} **Stalkerware**{.cve-chip} **Android**{.cve-chip} **iOS**{.cve-chip}
+    **Russian-Linked**{.cve-chip} **Malware Loader**{.cve-chip} **Ukraine Targeting**{.cve-chip} **Espionage**{.cve-chip}
 
-    ZeroDayRAT is a commercially available mobile spyware toolkit marketed via underground channels like Telegram that enables complete remote access to Android and iOS devices. It provides keylogging, live camera/microphone access, GPS tracking, clipboard hijacking for crypto theft, SMS interception including OTP codes, and 2FA bypass capabilities.
+    Security researchers at Google Threat Intelligence identified a previously undocumented Russian-linked threat actor deploying CANFAIL, a new Windows malware loader, in phishing campaigns targeting Ukrainian defense, government, and energy organizations. The multi-stage infection chain uses obfuscated JavaScript files disguised as documents to deliver PowerShell-based payloads that operate entirely in-memory.
 
-    This "textbook stalkerware" represents a dangerous shift toward nation-state-level surveillance tools becoming available to criminal actors. Distribution occurs through smishing, phishing campaigns, and malicious APKs that trick victims into installing the spyware via social engineering.
+    The campaign focuses on espionage and long-term access to sensitive Ukrainian systems, avoiding immediate destruction. CANFAIL demonstrates sophisticated social engineering, in-memory execution to bypass antivirus detection, and potential for staged deployment of additional offensive tools against critical infrastructure.
 
-    [:octicons-arrow-right-24: Read more](2026/Week6/zerodayrat.md)
+    [:octicons-arrow-right-24: Read more](2026/Week7/canfail.md)
 
--   ![forticlientems](2026/Week6/images/forticlientems.png)
+-   ![uat9921](2026/Week7/images/uat9921.png)
 
-    **Fortinet FortiClientEMS Critical SQL Injection (CVE-2026-21643)**
+    **UAT-9921 Deploys VoidLink Malware to Target Technology and Financial Sectors**
 
-    **CVE-2026-21643**{.cve-chip} **SQL Injection**{.cve-chip} **Unauthenticated**{.cve-chip} **Remote Code Execution**{.cve-chip} **Fortinet**{.cve-chip}
+    **VoidLink Malware**{.cve-chip} **Enterprise Espionage**{.cve-chip} **Linux Targeting**{.cve-chip} **Cloud Infrastructure**{.cve-chip}
 
-    A critical SQL injection in FortiClientEMS 7.4.4 allows unauthenticated attackers to send crafted HTTP requests to the admin interface and execute arbitrary SQL. The flaw can lead to remote code execution and compromise of the EMS management server.
+    Threat researchers identified a newly discovered threat actor tracked as UAT-9921 deploying VoidLink, a sophisticated modular malware framework targeting Linux servers in technology and financial sectors. Described as "defense-contractor-grade," VoidLink combines Zig implants, C plugins, and Go backend services with advanced capabilities including kernel-level rootkits, mesh peer-to-peer C2 networks, and comprehensive EDR evasion.
 
-    Because FortiClientEMS centrally manages endpoints, a successful compromise can cascade into wider enterprise risk. Upgrading to 7.4.5 or later and restricting admin interface exposure are key mitigations.
+    The framework employs modular plugin architecture for reconnaissance, lateral movement, privilege escalation, and data theft, with initial access typically via stolen credentials or Java deserialization vulnerabilities. VoidLink's mesh C2 architecture enables attackers to route traffic through compromised nodes, bypassing network segmentation and enabling prolonged undetected compromise of cloud and enterprise infrastructure.
 
-    [:octicons-arrow-right-24: Read more](2026/Week6/forticlientems.md)
+    [:octicons-arrow-right-24: Read more](2026/Week7/uat9921.md)
 
--   ![unc3886](2026/Week6/images/unc3886.png)
+-   ![russian](2026/Week7/images/russian.png)
 
-    **UNC3886 Cyber Espionage Campaign Against Singapore Telcos**
+    **Russian Government Attempts to Block WhatsApp and Restrict Telegram**
 
-    **Cyber Espionage**{.cve-chip} **Telecommunications**{.cve-chip} **Zero-Day Exploitation**{.cve-chip} **Rootkits**{.cve-chip} **National Security**{.cve-chip}
+    **Government Censorship**{.cve-chip} **Network Blocking**{.cve-chip} **DNS Manipulation**{.cve-chip} **WhatsApp**{.cve-chip} **Telegram**{.cve-chip}
 
-    Singapore’s CSA and IMDA reported a prolonged UNC3886 espionage campaign targeting telecom networks. Attackers exploited a firewall zero-day, deployed rootkits for stealth persistence, and exfiltrated limited technical network data without disrupting core services.
+    Roskomnadzor, Russia's telecommunications regulator, escalated measures to block WhatsApp nationwide and impose restrictions on Telegram. Authorities removed WhatsApp domains from Russia's national DNS and deployed deep packet inspection (DPI) technology, effectively cutting off access for approximately 100 million users unless they employ DNS workarounds or VPNs.
 
-    While no customer data was exposed and core 5G infrastructure remained segmented, the incident prompted a major national cyber response due to the strategic risk posed to critical infrastructure.
+    The government justifies the blockade as enforcing local laws and combating crime, while critics view it as censorship aimed at promoting MAX, a state-backed alternative messaging app. This represents a significant disruption to personal, business, and emergency communications across Russia.
 
-    [:octicons-arrow-right-24: Read more](2026/Week6/unc3886.md)
+    [:octicons-arrow-right-24: Read more](2026/Week7/russian.md)
 
--   ![smartermail](2026/Week6/images/smartermail.png)
+-   ![beyondtrust](2026/Week7/images/beyondtrust.png)
 
-    **SmarterMail Unauthenticated Remote Code Execution (RCE)**
+    **CVE-2026-1731 – BeyondTrust Pre-Authentication RCE Vulnerability**
 
-    **CVE-2026-24423**{.cve-chip} **Unauthenticated RCE**{.cve-chip} **Email Server**{.cve-chip} **CVSS 9.3**{.cve-chip} **Active Exploitation**{.cve-chip}
+    **CVE-2026-1731**{.cve-chip} **Remote Code Execution**{.cve-chip} **Pre-Authentication**{.cve-chip} **Command Injection**{.cve-chip} **Critical**{.cve-chip}
 
-    A critical flaw in SmarterMail’s ConnectToHub API allows unauthenticated attackers to submit crafted requests that cause the server to fetch attacker-controlled JSON and execute OS commands. The issue affects all builds prior to 100.0.9511 and has been linked to ransomware activity.
+    A critical command injection vulnerability in BeyondTrust Remote Support and Privileged Remote Access allows unauthenticated attackers to execute arbitrary system commands via specially crafted requests. Attackers began exploiting exposed systems within 24 hours of the public proof-of-concept (PoC) release, compromising service accounts and enabling full system compromise.
 
-    Successful exploitation enables full server compromise, data theft from email systems, and lateral movement across networks. Patching to Build 9511 or later is required to mitigate the vulnerability.
+    The vulnerability stems from improper input sanitization where unsanitized user input is passed directly to system-level command execution. Affected systems can be completely compromised, leading to credential theft, lateral movement, and potential ransomware deployment across enterprise networks.
 
-    [:octicons-arrow-right-24: Read more](2026/Week6/smartermail.md)
+    [:octicons-arrow-right-24: Read more](2026/Week7/beyondtrust.md)
 
--   ![dknife](2026/Week6/images/dknife.png)
+-   ![google](2026/Week7/images/google.png)
 
-    **DKnife – Linux-based Adversary-in-the-Middle (AiTM) Traffic-Hijacking Toolkit**
+    **Google Links China, Iran, Russia, North Korea to Coordinated Defense Sector Cyber Operations**
 
-    **Adversary-in-the-Middle**{.cve-chip} **Traffic Hijacking**{.cve-chip} **Router Malware**{.cve-chip} **DNS Manipulation**{.cve-chip} **Credential Theft**{.cve-chip}
+    **State-Sponsored**{.cve-chip} **Defense Sector**{.cve-chip} **Multi-Nation Coordination**{.cve-chip} **Supply Chain Attack**{.cve-chip} **APT**{.cve-chip}
 
-    DKnife is a modular post-compromise toolkit that runs on Linux-based routers and edge devices, intercepting and manipulating network traffic to spy on users, harvest credentials, and hijack downloads and updates for malware delivery.
+    Google's Threat Intelligence Group discovered persistent, multi-vector cyber operations by state-linked threat clusters from China, Iran, Russia, and North Korea targeting defense sector systems, personnel, and supply chains. These coordinated campaigns employ sophisticated social engineering, recruitment lures, custom malware families (VERMONSTER, MESSYFORK, GREYBATTLE, STALECOOKIE), and obfuscation techniques.
 
-    The framework deploys components for DPI, TLS interception, DNS hijacking, and P2P VPN C2. It can swap update manifests, inject payloads like ShadowPad, and maintain persistence via an updater/watchdog on compromised gateways.
+    The operations focus on modern warfare systems including drones, autonomous vehicles, and battlefield communications. Attack vectors include fake recruitment portals, spoofed applications, phishing emails, and edge device exploitation, with attackers using ORB networks for traffic obfuscation and maintaining long-term persistent access.
 
-    [:octicons-arrow-right-24: Read more](2026/Week6/dknife.md)
-
--   ![bridgepay](2026/Week6/images/bridgepay.png)
-
-    **BridgePay Network Solutions Ransomware Attack**
-
-    **Ransomware**{.cve-chip} **Payment Systems Outage**{.cve-chip} **Critical Infrastructure**{.cve-chip} **Service Disruption**{.cve-chip} **Forensic Response**{.cve-chip}
-
-    BridgePay confirmed a ransomware attack that knocked key payment services offline, causing nationwide outages of payment APIs, virtual terminals, and hosted payment pages. Early forensic findings show file encryption but no evidence of payment card data compromise.
-
-    Federal law enforcement and external cybersecurity teams are engaged in investigation and recovery. Merchants and municipal billing portals reported outages, with ongoing service degradation and no clear ETA for full restoration.
-
-    [:octicons-arrow-right-24: Read more](2026/Week6/bridgepay.md)
-
--   ![signal](2026/Week6/images/signal.png)
-
-    **Signal Account Hijacking Campaign**
-
-    **Phishing**{.cve-chip} **Account Takeover**{.cve-chip} **Social Engineering**{.cve-chip} **QR Code**{.cve-chip} **Registration Lock**{.cve-chip}
-
-    German security agencies warned of phishing attacks on Signal that trick victims into handing over PINs or scanning QR codes, allowing attackers to hijack accounts or link their devices. The campaign relies on social engineering rather than malware or software vulnerabilities.
-
-    Once linked, attackers can read chats, access contact lists, impersonate victims, and target group networks. High-risk targets include politicians, military personnel, and journalists.
-
-    [:octicons-arrow-right-24: Read more](2026/Week6/signal.md)
+    [:octicons-arrow-right-24: Read more](2026/Week7/google.md)
 
 </div>

@@ -264,3 +264,6 @@ nav:
           - "CVE-2026-1340 — Ivanti Endpoint Manager Mobile (EPMM) Pre-Auth Remote Code Execution": 2026/Week7/ivanti.md
           - "Dell RecoverPoint for Virtual Machines Zero-Day Exploitation (CVE-2026-22769)": 2026/Week7/recoverPoint.md
           - "Keenadu — An Android Firmware-Embedded Backdoor Malware": 2026/Week7/keenadu.md
+        - "week8":
+          - "Amazon: AI-Assisted Hacker Breached 600 Fortinet Firewalls in 5 Weeks": 2026/Week8/fortinet.md
+          - "Fake IPTV Apps Spread Massiv Android Malware Targeting Mobile Banking Users": 2026/Week8/iptv.md
