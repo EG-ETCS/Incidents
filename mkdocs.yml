@@ -267,3 +267,7 @@ nav:
         - "week8":
           - "Amazon: AI-Assisted Hacker Breached 600 Fortinet Firewalls in 5 Weeks": 2026/Week8/fortinet.md
           - "Fake IPTV Apps Spread Massiv Android Malware Targeting Mobile Banking Users": 2026/Week8/iptv.md
+          - "CVE-2026-1670 – Authentication Bypass in Honeywell CCTV Cameras": 2026/Week8/honeywell.md
+          - "Predator Spyware: iOS Mic/Camera Indicator Suppression": 2026/Week8/predator.md
+          - "Critical VoIP Vulnerability in Grandstream GXP1600 Series (CVE-2026-2329)": 2026/Week8/grandstream.md
+          - "FICOBA National Bank Account Database Breach (France)": 2026/Week8/FICOBA.md
