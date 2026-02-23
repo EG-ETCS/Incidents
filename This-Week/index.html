@@ -6526,6 +6526,146 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026/Week8/honeywell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CVE-2026-1670 – Authentication Bypass in Honeywell CCTV Cameras
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026/Week8/predator/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Predator Spyware: iOS Mic/Camera Indicator Suppression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026/Week8/grandstream/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Critical VoIP Vulnerability in Grandstream GXP1600 Series (CVE-2026-2329)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026/Week8/FICOBA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FICOBA National Bank Account Database Breach (France)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026/Week8/.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -6599,6 +6739,38 @@
 <div><h1 id="this-weeks-security-incidents">This Week's Security Incidents</h1>
 <div class="grid cards">
 <ul>
+<li>
+<p><img alt="honeywell" src="../2026/Week8/images/honeywell.png"></p>
+<p><strong>CVE-2026-1670 – Authentication Bypass in Honeywell CCTV Cameras</strong></p>
+<p><strong class="cve-chip">CVE-2026-1670</strong> <strong class="cve-chip">Authentication Bypass</strong> <strong class="cve-chip">CCTV Security</strong> <strong class="cve-chip">Unauthenticated Access</strong></p>
+<p>An authentication bypass flaw in Honeywell CCTV camera models allows attackers to access a password recovery API endpoint without valid credentials. By changing the recovery email to an attacker-controlled address, adversaries can trigger password resets and gain full administrative access to affected devices.</p>
+<p>The vulnerability requires no prior credentials or user interaction—only network reachability of the camera. Supported models include I-HIB2PI-UL, SMB NDAA MVO-3, and PTZ WDR 2MP variants. Exploitation enables unauthorized access to live surveillance feeds, camera controls, and potential network pivoting into adjacent systems.</p>
+<p><a href="../2026/Week8/honeywell/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
+</li>
+<li>
+<p><img alt="predator" src="../2026/Week8/images/predator.png"></p>
+<p><strong>Predator Spyware: iOS Mic/Camera Indicator Suppression</strong></p>
+<p><strong class="cve-chip">Commercial Spyware</strong> <strong class="cve-chip">iOS Targeting</strong> <strong class="cve-chip">Surveillance</strong> <strong class="cve-chip">Covert Recording</strong></p>
+<p>Predator, a sophisticated commercial spyware by Intellexa, can hook into iOS SpringBoard to suppress the green/orange camera and microphone activity indicators, hiding covert surveillance from users. By injecting code into SpringBoard's internal functions and nullifying sensor state update objects, Predator silently disables visual alerts while recording continues undetected.</p>
+<p>Targeting journalists, activists, and political figures, Predator requires kernel-level access and demonstrates how sophisticated spyware subverts fundamental iOS privacy protections. The malware can capture microphone audio, record video, exfiltrate GPS data, and monitor communications without any visual indication to the user.</p>
+<p><a href="../2026/Week8/predator/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
+</li>
+<li>
+<p><img alt="grandstream" src="../2026/Week8/images/grandstream.png"></p>
+<p><strong>Critical VoIP Vulnerability in Grandstream GXP1600 Series (CVE-2026-2329)</strong></p>
+<p><strong class="cve-chip">CVE-2026-2329</strong> <strong class="cve-chip">Remote Code Execution</strong> <strong class="cve-chip">VoIP Phone</strong> <strong class="cve-chip">Call Interception</strong></p>
+<p>A critical unauthenticated stack-based buffer overflow in Grandstream GXP1600 series VoIP phones enables remote code execution with root privileges. By sending a crafted HTTP request to the web API endpoint, attackers can trigger a buffer overflow and execute arbitrary code without any authentication.</p>
+<p>Post-exploitation, attackers extract SIP and local credentials, reconfigure the phone's SIP settings to route calls through malicious proxies, and silently intercept calls while the phone functions normally. These phones serve as stealthy network footholds for eavesdropping on confidential business and government communications.</p>
+<p><a href="../2026/Week8/grandstream/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
+</li>
+<li>
+<p><img alt="ficoba" src="../2026/Week8/images/FICOBA.png"></p>
+<p><strong>FICOBA National Bank Account Database Breach (France)</strong></p>
+<p><strong class="cve-chip">Data Breach</strong> <strong class="cve-chip">Credential Compromise</strong> <strong class="cve-chip">Financial Data</strong> <strong class="cve-chip">Government Database</strong></p>
+<p>A malicious actor used stolen government official credentials to access FICOBA, France's national database recording all bank accounts. Approximately 1.2 million account records were compromised, exposing RIB/IBAN numbers, names, residential addresses, tax IDs, and birth information.</p>
+<p>While no account balances or transaction capability was accessed, the exposure of banking identifiers creates significant risk for fraud, unauthorized direct debits, and identity theft. The breach resulted from insufficient access controls, lack of multi-factor authentication, and inadequate monitoring of sensitive database queries.</p>
+<p><a href="../2026/Week8/FICOBA/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"></path></svg></span> Read more</a></p>
+</li>
 <li>
 <p><img alt="fortinet" src="../2026/Week8/images/fortinet.png"></p>
 <p><strong>Amazon: AI-Assisted Hacker Breached 600 Fortinet Firewalls in 5 Weeks</strong></p>
