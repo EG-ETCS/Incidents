@@ -8,52 +8,28 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![honeywell](2026/Week8/images/honeywell.png)
+-   ![mississippi](2026/Week8/images/mississippi.png)
 
-    **CVE-2026-1670 – Authentication Bypass in Honeywell CCTV Cameras**
+    **Mississippi Hospital System Closes All Clinics After Ransomware Attack**
 
-    **CVE-2026-1670**{.cve-chip} **Authentication Bypass**{.cve-chip} **CCTV Security**{.cve-chip} **Unauthenticated Access**{.cve-chip}
+    **Ransomware**{.cve-chip} **Healthcare**{.cve-chip} **Epic EHR**{.cve-chip} **System Shutdown**{.cve-chip}
 
-    An authentication bypass flaw in Honeywell CCTV camera models allows attackers to access a password recovery API endpoint without valid credentials. By changing the recovery email to an attacker-controlled address, adversaries can trigger password resets and gain full administrative access to affected devices.
+    A ransomware attack on the University of Mississippi Medical Center forced the closure of all 35 outpatient clinics statewide and canceled elective procedures for multiple days. The attack encrypted the Epic EHR platform, phones, email, and critical IT systems, forcing UMMC to shut down its network and operate hospitals using manual paper-based procedures.
 
-    The vulnerability requires no prior credentials or user interaction—only network reachability of the camera. Supported models include I-HIB2PI-UL, SMB NDAA MVO-3, and PTZ WDR 2MP variants. Exploitation enables unauthorized access to live surveillance feeds, camera controls, and potential network pivoting into adjacent systems.
+    Detected on February 19, 2026, the attack demonstrates the severe operational impact ransomware can have on healthcare delivery across an entire state network. Attackers made contact with ransom demands while UMMC works with FBI, CISA, and DHS to investigate the intrusion, restore systems, and determine if patient protected health information was compromised.
 
-    [:octicons-arrow-right-24: Read more](2026/Week8/honeywell.md)
+    [:octicons-arrow-right-24: Read more](2026/Week8/mississippi.md)
 
--   ![predator](2026/Week8/images/predator.png)
+-   ![jackpotting](2026/Week8/images/jackpotting.png)
 
-    **Predator Spyware: iOS Mic/Camera Indicator Suppression**
+    **Spitting Cash: ATM Jackpotting Attacks Surged in 2025**
 
-    **Commercial Spyware**{.cve-chip} **iOS Targeting**{.cve-chip} **Surveillance**{.cve-chip} **Covert Recording**{.cve-chip}
+    **ATM Jackpotting**{.cve-chip} **Ploutus Malware**{.cve-chip} **Physical Attack**{.cve-chip} **Financial Crime**{.cve-chip}
 
-    Predator, a sophisticated commercial spyware by Intellexa, can hook into iOS SpringBoard to suppress the green/orange camera and microphone activity indicators, hiding covert surveillance from users. By injecting code into SpringBoard's internal functions and nullifying sensor state update objects, Predator silently disables visual alerts while recording continues undetected.
+    ATM jackpotting attacks surged dramatically in 2025, with the FBI recording over 700 incidents causing $20+ million in losses. Attackers use Ploutus malware combined with physical access via generic master keys to force Windows-based ATMs to dispense cash without legitimate transactions. The attacks target the ATM's cash-dispenser APIs directly, bypassing normal banking flows.
 
-    Targeting journalists, activists, and political figures, Predator requires kernel-level access and demonstrates how sophisticated spyware subverts fundamental iOS privacy protections. The malware can capture microphone audio, record video, exfiltrate GPS data, and monitor communications without any visual indication to the user.
+    A DOJ case indicted 54 individuals linked to Venezuelan gang Tren de Aragua for 117 jackpotting attempts causing $5.4M in losses. The attacks exploit weak physical security, legacy Windows systems, and commoditized malware tools that enable low-skill crews to execute rapid cash-outs in under 10 minutes per machine.
 
-    [:octicons-arrow-right-24: Read more](2026/Week8/predator.md)
-
--   ![grandstream](2026/Week8/images/grandstream.png)
-
-    **Critical VoIP Vulnerability in Grandstream GXP1600 Series (CVE-2026-2329)**
-
-    **CVE-2026-2329**{.cve-chip} **Remote Code Execution**{.cve-chip} **VoIP Phone**{.cve-chip} **Call Interception**{.cve-chip}
-
-    A critical unauthenticated stack-based buffer overflow in Grandstream GXP1600 series VoIP phones enables remote code execution with root privileges. By sending a crafted HTTP request to the web API endpoint, attackers can trigger a buffer overflow and execute arbitrary code without any authentication.
-
-    Post-exploitation, attackers extract SIP and local credentials, reconfigure the phone's SIP settings to route calls through malicious proxies, and silently intercept calls while the phone functions normally. These phones serve as stealthy network footholds for eavesdropping on confidential business and government communications.
-
-    [:octicons-arrow-right-24: Read more](2026/Week8/grandstream.md)
-
--   ![ficoba](2026/Week8/images/FICOBA.png)
-
-    **FICOBA National Bank Account Database Breach (France)**
-
-    **Data Breach**{.cve-chip} **Credential Compromise**{.cve-chip} **Financial Data**{.cve-chip} **Government Database**{.cve-chip}
-
-    A malicious actor used stolen government official credentials to access FICOBA, France's national database recording all bank accounts. Approximately 1.2 million account records were compromised, exposing RIB/IBAN numbers, names, residential addresses, tax IDs, and birth information.
-
-    While no account balances or transaction capability was accessed, the exposure of banking identifiers creates significant risk for fraud, unauthorized direct debits, and identity theft. The breach resulted from insufficient access controls, lack of multi-factor authentication, and inadequate monitoring of sensitive database queries.
-
-    [:octicons-arrow-right-24: Read more](2026/Week8/FICOBA.md)
+    [:octicons-arrow-right-24: Read more](2026/Week8/jackpotting.md)
 
 </div>
