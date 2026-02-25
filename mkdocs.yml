@@ -273,3 +273,6 @@ nav:
           - "FICOBA National Bank Account Database Breach (France)": 2026/Week8/FICOBA.md
           - "Mississippi Hospital System Closes All Clinics After Ransomware Attack": 2026/Week8/mississippi.md
           - "Spitting Cash: ATM Jackpotting Attacks Surged in 2025": 2026/Week8/jackpotting.md
+          - "Phishing Campaign Targets Freight and Logistics Orgs in the US, Europe": 2026/Week8/phishing.md
+          - "SolarWinds Serv-U Critical Root Access Vulnerabilities": 2026/Week8/solarwinds.md
+          - "Active Exploitation of FileZen OS Command Injection Vulnerability (CVE-2026-25108)": 2026/Week8/filezen.md
