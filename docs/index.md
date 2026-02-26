@@ -8,40 +8,28 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![phishing](2026/Week8/images/phishing.png)
+-   ![sdwan](2026/Week8/images/sdwan.png)
+    
+    **Cisco SD-WAN Zero-Day CVE-2026-20127 Exploited Since 2023 for Admin Access**
 
-    **Phishing Campaign Targets Freight and Logistics Orgs in the US, Europe**
+    **CVE-2026-20127**{.cve-chip} **Authentication Bypass**{.cve-chip} **CVSS 10.0**{.cve-chip} **UAT-8616**{.cve-chip}
 
-    **Credential Phishing**{.cve-chip} **Logistics Sector**{.cve-chip} **Financially Motivated**{.cve-chip} **Account Takeover**{.cve-chip}
+    Cisco disclosed a critical zero-day authentication bypass in Catalyst SD-WAN Controller (vSmart) and Manager (vManage) that has reportedly been exploited since at least 2023. Successful exploitation allows a remote attacker to gain high-privileged access to SD-WAN control-plane functions and management APIs.
 
-    A financially motivated cybercriminal group targeted freight and logistics organizations across the US and Europe using spoofed portals and multi-stage cloaking infrastructure. The campaign reportedly harvested over 1,600 credential sets, including usernames, passwords, 2FA codes, and business identifiers used in freight operations.
+    Reporting indicates observed campaigns used rogue peer insertion and downgrade/upgrade chains to escalate to root and maintain persistence, creating risk of traffic interception, policy tampering, and broad enterprise WAN disruption.
 
-    Attackers used urgent business pretexts to drive victims through redirection chains into pixel-perfect fake login pages, then monetized access through account takeover, payment rerouting, fuel card abuse, and double-brokering fraud.
+    [:octicons-arrow-right-24: Read more](2026/Week8/sdwan.md)
 
-    [:octicons-arrow-right-24: Read more](2026/Week8/phishing.md)
+-   ![pzyxel](2026/Week8/images/zyxel.png)
 
--   ![solarwinds](2026/Week8/images/solarwinds.png)
+    **Zyxel Warns of Critical RCE Flaw Affecting Over a Dozen Routers**
 
-    **SolarWinds Serv-U Critical Root Access Vulnerabilities**
+    **CVE-2025-13942**{.cve-chip} **Remote Code Execution**{.cve-chip} **UPnP SOAP Injection**{.cve-chip} **CVSS 9.8**{.cve-chip}
 
-    **CVE-2025-40538**{.cve-chip} **CVE-2025-40539**{.cve-chip} **CVE-2025-40540**{.cve-chip} **CVE-2025-40541**{.cve-chip}
+    Zyxel patched a critical unauthenticated command-injection flaw in UPnP that can allow remote OS command execution when devices are misconfigured with both WAN access and UPnP enabled. The issue affects multiple router/CPE product families and presents significant edge-network risk for exposed deployments.
 
-    SolarWinds patched four critical flaws in Serv-U MFT and Secure FTP that can allow attackers with administrative access to execute arbitrary code and gain root/system-level control. The vulnerabilities affect both Windows and Linux deployments and were fixed in version 15.5.4.
+    The same advisory also fixed two post-auth command-injection bugs (CVE-2025-13943 and CVE-2026-1459) tied to log-download and TR-369 certificate functions, increasing impact when administrative credentials are compromised.
 
-    Exploitation can enable rogue admin creation, privilege escalation, sensitive file exfiltration, and lateral movement, with potential outcomes including ransomware deployment and business disruption in enterprise transfer environments.
-
-    [:octicons-arrow-right-24: Read more](2026/Week8/solarwinds.md)
-
--   ![filezen](2026/Week8/images/filezen.png)
-
-    **Active Exploitation of FileZen OS Command Injection Vulnerability (CVE-2026-25108)**
-
-    **CVE-2026-25108**{.cve-chip} **OS Command Injection**{.cve-chip} **CWE-78**{.cve-chip} **KEV Listed**{.cve-chip}
-
-    A high-severity OS command injection flaw in Soliton FileZen allows authenticated users to execute arbitrary system commands when Antivirus Check Option is enabled. The vulnerability is actively exploited in the wild and is listed in CISA's Known Exploited Vulnerabilities catalog.
-
-    Affected versions include FileZen 4.2.1–4.2.8 and 5.0.0–5.0.10, with remediation available in 5.0.11+. Exploitation can lead to host compromise, data exposure, and potential lateral movement in connected enterprise environments.
-
-    [:octicons-arrow-right-24: Read more](2026/Week8/filezen.md)
+    [:octicons-arrow-right-24: Read more](2026/Week8/zyxel.md)
 
 </div>

@@ -276,3 +276,5 @@ nav:
           - "Phishing Campaign Targets Freight and Logistics Orgs in the US, Europe": 2026/Week8/phishing.md
           - "SolarWinds Serv-U Critical Root Access Vulnerabilities": 2026/Week8/solarwinds.md
           - "Active Exploitation of FileZen OS Command Injection Vulnerability (CVE-2026-25108)": 2026/Week8/filezen.md
+          - "Cisco SD-WAN Zero-Day CVE-2026-20127 Exploited Since 2023 for Admin Access": 2026/Week8/sdwan.md
+          - "Zyxel Warns of Critical RCE Flaw Affecting Over a Dozen Routers": 2026/Week8/zyxel.md
