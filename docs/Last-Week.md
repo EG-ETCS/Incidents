@@ -8,100 +8,160 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![recoverpoint](2026/Week7/images/recoverPoint.png)
+-   ![sdwan](2026/Week8/images/sdwan.png)
+    
+    **Cisco SD-WAN Zero-Day CVE-2026-20127 Exploited Since 2023 for Admin Access**
 
-    **Dell RecoverPoint for Virtual Machines Zero-Day Exploitation (CVE-2026-22769)**
+    **CVE-2026-20127**{.cve-chip} **Authentication Bypass**{.cve-chip} **CVSS 10.0**{.cve-chip} **UAT-8616**{.cve-chip}
 
-    **CVE-2026-22769**{.cve-chip} **Zero-Day**{.cve-chip} **Hardcoded Credentials**{.cve-chip} **Backup Infrastructure**{.cve-chip} **China-Linked**{.cve-chip}
+    Cisco disclosed a critical zero-day authentication bypass in Catalyst SD-WAN Controller (vSmart) and Manager (vManage) that has reportedly been exploited since at least 2023. Successful exploitation allows a remote attacker to gain high-privileged access to SD-WAN control-plane functions and management APIs.
 
-    A zero-day in Dell RecoverPoint for Virtual Machines allowed attackers to authenticate using embedded hardcoded credentials and gain full administrative access to appliances. The activity was attributed to a China-linked cluster (UNC6201) focused on long-term intelligence collection rather than disruptive ransomware.
+    Reporting indicates observed campaigns used rogue peer insertion and downgrade/upgrade chains to escalate to root and maintain persistence, creating risk of traffic interception, policy tampering, and broad enterprise WAN disruption.
 
-    Post-exploitation, operators deployed web shells and C# backdoors (GRIMBOLT, BRICKSTORM variants), created temporary "ghost" virtual NICs for stealth pivoting, and used the appliance as a bridge into VMware environments and internal networks.
+    [:octicons-arrow-right-24: Read more](2026/Week8/sdwan.md)
 
-    [:octicons-arrow-right-24: Read more](2026/Week7/recoverPoint.md)
+-   ![pzyxel](2026/Week8/images/zyxel.png)
 
--   ![keenadu](2026/Week7/images/keenadu.png)
+    **Zyxel Warns of Critical RCE Flaw Affecting Over a Dozen Routers**
 
-    **Keenadu — An Android Firmware-Embedded Backdoor Malware**
+    **CVE-2025-13942**{.cve-chip} **Remote Code Execution**{.cve-chip} **UPnP SOAP Injection**{.cve-chip} **CVSS 9.8**{.cve-chip}
 
-    **Supply Chain Compromise**{.cve-chip} **Android Backdoor**{.cve-chip} **Firmware-Level**{.cve-chip} **Preinstalled Malware**{.cve-chip}
+    Zyxel patched a critical unauthenticated command-injection flaw in UPnP that can allow remote OS command execution when devices are misconfigured with both WAN access and UPnP enabled. The issue affects multiple router/CPE product families and presents significant edge-network risk for exposed deployments.
 
-    Keenadu is a sophisticated backdoor malware pre-installed in Android firmware due to a supply-chain compromise. It embeds into core system components, loads into every app process via Zygote, and bypasses Android sandboxing while persisting across factory resets.
+    The same advisory also fixed two post-auth command-injection bugs (CVE-2025-13943 and CVE-2026-1459) tied to log-download and TR-369 certificate functions, increasing impact when administrative credentials are compromised.
 
-    Operators can deliver additional modules for ad fraud, surveillance, or data theft. Infection spreads through compromised firmware images, signed OTA updates, and modified system apps, with 13,000+ devices reportedly affected worldwide.
+    [:octicons-arrow-right-24: Read more](2026/Week8/zyxel.md)
 
-    [:octicons-arrow-right-24: Read more](2026/Week7/keenadu.md)
+-   ![phishing](2026/Week8/images/phishing.png)
 
--   ![ivanti](2026/Week7/images/ivanti.png)
+    **Phishing Campaign Targets Freight and Logistics Orgs in the US, Europe**
 
-    **CVE-2026-1340 — Ivanti Endpoint Manager Mobile (EPMM) Pre-Auth Remote Code Execution**
+    **Credential Phishing**{.cve-chip} **Logistics Sector**{.cve-chip} **Financially Motivated**{.cve-chip} **Account Takeover**{.cve-chip}
 
-    **CVE-2026-1340**{.cve-chip} **CVE-2026-1281**{.cve-chip} **Remote Code Execution**{.cve-chip} **Pre-Authentication**{.cve-chip} **Zero-Day**{.cve-chip}
+    A financially motivated cybercriminal group targeted freight and logistics organizations across the US and Europe using spoofed portals and multi-stage cloaking infrastructure. The campaign reportedly harvested over 1,600 credential sets, including usernames, passwords, 2FA codes, and business identifiers used in freight operations.
 
-    A severe code-injection vulnerability in Ivanti Endpoint Manager Mobile allows unauthenticated attackers to execute arbitrary system commands via crafted HTTP requests. Actively exploited in the wild with 83% of activity linked to a single threat actor conducting mass exploitation using 300 rotating User-Agents and DNS callbacks for verification.
+    Attackers used urgent business pretexts to drive victims through redirection chains into pixel-perfect fake login pages, then monetized access through account takeover, payment rerouting, fuel card abuse, and double-brokering fraud.
 
-    Often chained with CVE-2026-1281, the vulnerability stems from improper input handling in legacy EPMM scripts. Exploitation enables complete server compromise, ransomware deployment, unauthorized control of managed mobile devices, credential theft, and lateral movement across enterprise networks. Government and enterprise breaches already reported.
+    [:octicons-arrow-right-24: Read more](2026/Week8/phishing.md)
 
-    [:octicons-arrow-right-24: Read more](2026/Week7/ivanti.md)
+-   ![solarwinds](2026/Week8/images/solarwinds.png)
 
--   ![canfail](2026/Week7/images/canfail.png)
+    **SolarWinds Serv-U Critical Root Access Vulnerabilities**
 
-    **Suspected Russian Hackers Deploy CANFAIL Malware Against Ukraine**
+    **CVE-2025-40538**{.cve-chip} **CVE-2025-40539**{.cve-chip} **CVE-2025-40540**{.cve-chip} **CVE-2025-40541**{.cve-chip}
 
-    **Russian-Linked**{.cve-chip} **Malware Loader**{.cve-chip} **Ukraine Targeting**{.cve-chip} **Espionage**{.cve-chip}
+    SolarWinds patched four critical flaws in Serv-U MFT and Secure FTP that can allow attackers with administrative access to execute arbitrary code and gain root/system-level control. The vulnerabilities affect both Windows and Linux deployments and were fixed in version 15.5.4.
 
-    Security researchers at Google Threat Intelligence identified a previously undocumented Russian-linked threat actor deploying CANFAIL, a new Windows malware loader, in phishing campaigns targeting Ukrainian defense, government, and energy organizations. The multi-stage infection chain uses obfuscated JavaScript files disguised as documents to deliver PowerShell-based payloads that operate entirely in-memory.
+    Exploitation can enable rogue admin creation, privilege escalation, sensitive file exfiltration, and lateral movement, with potential outcomes including ransomware deployment and business disruption in enterprise transfer environments.
 
-    The campaign focuses on espionage and long-term access to sensitive Ukrainian systems, avoiding immediate destruction. CANFAIL demonstrates sophisticated social engineering, in-memory execution to bypass antivirus detection, and potential for staged deployment of additional offensive tools against critical infrastructure.
+    [:octicons-arrow-right-24: Read more](2026/Week8/solarwinds.md)
 
-    [:octicons-arrow-right-24: Read more](2026/Week7/canfail.md)
+-   ![filezen](2026/Week8/images/filezen.png)
 
--   ![uat9921](2026/Week7/images/uat9921.png)
+    **Active Exploitation of FileZen OS Command Injection Vulnerability (CVE-2026-25108)**
 
-    **UAT-9921 Deploys VoidLink Malware to Target Technology and Financial Sectors**
+    **CVE-2026-25108**{.cve-chip} **OS Command Injection**{.cve-chip} **CWE-78**{.cve-chip} **KEV Listed**{.cve-chip}
 
-    **VoidLink Malware**{.cve-chip} **Enterprise Espionage**{.cve-chip} **Linux Targeting**{.cve-chip} **Cloud Infrastructure**{.cve-chip}
+    A high-severity OS command injection flaw in Soliton FileZen allows authenticated users to execute arbitrary system commands when Antivirus Check Option is enabled. The vulnerability is actively exploited in the wild and is listed in CISA's Known Exploited Vulnerabilities catalog.
 
-    Threat researchers identified a newly discovered threat actor tracked as UAT-9921 deploying VoidLink, a sophisticated modular malware framework targeting Linux servers in technology and financial sectors. Described as "defense-contractor-grade," VoidLink combines Zig implants, C plugins, and Go backend services with advanced capabilities including kernel-level rootkits, mesh peer-to-peer C2 networks, and comprehensive EDR evasion.
+    Affected versions include FileZen 4.2.1–4.2.8 and 5.0.0–5.0.10, with remediation available in 5.0.11+. Exploitation can lead to host compromise, data exposure, and potential lateral movement in connected enterprise environments.
 
-    The framework employs modular plugin architecture for reconnaissance, lateral movement, privilege escalation, and data theft, with initial access typically via stolen credentials or Java deserialization vulnerabilities. VoidLink's mesh C2 architecture enables attackers to route traffic through compromised nodes, bypassing network segmentation and enabling prolonged undetected compromise of cloud and enterprise infrastructure.
+    [:octicons-arrow-right-24: Read more](2026/Week8/filezen.md)
 
-    [:octicons-arrow-right-24: Read more](2026/Week7/uat9921.md)
+-   ![mississippi](2026/Week8/images/mississippi.png)
 
--   ![russian](2026/Week7/images/russian.png)
+    **Mississippi Hospital System Closes All Clinics After Ransomware Attack**
 
-    **Russian Government Attempts to Block WhatsApp and Restrict Telegram**
+    **Ransomware**{.cve-chip} **Healthcare**{.cve-chip} **Epic EHR**{.cve-chip} **System Shutdown**{.cve-chip}
 
-    **Government Censorship**{.cve-chip} **Network Blocking**{.cve-chip} **DNS Manipulation**{.cve-chip} **WhatsApp**{.cve-chip} **Telegram**{.cve-chip}
+    A ransomware attack on the University of Mississippi Medical Center forced the closure of all 35 outpatient clinics statewide and canceled elective procedures for multiple days. The attack encrypted the Epic EHR platform, phones, email, and critical IT systems, forcing UMMC to shut down its network and operate hospitals using manual paper-based procedures.
 
-    Roskomnadzor, Russia's telecommunications regulator, escalated measures to block WhatsApp nationwide and impose restrictions on Telegram. Authorities removed WhatsApp domains from Russia's national DNS and deployed deep packet inspection (DPI) technology, effectively cutting off access for approximately 100 million users unless they employ DNS workarounds or VPNs.
+    Detected on February 19, 2026, the attack demonstrates the severe operational impact ransomware can have on healthcare delivery across an entire state network. Attackers made contact with ransom demands while UMMC works with FBI, CISA, and DHS to investigate the intrusion, restore systems, and determine if patient protected health information was compromised.
 
-    The government justifies the blockade as enforcing local laws and combating crime, while critics view it as censorship aimed at promoting MAX, a state-backed alternative messaging app. This represents a significant disruption to personal, business, and emergency communications across Russia.
+    [:octicons-arrow-right-24: Read more](2026/Week8/mississippi.md)
 
-    [:octicons-arrow-right-24: Read more](2026/Week7/russian.md)
+-   ![jackpotting](2026/Week8/images/jackpotting.png)
 
--   ![beyondtrust](2026/Week7/images/beyondtrust.png)
+    **Spitting Cash: ATM Jackpotting Attacks Surged in 2025**
 
-    **CVE-2026-1731 – BeyondTrust Pre-Authentication RCE Vulnerability**
+    **ATM Jackpotting**{.cve-chip} **Ploutus Malware**{.cve-chip} **Physical Attack**{.cve-chip} **Financial Crime**{.cve-chip}
 
-    **CVE-2026-1731**{.cve-chip} **Remote Code Execution**{.cve-chip} **Pre-Authentication**{.cve-chip} **Command Injection**{.cve-chip} **Critical**{.cve-chip}
+    ATM jackpotting attacks surged dramatically in 2025, with the FBI recording over 700 incidents causing $20+ million in losses. Attackers use Ploutus malware combined with physical access via generic master keys to force Windows-based ATMs to dispense cash without legitimate transactions. The attacks target the ATM's cash-dispenser APIs directly, bypassing normal banking flows.
 
-    A critical command injection vulnerability in BeyondTrust Remote Support and Privileged Remote Access allows unauthenticated attackers to execute arbitrary system commands via specially crafted requests. Attackers began exploiting exposed systems within 24 hours of the public proof-of-concept (PoC) release, compromising service accounts and enabling full system compromise.
+    A DOJ case indicted 54 individuals linked to Venezuelan gang Tren de Aragua for 117 jackpotting attempts causing $5.4M in losses. The attacks exploit weak physical security, legacy Windows systems, and commoditized malware tools that enable low-skill crews to execute rapid cash-outs in under 10 minutes per machine.
 
-    The vulnerability stems from improper input sanitization where unsanitized user input is passed directly to system-level command execution. Affected systems can be completely compromised, leading to credential theft, lateral movement, and potential ransomware deployment across enterprise networks.
+    [:octicons-arrow-right-24: Read more](2026/Week8/jackpotting.md)
 
-    [:octicons-arrow-right-24: Read more](2026/Week7/beyondtrust.md)
+-   ![honeywell](2026/Week8/images/honeywell.png)
 
--   ![google](2026/Week7/images/google.png)
+    **CVE-2026-1670 – Authentication Bypass in Honeywell CCTV Cameras**
 
-    **Google Links China, Iran, Russia, North Korea to Coordinated Defense Sector Cyber Operations**
+    **CVE-2026-1670**{.cve-chip} **Authentication Bypass**{.cve-chip} **CCTV Security**{.cve-chip} **Unauthenticated Access**{.cve-chip}
 
-    **State-Sponsored**{.cve-chip} **Defense Sector**{.cve-chip} **Multi-Nation Coordination**{.cve-chip} **Supply Chain Attack**{.cve-chip} **APT**{.cve-chip}
+    An authentication bypass flaw in Honeywell CCTV camera models allows attackers to access a password recovery API endpoint without valid credentials. By changing the recovery email to an attacker-controlled address, adversaries can trigger password resets and gain full administrative access to affected devices.
 
-    Google's Threat Intelligence Group discovered persistent, multi-vector cyber operations by state-linked threat clusters from China, Iran, Russia, and North Korea targeting defense sector systems, personnel, and supply chains. These coordinated campaigns employ sophisticated social engineering, recruitment lures, custom malware families (VERMONSTER, MESSYFORK, GREYBATTLE, STALECOOKIE), and obfuscation techniques.
+    The vulnerability requires no prior credentials or user interaction—only network reachability of the camera. Supported models include I-HIB2PI-UL, SMB NDAA MVO-3, and PTZ WDR 2MP variants. Exploitation enables unauthorized access to live surveillance feeds, camera controls, and potential network pivoting into adjacent systems.
 
-    The operations focus on modern warfare systems including drones, autonomous vehicles, and battlefield communications. Attack vectors include fake recruitment portals, spoofed applications, phishing emails, and edge device exploitation, with attackers using ORB networks for traffic obfuscation and maintaining long-term persistent access.
+    [:octicons-arrow-right-24: Read more](2026/Week8/honeywell.md)
 
-    [:octicons-arrow-right-24: Read more](2026/Week7/google.md)
+-   ![predator](2026/Week8/images/predator.png)
+
+    **Predator Spyware: iOS Mic/Camera Indicator Suppression**
+
+    **Commercial Spyware**{.cve-chip} **iOS Targeting**{.cve-chip} **Surveillance**{.cve-chip} **Covert Recording**{.cve-chip}
+
+    Predator, a sophisticated commercial spyware by Intellexa, can hook into iOS SpringBoard to suppress the green/orange camera and microphone activity indicators, hiding covert surveillance from users. By injecting code into SpringBoard's internal functions and nullifying sensor state update objects, Predator silently disables visual alerts while recording continues undetected.
+
+    Targeting journalists, activists, and political figures, Predator requires kernel-level access and demonstrates how sophisticated spyware subverts fundamental iOS privacy protections. The malware can capture microphone audio, record video, exfiltrate GPS data, and monitor communications without any visual indication to the user.
+
+    [:octicons-arrow-right-24: Read more](2026/Week8/predator.md)
+
+-   ![grandstream](2026/Week8/images/grandstream.png)
+
+    **Critical VoIP Vulnerability in Grandstream GXP1600 Series (CVE-2026-2329)**
+
+    **CVE-2026-2329**{.cve-chip} **Remote Code Execution**{.cve-chip} **VoIP Phone**{.cve-chip} **Call Interception**{.cve-chip}
+
+    A critical unauthenticated stack-based buffer overflow in Grandstream GXP1600 series VoIP phones enables remote code execution with root privileges. By sending a crafted HTTP request to the web API endpoint, attackers can trigger a buffer overflow and execute arbitrary code without any authentication.
+
+    Post-exploitation, attackers extract SIP and local credentials, reconfigure the phone's SIP settings to route calls through malicious proxies, and silently intercept calls while the phone functions normally. These phones serve as stealthy network footholds for eavesdropping on confidential business and government communications.
+
+    [:octicons-arrow-right-24: Read more](2026/Week8/grandstream.md)
+
+-   ![ficoba](2026/Week8/images/FICOBA.png)
+
+    **FICOBA National Bank Account Database Breach (France)**
+
+    **Data Breach**{.cve-chip} **Credential Compromise**{.cve-chip} **Financial Data**{.cve-chip} **Government Database**{.cve-chip}
+
+    A malicious actor used stolen government official credentials to access FICOBA, France's national database recording all bank accounts. Approximately 1.2 million account records were compromised, exposing RIB/IBAN numbers, names, residential addresses, tax IDs, and birth information.
+
+    While no account balances or transaction capability was accessed, the exposure of banking identifiers creates significant risk for fraud, unauthorized direct debits, and identity theft. The breach resulted from insufficient access controls, lack of multi-factor authentication, and inadequate monitoring of sensitive database queries.
+
+    [:octicons-arrow-right-24: Read more](2026/Week8/FICOBA.md)
+
+-   ![fortinet](2026/Week8/images/fortinet.png)
+
+    **Amazon: AI-Assisted Hacker Breached 600 Fortinet Firewalls in 5 Weeks**
+
+    **AI-Assisted Attack**{.cve-chip} **Credential Abuse**{.cve-chip} **FortiGate Firewalls**{.cve-chip} **Financially Motivated**{.cve-chip}
+
+    A Russian-speaking threat actor with limited technical skills used multiple commercial generative AI services to breach over 600 FortiGate firewalls across 55 countries between January 11 and February 18, 2026. Amazon's CISO described the operation as an "AI-powered assembly line for cybercrime," where AI tools handled reconnaissance, scripting, attack planning, and tooling development.
+
+    Crucially, no Fortinet vulnerability was exploited—attacks relied on exposed management interfaces, weak passwords, and lack of MFA. AI services generated attack scripts, analyzed stolen configurations, and guided lateral movement, demonstrating how AI drastically lowers the skill barrier for sophisticated cyber campaigns.
+
+    [:octicons-arrow-right-24: Read more](2026/Week8/fortinet.md)
+
+-   ![iptv](2026/Week8/images/iptv.png)
+
+    **Fake IPTV Apps Spread Massiv Android Malware Targeting Mobile Banking Users**
+
+    **Android Banking Trojan**{.cve-chip} **Mobile Malware**{.cve-chip} **IPTV Lure**{.cve-chip} **Device Takeover**{.cve-chip}
+
+    Massiv is a sophisticated Android banking trojan disguised as fake IPTV streaming apps, targeting users in Portugal, Spain, France, and Turkey. It abuses Android Accessibility Services to enable keylogging, screen overlays, and two remote-control modes: live screen streaming via MediaProjection API and advanced UI-tree extraction that bypasses screen-capture protections.
+
+    Active for 8+ months with upward trends, Massiv enables attackers to steal banking credentials, conduct real-time fraudulent transactions, and open new accounts in victims' names. The malware also targets Portugal's Chave Móvel Digital national authentication system, enabling full identity theft and financial fraud at the national e-ID level.
+
+    [:octicons-arrow-right-24: Read more](2026/Week8/iptv.md)
 
 </div>

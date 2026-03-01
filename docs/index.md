@@ -8,28 +8,40 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![sdwan](2026/Week8/images/sdwan.png)
-    
-    **Cisco SD-WAN Zero-Day CVE-2026-20127 Exploited Since 2023 for Admin Access**
+-   ![dohdoor](2026/Week9/images/dohdoor.png)
 
-    **CVE-2026-20127**{.cve-chip} **Authentication Bypass**{.cve-chip} **CVSS 10.0**{.cve-chip} **UAT-8616**{.cve-chip}
+    **UAT-10027 Targets U.S. Education and Healthcare with Dohdoor Backdoor**
 
-    Cisco disclosed a critical zero-day authentication bypass in Catalyst SD-WAN Controller (vSmart) and Manager (vManage) that has reportedly been exploited since at least 2023. Successful exploitation allows a remote attacker to gain high-privileged access to SD-WAN control-plane functions and management APIs.
+    **Dohdoor Backdoor**{.cve-chip} **UAT-10027**{.cve-chip} **DoH C2**{.cve-chip} **Healthcare/Education**{.cve-chip}
 
-    Reporting indicates observed campaigns used rogue peer insertion and downgrade/upgrade chains to escalate to root and maintain persistence, creating risk of traffic interception, policy tampering, and broad enterprise WAN disruption.
+    An ongoing campaign active since at least December 2025 is targeting U.S. education and healthcare organizations with the previously undocumented Dohdoor backdoor. The infection chain uses phishing-linked PowerShell, staged loaders, DLL sideloading via trusted Windows binaries, and encrypted DNS-over-HTTPS C2 traffic over port 443.
 
-    [:octicons-arrow-right-24: Read more](2026/Week8/sdwan.md)
+    Post-compromise activity includes in-memory payload execution consistent with Cobalt Strike behavior and evasion techniques that reduce endpoint/network visibility, increasing the risk of persistence, lateral movement, and credential theft.
 
--   ![pzyxel](2026/Week8/images/zyxel.png)
+    [:octicons-arrow-right-24: Read more](2026/Week9/dohdoor.md)
 
-    **Zyxel Warns of Critical RCE Flaw Affecting Over a Dozen Routers**
+-   ![Juniper](2026/Week9/images/Juniper.png)
 
-    **CVE-2025-13942**{.cve-chip} **Remote Code Execution**{.cve-chip} **UPnP SOAP Injection**{.cve-chip} **CVSS 9.8**{.cve-chip}
+    **Juniper Networks PTX Series Router Critical Vulnerability (CVE-2026-21902)**
 
-    Zyxel patched a critical unauthenticated command-injection flaw in UPnP that can allow remote OS command execution when devices are misconfigured with both WAN access and UPnP enabled. The issue affects multiple router/CPE product families and presents significant edge-network risk for exposed deployments.
+    **CVE-2026-21902**{.cve-chip} **Remote Code Execution**{.cve-chip} **Unauthenticated**{.cve-chip} **Root Access**{.cve-chip}
 
-    The same advisory also fixed two post-auth command-injection bugs (CVE-2025-13943 and CVE-2026-1459) tied to log-download and TR-369 certificate functions, increasing impact when administrative credentials are compromised.
+    A critical flaw in Junos OS Evolved on PTX Series routers can allow remote unauthenticated attackers to execute code as root due to improper permission assignment in the On-Box Anomaly Detection framework. The vulnerable service is exposed externally by mistake and enabled by default in affected builds.
 
-    [:octicons-arrow-right-24: Read more](2026/Week8/zyxel.md)
+    Successful exploitation can result in full router takeover, traffic manipulation, and severe operational risk for ISP, telecom, and enterprise backbone environments that depend on PTX routing infrastructure.
+
+    [:octicons-arrow-right-24: Read more](2026/Week9/Juniper.md)
+
+-   ![apex](2026/Week9/images/apex.png)
+
+    **Trend Micro Apex One Critical RCE Vulnerabilities**
+
+    **CVE-2025-71210**{.cve-chip} **CVE-2025-71211**{.cve-chip} **Path Traversal**{.cve-chip} **Apex One**{.cve-chip}
+
+    Trend Micro patched critical Apex One vulnerabilities that can lead to remote code execution on on-premises management servers through path traversal and improper input validation. Attackers may write malicious files to unintended directories and execute them with high privileges.
+
+    Compromise of a security management platform creates a high-trust pivot point, enabling potential malicious policy pushes, protection bypass, lateral movement, and broad ransomware or data-theft impact across managed endpoints.
+
+    [:octicons-arrow-right-24: Read more](2026/Week9/apex.md)
 
 </div>

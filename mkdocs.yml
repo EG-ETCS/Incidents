@@ -278,3 +278,8 @@ nav:
           - "Active Exploitation of FileZen OS Command Injection Vulnerability (CVE-2026-25108)": 2026/Week8/filezen.md
           - "Cisco SD-WAN Zero-Day CVE-2026-20127 Exploited Since 2023 for Admin Access": 2026/Week8/sdwan.md
           - "Zyxel Warns of Critical RCE Flaw Affecting Over a Dozen Routers": 2026/Week8/zyxel.md
+      - "March": 
+        - "week9": 
+          - "UAT-10027 Targets U.S. Education and Healthcare with Dohdoor Backdoor": 2026/Week9/dohdoor.md
+          - "Juniper Networks PTX Series Router Critical Vulnerability (CVE-2026-21902)": 2026/Week9/Juniper.md
+          - "Trend Micro Apex One Critical RCE Vulnerabilities": 2026/Week9/apex.md
