@@ -283,3 +283,6 @@ nav:
           - "UAT-10027 Targets U.S. Education and Healthcare with Dohdoor Backdoor": 2026/Week9/dohdoor.md
           - "Juniper Networks PTX Series Router Critical Vulnerability (CVE-2026-21902)": 2026/Week9/Juniper.md
           - "Trend Micro Apex One Critical RCE Vulnerabilities": 2026/Week9/apex.md
+          - "BadeSaba Calendar App Hack (Iranian Prayer-App Compromise)": 2026/Week9/BadeSaba.md
+          - "Dubai SIM-Swap Scam Exploiting Regional Tensions": 2026/Week9/simSwap.md
+          - "Android Security Update — March 2026": 2026/Week9/android.md
