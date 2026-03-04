@@ -8,40 +8,28 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![BadeSaba](2026/Week9/images/BadeSaba.png)
+-   ![vmware](2026/Week9/images/vmware.png)
 
-    **BadeSaba Calendar App Hack (Iranian Prayer-App Compromise)**
+    **CISA Flags VMware Aria Operations RCE Flaw as Exploited in Attacks**
 
-    **Mobile App Compromise**{.cve-chip} **Push Notification Abuse**{.cve-chip} **Information Operations**{.cve-chip} **Crisis-Time Targeting**{.cve-chip}
+    **CVE-2026-22719**{.cve-chip} **Command Injection**{.cve-chip} **KEV Listed**{.cve-chip} **Aria Operations**{.cve-chip}
 
-    The BadeSaba Calendar app ecosystem was reportedly compromised, enabling unauthorized push notifications to millions of users with Persian-language messages during active military operations and broad internet disruptions. Reporting indicates likely compromise of push-notification backend/control infrastructure rather than endpoint exploitation.
+    CISA added CVE-2026-22719 in VMware Aria Operations to the KEV catalog after confirmed real-world exploitation. The high-severity command injection bug affects migration-related logic and can enable remote code execution in reachable management environments.
 
-    The incident highlights how high-reach notification systems can be weaponized for psychological and information operations, especially when synchronization with connectivity outages limits rapid verification through alternative channels.
+    Attackers can use this foothold to tamper with monitoring infrastructure, establish persistence, and potentially pivot deeper into vSphere and hybrid-cloud estates, especially when chained with related XSS and privilege-escalation weaknesses.
 
-    [:octicons-arrow-right-24: Read more](2026/Week9/BadeSaba.md)
+    [:octicons-arrow-right-24: Read more](2026/Week9/vmware.md)
 
--   ![simSwap](2026/Week9/images/simSwap.png)
+-   ![dlink](2026/Week9/images/dlink.png)
 
-    **Dubai SIM-Swap Scam Exploiting Regional Tensions**
+    **CVE-2026-3485 — OS Command Injection in SSDP Service of D-Link DIR-868L 110b03**
 
-    **SIM-Swap Fraud**{.cve-chip} **Social Engineering**{.cve-chip} **Identity Abuse**{.cve-chip} **Crisis-Themed Scam**{.cve-chip}
+    **CVE-2026-3485**{.cve-chip} **OS Command Injection**{.cve-chip} **SSDP/UPnP**{.cve-chip} **Unauthenticated RCE**{.cve-chip}
 
-    Scammers impersonating a fake “Dubai Crisis Management” authority reportedly targeted residents with urgent calls and messages to harvest UAE Pass and Emirates ID details. The campaign appears designed to enable downstream SIM-swap fraud by social-engineering carriers into transferring victim numbers.
+    A command injection vulnerability in the SSDP service of D-Link DIR-868L firmware 110b03 allows attackers to abuse the `ST` parameter and execute arbitrary shell commands without authentication. The flaw is reachable anywhere the vulnerable SSDP service is exposed, including local segments and misconfigured internet-facing paths.
 
-    Once a number is hijacked, attackers can intercept SMS OTP/2FA codes and attempt account takeovers in banking and other sensitive services, amplifying financial and identity risk during a period of regional tension.
+    Successful exploitation can result in full router takeover, traffic interception/manipulation, malware persistence, and botnet enrollment, with elevated long-term risk because the affected platform may no longer receive vendor security fixes.
 
-    [:octicons-arrow-right-24: Read more](2026/Week9/simSwap.md)
-
--   ![android](2026/Week9/images/android.png)
-
-    **Android Security Update — March 2026**
-
-    **CVE-2026-21385**{.cve-chip} **Android Security Bulletin**{.cve-chip} **129 CVEs Patched**{.cve-chip} **Actively Exploited**{.cve-chip}
-
-    Google’s March 2026 Android security release patched 129 vulnerabilities, the largest monthly Android fix batch since 2018, including a Qualcomm memory corruption flaw (CVE-2026-21385) reported as actively exploited in limited targeted attacks.
-
-    The update spans framework, system, kernel, and vendor components, with patch levels 2026-03-01 and 2026-03-05. Unpatched or end-of-support devices remain at elevated risk of code execution, privilege escalation, and persistent compromise.
-
-    [:octicons-arrow-right-24: Read more](2026/Week9/android.md)
+    [:octicons-arrow-right-24: Read more](2026/Week9/dlink.md)
 
 </div>

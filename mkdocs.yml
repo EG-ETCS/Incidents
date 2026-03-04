@@ -286,3 +286,5 @@ nav:
           - "BadeSaba Calendar App Hack (Iranian Prayer-App Compromise)": 2026/Week9/BadeSaba.md
           - "Dubai SIM-Swap Scam Exploiting Regional Tensions": 2026/Week9/simSwap.md
           - "Android Security Update — March 2026": 2026/Week9/android.md
+          - "CISA Flags VMware Aria Operations RCE Flaw as Exploited in Attacks": 2026/Week9/vmware.md
+          - "CVE-2026-3485 — OS Command Injection in SSDP Service of D-Link DIR-868L 110b03": 2026/Week9/dlink.md
