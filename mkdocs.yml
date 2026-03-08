@@ -293,3 +293,9 @@ nav:
           - "Mail2Shell zero-click attack lets hackers hijack FreeScout mail servers": 2026/Week9/mail2shell.md
           - "Coruna iOS Exploit Kit (aka CryptoWaters)": 2026/Week9/coruna.md
           - "CVE-2026-2628 – Microsoft 365 / Azure AD SSO Authentication Bypass in WordPress Plugin": 2026/Week9/azureAD.md
+        - "week10": 
+          - "Hikvision & Rockwell Automation Critical Vulnerabilities Added to KEV Catalog": 2026/Week10/hikvision.md
+          - "Critical Vulnerabilities in Cisco Secure Firewall Management Center (FMC)": 2026/Week10/cisco.md
+          - "US Cyber Strategy Targets Adversaries, Critical Infrastructure, and Emerging Technologies": 2026/Week10/USstrategy.md
+          - "China-Linked Hackers Use TernDoor, PeerTime, BruteEntry in South American Telecom Attacks": 2026/Week10/terndoor.md
+          - "Iranian APT Hacked US Airport, Bank, Software Company": 2026/Week10/dindoor.md

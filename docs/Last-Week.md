@@ -8,160 +8,160 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![sdwan](2026/Week8/images/sdwan.png)
-    
-    **Cisco SD-WAN Zero-Day CVE-2026-20127 Exploited Since 2023 for Admin Access**
+-   ![ipcameras](2026/Week9/images/ipcameras.png)
 
-    **CVE-2026-20127**{.cve-chip} **Authentication Bypass**{.cve-chip} **CVSS 10.0**{.cve-chip} **UAT-8616**{.cve-chip}
+    **Iran-linked Cyber Espionage Campaign Targeting Internet-Connected Surveillance Cameras**
 
-    Cisco disclosed a critical zero-day authentication bypass in Catalyst SD-WAN Controller (vSmart) and Manager (vManage) that has reportedly been exploited since at least 2023. Successful exploitation allows a remote attacker to gain high-privileged access to SD-WAN control-plane functions and management APIs.
+    **Iran-Linked Activity**{.cve-chip} **IP Camera Targeting**{.cve-chip} **Reconnaissance Operations**{.cve-chip} **IoT Exposure**{.cve-chip}
 
-    Reporting indicates observed campaigns used rogue peer insertion and downgrade/upgrade chains to escalate to root and maintain persistence, creating risk of traffic interception, policy tampering, and broad enterprise WAN disruption.
+    Researchers reported a surge in intrusion attempts linked to Iranian threat infrastructure targeting internet-connected surveillance cameras in several Middle Eastern countries. The campaign appears focused on accessing live and recorded video streams for reconnaissance near public, infrastructure, and potentially sensitive sites.
 
-    [:octicons-arrow-right-24: Read more](2026/Week8/sdwan.md)
+    Attackers are believed to combine internet exposure, weak/default credentials, and known firmware weaknesses in commonly deployed camera ecosystems to obtain administrative access and monitor real-time developments during regional conflict.
 
--   ![pzyxel](2026/Week8/images/zyxel.png)
+    [:octicons-arrow-right-24: Read more](2026/Week9/ipcameras.md)
 
-    **Zyxel Warns of Critical RCE Flaw Affecting Over a Dozen Routers**
+-   ![DDos](2026/Week9/images/DDos.png)
 
-    **CVE-2025-13942**{.cve-chip} **Remote Code Execution**{.cve-chip} **UPnP SOAP Injection**{.cve-chip} **CVSS 9.8**{.cve-chip}
+    **Hacktivist DDoS Campaign Targeting 110 Organizations Across 16 Countries After Middle East Conflict**
 
-    Zyxel patched a critical unauthenticated command-injection flaw in UPnP that can allow remote OS command execution when devices are misconfigured with both WAN access and UPnP enabled. The issue affects multiple router/CPE product families and presents significant edge-network risk for exposed deployments.
+    **Hacktivist Campaign**{.cve-chip} **DDoS Operations**{.cve-chip} **Geopolitical Trigger**{.cve-chip} **Multi-Country Impact**{.cve-chip}
 
-    The same advisory also fixed two post-auth command-injection bugs (CVE-2025-13943 and CVE-2026-1459) tied to log-download and TR-369 certificate functions, increasing impact when administrative credentials are compromised.
+    A coordinated wave of 149 claimed DDoS attacks reportedly hit 110 organizations across 16 countries, with government portals and public-facing infrastructure among the most targeted sectors. The campaign involved at least 12 hacktivist groups and appears closely tied to geopolitical escalation in the Middle East.
 
-    [:octicons-arrow-right-24: Read more](2026/Week8/zyxel.md)
+    Reported tactics include Layer-7 HTTP floods, TCP SYN floods, UDP amplification, and botnet-driven traffic surges designed to disrupt service availability and amplify political messaging through public claim channels.
 
--   ![phishing](2026/Week8/images/phishing.png)
+    [:octicons-arrow-right-24: Read more](2026/Week9/DDos.md)
 
-    **Phishing Campaign Targets Freight and Logistics Orgs in the US, Europe**
+-   ![mail2shell](2026/Week9/images/mail2shell.png)
 
-    **Credential Phishing**{.cve-chip} **Logistics Sector**{.cve-chip} **Financially Motivated**{.cve-chip} **Account Takeover**{.cve-chip}
+    **Mail2Shell zero-click attack lets hackers hijack FreeScout mail servers**
 
-    A financially motivated cybercriminal group targeted freight and logistics organizations across the US and Europe using spoofed portals and multi-stage cloaking infrastructure. The campaign reportedly harvested over 1,600 credential sets, including usernames, passwords, 2FA codes, and business identifiers used in freight operations.
+    **CVE-2026-28289**{.cve-chip} **Mail2Shell**{.cve-chip} **Zero-Click RCE**{.cve-chip} **Unicode Bypass**{.cve-chip}
 
-    Attackers used urgent business pretexts to drive victims through redirection chains into pixel-perfect fake login pages, then monetized access through account takeover, payment rerouting, fuel card abuse, and double-brokering fraud.
+    Researchers disclosed a critical FreeScout vulnerability where a crafted email attachment can bypass filename protections using hidden Unicode characters and write dangerous files such as `.htaccess`. The flaw can be exploited without user interaction when inbound mail is automatically processed.
 
-    [:octicons-arrow-right-24: Read more](2026/Week8/phishing.md)
+    Successful abuse may enable unauthenticated remote code execution, web shell deployment, and full helpdesk server compromise—putting support tickets, customer communications, and attached data at risk.
 
--   ![solarwinds](2026/Week8/images/solarwinds.png)
+    [:octicons-arrow-right-24: Read more](2026/Week9/mail2shell.md)
 
-    **SolarWinds Serv-U Critical Root Access Vulnerabilities**
+-   ![coruna](2026/Week9/images/coruna.png)
 
-    **CVE-2025-40538**{.cve-chip} **CVE-2025-40539**{.cve-chip} **CVE-2025-40540**{.cve-chip} **CVE-2025-40541**{.cve-chip}
+    **Coruna iOS Exploit Kit (aka CryptoWaters)**
 
-    SolarWinds patched four critical flaws in Serv-U MFT and Secure FTP that can allow attackers with administrative access to execute arbitrary code and gain root/system-level control. The vulnerabilities affect both Windows and Linux deployments and were fixed in version 15.5.4.
+    **Coruna/CryptoWaters**{.cve-chip} **iOS Exploit Kit**{.cve-chip} **WebKit Chains**{.cve-chip} **Mobile Surveillance-to-Crime**{.cve-chip}
 
-    Exploitation can enable rogue admin creation, privilege escalation, sensitive file exfiltration, and lateral movement, with potential outcomes including ransomware deployment and business disruption in enterprise transfer environments.
+    Researchers uncovered the Coruna exploit framework targeting iOS 13 through 17.2.1, with 23 exploits organized into five complete chains delivered via malicious or compromised websites. Hidden JavaScript loaders fingerprint device model and iOS version, then trigger chain-specific exploitation.
 
-    [:octicons-arrow-right-24: Read more](2026/Week8/solarwinds.md)
+    Reported post-exploitation includes PlasmaLoader payload delivery, DGA-based C2 fallback, and theft of wallet/app data, illustrating how advanced mobile exploitation tooling can spread from surveillance operations into broader criminal ecosystems.
 
--   ![filezen](2026/Week8/images/filezen.png)
+    [:octicons-arrow-right-24: Read more](2026/Week9/coruna.md)
 
-    **Active Exploitation of FileZen OS Command Injection Vulnerability (CVE-2026-25108)**
+-   ![azureAD](2026/Week9/images/azureAD.png)
 
-    **CVE-2026-25108**{.cve-chip} **OS Command Injection**{.cve-chip} **CWE-78**{.cve-chip} **KEV Listed**{.cve-chip}
+    **CVE-2026-2628 – Microsoft 365 / Azure AD SSO Authentication Bypass in WordPress Plugin**
 
-    A high-severity OS command injection flaw in Soliton FileZen allows authenticated users to execute arbitrary system commands when Antivirus Check Option is enabled. The vulnerability is actively exploited in the wild and is listed in CISA's Known Exploited Vulnerabilities catalog.
+    **CVE-2026-2628**{.cve-chip} **Authentication Bypass**{.cve-chip} **WordPress Plugin**{.cve-chip} **Azure AD SSO**{.cve-chip}
 
-    Affected versions include FileZen 4.2.1–4.2.8 and 5.0.0–5.0.10, with remediation available in 5.0.11+. Exploitation can lead to host compromise, data exposure, and potential lateral movement in connected enterprise environments.
+    A critical flaw in the All-in-One Microsoft 365 & Entra ID / Azure AD SSO Login plugin (<= 2.2.5) can allow remote attackers to bypass authentication and log in as arbitrary WordPress users, including administrators, without valid credentials.
 
-    [:octicons-arrow-right-24: Read more](2026/Week8/filezen.md)
+    Exploitation may lead to full site takeover, malicious plugin/theme deployment, sensitive data exposure, and potential lateral movement where WordPress infrastructure is poorly segmented from internal systems.
 
--   ![mississippi](2026/Week8/images/mississippi.png)
+    [:octicons-arrow-right-24: Read more](2026/Week9/azureAD.md)
 
-    **Mississippi Hospital System Closes All Clinics After Ransomware Attack**
+-   ![vmware](2026/Week9/images/vmware.png)
 
-    **Ransomware**{.cve-chip} **Healthcare**{.cve-chip} **Epic EHR**{.cve-chip} **System Shutdown**{.cve-chip}
+    **CISA Flags VMware Aria Operations RCE Flaw as Exploited in Attacks**
 
-    A ransomware attack on the University of Mississippi Medical Center forced the closure of all 35 outpatient clinics statewide and canceled elective procedures for multiple days. The attack encrypted the Epic EHR platform, phones, email, and critical IT systems, forcing UMMC to shut down its network and operate hospitals using manual paper-based procedures.
+    **CVE-2026-22719**{.cve-chip} **Command Injection**{.cve-chip} **KEV Listed**{.cve-chip} **Aria Operations**{.cve-chip}
 
-    Detected on February 19, 2026, the attack demonstrates the severe operational impact ransomware can have on healthcare delivery across an entire state network. Attackers made contact with ransom demands while UMMC works with FBI, CISA, and DHS to investigate the intrusion, restore systems, and determine if patient protected health information was compromised.
+    CISA added CVE-2026-22719 in VMware Aria Operations to the KEV catalog after confirmed real-world exploitation. The high-severity command injection bug affects migration-related logic and can enable remote code execution in reachable management environments.
 
-    [:octicons-arrow-right-24: Read more](2026/Week8/mississippi.md)
+    Attackers can use this foothold to tamper with monitoring infrastructure, establish persistence, and potentially pivot deeper into vSphere and hybrid-cloud estates, especially when chained with related XSS and privilege-escalation weaknesses.
 
--   ![jackpotting](2026/Week8/images/jackpotting.png)
+    [:octicons-arrow-right-24: Read more](2026/Week9/vmware.md)
 
-    **Spitting Cash: ATM Jackpotting Attacks Surged in 2025**
+-   ![dlink](2026/Week9/images/dlink.png)
 
-    **ATM Jackpotting**{.cve-chip} **Ploutus Malware**{.cve-chip} **Physical Attack**{.cve-chip} **Financial Crime**{.cve-chip}
+    **CVE-2026-3485 — OS Command Injection in SSDP Service of D-Link DIR-868L 110b03**
 
-    ATM jackpotting attacks surged dramatically in 2025, with the FBI recording over 700 incidents causing $20+ million in losses. Attackers use Ploutus malware combined with physical access via generic master keys to force Windows-based ATMs to dispense cash without legitimate transactions. The attacks target the ATM's cash-dispenser APIs directly, bypassing normal banking flows.
+    **CVE-2026-3485**{.cve-chip} **OS Command Injection**{.cve-chip} **SSDP/UPnP**{.cve-chip} **Unauthenticated RCE**{.cve-chip}
 
-    A DOJ case indicted 54 individuals linked to Venezuelan gang Tren de Aragua for 117 jackpotting attempts causing $5.4M in losses. The attacks exploit weak physical security, legacy Windows systems, and commoditized malware tools that enable low-skill crews to execute rapid cash-outs in under 10 minutes per machine.
+    A command injection vulnerability in the SSDP service of D-Link DIR-868L firmware 110b03 allows attackers to abuse the `ST` parameter and execute arbitrary shell commands without authentication. The flaw is reachable anywhere the vulnerable SSDP service is exposed, including local segments and misconfigured internet-facing paths.
 
-    [:octicons-arrow-right-24: Read more](2026/Week8/jackpotting.md)
+    Successful exploitation can result in full router takeover, traffic interception/manipulation, malware persistence, and botnet enrollment, with elevated long-term risk because the affected platform may no longer receive vendor security fixes.
 
--   ![honeywell](2026/Week8/images/honeywell.png)
+    [:octicons-arrow-right-24: Read more](2026/Week9/dlink.md)
 
-    **CVE-2026-1670 – Authentication Bypass in Honeywell CCTV Cameras**
+-   ![BadeSaba](2026/Week9/images/BadeSaba.png)
 
-    **CVE-2026-1670**{.cve-chip} **Authentication Bypass**{.cve-chip} **CCTV Security**{.cve-chip} **Unauthenticated Access**{.cve-chip}
+    **BadeSaba Calendar App Hack (Iranian Prayer-App Compromise)**
 
-    An authentication bypass flaw in Honeywell CCTV camera models allows attackers to access a password recovery API endpoint without valid credentials. By changing the recovery email to an attacker-controlled address, adversaries can trigger password resets and gain full administrative access to affected devices.
+    **Mobile App Compromise**{.cve-chip} **Push Notification Abuse**{.cve-chip} **Information Operations**{.cve-chip} **Crisis-Time Targeting**{.cve-chip}
 
-    The vulnerability requires no prior credentials or user interaction—only network reachability of the camera. Supported models include I-HIB2PI-UL, SMB NDAA MVO-3, and PTZ WDR 2MP variants. Exploitation enables unauthorized access to live surveillance feeds, camera controls, and potential network pivoting into adjacent systems.
+    The BadeSaba Calendar app ecosystem was reportedly compromised, enabling unauthorized push notifications to millions of users with Persian-language messages during active military operations and broad internet disruptions. Reporting indicates likely compromise of push-notification backend/control infrastructure rather than endpoint exploitation.
 
-    [:octicons-arrow-right-24: Read more](2026/Week8/honeywell.md)
+    The incident highlights how high-reach notification systems can be weaponized for psychological and information operations, especially when synchronization with connectivity outages limits rapid verification through alternative channels.
 
--   ![predator](2026/Week8/images/predator.png)
+    [:octicons-arrow-right-24: Read more](2026/Week9/BadeSaba.md)
 
-    **Predator Spyware: iOS Mic/Camera Indicator Suppression**
+-   ![simSwap](2026/Week9/images/simSwap.png)
 
-    **Commercial Spyware**{.cve-chip} **iOS Targeting**{.cve-chip} **Surveillance**{.cve-chip} **Covert Recording**{.cve-chip}
+    **Dubai SIM-Swap Scam Exploiting Regional Tensions**
 
-    Predator, a sophisticated commercial spyware by Intellexa, can hook into iOS SpringBoard to suppress the green/orange camera and microphone activity indicators, hiding covert surveillance from users. By injecting code into SpringBoard's internal functions and nullifying sensor state update objects, Predator silently disables visual alerts while recording continues undetected.
+    **SIM-Swap Fraud**{.cve-chip} **Social Engineering**{.cve-chip} **Identity Abuse**{.cve-chip} **Crisis-Themed Scam**{.cve-chip}
 
-    Targeting journalists, activists, and political figures, Predator requires kernel-level access and demonstrates how sophisticated spyware subverts fundamental iOS privacy protections. The malware can capture microphone audio, record video, exfiltrate GPS data, and monitor communications without any visual indication to the user.
+    Scammers impersonating a fake “Dubai Crisis Management” authority reportedly targeted residents with urgent calls and messages to harvest UAE Pass and Emirates ID details. The campaign appears designed to enable downstream SIM-swap fraud by social-engineering carriers into transferring victim numbers.
 
-    [:octicons-arrow-right-24: Read more](2026/Week8/predator.md)
+    Once a number is hijacked, attackers can intercept SMS OTP/2FA codes and attempt account takeovers in banking and other sensitive services, amplifying financial and identity risk during a period of regional tension.
 
--   ![grandstream](2026/Week8/images/grandstream.png)
+    [:octicons-arrow-right-24: Read more](2026/Week9/simSwap.md)
 
-    **Critical VoIP Vulnerability in Grandstream GXP1600 Series (CVE-2026-2329)**
+-   ![android](2026/Week9/images/android.png)
 
-    **CVE-2026-2329**{.cve-chip} **Remote Code Execution**{.cve-chip} **VoIP Phone**{.cve-chip} **Call Interception**{.cve-chip}
+    **Android Security Update — March 2026**
 
-    A critical unauthenticated stack-based buffer overflow in Grandstream GXP1600 series VoIP phones enables remote code execution with root privileges. By sending a crafted HTTP request to the web API endpoint, attackers can trigger a buffer overflow and execute arbitrary code without any authentication.
+    **CVE-2026-21385**{.cve-chip} **Android Security Bulletin**{.cve-chip} **129 CVEs Patched**{.cve-chip} **Actively Exploited**{.cve-chip}
 
-    Post-exploitation, attackers extract SIP and local credentials, reconfigure the phone's SIP settings to route calls through malicious proxies, and silently intercept calls while the phone functions normally. These phones serve as stealthy network footholds for eavesdropping on confidential business and government communications.
+    Google’s March 2026 Android security release patched 129 vulnerabilities, the largest monthly Android fix batch since 2018, including a Qualcomm memory corruption flaw (CVE-2026-21385) reported as actively exploited in limited targeted attacks.
 
-    [:octicons-arrow-right-24: Read more](2026/Week8/grandstream.md)
+    The update spans framework, system, kernel, and vendor components, with patch levels 2026-03-01 and 2026-03-05. Unpatched or end-of-support devices remain at elevated risk of code execution, privilege escalation, and persistent compromise.
 
--   ![ficoba](2026/Week8/images/FICOBA.png)
+    [:octicons-arrow-right-24: Read more](2026/Week9/android.md)
 
-    **FICOBA National Bank Account Database Breach (France)**
+-   ![dohdoor](2026/Week9/images/dohdoor.png)
 
-    **Data Breach**{.cve-chip} **Credential Compromise**{.cve-chip} **Financial Data**{.cve-chip} **Government Database**{.cve-chip}
+    **UAT-10027 Targets U.S. Education and Healthcare with Dohdoor Backdoor**
 
-    A malicious actor used stolen government official credentials to access FICOBA, France's national database recording all bank accounts. Approximately 1.2 million account records were compromised, exposing RIB/IBAN numbers, names, residential addresses, tax IDs, and birth information.
+    **Dohdoor Backdoor**{.cve-chip} **UAT-10027**{.cve-chip} **DoH C2**{.cve-chip} **Healthcare/Education**{.cve-chip}
 
-    While no account balances or transaction capability was accessed, the exposure of banking identifiers creates significant risk for fraud, unauthorized direct debits, and identity theft. The breach resulted from insufficient access controls, lack of multi-factor authentication, and inadequate monitoring of sensitive database queries.
+    An ongoing campaign active since at least December 2025 is targeting U.S. education and healthcare organizations with the previously undocumented Dohdoor backdoor. The infection chain uses phishing-linked PowerShell, staged loaders, DLL sideloading via trusted Windows binaries, and encrypted DNS-over-HTTPS C2 traffic over port 443.
 
-    [:octicons-arrow-right-24: Read more](2026/Week8/FICOBA.md)
+    Post-compromise activity includes in-memory payload execution consistent with Cobalt Strike behavior and evasion techniques that reduce endpoint/network visibility, increasing the risk of persistence, lateral movement, and credential theft.
 
--   ![fortinet](2026/Week8/images/fortinet.png)
+    [:octicons-arrow-right-24: Read more](2026/Week9/dohdoor.md)
 
-    **Amazon: AI-Assisted Hacker Breached 600 Fortinet Firewalls in 5 Weeks**
+-   ![Juniper](2026/Week9/images/Juniper.png)
 
-    **AI-Assisted Attack**{.cve-chip} **Credential Abuse**{.cve-chip} **FortiGate Firewalls**{.cve-chip} **Financially Motivated**{.cve-chip}
+    **Juniper Networks PTX Series Router Critical Vulnerability (CVE-2026-21902)**
 
-    A Russian-speaking threat actor with limited technical skills used multiple commercial generative AI services to breach over 600 FortiGate firewalls across 55 countries between January 11 and February 18, 2026. Amazon's CISO described the operation as an "AI-powered assembly line for cybercrime," where AI tools handled reconnaissance, scripting, attack planning, and tooling development.
+    **CVE-2026-21902**{.cve-chip} **Remote Code Execution**{.cve-chip} **Unauthenticated**{.cve-chip} **Root Access**{.cve-chip}
 
-    Crucially, no Fortinet vulnerability was exploited—attacks relied on exposed management interfaces, weak passwords, and lack of MFA. AI services generated attack scripts, analyzed stolen configurations, and guided lateral movement, demonstrating how AI drastically lowers the skill barrier for sophisticated cyber campaigns.
+    A critical flaw in Junos OS Evolved on PTX Series routers can allow remote unauthenticated attackers to execute code as root due to improper permission assignment in the On-Box Anomaly Detection framework. The vulnerable service is exposed externally by mistake and enabled by default in affected builds.
 
-    [:octicons-arrow-right-24: Read more](2026/Week8/fortinet.md)
+    Successful exploitation can result in full router takeover, traffic manipulation, and severe operational risk for ISP, telecom, and enterprise backbone environments that depend on PTX routing infrastructure.
 
--   ![iptv](2026/Week8/images/iptv.png)
+    [:octicons-arrow-right-24: Read more](2026/Week9/Juniper.md)
 
-    **Fake IPTV Apps Spread Massiv Android Malware Targeting Mobile Banking Users**
+-   ![apex](2026/Week9/images/apex.png)
 
-    **Android Banking Trojan**{.cve-chip} **Mobile Malware**{.cve-chip} **IPTV Lure**{.cve-chip} **Device Takeover**{.cve-chip}
+    **Trend Micro Apex One Critical RCE Vulnerabilities**
 
-    Massiv is a sophisticated Android banking trojan disguised as fake IPTV streaming apps, targeting users in Portugal, Spain, France, and Turkey. It abuses Android Accessibility Services to enable keylogging, screen overlays, and two remote-control modes: live screen streaming via MediaProjection API and advanced UI-tree extraction that bypasses screen-capture protections.
+    **CVE-2025-71210**{.cve-chip} **CVE-2025-71211**{.cve-chip} **Path Traversal**{.cve-chip} **Apex One**{.cve-chip}
 
-    Active for 8+ months with upward trends, Massiv enables attackers to steal banking credentials, conduct real-time fraudulent transactions, and open new accounts in victims' names. The malware also targets Portugal's Chave Móvel Digital national authentication system, enabling full identity theft and financial fraud at the national e-ID level.
+    Trend Micro patched critical Apex One vulnerabilities that can lead to remote code execution on on-premises management servers through path traversal and improper input validation. Attackers may write malicious files to unintended directories and execute them with high privileges.
 
-    [:octicons-arrow-right-24: Read more](2026/Week8/iptv.md)
+    Compromise of a security management platform creates a high-trust pivot point, enabling potential malicious policy pushes, protection bypass, lateral movement, and broad ransomware or data-theft impact across managed endpoints.
+
+    [:octicons-arrow-right-24: Read more](2026/Week9/apex.md)
 
 </div>
