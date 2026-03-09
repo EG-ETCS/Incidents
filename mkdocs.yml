@@ -299,3 +299,7 @@ nav:
           - "US Cyber Strategy Targets Adversaries, Critical Infrastructure, and Emerging Technologies": 2026/Week10/USstrategy.md
           - "China-Linked Hackers Use TernDoor, PeerTime, BruteEntry in South American Telecom Attacks": 2026/Week10/terndoor.md
           - "Iranian APT Hacked US Airport, Bank, Software Company": 2026/Week10/dindoor.md
+          - "BoryptGrab Infostealer GitHub Distribution Campaign": 2026/Week10/github.md
+          - "CVE-2025-70231 – Path Traversal Vulnerability in D-Link DIR-513 Router": 2026/Week10/dlink.md
+          - "SQL Injection Vulnerability in GPS Tracking System Login – CVE-2018-25192": 2026/Week10/gps.md
+          - "CVE-2026-3804 – Tenda i3 Router Stack-Based Buffer Overflow": 2026/Week10/tenda.md
