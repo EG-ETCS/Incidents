@@ -304,3 +304,7 @@ nav:
           - "SQL Injection Vulnerability in GPS Tracking System Login – CVE-2018-25192": 2026/Week10/gps.md
           - "CVE-2026-3804 – Tenda i3 Router Stack-Based Buffer Overflow": 2026/Week10/tenda.md
           - "Russia-linked Hackers Target Signal and WhatsApp Accounts of Officials Globally": 2026/Week10/russia.md
+          - "BeatBanker Android Malware Campaign (Fake Starlink App)": 2026/Week10/beatbanker.md
+          - "KadNap Botnet targeting ASUS Routers": 2026/Week10/asus.md
+          - "CVE-2026-24448 – Hard-coded Credentials in Industrial Network Devices": 2026/Week10/MR_GM.md
+          - "Middle East Cloud Infrastructure Attack / AWS Data Center Drone Strikes": 2026/Week10/cloud.md
