@@ -8,6 +8,30 @@ hide:
 
 <div class="grid cards" markdown>
 
+-   ![iran](2026/Week10/images/iran.png)
+
+    **Iran "Infrastructure Warfare" Threat Against U.S. Tech Companies**
+
+    **Infrastructure Warfare**{.cve-chip} **Geopolitical Cyber Risk**{.cve-chip} **Cloud Targeting**{.cve-chip} **Hybrid Threats**{.cve-chip}
+
+    Iranian state-affiliated media reportedly identified infrastructure tied to major U.S. technology firms as potential targets amid regional escalation, signaling a strategy that treats cloud facilities, research hubs, and digital operations as strategic pressure points.
+
+    The threat model spans cyber and physical disruption scenarios, increasing continuity risk for organizations dependent on regional cloud and technology infrastructure across Israel and Gulf locations.
+
+    [:octicons-arrow-right-24: Read more](2026/Week10/iran.md)
+
+-   ![fortigate](2026/Week10/images/fortigate.png)
+
+    **FortiGate Firewall Exploitation Campaign**
+
+    **FortiGate NGFW**{.cve-chip} **Credential Theft**{.cve-chip} **AD Pivoting**{.cve-chip} **Network Intrusion**{.cve-chip}
+
+    Researchers observed attackers compromising internet-exposed FortiGate appliances through exploited vulnerabilities and weak credentials, then creating rogue administrator accounts and exporting firewall configuration files.
+
+    Stolen configuration data can expose LDAP/AD service account credentials and network topology, enabling internal pivoting, lateral movement, and potential ransomware or large-scale intrusion operations.
+
+    [:octicons-arrow-right-24: Read more](2026/Week10/fortigate.md)
+
 -   ![beatbanker](2026/Week10/images/beatbanker.png)
 
     **BeatBanker Android Malware Campaign (Fake Starlink App)**

@@ -308,3 +308,5 @@ nav:
           - "KadNap Botnet targeting ASUS Routers": 2026/Week10/asus.md
           - "CVE-2026-24448 – Hard-coded Credentials in Industrial Network Devices": 2026/Week10/MR_GM.md
           - "Middle East Cloud Infrastructure Attack / AWS Data Center Drone Strikes": 2026/Week10/cloud.md
+          - 'Iran "Infrastructure Warfare" Threat Against U.S. Tech Companies': 2026/Week10/iran.md
+          - "FortiGate Firewall Exploitation Campaign": 2026/Week10/fortigate.md
