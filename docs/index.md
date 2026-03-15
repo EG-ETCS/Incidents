@@ -8,76 +8,64 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![iran](2026/Week10/images/iran.png)
+-   ![poland](2026/Week11/images/poland.png)
 
-    **Iran "Infrastructure Warfare" Threat Against U.S. Tech Companies**
+    **Cyberattack Targeting the National Centre for Nuclear Research (NCBJ)**
 
-    **Infrastructure Warfare**{.cve-chip} **Geopolitical Cyber Risk**{.cve-chip} **Cloud Targeting**{.cve-chip} **Hybrid Threats**{.cve-chip}
+    **Critical Infrastructure**{.cve-chip} **Nuclear Sector**{.cve-chip} **Cyberattack**{.cve-chip}
 
-    Iranian state-affiliated media reportedly identified infrastructure tied to major U.S. technology firms as potential targets amid regional escalation, signaling a strategy that treats cloud facilities, research hubs, and digital operations as strategic pressure points.
+    Poland's National Centre for Nuclear Research (NCBJ) blocked a targeted intrusion against its internal IT environment before any impact to reactor operations.
 
-    The threat model spans cyber and physical disruption scenarios, increasing continuity risk for organizations dependent on regional cloud and technology infrastructure across Israel and Gulf locations.
+    The incident is under national-level investigation, with preliminary indicators suggesting possible links to **Iran-associated** infrastructure while attribution remains unconfirmed.
 
-    [:octicons-arrow-right-24: Read more](2026/Week10/iran.md)
+    [Read more](2026/Week11/poland.md)
 
--   ![fortigate](2026/Week10/images/fortigate.png)
+-   ![stryker](2026/Week11/images/stryker.png)
 
-    **FortiGate Firewall Exploitation Campaign**
+    **Stryker Global Network Cyberattack (Handala Attack)**
 
-    **FortiGate NGFW**{.cve-chip} **Credential Theft**{.cve-chip} **AD Pivoting**{.cve-chip} **Network Intrusion**{.cve-chip}
+    **Healthcare Sector**{.cve-chip} **Wiper Attack**{.cve-chip} **Hacktivism**{.cve-chip}
 
-    Researchers observed attackers compromising internet-exposed FortiGate appliances through exploited vulnerabilities and weak credentials, then creating rogue administrator accounts and exporting firewall configuration files.
+    Stryker suffered a large-scale disruption across its global Microsoft enterprise environment, affecting corporate systems, manufacturing, and order processing.
 
-    Stolen configuration data can expose LDAP/AD service account credentials and network topology, enabling internal pivoting, lateral movement, and potential ransomware or large-scale intrusion operations.
+    Public reporting and threat-actor claims indicate a destructive campaign likely involving endpoint management abuse, while Stryker stated patient-facing medical devices were not impacted.
 
-    [:octicons-arrow-right-24: Read more](2026/Week10/fortigate.md)
+    [Read more](2026/Week11/stryker.md)
 
--   ![beatbanker](2026/Week10/images/beatbanker.png)
+-   ![socksEscort](2026/Week11/images/socksEscort.png)
 
-    **BeatBanker Android Malware Campaign (Fake Starlink App)**
+    **SocksEscort Proxy Service Disruption linked to the AVrecon Botnet**
 
-    **BeatBanker**{.cve-chip} **Android Banking Trojan**{.cve-chip} **Fake App Distribution**{.cve-chip} **Crypto Miner**{.cve-chip}
+    **Botnet**{.cve-chip} **Proxy Abuse**{.cve-chip} **Law Enforcement Action**{.cve-chip}
 
-    Researchers identified a malicious Android campaign distributing BeatBanker through fake Play Store-style websites and Starlink-themed APK lures. The malware abuses high-risk permissions and downloads modular payloads for credential theft, remote access, and crypto-mining.
+    U.S. and European law-enforcement agencies dismantled the SocksEscort proxy service, which used AVrecon-infected routers and IoT devices to provide criminal proxy infrastructure.
 
-    Reported behavior includes overlay attacks on banking/crypto apps, C2-driven module loading, and stealth persistence using near-inaudible looping audio to keep a foreground service active on infected devices.
+    The takedown disrupted a large-scale abuse ecosystem tied to fraud, credential stuffing, and phishing by seizing key domains, servers, and cryptocurrency assets.
 
-    [:octicons-arrow-right-24: Read more](2026/Week10/beatbanker.md)
+    [Read more](2026/Week11/socksEscort.md)
 
--   ![asus](2026/Week10/images/asus.png)
+-   ![windows](2026/Week11/images/windows.png)
 
-    **KadNap Botnet targeting ASUS Routers**
+    **Microsoft Windows 11 RRAS Remote Code Execution Vulnerability - Out-of-Band Hotpatch**
 
-    **KadNap Botnet**{.cve-chip} **ASUS Routers**{.cve-chip} **Proxy Abuse**{.cve-chip} **P2P C2**{.cve-chip}
+    **Windows 11**{.cve-chip} **RRAS**{.cve-chip} **Remote Code Execution**{.cve-chip}
 
-    Researchers identified KadNap malware compromising ASUS routers and edge devices, enrolling them into a botnet used as anonymizing proxy infrastructure for cybercrime activity. The campaign uses script-based installation and recurring cron execution to maintain persistence on infected systems.
+    Microsoft released OOB hotpatch `KB5084597` to fix multiple RRAS management vulnerabilities that could enable code execution when an administrator connects to a malicious RRAS server.
 
-    By leveraging modified Kademlia-style P2P coordination, attackers reduce centralized command dependency and make takedown more difficult while routing malicious traffic through compromised residential and SMB network gateways.
+    The hotpatch allows supported enterprise systems to apply protections without reboot, reducing immediate exposure for managed environments.
 
-    [:octicons-arrow-right-24: Read more](2026/Week10/asus.md)
+    [Read more](2026/Week11/windows.md)
 
--   ![MR_GM](2026/Week10/images/MR_GM.png)
+-   ![hpe](2026/Week11/images/hpe.png)
 
-    **CVE-2026-24448 – Hard-coded Credentials in Industrial Network Devices**
+    **Critical HPE Aruba Networking AOS-CX Vulnerability (CVE-2026-23813)**
 
-    **CVE-2026-24448**{.cve-chip} **Hard-coded Credentials**{.cve-chip} **CWE-798**{.cve-chip} **OT Network Risk**{.cve-chip}
+    **HPE Aruba**{.cve-chip} **Authentication Bypass**{.cve-chip} **Critical Vulnerability**{.cve-chip}
 
-    A critical vulnerability in MR-GM5L-S1 and MR-GM5A-L1 industrial networking devices allows attackers to use embedded firmware credentials to authenticate without prior privileges and gain administrative access to management interfaces.
+    A critical flaw in the AOS-CX web management interface allows unauthenticated attackers to bypass authentication and potentially reset administrator credentials.
 
-    Successful exploitation can expose sensitive operational configuration, enable unauthorized device changes, and increase risk of lateral movement and disruption within segmented or weakly protected OT environments.
+    Successful exploitation can lead to full switch takeover, configuration manipulation, and expanded lateral-movement risk across enterprise networks.
 
-    [:octicons-arrow-right-24: Read more](2026/Week10/MR_GM.md)
-
--   ![cloud](2026/Week10/images/cloud.png)
-
-    **Middle East Cloud Infrastructure Attack / AWS Data Center Drone Strikes**
-
-    **Cloud Infrastructure Risk**{.cve-chip} **Physical Disruption**{.cve-chip} **Regional Outage**{.cve-chip} **Geopolitical Escalation**{.cve-chip}
-
-    Reported drone-strike impacts on Gulf-region cloud facilities highlighted how physical conflict can disrupt digital infrastructure through building damage, utility instability, and regional connectivity stress, even when servers are not directly destroyed.
-
-    The incident underscores resilience gaps for organizations concentrated in a single cloud region and reinforces the need for multi-region failover, independent backups, and tested business continuity plans for multi-domain disruptions.
-
-    [:octicons-arrow-right-24: Read more](2026/Week10/cloud.md)
+    [Read more](2026/Week11/hpe.md)
 
 </div>

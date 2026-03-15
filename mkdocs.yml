@@ -310,3 +310,9 @@ nav:
           - "Middle East Cloud Infrastructure Attack / AWS Data Center Drone Strikes": 2026/Week10/cloud.md
           - 'Iran "Infrastructure Warfare" Threat Against U.S. Tech Companies': 2026/Week10/iran.md
           - "FortiGate Firewall Exploitation Campaign": 2026/Week10/fortigate.md
+        - "week11":
+          - "Cyberattack Targeting the National Centre for Nuclear Research (NCBJ)": 2026/Week11/poland.md
+          - "Stryker Global Network Cyberattack (Handala Attack)": 2026/Week11/stryker.md
+          - "SocksEscort Proxy Service Disruption linked to the AVrecon Botnet": 2026/Week11/socksEscort.md
+          - "Microsoft Windows 11 RRAS Remote Code Execution Vulnerability - Out-of-Band Hotpatch": 2026/Week11/windows.md
+          - "Critical HPE Aruba Networking AOS-CX Vulnerability (CVE-2026-23813)": 2026/Week11/hpe.md
