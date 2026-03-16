@@ -8,64 +8,40 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![poland](2026/Week11/images/poland.png)
+-   ![honeywellIQ](2026/Week11/images/honeywellIQ.jpg)
 
-    **Cyberattack Targeting the National Centre for Nuclear Research (NCBJ)**
+    **Honeywell IQ4x BMS Authentication Bypass Vulnerability**
 
-    **Critical Infrastructure**{.cve-chip} **Nuclear Sector**{.cve-chip} **Cyberattack**{.cve-chip}
+    **BMS Security**{.cve-chip} **Authentication Bypass**{.cve-chip} **Critical Infrastructure**{.cve-chip}
 
-    Poland's National Centre for Nuclear Research (NCBJ) blocked a targeted intrusion against its internal IT environment before any impact to reactor operations.
+    A critical weakness in Honeywell IQ4x controllers can allow unauthenticated access to the management interface during default initial configuration.
 
-    The incident is under national-level investigation, with preliminary indicators suggesting possible links to **Iran-associated** infrastructure while attribution remains unconfirmed.
+    Attackers may create administrator accounts and take full control of building management systems if authentication is not enabled before exposure.
 
-    [Read more](2026/Week11/poland.md)
+    [Read more](2026/Week11/honeywellIQ.md)
 
--   ![stryker](2026/Week11/images/stryker.png)
+-   ![royal](2026/Week11/images/royal.png)
 
-    **Stryker Global Network Cyberattack (Handala Attack)**
+    **Payload Ransomware Claims the Hack of Royal Bahrain Hospital**
 
-    **Healthcare Sector**{.cve-chip} **Wiper Attack**{.cve-chip} **Hacktivism**{.cve-chip}
+    **Ransomware**{.cve-chip} **Healthcare Sector**{.cve-chip} **Data Extortion**{.cve-chip}
 
-    Stryker suffered a large-scale disruption across its global Microsoft enterprise environment, affecting corporate systems, manufacturing, and order processing.
+    The Payload ransomware group claims to have breached Royal Bahrain Hospital and exfiltrated approximately 110 GB of internal and patient data.
 
-    Public reporting and threat-actor claims indicate a destructive campaign likely involving endpoint management abuse, while Stryker stated patient-facing medical devices were not impacted.
+    The incident reflects a double-extortion model with leak-site pressure and a public release deadline, while initial access details remain undisclosed.
 
-    [Read more](2026/Week11/stryker.md)
+    [Read more](2026/Week11/royal.md)
 
--   ![socksEscort](2026/Week11/images/socksEscort.png)
+-   ![cisco](2026/Week11/images/cisco.png)
 
-    **SocksEscort Proxy Service Disruption linked to the AVrecon Botnet**
+    **Cisco Confirms Active Exploitation of Two Catalyst SD-WAN Manager Vulnerabilities**
 
-    **Botnet**{.cve-chip} **Proxy Abuse**{.cve-chip} **Law Enforcement Action**{.cve-chip}
+    **Cisco SD-WAN**{.cve-chip} **Active Exploitation**{.cve-chip} **Critical Infrastructure**{.cve-chip}
 
-    U.S. and European law-enforcement agencies dismantled the SocksEscort proxy service, which used AVrecon-infected routers and IoT devices to provide criminal proxy infrastructure.
+    Cisco confirmed in-the-wild exploitation of CVE-2026-20122 and CVE-2026-20128 in Catalyst SD-WAN Manager, with risk amplified by earlier CVE-2026-20127 abuse.
 
-    The takedown disrupted a large-scale abuse ecosystem tied to fraud, credential stuffing, and phishing by seizing key domains, servers, and cryptocurrency assets.
+    Successful compromise can enable control-plane takeover, policy manipulation, implant deployment, and long-term persistence across enterprise WAN environments.
 
-    [Read more](2026/Week11/socksEscort.md)
-
--   ![windows](2026/Week11/images/windows.png)
-
-    **Microsoft Windows 11 RRAS Remote Code Execution Vulnerability - Out-of-Band Hotpatch**
-
-    **Windows 11**{.cve-chip} **RRAS**{.cve-chip} **Remote Code Execution**{.cve-chip}
-
-    Microsoft released OOB hotpatch `KB5084597` to fix multiple RRAS management vulnerabilities that could enable code execution when an administrator connects to a malicious RRAS server.
-
-    The hotpatch allows supported enterprise systems to apply protections without reboot, reducing immediate exposure for managed environments.
-
-    [Read more](2026/Week11/windows.md)
-
--   ![hpe](2026/Week11/images/hpe.png)
-
-    **Critical HPE Aruba Networking AOS-CX Vulnerability (CVE-2026-23813)**
-
-    **HPE Aruba**{.cve-chip} **Authentication Bypass**{.cve-chip} **Critical Vulnerability**{.cve-chip}
-
-    A critical flaw in the AOS-CX web management interface allows unauthenticated attackers to bypass authentication and potentially reset administrator credentials.
-
-    Successful exploitation can lead to full switch takeover, configuration manipulation, and expanded lateral-movement risk across enterprise networks.
-
-    [Read more](2026/Week11/hpe.md)
+    [Read more](2026/Week11/cisco.md)
 
 </div>

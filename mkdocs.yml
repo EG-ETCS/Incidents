@@ -316,3 +316,6 @@ nav:
           - "SocksEscort Proxy Service Disruption linked to the AVrecon Botnet": 2026/Week11/socksEscort.md
           - "Microsoft Windows 11 RRAS Remote Code Execution Vulnerability - Out-of-Band Hotpatch": 2026/Week11/windows.md
           - "Critical HPE Aruba Networking AOS-CX Vulnerability (CVE-2026-23813)": 2026/Week11/hpe.md
+          - "Honeywell IQ4x BMS Authentication Bypass Vulnerability": 2026/Week11/honeywellIQ.md
+          - "Payload Ransomware Claims the Hack of Royal Bahrain Hospital": 2026/Week11/royal.md
+          - "Cisco Confirms Active Exploitation of Two Catalyst SD-WAN Manager Vulnerabilities": 2026/Week11/cisco.md
