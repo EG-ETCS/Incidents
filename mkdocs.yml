@@ -319,3 +319,5 @@ nav:
           - "Honeywell IQ4x BMS Authentication Bypass Vulnerability": 2026/Week11/honeywellIQ.md
           - "Payload Ransomware Claims the Hack of Royal Bahrain Hospital": 2026/Week11/royal.md
           - "Cisco Confirms Active Exploitation of Two Catalyst SD-WAN Manager Vulnerabilities": 2026/Week11/cisco.md
+          - "CVE-2026-32746 - Critical Telnetd Buffer Overflow Vulnerability": 2026/Week11/telnetd.md
+          - "EU Sanctions on Chinese and Iranian Cyber Actors Targeting Critical Infrastructure": 2026/Week11/sanctions.md

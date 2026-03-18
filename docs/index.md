@@ -8,40 +8,28 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![honeywellIQ](2026/Week11/images/honeywellIQ.jpg)
+-   ![telnetd](2026/Week11/images/telnetd.png)
 
-    **Honeywell IQ4x BMS Authentication Bypass Vulnerability**
+    **CVE-2026-32746 - Critical Telnetd Buffer Overflow Vulnerability**
 
-    **BMS Security**{.cve-chip} **Authentication Bypass**{.cve-chip} **Critical Infrastructure**{.cve-chip}
+    **GNU Inetutils**{.cve-chip} **Buffer Overflow**{.cve-chip} **Remote Code Execution**{.cve-chip}
 
-    A critical weakness in Honeywell IQ4x controllers can allow unauthenticated access to the management interface during default initial configuration.
+    A critical flaw in GNU Inetutils `telnetd` can be triggered with crafted LINEMODE SLC packets, potentially causing out-of-bounds writes and remote code execution.
 
-    Attackers may create administrator accounts and take full control of building management systems if authentication is not enabled before exposure.
+    Because exploitation can occur before authentication on exposed port 23 services, unpatched Telnet deployments face elevated compromise risk.
 
-    [Read more](2026/Week11/honeywellIQ.md)
+    [Read more](2026/Week11/telnetd.md)
 
--   ![royal](2026/Week11/images/royal.png)
+-   ![sanctions](2026/Week11/images/sanctions.png)
 
-    **Payload Ransomware Claims the Hack of Royal Bahrain Hospital**
+    **EU Sanctions on Chinese and Iranian Cyber Actors Targeting Critical Infrastructure**
 
-    **Ransomware**{.cve-chip} **Healthcare Sector**{.cve-chip} **Data Extortion**{.cve-chip}
+    **Geopolitical Cybersecurity**{.cve-chip} **Critical Infrastructure**{.cve-chip} **State-Linked Activity**{.cve-chip}
 
-    The Payload ransomware group claims to have breached Royal Bahrain Hospital and exfiltrated approximately 110 GB of internal and patient data.
+    The European Union sanctioned Chinese and Iranian entities and individuals over coordinated cyber operations targeting member-state infrastructure.
 
-    The incident reflects a double-extortion model with leak-site pressure and a public release deadline, while initial access details remain undisclosed.
+    Public reporting links the campaigns to large-scale device compromise, telecom and data intrusion, and disinformation activity across multiple EU countries.
 
-    [Read more](2026/Week11/royal.md)
-
--   ![cisco](2026/Week11/images/cisco.png)
-
-    **Cisco Confirms Active Exploitation of Two Catalyst SD-WAN Manager Vulnerabilities**
-
-    **Cisco SD-WAN**{.cve-chip} **Active Exploitation**{.cve-chip} **Critical Infrastructure**{.cve-chip}
-
-    Cisco confirmed in-the-wild exploitation of CVE-2026-20122 and CVE-2026-20128 in Catalyst SD-WAN Manager, with risk amplified by earlier CVE-2026-20127 abuse.
-
-    Successful compromise can enable control-plane takeover, policy manipulation, implant deployment, and long-term persistence across enterprise WAN environments.
-
-    [Read more](2026/Week11/cisco.md)
+    [Read more](2026/Week11/sanctions.md)
 
 </div>
