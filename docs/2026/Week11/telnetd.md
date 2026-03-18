@@ -21,6 +21,8 @@ The flaw is tied to unsafe handling of specific Telnet protocol options. Exploit
 | **Trigger** | Crafted LINEMODE SLC Telnet packets |
 | **Exposure Conditions** | Telnet service reachable on port 23; no authentication required |
 
+![alt text](images/telnetd1.png)
+
 ## Affected Products
 
 - Systems running vulnerable GNU Inetutils `telnetd`.
