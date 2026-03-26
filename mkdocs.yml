@@ -321,3 +321,15 @@ nav:
           - "Cisco Confirms Active Exploitation of Two Catalyst SD-WAN Manager Vulnerabilities": 2026/Week11/cisco.md
           - "CVE-2026-32746 - Critical Telnetd Buffer Overflow Vulnerability": 2026/Week11/telnetd.md
           - "EU Sanctions on Chinese and Iranian Cyber Actors Targeting Critical Infrastructure": 2026/Week11/sanctions.md
+        - "week12":
+          - "FCC Ban on Foreign-Made Consumer Routers (Covered List Expansion)": 2026/Week12/foreignMade.md
+          - "Pro-Iranian (Nasir Security) Targeting Gulf Energy Sector": 2026/Week12/nasir.md
+          - "Iran National CCTV Surveillance Network Exploitation": 2026/Week12/CCTV.md
+          - "FBI Says Iranian Hackers Are Using Telegram to Steal Data in Malware Attacks": 2026/Week12/Telegram.md
+          - "QNAP NAS Zero-Day Vulnerabilities Demonstrated at Pwn2Own Ireland 2025": 2026/Week12/QNAP.md
+          - "Interlock Ransomware Exploits Cisco FMC Zero-Day CVE-2026-20131 for Root Access": 2026/Week12/Interlock.md
+          - "Apple Urges iPhone Users to Update as Coruna and DarkSword Exploit Kits Emerge": 2026/Week12/apple.md
+          - "": 2026/Week12/.md
+          - "": 2026/Week12/.md
+          - "": 2026/Week12/.md
+          - "": 2026/Week12/.md

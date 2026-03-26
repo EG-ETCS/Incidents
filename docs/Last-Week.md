@@ -8,196 +8,124 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![iran](2026/Week10/images/iran.png)
+-   ![telnetd](2026/Week11/images/telnetd.png)
 
-    **Iran "Infrastructure Warfare" Threat Against U.S. Tech Companies**
+    **CVE-2026-32746 - Critical Telnetd Buffer Overflow Vulnerability**
 
-    **Infrastructure Warfare**{.cve-chip} **Geopolitical Cyber Risk**{.cve-chip} **Cloud Targeting**{.cve-chip} **Hybrid Threats**{.cve-chip}
+    **GNU Inetutils**{.cve-chip} **Buffer Overflow**{.cve-chip} **Remote Code Execution**{.cve-chip}
 
-    Iranian state-affiliated media reportedly identified infrastructure tied to major U.S. technology firms as potential targets amid regional escalation, signaling a strategy that treats cloud facilities, research hubs, and digital operations as strategic pressure points.
+    A critical flaw in GNU Inetutils `telnetd` can be triggered with crafted LINEMODE SLC packets, potentially causing out-of-bounds writes and remote code execution.
 
-    The threat model spans cyber and physical disruption scenarios, increasing continuity risk for organizations dependent on regional cloud and technology infrastructure across Israel and Gulf locations.
+    Because exploitation can occur before authentication on exposed port 23 services, unpatched Telnet deployments face elevated compromise risk.
 
-    [:octicons-arrow-right-24: Read more](2026/Week10/iran.md)
+    [Read more](2026/Week11/telnetd.md)
 
--   ![fortigate](2026/Week10/images/fortigate.png)
+-   ![sanctions](2026/Week11/images/sanctions.png)
 
-    **FortiGate Firewall Exploitation Campaign**
+    **EU Sanctions on Chinese and Iranian Cyber Actors Targeting Critical Infrastructure**
 
-    **FortiGate NGFW**{.cve-chip} **Credential Theft**{.cve-chip} **AD Pivoting**{.cve-chip} **Network Intrusion**{.cve-chip}
+    **Geopolitical Cybersecurity**{.cve-chip} **Critical Infrastructure**{.cve-chip} **State-Linked Activity**{.cve-chip}
 
-    Researchers observed attackers compromising internet-exposed FortiGate appliances through exploited vulnerabilities and weak credentials, then creating rogue administrator accounts and exporting firewall configuration files.
+    The European Union sanctioned Chinese and Iranian entities and individuals over coordinated cyber operations targeting member-state infrastructure.
 
-    Stolen configuration data can expose LDAP/AD service account credentials and network topology, enabling internal pivoting, lateral movement, and potential ransomware or large-scale intrusion operations.
+    Public reporting links the campaigns to large-scale device compromise, telecom and data intrusion, and disinformation activity across multiple EU countries.
 
-    [:octicons-arrow-right-24: Read more](2026/Week10/fortigate.md)
+    [Read more](2026/Week11/sanctions.md)
 
--   ![beatbanker](2026/Week10/images/beatbanker.png)
+-   ![honeywellIQ](2026/Week11/images/honeywellIQ.jpg)
 
-    **BeatBanker Android Malware Campaign (Fake Starlink App)**
+    **Honeywell IQ4x BMS Authentication Bypass Vulnerability**
 
-    **BeatBanker**{.cve-chip} **Android Banking Trojan**{.cve-chip} **Fake App Distribution**{.cve-chip} **Crypto Miner**{.cve-chip}
+    **BMS Security**{.cve-chip} **Authentication Bypass**{.cve-chip} **Critical Infrastructure**{.cve-chip}
 
-    Researchers identified a malicious Android campaign distributing BeatBanker through fake Play Store-style websites and Starlink-themed APK lures. The malware abuses high-risk permissions and downloads modular payloads for credential theft, remote access, and crypto-mining.
+    A critical weakness in Honeywell IQ4x controllers can allow unauthenticated access to the management interface during default initial configuration.
 
-    Reported behavior includes overlay attacks on banking/crypto apps, C2-driven module loading, and stealth persistence using near-inaudible looping audio to keep a foreground service active on infected devices.
+    Attackers may create administrator accounts and take full control of building management systems if authentication is not enabled before exposure.
 
-    [:octicons-arrow-right-24: Read more](2026/Week10/beatbanker.md)
+    [Read more](2026/Week11/honeywellIQ.md)
 
--   ![asus](2026/Week10/images/asus.png)
+-   ![royal](2026/Week11/images/royal.png)
 
-    **KadNap Botnet targeting ASUS Routers**
+    **Payload Ransomware Claims the Hack of Royal Bahrain Hospital**
 
-    **KadNap Botnet**{.cve-chip} **ASUS Routers**{.cve-chip} **Proxy Abuse**{.cve-chip} **P2P C2**{.cve-chip}
+    **Ransomware**{.cve-chip} **Healthcare Sector**{.cve-chip} **Data Extortion**{.cve-chip}
 
-    Researchers identified KadNap malware compromising ASUS routers and edge devices, enrolling them into a botnet used as anonymizing proxy infrastructure for cybercrime activity. The campaign uses script-based installation and recurring cron execution to maintain persistence on infected systems.
+    The Payload ransomware group claims to have breached Royal Bahrain Hospital and exfiltrated approximately 110 GB of internal and patient data.
 
-    By leveraging modified Kademlia-style P2P coordination, attackers reduce centralized command dependency and make takedown more difficult while routing malicious traffic through compromised residential and SMB network gateways.
+    The incident reflects a double-extortion model with leak-site pressure and a public release deadline, while initial access details remain undisclosed.
 
-    [:octicons-arrow-right-24: Read more](2026/Week10/asus.md)
+    [Read more](2026/Week11/royal.md)
 
--   ![MR_GM](2026/Week10/images/MR_GM.png)
+-   ![cisco](2026/Week11/images/cisco.png)
 
-    **CVE-2026-24448 – Hard-coded Credentials in Industrial Network Devices**
+    **Cisco Confirms Active Exploitation of Two Catalyst SD-WAN Manager Vulnerabilities**
 
-    **CVE-2026-24448**{.cve-chip} **Hard-coded Credentials**{.cve-chip} **CWE-798**{.cve-chip} **OT Network Risk**{.cve-chip}
+    **Cisco SD-WAN**{.cve-chip} **Active Exploitation**{.cve-chip} **Critical Infrastructure**{.cve-chip}
 
-    A critical vulnerability in MR-GM5L-S1 and MR-GM5A-L1 industrial networking devices allows attackers to use embedded firmware credentials to authenticate without prior privileges and gain administrative access to management interfaces.
+    Cisco confirmed in-the-wild exploitation of CVE-2026-20122 and CVE-2026-20128 in Catalyst SD-WAN Manager, with risk amplified by earlier CVE-2026-20127 abuse.
 
-    Successful exploitation can expose sensitive operational configuration, enable unauthorized device changes, and increase risk of lateral movement and disruption within segmented or weakly protected OT environments.
+    Successful compromise can enable control-plane takeover, policy manipulation, implant deployment, and long-term persistence across enterprise WAN environments.
 
-    [:octicons-arrow-right-24: Read more](2026/Week10/MR_GM.md)
+    [Read more](2026/Week11/cisco.md)
 
--   ![cloud](2026/Week10/images/cloud.png)
+-   ![poland](2026/Week11/images/poland.png)
 
-    **Middle East Cloud Infrastructure Attack / AWS Data Center Drone Strikes**
+    **Cyberattack Targeting the National Centre for Nuclear Research (NCBJ)**
 
-    **Cloud Infrastructure Risk**{.cve-chip} **Physical Disruption**{.cve-chip} **Regional Outage**{.cve-chip} **Geopolitical Escalation**{.cve-chip}
+    **Critical Infrastructure**{.cve-chip} **Nuclear Sector**{.cve-chip} **Cyberattack**{.cve-chip}
 
-    Reported drone-strike impacts on Gulf-region cloud facilities highlighted how physical conflict can disrupt digital infrastructure through building damage, utility instability, and regional connectivity stress, even when servers are not directly destroyed.
+    Poland's National Centre for Nuclear Research (NCBJ) blocked a targeted intrusion against its internal IT environment before any impact to reactor operations.
 
-    The incident underscores resilience gaps for organizations concentrated in a single cloud region and reinforces the need for multi-region failover, independent backups, and tested business continuity plans for multi-domain disruptions.
+    The incident is under national-level investigation, with preliminary indicators suggesting possible links to **Iran-associated** infrastructure while attribution remains unconfirmed.
 
-    [:octicons-arrow-right-24: Read more](2026/Week10/cloud.md)
+    [Read more](2026/Week11/poland.md)
 
--   ![russia](2026/Week10/images/russia.png)
+-   ![stryker](2026/Week11/images/stryker.png)
 
-    **Russia-linked Hackers Target Signal and WhatsApp Accounts of Officials Globally**
+    **Stryker Global Network Cyberattack (Handala Attack)**
 
-    **Russia-Linked Activity**{.cve-chip} **Account Hijacking**{.cve-chip} **Signal/WhatsApp**{.cve-chip} **Social Engineering**{.cve-chip}
+    **Healthcare Sector**{.cve-chip} **Wiper Attack**{.cve-chip} **Hacktivism**{.cve-chip}
 
-    Dutch intelligence agencies warned of a global Russia-linked campaign targeting officials, military personnel, diplomats, and journalists by stealing verification codes and abusing linked-device workflows in Signal and WhatsApp.
+    Stryker suffered a large-scale disruption across its global Microsoft enterprise environment, affecting corporate systems, manufacturing, and order processing.
 
-    The operation reportedly does not break end-to-end encryption; it exploits account recovery, device-linking flows, and user trust to hijack or silently monitor high-value communications.
+    Public reporting and threat-actor claims indicate a destructive campaign likely involving endpoint management abuse, while Stryker stated patient-facing medical devices were not impacted.
 
-    [:octicons-arrow-right-24: Read more](2026/Week10/russia.md)
+    [Read more](2026/Week11/stryker.md)
 
--   ![github](2026/Week10/images/github.png)
+-   ![socksEscort](2026/Week11/images/socksEscort.png)
 
-    **BoryptGrab Infostealer GitHub Distribution Campaign**
+    **SocksEscort Proxy Service Disruption linked to the AVrecon Botnet**
 
-    **BoryptGrab**{.cve-chip} **Malicious GitHub Repos**{.cve-chip} **Windows Infostealer**{.cve-chip} **TunnesshClient**{.cve-chip}
+    **Botnet**{.cve-chip} **Proxy Abuse**{.cve-chip} **Law Enforcement Action**{.cve-chip}
 
-    Researchers identified a large-scale malware operation abusing more than 100 fake GitHub repositories disguised as cheats, cracked tools, and utilities to deliver the BoryptGrab infostealer to Windows users. Victims are lured through SEO manipulation and social-engineering download pages.
+    U.S. and European law-enforcement agencies dismantled the SocksEscort proxy service, which used AVrecon-infected routers and IoT devices to provide criminal proxy infrastructure.
 
-    The malware steals browser credentials, wallet data, and messaging tokens, and in some cases installs TunnesshClient to establish reverse SSH tunnels and persistent remote access, increasing risk for both individual users and enterprise endpoints.
+    The takedown disrupted a large-scale abuse ecosystem tied to fraud, credential stuffing, and phishing by seizing key domains, servers, and cryptocurrency assets.
 
-    [:octicons-arrow-right-24: Read more](2026/Week10/github.md)
+    [Read more](2026/Week11/socksEscort.md)
 
--   ![dlink](2026/Week10/images/dlink.png)
+-   ![windows](2026/Week11/images/windows.png)
 
-    **CVE-2025-70231 – Path Traversal Vulnerability in D-Link DIR-513 Router**
+    **Microsoft Windows 11 RRAS Remote Code Execution Vulnerability - Out-of-Band Hotpatch**
 
-    **CVE-2025-70231**{.cve-chip} **Path Traversal**{.cve-chip} **CWE-22**{.cve-chip} **Unauthenticated Access**{.cve-chip}
+    **Windows 11**{.cve-chip} **RRAS**{.cve-chip} **Remote Code Execution**{.cve-chip}
 
-    A critical path traversal flaw in D-Link DIR-513 firmware 1.10 allows unauthenticated attackers to abuse unsanitized `FILECODE` handling in `/goform/` endpoints and read sensitive files from the router filesystem.
+    Microsoft released OOB hotpatch `KB5084597` to fix multiple RRAS management vulnerabilities that could enable code execution when an administrator connects to a malicious RRAS server.
 
-    Successful exploitation can expose administrator credentials, Wi-Fi and network configuration data, and enable follow-on compromise such as traffic redirection, persistent device takeover, or botnet abuse.
+    The hotpatch allows supported enterprise systems to apply protections without reboot, reducing immediate exposure for managed environments.
 
-    [:octicons-arrow-right-24: Read more](2026/Week10/dlink.md)
+    [Read more](2026/Week11/windows.md)
 
--   ![gps](2026/Week10/images/gps.png)
+-   ![hpe](2026/Week11/images/hpe.png)
 
-    **SQL Injection Vulnerability in GPS Tracking System Login – CVE-2018-25192**
+    **Critical HPE Aruba Networking AOS-CX Vulnerability (CVE-2026-23813)**
 
-    **CVE-2018-25192**{.cve-chip} **SQL Injection**{.cve-chip} **CWE-89**{.cve-chip} **Authentication Bypass**{.cve-chip}
+    **HPE Aruba**{.cve-chip} **Authentication Bypass**{.cve-chip} **Critical Vulnerability**{.cve-chip}
 
-    A high-severity SQL injection vulnerability in GPS Tracking System 2.12 allows unauthenticated attackers to manipulate login queries by injecting payloads into the username parameter, bypassing authentication checks.
+    A critical flaw in the AOS-CX web management interface allows unauthenticated attackers to bypass authentication and potentially reset administrator credentials.
 
-    Successful exploitation can expose location and fleet management data, enable unauthorized dashboard access, and provide a foothold for further compromise through record tampering, credential theft, or lateral activity.
+    Successful exploitation can lead to full switch takeover, configuration manipulation, and expanded lateral-movement risk across enterprise networks.
 
-    [:octicons-arrow-right-24: Read more](2026/Week10/gps.md)
-
--   ![tenda](2026/Week10/images/tenda.png)
-
-    **CVE-2026-3804 – Tenda i3 Router Stack-Based Buffer Overflow**
-
-    **CVE-2026-3804**{.cve-chip} **Stack Overflow**{.cve-chip} **CWE-121**{.cve-chip} **Router RCE Risk**{.cve-chip}
-
-    A vulnerability in Tenda i3 firmware 1.0.0.6(2204) affects `/goform/WifiMacFilterSet`, where improper validation of the `index` parameter can trigger a stack-based buffer overflow and destabilize or compromise device operation.
-
-    Attackers with network reachability may exploit the flaw to gain unauthorized control, alter router configuration, redirect traffic, or crash services, creating both security and availability risks at the network edge.
-
-    [:octicons-arrow-right-24: Read more](2026/Week10/tenda.md)
-
--   ![hikvision](2026/Week10/images/hikvision.png)
-
-    **Hikvision & Rockwell Automation Critical Vulnerabilities Added to KEV Catalog**
-
-    **CVE-2017-7921**{.cve-chip} **CVE-2021-22681**{.cve-chip} **CISA KEV**{.cve-chip} **Critical Infrastructure Risk**{.cve-chip}
-
-    CISA added critical Hikvision and Rockwell Automation vulnerabilities to the KEV catalog, highlighting active exploitation risk across surveillance and industrial environments. The issues enable authentication bypass and credential abuse that can grant attackers elevated operational access.
-
-    Potential outcomes include unauthorized camera/feed access, exposure of sensitive configuration data, and industrial process manipulation through trusted engineering workflows in OT environments.
-
-    [:octicons-arrow-right-24: Read more](2026/Week10/hikvision.md)
-
--   ![cisco](2026/Week10/images/cisco.png)
-
-    **Critical Vulnerabilities in Cisco Secure Firewall Management Center (FMC)**
-
-    **CVE-2026-20079**{.cve-chip} **CVE-2026-20131**{.cve-chip} **Unauthenticated RCE**{.cve-chip} **Root Access Risk**{.cve-chip}
-
-    Cisco patched two maximum-severity vulnerabilities in Secure Firewall Management Center that can allow remote unauthenticated attackers to execute commands and gain root-level control of the firewall management platform through crafted HTTP requests.
-
-    Because FMC is a centralized policy control plane, successful exploitation can enable security-policy tampering, network-wide security degradation, and potential compromise across connected managed firewall infrastructure.
-
-    [:octicons-arrow-right-24: Read more](2026/Week10/cisco.md)
-
--   ![USstrategy](2026/Week10/images/USstrategy.png)
-
-    **US Cyber Strategy Targets Adversaries, Critical Infrastructure, and Emerging Technologies**
-
-    **National Cyber Strategy**{.cve-chip} **Critical Infrastructure**{.cve-chip} **Zero Trust**{.cve-chip} **AI & Quantum Security**{.cve-chip}
-
-    The United States released a new national cyber strategy focused on strengthening resilience against nation-state threats, cybercrime, and emerging technology risks. The framework emphasizes coordinated action across government, industry, and international partners to improve prevention, deterrence, and response.
-
-    Priorities include securing critical infrastructure, modernizing federal networks with Zero Trust and AI-driven defense, and accelerating post-quantum readiness to reduce long-term strategic cyber risk.
-
-    [:octicons-arrow-right-24: Read more](2026/Week10/USstrategy.md)
-
--   ![terndoor](2026/Week10/images/terndoor.png)
-
-    **China-Linked Hackers Use TernDoor, PeerTime, BruteEntry in South American Telecom Attacks**
-
-    **UAT-9244**{.cve-chip} **Telecom Espionage**{.cve-chip} **TernDoor/PeerTime**{.cve-chip} **BruteEntry**{.cve-chip}
-
-    A China-linked threat cluster reportedly targeted South American telecom providers using a custom cross-platform toolkit that includes TernDoor (Windows), PeerTime (Linux), and BruteEntry for credential brute forcing and lateral expansion.
-
-    The campaign demonstrates long-term espionage intent through stealthy persistence, relay-node creation, and sustained command-and-control access across telecom infrastructure supporting sensitive communications flows.
-
-    [:octicons-arrow-right-24: Read more](2026/Week10/terndoor.md)
-
--   ![dindoor](2026/Week10/images/dindoor.png)
-
-    **Iranian APT Hacked US Airport, Bank, Software Company**
-
-    **Iran-Linked APT**{.cve-chip} **Dindoor Backdoor**{.cve-chip} **Fakeset Malware**{.cve-chip} **Critical Sector Targeting**{.cve-chip}
-
-    Researchers reported Iran-linked intrusion activity targeting aviation, banking, and software supply-chain organizations, with persistent access operations observed across multiple victims. The campaign deployed custom backdoors including Dindoor and Fakeset to sustain long-term espionage footholds.
-
-    Reported tradecraft includes certificate-signed malware, lateral movement, and attempted data exfiltration from high-value environments, highlighting ongoing strategic intelligence collection risk in critical sectors.
-
-    [:octicons-arrow-right-24: Read more](2026/Week10/dindoor.md)
+    [Read more](2026/Week11/hpe.md)
 
 </div>
