@@ -82,20 +82,14 @@ These exploit chains can deliver spyware and other malicious payloads, exposing 
 - Alert on unusual credential access and suspicious account activity following mobile browsing events.
 - Perform rapid forensic triage for devices showing indicators of compromise.
 
-### Long-term Solutions
-- Maintain accelerated iOS patch governance and compliance monitoring across managed fleets.
-- Segment access to sensitive enterprise resources from unmanaged mobile endpoints.
-- Develop mobile incident-response playbooks specific to WebKit/iOS exploit-chain scenarios.
-
 ## Resources and References
 
 !!! info "Open-Source Reporting"
-    - [Apple urges iPhone users to update as Coruna and DarkSword exploit kits emerge]()
-    - [This new DarkSword iOS exploit can steal almost everything from your iPhone - here's what we know | TechRadar]()
-    - [Apple Urges Users to Patch iPhones Against Coruna and DarkSword Exploits]()
-    - ["This is nasty": DarkSword malware on Github, patch iPhones immediately | heise online]()
-    - [DarkSword's GitHub leak threatens to turn elite iPhone hacking into a tool for the masses | CyberScoop]()
+    - [Apple urges iPhone users to update as Coruna and DarkSword exploit kits emerge](https://securityaffairs.com/189716/security/apple-urges-iphone-users-to-update-as-coruna-and-darksword-exploit-kits-emerge.html)
+    - [This new DarkSword iOS exploit can steal almost everything from your iPhone - here's what we know | TechRadar](https://www.techradar.com/pro/security/this-new-darksword-ios-exploit-can-steal-almost-everything-from-your-iphone-heres-what-we-know)
+    - [Apple Urges Users to Patch iPhones Against Coruna and DarkSword Exploits](https://www.bitdefender.com/en-au/blog/hotforsecurity/update-ios-protect-data-patch-coruna-darksword-exploits)
+    - ["This is nasty": DarkSword malware on Github, patch iPhones immediately | heise online](https://www.heise.de/en/news/This-is-nasty-DarkSword-malware-on-Github-patch-iPhones-immediately-11223189.html)
+    - [DarkSword's GitHub leak threatens to turn elite iPhone hacking into a tool for the masses | CyberScoop](https://cyberscoop.com/darksword-iphone-spyware-leak-ios-18-exploit-threat/)
 
 ---
-
 *Last Updated: March 25, 2026*

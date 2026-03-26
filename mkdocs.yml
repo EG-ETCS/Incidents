@@ -326,10 +326,12 @@ nav:
           - "Pro-Iranian (Nasir Security) Targeting Gulf Energy Sector": 2026/Week12/nasir.md
           - "Iran National CCTV Surveillance Network Exploitation": 2026/Week12/CCTV.md
           - "FBI Says Iranian Hackers Are Using Telegram to Steal Data in Malware Attacks": 2026/Week12/Telegram.md
-          - "QNAP NAS Zero-Day Vulnerabilities Demonstrated at Pwn2Own Ireland 2025": 2026/Week12/QNAP.md
-          - "Interlock Ransomware Exploits Cisco FMC Zero-Day CVE-2026-20131 for Root Access": 2026/Week12/Interlock.md
+          - "Indian Government Probes CCTV Espionage Operation Linked to Pakistan": 2026/Week12/Indian.md
           - "Apple Urges iPhone Users to Update as Coruna and DarkSword Exploit Kits Emerge": 2026/Week12/apple.md
-          - "": 2026/Week12/.md
-          - "": 2026/Week12/.md
-          - "": 2026/Week12/.md
-          - "": 2026/Week12/.md
+          - "New Perseus Android Banking Malware Monitors Notes Apps to Extract Sensitive Data": 2026/Week12/perseus.md
+          - "TP-Link Archer NX Firmware Takeover Vulnerabilities": 2026/Week12/Tplink.md
+          - "Interlock Ransomware Exploits Cisco FMC Zero-Day CVE-2026-20131 for Root Access": 2026/Week12/Interlock.md
+          - "CVE-2026-3888 - Ubuntu Desktop Snap Local Privilege Escalation": 2026/Week12/ubuntu.md
+          - "CVE-2026-21992 - Critical Remote Code Execution in Oracle Identity Manager": 2026/Week12/oracle.md
+          - "Ubiquiti UniFi Network Application Account Takeover Vulnerability (CVE-2026-22557)": 2026/Week12/ubiquiti.md
+          - "QNAP NAS Zero-Day Vulnerabilities Demonstrated at Pwn2Own Ireland 2025": 2026/Week12/QNAP.md

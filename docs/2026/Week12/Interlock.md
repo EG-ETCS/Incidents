@@ -8,6 +8,8 @@ The Interlock ransomware group has been actively exploiting a zero-day vulnerabi
 
 Successful exploitation enables ransomware deployment, firewall policy manipulation, and broader compromise of network security infrastructure.
 
+![alt text](images/Interlock1.png)
+
 ## Technical Specifications
 
 | **Attribute** | **Details** |
@@ -26,8 +28,6 @@ Successful exploitation enables ransomware deployment, firewall policy manipulat
 - Organizations exposing FMC management interfaces to untrusted networks
 - Environments where FMC provides centralized security-policy orchestration
 - Networks with insufficient segmentation between management and production zones
-
-![alt text](images/Interlock1.png)
 
 ## Attack Scenario
 1. **Target Discovery**:
@@ -95,5 +95,4 @@ Successful exploitation enables ransomware deployment, firewall policy manipulat
     - [Cisco Secure Firewall Management Center Software Remote Code Execution Vulnerability](https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-fmc-rce-NKhnULJh)
 
 ---
-
 *Last Updated: March 25, 2026*

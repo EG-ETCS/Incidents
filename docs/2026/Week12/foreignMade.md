@@ -100,5 +100,4 @@ Because FCC authorization is required for lawful import and sale in the United S
     - [US bans new foreign-made consumer internet routers](https://www.theregister.com/2026/03/24/fcc_foreign_routers/)
 
 ---
-
 *Last Updated: March 25, 2026*

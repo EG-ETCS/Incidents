@@ -97,5 +97,4 @@ The campaign appears focused on data theft and intelligence gathering that could
     - [Nasir Security Group Targets Energy Companies in the Middle East - Thailand Computer Emergency Response Team (ThaiCERT)](https://www.thaicert.or.th/en/2026/03/25/nasir-security-group-targets-energy-companies-in-the-middle-east/)
 
 ---
-
 *Last Updated: March 25, 2026*

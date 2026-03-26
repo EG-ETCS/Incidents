@@ -12,7 +12,6 @@ This activity demonstrates how trusted messaging infrastructure can be operation
 
 | **Attribute** | **Details** |
 |---------------|-------------|
-| **CVE IDs** | None publicly attributed for this campaign |
 | **Threat Actor** | Pro-Iranian Handala (as reported by FBI and open-source reporting) |
 | **Malware C2 Channel** | Telegram API and/or Telegram bot infrastructure |
 | **Initial Access** | Phishing, fake social media contacts, malicious links, social engineering |
@@ -95,5 +94,4 @@ This activity demonstrates how trusted messaging infrastructure can be operation
     - [Iran-linked actors use Telegram as C2 in malware attacks on dissidents](https://securityaffairs.com/189820/malware/iran-linked-actors-use-telegram-as-c2-in-malware-attacks-on-dissidents.html)
 
 ---
-
 *Last Updated: March 25, 2026*
