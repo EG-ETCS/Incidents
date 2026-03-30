@@ -8,124 +8,160 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![telnetd](2026/Week11/images/telnetd.png)
+-   ![foreignMade](2026/Week12/images/foreignMade.png)
 
-    **CVE-2026-32746 - Critical Telnetd Buffer Overflow Vulnerability**
+    **FCC Ban on Foreign-Made Consumer Routers (Covered List Expansion)**
 
-    **GNU Inetutils**{.cve-chip} **Buffer Overflow**{.cve-chip} **Remote Code Execution**{.cve-chip}
+    **FCC Covered List Expansion**{.cve-chip} **Supply Chain Security**{.cve-chip} **Consumer Router Risk**{.cve-chip}
 
-    A critical flaw in GNU Inetutils `telnetd` can be triggered with crafted LINEMODE SLC packets, potentially causing out-of-bounds writes and remote code execution.
+    The U.S. Federal Communications Commission expanded its Covered List to restrict authorization of new foreign-manufactured consumer routers over national security concerns.
 
-    Because exploitation can occur before authentication on exposed port 23 services, unpatched Telnet deployments face elevated compromise risk.
+    The action blocks non-compliant devices from receiving certification required for import and sale in the United States, creating a de facto market access ban for affected products.
 
-    [Read more](2026/Week11/telnetd.md)
+    [Read more](2026/Week12/foreignMade.md)
 
--   ![sanctions](2026/Week11/images/sanctions.png)
+-   ![nasir](2026/Week12/images/nasir.png)
 
-    **EU Sanctions on Chinese and Iranian Cyber Actors Targeting Critical Infrastructure**
+    **Pro-Iranian "Nasir Security" Targeting Gulf Energy Sector**
 
-    **Geopolitical Cybersecurity**{.cve-chip} **Critical Infrastructure**{.cve-chip} **State-Linked Activity**{.cve-chip}
+    **Nasir Security**{.cve-chip} **Gulf Energy Sector**{.cve-chip} **Supply Chain Compromise**{.cve-chip} **Cyber Espionage**{.cve-chip}
 
-    The European Union sanctioned Chinese and Iranian entities and individuals over coordinated cyber operations targeting member-state infrastructure.
+    A pro-Iranian threat group known as Nasir Security is conducting cyber operations against Gulf energy organizations by targeting third-party vendors and contractors.
 
-    Public reporting links the campaigns to large-scale device compromise, telecom and data intrusion, and disinformation activity across multiple EU countries.
+    The campaign centers on intelligence collection and data theft from engineering, contractual, and operational documents, potentially enabling future cyber or physical targeting.
 
-    [Read more](2026/Week11/sanctions.md)
+    [Read more](2026/Week12/nasir.md)
 
--   ![honeywellIQ](2026/Week11/images/honeywellIQ.jpg)
+-   ![CCTV](2026/Week12/images/CCTV.png)
 
-    **Honeywell IQ4x BMS Authentication Bypass Vulnerability**
+    **Iran National CCTV Surveillance Network Exploitation**
 
-    **BMS Security**{.cve-chip} **Authentication Bypass**{.cve-chip} **Critical Infrastructure**{.cve-chip}
+    **CCTV/VMS Intrusion**{.cve-chip} **AI-Driven Intelligence**{.cve-chip} **National Surveillance Risk**{.cve-chip} **Geopolitical Cyber**{.cve-chip}
 
-    A critical weakness in Honeywell IQ4x controllers can allow unauthenticated access to the management interface during default initial configuration.
+    Reporting indicates adversaries infiltrated elements of Iran's national CCTV and centralized video monitoring environment, with access to live and stored surveillance feeds.
 
-    Attackers may create administrator accounts and take full control of building management systems if authentication is not enabled before exposure.
+    The compromise highlights how internet-exposed IoT camera ecosystems and weak segmentation can be repurposed into strategic intelligence pipelines for tracking and targeting operations.
 
-    [Read more](2026/Week11/honeywellIQ.md)
+    [Read more](2026/Week12/CCTV.md)
 
--   ![royal](2026/Week11/images/royal.png)
+-   ![Telegram](2026/Week12/images/Telegram.png)
 
-    **Payload Ransomware Claims the Hack of Royal Bahrain Hospital**
+    **FBI Says Iranian Hackers Are Using Telegram to Steal Data in Malware Attacks**
 
-    **Ransomware**{.cve-chip} **Healthcare Sector**{.cve-chip} **Data Extortion**{.cve-chip}
+    **Handala**{.cve-chip} **Telegram C2 Abuse**{.cve-chip} **Data Exfiltration Malware**{.cve-chip} **Social Engineering**{.cve-chip}
 
-    The Payload ransomware group claims to have breached Royal Bahrain Hospital and exfiltrated approximately 110 GB of internal and patient data.
+    The FBI warned that pro-Iranian Handala operators are using Telegram bot/API channels as command-and-control infrastructure for malware campaigns delivered through phishing and social engineering.
 
-    The incident reflects a double-extortion model with leak-site pressure and a public release deadline, while initial access details remain undisclosed.
+    Attackers can task malware to collect files and screenshots, then exfiltrate stolen data through encrypted messaging-platform traffic that can blend with normal usage.
 
-    [Read more](2026/Week11/royal.md)
+    [Read more](2026/Week12/Telegram.md)
 
--   ![cisco](2026/Week11/images/cisco.png)
+-   ![Indian](2026/Week12/images/Indian.png)
 
-    **Cisco Confirms Active Exploitation of Two Catalyst SD-WAN Manager Vulnerabilities**
+    **Indian Government Probes CCTV Espionage Operation Linked to Pakistan**
 
-    **Cisco SD-WAN**{.cve-chip} **Active Exploitation**{.cve-chip} **Critical Infrastructure**{.cve-chip}
+    **Physical-Cyber Espionage**{.cve-chip} **Critical Infrastructure**{.cve-chip} **CCTV Abuse**{.cve-chip}
 
-    Cisco confirmed in-the-wild exploitation of CVE-2026-20122 and CVE-2026-20128 in Catalyst SD-WAN Manager, with risk amplified by earlier CVE-2026-20127 abuse.
+    Indian authorities uncovered a coordinated covert surveillance operation using hidden CCTV devices at strategic infrastructure locations, including railway stations.
 
-    Successful compromise can enable control-plane takeover, policy manipulation, implant deployment, and long-term persistence across enterprise WAN environments.
+    Investigators reported video exfiltration to foreign-linked handlers, raising concerns around infrastructure mapping, operational security exposure, and national-level risk.
 
-    [Read more](2026/Week11/cisco.md)
+    [Read more](2026/Week12/Indian.md)
 
--   ![poland](2026/Week11/images/poland.png)
+-   ![apple](2026/Week12/images/apple.png)
 
-    **Cyberattack Targeting the National Centre for Nuclear Research (NCBJ)**
+    **Apple Urges iPhone Users to Update as Coruna and DarkSword Exploit Kits Emerge**
 
-    **Critical Infrastructure**{.cve-chip} **Nuclear Sector**{.cve-chip} **Cyberattack**{.cve-chip}
+    **Coruna**{.cve-chip} **DarkSword**{.cve-chip} **iOS/WebKit Exploit Chains**{.cve-chip} **Spyware Risk**{.cve-chip}
 
-    Poland's National Centre for Nuclear Research (NCBJ) blocked a targeted intrusion against its internal IT environment before any impact to reactor operations.
+    Coruna and DarkSword are reported exploit kits that chain Safari/WebKit and iOS vulnerabilities to execute code on iPhones and deploy high-risk surveillance or data-theft payloads.
 
-    The incident is under national-level investigation, with preliminary indicators suggesting possible links to **Iran-associated** infrastructure while attribution remains unconfirmed.
+    With DarkSword reportedly leaked publicly, the risk of broader exploitation increases, making immediate iOS patching and hardened browsing posture critical.
 
-    [Read more](2026/Week11/poland.md)
+    [Read more](2026/Week12/apple.md)
 
--   ![stryker](2026/Week11/images/stryker.png)
+-   ![perseus](2026/Week12/images/perseus.png)
 
-    **Stryker Global Network Cyberattack (Handala Attack)**
+    **New Perseus Android Banking Malware Monitors Notes Apps to Extract Sensitive Data**
 
-    **Healthcare Sector**{.cve-chip} **Wiper Attack**{.cve-chip} **Hacktivism**{.cve-chip}
+    **Android Malware**{.cve-chip} **Banking Threat**{.cve-chip} **Credential Theft**{.cve-chip}
 
-    Stryker suffered a large-scale disruption across its global Microsoft enterprise environment, affecting corporate systems, manufacturing, and order processing.
+    Perseus is a newly tracked Android malware that targets secrets stored in note-taking apps, including passwords, banking details, and crypto recovery phrases.
 
-    Public reporting and threat-actor claims indicate a destructive campaign likely involving endpoint management abuse, while Stryker stated patient-facing medical devices were not impacted.
+    By stealing pre-stored credentials from local notes rather than intercepting OTPs, it can bypass many traditional MFA-focused detection patterns.
 
-    [Read more](2026/Week11/stryker.md)
+    [Read more](2026/Week12/perseus.md)
 
--   ![socksEscort](2026/Week11/images/socksEscort.png)
+-   ![Tplink](2026/Week12/images/Tplink.png)
 
-    **SocksEscort Proxy Service Disruption linked to the AVrecon Botnet**
+    **TP-Link Archer NX Firmware Takeover Vulnerabilities**
 
-    **Botnet**{.cve-chip} **Proxy Abuse**{.cve-chip} **Law Enforcement Action**{.cve-chip}
+    **TP-Link Archer NX**{.cve-chip} **Firmware Takeover**{.cve-chip} **Router Security**{.cve-chip}
 
-    U.S. and European law-enforcement agencies dismantled the SocksEscort proxy service, which used AVrecon-infected routers and IoT devices to provide criminal proxy infrastructure.
+    Multiple vulnerabilities in Archer NX routers can enable authentication bypass, malicious firmware upload, and persistent root-level control of edge network devices.
 
-    The takedown disrupted a large-scale abuse ecosystem tied to fraud, credential stuffing, and phishing by seizing key domains, servers, and cryptocurrency assets.
+    Exploitation can lead to DNS hijacking, MITM traffic manipulation, and botnet-style abuse, making rapid firmware patching and management-plane hardening essential.
 
-    [Read more](2026/Week11/socksEscort.md)
+    [Read more](2026/Week12/Tplink.md)
 
--   ![windows](2026/Week11/images/windows.png)
+-   ![Interlock](2026/Week12/images/Interlock.png)
 
-    **Microsoft Windows 11 RRAS Remote Code Execution Vulnerability - Out-of-Band Hotpatch**
+    **Interlock Ransomware Exploits Cisco FMC Zero-Day CVE-2026-20131 for Root Access**
 
-    **Windows 11**{.cve-chip} **RRAS**{.cve-chip} **Remote Code Execution**{.cve-chip}
+    **Interlock Ransomware**{.cve-chip} **CVE-2026-20131**{.cve-chip} **Cisco FMC**{.cve-chip} **Unauthenticated RCE**{.cve-chip}
 
-    Microsoft released OOB hotpatch `KB5084597` to fix multiple RRAS management vulnerabilities that could enable code execution when an administrator connects to a malicious RRAS server.
+    Interlock operators reportedly exploited CVE-2026-20131 as a zero-day in Cisco Secure Firewall Management Center to gain unauthenticated root access and compromise a critical network security control plane.
 
-    The hotpatch allows supported enterprise systems to apply protections without reboot, reducing immediate exposure for managed environments.
+    With management-plane control, attackers can tamper with firewall policies, exfiltrate sensitive data, and deploy ransomware while moving laterally across enterprise environments.
 
-    [Read more](2026/Week11/windows.md)
+    [Read more](2026/Week12/Interlock.md)
 
--   ![hpe](2026/Week11/images/hpe.png)
+-   ![ubuntu](2026/Week12/images/ubuntu.png)
 
-    **Critical HPE Aruba Networking AOS-CX Vulnerability (CVE-2026-23813)**
+    **CVE-2026-3888 - Ubuntu Desktop Snap Local Privilege Escalation**
 
-    **HPE Aruba**{.cve-chip} **Authentication Bypass**{.cve-chip} **Critical Vulnerability**{.cve-chip}
+    **Ubuntu Desktop**{.cve-chip} **Local Privilege Escalation**{.cve-chip} **snapd**{.cve-chip}
 
-    A critical flaw in the AOS-CX web management interface allows unauthenticated attackers to bypass authentication and potentially reset administrator credentials.
+    A race-condition flaw in Ubuntu Desktop's `snapd`/`snap-confine` path can allow a local unprivileged user to escalate to root by abusing `/tmp/.snap` recreation timing.
 
-    Successful exploitation can lead to full switch takeover, configuration manipulation, and expanded lateral-movement risk across enterprise networks.
+    Successful exploitation may enable full host takeover, persistence, and credential theft, making rapid patching and local-access controls essential.
 
-    [Read more](2026/Week11/hpe.md)
+    [Read more](2026/Week12/ubuntu.md)
+
+-   ![oracle](2026/Week12/images/oracle.png)
+
+    **CVE-2026-21992 - Critical Remote Code Execution in Oracle Identity Manager**
+
+    **Oracle Middleware**{.cve-chip} **Pre-Auth RCE**{.cve-chip} **Critical Vulnerability**{.cve-chip}
+
+    CVE-2026-21992 is a critical unauthenticated HTTP-exposed flaw in Oracle Identity Manager and Oracle Web Services Manager that can enable remote code execution.
+
+    Successful exploitation may lead to full middleware server compromise and lateral movement through enterprise identity infrastructure.
+
+    [Read more](2026/Week12/oracle.md)
+
+-   ![ubiquiti](2026/Week12/images/ubiquiti.png)
+
+    **Ubiquiti UniFi Network Application Account Takeover Vulnerability (CVE-2026-22557)**
+
+    **Ubiquiti UniFi**{.cve-chip} **Account Takeover**{.cve-chip} **Path Traversal**{.cve-chip}
+
+    A severe vulnerability set in UniFi Network Application can expose sensitive files, enable account hijacking, and allow privilege escalation in vulnerable controller deployments.
+
+    If exploited, attackers may take control of the management plane and alter the configuration of managed switches, access points, and gateways.
+
+    [Read more](2026/Week12/ubiquiti.md)
+
+-   ![QNAP](2026/Week12/images/QNAP.png)
+
+    **QNAP NAS Zero-Day Vulnerabilities Demonstrated at Pwn2Own Ireland 2025**
+
+    **QNAP NAS**{.cve-chip} **Zero-Day**{.cve-chip} **Pwn2Own Ireland 2025**{.cve-chip} **RCE + Privilege Escalation**{.cve-chip}
+
+    QNAP patched multiple critical NAS vulnerabilities after successful live exploitation demonstrations at Pwn2Own Ireland 2025 across QTS/QuTS hero and key backup/security applications.
+
+    Attackers who chain these flaws can gain remote code execution and escalate to root, enabling data theft, ransomware deployment, and lateral movement from internet-exposed storage systems.
+
+    [Read more](2026/Week12/QNAP.md)
 
 </div>

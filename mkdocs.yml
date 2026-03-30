@@ -335,3 +335,8 @@ nav:
           - "CVE-2026-21992 - Critical Remote Code Execution in Oracle Identity Manager": 2026/Week12/oracle.md
           - "Ubiquiti UniFi Network Application Account Takeover Vulnerability (CVE-2026-22557)": 2026/Week12/ubiquiti.md
           - "QNAP NAS Zero-Day Vulnerabilities Demonstrated at Pwn2Own Ireland 2025": 2026/Week12/QNAP.md
+        - "week13":
+          - "Handala Hack of Kash Patel (FBI Director) Personal Email": 2026/Week13/FBI.md
+          - "ShinyHunters Claims Breach of European Commission": 2026/Week13/EuropeanCommission.md
+          - "Red Menshen APT - BPFdoor Telecom Espionage Campaign": 2026/Week13/BPFdoor.md
+          - "NetScaler Memory Disclosure Vulnerability - CVE-2026-3055": 2026/Week13/NetScaler.md
