@@ -340,3 +340,5 @@ nav:
           - "ShinyHunters Claims Breach of European Commission": 2026/Week13/EuropeanCommission.md
           - "Red Menshen APT - BPFdoor Telecom Espionage Campaign": 2026/Week13/BPFdoor.md
           - "NetScaler Memory Disclosure Vulnerability - CVE-2026-3055": 2026/Week13/NetScaler.md
+          - "ChatGPT Data Exfiltration Vulnerability (Prompt Injection + DNS Exfiltration)": 2026/Week13/chatgpt.md
+          - "Kaplan North America LLC Data Breach": 2026/Week13/Kaplan.md
