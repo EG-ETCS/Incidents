@@ -8,76 +8,64 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![chatgpt](2026/Week13/images/chatgpt.png)
+-   ![Chrome](2026/Week14/images/Chrome.png)
 
-    **ChatGPT Data Exfiltration Vulnerability (Prompt Injection + DNS Exfiltration)**
+    **Chrome Zero-Day Vulnerability - CVE-2026-5281**
 
-    **AI Security**{.cve-chip} **Prompt Injection**{.cve-chip} **Data Exfiltration**{.cve-chip}
+    **CVE-2026-5281**{.cve-chip} **Chrome Zero-Day**{.cve-chip} **WebGPU/Dawn**{.cve-chip} **Active Exploitation**{.cve-chip}
 
-    Researchers reported a vulnerability pattern where prompt injection and covert outbound techniques could expose sensitive data from AI interaction context.
+    A zero-day flaw in Chrome's Dawn WebGPU engine was reportedly exploited in real-world attacks before patch availability, with crafted web content triggering memory-corruption conditions.
 
-    OpenAI stated mitigations were deployed, while organizations still need strong DLP, DNS monitoring, and secure AI usage controls.
+    Successful exploitation can enable browser-context code execution and may be chained with additional vulnerabilities for broader system compromise.
 
-    [Read more](2026/Week13/chatgpt.md)
+    [Read more](2026/Week14/Chrome.md)
 
--   ![Kaplan](2026/Week13/images/Kaplan.png)
+-   ![FBI_Mobile](2026/Week14/images/FBI_Mobile.png)
 
-    **Kaplan North America LLC Data Breach**
+    **FBI Warning on Risks from Foreign (Chinese) Mobile Applications**
 
-    **Data Breach**{.cve-chip} **PII Exposure**{.cve-chip} **Identity Theft Risk**{.cve-chip}
+    **FBI Advisory**{.cve-chip} **Mobile App Risk**{.cve-chip} **Data Privacy**{.cve-chip} **National Security**{.cve-chip}
 
-    Kaplan North America disclosed a breach involving unauthorized access to internal systems and extended exfiltration of sensitive personal information.
+    The FBI warned that some foreign-developed mobile applications may collect extensive personal and device data, including contacts and location information, with potential exposure under foreign legal requirements.
 
-    Exposure of names, Social Security numbers, and driver's license data creates elevated identity-theft, fraud, and regulatory risk.
+    The advisory highlights privacy, profiling, and national-security risks from excessive app permissions, background collection, and opaque data-transfer practices.
 
-    [Read more](2026/Week13/Kaplan.md)
+    [Read more](2026/Week14/FBI_Mobile.md)
 
--   ![FBI](2026/Week13/images/FBI.png)
+-   ![Handala](2026/Week14/images/Handala.png)
 
-    **Handala Hack of Kash Patel (FBI Director) Personal Email**
+    **Handala Hack Team Breach Claim Against PSK Wind Technologies**
 
-    **Account Compromise**{.cve-chip} **Hacktivism**{.cve-chip} **Data Leak**{.cve-chip}
+    **Handala**{.cve-chip} **Hacktivist Activity**{.cve-chip} **Defense Sector Targeting**{.cve-chip} **Data Exfiltration Claim**{.cve-chip}
 
-    The pro-Iranian Handala group claimed compromise of FBI Director Kash Patel's personal email account and leaked historical personal communications and files.
+    The pro-Iranian Handala group claimed it breached PSK Wind Technologies and exfiltrated sensitive command-and-control and communications-related information.
 
-    Authorities stated no classified information was affected, but the case highlights persistent high-profile risk from personal-account targeting.
+    While official confirmation is pending, the reported activity reflects combined cyber intrusion and information-warfare pressure through selective data leak publication.
 
-    [Read more](2026/Week13/FBI.md)
+    [Read more](2026/Week14/Handala.md)
 
--   ![EuropeanCommission](2026/Week13/images/EuropeanCommission.png)
+-   ![TrueConf](2026/Week14/images/TrueConf.png)
 
-    **ShinyHunters Claims Breach of European Commission**
+    **TrueConf Zero-Day Exploitation (Operation TrueChaos) - CVE-2026-3502**
 
-    **Cloud Security**{.cve-chip} **Data Breach**{.cve-chip} **ShinyHunters**{.cve-chip}
+    **CVE-2026-3502**{.cve-chip} **TrueConf**{.cve-chip} **Malicious Update Abuse**{.cve-chip} **Operation TrueChaos**{.cve-chip}
 
-    ShinyHunters claimed a breach of a cloud-hosted European Commission web platform and alleged large-scale data theft.
+    A TrueConf client update-validation weakness was reportedly exploited in targeted Southeast Asian government intrusions by replacing trusted updates on compromised on-prem servers.
 
-    The Commission stated the impact was limited to a web platform and that core internal systems remained unaffected.
+    The campaign enabled simultaneous endpoint compromise and follow-on activity including reconnaissance, persistence, and command-and-control operations.
 
-    [Read more](2026/Week13/EuropeanCommission.md)
+    [Read more](2026/Week14/TrueConf.md)
 
--   ![BPFdoor](2026/Week13/images/BPFdoor.png)
+-   ![WhatsApp](2026/Week14/images/WhatsApp.png)
 
-    **Red Menshen APT - BPFdoor Telecom Espionage Campaign**
+    **WhatsApp Fake App Spyware Campaign**
 
-    **APT Activity**{.cve-chip} **Telecom Espionage**{.cve-chip} **Linux Backdoor**{.cve-chip}
+    **WhatsApp Impersonation**{.cve-chip} **Mobile Spyware**{.cve-chip} **Social Engineering**{.cve-chip} **Italy Targeting**{.cve-chip}
 
-    China-linked Red Menshen operators reportedly used stealthy BPFdoor implants to maintain covert long-term access in telecom environments.
+    Around 200 users in Italy were reportedly lured into installing a fake WhatsApp app carrying spyware through off-store social-engineering delivery.
 
-    Dormant trigger-based activation and low-noise behavior make detection difficult while enabling persistent intelligence collection.
+    Although WhatsApp end-to-end encryption was not broken, compromised devices enabled covert collection of sensitive local data, contacts, and message-related information.
 
-    [Read more](2026/Week13/BPFdoor.md)
-
--   ![NetScaler](2026/Week13/images/NetScaler.png)
-
-    **NetScaler Memory Disclosure Vulnerability - CVE-2026-3055**
-
-    **Citrix NetScaler**{.cve-chip} **Memory Disclosure**{.cve-chip} **Active Probing**{.cve-chip}
-
-    CVE-2026-3055 is a critical NetScaler memory overread flaw tied to SAML handling that can expose sensitive authentication data via crafted requests.
-
-    Active probing raises risk of token theft, session hijacking, and broader compromise of remote access infrastructure.
-
-    [Read more](2026/Week13/NetScaler.md)
+    [Read more](2026/Week14/WhatsApp.md)
 
 </div>

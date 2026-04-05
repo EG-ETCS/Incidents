@@ -8,28 +8,64 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![chatgpt](2026/Week13/images/chatgpt.png)
+-   ![Chrome](2026/Week14/images/Chrome.png)
 
-    **ChatGPT Data Exfiltration Vulnerability (Prompt Injection + DNS Exfiltration)**
+    **Chrome Zero-Day Vulnerability - CVE-2026-5281**
 
-    **AI Security**{.cve-chip} **Prompt Injection**{.cve-chip} **Data Exfiltration**{.cve-chip}
+    **CVE-2026-5281**{.cve-chip} **Chrome Zero-Day**{.cve-chip} **WebGPU/Dawn**{.cve-chip} **Active Exploitation**{.cve-chip}
 
-    Researchers reported a vulnerability pattern where prompt injection and covert outbound techniques could expose sensitive data from AI interaction context.
+    A zero-day flaw in Chrome's Dawn WebGPU engine was reportedly exploited in real-world attacks before patch availability, with crafted web content triggering memory-corruption conditions.
 
-    OpenAI stated mitigations were deployed, while organizations still need strong DLP, DNS monitoring, and secure AI usage controls.
+    Successful exploitation can enable browser-context code execution and may be chained with additional vulnerabilities for broader system compromise.
 
-    [Read more](2026/Week13/chatgpt.md)
+    [Read more](2026/Week14/Chrome.md)
 
--   ![Kaplan](2026/Week13/images/Kaplan.png)
+-   ![FBI_Mobile](2026/Week14/images/FBI_Mobile.png)
 
-    **Kaplan North America LLC Data Breach**
+    **FBI Warning on Risks from Foreign (Chinese) Mobile Applications**
 
-    **Data Breach**{.cve-chip} **PII Exposure**{.cve-chip} **Identity Theft Risk**{.cve-chip}
+    **FBI Advisory**{.cve-chip} **Mobile App Risk**{.cve-chip} **Data Privacy**{.cve-chip} **National Security**{.cve-chip}
 
-    Kaplan North America disclosed a breach involving unauthorized access to internal systems and extended exfiltration of sensitive personal information.
+    The FBI warned that some foreign-developed mobile applications may collect extensive personal and device data, including contacts and location information, with potential exposure under foreign legal requirements.
 
-    Exposure of names, Social Security numbers, and driver's license data creates elevated identity-theft, fraud, and regulatory risk.
+    The advisory highlights privacy, profiling, and national-security risks from excessive app permissions, background collection, and opaque data-transfer practices.
 
-    [Read more](2026/Week13/Kaplan.md)
+    [Read more](2026/Week14/FBI_Mobile.md)
+
+-   ![Handala](2026/Week14/images/Handala.png)
+
+    **Handala Hack Team Breach Claim Against PSK Wind Technologies**
+
+    **Handala**{.cve-chip} **Hacktivist Activity**{.cve-chip} **Defense Sector Targeting**{.cve-chip} **Data Exfiltration Claim**{.cve-chip}
+
+    The pro-Iranian Handala group claimed it breached PSK Wind Technologies and exfiltrated sensitive command-and-control and communications-related information.
+
+    While official confirmation is pending, the reported activity reflects combined cyber intrusion and information-warfare pressure through selective data leak publication.
+
+    [Read more](2026/Week14/Handala.md)
+
+-   ![TrueConf](2026/Week14/images/TrueConf.png)
+
+    **TrueConf Zero-Day Exploitation (Operation TrueChaos) - CVE-2026-3502**
+
+    **CVE-2026-3502**{.cve-chip} **TrueConf**{.cve-chip} **Malicious Update Abuse**{.cve-chip} **Operation TrueChaos**{.cve-chip}
+
+    A TrueConf client update-validation weakness was reportedly exploited in targeted Southeast Asian government intrusions by replacing trusted updates on compromised on-prem servers.
+
+    The campaign enabled simultaneous endpoint compromise and follow-on activity including reconnaissance, persistence, and command-and-control operations.
+
+    [Read more](2026/Week14/TrueConf.md)
+
+-   ![WhatsApp](2026/Week14/images/WhatsApp.png)
+
+    **WhatsApp Fake App Spyware Campaign**
+
+    **WhatsApp Impersonation**{.cve-chip} **Mobile Spyware**{.cve-chip} **Social Engineering**{.cve-chip} **Italy Targeting**{.cve-chip}
+
+    Around 200 users in Italy were reportedly lured into installing a fake WhatsApp app carrying spyware through off-store social-engineering delivery.
+
+    Although WhatsApp end-to-end encryption was not broken, compromised devices enabled covert collection of sensitive local data, contacts, and message-related information.
+
+    [Read more](2026/Week14/WhatsApp.md)
 
 </div>

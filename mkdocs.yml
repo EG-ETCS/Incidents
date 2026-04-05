@@ -342,3 +342,9 @@ nav:
           - "NetScaler Memory Disclosure Vulnerability - CVE-2026-3055": 2026/Week13/NetScaler.md
           - "ChatGPT Data Exfiltration Vulnerability (Prompt Injection + DNS Exfiltration)": 2026/Week13/chatgpt.md
           - "Kaplan North America LLC Data Breach": 2026/Week13/Kaplan.md
+        - "week14":
+          - "Chrome Zero-Day Vulnerability - CVE-2026-5281": 2026/Week14/Chrome.md
+          - "FBI Warning on Risks from Foreign (Chinese) Mobile Applications": 2026/Week14/FBI_Mobile.md
+          - "Handala Hack Team Breach Claim Against PSK Wind Technologies": 2026/Week14/Handala.md
+          - "TrueConf Zero-Day Exploitation (Operation TrueChaos) - CVE-2026-3502": 2026/Week14/TrueConf.md
+          - "WhatsApp Fake App Spyware Campaign": 2026/Week14/WhatsApp.md
