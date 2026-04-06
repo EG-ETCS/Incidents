@@ -8,64 +8,52 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Chrome](2026/Week14/images/Chrome.png)
+-   ![Pay2Key](2026/Week14/images/Pay2Key.png)
 
-    **Chrome Zero-Day Vulnerability - CVE-2026-5281**
+    **Pay2Key Pseudo-Ransomware Campaign (Iran-linked)**
 
-    **CVE-2026-5281**{.cve-chip} **Chrome Zero-Day**{.cve-chip} **WebGPU/Dawn**{.cve-chip} **Active Exploitation**{.cve-chip}
+    **Iran-Linked Threats**{.cve-chip} **Pseudo-Ransomware**{.cve-chip} **Operational Disruption**{.cve-chip}
 
-    A zero-day flaw in Chrome's Dawn WebGPU engine was reportedly exploited in real-world attacks before patch availability, with crafted web content triggering memory-corruption conditions.
+    Iran-linked operators revived Pay2Key activity with pseudo-ransomware tactics that may prioritize disruption and sabotage over direct profit.
 
-    Successful exploitation can enable browser-context code execution and may be chained with additional vulnerabilities for broader system compromise.
+    Campaign behavior includes phishing/VPN-access tradecraft, lateral movement, and payload execution that can resemble ransomware while causing destructive outcomes.
 
-    [Read more](2026/Week14/Chrome.md)
+    [Read more](2026/Week14/Pay2Key.md)
 
--   ![FBI_Mobile](2026/Week14/images/FBI_Mobile.png)
+-   ![QR](2026/Week14/images/QR.png)
 
-    **FBI Warning on Risks from Foreign (Chinese) Mobile Applications**
+    **QR Code Traffic Violation Phishing Campaign (Quishing Scam)**
 
-    **FBI Advisory**{.cve-chip} **Mobile App Risk**{.cve-chip} **Data Privacy**{.cve-chip} **National Security**{.cve-chip}
+    **Smishing**{.cve-chip} **QR Phishing (Quishing)**{.cve-chip} **Financial Fraud**{.cve-chip}
 
-    The FBI warned that some foreign-developed mobile applications may collect extensive personal and device data, including contacts and location information, with potential exposure under foreign legal requirements.
+    Attackers are sending SMS traffic-violation lures that use QR codes to redirect victims to fake government-style payment portals.
 
-    The advisory highlights privacy, profiling, and national-security risks from excessive app permissions, background collection, and opaque data-transfer practices.
+    The campaign harvests payment and personal data through low-fee urgency prompts and QR-based evasion of traditional URL scrutiny.
 
-    [Read more](2026/Week14/FBI_Mobile.md)
+    [Read more](2026/Week14/QR.md)
 
--   ![Handala](2026/Week14/images/Handala.png)
+-   ![EMS](2026/Week14/images/EMS.png)
 
-    **Handala Hack Team Breach Claim Against PSK Wind Technologies**
+    **CVE-2026-35616 - FortiClient EMS Authentication Bypass**
 
-    **Handala**{.cve-chip} **Hacktivist Activity**{.cve-chip} **Defense Sector Targeting**{.cve-chip} **Data Exfiltration Claim**{.cve-chip}
+    **Fortinet EMS**{.cve-chip} **Authentication Bypass**{.cve-chip} **Active Exploitation**{.cve-chip}
 
-    The pro-Iranian Handala group claimed it breached PSK Wind Technologies and exfiltrated sensitive command-and-control and communications-related information.
+    CVE-2026-35616 is a critical FortiClient EMS flaw that can allow unauthenticated API-based authentication bypass and remote command execution.
 
-    While official confirmation is pending, the reported activity reflects combined cyber intrusion and information-warfare pressure through selective data leak publication.
+    Active exploitation risk makes exposed vulnerable EMS servers high-priority patch targets to prevent endpoint-wide compromise.
 
-    [Read more](2026/Week14/Handala.md)
+    [Read more](2026/Week14/EMS.md)
 
--   ![TrueConf](2026/Week14/images/TrueConf.png)
+-   ![npm](2026/Week14/images/npm.png)
 
-    **TrueConf Zero-Day Exploitation (Operation TrueChaos) - CVE-2026-3502**
+    **Axios npm Supply Chain Attack (Linked to UNC1069 / North Korea)**
 
-    **CVE-2026-3502**{.cve-chip} **TrueConf**{.cve-chip} **Malicious Update Abuse**{.cve-chip} **Operation TrueChaos**{.cve-chip}
+    **Supply Chain Attack**{.cve-chip} **npm Ecosystem**{.cve-chip} **RAT Deployment**{.cve-chip}
 
-    A TrueConf client update-validation weakness was reportedly exploited in targeted Southeast Asian government intrusions by replacing trusted updates on compromised on-prem servers.
+    Attackers compromised an Axios maintainer account and published malicious package versions embedding hidden dependency and post-install malware behavior.
 
-    The campaign enabled simultaneous endpoint compromise and follow-on activity including reconnaissance, persistence, and command-and-control operations.
+    The campaign risked developer endpoints and CI/CD pipelines through transitive dependency exposure, with reporting linking activity to UNC1069.
 
-    [Read more](2026/Week14/TrueConf.md)
-
--   ![WhatsApp](2026/Week14/images/WhatsApp.png)
-
-    **WhatsApp Fake App Spyware Campaign**
-
-    **WhatsApp Impersonation**{.cve-chip} **Mobile Spyware**{.cve-chip} **Social Engineering**{.cve-chip} **Italy Targeting**{.cve-chip}
-
-    Around 200 users in Italy were reportedly lured into installing a fake WhatsApp app carrying spyware through off-store social-engineering delivery.
-
-    Although WhatsApp end-to-end encryption was not broken, compromised devices enabled covert collection of sensitive local data, contacts, and message-related information.
-
-    [Read more](2026/Week14/WhatsApp.md)
+    [Read more](2026/Week14/npm.md)
 
 </div>

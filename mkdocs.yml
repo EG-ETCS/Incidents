@@ -348,3 +348,7 @@ nav:
           - "Handala Hack Team Breach Claim Against PSK Wind Technologies": 2026/Week14/Handala.md
           - "TrueConf Zero-Day Exploitation (Operation TrueChaos) - CVE-2026-3502": 2026/Week14/TrueConf.md
           - "WhatsApp Fake App Spyware Campaign": 2026/Week14/WhatsApp.md
+          - "Pay2Key Pseudo-Ransomware Campaign (Iran-linked)": 2026/Week14/Pay2Key.md
+          - "QR Code Traffic Violation Phishing Campaign (Quishing Scam)": 2026/Week14/QR.md
+          - "CVE-2026-35616 - FortiClient EMS Authentication Bypass": 2026/Week14/EMS.md
+          - "Axios npm Supply Chain Attack (Linked to UNC1069 / North Korea)": 2026/Week14/npm.md
