@@ -352,3 +352,5 @@ nav:
           - "QR Code Traffic Violation Phishing Campaign (Quishing Scam)": 2026/Week14/QR.md
           - "CVE-2026-35616 - FortiClient EMS Authentication Bypass": 2026/Week14/EMS.md
           - "Axios npm Supply Chain Attack (Linked to UNC1069 / North Korea)": 2026/Week14/npm.md
+          - "GPUBreach / GPU Rowhammer Attack": 2026/Week14/GPUBreach.md
+          - "China-Linked Storm-1175 Zero-Day Exploitation Campaign": 2026/Week14/Storm-1175.md
