@@ -8,24 +8,34 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![GPUBreach](2026/Week14/images/GPUBreach.png)
+-   ![Iran-Linked](2026/Week14/images/Iran-Linked.png)
 
-    **GPUBreach / GPU Rowhammer Attack**
+    **Iran-Linked Hackers Disrupt U.S. Critical Infrastructure**
 
-    **GPU Vulnerability**{.cve-chip} **Memory Attack**{.cve-chip} **Privilege Escalation**{.cve-chip}
+    **Iran-Linked APT**{.cve-chip} **ICS/OT Attack**{.cve-chip} **Critical Infrastructure**{.cve-chip}
     
-    A newly disclosed Rowhammer-style attack technique against GPU memory (VRAM). Attackers can manipulate memory integrity, bypass isolation mechanisms, and escalate privileges to gain full system control.
+    Iran-linked threat actors exploited internet-exposed PLCs and SCADA systems to disrupt U.S. critical infrastructure operations. Attackers manipulated PLC logic and falsified HMI data, marking a shift from espionage toward cyber-physical sabotage.
     
-    [Read more](2026/Week14/GPUBreach.md)
+    [Read more](2026/Week14/Iran-Linked.md)
 
--   ![Storm-1175](2026/Week14/images/Storm-1175.png)
+-   ![APT28](2026/Week14/images/APT28.png)
 
-    **China-Linked Storm-1175 Zero-Day Exploitation Campaign**
+    **APT28 Exploiting Network Devices for Cyber Espionage**
 
-    **China-Linked APT**{.cve-chip} **Zero-Day Exploitation**{.cve-chip} **Medusa Ransomware**{.cve-chip}
+    **Russia-Linked APT**{.cve-chip} **Network Device Exploitation**{.cve-chip} **Cyber Espionage**{.cve-chip}
     
-    A sophisticated China-linked threat actor rapidly exploiting zero-day and recently disclosed vulnerabilities in enterprise software. The group completes full system compromise within hours, exfiltrating data and deploying Medusa ransomware through double extortion tactics.
+    Russian military intelligence group APT28 is exploiting vulnerabilities in internet-facing routers and edge devices to build covert proxy networks, intercept traffic, and pivot into the internal networks of government and military targets for long-term espionage.
     
-    [Read more](2026/Week14/Storm-1175.md)
+    [Read more](2026/Week14/APT28.md)
+
+-   ![Banking](2026/Week14/images/Banking.png)
+
+    **Russia Nationwide Banking & Payment Outage (April 2026)**
+
+    **Banking Outage**{.cve-chip} **Payment System Failure**{.cve-chip} **Critical Infrastructure**{.cve-chip}
+    
+    Aggressive VPN-blocking rules by Russian regulators accidentally disrupted critical IP ranges, taking down mobile banking apps, POS terminals, ATMs, and metro payment systems for millions of customers nationwide — exposing severe centralization risks in Russia's financial infrastructure.
+    
+    [Read more](2026/Week14/Banking.md)
 
 </div>
