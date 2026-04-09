@@ -8,34 +8,34 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Iran-Linked](2026/Week14/images/Iran-Linked.png)
+-   ![PRISMEX](2026/Week14/images/PRISMEX.png)
 
-    **Iran-Linked Hackers Disrupt U.S. Critical Infrastructure**
+    **APT28 PRISMEX Campaign**
 
-    **Iran-Linked APT**{.cve-chip} **ICS/OT Attack**{.cve-chip} **Critical Infrastructure**{.cve-chip}
+    **Russia-Linked APT**{.cve-chip} **Spear-Phishing**{.cve-chip} **Cyber Espionage**{.cve-chip}
     
-    Iran-linked threat actors exploited internet-exposed PLCs and SCADA systems to disrupt U.S. critical infrastructure operations. Attackers manipulated PLC logic and falsified HMI data, marking a shift from espionage toward cyber-physical sabotage.
+    APT28 targets Ukrainian and NATO-linked entities with a sophisticated multi-stage malware framework using steganographic payload concealment, COM hijacking persistence, fileless execution, and cloud-based C2 to conduct long-term espionage against military and logistics operations.
     
-    [Read more](2026/Week14/Iran-Linked.md)
+    [Read more](2026/Week14/PRISMEX.md)
 
--   ![APT28](2026/Week14/images/APT28.png)
+-   ![Masjesu](2026/Week14/images/Masjesu.png)
 
-    **APT28 Exploiting Network Devices for Cyber Espionage**
+    **Masjesu Botnet Emerges as DDoS-for-Hire Service Targeting Global IoT Devices**
 
-    **Russia-Linked APT**{.cve-chip} **Network Device Exploitation**{.cve-chip} **Cyber Espionage**{.cve-chip}
+    **IoT Botnet**{.cve-chip} **DDoS-for-Hire**{.cve-chip} **Critical Infrastructure**{.cve-chip}
     
-    Russian military intelligence group APT28 is exploiting vulnerabilities in internet-facing routers and edge devices to build covert proxy networks, intercept traffic, and pivot into the internal networks of government and military targets for long-term espionage.
+    A multi-architecture IoT botnet sold as a DDoS-for-hire service on Telegram, infecting routers and embedded devices to launch TCP, UDP, HTTP, and ICMP floods. Layered XOR-encrypted C2, signal-resistant persistence, and evasion of sensitive IP ranges make Masjesu a stealthy, accessible threat.
     
-    [Read more](2026/Week14/APT28.md)
+    [Read more](2026/Week14/Masjesu.md)
 
--   ![Banking](2026/Week14/images/Banking.png)
+-   ![SVG](2026/Week14/images/SVG.png)
 
-    **Russia Nationwide Banking & Payment Outage (April 2026)**
+    **Hackers Use Pixel-Large SVG Trick to Hide Credit Card Stealer**
 
-    **Banking Outage**{.cve-chip} **Payment System Failure**{.cve-chip} **Critical Infrastructure**{.cve-chip}
+    **Web Skimming**{.cve-chip} **Magecart**{.cve-chip} **Payment Card Theft**{.cve-chip}
     
-    Aggressive VPN-blocking rules by Russian regulators accidentally disrupted critical IP ranges, taking down mobile banking apps, POS terminals, ATMs, and metro payment systems for millions of customers nationwide — exposing severe centralization risks in Russia's financial infrastructure.
+    A Magecart-style campaign injects malicious JavaScript inside a 1×1 pixel invisible SVG on Magento checkout pages. A fake payment overlay silently captures card details, encrypts them with XOR+Base64, and exfiltrates to attacker-controlled servers disguised as analytics traffic.
     
-    [Read more](2026/Week14/Banking.md)
+    [Read more](2026/Week14/SVG.md)
 
 </div>
