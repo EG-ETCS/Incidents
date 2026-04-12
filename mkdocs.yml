@@ -342,6 +342,7 @@ nav:
           - "NetScaler Memory Disclosure Vulnerability - CVE-2026-3055": 2026/Week13/NetScaler.md
           - "ChatGPT Data Exfiltration Vulnerability (Prompt Injection + DNS Exfiltration)": 2026/Week13/chatgpt.md
           - "Kaplan North America LLC Data Breach": 2026/Week13/Kaplan.md
+      - "April":
         - "week14":
           - "Chrome Zero-Day Vulnerability - CVE-2026-5281": 2026/Week14/Chrome.md
           - "FBI Warning on Risks from Foreign (Chinese) Mobile Applications": 2026/Week14/FBI_Mobile.md
@@ -360,3 +361,8 @@ nav:
           - "APT28 PRISMEX Campaign": 2026/Week14/PRISMEX.md
           - "Masjesu Botnet Emerges as DDoS-for-Hire Service Targeting Global IoT Devices": 2026/Week14/Masjesu.md
           - "Hackers Use Pixel-Large SVG Trick to Hide Credit Card Stealer": 2026/Week14/SVG.md
+        - "week15":
+          - "France Government Migration from Windows to Linux (Digital Sovereignty Initiative)": 2026/Week15/France.md
+          - "Exposed ICS/SCADA Devices Targeted by Iranian APTs (Censys Report)": 2026/Week15/SCADA.md
+          - "EngageLab SDK Flaw Opens Door to Private Data on 50M Android Devices": 2026/Week15/Android.md
+          - "Adobe Acrobat Reader Zero-Day (CVE-2026-34621)": 2026/Week15/Adobe.md

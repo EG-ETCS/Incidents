@@ -8,34 +8,52 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![PRISMEX](2026/Week14/images/PRISMEX.png)
+-   ![France](2026/Week15/images/France.png)
 
-    **APT28 PRISMEX Campaign**
+    **France Government Migration from Windows to Linux (Digital Sovereignty Initiative)**
 
-    **Russia-Linked APT**{.cve-chip} **Spear-Phishing**{.cve-chip} **Cyber Espionage**{.cve-chip}
-    
-    APT28 targets Ukrainian and NATO-linked entities with a sophisticated multi-stage malware framework using steganographic payload concealment, COM hijacking persistence, fileless execution, and cloud-based C2 to conduct long-term espionage against military and logistics operations.
-    
-    [Read more](2026/Week14/PRISMEX.md)
+    **Digital Sovereignty**{.cve-chip} **Linux Migration**{.cve-chip} **Public Sector Security**{.cve-chip} **Vendor Independence**{.cve-chip}
 
--   ![Masjesu](2026/Week14/images/Masjesu.png)
+    France announced a phased public-sector shift from Windows toward Linux-based systems to reduce foreign technology dependence and increase control over sensitive infrastructure.
 
-    **Masjesu Botnet Emerges as DDoS-for-Hire Service Targeting Global IoT Devices**
+    The initiative prioritizes auditability, patch-governance autonomy, and long-term resilience, while requiring careful risk management during hybrid migration phases.
 
-    **IoT Botnet**{.cve-chip} **DDoS-for-Hire**{.cve-chip} **Critical Infrastructure**{.cve-chip}
-    
-    A multi-architecture IoT botnet sold as a DDoS-for-hire service on Telegram, infecting routers and embedded devices to launch TCP, UDP, HTTP, and ICMP floods. Layered XOR-encrypted C2, signal-resistant persistence, and evasion of sensitive IP ranges make Masjesu a stealthy, accessible threat.
-    
-    [Read more](2026/Week14/Masjesu.md)
+    [Read more](2026/Week15/France.md)
 
--   ![SVG](2026/Week14/images/SVG.png)
+-   ![SCADA](2026/Week15/images/SCADA.png)
 
-    **Hackers Use Pixel-Large SVG Trick to Hide Credit Card Stealer**
+    **Exposed ICS/SCADA Devices Targeted by Iranian APTs (Censys Report)**
 
-    **Web Skimming**{.cve-chip} **Magecart**{.cve-chip} **Payment Card Theft**{.cve-chip}
-    
-    A Magecart-style campaign injects malicious JavaScript inside a 1×1 pixel invisible SVG on Magento checkout pages. A fake payment overlay silently captures card details, encrypts them with XOR+Base64, and exfiltrates to attacker-controlled servers disguised as analytics traffic.
-    
-    [Read more](2026/Week14/SVG.md)
+    **ICS/SCADA Exposure**{.cve-chip} **Iranian APT Activity**{.cve-chip} **Rockwell/Allen-Bradley**{.cve-chip} **Critical Infrastructure Risk**{.cve-chip}
+
+    Censys reported thousands of internet-exposed industrial control devices, including Rockwell/Allen-Bradley PLC-related systems, with threat activity linked to Iranian-affiliated actors.
+
+    Exposed EtherNet/IP and weak remote services increase the risk of unauthorized PLC logic manipulation, operational disruption, and potential physical-impact incidents.
+
+    [Read more](2026/Week15/SCADA.md)
+
+-   ![Android](2026/Week15/images/Android.png)
+
+    **EngageLab SDK Flaw Opens Door to Private Data on 50M Android Devices**
+
+    **Android SDK Risk**{.cve-chip} **Intent Redirection**{.cve-chip} **EngageLab SDK**{.cve-chip} **Mobile Data Exposure**{.cve-chip}
+
+    A vulnerability in EngageLab's Android SDK reportedly let malicious apps abuse unsafe intent handling to access private data from other installed apps.
+
+    The flaw affected exported component behavior in vulnerable integrations, creating credential, token, and wallet-data exposure risk at large installation scale.
+
+    [Read more](2026/Week15/Android.md)
+
+-   ![Adobe](2026/Week15/images/Adobe.png)
+
+    **Adobe Acrobat Reader Zero-Day (CVE-2026-34621)**
+
+    **CVE-2026-34621**{.cve-chip} **Adobe Acrobat Reader**{.cve-chip} **Prototype Pollution**{.cve-chip} **Active Exploitation**{.cve-chip}
+
+    Adobe patched an actively exploited zero-day in Acrobat Reader where malicious PDFs with embedded JavaScript could trigger code execution through prototype-pollution abuse.
+
+    The campaign reportedly ran for months before patch release and may be chained with additional techniques for persistence, credential theft, and broader endpoint compromise.
+
+    [Read more](2026/Week15/Adobe.md)
 
 </div>
