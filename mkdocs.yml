@@ -366,3 +366,9 @@ nav:
           - "Exposed ICS/SCADA Devices Targeted by Iranian APTs (Censys Report)": 2026/Week15/SCADA.md
           - "EngageLab SDK Flaw Opens Door to Private Data on 50M Android Devices": 2026/Week15/Android.md
           - "Adobe Acrobat Reader Zero-Day (CVE-2026-34621)": 2026/Week15/Adobe.md
+          - "Iran-Linked Group Handala Claims to Have Breached Three Major UAE Organizations": 2026/Week15/Handala.md
+          - "Hackers Access Booking.com User Data, Company Secures Systems": 2026/Week15/Booking.md
+          - "North Korea's APT37 Uses Facebook Social Engineering to Deliver RokRAT Malware": 2026/Week15/APT37.md
+          - "JanelaRAT Malware Targets Latin American Banks with 14,739 Attacks in Brazil in 2025": 2026/Week15/JanelaRAT.md
+          - "Citizen Lab: Webloc Tracked 500M Devices for Global Law Enforcement": 2026/Week15/Webloc.md
+          - "ShowDoc RCE Flaw CVE-2025-0520 Actively Exploited on Unpatched Servers": 2026/Week15/ShowDoc.md
