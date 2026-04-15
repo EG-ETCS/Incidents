@@ -372,3 +372,5 @@ nav:
           - "JanelaRAT Malware Targets Latin American Banks with 14,739 Attacks in Brazil in 2025": 2026/Week15/JanelaRAT.md
           - "Citizen Lab: Webloc Tracked 500M Devices for Global Law Enforcement": 2026/Week15/Webloc.md
           - "ShowDoc RCE Flaw CVE-2025-0520 Actively Exploited on Unpatched Servers": 2026/Week15/ShowDoc.md
+          - "Malicious Chrome Extensions Campaign (108 Extensions Data Theft Operation)": 2026/Week15/chrome.md
+          - "Microsoft Patch Tuesday April 2026 — 165 Vulnerabilities, SharePoint Zero-Day": 2026/Week15/microsoft.md
