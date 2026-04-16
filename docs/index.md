@@ -8,24 +8,34 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![chrome](2026/Week15/images/chrome.png)
+-   ![Mirax](2026/Week15/images/Mirax.png)
 
-    **Malicious Chrome Extensions Campaign (108 Extensions Data Theft Operation)**
+    **Mirax Android Malware Campaign**
 
-    **Credential Theft**{.cve-chip} **Browser Security**{.cve-chip} **Supply Chain Attack**{.cve-chip}
+    **Android Malware**{.cve-chip} **Banking Trojan**{.cve-chip} **Malware-as-a-Service**{.cve-chip}
 
-    108 malicious extensions disguised as Telegram tools, video enhancers, and translators were uploaded to the Chrome Web Store and stole Google OAuth tokens and Telegram session cookies from ~20,000 users. Attackers leveraged the stolen tokens to hijack accounts and bypass MFA entirely, with some extensions also providing backdoor command execution capabilities.
+    Mirax is a fully-featured Android RAT distributed via malvertising that infected 220,000+ devices. It steals banking credentials through overlay attacks, intercepts OTPs, and silently converts victim devices into SOCKS5 proxy nodes. Operated as a MaaS platform, it primarily targets Spanish-speaking users.
 
-    [Read more](2026/Week15/chrome.md)
+    [Read more](2026/Week15/Mirax.md)
 
--   ![microsoft](2026/Week15/images/microsoft.png)
+-   ![excel](2026/Week15/images/excel.png)
 
-    **Microsoft Patch Tuesday April 2026 — 165 Vulnerabilities Fixed, SharePoint Zero-Day Exploited**
+    **Microsoft Excel Legacy Vulnerability Exploitation (CVE-2009-0238)**
 
-    **Patch Tuesday**{.cve-chip} **Zero-Day**{.cve-chip} **Remote Code Execution**{.cve-chip}
+    **CVE-2009-0238**{.cve-chip} **Remote Code Execution**{.cve-chip} **Active Exploitation**{.cve-chip}
 
-    Microsoft's April 2026 Patch Tuesday addressed 165 vulnerabilities, including a critical actively-exploited zero-day in on-premises SharePoint Server. Attackers can exploit the flaw remotely to execute code, move laterally, and deploy ransomware — unpatched internet-facing SharePoint servers remain at immediate risk.
+    A 15-year-old memory corruption flaw in legacy Microsoft Excel is being actively exploited. Attackers deliver malicious `.xls` files via phishing to trigger arbitrary code execution on unpatched systems, enabling full compromise, data theft, and lateral movement. CISA has added the vulnerability to its Known Exploited Vulnerabilities catalog.
 
-    [Read more](2026/Week15/microsoft.md)
+    [Read more](2026/Week15/excel.md)
+
+-   ![WordPress](2026/Week15/images/WordPress.png)
+
+    **WordPress Plugin Supply Chain Attack (EssentialPlugin Compromise)**
+
+    **Supply Chain Attack**{.cve-chip} **WordPress**{.cve-chip} **Backdoor**{.cve-chip}
+
+    An attacker compromised the EssentialPlugin developer to backdoor 30+ WordPress plugins and distribute malicious updates through official channels. Thousands of sites were infected with remote-access backdoors enabling spam injection, malicious redirects, and full admin takeover.
+
+    [Read more](2026/Week15/WordPress.md)
 
 </div>

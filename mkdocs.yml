@@ -374,3 +374,6 @@ nav:
           - "ShowDoc RCE Flaw CVE-2025-0520 Actively Exploited on Unpatched Servers": 2026/Week15/ShowDoc.md
           - "Malicious Chrome Extensions Campaign (108 Extensions Data Theft Operation)": 2026/Week15/chrome.md
           - "Microsoft Patch Tuesday April 2026 — 165 Vulnerabilities, SharePoint Zero-Day": 2026/Week15/microsoft.md
+          - "Mirax Android Malware Campaign": 2026/Week15/Mirax.md
+          - "Microsoft Excel Legacy Vulnerability Exploitation (CVE-2009-0238)": 2026/Week15/excel.md
+          - "WordPress Plugin Supply Chain Attack (EssentialPlugin Compromise)": 2026/Week15/WordPress.md
