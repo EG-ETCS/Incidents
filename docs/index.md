@@ -8,34 +8,40 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Mirax](2026/Week15/images/Mirax.png)
+-   ![Microsoft](2026/Week16/images/Microsoft.png)
 
-    **Mirax Android Malware Campaign**
+    **Microsoft Defender Zero-Day Vulnerabilities (BlueHammer, RedSun, UnDefend)**
 
-    **Android Malware**{.cve-chip} **Banking Trojan**{.cve-chip} **Malware-as-a-Service**{.cve-chip}
+    **Microsoft Defender**{.cve-chip} **Zero-Day Exposure**{.cve-chip} **Privilege Escalation**{.cve-chip} **Defense Tampering Risk**{.cve-chip}
 
-    Mirax is a fully-featured Android RAT distributed via malvertising that infected 220,000+ devices. It steals banking credentials through overlay attacks, intercepts OTPs, and silently converts victim devices into SOCKS5 proxy nodes. Operated as a MaaS platform, it primarily targets Spanish-speaking users.
+    Three disclosed Defender zero-days, including two reported as unpatched, can enable SYSTEM-level privilege escalation and interference with endpoint protection updates.
 
-    [Read more](2026/Week15/Mirax.md)
+    The chain increases risk of stealthy payload deployment, longer dwell time, and ransomware or surveillance activity on affected Windows endpoints.
 
--   ![excel](2026/Week15/images/excel.png)
+    [Read more](2026/Week16/Microsoft.md)
 
-    **Microsoft Excel Legacy Vulnerability Exploitation (CVE-2009-0238)**
+-   ![Nexcorium](2026/Week16/images/Nexcorium.png)
 
-    **CVE-2009-0238**{.cve-chip} **Remote Code Execution**{.cve-chip} **Active Exploitation**{.cve-chip}
+    **Nexcorium (Mirai Variant IoT Botnet Campaign)**
 
-    A 15-year-old memory corruption flaw in legacy Microsoft Excel is being actively exploited. Attackers deliver malicious `.xls` files via phishing to trigger arbitrary code execution on unpatched systems, enabling full compromise, data theft, and lateral movement. CISA has added the vulnerability to its Known Exploited Vulnerabilities catalog.
+    **Mirai Variant**{.cve-chip} **IoT Botnet**{.cve-chip} **DVR/Router Exploitation**{.cve-chip} **DDoS Threat**{.cve-chip}
 
-    [Read more](2026/Week15/excel.md)
+    Nexcorium is a Mirai-based malware campaign targeting vulnerable DVRs and outdated routers through known CVEs, then deploying architecture-specific payloads with persistence and propagation routines.
 
--   ![WordPress](2026/Week15/images/WordPress.png)
+    Compromised devices are enrolled into a botnet used for multi-vector DDoS operations, with continued spread via Telnet brute-force and default credential abuse.
 
-    **WordPress Plugin Supply Chain Attack (EssentialPlugin Compromise)**
+    [Read more](2026/Week16/Nexcorium.md)
 
-    **Supply Chain Attack**{.cve-chip} **WordPress**{.cve-chip} **Backdoor**{.cve-chip}
+-   ![Israel](2026/Week16/images/Israel.png)
 
-    An attacker compromised the EssentialPlugin developer to backdoor 30+ WordPress plugins and distribute malicious updates through official channels. Thousands of sites were infected with remote-access backdoors enabling spam injection, malicious redirects, and full admin takeover.
+    **Hackers Target Israeli Desalination Plants With ZionSiphon Sabotage Malware**
 
-    [Read more](2026/Week15/WordPress.md)
+    **ZionSiphon**{.cve-chip} **ICS Sabotage Malware**{.cve-chip} **Water Infrastructure**{.cve-chip} **Cyber-Physical Risk**{.cve-chip}
+
+    ZionSiphon is designed to target water treatment/desalination environments and manipulate operational parameters such as chlorine dosing and pressure levels.
+
+    Although observed samples had coding limitations, the campaign demonstrates credible intent toward disruptive cyber-physical impact on critical services.
+
+    [Read more](2026/Week16/Israel.md)
 
 </div>

@@ -377,3 +377,7 @@ nav:
           - "Mirax Android Malware Campaign": 2026/Week15/Mirax.md
           - "Microsoft Excel Legacy Vulnerability Exploitation (CVE-2009-0238)": 2026/Week15/excel.md
           - "WordPress Plugin Supply Chain Attack (EssentialPlugin Compromise)": 2026/Week15/WordPress.md
+        - "week16":
+          - "Microsoft Defender Zero-Day Vulnerabilities (BlueHammer, RedSun, UnDefend)": 2026/Week16/Microsoft.md
+          - "Nexcorium (Mirai Variant IoT Botnet Campaign)": 2026/Week16/Nexcorium.md
+          - "Hackers Target Israeli Desalination Plants With ZionSiphon Sabotage Malware": 2026/Week16/Israel.md

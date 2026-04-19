@@ -8,192 +8,162 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![PRISMEX](2026/Week14/images/PRISMEX.png)
+-   ![Mirax](2026/Week15/images/Mirax.png)
 
-    **APT28 PRISMEX Campaign**
+    **Mirax Android Malware Campaign**
 
-    **Russia-Linked APT**{.cve-chip} **Spear-Phishing**{.cve-chip} **Cyber Espionage**{.cve-chip}
+    **Android Malware**{.cve-chip} **Banking Trojan**{.cve-chip} **Malware-as-a-Service**{.cve-chip}
+
+    Mirax is a fully-featured Android RAT distributed via malvertising that infected 220,000+ devices. It steals banking credentials through overlay attacks, intercepts OTPs, and silently converts victim devices into SOCKS5 proxy nodes. Operated as a MaaS platform, it primarily targets Spanish-speaking users.
+
+    [Read more](2026/Week15/Mirax.md)
+
+-   ![excel](2026/Week15/images/excel.png)
+
+    **Microsoft Excel Legacy Vulnerability Exploitation (CVE-2009-0238)**
+
+    **CVE-2009-0238**{.cve-chip} **Remote Code Execution**{.cve-chip} **Active Exploitation**{.cve-chip}
+
+    A 15-year-old memory corruption flaw in legacy Microsoft Excel is being actively exploited. Attackers deliver malicious `.xls` files via phishing to trigger arbitrary code execution on unpatched systems, enabling full compromise, data theft, and lateral movement. CISA has added the vulnerability to its Known Exploited Vulnerabilities catalog.
+
+    [Read more](2026/Week15/excel.md)
+
+-   ![WordPress](2026/Week15/images/WordPress.png)
+
+    **WordPress Plugin Supply Chain Attack (EssentialPlugin Compromise)**
+
+    **Supply Chain Attack**{.cve-chip} **WordPress**{.cve-chip} **Backdoor**{.cve-chip}
+
+    An attacker compromised the EssentialPlugin developer to backdoor 30+ WordPress plugins and distribute malicious updates through official channels. Thousands of sites were infected with remote-access backdoors enabling spam injection, malicious redirects, and full admin takeover.
+
+    [Read more](2026/Week15/WordPress.md)
+
+-   ![chrome](2026/Week15/images/chrome.png)
+
+    **Malicious Chrome Extensions Campaign (108 Extensions Data Theft Operation)**
+
+    **Credential Theft**{.cve-chip} **Browser Security**{.cve-chip} **Supply Chain Attack**{.cve-chip}
+
+    108 malicious extensions disguised as Telegram tools, video enhancers, and translators were uploaded to the Chrome Web Store and stole Google OAuth tokens and Telegram session cookies from ~20,000 users. Attackers leveraged the stolen tokens to hijack accounts and bypass MFA entirely, with some extensions also providing backdoor command execution capabilities.
+
+    [Read more](2026/Week15/chrome.md)
+
+-   ![microsoft](2026/Week15/images/microsoft.png)
+
+    **Microsoft Patch Tuesday April 2026 — 165 Vulnerabilities Fixed, SharePoint Zero-Day Exploited**
+
+    **Patch Tuesday**{.cve-chip} **Zero-Day**{.cve-chip} **Remote Code Execution**{.cve-chip}
+
+    Microsoft's April 2026 Patch Tuesday addressed 165 vulnerabilities, including a critical actively-exploited zero-day in on-premises SharePoint Server. Attackers can exploit the flaw remotely to execute code, move laterally, and deploy ransomware — unpatched internet-facing SharePoint servers remain at immediate risk.
+
+    [Read more](2026/Week15/microsoft.md)
+
+-   ![Handala](2026/Week15/images/Handala.png)
+
+    **Iran-Linked Group Handala Claims to Have Breached Three Major UAE Organizations**
+
+    **Iran-Linked Hacktivists**{.cve-chip} **Data Exfiltration Claim**{.cve-chip} **Destructive Attack Claim**{.cve-chip}
+
+    Handala claims it breached Dubai Courts, Dubai Land Department, and Dubai Roads & Transport Authority, allegedly exfiltrating massive amounts of data and carrying out destructive actions. The claims remain unconfirmed, but the incident fits broader regional cyber tension and psychological pressure tactics.
+
+    [Read more](2026/Week15/Handala.md)
+
+-   ![Booking](2026/Week15/images/Booking.png)
     
-    APT28 targets Ukrainian and NATO-linked entities with a sophisticated multi-stage malware framework using steganographic payload concealment, COM hijacking persistence, fileless execution, and cloud-based C2 to conduct long-term espionage against military and logistics operations.
-    
-    [Read more](2026/Week14/PRISMEX.md)
+    **Hackers Access Booking.com User Data, Company Secures Systems**
 
--   ![Masjesu](2026/Week14/images/Masjesu.png)
+    **Data Breach**{.cve-chip} **Travel Platform**{.cve-chip} **PII Exposure**{.cve-chip}
 
-    **Masjesu Botnet Emerges as DDoS-for-Hire Service Targeting Global IoT Devices**
+    Booking.com confirmed unauthorized access to customer reservation data, exposing names, contact details, booking information, and communications. While payment card data was reportedly not accessed, the stolen travel context creates strong follow-on phishing and fraud risk.
 
-    **IoT Botnet**{.cve-chip} **DDoS-for-Hire**{.cve-chip} **Critical Infrastructure**{.cve-chip}
-    
-    A multi-architecture IoT botnet sold as a DDoS-for-hire service on Telegram, infecting routers and embedded devices to launch TCP, UDP, HTTP, and ICMP floods. Layered XOR-encrypted C2, signal-resistant persistence, and evasion of sensitive IP ranges make Masjesu a stealthy, accessible threat.
-    
-    [Read more](2026/Week14/Masjesu.md)
+    [Read more](2026/Week15/Booking.md)
 
--   ![SVG](2026/Week14/images/SVG.png)
+-   ![APT37](2026/Week15/images/APT37.png)
+  
+    **North Korea's APT37 Uses Facebook Social Engineering to Deliver RokRAT Malware**
 
-    **Hackers Use Pixel-Large SVG Trick to Hide Credit Card Stealer**
+    **North Korea-Linked APT**{.cve-chip} **Social Engineering**{.cve-chip} **RokRAT Malware**{.cve-chip}
 
-    **Web Skimming**{.cve-chip} **Magecart**{.cve-chip} **Payment Card Theft**{.cve-chip}
-    
-    A Magecart-style campaign injects malicious JavaScript inside a 1×1 pixel invisible SVG on Magento checkout pages. A fake payment overlay silently captures card details, encrypts them with XOR+Base64, and exfiltrates to attacker-controlled servers disguised as analytics traffic.
-    
-    [Read more](2026/Week14/SVG.md)
+    APT37 used fake Facebook profiles and Messenger conversations to trick targets into installing a trojanized PDF viewer that deployed RokRAT. The malware provided persistent remote access and covert data exfiltration through compromised legitimate websites.
 
--   ![Iran-Linked](2026/Week14/images/Iran-Linked.png)
+    [Read more](2026/Week15/APT37.md)
 
-    **Iran-Linked Hackers Disrupt U.S. Critical Infrastructure**
+-   ![JanelaRAT](2026/Week15/images/JanelaRAT.png)
 
-    **Iran-Linked APT**{.cve-chip} **ICS/OT Attack**{.cve-chip} **Critical Infrastructure**{.cve-chip}
-    
-    Iran-linked threat actors exploited internet-exposed PLCs and SCADA systems to disrupt U.S. critical infrastructure operations. Attackers manipulated PLC logic and falsified HMI data, marking a shift from espionage toward cyber-physical sabotage.
-    
-    [Read more](2026/Week14/Iran-Linked.md)
+    **JanelaRAT Malware Targets Latin American Banks with 14,739 Attacks in Brazil in 2025**
 
--   ![APT28](2026/Week14/images/APT28.png)
+    **Banking Malware**{.cve-chip} **Remote Access Trojan**{.cve-chip} **Latin America**{.cve-chip}
 
-    **APT28 Exploiting Network Devices for Cyber Espionage**
+    JanelaRAT is a banking-focused RAT delivered through phishing and a staged DLL side-loading chain. It installs a malicious Chromium extension, monitors banking sessions through window titles, and steals credentials or active session data for financial fraud.
 
-    **Russia-Linked APT**{.cve-chip} **Network Device Exploitation**{.cve-chip} **Cyber Espionage**{.cve-chip}
-    
-    Russian military intelligence group APT28 is exploiting vulnerabilities in internet-facing routers and edge devices to build covert proxy networks, intercept traffic, and pivot into the internal networks of government and military targets for long-term espionage.
-    
-    [Read more](2026/Week14/APT28.md)
+    [Read more](2026/Week15/JanelaRAT.md)
 
--   ![Banking](2026/Week14/images/Banking.png)
+-   ![Webloc](2026/Week15/images/Webloc.png)
 
-    **Russia Nationwide Banking & Payment Outage (April 2026)**
+    **Citizen Lab: Webloc Tracked 500M Devices for Global Law Enforcement**
 
-    **Banking Outage**{.cve-chip} **Payment System Failure**{.cve-chip} **Critical Infrastructure**{.cve-chip}
-    
-    Aggressive VPN-blocking rules by Russian regulators accidentally disrupted critical IP ranges, taking down mobile banking apps, POS terminals, ATMs, and metro payment systems for millions of customers nationwide — exposing severe centralization risks in Russia's financial infrastructure.
-    
-    [Read more](2026/Week14/Banking.md)
+    **Ad-Tech Surveillance**{.cve-chip} **Location Tracking**{.cve-chip} **Privacy Risk**{.cve-chip}
 
--   ![GPUBreach](2026/Week14/images/GPUBreach.png)
+    Citizen Lab reported that Webloc enabled global device tracking by leveraging commercial ad-tech telemetry such as MAIDs, RTB bidstream data, and brokered location records. The model reconstructs movement histories and geofence presence without malware or direct device hacking.
 
-    **GPUBreach / GPU Rowhammer Attack**
+    [Read more](2026/Week15/Webloc.md)
 
-    **GPU Vulnerability**{.cve-chip} **Memory Attack**{.cve-chip} **Privilege Escalation**{.cve-chip}
-    
-    A newly disclosed Rowhammer-style attack technique against GPU memory (VRAM). Attackers can manipulate memory integrity, bypass isolation mechanisms, and escalate privileges to gain full system control.
-    
-    [Read more](2026/Week14/GPUBreach.md)
+-   ![ShowDoc](2026/Week15/images/ShowDoc.png)
 
--   ![Storm-1175](2026/Week14/images/Storm-1175.png)
+    **ShowDoc RCE Flaw CVE-2025-0520 Actively Exploited on Unpatched Servers**
 
-    **China-Linked Storm-1175 Zero-Day Exploitation Campaign**
+    **Remote Code Execution**{.cve-chip} **Web Application Security**{.cve-chip} **Active Exploitation**{.cve-chip}
 
-    **China-Linked APT**{.cve-chip} **Zero-Day Exploitation**{.cve-chip} **Medusa Ransomware**{.cve-chip}
-    
-    A sophisticated China-linked threat actor rapidly exploiting zero-day and recently disclosed vulnerabilities in enterprise software. The group completes full system compromise within hours, exfiltrating data and deploying Medusa ransomware through double extortion tactics.
-    
-    [Read more](2026/Week14/Storm-1175.md)
+    Attackers are exploiting improper file upload validation in vulnerable ShowDoc versions to upload web shells and achieve remote code execution. Unpatched internet-exposed instances can be fully compromised and used for data theft, malware deployment, and lateral movement.
 
--   ![Pay2Key](2026/Week14/images/Pay2Key.png)
+    [Read more](2026/Week15/ShowDoc.md)
 
-    **Pay2Key Pseudo-Ransomware Campaign (Iran-linked)**
+-   ![France](2026/Week15/images/France.png)
 
-    **Iran-Linked Threats**{.cve-chip} **Pseudo-Ransomware**{.cve-chip} **Operational Disruption**{.cve-chip}
+    **France Government Migration from Windows to Linux (Digital Sovereignty Initiative)**
 
-    Iran-linked operators revived Pay2Key activity with pseudo-ransomware tactics that may prioritize disruption and sabotage over direct profit.
+    **Digital Sovereignty**{.cve-chip} **Linux Migration**{.cve-chip} **Public Sector Security**{.cve-chip} **Vendor Independence**{.cve-chip}
 
-    Campaign behavior includes phishing/VPN-access tradecraft, lateral movement, and payload execution that can resemble ransomware while causing destructive outcomes.
+    France announced a phased public-sector shift from Windows toward Linux-based systems to reduce foreign technology dependence and increase control over sensitive infrastructure.
 
-    [Read more](2026/Week14/Pay2Key.md)
+    The initiative prioritizes auditability, patch-governance autonomy, and long-term resilience, while requiring careful risk management during hybrid migration phases.
 
--   ![QR](2026/Week14/images/QR.png)
+    [Read more](2026/Week15/France.md)
 
-    **QR Code Traffic Violation Phishing Campaign (Quishing Scam)**
+-   ![SCADA](2026/Week15/images/SCADA.png)
 
-    **Smishing**{.cve-chip} **QR Phishing (Quishing)**{.cve-chip} **Financial Fraud**{.cve-chip}
+    **Exposed ICS/SCADA Devices Targeted by Iranian APTs (Censys Report)**
 
-    Attackers are sending SMS traffic-violation lures that use QR codes to redirect victims to fake government-style payment portals.
+    **ICS/SCADA Exposure**{.cve-chip} **Iranian APT Activity**{.cve-chip} **Rockwell/Allen-Bradley**{.cve-chip} **Critical Infrastructure Risk**{.cve-chip}
 
-    The campaign harvests payment and personal data through low-fee urgency prompts and QR-based evasion of traditional URL scrutiny.
+    Censys reported thousands of internet-exposed industrial control devices, including Rockwell/Allen-Bradley PLC-related systems, with threat activity linked to Iranian-affiliated actors.
 
-    [Read more](2026/Week14/QR.md)
+    Exposed EtherNet/IP and weak remote services increase the risk of unauthorized PLC logic manipulation, operational disruption, and potential physical-impact incidents.
 
--   ![EMS](2026/Week14/images/EMS.png)
+    [Read more](2026/Week15/SCADA.md)
 
-    **CVE-2026-35616 - FortiClient EMS Authentication Bypass**
+-   ![Android](2026/Week15/images/Android.png)
 
-    **Fortinet EMS**{.cve-chip} **Authentication Bypass**{.cve-chip} **Active Exploitation**{.cve-chip}
+    **EngageLab SDK Flaw Opens Door to Private Data on 50M Android Devices**
 
-    CVE-2026-35616 is a critical FortiClient EMS flaw that can allow unauthenticated API-based authentication bypass and remote command execution.
+    **Android SDK Risk**{.cve-chip} **Intent Redirection**{.cve-chip} **EngageLab SDK**{.cve-chip} **Mobile Data Exposure**{.cve-chip}
 
-    Active exploitation risk makes exposed vulnerable EMS servers high-priority patch targets to prevent endpoint-wide compromise.
+    A vulnerability in EngageLab's Android SDK reportedly let malicious apps abuse unsafe intent handling to access private data from other installed apps.
 
-    [Read more](2026/Week14/EMS.md)
+    The flaw affected exported component behavior in vulnerable integrations, creating credential, token, and wallet-data exposure risk at large installation scale.
 
--   ![npm](2026/Week14/images/npm.png)
+    [Read more](2026/Week15/Android.md)
 
-    **Axios npm Supply Chain Attack (Linked to UNC1069 / North Korea)**
+-   ![Adobe](2026/Week15/images/Adobe.png)
 
-    **Supply Chain Attack**{.cve-chip} **npm Ecosystem**{.cve-chip} **RAT Deployment**{.cve-chip}
+    **Adobe Acrobat Reader Zero-Day (CVE-2026-34621)**
 
-    Attackers compromised an Axios maintainer account and published malicious package versions embedding hidden dependency and post-install malware behavior.
+    **CVE-2026-34621**{.cve-chip} **Adobe Acrobat Reader**{.cve-chip} **Prototype Pollution**{.cve-chip} **Active Exploitation**{.cve-chip}
 
-    The campaign risked developer endpoints and CI/CD pipelines through transitive dependency exposure, with reporting linking activity to UNC1069.
+    Adobe patched an actively exploited zero-day in Acrobat Reader where malicious PDFs with embedded JavaScript could trigger code execution through prototype-pollution abuse.
 
-    [Read more](2026/Week14/npm.md)
+    The campaign reportedly ran for months before patch release and may be chained with additional techniques for persistence, credential theft, and broader endpoint compromise.
 
--   ![Chrome](2026/Week14/images/Chrome.png)
-
-    **Chrome Zero-Day Vulnerability - CVE-2026-5281**
-
-    **CVE-2026-5281**{.cve-chip} **Chrome Zero-Day**{.cve-chip} **WebGPU/Dawn**{.cve-chip} **Active Exploitation**{.cve-chip}
-
-    A zero-day flaw in Chrome's Dawn WebGPU engine was reportedly exploited in real-world attacks before patch availability, with crafted web content triggering memory-corruption conditions.
-
-    Successful exploitation can enable browser-context code execution and may be chained with additional vulnerabilities for broader system compromise.
-
-    [Read more](2026/Week14/Chrome.md)
-
--   ![FBI_Mobile](2026/Week14/images/FBI_Mobile.png)
-
-    **FBI Warning on Risks from Foreign (Chinese) Mobile Applications**
-
-    **FBI Advisory**{.cve-chip} **Mobile App Risk**{.cve-chip} **Data Privacy**{.cve-chip} **National Security**{.cve-chip}
-
-    The FBI warned that some foreign-developed mobile applications may collect extensive personal and device data, including contacts and location information, with potential exposure under foreign legal requirements.
-
-    The advisory highlights privacy, profiling, and national-security risks from excessive app permissions, background collection, and opaque data-transfer practices.
-
-    [Read more](2026/Week14/FBI_Mobile.md)
-
--   ![Handala](2026/Week14/images/Handala.png)
-
-    **Handala Hack Team Breach Claim Against PSK Wind Technologies**
-
-    **Handala**{.cve-chip} **Hacktivist Activity**{.cve-chip} **Defense Sector Targeting**{.cve-chip} **Data Exfiltration Claim**{.cve-chip}
-
-    The pro-Iranian Handala group claimed it breached PSK Wind Technologies and exfiltrated sensitive command-and-control and communications-related information.
-
-    While official confirmation is pending, the reported activity reflects combined cyber intrusion and information-warfare pressure through selective data leak publication.
-
-    [Read more](2026/Week14/Handala.md)
-
--   ![TrueConf](2026/Week14/images/TrueConf.png)
-
-    **TrueConf Zero-Day Exploitation (Operation TrueChaos) - CVE-2026-3502**
-
-    **CVE-2026-3502**{.cve-chip} **TrueConf**{.cve-chip} **Malicious Update Abuse**{.cve-chip} **Operation TrueChaos**{.cve-chip}
-
-    A TrueConf client update-validation weakness was reportedly exploited in targeted Southeast Asian government intrusions by replacing trusted updates on compromised on-prem servers.
-
-    The campaign enabled simultaneous endpoint compromise and follow-on activity including reconnaissance, persistence, and command-and-control operations.
-
-    [Read more](2026/Week14/TrueConf.md)
-
--   ![WhatsApp](2026/Week14/images/WhatsApp.png)
-
-    **WhatsApp Fake App Spyware Campaign**
-
-    **WhatsApp Impersonation**{.cve-chip} **Mobile Spyware**{.cve-chip} **Social Engineering**{.cve-chip} **Italy Targeting**{.cve-chip}
-
-    Around 200 users in Italy were reportedly lured into installing a fake WhatsApp app carrying spyware through off-store social-engineering delivery.
-
-    Although WhatsApp end-to-end encryption was not broken, compromised devices enabled covert collection of sensitive local data, contacts, and message-related information.
-
-    [Read more](2026/Week14/WhatsApp.md)
+    [Read more](2026/Week15/Adobe.md)
 
 </div>
