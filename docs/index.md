@@ -8,16 +8,24 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Vercel](2026/Week16/images/Vercel.png)
-    
-    **Vercel Confirms Breach as Hackers Claim to Be Selling Stolen Data**
+-   ![ANTS](2026/Week16/images/ANTS.png)
 
-    **Cloud Platform Breach**{.cve-chip} **OAuth Abuse**{.cve-chip} **Third-Party Risk**{.cve-chip}
+    **France ANTS ID System Cyberattack / Data Breach**
 
-    Vercel confirmed unauthorized access linked to a compromised third-party integration and abused Google Workspace OAuth app permissions, which enabled attacker access to an employee account and internal systems.
+    **Government Data Breach**{.cve-chip} **PII Exposure**{.cve-chip} **Identity Documents**{.cve-chip}
 
-    Exposed data reportedly included employee metadata and non-sensitive environment variables, while sensitive variables were protected; attackers later advertised stolen data for sale.
+    A cyberattack on France's National Agency for Secure Documents (ANTS) may have exposed the personal data of millions of users, including names, email addresses, dates of birth, and login identifiers. The exact attack vector remains unknown; no evidence of uploaded ID document scans being accessed has been reported.
 
-    [Read more](2026/Week16/Vercel.md)
+    [Read more](2026/Week16/ANTS.md)
+
+-   ![backdoors](2026/Week16/images/backdoors.png)
+
+    **Iran Claims US Used Backdoors to Knock Out Networking Equipment During War**
+
+    **Nation-State Claim**{.cve-chip} **Supply Chain Security**{.cve-chip} **Hardware Backdoor**{.cve-chip}
+
+    Iranian authorities claimed that foreign-manufactured networking hardware containing embedded backdoors was used to remotely disrupt national infrastructure during active conflict. No independent forensic evidence has been released; exploitation of known vulnerabilities remains an alternative explanation.
+
+    [Read more](2026/Week16/backdoors.md)
 
 </div>
