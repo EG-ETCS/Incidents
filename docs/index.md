@@ -8,24 +8,24 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![ANTS](2026/Week16/images/ANTS.png)
+-   ![NFC](2026/Week16/images/NFC.png)
 
-    **France ANTS ID System Cyberattack / Data Breach**
+    **NGate Android Malware (NFC Relay Attack Campaign)**
 
-    **Government Data Breach**{.cve-chip} **PII Exposure**{.cve-chip} **Identity Documents**{.cve-chip}
+    **Android Malware**{.cve-chip} **NFC Relay Attack**{.cve-chip} **Financial Fraud**{.cve-chip}
 
-    A cyberattack on France's National Agency for Secure Documents (ANTS) may have exposed the personal data of millions of users, including names, email addresses, dates of birth, and login identifiers. The exact attack vector remains unknown; no evidence of uploaded ID document scans being accessed has been reported.
+    NGate abuses Android NFC APIs to silently relay payment card data in real time to attacker devices, enabling fraudulent ATM withdrawals and contactless payments without physically stealing the card. Victims are socially engineered via fake banking apps into enabling NFC and holding their card near their phone.
 
-    [Read more](2026/Week16/ANTS.md)
+    [Read more](2026/Week16/NFC.md)
 
--   ![backdoors](2026/Week16/images/backdoors.png)
+-   ![Lotus](2026/Week16/images/Lotus.png)
 
-    **Iran Claims US Used Backdoors to Knock Out Networking Equipment During War**
+    **New Lotus Data Wiper Used Against Venezuelan Energy and Utility Firms**
 
-    **Nation-State Claim**{.cve-chip} **Supply Chain Security**{.cve-chip} **Hardware Backdoor**{.cve-chip}
+    **Data Wiper**{.cve-chip} **Critical Infrastructure**{.cve-chip} **Destructive Malware**{.cve-chip}
 
-    Iranian authorities claimed that foreign-manufactured networking hardware containing embedded backdoors was used to remotely disrupt national infrastructure during active conflict. No independent forensic evidence has been released; exploitation of known vulnerabilities remains an alternative explanation.
+    Lotus Wiper is a purely destructive malware with no ransom mechanism, deployed against Venezuelan energy and utility organizations. It uses domain-wide batch scripts and a compiled wiper binary to simultaneously disable accounts, isolate hosts, and irreversibly overwrite all physical disk sectors — leaving systems unbootable and unrecoverable.
 
-    [Read more](2026/Week16/backdoors.md)
+    [Read more](2026/Week16/Lotus.md)
 
 </div>

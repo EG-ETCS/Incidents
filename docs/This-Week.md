@@ -8,6 +8,16 @@ hide:
  
 <div class="grid cards" markdown>
 
+-   ![NFC](2026/Week16/images/NFC.png)
+
+    **NGate Android Malware (NFC Relay Attack Campaign)**
+
+    **Android Malware**{.cve-chip} **NFC Relay Attack**{.cve-chip} **Financial Fraud**{.cve-chip}
+
+    NGate abuses Android NFC APIs to silently relay payment card data in real time to attacker devices, enabling fraudulent ATM withdrawals and contactless payments without physically stealing the card. Victims are socially engineered via fake banking apps into enabling NFC and holding their card near their phone.
+
+    [Read more](2026/Week16/NFC.md)
+
 -   ![ANTS](2026/Week16/images/ANTS.png)
 
     **France ANTS ID System Cyberattack / Data Breach**
