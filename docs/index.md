@@ -8,14 +8,28 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![mirai](2026/Week16/images/mirai.png)
+-   ![FIRESTARTER](2026/Week17/images/FIRESTARTER.png)
 
-    **Mirai Botnet Targeting CVE-2025-29635 in D-Link DIR-823X Routers**
+    **FIRESTARTER Backdoor on Cisco ASA / Firepower Devices**
 
-    **CVE-2025-29635**{.cve-chip} **Mirai Botnet**{.cve-chip} **End-of-Life Device**{.cve-chip}
+    **FIRESTARTER**{.cve-chip} **Cisco ASA/FTD**{.cve-chip} **Persistent Backdoor**{.cve-chip} **Federal Network Impact**{.cve-chip}
 
-    A Mirai campaign is actively exploiting a command injection flaw in discontinued D-Link DIR-823X routers to achieve remote code execution and enroll devices into botnet infrastructure. No vendor patch will be issued; replacement is the only full remediation.
+    CISA reported a persistent FIRESTARTER backdoor on a federal Cisco firewall device, with attacker access surviving normal patching workflows.
 
-    [Read more](2026/Week16/mirai.md)
+    The case demonstrates that compromised perimeter appliances may require full reimaging and integrity validation, not just vulnerability patching.
+
+    [Read more](2026/Week17/FIRESTARTER.md)
+
+-   ![GopherWhisper](2026/Week17/images/GopherWhisper.png)
+
+    **China-Linked GopherWhisper Infects 12 Mongolian Government Systems with Go Backdoors**
+
+    **GopherWhisper**{.cve-chip} **China-Linked Espionage**{.cve-chip} **Go Malware Toolset**{.cve-chip} **Cloud C2 Abuse**{.cve-chip}
+
+    GopherWhisper operators reportedly compromised at least 12 Mongolian government systems using a modular Go-based toolchain with persistence, command execution, and encrypted document exfiltration.
+
+    The campaign abuses trusted SaaS channels including Slack, Discord, and Outlook/Graph for covert command-and-control, complicating conventional detection.
+
+    [Read more](2026/Week17/GopherWhisper.md)
 
 </div>
