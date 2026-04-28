@@ -390,3 +390,5 @@ nav:
         - "week17":
           - "FIRESTARTER Backdoor on Cisco ASA / Firepower Devices": 2026/Week17/FIRESTARTER.md
           - "China-Linked GopherWhisper Infects 12 Mongolian Government Systems with Go Backdoors": 2026/Week17/GopherWhisper.md
+          - "Easily Exploitable Pack2TheRoot Linux Vulnerability Leads to Root Access": 2026/Week17/Pack2TheRoot.md
+          - "Firefox Vulnerability Allows Tor User Fingerprinting": 2026/Week17/Firefox.md

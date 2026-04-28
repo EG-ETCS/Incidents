@@ -8,28 +8,28 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![FIRESTARTER](2026/Week17/images/FIRESTARTER.png)
+-   ![Pack2TheRoot](2026/Week17/images/Pack2TheRoot.png)
 
-    **FIRESTARTER Backdoor on Cisco ASA / Firepower Devices**
+    **Easily Exploitable Pack2TheRoot Linux Vulnerability Leads to Root Access**
 
-    **FIRESTARTER**{.cve-chip} **Cisco ASA/FTD**{.cve-chip} **Persistent Backdoor**{.cve-chip} **Federal Network Impact**{.cve-chip}
+    **CVE-2026-41651**{.cve-chip} **Pack2TheRoot**{.cve-chip} **Linux Privilege Escalation**{.cve-chip} **PackageKit TOCTOU**{.cve-chip}
 
-    CISA reported a persistent FIRESTARTER backdoor on a federal Cisco firewall device, with attacker access surviving normal patching workflows.
+    Pack2TheRoot is a high-severity PackageKit race-condition vulnerability that can let local unprivileged users run package operations as root without expected authentication.
 
-    The case demonstrates that compromised perimeter appliances may require full reimaging and integrity validation, not just vulnerability patching.
+    Given broad default PackageKit deployment, this issue significantly lowers the barrier for post-compromise escalation on Linux desktops and some shared server environments.
 
-    [Read more](2026/Week17/FIRESTARTER.md)
+    [Read more](2026/Week17/Pack2TheRoot.md)
 
--   ![GopherWhisper](2026/Week17/images/GopherWhisper.png)
+-   ![Firefox](2026/Week17/images/Firefox.png)
 
-    **China-Linked GopherWhisper Infects 12 Mongolian Government Systems with Go Backdoors**
+    **Firefox Vulnerability Allows Tor User Fingerprinting**
 
-    **GopherWhisper**{.cve-chip} **China-Linked Espionage**{.cve-chip} **Go Malware Toolset**{.cve-chip} **Cloud C2 Abuse**{.cve-chip}
+    **CVE-2026-6770**{.cve-chip} **Firefox/Tor Browser**{.cve-chip} **IndexedDB Privacy Flaw**{.cve-chip} **Cross-Site Linkability**{.cve-chip}
 
-    GopherWhisper operators reportedly compromised at least 12 Mongolian government systems using a modular Go-based toolchain with persistence, command execution, and encrypted document exfiltration.
+    A privacy flaw in Firefox-based browsers allowed sites to derive a stable process-lifetime identifier from IndexedDB behavior, enabling cross-site correlation without cookies.
 
-    The campaign abuses trusted SaaS channels including Slack, Discord, and Outlook/Graph for covert command-and-control, complicating conventional detection.
+    The issue had elevated impact for anonymity use cases, including Tor workflows, where expected session unlinkability could be weakened until patched versions were deployed.
 
-    [Read more](2026/Week17/GopherWhisper.md)
+    [Read more](2026/Week17/Firefox.md)
 
 </div>
