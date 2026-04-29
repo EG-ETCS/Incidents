@@ -392,3 +392,5 @@ nav:
           - "China-Linked GopherWhisper Infects 12 Mongolian Government Systems with Go Backdoors": 2026/Week17/GopherWhisper.md
           - "Easily Exploitable Pack2TheRoot Linux Vulnerability Leads to Root Access": 2026/Week17/Pack2TheRoot.md
           - "Firefox Vulnerability Allows Tor User Fingerprinting": 2026/Week17/Firefox.md
+          - "Critical GitHub Vulnerability Exposed Millions of Repositories (CVE-2026-3854)": 2026/Week17/GitHub.md
+          - "Electric Motorcycles and Scooters Bluetooth & Keyless Entry Vulnerabilities": 2026/Week17/Motorcycles.md

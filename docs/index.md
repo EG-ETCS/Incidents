@@ -8,28 +8,24 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Pack2TheRoot](2026/Week17/images/Pack2TheRoot.png)
+-   ![GitHub](2026/Week17/images/GitHub.png)
 
-    **Easily Exploitable Pack2TheRoot Linux Vulnerability Leads to Root Access**
+    **Critical GitHub Vulnerability Exposed Millions of Repositories (CVE-2026-3854)**
 
-    **CVE-2026-41651**{.cve-chip} **Pack2TheRoot**{.cve-chip} **Linux Privilege Escalation**{.cve-chip} **PackageKit TOCTOU**{.cve-chip}
+    **CVE-2026-3854**{.cve-chip} **Remote Code Execution**{.cve-chip} **Supply Chain Risk**{.cve-chip}
 
-    Pack2TheRoot is a high-severity PackageKit race-condition vulnerability that can let local unprivileged users run package operations as root without expected authentication.
+    A command injection flaw in GitHub's internal `git push` pipeline allowed an attacker with ordinary push access to inject headers, override hook execution paths, and achieve RCE on backend servers. On GHES this means full instance compromise; on GitHub.com, Wiz confirmed RCE on multi-tenant storage nodes exposing millions of repositories.
 
-    Given broad default PackageKit deployment, this issue significantly lowers the barrier for post-compromise escalation on Linux desktops and some shared server environments.
+    [Read more](2026/Week17/GitHub.md)
 
-    [Read more](2026/Week17/Pack2TheRoot.md)
+-   ![Motorcycles](2026/Week17/images/Motorcycles.png)
 
--   ![Firefox](2026/Week17/images/Firefox.png)
+    **Electric Motorcycles and Scooters Bluetooth & Keyless Entry Vulnerabilities**
 
-    **Firefox Vulnerability Allows Tor User Fingerprinting**
+    **IoT Security**{.cve-chip} **Bluetooth Vulnerability**{.cve-chip} **Vehicle Security**{.cve-chip}
 
-    **CVE-2026-6770**{.cve-chip} **Firefox/Tor Browser**{.cve-chip} **IndexedDB Privacy Flaw**{.cve-chip} **Cross-Site Linkability**{.cve-chip}
+    Researchers found a Bluetooth pairing authentication bypass in Zero Motorcycles and a key fob replay/spoofing flaw in Yadea scooters. Attackers within range can connect without verification, upload malicious firmware, or remotely unlock and start vehicles — posing theft and rider safety risks.
 
-    A privacy flaw in Firefox-based browsers allowed sites to derive a stable process-lifetime identifier from IndexedDB behavior, enabling cross-site correlation without cookies.
-
-    The issue had elevated impact for anonymity use cases, including Tor workflows, where expected session unlinkability could be weakened until patched versions were deployed.
-
-    [Read more](2026/Week17/Firefox.md)
+    [Read more](2026/Week17/Motorcycles.md)
 
 </div>
