@@ -394,3 +394,4 @@ nav:
           - "Firefox Vulnerability Allows Tor User Fingerprinting": 2026/Week17/Firefox.md
           - "Critical GitHub Vulnerability Exposed Millions of Repositories (CVE-2026-3854)": 2026/Week17/GitHub.md
           - "Electric Motorcycles and Scooters Bluetooth & Keyless Entry Vulnerabilities": 2026/Week17/Motorcycles.md
+          - "Internet-Exposed VNC/RDP Servers in ICS/OT Infrastructure": 2026/Week17/VNC.md

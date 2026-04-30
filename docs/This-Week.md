@@ -8,6 +8,16 @@ hide:
  
 <div class="grid cards" markdown>
 
+-   ![VNC](2026/Week17/images/VNC.png)
+
+    **Internet-Exposed VNC/RDP Servers in ICS/OT Infrastructure**
+
+    **ICS/OT Security**{.cve-chip} **Exposed Remote Access**{.cve-chip} **Critical Infrastructure**{.cve-chip}
+
+    ~60,000 VNC servers require no authentication and ~670 are directly linked to ICS/OT systems, giving attackers trivial remote desktop access to SCADA and HMI interfaces. Combined with ~1.8 million exposed RDP servers, the attack surface enables ransomware deployment, process manipulation, and physical safety risks without exploiting any vulnerability.
+
+    [Read more](2026/Week17/VNC.md)
+
 -   ![GitHub](2026/Week17/images/GitHub.png)
 
     **Critical GitHub Vulnerability Exposed Millions of Repositories (CVE-2026-3854)**
