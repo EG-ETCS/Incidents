@@ -8,34 +8,53 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![VNC](2026/Week17/images/VNC.png)
+-   ![Facebook](2026/Week18/images/Facebook.png)
 
-    **Internet-Exposed VNC/RDP Servers in ICS/OT Infrastructure**
+    **30,000 Facebook Accounts Hacked via Google AppSheet Phishing Campaign**
 
-    **ICS/OT Security**{.cve-chip} **Exposed Remote Access**{.cve-chip} **Critical Infrastructure**{.cve-chip}
+    **Facebook Phishing**{.cve-chip} **Google AppSheet Abuse**{.cve-chip} **Account Takeover**{.cve-chip} **Credential Theft**{.cve-chip}
 
-    ~60,000 VNC servers require no authentication and ~670 are directly linked to ICS/OT systems, giving attackers trivial remote desktop access to SCADA and HMI interfaces. Combined with ~1.8 million exposed RDP servers, the attack surface enables ransomware deployment, process manipulation, and physical safety risks without exploiting any vulnerability.
+    A large phishing operation abused Google AppSheet delivery infrastructure to send trusted-looking lures that redirected victims to fake Facebook login pages.
 
-    [Read more](2026/Week17/VNC.md)
+    Attackers validated stolen credentials in real time, rapidly hijacked accounts, and monetized access through resale and abuse.
 
--   ![GitHub](2026/Week17/images/GitHub.png)
+    [Read more](2026/Week18/Facebook.md)
 
-    **Critical GitHub Vulnerability Exposed Millions of Repositories (CVE-2026-3854)**
+-   ![China](2026/Week18/images/China.png)
 
-    **CVE-2026-3854**{.cve-chip} **Remote Code Execution**{.cve-chip} **Supply Chain Risk**{.cve-chip}
+    **China-Linked Cyber Espionage Campaign Targeting Asian Governments**
 
-    A command injection flaw in GitHub's internal `git push` pipeline allowed an attacker with ordinary push access to inject headers, override hook execution paths, and achieve RCE on backend servers. On GHES this means full instance compromise; on GitHub.com, Wiz confirmed RCE on multi-tenant storage nodes exposing millions of repositories.
+    **China-Linked APT**{.cve-chip} **Government Espionage**{.cve-chip} **Exchange Exploitation**{.cve-chip} **Long-Term Persistence**{.cve-chip}
 
-    [Read more](2026/Week17/GitHub.md)
+    A China-linked actor reportedly targeted government and defense-related organizations by exploiting unpatched Microsoft Exchange systems and abusing stolen credentials for stealth access.
 
--   ![Motorcycles](2026/Week17/images/Motorcycles.png)
+    The campaign focused on persistent mailbox and network compromise to collect intelligence over long periods with reduced detection.
 
-    **Electric Motorcycles and Scooters Bluetooth & Keyless Entry Vulnerabilities**
+    [Read more](2026/Week18/China.md)
 
-    **IoT Security**{.cve-chip} **Bluetooth Vulnerability**{.cve-chip} **Vehicle Security**{.cve-chip}
+-   ![Linux](2026/Week18/images/Linux.png)
 
-    Researchers found a Bluetooth pairing authentication bypass in Zero Motorcycles and a key fob replay/spoofing flaw in Yadea scooters. Attackers within range can connect without verification, upload malicious firmware, or remotely unlock and start vehicles — posing theft and rider safety risks.
+    **Actively Exploited Linux Privilege Escalation Vulnerability**
 
-    [Read more](2026/Week17/Motorcycles.md)
+    **CVE-2026-31431**{.cve-chip} **Linux Privilege Escalation**{.cve-chip} **CISA KEV**{.cve-chip} **Active Exploitation**{.cve-chip}
+
+    CISA added CVE-2026-31431 to KEV after confirmed exploitation, highlighting a Linux privilege-escalation path that can elevate low-privileged access to root.
+
+    The issue raises post-compromise risk across Linux environments and can enable persistence, data theft, and lateral movement if patching is delayed.
+
+
+    [Read more](2026/Week18/Linux.md)
+
+-   ![cPanel](2026/Week18/images/cPanel.png)
+
+    **cPanel & WHM Authentication Bypass Vulnerability**
+
+    **CVE-2026-41940**{.cve-chip} **cPanel/WHM**{.cve-chip} **Authentication Bypass**{.cve-chip} **Zero-Day Exploitation**{.cve-chip}
+
+    A critical cPanel/WHM flaw allowed unauthenticated session forgery via request-handling abuse, with exploitation reported before emergency patches were released.
+
+    Successful compromise can expose multi-tenant hosting environments to account takeover, malware deployment, and broader supply-chain style impact.
+
+    [Read more](2026/Week18/cPanel.md)
 
 </div>

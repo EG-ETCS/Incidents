@@ -395,3 +395,9 @@ nav:
           - "Critical GitHub Vulnerability Exposed Millions of Repositories (CVE-2026-3854)": 2026/Week17/GitHub.md
           - "Electric Motorcycles and Scooters Bluetooth & Keyless Entry Vulnerabilities": 2026/Week17/Motorcycles.md
           - "Internet-Exposed VNC/RDP Servers in ICS/OT Infrastructure": 2026/Week17/VNC.md
+      - "May":
+        - "week18":
+          - "30,000 Facebook Accounts Hacked via Google AppSheet Phishing Campaign": 2026/Week18/Facebook.md
+          - "China-Linked Cyber Espionage Campaign Targeting Asian Governments": 2026/Week18/China.md
+          - "Actively Exploited Linux Privilege Escalation Vulnerability": 2026/Week18/Linux.md
+          - "cPanel & WHM Authentication Bypass Vulnerability": 2026/Week18/cPanel.md

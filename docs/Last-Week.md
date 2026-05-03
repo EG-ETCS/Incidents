@@ -8,92 +8,83 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![mirai](2026/Week16/images/mirai.png)
+-   ![VNC](2026/Week17/images/VNC.png)
 
-    **Mirai Botnet Targeting CVE-2025-29635 in D-Link DIR-823X Routers**
+    **Internet-Exposed VNC/RDP Servers in ICS/OT Infrastructure**
 
-    **CVE-2025-29635**{.cve-chip} **Mirai Botnet**{.cve-chip} **End-of-Life Device**{.cve-chip}
+    **ICS/OT Security**{.cve-chip} **Exposed Remote Access**{.cve-chip} **Critical Infrastructure**{.cve-chip}
 
-    A Mirai campaign is actively exploiting a command injection flaw in discontinued D-Link DIR-823X routers to achieve remote code execution and enroll devices into botnet infrastructure. No vendor patch will be issued; replacement is the only full remediation.
+    ~60,000 VNC servers require no authentication and ~670 are directly linked to ICS/OT systems, giving attackers trivial remote desktop access to SCADA and HMI interfaces. Combined with ~1.8 million exposed RDP servers, the attack surface enables ransomware deployment, process manipulation, and physical safety risks without exploiting any vulnerability.
 
-    [Read more](2026/Week16/mirai.md)
+    [Read more](2026/Week17/VNC.md)
 
--   ![NFC](2026/Week16/images/NFC.png)
+-   ![GitHub](2026/Week17/images/GitHub.png)
 
-    **NGate Android Malware (NFC Relay Attack Campaign)**
+    **Critical GitHub Vulnerability Exposed Millions of Repositories (CVE-2026-3854)**
 
-    **Android Malware**{.cve-chip} **NFC Relay Attack**{.cve-chip} **Financial Fraud**{.cve-chip}
+    **CVE-2026-3854**{.cve-chip} **Remote Code Execution**{.cve-chip} **Supply Chain Risk**{.cve-chip}
 
-    NGate abuses Android NFC APIs to silently relay payment card data in real time to attacker devices, enabling fraudulent ATM withdrawals and contactless payments without physically stealing the card. Victims are socially engineered via fake banking apps into enabling NFC and holding their card near their phone.
+    A command injection flaw in GitHub's internal `git push` pipeline allowed an attacker with ordinary push access to inject headers, override hook execution paths, and achieve RCE on backend servers. On GHES this means full instance compromise; on GitHub.com, Wiz confirmed RCE on multi-tenant storage nodes exposing millions of repositories.
 
-    [Read more](2026/Week16/NFC.md)
+    [Read more](2026/Week17/GitHub.md)
 
--   ![ANTS](2026/Week16/images/ANTS.png)
+-   ![Motorcycles](2026/Week17/images/Motorcycles.png)
 
-    **France ANTS ID System Cyberattack / Data Breach**
+    **Electric Motorcycles and Scooters Bluetooth & Keyless Entry Vulnerabilities**
 
-    **Government Data Breach**{.cve-chip} **PII Exposure**{.cve-chip} **Identity Documents**{.cve-chip}
+    **IoT Security**{.cve-chip} **Bluetooth Vulnerability**{.cve-chip} **Vehicle Security**{.cve-chip}
 
-    A cyberattack on France's National Agency for Secure Documents (ANTS) may have exposed the personal data of millions of users, including names, email addresses, dates of birth, and login identifiers. The exact attack vector remains unknown; no evidence of uploaded ID document scans being accessed has been reported.
+    Researchers found a Bluetooth pairing authentication bypass in Zero Motorcycles and a key fob replay/spoofing flaw in Yadea scooters. Attackers within range can connect without verification, upload malicious firmware, or remotely unlock and start vehicles — posing theft and rider safety risks.
 
-    [Read more](2026/Week16/ANTS.md)
+    [Read more](2026/Week17/Motorcycles.md)
 
--   ![backdoors](2026/Week16/images/backdoors.png)
+-   ![Pack2TheRoot](2026/Week17/images/Pack2TheRoot.png)
 
-    **Iran Claims US Used Backdoors to Knock Out Networking Equipment During War**
+    **Easily Exploitable Pack2TheRoot Linux Vulnerability Leads to Root Access**
 
-    **Nation-State Claim**{.cve-chip} **Supply Chain Security**{.cve-chip} **Hardware Backdoor**{.cve-chip}
+    **CVE-2026-41651**{.cve-chip} **Pack2TheRoot**{.cve-chip} **Linux Privilege Escalation**{.cve-chip} **PackageKit TOCTOU**{.cve-chip}
 
-    Iranian authorities claimed that foreign-manufactured networking hardware containing embedded backdoors was used to remotely disrupt national infrastructure during active conflict. No independent forensic evidence has been released; exploitation of known vulnerabilities remains an alternative explanation.
+    Pack2TheRoot is a high-severity PackageKit race-condition vulnerability that can let local unprivileged users run package operations as root without expected authentication.
 
-    [Read more](2026/Week16/backdoors.md)
+    Given broad default PackageKit deployment, this issue significantly lowers the barrier for post-compromise escalation on Linux desktops and some shared server environments.
 
--   ![Vercel](2026/Week16/images/Vercel.png)
-    
-    **Vercel Confirms Breach as Hackers Claim to Be Selling Stolen Data**
+    [Read more](2026/Week17/Pack2TheRoot.md)
 
-    **Cloud Platform Breach**{.cve-chip} **OAuth Abuse**{.cve-chip} **Third-Party Risk**{.cve-chip}
+-   ![Firefox](2026/Week17/images/Firefox.png)
 
-    Vercel confirmed unauthorized access linked to a compromised third-party integration and abused Google Workspace OAuth app permissions, which enabled attacker access to an employee account and internal systems.
+    **Firefox Vulnerability Allows Tor User Fingerprinting**
 
-    Exposed data reportedly included employee metadata and non-sensitive environment variables, while sensitive variables were protected; attackers later advertised stolen data for sale.
+    **CVE-2026-6770**{.cve-chip} **Firefox/Tor Browser**{.cve-chip} **IndexedDB Privacy Flaw**{.cve-chip} **Cross-Site Linkability**{.cve-chip}
 
-    [Read more](2026/Week16/Vercel.md)
+    A privacy flaw in Firefox-based browsers allowed sites to derive a stable process-lifetime identifier from IndexedDB behavior, enabling cross-site correlation without cookies.
 
--   ![Microsoft](2026/Week16/images/Microsoft.png)
+    The issue had elevated impact for anonymity use cases, including Tor workflows, where expected session unlinkability could be weakened until patched versions were deployed.
 
-    **Microsoft Defender Zero-Day Vulnerabilities (BlueHammer, RedSun, UnDefend)**
+    [Read more](2026/Week17/Firefox.md)
 
-    **Microsoft Defender**{.cve-chip} **Zero-Day Exposure**{.cve-chip} **Privilege Escalation**{.cve-chip} **Defense Tampering Risk**{.cve-chip}
 
-    Three disclosed Defender zero-days, including two reported as unpatched, can enable SYSTEM-level privilege escalation and interference with endpoint protection updates.
+-   ![FIRESTARTER](2026/Week17/images/FIRESTARTER.png)
 
-    The chain increases risk of stealthy payload deployment, longer dwell time, and ransomware or surveillance activity on affected Windows endpoints.
+    **FIRESTARTER Backdoor on Cisco ASA / Firepower Devices**
 
-    [Read more](2026/Week16/Microsoft.md)
+    **FIRESTARTER**{.cve-chip} **Cisco ASA/FTD**{.cve-chip} **Persistent Backdoor**{.cve-chip} **Federal Network Impact**{.cve-chip}
 
--   ![Nexcorium](2026/Week16/images/Nexcorium.png)
+    CISA reported a persistent FIRESTARTER backdoor on a federal Cisco firewall device, with attacker access surviving normal patching workflows.
 
-    **Nexcorium (Mirai Variant IoT Botnet Campaign)**
+    The case demonstrates that compromised perimeter appliances may require full reimaging and integrity validation, not just vulnerability patching.
 
-    **Mirai Variant**{.cve-chip} **IoT Botnet**{.cve-chip} **DVR/Router Exploitation**{.cve-chip} **DDoS Threat**{.cve-chip}
+    [Read more](2026/Week17/FIRESTARTER.md)
 
-    Nexcorium is a Mirai-based malware campaign targeting vulnerable DVRs and outdated routers through known CVEs, then deploying architecture-specific payloads with persistence and propagation routines.
+-   ![GopherWhisper](2026/Week17/images/GopherWhisper.png)
 
-    Compromised devices are enrolled into a botnet used for multi-vector DDoS operations, with continued spread via Telnet brute-force and default credential abuse.
+    **China-Linked GopherWhisper Infects 12 Mongolian Government Systems with Go Backdoors**
 
-    [Read more](2026/Week16/Nexcorium.md)
+    **GopherWhisper**{.cve-chip} **China-Linked Espionage**{.cve-chip} **Go Malware Toolset**{.cve-chip} **Cloud C2 Abuse**{.cve-chip}
 
--   ![Israel](2026/Week16/images/Israel.png)
+    GopherWhisper operators reportedly compromised at least 12 Mongolian government systems using a modular Go-based toolchain with persistence, command execution, and encrypted document exfiltration.
 
-    **Hackers Target Israeli Desalination Plants With ZionSiphon Sabotage Malware**
+    The campaign abuses trusted SaaS channels including Slack, Discord, and Outlook/Graph for covert command-and-control, complicating conventional detection.
 
-    **ZionSiphon**{.cve-chip} **ICS Sabotage Malware**{.cve-chip} **Water Infrastructure**{.cve-chip} **Cyber-Physical Risk**{.cve-chip}
-
-    ZionSiphon is designed to target water treatment/desalination environments and manipulate operational parameters such as chlorine dosing and pressure levels.
-
-    Although observed samples had coding limitations, the campaign demonstrates credible intent toward disruptive cyber-physical impact on critical services.
-
-    [Read more](2026/Week16/Israel.md)
+    [Read more](2026/Week17/GopherWhisper.md)
 
 </div>
