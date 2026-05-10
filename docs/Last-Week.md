@@ -8,83 +8,73 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![VNC](2026/Week17/images/VNC.png)
+-   ![Taiwan](2026/Week18/images/Taiwan.png)
 
-    **Internet-Exposed VNC/RDP Servers in ICS/OT Infrastructure**
+    **Student Hacked Taiwan High-Speed Rail to Trigger Emergency Brakes**
 
-    **ICS/OT Security**{.cve-chip} **Exposed Remote Access**{.cve-chip} **Critical Infrastructure**{.cve-chip}
+    **OT Security**{.cve-chip} **TETRA Radio Spoofing**{.cve-chip} **Rail Infrastructure**{.cve-chip}
 
-    ~60,000 VNC servers require no authentication and ~670 are directly linked to ICS/OT systems, giving attackers trivial remote desktop access to SCADA and HMI interfaces. Combined with ~1.8 million exposed RDP servers, the attack surface enables ransomware deployment, process manipulation, and physical safety risks without exploiting any vulnerability.
+    A student used SDR equipment and cloned radios to inject a forged "General Alarm" onto Taiwan High Speed Rail's TETRA network, halting four trains for 48 minutes. The attack required no software exploit — static TETRA parameters unchanged for 19 years allowed a decoded beacon clone to bypass all seven verification layers.
 
-    [Read more](2026/Week17/VNC.md)
+    [Read more](2026/Week18/Taiwan.md)
 
--   ![GitHub](2026/Week17/images/GitHub.png)
+-   ![Edge](2026/Week18/images/Edge.png)
 
-    **Critical GitHub Vulnerability Exposed Millions of Repositories (CVE-2026-3854)**
+    **Microsoft Edge Stores Passwords in Process Memory, Posing Enterprise Risk**
 
-    **CVE-2026-3854**{.cve-chip} **Remote Code Execution**{.cve-chip} **Supply Chain Risk**{.cve-chip}
+    **Microsoft Edge**{.cve-chip} **Credential Exposure**{.cve-chip} **Enterprise Risk**{.cve-chip}
 
-    A command injection flaw in GitHub's internal `git push` pipeline allowed an attacker with ordinary push access to inject headers, override hook execution paths, and achieve RCE on backend servers. On GHES this means full instance compromise; on GitHub.com, Wiz confirmed RCE on multi-tenant storage nodes exposing millions of repositories.
+    Microsoft Edge decrypts all saved passwords into process memory at browser startup and keeps them resident in cleartext. Any attacker who reaches admin/SYSTEM on the endpoint can dump Edge memory and recover every stored credential — Microsoft confirmed this is "by design" with no CVE or fix planned.
 
-    [Read more](2026/Week17/GitHub.md)
+    [Read more](2026/Week18/Edge.md)
 
--   ![Motorcycles](2026/Week17/images/Motorcycles.png)
+-   ![Facebook](2026/Week18/images/Facebook.png)
 
-    **Electric Motorcycles and Scooters Bluetooth & Keyless Entry Vulnerabilities**
+    **30,000 Facebook Accounts Hacked via Google AppSheet Phishing Campaign**
 
-    **IoT Security**{.cve-chip} **Bluetooth Vulnerability**{.cve-chip} **Vehicle Security**{.cve-chip}
+    **Facebook Phishing**{.cve-chip} **Google AppSheet Abuse**{.cve-chip} **Account Takeover**{.cve-chip} **Credential Theft**{.cve-chip}
 
-    Researchers found a Bluetooth pairing authentication bypass in Zero Motorcycles and a key fob replay/spoofing flaw in Yadea scooters. Attackers within range can connect without verification, upload malicious firmware, or remotely unlock and start vehicles — posing theft and rider safety risks.
+    A large phishing operation abused Google AppSheet delivery infrastructure to send trusted-looking lures that redirected victims to fake Facebook login pages.
 
-    [Read more](2026/Week17/Motorcycles.md)
+    Attackers validated stolen credentials in real time, rapidly hijacked accounts, and monetized access through resale and abuse.
 
--   ![Pack2TheRoot](2026/Week17/images/Pack2TheRoot.png)
+    [Read more](2026/Week18/Facebook.md)
 
-    **Easily Exploitable Pack2TheRoot Linux Vulnerability Leads to Root Access**
+-   ![China](2026/Week18/images/China.png)
 
-    **CVE-2026-41651**{.cve-chip} **Pack2TheRoot**{.cve-chip} **Linux Privilege Escalation**{.cve-chip} **PackageKit TOCTOU**{.cve-chip}
+    **China-Linked Cyber Espionage Campaign Targeting Asian Governments**
 
-    Pack2TheRoot is a high-severity PackageKit race-condition vulnerability that can let local unprivileged users run package operations as root without expected authentication.
+    **China-Linked APT**{.cve-chip} **Government Espionage**{.cve-chip} **Exchange Exploitation**{.cve-chip} **Long-Term Persistence**{.cve-chip}
 
-    Given broad default PackageKit deployment, this issue significantly lowers the barrier for post-compromise escalation on Linux desktops and some shared server environments.
+    A China-linked actor reportedly targeted government and defense-related organizations by exploiting unpatched Microsoft Exchange systems and abusing stolen credentials for stealth access.
 
-    [Read more](2026/Week17/Pack2TheRoot.md)
+    The campaign focused on persistent mailbox and network compromise to collect intelligence over long periods with reduced detection.
 
--   ![Firefox](2026/Week17/images/Firefox.png)
+    [Read more](2026/Week18/China.md)
 
-    **Firefox Vulnerability Allows Tor User Fingerprinting**
+-   ![Linux](2026/Week18/images/Linux.png)
 
-    **CVE-2026-6770**{.cve-chip} **Firefox/Tor Browser**{.cve-chip} **IndexedDB Privacy Flaw**{.cve-chip} **Cross-Site Linkability**{.cve-chip}
+    **Actively Exploited Linux Privilege Escalation Vulnerability**
 
-    A privacy flaw in Firefox-based browsers allowed sites to derive a stable process-lifetime identifier from IndexedDB behavior, enabling cross-site correlation without cookies.
+    **CVE-2026-31431**{.cve-chip} **Linux Privilege Escalation**{.cve-chip} **CISA KEV**{.cve-chip} **Active Exploitation**{.cve-chip}
 
-    The issue had elevated impact for anonymity use cases, including Tor workflows, where expected session unlinkability could be weakened until patched versions were deployed.
+    CISA added CVE-2026-31431 to KEV after confirmed exploitation, highlighting a Linux privilege-escalation path that can elevate low-privileged access to root.
 
-    [Read more](2026/Week17/Firefox.md)
+    The issue raises post-compromise risk across Linux environments and can enable persistence, data theft, and lateral movement if patching is delayed.
 
 
--   ![FIRESTARTER](2026/Week17/images/FIRESTARTER.png)
+    [Read more](2026/Week18/Linux.md)
 
-    **FIRESTARTER Backdoor on Cisco ASA / Firepower Devices**
+-   ![cPanel](2026/Week18/images/cPanel.png)
 
-    **FIRESTARTER**{.cve-chip} **Cisco ASA/FTD**{.cve-chip} **Persistent Backdoor**{.cve-chip} **Federal Network Impact**{.cve-chip}
+    **cPanel & WHM Authentication Bypass Vulnerability**
 
-    CISA reported a persistent FIRESTARTER backdoor on a federal Cisco firewall device, with attacker access surviving normal patching workflows.
+    **CVE-2026-41940**{.cve-chip} **cPanel/WHM**{.cve-chip} **Authentication Bypass**{.cve-chip} **Zero-Day Exploitation**{.cve-chip}
 
-    The case demonstrates that compromised perimeter appliances may require full reimaging and integrity validation, not just vulnerability patching.
+    A critical cPanel/WHM flaw allowed unauthenticated session forgery via request-handling abuse, with exploitation reported before emergency patches were released.
 
-    [Read more](2026/Week17/FIRESTARTER.md)
+    Successful compromise can expose multi-tenant hosting environments to account takeover, malware deployment, and broader supply-chain style impact.
 
--   ![GopherWhisper](2026/Week17/images/GopherWhisper.png)
-
-    **China-Linked GopherWhisper Infects 12 Mongolian Government Systems with Go Backdoors**
-
-    **GopherWhisper**{.cve-chip} **China-Linked Espionage**{.cve-chip} **Go Malware Toolset**{.cve-chip} **Cloud C2 Abuse**{.cve-chip}
-
-    GopherWhisper operators reportedly compromised at least 12 Mongolian government systems using a modular Go-based toolchain with persistence, command execution, and encrypted document exfiltration.
-
-    The campaign abuses trusted SaaS channels including Slack, Discord, and Outlook/Graph for covert command-and-control, complicating conventional detection.
-
-    [Read more](2026/Week17/GopherWhisper.md)
+    [Read more](2026/Week18/cPanel.md)
 
 </div>

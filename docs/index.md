@@ -8,24 +8,34 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Taiwan](2026/Week18/images/Taiwan.png)
+-   ![Zara](2026/Week19/images/Zara.png)
 
-    **Student Hacked Taiwan High-Speed Rail to Trigger Emergency Brakes**
+    **Zara Data Breach: 197,000 Customers Exposed in Third-Party Security Incident**
 
-    **OT Security**{.cve-chip} **TETRA Radio Spoofing**{.cve-chip} **Rail Infrastructure**{.cve-chip}
+    **Data Breach**{.cve-chip} **Third-Party Risk**{.cve-chip} **ShinyHunters**{.cve-chip}
 
-    A student used SDR equipment and cloned radios to inject a forged "General Alarm" onto Taiwan High Speed Rail's TETRA network, halting four trains for 48 minutes. The attack required no software exploit — static TETRA parameters unchanged for 19 years allowed a decoded beacon clone to bypass all seven verification layers.
+    A compromised third-party vendor exposed personal data of ~197,000 Zara customers, including emails, support records, and purchase history. Threat actors linked to ShinyHunters accessed connected cloud databases and followed up with extortion. No payment card data or passwords were exposed.
 
-    [Read more](2026/Week18/Taiwan.md)
+    [Read more](2026/Week19/Zara.md)
 
--   ![Edge](2026/Week18/images/Edge.png)
+-   ![Mirai](2026/Week19/images/Mirai.png)
 
-    **Microsoft Edge Stores Passwords in Process Memory, Posing Enterprise Risk**
+    **The xlabs_v1 Mirai-Based Botnet Built for DDoS Attacks**
 
-    **Microsoft Edge**{.cve-chip} **Credential Exposure**{.cve-chip} **Enterprise Risk**{.cve-chip}
+    **Mirai Botnet**{.cve-chip} **IoT Security**{.cve-chip} **DDoS**{.cve-chip} **ADB Exploit**{.cve-chip}
 
-    Microsoft Edge decrypts all saved passwords into process memory at browser startup and keeps them resident in cleartext. Any attacker who reaches admin/SYSTEM on the endpoint can dump Edge memory and recover every stored credential — Microsoft confirmed this is "by design" with no CVE or fix planned.
+    A new Mirai-based botnet named xlabs_v1 abuses exposed Android Debug Bridge (ADB) services on TCP port 5555 to compromise Android TVs, routers, and Linux IoT devices. Supporting 21+ DDoS methods, it enlists infected devices into coordinated attacks against gaming servers, hosting providers, and online services.
 
-    [Read more](2026/Week18/Edge.md)
+    [Read more](2026/Week19/Mirai.md)
+
+-   ![Chaos](2026/Week19/images/Chaos.png)
+
+    **MuddyWater Cyber Espionage Disguised as a Chaos Ransomware Attack**
+
+    **MuddyWater**{.cve-chip} **Iran-Linked APT**{.cve-chip} **Ransomware Disguise**{.cve-chip}
+
+    Iran-linked MuddyWater impersonated IT support via Microsoft Teams, tricked victims into installing AnyDesk, then exfiltrated data while listing victims on the Chaos ransomware leak site as cover. No file encryption was found — the ransomware branding was a deception layer to conceal espionage.
+
+    [Read more](2026/Week19/Chaos.md)
 
 </div>
