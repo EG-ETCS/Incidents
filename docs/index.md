@@ -8,34 +8,24 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Blueprint](2026/Week19/images/Blueprint.png)
+-   ![Iranian](2026/Week19/images/Iranian.png)
 
-    **Cyberattacks on Poland's Water Plants: A Blueprint for Hybrid Warfare**
+    **Iranian Hackers Targeted Major South Korean Electronics Maker**
 
-    **OT/ICS Security**{.cve-chip} **APT28**{.cve-chip} **APT29**{.cve-chip} **Hybrid Warfare**{.cve-chip}
+    **Seedworm / MuddyWater**{.cve-chip} **Iran-Linked APT**{.cve-chip} **DLL Sideloading**{.cve-chip}
 
-    Russian and Belarusian APTs (APT28, APT29, UNC1151) breached ICS at five Polish water treatment plants in 2025, gaining real-time control of pumps, filters, and chemical dosing. No zero-days were used — only default credentials and internet-exposed OT interfaces, making the blueprint directly replicable against utilities worldwide.
+    Iran-linked Seedworm / MuddyWater breached a major South Korean electronics manufacturer and eight other organizations across nine countries using DLL sideloading with signed Fortemedia and SentinelOne binaries, Node.js implants, and PowerShell credential theft. Exfiltration was routed through the public file-transfer service sendit.sh to blend with normal SaaS traffic.
 
-    [Read more](2026/Week19/Blueprint.md)
+    [Read more](2026/Week19/Iranian.md)
 
--   ![Foreign](2026/Week19/images/Foreign.png)
+-   ![Azerbaijani](2026/Week19/images/Azerbaijani.png)
 
-    **FCC Softens Foreign Router Ban and Allows Security Updates Until 2029**
+    **Azerbaijani Energy Firm Hit by Repeated Cyber Attacks**
 
-    **FCC Policy**{.cve-chip} **Router Security**{.cve-chip} **Supply Chain Risk**{.cve-chip}
+    **Noname057(16)**{.cve-chip} **Hacktivist**{.cve-chip} **Energy Sector**{.cve-chip} **DDoS**{.cve-chip}
 
-    The FCC revised its foreign router ban to allow existing devices to continue receiving firmware updates, security patches, and bug fixes until 2029. The original policy risked blocking patch distribution entirely, leaving millions of deployed routers permanently unpatched and exposed to known CVE exploitation and botnet recruitment.
+    Pro-Russian hacktivist group Noname057(16) and overlapping actors launched sustained DDoS and intrusion campaigns against SOCAR, Azerbaijan's state-owned energy company, amid geopolitical tensions. SOCAR mitigated most attacks with no confirmed physical impact, but the campaign highlights how energy export infrastructure becomes a persistent front in hybrid warfare.
 
-    [Read more](2026/Week19/Foreign.md)
-
--   ![Instagram](2026/Week19/images/Instagram.png)
-
-    **Instagram Removal of End-to-End Encryption for Direct Messages**
-
-    **Meta / Instagram**{.cve-chip} **Privacy**{.cve-chip} **End-to-End Encryption**{.cve-chip}
-
-    Meta removed optional E2EE from Instagram Direct Messages. All DMs are now processed server-side, enabling message inspection, moderation, and lawful-access requests. Users who relied on E2EE for sensitive communications face materially increased exposure from account compromise, server-side breaches, and surveillance.
-
-    [Read more](2026/Week19/Instagram.md)
+    [Read more](2026/Week19/Azerbaijani.md)
 
 </div>
