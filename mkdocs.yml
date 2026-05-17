@@ -412,3 +412,6 @@ nav:
           - "Instagram Removal of End-to-End Encryption for Direct Messages": 2026/Week19/Instagram.md
           - "Iranian Hackers Targeted Major South Korean Electronics Maker": 2026/Week19/Iranian.md
           - "Azerbaijani Energy Firm Hit by Repeated Cyber Attacks": 2026/Week19/Azerbaijani.md
+        - "week20":
+          - "Cisco Catalyst SD-WAN Zero-Day Vulnerability - CVE-2026-20182": 2026/Week20/Cisco.md
+          - "Microsoft Exchange Server Cross-Site Scripting (XSS) Vulnerability - CVE-2026-42897": 2026/Week20/Microsoft.md

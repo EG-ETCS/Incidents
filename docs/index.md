@@ -8,24 +8,28 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Iranian](2026/Week19/images/Iranian.png)
+-   ![Cisco](2026/Week20/images/Cisco.png)
 
-    **Iranian Hackers Targeted Major South Korean Electronics Maker**
+    **Cisco Catalyst SD-WAN Zero-Day Vulnerability - CVE-2026-20182**
 
-    **Seedworm / MuddyWater**{.cve-chip} **Iran-Linked APT**{.cve-chip} **DLL Sideloading**{.cve-chip}
+    **CVE-2026-20182**{.cve-chip} **Cisco SD-WAN**{.cve-chip} **Zero-Day**{.cve-chip} **Authentication Bypass**{.cve-chip}
 
-    Iran-linked Seedworm / MuddyWater breached a major South Korean electronics manufacturer and eight other organizations across nine countries using DLL sideloading with signed Fortemedia and SentinelOne binaries, Node.js implants, and PowerShell credential theft. Exfiltration was routed through the public file-transfer service sendit.sh to blend with normal SaaS traffic.
+    Cisco patched a critical zero-day in Catalyst SD-WAN peering authentication where crafted DTLS traffic to the `vdaemon` service can impersonate trusted peers and bypass authentication.
 
-    [Read more](2026/Week19/Iranian.md)
+    Successful exploitation can grant privileged administrative control, enabling SSH key abuse, NETCONF tampering, privilege escalation, and persistent access across enterprise WAN environments.
 
--   ![Azerbaijani](2026/Week19/images/Azerbaijani.png)
+    [Read more](2026/Week20/Cisco.md)
 
-    **Azerbaijani Energy Firm Hit by Repeated Cyber Attacks**
+-   ![Microsoft](2026/Week20/images/Microsoft.png)
 
-    **Noname057(16)**{.cve-chip} **Hacktivist**{.cve-chip} **Energy Sector**{.cve-chip} **DDoS**{.cve-chip}
+    **Microsoft Exchange Server Cross-Site Scripting (XSS) Vulnerability - CVE-2026-42897**
 
-    Pro-Russian hacktivist group Noname057(16) and overlapping actors launched sustained DDoS and intrusion campaigns against SOCAR, Azerbaijan's state-owned energy company, amid geopolitical tensions. SOCAR mitigated most attacks with no confirmed physical impact, but the campaign highlights how energy export infrastructure becomes a persistent front in hybrid warfare.
+    **CVE-2026-42897**{.cve-chip} **Microsoft Exchange**{.cve-chip} **OWA XSS**{.cve-chip} **Active Exploitation**{.cve-chip}
 
-    [Read more](2026/Week19/Azerbaijani.md)
+    A vulnerability in Exchange OWA input handling can allow crafted email content to execute attacker-controlled JavaScript in authenticated browser sessions.
+
+    Exploitation may enable session hijacking, mailbox impersonation, internal phishing, and broader business email compromise risk in on-prem Exchange deployments.
+
+    [Read more](2026/Week20/Microsoft.md)
 
 </div>

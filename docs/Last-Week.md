@@ -8,73 +8,84 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![Taiwan](2026/Week18/images/Taiwan.png)
+-   ![Iranian](2026/Week19/images/Iranian.png)
 
-    **Student Hacked Taiwan High-Speed Rail to Trigger Emergency Brakes**
+    **Iranian Hackers Targeted Major South Korean Electronics Maker**
 
-    **OT Security**{.cve-chip} **TETRA Radio Spoofing**{.cve-chip} **Rail Infrastructure**{.cve-chip}
+    **Seedworm / MuddyWater**{.cve-chip} **Iran-Linked APT**{.cve-chip} **DLL Sideloading**{.cve-chip}
 
-    A student used SDR equipment and cloned radios to inject a forged "General Alarm" onto Taiwan High Speed Rail's TETRA network, halting four trains for 48 minutes. The attack required no software exploit — static TETRA parameters unchanged for 19 years allowed a decoded beacon clone to bypass all seven verification layers.
+    Iran-linked Seedworm / MuddyWater breached a major South Korean electronics manufacturer and eight other organizations across nine countries using DLL sideloading with signed Fortemedia and SentinelOne binaries, Node.js implants, and PowerShell credential theft. Exfiltration was routed through the public file-transfer service sendit.sh to blend with normal SaaS traffic.
 
-    [Read more](2026/Week18/Taiwan.md)
+    [Read more](2026/Week19/Iranian.md)
 
--   ![Edge](2026/Week18/images/Edge.png)
+-   ![Azerbaijani](2026/Week19/images/Azerbaijani.png)
 
-    **Microsoft Edge Stores Passwords in Process Memory, Posing Enterprise Risk**
+    **Azerbaijani Energy Firm Hit by Repeated Cyber Attacks**
 
-    **Microsoft Edge**{.cve-chip} **Credential Exposure**{.cve-chip} **Enterprise Risk**{.cve-chip}
+    **Noname057(16)**{.cve-chip} **Hacktivist**{.cve-chip} **Energy Sector**{.cve-chip} **DDoS**{.cve-chip}
 
-    Microsoft Edge decrypts all saved passwords into process memory at browser startup and keeps them resident in cleartext. Any attacker who reaches admin/SYSTEM on the endpoint can dump Edge memory and recover every stored credential — Microsoft confirmed this is "by design" with no CVE or fix planned.
+    Pro-Russian hacktivist group Noname057(16) and overlapping actors launched sustained DDoS and intrusion campaigns against SOCAR, Azerbaijan's state-owned energy company, amid geopolitical tensions. SOCAR mitigated most attacks with no confirmed physical impact, but the campaign highlights how energy export infrastructure becomes a persistent front in hybrid warfare.
 
-    [Read more](2026/Week18/Edge.md)
+    [Read more](2026/Week19/Azerbaijani.md)
 
--   ![Facebook](2026/Week18/images/Facebook.png)
+-   ![Blueprint](2026/Week19/images/Blueprint.png)
 
-    **30,000 Facebook Accounts Hacked via Google AppSheet Phishing Campaign**
+    **Cyberattacks on Poland's Water Plants: A Blueprint for Hybrid Warfare**
 
-    **Facebook Phishing**{.cve-chip} **Google AppSheet Abuse**{.cve-chip} **Account Takeover**{.cve-chip} **Credential Theft**{.cve-chip}
+    **OT/ICS Security**{.cve-chip} **APT28**{.cve-chip} **APT29**{.cve-chip} **Hybrid Warfare**{.cve-chip}
 
-    A large phishing operation abused Google AppSheet delivery infrastructure to send trusted-looking lures that redirected victims to fake Facebook login pages.
+    Russian and Belarusian APTs (APT28, APT29, UNC1151) breached ICS at five Polish water treatment plants in 2025, gaining real-time control of pumps, filters, and chemical dosing. No zero-days were used — only default credentials and internet-exposed OT interfaces, making the blueprint directly replicable against utilities worldwide.
 
-    Attackers validated stolen credentials in real time, rapidly hijacked accounts, and monetized access through resale and abuse.
+    [Read more](2026/Week19/Blueprint.md)
 
-    [Read more](2026/Week18/Facebook.md)
+-   ![Foreign](2026/Week19/images/Foreign.png)
 
--   ![China](2026/Week18/images/China.png)
+    **FCC Softens Foreign Router Ban and Allows Security Updates Until 2029**
 
-    **China-Linked Cyber Espionage Campaign Targeting Asian Governments**
+    **FCC Policy**{.cve-chip} **Router Security**{.cve-chip} **Supply Chain Risk**{.cve-chip}
 
-    **China-Linked APT**{.cve-chip} **Government Espionage**{.cve-chip} **Exchange Exploitation**{.cve-chip} **Long-Term Persistence**{.cve-chip}
+    The FCC revised its foreign router ban to allow existing devices to continue receiving firmware updates, security patches, and bug fixes until 2029. The original policy risked blocking patch distribution entirely, leaving millions of deployed routers permanently unpatched and exposed to known CVE exploitation and botnet recruitment.
 
-    A China-linked actor reportedly targeted government and defense-related organizations by exploiting unpatched Microsoft Exchange systems and abusing stolen credentials for stealth access.
+    [Read more](2026/Week19/Foreign.md)
 
-    The campaign focused on persistent mailbox and network compromise to collect intelligence over long periods with reduced detection.
+-   ![Instagram](2026/Week19/images/Instagram.png)
 
-    [Read more](2026/Week18/China.md)
+    **Instagram Removal of End-to-End Encryption for Direct Messages**
 
--   ![Linux](2026/Week18/images/Linux.png)
+    **Meta / Instagram**{.cve-chip} **Privacy**{.cve-chip} **End-to-End Encryption**{.cve-chip}
 
-    **Actively Exploited Linux Privilege Escalation Vulnerability**
+    Meta removed optional E2EE from Instagram Direct Messages. All DMs are now processed server-side, enabling message inspection, moderation, and lawful-access requests. Users who relied on E2EE for sensitive communications face materially increased exposure from account compromise, server-side breaches, and surveillance.
 
-    **CVE-2026-31431**{.cve-chip} **Linux Privilege Escalation**{.cve-chip} **CISA KEV**{.cve-chip} **Active Exploitation**{.cve-chip}
+    [Read more](2026/Week19/Instagram.md)
 
-    CISA added CVE-2026-31431 to KEV after confirmed exploitation, highlighting a Linux privilege-escalation path that can elevate low-privileged access to root.
+-   ![Zara](2026/Week19/images/Zara.png)
 
-    The issue raises post-compromise risk across Linux environments and can enable persistence, data theft, and lateral movement if patching is delayed.
+    **Zara Data Breach: 197,000 Customers Exposed in Third-Party Security Incident**
 
+    **Data Breach**{.cve-chip} **Third-Party Risk**{.cve-chip} **ShinyHunters**{.cve-chip}
 
-    [Read more](2026/Week18/Linux.md)
+    A compromised third-party vendor exposed personal data of ~197,000 Zara customers, including emails, support records, and purchase history. Threat actors linked to ShinyHunters accessed connected cloud databases and followed up with extortion. No payment card data or passwords were exposed.
 
--   ![cPanel](2026/Week18/images/cPanel.png)
+    [Read more](2026/Week19/Zara.md)
 
-    **cPanel & WHM Authentication Bypass Vulnerability**
+-   ![Mirai](2026/Week19/images/Mirai.png)
 
-    **CVE-2026-41940**{.cve-chip} **cPanel/WHM**{.cve-chip} **Authentication Bypass**{.cve-chip} **Zero-Day Exploitation**{.cve-chip}
+    **The xlabs_v1 Mirai-Based Botnet Built for DDoS Attacks**
 
-    A critical cPanel/WHM flaw allowed unauthenticated session forgery via request-handling abuse, with exploitation reported before emergency patches were released.
+    **Mirai Botnet**{.cve-chip} **IoT Security**{.cve-chip} **DDoS**{.cve-chip} **ADB Exploit**{.cve-chip}
 
-    Successful compromise can expose multi-tenant hosting environments to account takeover, malware deployment, and broader supply-chain style impact.
+    A new Mirai-based botnet named xlabs_v1 abuses exposed Android Debug Bridge (ADB) services on TCP port 5555 to compromise Android TVs, routers, and Linux IoT devices. Supporting 21+ DDoS methods, it enlists infected devices into coordinated attacks against gaming servers, hosting providers, and online services.
 
-    [Read more](2026/Week18/cPanel.md)
+    [Read more](2026/Week19/Mirai.md)
+
+-   ![Chaos](2026/Week19/images/Chaos.png)
+
+    **MuddyWater Cyber Espionage Disguised as a Chaos Ransomware Attack**
+
+    **MuddyWater**{.cve-chip} **Iran-Linked APT**{.cve-chip} **Ransomware Disguise**{.cve-chip}
+
+    Iran-linked MuddyWater impersonated IT support via Microsoft Teams, tricked victims into installing AnyDesk, then exfiltrated data while listing victims on the Chaos ransomware leak site as cover. No file encryption was found — the ransomware branding was a deception layer to conceal espionage.
+
+    [Read more](2026/Week19/Chaos.md)
 
 </div>
