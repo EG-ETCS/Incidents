@@ -8,58 +8,41 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![Tp](2026/Week20/images/Tp.png)
+-   ![TrumpMobile](2026/Week21/images/TrumpMobile.png)
 
-    **TP-Link Archer AX53 Stack-Based Buffer Overflow - CVE-2026-30814**
+    **Trump Mobile Customer Data Exposure**
 
-    **CVE-2026-30814**{.cve-chip} **TP-Link**{.cve-chip} **Stack-Based Buffer Overflow**{.cve-chip} **Router Security**{.cve-chip}
+    **Data Exposure**{.cve-chip} **Broken Access Control**{.cve-chip} **IDOR Risk**{.cve-chip} **Ecommerce Security**{.cve-chip}
 
-    A high-severity stack-based buffer overflow in the `tmpServer` component of TP-Link Archer AX53 firmware (prior to 1.7.1 Build 20260213) allows an authenticated adjacent-network attacker to overflow stack memory via a crafted configuration payload, potentially enabling remote code execution, DNS hijacking, or denial of service.
+    Reported insecure API behavior on the Trump Mobile preorder platform allegedly allowed unauthorized access to customer order records through parameter manipulation and insufficient authorization checks.
 
-    [Read more](2026/Week20/Tp.md)
+    Exposed data reportedly included names, emails, phone numbers, addresses, and order details, increasing phishing and social-engineering risk.
 
--   ![GitHub](2026/Week20/images/GitHub.png)
+    [Read more](2026/Week21/TrumpMobile.md)
 
-    **GitHub Internal Repository Breach**
+-   ![Telecom](2026/Week21/images/Telecom.png)
 
-    **GitHub**{.cve-chip} **Supply Chain Risk**{.cve-chip} **Malicious VS Code Extension**{.cve-chip}
+    **One Telecom Provider Hosted Most of the Middle East's Active C2 Infrastructure**
 
-    A GitHub employee installed a malicious VS Code extension that compromised their endpoint, allowing threat actor TeamPCP to steal authentication tokens and exfiltrate ~3,800–4,000 internal repositories. Stolen data includes source code, CI/CD workflows, and infrastructure configurations; no customer repository impact confirmed.
+    **C2 Infrastructure**{.cve-chip} **Threat Intelligence**{.cve-chip} **Telecom Hosting Abuse**{.cve-chip} **Middle East**{.cve-chip}
 
-    [Read more](2026/Week20/GitHub.md)
+    Hunt.io reported concentrated malicious C2 hosting across regional telecom/cloud providers, with STC allegedly accounting for most observed active C2 nodes during the study period.
 
--   ![PinTheft](2026/Week20/images/PinTheft.png)
+    The infrastructure supported malware control, phishing operations, botnets, and espionage-linked activity, complicating detection by blending with legitimate telecom traffic.
 
-    **PinTheft Linux Privilege Escalation Vulnerability - CVE-2026-31635**
+    [Read more](2026/Week21/Telecom.md)
 
-    **CVE-2026-31635**{.cve-chip} **Linux Kernel LPE**{.cve-chip} **RDS Subsystem**{.cve-chip} **Public Exploit**{.cve-chip}
 
-    A double-free in the Linux kernel RDS zerocopy send path (`rds_message_zcopy_from_user()`) allows a local unprivileged user to achieve page-cache overwrites via `io_uring` fixed buffer abuse and escalate to root. Public PoC code is available, significantly lowering the bar for exploitation.
+-   ![Linux](2026/Week21/images/Linux.png)
 
-    [Read more](2026/Week20/PinTheft.md)
+    **CVE-2026-46333 - ssh-keysign-pwn Linux Kernel Privilege Escalation**
 
--   ![Cisco](2026/Week20/images/Cisco.png)
+    **CVE-2026-46333**{.cve-chip} **Linux Kernel**{.cve-chip} **Privilege Escalation**{.cve-chip} **Local Root**{.cve-chip}
 
-    **Cisco Catalyst SD-WAN Zero-Day Vulnerability - CVE-2026-20182**
+    A long-lived flaw in Linux kernel `__ptrace_may_access()` logic can allow local attackers to abuse privileged-process interactions and escalate from low privileges to root.
 
-    **CVE-2026-20182**{.cve-chip} **Cisco SD-WAN**{.cve-chip} **Zero-Day**{.cve-chip} **Authentication Bypass**{.cve-chip}
+    Researchers reported successful exploitation against modern Ubuntu and Debian systems, increasing risk to cloud, shared-hosting, and containerized environments.
 
-    Cisco patched a critical zero-day in Catalyst SD-WAN peering authentication where crafted DTLS traffic to the `vdaemon` service can impersonate trusted peers and bypass authentication.
-
-    Successful exploitation can grant privileged administrative control, enabling SSH key abuse, NETCONF tampering, privilege escalation, and persistent access across enterprise WAN environments.
-
-    [Read more](2026/Week20/Cisco.md)
-
--   ![Microsoft](2026/Week20/images/Microsoft.png)
-
-    **Microsoft Exchange Server Cross-Site Scripting (XSS) Vulnerability - CVE-2026-42897**
-
-    **CVE-2026-42897**{.cve-chip} **Microsoft Exchange**{.cve-chip} **OWA XSS**{.cve-chip} **Active Exploitation**{.cve-chip}
-
-    A vulnerability in Exchange OWA input handling can allow crafted email content to execute attacker-controlled JavaScript in authenticated browser sessions.
-
-    Exploitation may enable session hijacking, mailbox impersonation, internal phishing, and broader business email compromise risk in on-prem Exchange deployments.
-
-    [Read more](2026/Week20/Microsoft.md)
+    [Read more](2026/Week21/Linux.md)
 
 </div>

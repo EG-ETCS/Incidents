@@ -8,84 +8,58 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![Iranian](2026/Week19/images/Iranian.png)
+-   ![Tp](2026/Week20/images/Tp.png)
 
-    **Iranian Hackers Targeted Major South Korean Electronics Maker**
+    **TP-Link Archer AX53 Stack-Based Buffer Overflow - CVE-2026-30814**
 
-    **Seedworm / MuddyWater**{.cve-chip} **Iran-Linked APT**{.cve-chip} **DLL Sideloading**{.cve-chip}
+    **CVE-2026-30814**{.cve-chip} **TP-Link**{.cve-chip} **Stack-Based Buffer Overflow**{.cve-chip} **Router Security**{.cve-chip}
 
-    Iran-linked Seedworm / MuddyWater breached a major South Korean electronics manufacturer and eight other organizations across nine countries using DLL sideloading with signed Fortemedia and SentinelOne binaries, Node.js implants, and PowerShell credential theft. Exfiltration was routed through the public file-transfer service sendit.sh to blend with normal SaaS traffic.
+    A high-severity stack-based buffer overflow in the `tmpServer` component of TP-Link Archer AX53 firmware (prior to 1.7.1 Build 20260213) allows an authenticated adjacent-network attacker to overflow stack memory via a crafted configuration payload, potentially enabling remote code execution, DNS hijacking, or denial of service.
 
-    [Read more](2026/Week19/Iranian.md)
+    [Read more](2026/Week20/Tp.md)
 
--   ![Azerbaijani](2026/Week19/images/Azerbaijani.png)
+-   ![GitHub](2026/Week20/images/GitHub.png)
 
-    **Azerbaijani Energy Firm Hit by Repeated Cyber Attacks**
+    **GitHub Internal Repository Breach**
 
-    **Noname057(16)**{.cve-chip} **Hacktivist**{.cve-chip} **Energy Sector**{.cve-chip} **DDoS**{.cve-chip}
+    **GitHub**{.cve-chip} **Supply Chain Risk**{.cve-chip} **Malicious VS Code Extension**{.cve-chip}
 
-    Pro-Russian hacktivist group Noname057(16) and overlapping actors launched sustained DDoS and intrusion campaigns against SOCAR, Azerbaijan's state-owned energy company, amid geopolitical tensions. SOCAR mitigated most attacks with no confirmed physical impact, but the campaign highlights how energy export infrastructure becomes a persistent front in hybrid warfare.
+    A GitHub employee installed a malicious VS Code extension that compromised their endpoint, allowing threat actor TeamPCP to steal authentication tokens and exfiltrate ~3,800–4,000 internal repositories. Stolen data includes source code, CI/CD workflows, and infrastructure configurations; no customer repository impact confirmed.
 
-    [Read more](2026/Week19/Azerbaijani.md)
+    [Read more](2026/Week20/GitHub.md)
 
--   ![Blueprint](2026/Week19/images/Blueprint.png)
+-   ![PinTheft](2026/Week20/images/PinTheft.png)
 
-    **Cyberattacks on Poland's Water Plants: A Blueprint for Hybrid Warfare**
+    **PinTheft Linux Privilege Escalation Vulnerability - CVE-2026-31635**
 
-    **OT/ICS Security**{.cve-chip} **APT28**{.cve-chip} **APT29**{.cve-chip} **Hybrid Warfare**{.cve-chip}
+    **CVE-2026-31635**{.cve-chip} **Linux Kernel LPE**{.cve-chip} **RDS Subsystem**{.cve-chip} **Public Exploit**{.cve-chip}
 
-    Russian and Belarusian APTs (APT28, APT29, UNC1151) breached ICS at five Polish water treatment plants in 2025, gaining real-time control of pumps, filters, and chemical dosing. No zero-days were used — only default credentials and internet-exposed OT interfaces, making the blueprint directly replicable against utilities worldwide.
+    A double-free in the Linux kernel RDS zerocopy send path (`rds_message_zcopy_from_user()`) allows a local unprivileged user to achieve page-cache overwrites via `io_uring` fixed buffer abuse and escalate to root. Public PoC code is available, significantly lowering the bar for exploitation.
 
-    [Read more](2026/Week19/Blueprint.md)
+    [Read more](2026/Week20/PinTheft.md)
 
--   ![Foreign](2026/Week19/images/Foreign.png)
+-   ![Cisco](2026/Week20/images/Cisco.png)
 
-    **FCC Softens Foreign Router Ban and Allows Security Updates Until 2029**
+    **Cisco Catalyst SD-WAN Zero-Day Vulnerability - CVE-2026-20182**
 
-    **FCC Policy**{.cve-chip} **Router Security**{.cve-chip} **Supply Chain Risk**{.cve-chip}
+    **CVE-2026-20182**{.cve-chip} **Cisco SD-WAN**{.cve-chip} **Zero-Day**{.cve-chip} **Authentication Bypass**{.cve-chip}
 
-    The FCC revised its foreign router ban to allow existing devices to continue receiving firmware updates, security patches, and bug fixes until 2029. The original policy risked blocking patch distribution entirely, leaving millions of deployed routers permanently unpatched and exposed to known CVE exploitation and botnet recruitment.
+    Cisco patched a critical zero-day in Catalyst SD-WAN peering authentication where crafted DTLS traffic to the `vdaemon` service can impersonate trusted peers and bypass authentication.
 
-    [Read more](2026/Week19/Foreign.md)
+    Successful exploitation can grant privileged administrative control, enabling SSH key abuse, NETCONF tampering, privilege escalation, and persistent access across enterprise WAN environments.
 
--   ![Instagram](2026/Week19/images/Instagram.png)
+    [Read more](2026/Week20/Cisco.md)
 
-    **Instagram Removal of End-to-End Encryption for Direct Messages**
+-   ![Microsoft](2026/Week20/images/Microsoft.png)
 
-    **Meta / Instagram**{.cve-chip} **Privacy**{.cve-chip} **End-to-End Encryption**{.cve-chip}
+    **Microsoft Exchange Server Cross-Site Scripting (XSS) Vulnerability - CVE-2026-42897**
 
-    Meta removed optional E2EE from Instagram Direct Messages. All DMs are now processed server-side, enabling message inspection, moderation, and lawful-access requests. Users who relied on E2EE for sensitive communications face materially increased exposure from account compromise, server-side breaches, and surveillance.
+    **CVE-2026-42897**{.cve-chip} **Microsoft Exchange**{.cve-chip} **OWA XSS**{.cve-chip} **Active Exploitation**{.cve-chip}
 
-    [Read more](2026/Week19/Instagram.md)
+    A vulnerability in Exchange OWA input handling can allow crafted email content to execute attacker-controlled JavaScript in authenticated browser sessions.
 
--   ![Zara](2026/Week19/images/Zara.png)
+    Exploitation may enable session hijacking, mailbox impersonation, internal phishing, and broader business email compromise risk in on-prem Exchange deployments.
 
-    **Zara Data Breach: 197,000 Customers Exposed in Third-Party Security Incident**
-
-    **Data Breach**{.cve-chip} **Third-Party Risk**{.cve-chip} **ShinyHunters**{.cve-chip}
-
-    A compromised third-party vendor exposed personal data of ~197,000 Zara customers, including emails, support records, and purchase history. Threat actors linked to ShinyHunters accessed connected cloud databases and followed up with extortion. No payment card data or passwords were exposed.
-
-    [Read more](2026/Week19/Zara.md)
-
--   ![Mirai](2026/Week19/images/Mirai.png)
-
-    **The xlabs_v1 Mirai-Based Botnet Built for DDoS Attacks**
-
-    **Mirai Botnet**{.cve-chip} **IoT Security**{.cve-chip} **DDoS**{.cve-chip} **ADB Exploit**{.cve-chip}
-
-    A new Mirai-based botnet named xlabs_v1 abuses exposed Android Debug Bridge (ADB) services on TCP port 5555 to compromise Android TVs, routers, and Linux IoT devices. Supporting 21+ DDoS methods, it enlists infected devices into coordinated attacks against gaming servers, hosting providers, and online services.
-
-    [Read more](2026/Week19/Mirai.md)
-
--   ![Chaos](2026/Week19/images/Chaos.png)
-
-    **MuddyWater Cyber Espionage Disguised as a Chaos Ransomware Attack**
-
-    **MuddyWater**{.cve-chip} **Iran-Linked APT**{.cve-chip} **Ransomware Disguise**{.cve-chip}
-
-    Iran-linked MuddyWater impersonated IT support via Microsoft Teams, tricked victims into installing AnyDesk, then exfiltrated data while listing victims on the Chaos ransomware leak site as cover. No file encryption was found — the ransomware branding was a deception layer to conceal espionage.
-
-    [Read more](2026/Week19/Chaos.md)
+    [Read more](2026/Week20/Microsoft.md)
 
 </div>

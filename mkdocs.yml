@@ -418,3 +418,7 @@ nav:
           - "TP-Link Archer AX53 Stack-Based Buffer Overflow - CVE-2026-30814": 2026/Week20/Tp.md
           - "GitHub Internal Repository Breach": 2026/Week20/GitHub.md
           - "PinTheft Linux Privilege Escalation Vulnerability - CVE-2026-31635": 2026/Week20/PinTheft.md
+        - "week21":
+          - "Trump Mobile Customer Data Exposure": 2026/Week21/TrumpMobile.md
+          - "One Telecom Provider Hosted Most of the Middle East's Active C2 Infrastructure": 2026/Week21/Telecom.md
+          - "CVE-2026-46333 - ssh-keysign-pwn Linux Kernel Privilege Escalation": 2026/Week21/Linux.md
