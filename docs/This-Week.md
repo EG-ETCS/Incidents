@@ -8,41 +8,44 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![TrumpMobile](2026/Week21/images/TrumpMobile.png)
+-   ![FIFA](2026/Week22/images/FIFA.png)
 
-    **Trump Mobile Customer Data Exposure**
+    **FIFA World Cup 2026 Fraud and Phishing Campaign**
 
-    **Data Exposure**{.cve-chip} **Broken Access Control**{.cve-chip} **IDOR Risk**{.cve-chip} **Ecommerce Security**{.cve-chip}
+    **Phishing**{.cve-chip} **Typosquatting**{.cve-chip} **Financial Fraud**{.cve-chip} **Event-Themed Scam**{.cve-chip}
 
-    Reported insecure API behavior on the Trump Mobile preorder platform allegedly allowed unauthorized access to customer order records through parameter manipulation and insufficient authorization checks.
+    The FBI warned of thousands of fraudulent FIFA-themed domains stealing tickets payments, credentials, and PII from fans. The "Ghost Stadium" operation uses cloned portals, fake SSO pages, and malicious search ads to impersonate legitimate FIFA services for the 2026 World Cup.
 
-    Exposed data reportedly included names, emails, phone numbers, addresses, and order details, increasing phishing and social-engineering risk.
+    [Read more](2026/Week22/FIFA.md)
 
-    [Read more](2026/Week21/TrumpMobile.md)
+-   ![Nimbus](2026/Week22/images/Nimbus.png)
 
--   ![Telecom](2026/Week21/images/Telecom.png)
+    **Nimbus Manticore Expanded Attacks with AI-Assisted Malware and Fake Zoom Installers**
 
-    **One Telecom Provider Hosted Most of the Middle East's Active C2 Infrastructure**
+    **Nimbus Manticore**{.cve-chip} **Iran-Linked APT**{.cve-chip} **MiniFast Malware**{.cve-chip} **AppDomain Hijacking**{.cve-chip}
 
-    **C2 Infrastructure**{.cve-chip} **Threat Intelligence**{.cve-chip} **Telecom Hosting Abuse**{.cve-chip} **Middle East**{.cve-chip}
+    IRGC-linked Nimbus Manticore deployed the new MiniFast backdoor via trojanized Zoom installers and SEO poisoning, abusing .NET AppDomain Hijacking to load malicious DLLs in trusted processes. AI-assisted malware development and Zoom scheduled-task persistence target aviation, defense, telecom, and software sectors.
 
-    Hunt.io reported concentrated malicious C2 hosting across regional telecom/cloud providers, with STC allegedly accounting for most observed active C2 nodes during the study period.
+    [Read more](2026/Week22/Nimbus.md)
 
-    The infrastructure supported malware control, phishing operations, botnets, and espionage-linked activity, complicating detection by blending with legitimate telecom traffic.
+-   ![Zero-Click WhatsApp](2026/Week22/images/WhatsApp.png)
 
-    [Read more](2026/Week21/Telecom.md)
+    **Zero-Click WhatsApp Account Takeover Targeting iOS 16 Devices**
 
+    **CVE-2025-43300**{.cve-chip} **CVE-2025-55177**{.cve-chip} **Zero-Click Exploit**{.cve-chip} **WhatsApp**{.cve-chip}
 
--   ![Linux](2026/Week21/images/Linux.png)
+    A two-CVE zero-click chain (Apple ImageIO + WhatsApp linked-device weakness) silently hijacks WhatsApp accounts on iOS 16 with no user interaction. The rogue session may not appear in Linked Devices, leaving victims unaware until an unexpected logout — particularly dangerous for journalists, executives, and government officials.
 
-    **CVE-2026-46333 - ssh-keysign-pwn Linux Kernel Privilege Escalation**
+    [Read more](2026/Week22/WhatsApp.md)
 
-    **CVE-2026-46333**{.cve-chip} **Linux Kernel**{.cve-chip} **Privilege Escalation**{.cve-chip} **Local Root**{.cve-chip}
+-   ![Botnet](2026/Week22/images/Botnet.png)
 
-    A long-lived flaw in Linux kernel `__ptrace_may_access()` logic can allow local attackers to abuse privileged-process interactions and escalate from low privileges to root.
+    **Dutch Authorities Dismantle 17-Million-Device Botnet**
 
-    Researchers reported successful exploitation against modern Ubuntu and Debian systems, increasing risk to cloud, shared-hosting, and containerized environments.
+    **Botnet Takedown**{.cve-chip} **Residential Proxy**{.cve-chip} **ASOCKS**{.cve-chip} **Law Enforcement**{.cve-chip}
 
-    [Read more](2026/Week21/Linux.md)
+    Dutch authorities seized 200+ servers and dismantled a ~17-million-device botnet linked to the ASOCKS residential proxy network. Compromised routers, phones, and IoT devices were abused to route criminal traffic — enabling phishing, DDoS, credential abuse, and fraud while disguising the true origin.
+
+    [Read more](2026/Week22/Botnet.md)
 
 </div>

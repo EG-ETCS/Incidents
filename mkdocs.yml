@@ -422,3 +422,9 @@ nav:
           - "Trump Mobile Customer Data Exposure": 2026/Week21/TrumpMobile.md
           - "One Telecom Provider Hosted Most of the Middle East's Active C2 Infrastructure": 2026/Week21/Telecom.md
           - "CVE-2026-46333 - ssh-keysign-pwn Linux Kernel Privilege Escalation": 2026/Week21/Linux.md
+      - "June":
+        - "week22":
+          - "FIFA World Cup 2026 Fraud and Phishing Campaign": 2026/Week22/FIFA.md
+          - "Nimbus Manticore Expanded Attacks with AI-Assisted Malware and Fake Zoom Installers": 2026/Week22/Nimbus.md
+          - "Zero-Click WhatsApp Account Takeover Targeting iOS 16 Devices": 2026/Week22/WhatsApp.md
+          - "Dutch Authorities Dismantle 17-Million-Device Botnet": 2026/Week22/Botnet.md
