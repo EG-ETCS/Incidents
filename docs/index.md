@@ -8,24 +8,74 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Instagram](2026/Week22/images/Instagram.png)
+-   ![Gas](2026/Week23/images/Gas.png)
 
-    **Meta AI Support Chatbot Instagram Account Takeover**
+    **Exposed U.S. Gas Station Tank Gauge Systems**
 
-    **AI Exploitation**{.cve-chip} **Account Takeover**{.cve-chip} **Prompt Manipulation**{.cve-chip} **Instagram**{.cve-chip}
+    **Operational Technology (OT)**{.cve-chip} **Critical Infrastructure**{.cve-chip} **ATG Systems**{.cve-chip} **Internet Exposure**{.cve-chip}
 
-    Attackers manipulated Meta's AI account recovery chatbot through crafted prompts to change recovery emails and trigger password resets without identity verification — hijacking Instagram accounts including the Obama White House page and Sephora. Weak or absent MFA amplified the success rate.
+    More than 900 U.S. internet-accessible Automatic Tank Gauge (ATG) systems were identified as exposed and vulnerable, enabling attackers to tamper with fuel monitoring and leak detection functions. Agencies warn this could trigger operational disruption, environmental risk, and broader critical infrastructure impact.
 
-    [Read more](2026/Week22/Instagram.md)
+    [Read more](2026/Week23/Gas.md)
 
--   ![Android](2026/Week22/images/Android.png)
+-   ![Acer](2026/Week23/images/Acer.png)
 
-    **Google Android June 2026 Security Update – Actively Exploited Android Zero-Day**
+    **Acer Wave 7 Router Zero-Day Vulnerabilities (CVE-2026-49200 & CVE-2026-49201)**
 
-    **CVE-2025-48595**{.cve-chip} **Zero-Day**{.cve-chip} **Android**{.cve-chip} **Privilege Escalation**{.cve-chip}
+    **CVE-2026-49200**{.cve-chip} **CVE-2026-49201**{.cve-chip} **Zero-Day**{.cve-chip} **Router Security**{.cve-chip}
 
-    Google's June 2026 bulletin patches 124 Android flaws including CVE-2025-48595, an actively exploited Framework privilege escalation zero-day requiring no additional permissions. Devices must reach patch level 2026-06-05 for full coverage; unmanaged and BYOD devices face elevated enterprise risk.
+    Two maximum-severity zero-day flaws in Acer Wave 7 routers can expose plaintext credentials and allow malicious backup upload via a hardcoded AES key, enabling persistent compromise, DNS hijacking, and potential botnet abuse.
 
-    [Read more](2026/Week22/Android.md)
+    [Read more](2026/Week23/Acer.md)
+
+-   ![SD-WAN](2026/Week23/images/SD-WAN.png)
+
+    **Cisco Catalyst SD-WAN Manager Vulnerability - CVE-2026-20245**
+
+    **CVE-2026-20245**{.cve-chip} **Cisco SD-WAN**{.cve-chip} **Active Exploitation**{.cve-chip} **Management Plane Risk**{.cve-chip}
+
+    Cisco confirmed active exploitation of a high-severity vulnerability in Catalyst SD-WAN Manager that could enable unauthorized management-plane actions, policy tampering, and lateral movement from exposed control infrastructure.
+
+    [Read more](2026/Week23/SD-WAN.md)
+
+-   ![SSRF](2026/Week23/images/SSRF.png)
+
+    **Cisco Unified CM Critical SSRF Vulnerability - CVE-2026-20230**
+
+    **CVE-2026-20230**{.cve-chip} **SSRF**{.cve-chip} **Cisco Unified CM**{.cve-chip} **Root Access Risk**{.cve-chip}
+
+    Cisco disclosed a critical unauthenticated SSRF flaw in Unified CM WebDialer with public PoC exploit code available; successful exploitation can enable arbitrary file writes and escalation to root-level access on vulnerable servers.
+
+    [Read more](2026/Week23/SSRF.md)
+
+-   ![Gemini](2026/Week23/images/Gemini.png)
+
+    **Google Gemini Android Notification Prompt Injection Vulnerability**
+
+    **Prompt Injection**{.cve-chip} **Google Gemini**{.cve-chip} **Android**{.cve-chip} **Notification Abuse**{.cve-chip}
+
+    Researchers showed that crafted notifications from apps like WhatsApp and Slack could indirectly inject hidden instructions into Gemini on Android, potentially triggering unauthorized assistant actions through user voice confirmations.
+
+    [Read more](2026/Week23/Gemini.md)
+
+-   ![Android](2026/Week23/images/Android.png)
+
+    **Asin Android Spyware Campaign**
+
+    **Android Spyware**{.cve-chip} **Mobile Threat**{.cve-chip} **Social Engineering**{.cve-chip} **Arabic-Speaking Targets**{.cve-chip}
+
+    A newly identified Android spyware family named Asin is targeting Arabic-speaking users via fake APK apps and malicious websites, then abusing granted permissions to collect SMS, contacts, device data, and files while persisting in the background.
+
+    [Read more](2026/Week23/Android.md)
+
+-   ![FlutterShell](2026/Week23/images/FlutterShell.png)
+
+    **FlutterShell macOS Backdoor Campaign**
+
+    **macOS Malware**{.cve-chip} **Backdoor**{.cve-chip} **Malvertising**{.cve-chip} **Operation FlutterBridge**{.cve-chip}
+
+    Researchers uncovered Operation FlutterBridge, a malvertising campaign using trojanized macOS apps to deploy FlutterShell, a backdoor built with Flutter and WebView/JavaScript bridges for remote command execution, persistence, and data theft.
+
+    [Read more](2026/Week23/FlutterShell.md)
 
 </div>

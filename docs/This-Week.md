@@ -8,64 +8,74 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![Instagram](2026/Week22/images/Instagram.png)
+-   ![Gas](2026/Week23/images/Gas.png)
 
-    **Meta AI Support Chatbot Instagram Account Takeover**
+    **Exposed U.S. Gas Station Tank Gauge Systems**
 
-    **AI Exploitation**{.cve-chip} **Account Takeover**{.cve-chip} **Prompt Manipulation**{.cve-chip} **Instagram**{.cve-chip}
+    **Operational Technology (OT)**{.cve-chip} **Critical Infrastructure**{.cve-chip} **ATG Systems**{.cve-chip} **Internet Exposure**{.cve-chip}
 
-    Attackers manipulated Meta's AI account recovery chatbot through crafted prompts to change recovery emails and trigger password resets without identity verification — hijacking Instagram accounts including the Obama White House page and Sephora. Weak or absent MFA amplified the success rate.
+    More than 900 U.S. internet-accessible Automatic Tank Gauge (ATG) systems were identified as exposed and vulnerable, enabling attackers to tamper with fuel monitoring and leak detection functions. Agencies warn this could trigger operational disruption, environmental risk, and broader critical infrastructure impact.
 
-    [Read more](2026/Week22/Instagram.md)
+    [Read more](2026/Week23/Gas.md)
 
--   ![Android](2026/Week22/images/Android.png)
+-   ![Acer](2026/Week23/images/Acer.png)
 
-    **Google Android June 2026 Security Update – Actively Exploited Android Zero-Day**
+    **Acer Wave 7 Router Zero-Day Vulnerabilities (CVE-2026-49200 & CVE-2026-49201)**
 
-    **CVE-2025-48595**{.cve-chip} **Zero-Day**{.cve-chip} **Android**{.cve-chip} **Privilege Escalation**{.cve-chip}
+    **CVE-2026-49200**{.cve-chip} **CVE-2026-49201**{.cve-chip} **Zero-Day**{.cve-chip} **Router Security**{.cve-chip}
 
-    Google's June 2026 bulletin patches 124 Android flaws including CVE-2025-48595, an actively exploited Framework privilege escalation zero-day requiring no additional permissions. Devices must reach patch level 2026-06-05 for full coverage; unmanaged and BYOD devices face elevated enterprise risk.
+    Two maximum-severity zero-day flaws in Acer Wave 7 routers can expose plaintext credentials and allow malicious backup upload via a hardcoded AES key, enabling persistent compromise, DNS hijacking, and potential botnet abuse.
 
-    [Read more](2026/Week22/Android.md)
+    [Read more](2026/Week23/Acer.md)
 
--   ![FIFA](2026/Week22/images/FIFA.png)
+-   ![SD-WAN](2026/Week23/images/SD-WAN.png)
 
-    **FIFA World Cup 2026 Fraud and Phishing Campaign**
+    **Cisco Catalyst SD-WAN Manager Vulnerability - CVE-2026-20245**
 
-    **Phishing**{.cve-chip} **Typosquatting**{.cve-chip} **Financial Fraud**{.cve-chip} **Event-Themed Scam**{.cve-chip}
+    **CVE-2026-20245**{.cve-chip} **Cisco SD-WAN**{.cve-chip} **Active Exploitation**{.cve-chip} **Management Plane Risk**{.cve-chip}
 
-    The FBI warned of thousands of fraudulent FIFA-themed domains stealing tickets payments, credentials, and PII from fans. The "Ghost Stadium" operation uses cloned portals, fake SSO pages, and malicious search ads to impersonate legitimate FIFA services for the 2026 World Cup.
+    Cisco confirmed active exploitation of a high-severity vulnerability in Catalyst SD-WAN Manager that could enable unauthorized management-plane actions, policy tampering, and lateral movement from exposed control infrastructure.
 
-    [Read more](2026/Week22/FIFA.md)
+    [Read more](2026/Week23/SD-WAN.md)
 
--   ![Nimbus](2026/Week22/images/Nimbus.png)
+-   ![SSRF](2026/Week23/images/SSRF.png)
 
-    **Nimbus Manticore Expanded Attacks with AI-Assisted Malware and Fake Zoom Installers**
+    **Cisco Unified CM Critical SSRF Vulnerability - CVE-2026-20230**
 
-    **Nimbus Manticore**{.cve-chip} **Iran-Linked APT**{.cve-chip} **MiniFast Malware**{.cve-chip} **AppDomain Hijacking**{.cve-chip}
+    **CVE-2026-20230**{.cve-chip} **SSRF**{.cve-chip} **Cisco Unified CM**{.cve-chip} **Root Access Risk**{.cve-chip}
 
-    IRGC-linked Nimbus Manticore deployed the new MiniFast backdoor via trojanized Zoom installers and SEO poisoning, abusing .NET AppDomain Hijacking to load malicious DLLs in trusted processes. AI-assisted malware development and Zoom scheduled-task persistence target aviation, defense, telecom, and software sectors.
+    Cisco disclosed a critical unauthenticated SSRF flaw in Unified CM WebDialer with public PoC exploit code available; successful exploitation can enable arbitrary file writes and escalation to root-level access on vulnerable servers.
 
-    [Read more](2026/Week22/Nimbus.md)
+    [Read more](2026/Week23/SSRF.md)
 
--   ![Zero-Click WhatsApp](2026/Week22/images/WhatsApp.png)
+-   ![Gemini](2026/Week23/images/Gemini.png)
 
-    **Zero-Click WhatsApp Account Takeover Targeting iOS 16 Devices**
+    **Google Gemini Android Notification Prompt Injection Vulnerability**
 
-    **CVE-2025-43300**{.cve-chip} **CVE-2025-55177**{.cve-chip} **Zero-Click Exploit**{.cve-chip} **WhatsApp**{.cve-chip}
+    **Prompt Injection**{.cve-chip} **Google Gemini**{.cve-chip} **Android**{.cve-chip} **Notification Abuse**{.cve-chip}
 
-    A two-CVE zero-click chain (Apple ImageIO + WhatsApp linked-device weakness) silently hijacks WhatsApp accounts on iOS 16 with no user interaction. The rogue session may not appear in Linked Devices, leaving victims unaware until an unexpected logout — particularly dangerous for journalists, executives, and government officials.
+    Researchers showed that crafted notifications from apps like WhatsApp and Slack could indirectly inject hidden instructions into Gemini on Android, potentially triggering unauthorized assistant actions through user voice confirmations.
 
-    [Read more](2026/Week22/WhatsApp.md)
+    [Read more](2026/Week23/Gemini.md)
 
--   ![Botnet](2026/Week22/images/Botnet.png)
+-   ![Android](2026/Week23/images/Android.png)
 
-    **Dutch Authorities Dismantle 17-Million-Device Botnet**
+    **Asin Android Spyware Campaign**
 
-    **Botnet Takedown**{.cve-chip} **Residential Proxy**{.cve-chip} **ASOCKS**{.cve-chip} **Law Enforcement**{.cve-chip}
+    **Android Spyware**{.cve-chip} **Mobile Threat**{.cve-chip} **Social Engineering**{.cve-chip} **Arabic-Speaking Targets**{.cve-chip}
 
-    Dutch authorities seized 200+ servers and dismantled a ~17-million-device botnet linked to the ASOCKS residential proxy network. Compromised routers, phones, and IoT devices were abused to route criminal traffic — enabling phishing, DDoS, credential abuse, and fraud while disguising the true origin.
+    A newly identified Android spyware family named Asin is targeting Arabic-speaking users via fake APK apps and malicious websites, then abusing granted permissions to collect SMS, contacts, device data, and files while persisting in the background.
 
-    [Read more](2026/Week22/Botnet.md)
+    [Read more](2026/Week23/Android.md)
+
+-   ![FlutterShell](2026/Week23/images/FlutterShell.png)
+
+    **FlutterShell macOS Backdoor Campaign**
+
+    **macOS Malware**{.cve-chip} **Backdoor**{.cve-chip} **Malvertising**{.cve-chip} **Operation FlutterBridge**{.cve-chip}
+
+    Researchers uncovered Operation FlutterBridge, a malvertising campaign using trojanized macOS apps to deploy FlutterShell, a backdoor built with Flutter and WebView/JavaScript bridges for remote command execution, persistence, and data theft.
+
+    [Read more](2026/Week23/FlutterShell.md)
 
 </div>

@@ -430,3 +430,11 @@ nav:
           - "Dutch Authorities Dismantle 17-Million-Device Botnet": 2026/Week22/Botnet.md
           - "Meta AI Support Chatbot Instagram Account Takeover": 2026/Week22/Instagram.md
           - "Google Android June 2026 Security Update – Actively Exploited Android Zero-Day": 2026/Week22/Android.md
+        - "week23":
+          - "Exposed U.S. Gas Station Tank Gauge Systems": 2026/Week23/Gas.md
+          - "Acer Wave 7 Router Zero-Day Vulnerabilities (CVE-2026-49200 & CVE-2026-49201)": 2026/Week23/Acer.md
+          - "Cisco Catalyst SD-WAN Manager Vulnerability - CVE-2026-20245": 2026/Week23/SD-WAN.md
+          - "Cisco Unified CM Critical SSRF Vulnerability - CVE-2026-20230": 2026/Week23/SSRF.md
+          - "Google Gemini Android Notification Prompt Injection Vulnerability": 2026/Week23/Gemini.md
+          - "Asin Android Spyware Campaign": 2026/Week23/Android.md
+          - "FlutterShell macOS Backdoor Campaign": 2026/Week23/FlutterShell.md
