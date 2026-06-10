@@ -11912,6 +11912,146 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026/Week23/NFCShare/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NFCShare Android Malware Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026/Week23/Kernel/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linux Kernel nf_tables Privilege Escalation - CVE-2026-23111
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026/Week23/Veeam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Veeam Backup & Replication RCE Vulnerability - CVE-2026-44963
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026/Week23/WinRAR/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    WinRAR CVE-2025-8088 Exploitation Campaign
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2026/Week23/RoguePlanet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RoguePlanet – Microsoft Defender Zero-Day Local Privilege Escalation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -11985,6 +12125,41 @@
 <div><h1 id="this-weeks-security-incidents">This Week's Security Incidents</h1>
 <div class="grid cards">
 <ul>
+<li>
+<p><img alt="NFCShare" src="../2026/Week23/images/NFCShare.png"></p>
+<p><strong>NFCShare Android Malware Campaign</strong></p>
+<p><strong class="cve-chip">Android Malware</strong> <strong class="cve-chip">NFC Theft</strong> <strong class="cve-chip">Mobile Banking Fraud</strong> <strong class="cve-chip">Social Engineering</strong></p>
+<p>A sophisticated Android malware campaign spreads via fake banking app updates on GitHub. It abuses Android NFC and EMV commands to steal payment card data and PINs, enabling contactless payment fraud and card emulation attacks against banking customers in Italy and Spain.</p>
+<p><a href="../2026/Week23/NFCShare/">Read more</a></p>
+</li>
+<li>
+<p><img alt="Kernel" src="../2026/Week23/images/Kernel.png"></p>
+<p><strong>Linux Kernel nf_tables One-Character Privilege Escalation Vulnerability</strong></p>
+<p><strong class="cve-chip">CVE-2026-23111</strong> <strong class="cve-chip">Privilege Escalation</strong> <strong class="cve-chip">Use-After-Free</strong> <strong class="cve-chip">Container Escape</strong></p>
+<p>A single incorrect <code>!</code> operator in the Linux kernel's nf_tables subsystem triggers a Use-After-Free condition, allowing local low-privileged attackers to escalate to root. Public PoC exploit code is available. Confirmed on Debian Bookworm/Trixie and Ubuntu 22.04/24.04 LTS. Container escape is also possible in affected environments.</p>
+<p><a href="../2026/Week23/Kernel/">Read more</a></p>
+</li>
+<li>
+<p><img alt="Veeam" src="../2026/Week23/images/Veeam.png"></p>
+<p><strong>Veeam Backup &amp; Replication Remote Code Execution Vulnerability</strong></p>
+<p><strong class="cve-chip">CVE-2026-44963</strong> <strong class="cve-chip">Remote Code Execution</strong> <strong class="cve-chip">Backup Infrastructure</strong> <strong class="cve-chip">Ransomware Risk</strong></p>
+<p>A critical RCE vulnerability in Veeam Backup &amp; Replication allows low-privileged domain users to compromise backup servers, enabling ransomware deployment and backup destruction. Affects version 12.3.2.4465 and earlier on domain-joined servers; patched in 12.3.2.4854.</p>
+<p><a href="../2026/Week23/Veeam/">Read more</a></p>
+</li>
+<li>
+<p><img alt="WinRAR" src="../2026/Week23/images/WinRAR.png"></p>
+<p><strong>WinRAR CVE-2025-8088 Exploitation Campaign</strong></p>
+<p><strong class="cve-chip">CVE-2025-8088</strong> <strong class="cve-chip">Path Traversal</strong> <strong class="cve-chip">Russia-Aligned APT</strong> <strong class="cve-chip">Ukraine Targeting</strong></p>
+<p>Russia-aligned threat actors exploited a WinRAR path traversal flaw to deliver malware via malicious RAR archives targeting Ukrainian organizations. Attackers abused NTFS Alternate Data Streams to drop GIFTEDCROOK and other payloads into Startup folders, enabling persistence and credential theft.</p>
+<p><a href="../2026/Week23/WinRAR/">Read more</a></p>
+</li>
+<li>
+<p><img alt="RoguePlanet" src="../2026/Week23/images/RoguePlanet.png"></p>
+<p><strong>RoguePlanet – Microsoft Defender Zero-Day Local Privilege Escalation</strong></p>
+<p><strong class="cve-chip">Zero-Day</strong> <strong class="cve-chip">Privilege Escalation</strong> <strong class="cve-chip">Race Condition</strong> <strong class="cve-chip">Microsoft Defender</strong></p>
+<p>A zero-day race condition (TOCTOU) in Microsoft Defender's remediation engine allows low-privileged local attackers to escalate to SYSTEM by abusing symbolic links and NTFS junctions during privileged file operations. No patch is yet available.</p>
+<p><a href="../2026/Week23/RoguePlanet/">Read more</a></p>
+</li>
 <li>
 <p><img alt="C0XMO" src="../2026/Week23/images/C0XMO.png"></p>
 <p><strong>C0XMO Botnet Spreads via DD-WRT Router Flaw, Kills Rival Malware</strong></p>
