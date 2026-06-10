@@ -439,3 +439,8 @@ nav:
           - "Asin Android Spyware Campaign": 2026/Week23/Android.md
           - "FlutterShell macOS Backdoor Campaign": 2026/Week23/FlutterShell.md
           - "C0XMO Botnet Spreads via DD-WRT Router Flaw, Kills Rival Malware": 2026/Week23/C0XMO.md
+          - "NFCShare Android Malware Campaign": 2026/Week23/NFCShare.md
+          - "Linux Kernel nf_tables Privilege Escalation - CVE-2026-23111": 2026/Week23/Kernel.md
+          - "Veeam Backup & Replication RCE Vulnerability - CVE-2026-44963": 2026/Week23/Veeam.md
+          - "WinRAR CVE-2025-8088 Exploitation Campaign": 2026/Week23/WinRAR.md
+          - "RoguePlanet – Microsoft Defender Zero-Day Local Privilege Escalation": 2026/Week23/RoguePlanet.md
