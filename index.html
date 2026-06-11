@@ -12050,6 +12050,62 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2026/Week23/JDY/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    China-Linked JDY Botnet Expands to 1,500+ Devices for Cyber Reconnaissance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2026/Week23/CheckPoint/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Check Point VPN Authentication Bypass - CVE-2026-50751
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -12124,39 +12180,18 @@
 <div class="grid cards">
 <ul>
 <li>
-<p><img alt="NFCShare" src="2026/Week23/images/NFCShare.png"></p>
-<p><strong>NFCShare Android Malware Campaign</strong></p>
-<p><strong class="cve-chip">Android Malware</strong> <strong class="cve-chip">NFC Theft</strong> <strong class="cve-chip">Mobile Banking Fraud</strong> <strong class="cve-chip">Social Engineering</strong></p>
-<p>A sophisticated Android malware campaign spreads via fake banking app updates on GitHub. It abuses Android NFC and EMV commands to steal payment card data and PINs, enabling contactless payment fraud and card emulation attacks against banking customers in Italy and Spain.</p>
-<p><a href="2026/Week23/NFCShare/">Read more</a></p>
+<p><img alt="JDY" src="2026/Week23/images/JDY.png"></p>
+<p><strong>China-Linked JDY Botnet Expands to 1,500+ Devices for Cyber Reconnaissance</strong></p>
+<p><strong class="cve-chip">China-Nexus APT</strong> <strong class="cve-chip">IoT Botnet</strong> <strong class="cve-chip">Reconnaissance</strong> <strong class="cve-chip">Volt Typhoon</strong> <strong class="cve-chip">Critical Infrastructure</strong></p>
+<p>A China-linked botnet of 1,500+ compromised SOHO routers and IoT devices scans the internet to map exposed services and feed targeting data to Volt Typhoon and other Chinese state actors. Rebuilt after the 2024 KV-botnet takedown, JDY focuses heavily on U.S. military and critical infrastructure networks.</p>
+<p><a href="2026/Week23/JDY/">Read more</a></p>
 </li>
 <li>
-<p><img alt="Kernel" src="2026/Week23/images/Kernel.png"></p>
-<p><strong>Linux Kernel nf_tables One-Character Privilege Escalation Vulnerability</strong></p>
-<p><strong class="cve-chip">CVE-2026-23111</strong> <strong class="cve-chip">Privilege Escalation</strong> <strong class="cve-chip">Use-After-Free</strong> <strong class="cve-chip">Container Escape</strong></p>
-<p>A single incorrect <code>!</code> operator in the Linux kernel's nf_tables subsystem triggers a Use-After-Free condition, allowing local low-privileged attackers to escalate to root. Public PoC exploit code is available. Confirmed on Debian Bookworm/Trixie and Ubuntu 22.04/24.04 LTS. Container escape is also possible in affected environments.</p>
-<p><a href="2026/Week23/Kernel/">Read more</a></p>
-</li>
-<li>
-<p><img alt="Veeam" src="2026/Week23/images/Veeam.png"></p>
-<p><strong>Veeam Backup &amp; Replication Remote Code Execution Vulnerability</strong></p>
-<p><strong class="cve-chip">CVE-2026-44963</strong> <strong class="cve-chip">Remote Code Execution</strong> <strong class="cve-chip">Backup Infrastructure</strong> <strong class="cve-chip">Ransomware Risk</strong></p>
-<p>A critical RCE vulnerability in Veeam Backup &amp; Replication allows low-privileged domain users to compromise backup servers, enabling ransomware deployment and backup destruction. Affects version 12.3.2.4465 and earlier on domain-joined servers; patched in 12.3.2.4854.</p>
-<p><a href="2026/Week23/Veeam/">Read more</a></p>
-</li>
-<li>
-<p><img alt="WinRAR" src="2026/Week23/images/WinRAR.png"></p>
-<p><strong>WinRAR CVE-2025-8088 Exploitation Campaign</strong></p>
-<p><strong class="cve-chip">CVE-2025-8088</strong> <strong class="cve-chip">Path Traversal</strong> <strong class="cve-chip">Russia-Aligned APT</strong> <strong class="cve-chip">Ukraine Targeting</strong></p>
-<p>Russia-aligned threat actors exploited a WinRAR path traversal flaw to deliver malware via malicious RAR archives targeting Ukrainian organizations. Attackers abused NTFS Alternate Data Streams to drop GIFTEDCROOK and other payloads into Startup folders, enabling persistence and credential theft.</p>
-<p><a href="2026/Week23/WinRAR/">Read more</a></p>
-</li>
-<li>
-<p><img alt="RoguePlanet" src="2026/Week23/images/RoguePlanet.png"></p>
-<p><strong>RoguePlanet – Microsoft Defender Zero-Day Local Privilege Escalation</strong></p>
-<p><strong class="cve-chip">Zero-Day</strong> <strong class="cve-chip">Privilege Escalation</strong> <strong class="cve-chip">Race Condition</strong> <strong class="cve-chip">Microsoft Defender</strong></p>
-<p>A zero-day race condition (TOCTOU) in Microsoft Defender's remediation engine allows low-privileged local attackers to escalate to SYSTEM by abusing symbolic links and NTFS junctions during privileged file operations. No patch is yet available.</p>
-<p><a href="2026/Week23/RoguePlanet/">Read more</a></p>
+<p><img alt="CheckPoint" src="2026/Week23/images/CheckPoint.png"></p>
+<p><strong>Check Point VPN Authentication Bypass Vulnerability – CVE-2026-50751</strong></p>
+<p><strong class="cve-chip">CVE-2026-50751</strong> <strong class="cve-chip">CVE-2026-50752</strong> <strong class="cve-chip">Authentication Bypass</strong> <strong class="cve-chip">Active Exploitation</strong> <strong class="cve-chip">Ransomware</strong></p>
+<p>A critical authentication bypass in Check Point Remote Access VPN is actively exploited by Qilin ransomware affiliates, allowing unauthorized VPN sessions without valid credentials. CISA issued a 3-day emergency patch directive for U.S. federal agencies. Targets IKEv1-enabled configurations.</p>
+<p><a href="2026/Week23/CheckPoint/">Read more</a></p>
 </li>
 </ul>
 </div></div>
