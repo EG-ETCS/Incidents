@@ -444,3 +444,5 @@ nav:
           - "Veeam Backup & Replication RCE Vulnerability - CVE-2026-44963": 2026/Week23/Veeam.md
           - "WinRAR CVE-2025-8088 Exploitation Campaign": 2026/Week23/WinRAR.md
           - "RoguePlanet – Microsoft Defender Zero-Day Local Privilege Escalation": 2026/Week23/RoguePlanet.md
+          - "China-Linked JDY Botnet Expands to 1,500+ Devices for Cyber Reconnaissance": 2026/Week23/JDY.md
+          - "Check Point VPN Authentication Bypass - CVE-2026-50751": 2026/Week23/CheckPoint.md

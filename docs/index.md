@@ -8,54 +8,24 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![NFCShare](2026/Week23/images/NFCShare.png)
+-   ![JDY](2026/Week23/images/JDY.png)
 
-    **NFCShare Android Malware Campaign**
+    **China-Linked JDY Botnet Expands to 1,500+ Devices for Cyber Reconnaissance**
 
-    **Android Malware**{.cve-chip} **NFC Theft**{.cve-chip} **Mobile Banking Fraud**{.cve-chip} **Social Engineering**{.cve-chip}
+    **China-Nexus APT**{.cve-chip} **IoT Botnet**{.cve-chip} **Reconnaissance**{.cve-chip} **Volt Typhoon**{.cve-chip} **Critical Infrastructure**{.cve-chip}
 
-    A sophisticated Android malware campaign spreads via fake banking app updates on GitHub. It abuses Android NFC and EMV commands to steal payment card data and PINs, enabling contactless payment fraud and card emulation attacks against banking customers in Italy and Spain.
+    A China-linked botnet of 1,500+ compromised SOHO routers and IoT devices scans the internet to map exposed services and feed targeting data to Volt Typhoon and other Chinese state actors. Rebuilt after the 2024 KV-botnet takedown, JDY focuses heavily on U.S. military and critical infrastructure networks.
 
-    [Read more](2026/Week23/NFCShare.md)
+    [Read more](2026/Week23/JDY.md)
 
--   ![Kernel](2026/Week23/images/Kernel.png)
+-   ![CheckPoint](2026/Week23/images/CheckPoint.png)
 
-    **Linux Kernel nf_tables One-Character Privilege Escalation Vulnerability**
+    **Check Point VPN Authentication Bypass Vulnerability – CVE-2026-50751**
 
-    **CVE-2026-23111**{.cve-chip} **Privilege Escalation**{.cve-chip} **Use-After-Free**{.cve-chip} **Container Escape**{.cve-chip}
+    **CVE-2026-50751**{.cve-chip} **CVE-2026-50752**{.cve-chip} **Authentication Bypass**{.cve-chip} **Active Exploitation**{.cve-chip} **Ransomware**{.cve-chip}
 
-    A single incorrect `!` operator in the Linux kernel's nf_tables subsystem triggers a Use-After-Free condition, allowing local low-privileged attackers to escalate to root. Public PoC exploit code is available. Confirmed on Debian Bookworm/Trixie and Ubuntu 22.04/24.04 LTS. Container escape is also possible in affected environments.
+    A critical authentication bypass in Check Point Remote Access VPN is actively exploited by Qilin ransomware affiliates, allowing unauthorized VPN sessions without valid credentials. CISA issued a 3-day emergency patch directive for U.S. federal agencies. Targets IKEv1-enabled configurations.
 
-    [Read more](2026/Week23/Kernel.md)
-
--   ![Veeam](2026/Week23/images/Veeam.png)
-
-    **Veeam Backup & Replication Remote Code Execution Vulnerability**
-
-    **CVE-2026-44963**{.cve-chip} **Remote Code Execution**{.cve-chip} **Backup Infrastructure**{.cve-chip} **Ransomware Risk**{.cve-chip}
-
-    A critical RCE vulnerability in Veeam Backup & Replication allows low-privileged domain users to compromise backup servers, enabling ransomware deployment and backup destruction. Affects version 12.3.2.4465 and earlier on domain-joined servers; patched in 12.3.2.4854.
-
-    [Read more](2026/Week23/Veeam.md)
-
--   ![WinRAR](2026/Week23/images/WinRAR.png)
-
-    **WinRAR CVE-2025-8088 Exploitation Campaign**
-
-    **CVE-2025-8088**{.cve-chip} **Path Traversal**{.cve-chip} **Russia-Aligned APT**{.cve-chip} **Ukraine Targeting**{.cve-chip}
-
-    Russia-aligned threat actors exploited a WinRAR path traversal flaw to deliver malware via malicious RAR archives targeting Ukrainian organizations. Attackers abused NTFS Alternate Data Streams to drop GIFTEDCROOK and other payloads into Startup folders, enabling persistence and credential theft.
-
-    [Read more](2026/Week23/WinRAR.md)
-
--   ![RoguePlanet](2026/Week23/images/RoguePlanet.png)
-
-    **RoguePlanet – Microsoft Defender Zero-Day Local Privilege Escalation**
-
-    **Zero-Day**{.cve-chip} **Privilege Escalation**{.cve-chip} **Race Condition**{.cve-chip} **Microsoft Defender**{.cve-chip}
-
-    A zero-day race condition (TOCTOU) in Microsoft Defender's remediation engine allows low-privileged local attackers to escalate to SYSTEM by abusing symbolic links and NTFS junctions during privileged file operations. No patch is yet available.
-
-    [Read more](2026/Week23/RoguePlanet.md)
+    [Read more](2026/Week23/CheckPoint.md)
 
 </div>
