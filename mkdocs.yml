@@ -452,3 +452,4 @@ nav:
           - "Handala Cyberattack on California Water Service (Cal Water)": 2026/Week24/CalWater.md
           - "China-linked Linux Authentication Backdoor Campaign & Long-term Authentication Flow Hijacking Operation": 2026/Week24/Hijacking.md
           - "Critical Splunk Enterprise Vulnerability": 2026/Week24/Splunk.md
+          - "Cisco SD-WAN Make-Me-Root Vulnerability Chain - CVE-2026-20127": 2026/Week24/SD-WAN.md
