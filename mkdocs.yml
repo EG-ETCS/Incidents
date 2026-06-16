@@ -446,3 +446,9 @@ nav:
           - "RoguePlanet – Microsoft Defender Zero-Day Local Privilege Escalation": 2026/Week23/RoguePlanet.md
           - "China-Linked JDY Botnet Expands to 1,500+ Devices for Cyber Reconnaissance": 2026/Week23/JDY.md
           - "Check Point VPN Authentication Bypass - CVE-2026-50751": 2026/Week23/CheckPoint.md
+        - "week24":
+          - "Exposure of 21,786 Internet-Connected Home Cameras Without Password Protection": 2026/Week24/Cameras.md
+          - "U.S. Government Restricts Foreign Access to Anthropic Fable 5 and Mythos 5 AI Models": 2026/Week24/Anthropic.md
+          - "Handala Cyberattack on California Water Service (Cal Water)": 2026/Week24/CalWater.md
+          - "China-linked Linux Authentication Backdoor Campaign & Long-term Authentication Flow Hijacking Operation": 2026/Week24/Hijacking.md
+          - "Critical Splunk Enterprise Vulnerability": 2026/Week24/Splunk.md

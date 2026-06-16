@@ -8,24 +8,54 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![JDY](2026/Week23/images/JDY.png)
+-   ![Cameras](2026/Week24/images/Cameras.png)
 
-    **China-Linked JDY Botnet Expands to 1,500+ Devices for Cyber Reconnaissance**
+    **Exposure of 21,786 Internet-Connected Home Cameras Without Password Protection**
 
-    **China-Nexus APT**{.cve-chip} **IoT Botnet**{.cve-chip} **Reconnaissance**{.cve-chip} **Volt Typhoon**{.cve-chip} **Critical Infrastructure**{.cve-chip}
+    **IoT Exposure**{.cve-chip} **Unsecured Cameras**{.cve-chip} **Privacy Risk**{.cve-chip} **Attack Surface**{.cve-chip}
 
-    A China-linked botnet of 1,500+ compromised SOHO routers and IoT devices scans the internet to map exposed services and feed targeting data to Volt Typhoon and other Chinese state actors. Rebuilt after the 2024 KV-botnet takedown, JDY focuses heavily on U.S. military and critical infrastructure networks.
+    Researchers identified 21,786+ internet-connected home and surveillance cameras exposed without authentication, enabling direct remote viewing of live feeds and increasing the risk of privacy violations, lateral movement, and IoT botnet abuse.
 
-    [Read more](2026/Week23/JDY.md)
+    [Read more](2026/Week24/Cameras.md)
 
--   ![CheckPoint](2026/Week23/images/CheckPoint.png)
+-   ![Anthropic](2026/Week24/images/Anthropic.png)
 
-    **Check Point VPN Authentication Bypass Vulnerability – CVE-2026-50751**
+    **U.S. Government Restricts Foreign Access to Anthropic Fable 5 and Mythos 5 AI Models**
 
-    **CVE-2026-50751**{.cve-chip} **CVE-2026-50752**{.cve-chip} **Authentication Bypass**{.cve-chip} **Active Exploitation**{.cve-chip} **Ransomware**{.cve-chip}
+    **AI Governance**{.cve-chip} **National Security**{.cve-chip} **Model Access Controls**{.cve-chip} **Anthropic**{.cve-chip}
 
-    A critical authentication bypass in Check Point Remote Access VPN is actively exploited by Qilin ransomware affiliates, allowing unauthorized VPN sessions without valid credentials. CISA issued a 3-day emergency patch directive for U.S. federal agencies. Targets IKEv1-enabled configurations.
+    U.S. authorities reportedly required Anthropic to limit foreign access to Fable 5 and Mythos 5 over concerns that advanced model capabilities could support offensive cyber activity and safety-control bypass attempts.
 
-    [Read more](2026/Week23/CheckPoint.md)
+    [Read more](2026/Week24/Anthropic.md)
+
+-   ![CalWater](2026/Week24/images/CalWater.png)
+    
+    **Handala Cyberattack on California Water Service (Cal Water)**
+
+    **Handala**{.cve-chip} **Critical Infrastructure**{.cve-chip} **Water Utility**{.cve-chip} **Data Breach**{.cve-chip}
+
+    The Iran-linked Handala group claimed a breach of Cal Water and leaked about 5GB of alleged data, with reporting indicating a likely foothold through an exposed RTKBase system and lateral movement into internal enterprise environments.
+
+    [Read more](2026/Week24/CalWater.md)
+
+-   ![Hijacking](2026/Week24/images/Hijacking.png)
+
+    **China-linked Linux Authentication Backdoor Campaign & Long-term Authentication Flow Hijacking Operation**
+
+    **Linux Backdoor**{.cve-chip} **Authentication Hijacking**{.cve-chip} **China-Linked Threat**{.cve-chip} **Long-Term Espionage**{.cve-chip}
+
+    A China-linked campaign reportedly tampered with PAM and OpenSSH authentication components to silently intercept credentials and monitor privileged activity, maintaining covert access across enterprise Linux environments for years.
+
+    [Read more](2026/Week24/Hijacking.md)
+
+-   ![Splunk](2026/Week24/images/Splunk.png)
+
+    **Critical Splunk Enterprise Vulnerability**
+
+    **CVE-2026-20253**{.cve-chip} **Splunk Enterprise**{.cve-chip} **Unauthenticated Access**{.cve-chip} **Potential RCE**{.cve-chip}
+
+    A critical Splunk Enterprise flaw in PostgreSQL recovery/backup API endpoints may allow unauthenticated unsafe file operations that can be chained into remote code execution and full server compromise.
+
+    [Read more](2026/Week24/Splunk.md)
 
 </div>
