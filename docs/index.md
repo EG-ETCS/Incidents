@@ -8,14 +8,34 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![SD-WAN](2026/Week24/images/SD-WAN.png)
+-   ![Rokarolla](2026/Week24/images/Rokarolla.png)
 
-    **Cisco SD-WAN 'Make-Me-Root' Bug Under Attack in Catalyst SD-WAN Manager**
+    **Rokarolla Android Banking Malware Campaign**
 
-    **CVE-2026-20127**{.cve-chip} **CVE-2026-20182**{.cve-chip} **CVE-2026-20245**{.cve-chip} **Authentication Bypass**{.cve-chip} **Active Exploitation**{.cve-chip} **CISA KEV**{.cve-chip}
+    **Android Malware**{.cve-chip} **Banking Trojan**{.cve-chip} **Overlay Attack**{.cve-chip} **Cryptocurrency Theft**{.cve-chip} **MFA Bypass**{.cve-chip}
 
-    A chain of critical vulnerabilities in Cisco Catalyst SD-WAN Manager allows unauthenticated attackers to bypass authentication and escalate to root, giving full control of the SD-WAN management plane. Actively exploited since 2023 with CISA emergency directives issued. CVE-2026-20127 carries a CVSS score of 10.0.
+    A new Android banking malware targets 217 banking and crypto apps via fake Chrome/TikTok update pages. It abuses Accessibility Services to perform overlay phishing, intercept SMS OTPs, and remotely control infected devices, enabling account takeover and financial fraud.
 
-    [Read more](2026/Week24/SD-WAN.md)
+    [Read more](2026/Week24/Rokarolla.md)
+
+-   ![ClickFix](2026/Week24/images/ClickFix.png)
+
+    **ClickFix Malware Campaign Expanding Delivery of BabaDeda, Lorem Ipsum, and Potemkin Loaders**
+
+    **ClickFix**{.cve-chip} **Social Engineering**{.cve-chip} **Malware Loader**{.cve-chip} **LOLBins Abuse**{.cve-chip} **Ransomware**{.cve-chip}
+
+    Fake CAPTCHA and browser update pages trick users into manually running malicious PowerShell commands, delivering the BabaDeda, Lorem Ipsum, and Potemkin loaders. Final payloads include ransomware, infostealers, and RATs deployed via LOLBin abuse and process injection.
+
+    [Read more](2026/Week24/ClickFix.md)
+
+-   ![FortiSandbox](2026/Week24/images/FortiSandbox.png)
+
+    **FortiSandbox Critical Vulnerabilities Actively Exploited**
+
+    **CVE-2026-39813**{.cve-chip} **CVE-2026-39808**{.cve-chip} **CVE-2026-25089**{.cve-chip} **Authentication Bypass**{.cve-chip} **Active Exploitation**{.cve-chip} **Remote Code Execution**{.cve-chip}
+
+    Three critical (CVSS 9.8) unauthenticated vulnerabilities in Fortinet FortiSandbox 4.4.0–4.4.8 and 5.0.0–5.0.5 are actively exploited, enabling attackers to bypass authentication and execute OS commands, potentially compromising malware detection and broader Security Fabric infrastructure.
+
+    [Read more](2026/Week24/FortiSandbox.md)
 
 </div>

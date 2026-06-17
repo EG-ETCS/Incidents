@@ -453,3 +453,6 @@ nav:
           - "China-linked Linux Authentication Backdoor Campaign & Long-term Authentication Flow Hijacking Operation": 2026/Week24/Hijacking.md
           - "Critical Splunk Enterprise Vulnerability": 2026/Week24/Splunk.md
           - "Cisco SD-WAN Make-Me-Root Vulnerability Chain - CVE-2026-20127": 2026/Week24/SD-WAN.md
+          - "Rokarolla Android Banking Malware Campaign": 2026/Week24/Rokarolla.md
+          - "ClickFix Malware Campaign - BabaDeda, Lorem Ipsum, and Potemkin Loaders": 2026/Week24/ClickFix.md
+          - "FortiSandbox Critical Vulnerabilities Actively Exploited": 2026/Week24/FortiSandbox.md
