@@ -8,134 +8,94 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![NFCShare](2026/Week23/images/NFCShare.png)
+-   ![Rokarolla](2026/Week24/images/Rokarolla.png)
 
-    **NFCShare Android Malware Campaign**
+    **Rokarolla Android Banking Malware Campaign**
 
-    **Android Malware**{.cve-chip} **NFC Theft**{.cve-chip} **Mobile Banking Fraud**{.cve-chip} **Social Engineering**{.cve-chip}
+    **Android Malware**{.cve-chip} **Banking Trojan**{.cve-chip} **Overlay Attack**{.cve-chip} **Cryptocurrency Theft**{.cve-chip} **MFA Bypass**{.cve-chip}
 
-    A sophisticated Android malware campaign spreads via fake banking app updates on GitHub. It abuses Android NFC and EMV commands to steal payment card data and PINs, enabling contactless payment fraud and card emulation attacks against banking customers in Italy and Spain.
+    A new Android banking malware targets 217 banking and crypto apps via fake Chrome/TikTok update pages. It abuses Accessibility Services to perform overlay phishing, intercept SMS OTPs, and remotely control infected devices, enabling account takeover and financial fraud.
 
-    [Read more](2026/Week23/NFCShare.md)
+    [Read more](2026/Week24/Rokarolla.md)
 
--   ![Kernel](2026/Week23/images/Kernel.png)
+-   ![ClickFix](2026/Week24/images/ClickFix.png)
 
-    **Linux Kernel nf_tables One-Character Privilege Escalation Vulnerability**
+    **ClickFix Malware Campaign Expanding Delivery of BabaDeda, Lorem Ipsum, and Potemkin Loaders**
 
-    **CVE-2026-23111**{.cve-chip} **Privilege Escalation**{.cve-chip} **Use-After-Free**{.cve-chip} **Container Escape**{.cve-chip}
+    **ClickFix**{.cve-chip} **Social Engineering**{.cve-chip} **Malware Loader**{.cve-chip} **LOLBins Abuse**{.cve-chip} **Ransomware**{.cve-chip}
 
-    A single incorrect `!` operator in the Linux kernel's nf_tables subsystem triggers a Use-After-Free condition, allowing local low-privileged attackers to escalate to root. Public PoC exploit code is available. Confirmed on Debian Bookworm/Trixie and Ubuntu 22.04/24.04 LTS. Container escape is also possible in affected environments.
+    Fake CAPTCHA and browser update pages trick users into manually running malicious PowerShell commands, delivering the BabaDeda, Lorem Ipsum, and Potemkin loaders. Final payloads include ransomware, infostealers, and RATs deployed via LOLBin abuse and process injection.
 
-    [Read more](2026/Week23/Kernel.md)
+    [Read more](2026/Week24/ClickFix.md)
 
--   ![Veeam](2026/Week23/images/Veeam.png)
+-   ![FortiSandbox](2026/Week24/images/FortiSandbox.png)
 
-    **Veeam Backup & Replication Remote Code Execution Vulnerability**
+    **FortiSandbox Critical Vulnerabilities Actively Exploited**
 
-    **CVE-2026-44963**{.cve-chip} **Remote Code Execution**{.cve-chip} **Backup Infrastructure**{.cve-chip} **Ransomware Risk**{.cve-chip}
+    **CVE-2026-39813**{.cve-chip} **CVE-2026-39808**{.cve-chip} **CVE-2026-25089**{.cve-chip} **Authentication Bypass**{.cve-chip} **Active Exploitation**{.cve-chip} **Remote Code Execution**{.cve-chip}
 
-    A critical RCE vulnerability in Veeam Backup & Replication allows low-privileged domain users to compromise backup servers, enabling ransomware deployment and backup destruction. Affects version 12.3.2.4465 and earlier on domain-joined servers; patched in 12.3.2.4854.
+    Three critical (CVSS 9.8) unauthenticated vulnerabilities in Fortinet FortiSandbox 4.4.0–4.4.8 and 5.0.0–5.0.5 are actively exploited, enabling attackers to bypass authentication and execute OS commands, potentially compromising malware detection and broader Security Fabric infrastructure.
 
-    [Read more](2026/Week23/Veeam.md)
+    [Read more](2026/Week24/FortiSandbox.md)
 
--   ![WinRAR](2026/Week23/images/WinRAR.png)
+-   ![SD-WAN](2026/Week24/images/SD-WAN.png)
 
-    **WinRAR CVE-2025-8088 Exploitation Campaign**
+    **Cisco SD-WAN 'Make-Me-Root' Bug Under Attack in Catalyst SD-WAN Manager**
 
-    **CVE-2025-8088**{.cve-chip} **Path Traversal**{.cve-chip} **Russia-Aligned APT**{.cve-chip} **Ukraine Targeting**{.cve-chip}
+    **CVE-2026-20127**{.cve-chip} **CVE-2026-20182**{.cve-chip} **CVE-2026-20245**{.cve-chip} **Authentication Bypass**{.cve-chip} **Active Exploitation**{.cve-chip} **CISA KEV**{.cve-chip}
 
-    Russia-aligned threat actors exploited a WinRAR path traversal flaw to deliver malware via malicious RAR archives targeting Ukrainian organizations. Attackers abused NTFS Alternate Data Streams to drop GIFTEDCROOK and other payloads into Startup folders, enabling persistence and credential theft.
+    A chain of critical vulnerabilities in Cisco Catalyst SD-WAN Manager allows unauthenticated attackers to bypass authentication and escalate to root, giving full control of the SD-WAN management plane. Actively exploited since 2023 with CISA emergency directives issued. CVE-2026-20127 carries a CVSS score of 10.0.
 
-    [Read more](2026/Week23/WinRAR.md)
+    [Read more](2026/Week24/SD-WAN.md)
 
--   ![RoguePlanet](2026/Week23/images/RoguePlanet.png)
+-   ![Cameras](2026/Week24/images/Cameras.png)
 
-    **RoguePlanet – Microsoft Defender Zero-Day Local Privilege Escalation**
+    **Exposure of 21,786 Internet-Connected Home Cameras Without Password Protection**
 
-    **Zero-Day**{.cve-chip} **Privilege Escalation**{.cve-chip} **Race Condition**{.cve-chip} **Microsoft Defender**{.cve-chip}
+    **IoT Exposure**{.cve-chip} **Unsecured Cameras**{.cve-chip} **Privacy Risk**{.cve-chip} **Attack Surface**{.cve-chip}
 
-    A zero-day race condition (TOCTOU) in Microsoft Defender's remediation engine allows low-privileged local attackers to escalate to SYSTEM by abusing symbolic links and NTFS junctions during privileged file operations. No patch is yet available.
+    Researchers identified 21,786+ internet-connected home and surveillance cameras exposed without authentication, enabling direct remote viewing of live feeds and increasing the risk of privacy violations, lateral movement, and IoT botnet abuse.
 
-    [Read more](2026/Week23/RoguePlanet.md)
+    [Read more](2026/Week24/Cameras.md)
 
--   ![C0XMO](2026/Week23/images/C0XMO.png)
+-   ![Anthropic](2026/Week24/images/Anthropic.png)
 
-    **C0XMO Botnet Spreads via DD-WRT Router Flaw, Kills Rival Malware**
+    **U.S. Government Restricts Foreign Access to Anthropic Fable 5 and Mythos 5 AI Models**
 
-    **CVE-2021-27137**{.cve-chip} **Gafgyt Variant**{.cve-chip} **IoT Botnet**{.cve-chip} **DDoS**{.cve-chip}
+    **AI Governance**{.cve-chip} **National Security**{.cve-chip} **Model Access Controls**{.cve-chip} **Anthropic**{.cve-chip}
 
-    A new Gafgyt variant exploits a 2021 DD-WRT UPnP stack overflow (CVE-2021-27137) for unauthenticated RCE, then deploys cross-architecture payloads (ARM, MIPS, x86, PowerPC, Android) and kills rival botnet malware to maintain exclusive control. Enrolled devices are weaponized for DDoS operations via ~19 attack methods.
+    U.S. authorities reportedly required Anthropic to limit foreign access to Fable 5 and Mythos 5 over concerns that advanced model capabilities could support offensive cyber activity and safety-control bypass attempts.
 
-    [Read more](2026/Week23/C0XMO.md)
+    [Read more](2026/Week24/Anthropic.md)
 
--   ![Gas](2026/Week23/images/Gas.png)
+-   ![CalWater](2026/Week24/images/CalWater.png)
+    
+    **Handala Cyberattack on California Water Service (Cal Water)**
 
-    **Exposed U.S. Gas Station Tank Gauge Systems**
+    **Handala**{.cve-chip} **Critical Infrastructure**{.cve-chip} **Water Utility**{.cve-chip} **Data Breach**{.cve-chip}
 
-    **Operational Technology (OT)**{.cve-chip} **Critical Infrastructure**{.cve-chip} **ATG Systems**{.cve-chip} **Internet Exposure**{.cve-chip}
+    The Iran-linked Handala group claimed a breach of Cal Water and leaked about 5GB of alleged data, with reporting indicating a likely foothold through an exposed RTKBase system and lateral movement into internal enterprise environments.
 
-    More than 900 U.S. internet-accessible Automatic Tank Gauge (ATG) systems were identified as exposed and vulnerable, enabling attackers to tamper with fuel monitoring and leak detection functions. Agencies warn this could trigger operational disruption, environmental risk, and broader critical infrastructure impact.
+    [Read more](2026/Week24/CalWater.md)
 
-    [Read more](2026/Week23/Gas.md)
+-   ![Hijacking](2026/Week24/images/Hijacking.png)
 
--   ![Acer](2026/Week23/images/Acer.png)
+    **China-linked Linux Authentication Backdoor Campaign & Long-term Authentication Flow Hijacking Operation**
 
-    **Acer Wave 7 Router Zero-Day Vulnerabilities (CVE-2026-49200 & CVE-2026-49201)**
+    **Linux Backdoor**{.cve-chip} **Authentication Hijacking**{.cve-chip} **China-Linked Threat**{.cve-chip} **Long-Term Espionage**{.cve-chip}
 
-    **CVE-2026-49200**{.cve-chip} **CVE-2026-49201**{.cve-chip} **Zero-Day**{.cve-chip} **Router Security**{.cve-chip}
+    A China-linked campaign reportedly tampered with PAM and OpenSSH authentication components to silently intercept credentials and monitor privileged activity, maintaining covert access across enterprise Linux environments for years.
 
-    Two maximum-severity zero-day flaws in Acer Wave 7 routers can expose plaintext credentials and allow malicious backup upload via a hardcoded AES key, enabling persistent compromise, DNS hijacking, and potential botnet abuse.
+    [Read more](2026/Week24/Hijacking.md)
 
-    [Read more](2026/Week23/Acer.md)
+-   ![Splunk](2026/Week24/images/Splunk.png)
 
--   ![SD-WAN](2026/Week23/images/SD-WAN.png)
+    **Critical Splunk Enterprise Vulnerability**
 
-    **Cisco Catalyst SD-WAN Manager Vulnerability - CVE-2026-20245**
+    **CVE-2026-20253**{.cve-chip} **Splunk Enterprise**{.cve-chip} **Unauthenticated Access**{.cve-chip} **Potential RCE**{.cve-chip}
 
-    **CVE-2026-20245**{.cve-chip} **Cisco SD-WAN**{.cve-chip} **Active Exploitation**{.cve-chip} **Management Plane Risk**{.cve-chip}
+    A critical Splunk Enterprise flaw in PostgreSQL recovery/backup API endpoints may allow unauthenticated unsafe file operations that can be chained into remote code execution and full server compromise.
 
-    Cisco confirmed active exploitation of a high-severity vulnerability in Catalyst SD-WAN Manager that could enable unauthorized management-plane actions, policy tampering, and lateral movement from exposed control infrastructure.
-
-    [Read more](2026/Week23/SD-WAN.md)
-
--   ![SSRF](2026/Week23/images/SSRF.png)
-
-    **Cisco Unified CM Critical SSRF Vulnerability - CVE-2026-20230**
-
-    **CVE-2026-20230**{.cve-chip} **SSRF**{.cve-chip} **Cisco Unified CM**{.cve-chip} **Root Access Risk**{.cve-chip}
-
-    Cisco disclosed a critical unauthenticated SSRF flaw in Unified CM WebDialer with public PoC exploit code available; successful exploitation can enable arbitrary file writes and escalation to root-level access on vulnerable servers.
-
-    [Read more](2026/Week23/SSRF.md)
-
--   ![Gemini](2026/Week23/images/Gemini.png)
-
-    **Google Gemini Android Notification Prompt Injection Vulnerability**
-
-    **Prompt Injection**{.cve-chip} **Google Gemini**{.cve-chip} **Android**{.cve-chip} **Notification Abuse**{.cve-chip}
-
-    Researchers showed that crafted notifications from apps like WhatsApp and Slack could indirectly inject hidden instructions into Gemini on Android, potentially triggering unauthorized assistant actions through user voice confirmations.
-
-    [Read more](2026/Week23/Gemini.md)
-
--   ![Android](2026/Week23/images/Android.png)
-
-    **Asin Android Spyware Campaign**
-
-    **Android Spyware**{.cve-chip} **Mobile Threat**{.cve-chip} **Social Engineering**{.cve-chip} **Arabic-Speaking Targets**{.cve-chip}
-
-    A newly identified Android spyware family named Asin is targeting Arabic-speaking users via fake APK apps and malicious websites, then abusing granted permissions to collect SMS, contacts, device data, and files while persisting in the background.
-
-    [Read more](2026/Week23/Android.md)
-
--   ![FlutterShell](2026/Week23/images/FlutterShell.png)
-
-    **FlutterShell macOS Backdoor Campaign**
-
-    **macOS Malware**{.cve-chip} **Backdoor**{.cve-chip} **Malvertising**{.cve-chip} **Operation FlutterBridge**{.cve-chip}
-
-    Researchers uncovered Operation FlutterBridge, a malvertising campaign using trojanized macOS apps to deploy FlutterShell, a backdoor built with Flutter and WebView/JavaScript bridges for remote command execution, persistence, and data theft.
-
-    [Read more](2026/Week23/FlutterShell.md)
+    [Read more](2026/Week24/Splunk.md)
 
 </div>

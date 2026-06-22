@@ -456,3 +456,6 @@ nav:
           - "Rokarolla Android Banking Malware Campaign": 2026/Week24/Rokarolla.md
           - "ClickFix Malware Campaign - BabaDeda, Lorem Ipsum, and Potemkin Loaders": 2026/Week24/ClickFix.md
           - "FortiSandbox Critical Vulnerabilities Actively Exploited": 2026/Week24/FortiSandbox.md
+        - "week25":
+          - "Cisco ISE Critical Command Execution Vulnerability - CVE-2026-20181": 2026/Week25/Cisco.md
+          - "AryStinger Botnet Infects Thousands of D-Link Routers Worldwide": 2026/Week25/AryStinger.md

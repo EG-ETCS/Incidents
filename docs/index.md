@@ -8,34 +8,24 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Rokarolla](2026/Week24/images/Rokarolla.png)
+-   ![Cisco](2026/Week25/images/Cisco.png)
 
-    **Rokarolla Android Banking Malware Campaign**
+    **Cisco ISE Critical Command Execution Vulnerability – CVE-2026-20181**
 
-    **Android Malware**{.cve-chip} **Banking Trojan**{.cve-chip} **Overlay Attack**{.cve-chip} **Cryptocurrency Theft**{.cve-chip} **MFA Bypass**{.cve-chip}
+    **CVE-2026-20181**{.cve-chip} **Remote Code Execution**{.cve-chip} **Privilege Escalation**{.cve-chip} **Cisco ISE**{.cve-chip} **Network Access Control**{.cve-chip}
 
-    A new Android banking malware targets 217 banking and crypto apps via fake Chrome/TikTok update pages. It abuses Accessibility Services to perform overlay phishing, intercept SMS OTPs, and remotely control infected devices, enabling account takeover and financial fraud.
+    A critical (CVSS 9.1) flaw in Cisco ISE and ISE-PIC allows an authenticated admin to execute OS commands via crafted HTTP requests and escalate to root, risking full NAC infrastructure compromise, policy manipulation, and credential theft across integrated identity systems.
 
-    [Read more](2026/Week24/Rokarolla.md)
+    [Read more](2026/Week25/Cisco.md)
 
--   ![ClickFix](2026/Week24/images/ClickFix.png)
+-   ![AryStinger](2026/Week25/images/AryStinger.png)
 
-    **ClickFix Malware Campaign Expanding Delivery of BabaDeda, Lorem Ipsum, and Potemkin Loaders**
+    **AryStinger Botnet Infects Thousands of D-Link Routers Worldwide**
 
-    **ClickFix**{.cve-chip} **Social Engineering**{.cve-chip} **Malware Loader**{.cve-chip} **LOLBins Abuse**{.cve-chip} **Ransomware**{.cve-chip}
+    **CVE-2013-3307**{.cve-chip} **CVE-2016-5681**{.cve-chip} **CVE-2025-11837**{.cve-chip} **IoT Botnet**{.cve-chip} **End-of-Life Devices**{.cve-chip} **DNS Hijacking**{.cve-chip}
 
-    Fake CAPTCHA and browser update pages trick users into manually running malicious PowerShell commands, delivering the BabaDeda, Lorem Ipsum, and Potemkin loaders. Final payloads include ransomware, infostealers, and RATs deployed via LOLBin abuse and process injection.
+    A previously undocumented botnet has hijacked 4,000+ end-of-life D-Link routers worldwide using old HNAP/RCE CVEs, turning them into proxy, scanning, and DNS-hijacking executors. A Go-based variant also targets NAS devices. Geographic focus is South Korea and China.
 
-    [Read more](2026/Week24/ClickFix.md)
-
--   ![FortiSandbox](2026/Week24/images/FortiSandbox.png)
-
-    **FortiSandbox Critical Vulnerabilities Actively Exploited**
-
-    **CVE-2026-39813**{.cve-chip} **CVE-2026-39808**{.cve-chip} **CVE-2026-25089**{.cve-chip} **Authentication Bypass**{.cve-chip} **Active Exploitation**{.cve-chip} **Remote Code Execution**{.cve-chip}
-
-    Three critical (CVSS 9.8) unauthenticated vulnerabilities in Fortinet FortiSandbox 4.4.0–4.4.8 and 5.0.0–5.0.5 are actively exploited, enabling attackers to bypass authentication and execute OS commands, potentially compromising malware detection and broader Security Fabric infrastructure.
-
-    [Read more](2026/Week24/FortiSandbox.md)
+    [Read more](2026/Week25/AryStinger.md)
 
 </div>
