@@ -461,3 +461,5 @@ nav:
           - "AryStinger Botnet Infects Thousands of D-Link Routers Worldwide": 2026/Week25/AryStinger.md
           - "WhatsApp Business Document Phishing & RMM Malware Campaign": 2026/Week25/WhatsApp.md
           - "Usbliter8 Apple BootROM Exploit": 2026/Week25/Apple.md
+          - "Samsung KNOX Kernel UAF Exposes Millions of Galaxy Devices": 2026/Week25/Samsung.md
+          - "FortiBleed Attackers Turn Firewalls Into Credential Stealers as Heists Persist": 2026/Week25/Fortibleed.md 
