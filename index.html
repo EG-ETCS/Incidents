@@ -12586,6 +12586,62 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2026/Week25/Samsung/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Samsung KNOX Kernel UAF Exposes Millions of Galaxy Devices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2026/Week25/Fortibleed/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FortiBleed Attackers Turn Firewalls Into Credential Stealers as Heists Persist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -12660,19 +12716,18 @@
 <div class="grid cards">
 <ul>
 <li>
-<p><img alt="WhatsApp" src="2026/Week25/images/WhatsApp.png"></p>
-<p><strong>WhatsApp Business Document Phishing &amp; RMM Malware Campaign</strong></p>
-<p><strong class="cve-chip">Phishing</strong> <strong class="cve-chip">Social Engineering</strong> <strong class="cve-chip">RMM Abuse</strong> <strong class="cve-chip">LOLBins</strong> <strong class="cve-chip">Credential Theft</strong></p>
-<p>Threat actors send fake invoices and purchase orders via WhatsApp to trick victims into executing malware that silently installs legitimate RMM tools (AnyDesk, ScreenConnect), granting persistent remote access for credential theft, lateral movement, and ransomware deployment.</p>
-<p>Telemetry data from cybersecurity company Kaspersky shows that the campaign spreads across Brazil, India, Mexico, Singapore, the UK, Spain, Taiwan, Australia, Russia, Vietnam, and Malaysia.</p>
-<p><a href="2026/Week25/WhatsApp/">Read more</a></p>
+<p><img alt="Samsung" src="2026/Week25/images/Samsung.png"></p>
+<p><strong>Samsung KNOX Kernel UAF Exposes Millions of Galaxy Devices</strong></p>
+<p><strong class="cve-chip">Kernel UAF</strong> <strong class="cve-chip">Android Privilege Escalation</strong> <strong class="cve-chip">Mobile Security</strong> <strong class="cve-chip">KNOX Stack</strong></p>
+<p>CVE-2026-20971 is a use-after-free race condition in Samsung’s KNOX PROCA/FIVE subsystems that allows an untrusted app to corrupt kernel memory, potentially enabling full device takeover on Galaxy S9–S25 and A-series devices despite KNOX protections.The flaw remained in production for roughly eight years before being patched in the January 2026 Android Security Maintenance Release, leaving hundreds of millions of devices globally exposed until they receive firmware with security patch level 2026-01-01 or later.</p>
+<p><a href="2026/Week25/Samsung/">Read more</a></p>
 </li>
 <li>
-<p><img alt="Apple" src="2026/Week25/images/Apple.png"></p>
-<p><strong>Usbliter8 Apple BootROM Exploit</strong></p>
-<p><strong class="cve-chip">BootROM Exploit</strong> <strong class="cve-chip">Unpatchable</strong> <strong class="cve-chip">A12/A13 Chips</strong> <strong class="cve-chip">Physical Access</strong> <strong class="cve-chip">Chain-of-Trust Bypass</strong></p>
-<p>A newly disclosed exploit bypasses Apple boot defenses on A12/A13 devices via crafted USB packets, enabling arbitrary code execution before iOS security protections initialize. Because the BootROM is hardware-embedded, the vulnerability cannot be fully patched — device replacement is the only complete mitigation.</p>
-<p><a href="2026/Week25/Apple/">Read more</a></p>
+<p><img alt="FortiBleed" src="2026/Week25/images/Fortibleed.png"></p>
+<p><strong>FortiBleed Campaign Turns FortiGate Firewalls into Credential Stealers</strong></p>
+<p><strong class="cve-chip">Credential Harvesting</strong> <strong class="cve-chip">Initial Access</strong> <strong class="cve-chip">Edge Device Compromise</strong> <strong class="cve-chip">Password Cracking</strong> <strong class="cve-chip">VPN Abuse</strong></p>
+<p>FortiBleed is a Russian-speaking initial-access broker campaign that brute-forces and compromises Fortinet FortiGate firewalls, deploying a Golang sniffer to harvest over 110 million credentials from more than 430,000 targets and converting edge firewalls into large-scale credential sensors.Harvested admin and VPN credentials for roughly 73,000–87,000 FortiGate devices across 194 countries are cracked on a 45‑GPU cluster and reused for VPN, AD/LDAP, RDWeb, Citrix, and database access, enabling deep lateral movement and data theft in government, telecom, finance, healthcare, and other critical sectors.</p>
+<p><a href="2026/Week25/Fortibleed/">Read more</a></p>
 </li>
 </ul>
 </div></div>
