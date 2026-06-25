@@ -462,4 +462,8 @@ nav:
           - "WhatsApp Business Document Phishing & RMM Malware Campaign": 2026/Week25/WhatsApp.md
           - "Usbliter8 Apple BootROM Exploit": 2026/Week25/Apple.md
           - "Samsung KNOX Kernel UAF Exposes Millions of Galaxy Devices": 2026/Week25/Samsung.md
-          - "FortiBleed Attackers Turn Firewalls Into Credential Stealers as Heists Persist": 2026/Week25/Fortibleed.md 
+          - "FortiBleed Attackers Turn Firewalls Into Credential Stealers as Heists Persist": 2026/Week25/Fortibleed.md
+          - "Cisco Catalyst SD-WAN Zero-Day Exploitation": 2026/Week25/SD-WAN.md
+          - "Cisco Unified CM SSRF Vulnerability – CVE-2026-20230": 2026/Week25/SSRF.md
+          - "Amadey and StealC Malware Infrastructure Disruption": 2026/Week25/Amadey.md
+          - "Lantronix EDS5000 Critical Vulnerability Exploitation (CVE-2025-67038)": 2026/Week25/Lantronix.md
