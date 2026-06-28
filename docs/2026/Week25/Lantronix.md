@@ -1,5 +1,5 @@
 # Lantronix EDS5000 Critical Vulnerability Exploitation (CVE-2025-67038)
-![alt text](Lantronix.png)
+![alt text](images/Lantronix.png)
 
 **CVE-2025-67038**{.cve-chip}  
 **OS Command Injection**{.cve-chip}  

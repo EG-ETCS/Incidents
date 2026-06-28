@@ -8,94 +8,105 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![Rokarolla](2026/Week24/images/Rokarolla.png)
+-   ![SD-WAN](2026/Week25/images/SD-WAN.png)
 
-    **Rokarolla Android Banking Malware Campaign**
+    **Cisco Catalyst SD-WAN Zero-Day Exploitation**
 
-    **Android Malware**{.cve-chip} **Banking Trojan**{.cve-chip} **Overlay Attack**{.cve-chip} **Cryptocurrency Theft**{.cve-chip} **MFA Bypass**{.cve-chip}
+    **Authentication Bypass**{.cve-chip} **Privilege Escalation**{.cve-chip} **Network Infrastructure**{.cve-chip} **Persistence**{.cve-chip}
 
-    A new Android banking malware targets 217 banking and crypto apps via fake Chrome/TikTok update pages. It abuses Accessibility Services to perform overlay phishing, intercept SMS OTPs, and remotely control infected devices, enabling account takeover and financial fraud.
+    Multiple Cisco Catalyst SD-WAN zero-days, including CVE-2026-20127 and related flaws, were exploited against vManage and vSmart systems to gain privileged access, manipulate NETCONF configuration, and ultimately establish root-level persistence in enterprise SD-WAN environments.Cisco-linked reporting indicates the activity may have dated back to 2023, making exposed controllers a high-value foothold for policy manipulation, traffic monitoring, and pivoting across distributed branch networks.
 
-    [Read more](2026/Week24/Rokarolla.md)
+    [Read more](2026/Week25/SD-WAN.md)
 
--   ![ClickFix](2026/Week24/images/ClickFix.png)
+-   ![SSRF](2026/Week25/images/SSRF.png)
 
-    **ClickFix Malware Campaign Expanding Delivery of BabaDeda, Lorem Ipsum, and Potemkin Loaders**
+    **Cisco Unified CM SSRF Vulnerability Enables Root Compromise**
 
-    **ClickFix**{.cve-chip} **Social Engineering**{.cve-chip} **Malware Loader**{.cve-chip} **LOLBins Abuse**{.cve-chip} **Ransomware**{.cve-chip}
+    **SSRF**{.cve-chip} **VoIP Infrastructure**{.cve-chip} **Root Escalation**{.cve-chip} **WebDialer**{.cve-chip}
 
-    Fake CAPTCHA and browser update pages trick users into manually running malicious PowerShell commands, delivering the BabaDeda, Lorem Ipsum, and Potemkin loaders. Final payloads include ransomware, infostealers, and RATs deployed via LOLBin abuse and process injection.
+    CVE-2026-20230 is a critical server-side request forgery flaw in Cisco Unified CM and Unified CM SME that lets unauthenticated attackers send crafted HTTP requests through the WebDialer component and write files to the underlying operating system.Because those files can be used to escalate privileges to root, exposed systems with WebDialer enabled face a direct path to full compromise, persistence, call-system abuse, and lateral movement unless upgraded to fixed releases or otherwise mitigated
 
-    [Read more](2026/Week24/ClickFix.md)
+    [Read more](2026/Week25/SSRF.md)
 
--   ![FortiSandbox](2026/Week24/images/FortiSandbox.png)
+-   ![Amadey-StealC](2026/Week25/images/Amadey.png)
 
-    **FortiSandbox Critical Vulnerabilities Actively Exploited**
+    **Operation Endgame Disrupts Amadey and StealC Malware Infrastructure**
 
-    **CVE-2026-39813**{.cve-chip} **CVE-2026-39808**{.cve-chip} **CVE-2026-25089**{.cve-chip} **Authentication Bypass**{.cve-chip} **Active Exploitation**{.cve-chip} **Remote Code Execution**{.cve-chip}
+    **Malware Loader**{.cve-chip} **Infostealer**{.cve-chip} **Credential Theft**{.cve-chip} **C2 Disruption**{.cve-chip}
 
-    Three critical (CVSS 9.8) unauthenticated vulnerabilities in Fortinet FortiSandbox 4.4.0–4.4.8 and 5.0.0–5.0.5 are actively exploited, enabling attackers to bypass authentication and execute OS commands, potentially compromising malware detection and broader Security Fabric infrastructure.
+    International law enforcement and private-sector partners disrupted infrastructure tied to the Amadey loader and StealC infostealer as part of Operation Endgame, targeting the backend services used to infect victims, steal credentials, and support follow-on ransomware and fraud operations.The action disrupted 326 servers and 142 domains, recovered about 27 million stolen credentials from more than 385,000 compromised systems, and identified over $47 million in linked criminal cryptocurrency assets.
 
-    [Read more](2026/Week24/FortiSandbox.md)
+    [Read more](2026/Week25/Amadey.md)
 
--   ![SD-WAN](2026/Week24/images/SD-WAN.png)
+-   ![Lantronix-EDS5000](2026/Week25/images/Lantronix.png)
 
-    **Cisco SD-WAN 'Make-Me-Root' Bug Under Attack in Catalyst SD-WAN Manager**
+    **Lantronix EDS5000 Critical Vulnerability Under Active Exploitation**
 
-    **CVE-2026-20127**{.cve-chip} **CVE-2026-20182**{.cve-chip} **CVE-2026-20245**{.cve-chip} **Authentication Bypass**{.cve-chip} **Active Exploitation**{.cve-chip} **CISA KEV**{.cve-chip}
+    **Command Injection**{.cve-chip} **OT Edge Device**{.cve-chip} **Remote Root Access**{.cve-chip} **Network Infrastructure**{.cve-chip}
 
-    A chain of critical vulnerabilities in Cisco Catalyst SD-WAN Manager allows unauthenticated attackers to bypass authentication and escalate to root, giving full control of the SD-WAN management plane. Actively exploited since 2023 with CISA emergency directives issued. CVE-2026-20127 carries a CVSS score of 10.0.
+    CVE-2025-67038 is a critical OS command injection flaw in Lantronix EDS5000 serial device servers that allows remote attackers to inject commands through the username field in the HTTP RPC module, with execution occurring as root.CISA has warned that the vulnerability is being actively exploited in the wild, making exposed EDS5000 devices a high-risk entry point for full device compromise, OT pivoting, and lateral movement into internal networks.
 
-    [Read more](2026/Week24/SD-WAN.md)
+    [Read more](2026/Week25/Lantronix.md)
 
--   ![Cameras](2026/Week24/images/Cameras.png)
+-   ![Samsung](2026/Week25/images/Samsung.png)
 
-    **Exposure of 21,786 Internet-Connected Home Cameras Without Password Protection**
+    **Samsung KNOX Kernel UAF Exposes Millions of Galaxy Devices**
 
-    **IoT Exposure**{.cve-chip} **Unsecured Cameras**{.cve-chip} **Privacy Risk**{.cve-chip} **Attack Surface**{.cve-chip}
+    **Kernel UAF**{.cve-chip} **Android Privilege Escalation**{.cve-chip} **Mobile Security**{.cve-chip} **KNOX Stack**{.cve-chip}
 
-    Researchers identified 21,786+ internet-connected home and surveillance cameras exposed without authentication, enabling direct remote viewing of live feeds and increasing the risk of privacy violations, lateral movement, and IoT botnet abuse.
+    CVE-2026-20971 is a use-after-free race condition in Samsung’s KNOX PROCA/FIVE subsystems that allows an untrusted app to corrupt kernel memory, potentially enabling full device takeover on Galaxy S9–S25 and A-series devices despite KNOX protections.The flaw remained in production for roughly eight years before being patched in the January 2026 Android Security Maintenance Release, leaving hundreds of millions of devices globally exposed until they receive firmware with security patch level 2026-01-01 or later.
 
-    [Read more](2026/Week24/Cameras.md)
+    [Read more](2026/Week25/Samsung.md)
 
--   ![Anthropic](2026/Week24/images/Anthropic.png)
+-   ![FortiBleed](2026/Week25/images/Fortibleed.png)
 
-    **U.S. Government Restricts Foreign Access to Anthropic Fable 5 and Mythos 5 AI Models**
+    **FortiBleed Campaign Turns FortiGate Firewalls into Credential Stealers**
 
-    **AI Governance**{.cve-chip} **National Security**{.cve-chip} **Model Access Controls**{.cve-chip} **Anthropic**{.cve-chip}
+    **Credential Harvesting**{.cve-chip} **Initial Access**{.cve-chip} **Edge Device Compromise**{.cve-chip} **Password Cracking**{.cve-chip} **VPN Abuse**{.cve-chip}
 
-    U.S. authorities reportedly required Anthropic to limit foreign access to Fable 5 and Mythos 5 over concerns that advanced model capabilities could support offensive cyber activity and safety-control bypass attempts.
+    FortiBleed is a Russian-speaking initial-access broker campaign that brute-forces and compromises Fortinet FortiGate firewalls, deploying a Golang sniffer to harvest over 110 million credentials from more than 430,000 targets and converting edge firewalls into large-scale credential sensors.Harvested admin and VPN credentials for roughly 73,000–87,000 FortiGate devices across 194 countries are cracked on a 45‑GPU cluster and reused for VPN, AD/LDAP, RDWeb, Citrix, and database access, enabling deep lateral movement and data theft in government, telecom, finance, healthcare, and other critical sectors.
+    [Read more](2026/Week25/Fortibleed.md)
 
-    [Read more](2026/Week24/Anthropic.md)
+-   ![WhatsApp](2026/Week25/images/WhatsApp.png)
 
--   ![CalWater](2026/Week24/images/CalWater.png)
-    
-    **Handala Cyberattack on California Water Service (Cal Water)**
+    **WhatsApp Business Document Phishing & RMM Malware Campaign**
 
-    **Handala**{.cve-chip} **Critical Infrastructure**{.cve-chip} **Water Utility**{.cve-chip} **Data Breach**{.cve-chip}
+    **Phishing**{.cve-chip} **Social Engineering**{.cve-chip} **RMM Abuse**{.cve-chip} **LOLBins**{.cve-chip} **Credential Theft**{.cve-chip}
 
-    The Iran-linked Handala group claimed a breach of Cal Water and leaked about 5GB of alleged data, with reporting indicating a likely foothold through an exposed RTKBase system and lateral movement into internal enterprise environments.
+    Threat actors send fake invoices and purchase orders via WhatsApp to trick victims into executing malware that silently installs legitimate RMM tools (AnyDesk, ScreenConnect), granting persistent remote access for credential theft, lateral movement, and ransomware deployment.
 
-    [Read more](2026/Week24/CalWater.md)
+    Telemetry data from cybersecurity company Kaspersky shows that the campaign spreads across Brazil, India, Mexico, Singapore, the UK, Spain, Taiwan, Australia, Russia, Vietnam, and Malaysia.
 
--   ![Hijacking](2026/Week24/images/Hijacking.png)
+    [Read more](2026/Week25/WhatsApp.md)
 
-    **China-linked Linux Authentication Backdoor Campaign & Long-term Authentication Flow Hijacking Operation**
+-   ![Apple](2026/Week25/images/Apple.png)
 
-    **Linux Backdoor**{.cve-chip} **Authentication Hijacking**{.cve-chip} **China-Linked Threat**{.cve-chip} **Long-Term Espionage**{.cve-chip}
+    **Usbliter8 Apple BootROM Exploit**
 
-    A China-linked campaign reportedly tampered with PAM and OpenSSH authentication components to silently intercept credentials and monitor privileged activity, maintaining covert access across enterprise Linux environments for years.
+    **BootROM Exploit**{.cve-chip} **Unpatchable**{.cve-chip} **A12/A13 Chips**{.cve-chip} **Physical Access**{.cve-chip} **Chain-of-Trust Bypass**{.cve-chip}
 
-    [Read more](2026/Week24/Hijacking.md)
+    A newly disclosed exploit bypasses Apple boot defenses on A12/A13 devices via crafted USB packets, enabling arbitrary code execution before iOS security protections initialize. Because the BootROM is hardware-embedded, the vulnerability cannot be fully patched — device replacement is the only complete mitigation.
 
--   ![Splunk](2026/Week24/images/Splunk.png)
+    [Read more](2026/Week25/Apple.md)
 
-    **Critical Splunk Enterprise Vulnerability**
+-   ![Cisco](2026/Week25/images/Cisco.png)
 
-    **CVE-2026-20253**{.cve-chip} **Splunk Enterprise**{.cve-chip} **Unauthenticated Access**{.cve-chip} **Potential RCE**{.cve-chip}
+    **Cisco ISE Critical Command Execution Vulnerability – CVE-2026-20181**
 
-    A critical Splunk Enterprise flaw in PostgreSQL recovery/backup API endpoints may allow unauthenticated unsafe file operations that can be chained into remote code execution and full server compromise.
+    **CVE-2026-20181**{.cve-chip} **Remote Code Execution**{.cve-chip} **Privilege Escalation**{.cve-chip} **Cisco ISE**{.cve-chip} **Network Access Control**{.cve-chip}
 
-    [Read more](2026/Week24/Splunk.md)
+    A critical (CVSS 9.1) flaw in Cisco ISE and ISE-PIC allows an authenticated admin to execute OS commands via crafted HTTP requests and escalate to root, risking full NAC infrastructure compromise, policy manipulation, and credential theft across integrated identity systems.
+
+    [Read more](2026/Week25/Cisco.md)
+
+-   ![AryStinger](2026/Week25/images/AryStinger.png)
+
+    **AryStinger Botnet Infects Thousands of D-Link Routers Worldwide**
+
+    **CVE-2013-3307**{.cve-chip} **CVE-2016-5681**{.cve-chip} **CVE-2025-11837**{.cve-chip} **IoT Botnet**{.cve-chip} **End-of-Life Devices**{.cve-chip} **DNS Hijacking**{.cve-chip}
+
+    A previously undocumented botnet has hijacked 4,000+ end-of-life D-Link routers worldwide using old HNAP/RCE CVEs, turning them into proxy, scanning, and DNS-hijacking executors. A Go-based variant also targets NAS devices. Geographic focus is South Korea and China.
+
+    [Read more](2026/Week25/AryStinger.md)
 
 </div>

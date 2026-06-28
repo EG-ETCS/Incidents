@@ -8,44 +8,44 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![SD-WAN](2026/Week25/images/SD-WAN.png)
+-   ![Russian](2026/Week26/images/Russian.png)
 
-    **Cisco Catalyst SD-WAN Zero-Day Exploitation**
+    **Russian Intelligence Phishing Targets Signal Backup Recovery Keys**
 
-    **Authentication Bypass**{.cve-chip} **Privilege Escalation**{.cve-chip} **Network Infrastructure**{.cve-chip} **Persistence**{.cve-chip}
+    **Phishing**{.cve-chip} **Secure Messaging**{.cve-chip} **Account Takeover**{.cve-chip} **Backup Abuse**{.cve-chip}
 
-    Multiple Cisco Catalyst SD-WAN zero-days, including CVE-2026-20127 and related flaws, were exploited against vManage and vSmart systems to gain privileged access, manipulate NETCONF configuration, and ultimately establish root-level persistence in enterprise SD-WAN environments.Cisco-linked reporting indicates the activity may have dated back to 2023, making exposed controllers a high-value foothold for policy manipulation, traffic monitoring, and pivoting across distributed branch networks.
+    FBI and CISA report that Russian intelligence‑linked actors (UNC5792, UNC4221) are posing as Signal support to trick users into enabling backups and pasting their Signal Backup Recovery Key into chats, treating the key like a “mandatory security step.” Once obtained, the key lets attackers restore encrypted backups on their own devices, read private and group histories, and potentially take over accounts, with the same key remaining valid until victims regenerate it or reset backup settings.
 
-    [Read more](2026/Week25/SD-WAN.md)
+    [Read more](2026/Week26/Russian.md)
 
--   ![SSRF](2026/Week25/images/SSRF.png)
+-   ![Hospitality](2026/Week26/images/Hospitality.png)
 
-    **Cisco Unified CM SSRF Vulnerability Enables Root Compromise**
+    **Fake Guest Complaint Emails Drop Node.js Implants on Hotel Front Desks**
 
-    **SSRF**{.cve-chip} **VoIP Infrastructure**{.cve-chip} **Root Escalation**{.cve-chip} **WebDialer**{.cve-chip}
+    **Phishing**{.cve-chip} **Hospitality Sector**{.cve-chip} **Malicious ZIP/LNK**{.cve-chip} **Persistence**{.cve-chip}
 
-    CVE-2026-20230 is a critical server-side request forgery flaw in Cisco Unified CM and Unified CM SME that lets unauthenticated attackers send crafted HTTP requests through the WebDialer component and write files to the underlying operating system.Because those files can be used to escalate privileges to root, exposed systems with WebDialer enabled face a direct path to full compromise, persistence, call-system abuse, and lateral movement unless upgraded to fixed releases or otherwise mitigated
+    An active “photo ZIP” phishing campaign targets hotel and hospitality staff with fake guest complaint emails carrying ZIP archives that hide malicious `.LNK` shortcuts masquerading as image files. When staff run the fake photos, PowerShell chains install a Node.js‑based TonRAT implant, tweak Microsoft Defender exclusions, and establish resilient C2 on front‑desk Windows machines, creating a foothold for later credential theft, ransomware, and wider hotel‑network intrusion.
 
-    [Read more](2026/Week25/SSRF.md)
+    [Read more](2026/Week26/Hospitality.md)
 
--   ![Amadey-StealC](2026/Week25/images/Amadey.png)
+-   ![pedit-COW](2026/Week26/images/pedit-COW.png)
 
-    **Operation Endgame Disrupts Amadey and StealC Malware Infrastructure**
+    **pedit COW Linux tc Bug Grants Root via Page-Cache Corruption**
 
-    **Malware Loader**{.cve-chip} **Infostealer**{.cve-chip} **Credential Theft**{.cve-chip} **C2 Disruption**{.cve-chip}
+    **Linux LPE**{.cve-chip} **Traffic Control (tc)**{.cve-chip} **Page Cache Corruption**{.cve-chip} **In-Memory Exploit**{.cve-chip}
 
-    International law enforcement and private-sector partners disrupted infrastructure tied to the Amadey loader and StealC infostealer as part of Operation Endgame, targeting the backend services used to infect victims, steal credentials, and support follow-on ransomware and fraud operations.The action disrupted 326 servers and 142 domains, recovered about 27 million stolen credentials from more than 385,000 compromised systems, and identified over $47 million in linked criminal cryptocurrency assets.
+    CVE-2026-46331 (“pedit COW”) is a Linux kernel net/sched act_pedit flaw where partial copy‑on‑write allows tc rules to write outside the intended buffer region, corrupting shared page‑cache memory for privileged binaries such as `/bin/su`. Local attackers who can create user namespaces and access tc can poison cached executables to obtain root shells, achieving privilege escalation entirely in memory and evading on‑disk integrity and signature checks.
 
-    [Read more](2026/Week25/Amadey.md)
+    [Read more](2026/Week26/pedit-COW.md)
 
--   ![Lantronix-EDS5000](2026/Week25/images/Lantronix.png)
+-   ![DirtyClone](2026/Week26/images/DirtyClone.png)
 
-    **Lantronix EDS5000 Critical Vulnerability Under Active Exploitation**
+    **DirtyClone Linux Kernel Flaw Enables Stealth Local Root via Cloned Packets**
 
-    **Command Injection**{.cve-chip} **OT Edge Device**{.cve-chip} **Remote Root Access**{.cve-chip} **Network Infrastructure**{.cve-chip}
+    **Linux LPE**{.cve-chip} **Page Cache Write**{.cve-chip} **Kernel Networking**{.cve-chip} **In-Memory Tampering**{.cve-chip}
 
-    CVE-2025-67038 is a critical OS command injection flaw in Lantronix EDS5000 serial device servers that allows remote attackers to inject commands through the username field in the HTTP RPC module, with execution occurring as root.CISA has warned that the vulnerability is being actively exploited in the wild, making exposed EDS5000 devices a high-risk entry point for full device compromise, OT pivoting, and lateral movement into internal networks.
+    DirtyClone (CVE-2026-43503) is a Linux kernel privilege escalation in packet-cloning helpers that drop a safety flag, allowing cloned network packets to overwrite file-backed page-cache memory and corrupt privileged binaries like `/usr/bin/su` without touching the filesystem. On vulnerable Debian, Ubuntu, Fedora, and other multi-tenant systems where unprivileged namespaces can obtain CAP_NET_ADMIN, attackers can chain cloned packets and IPsec ESP decryption into a stealth local‑root exploit that bypasses file‑integrity checks and leaves minimal audit trail.
 
-    [Read more](2026/Week25/Lantronix.md)
+    [Read more](2026/Week26/DirtyClone.md)
 
 </div>

@@ -467,3 +467,8 @@ nav:
           - "Cisco Unified CM SSRF Vulnerability – CVE-2026-20230": 2026/Week25/SSRF.md
           - "Amadey and StealC Malware Infrastructure Disruption": 2026/Week25/Amadey.md
           - "Lantronix EDS5000 Critical Vulnerability Exploitation (CVE-2025-67038)": 2026/Week25/Lantronix.md
+        - "week26":
+          - "Russian Intelligence Targeting Signal Backup Recover": 2026/Week26/Russian.md
+          - "Hospitality Sector Phishing Campaign Using Fake Guest Complaint Emails": 2026/Week26/Hospitality.md
+          - "pedit COW Linux Privilege Escalation Vulnerability": 2026/Week26/pedit-COW.md
+          - "DirtyClone Linux Kernel Privilege Escalation Vulnerability": 2026/Week26/DirtyClone.md

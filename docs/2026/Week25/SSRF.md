@@ -1,5 +1,5 @@
 # Cisco Unified CM SSRF Vulnerability – CVE-2026-20230
-![alt text](SSRF.png)
+![alt text](images/SSRF.png)
 
 **CVE-2026-20230**{.cve-chip}  
 **Server-Side Request Forgery (SSRF)**{.cve-chip}  

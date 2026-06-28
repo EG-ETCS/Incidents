@@ -1,5 +1,5 @@
 # Amadey and StealC Malware Infrastructure Disruption
-![alt text](Amadey.png)
+![alt text](images/Amadey.png)
 
 **No Single CVE**{.cve-chip}  
 **Malware Infrastructure Disruption**{.cve-chip}  

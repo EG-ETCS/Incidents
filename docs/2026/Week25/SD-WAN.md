@@ -1,5 +1,5 @@
 # Cisco Catalyst SD-WAN Zero-Day Exploitation
-![alt text](SD-WAN.png)
+![alt text](images/SD-WAN.png)
 
 **CVE-2026-20182**{.cve-chip}  
 **Authentication Bypass / Privilege Escalation**{.cve-chip}  
