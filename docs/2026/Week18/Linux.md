@@ -1,7 +1,7 @@
-# Actively Exploited Linux Privilege Escalation Vulnerability
+# ‘Copy Fail’ Logic Flaw in Linux Kernel Enables System Takeover
 ![alt text](images/Linux.png)
 
-**CVE-2026-31431**{.cve-chip}  **Linux Privilege Escalation**{.cve-chip}  **CISA KEV**{.cve-chip}  **Active Exploitation**{.cve-chip}
+**CVE-2026-31431**{.cve-chip}   **Copy Fail**{.cve-chip}    **Linux Privilege Escalation**{.cve-chip}  **CISA KEV**{.cve-chip}  **Active Exploitation**{.cve-chip} 
 
 ## Overview
 CISA added a Linux privilege-escalation vulnerability to its Known Exploited Vulnerabilities (KEV) catalog, indicating confirmed real-world exploitation activity. The flaw enables attackers with limited access to escalate privileges to root on affected systems.

@@ -8,44 +8,24 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Russian](2026/Week26/images/Russian.png)
+-   ![Sabotage](2026/Week26/images/Sabotage.png)
 
-    **Russian Intelligence Phishing Targets Signal Backup Recovery Keys**
+    **Iran, Russia, China Use Weakly Secured Water Systems as Hybrid‑Warfare Pressure Points**
 
-    **Phishing**{.cve-chip} **Secure Messaging**{.cve-chip} **Account Takeover**{.cve-chip} **Backup Abuse**{.cve-chip}
+    **ICS/OT Targeting**{.cve-chip} **Water & Wastewater**{.cve-chip} **Nation‑State Activity**{.cve-chip} **Weak Passwords & Exposed PLCs**{.cve-chip}
 
-    FBI and CISA report that Russian intelligence‑linked actors (UNC5792, UNC4221) are posing as Signal support to trick users into enabling backups and pasting their Signal Backup Recovery Key into chats, treating the key like a “mandatory security step.” Once obtained, the key lets attackers restore encrypted backups on their own devices, read private and group histories, and potentially take over accounts, with the same key remaining valid until victims regenerate it or reset backup settings.
+    DomainTools and allied reporting show Iran-, Russia-, and China‑linked actors systematically probing and breaching water and wastewater systems via low‑tech weaknesses—exposed PLCs/HMIs, default passwords, flat IT/OT networks, and insecure remote access—rather than bespoke ICS malware.Incidents in Israel, the US (Muleshoe tank overflow), Norway (floodgate release), and five Polish plants compromised in 2025 highlight a pattern where Iran leans on propaganda and fear, Russia tests small‑scale sabotage, and China’s Volt Typhoon quietly pre‑positions in US utilities for future leverage.
 
-    [Read more](2026/Week26/Russian.md)
+    [Read more](2026/Week26/Sabotage.md)
 
--   ![Hospitality](2026/Week26/images/Hospitality.png)
+-   ![Oracle](2026/Week26/images/Oracle.png)
 
-    **Fake Guest Complaint Emails Drop Node.js Implants on Hotel Front Desks**
+    **Oracle E‑Business Suite Project Portfolio Analysis Privilege Escalation (CVE‑2026‑46960)**
 
-    **Phishing**{.cve-chip} **Hospitality Sector**{.cve-chip} **Malicious ZIP/LNK**{.cve-chip} **Persistence**{.cve-chip}
+    **ERP Privilege Escalation**{.cve-chip} **Improper Access Control**{.cve-chip} **Oracle EBS**{.cve-chip} **Insider / Stolen Creds**{.cve-chip}
 
-    An active “photo ZIP” phishing campaign targets hotel and hospitality staff with fake guest complaint emails carrying ZIP archives that hide malicious `.LNK` shortcuts masquerading as image files. When staff run the fake photos, PowerShell chains install a Node.js‑based TonRAT implant, tweak Microsoft Defender exclusions, and establish resilient C2 on front‑desk Windows machines, creating a foothold for later credential theft, ransomware, and wider hotel‑network intrusion.
+    CVE‑2026‑46960 is an Improper Access Control vulnerability in the Internal Operations component of Oracle Project Portfolio Analysis (E‑Business Suite 12.2.3–12.2.15) that lets an authenticated high‑privileged user fully take over the module via crafted HTTP requests.Once a privileged account is compromised, exploitation is “easily exploitable” over the network with no user interaction, exposing all portfolios, scoring models, and planning data and turning the module into a powerful foothold inside the ERP/finance stack until the June 2026 CPU is applied and access is re‑hardened.
 
-    [Read more](2026/Week26/Hospitality.md)
-
--   ![pedit-COW](2026/Week26/images/pedit-COW.png)
-
-    **pedit COW Linux tc Bug Grants Root via Page-Cache Corruption**
-
-    **Linux LPE**{.cve-chip} **Traffic Control (tc)**{.cve-chip} **Page Cache Corruption**{.cve-chip} **In-Memory Exploit**{.cve-chip}
-
-    CVE-2026-46331 (“pedit COW”) is a Linux kernel net/sched act_pedit flaw where partial copy‑on‑write allows tc rules to write outside the intended buffer region, corrupting shared page‑cache memory for privileged binaries such as `/bin/su`. Local attackers who can create user namespaces and access tc can poison cached executables to obtain root shells, achieving privilege escalation entirely in memory and evading on‑disk integrity and signature checks.
-
-    [Read more](2026/Week26/pedit-COW.md)
-
--   ![DirtyClone](2026/Week26/images/DirtyClone.png)
-
-    **DirtyClone Linux Kernel Flaw Enables Stealth Local Root via Cloned Packets**
-
-    **Linux LPE**{.cve-chip} **Page Cache Write**{.cve-chip} **Kernel Networking**{.cve-chip} **In-Memory Tampering**{.cve-chip}
-
-    DirtyClone (CVE-2026-43503) is a Linux kernel privilege escalation in packet-cloning helpers that drop a safety flag, allowing cloned network packets to overwrite file-backed page-cache memory and corrupt privileged binaries like `/usr/bin/su` without touching the filesystem. On vulnerable Debian, Ubuntu, Fedora, and other multi-tenant systems where unprivileged namespaces can obtain CAP_NET_ADMIN, attackers can chain cloned packets and IPsec ESP decryption into a stealth local‑root exploit that bypasses file‑integrity checks and leaves minimal audit trail.
-
-    [Read more](2026/Week26/DirtyClone.md)
+    [Read more](2026/Week26/Oracle.md)
 
 </div>
