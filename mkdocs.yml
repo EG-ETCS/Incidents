@@ -474,3 +474,5 @@ nav:
           - "DirtyClone Linux Kernel Privilege Escalation Vulnerability": 2026/Week26/DirtyClone.md
           - "Iran, Russia, China Target Water Systems for Sabotage": 2026/Week26/Sabotage.md
           - "Oracle E-Business Suite Flaw CVE-2026-46960 Actively Exploited in the Wild": 2026/Week26/Oracle.md
+          - "Azure CLI Password Spraying Campaign": 2026/Week26/Azure.md
+          - "RustDuck Botnet": 2026/Week26/RustDuck.md
