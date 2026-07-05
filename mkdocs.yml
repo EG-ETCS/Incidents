@@ -476,3 +476,9 @@ nav:
           - "Oracle E-Business Suite Flaw CVE-2026-46960 Actively Exploited in the Wild": 2026/Week26/Oracle.md
           - "Azure CLI Password Spraying Campaign": 2026/Week26/Azure.md
           - "RustDuck Botnet": 2026/Week26/RustDuck.md
+      - "July":
+        - "week27":
+          - "DuneSlide – Critical Cursor AI IDE Prompt Injection Vulnerabilities": 2026/Week27/DuneSlide.md
+          - "Multiple Unpatched Vulnerabilities in FatFs Filesystem Library": 2026/Week27/FatFs.md
+          - "Bad Epoll (CVE-2026-46242)": 2026/Week27/BadEpoll.md
+          - "NetNut Residential Proxy Network Disruption": 2026/Week27/NetNut.md
