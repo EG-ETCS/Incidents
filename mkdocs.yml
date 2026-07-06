@@ -482,3 +482,4 @@ nav:
           - "Multiple Unpatched Vulnerabilities in FatFs Filesystem Library": 2026/Week27/FatFs.md
           - "Bad Epoll (CVE-2026-46242)": 2026/Week27/BadEpoll.md
           - "NetNut Residential Proxy Network Disruption": 2026/Week27/NetNut.md
+          - "DHS HSIN Information-Sharing Platform Breach": 2026/Week27/HSIN.md
