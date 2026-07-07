@@ -8,14 +8,24 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![HSIN](2026/Week27/images/HSIN.png)
+-   ![Cavern](2026/Week27/images/Cavern.png)
 
-    **DHS HSIN information-sharing platform breach (HSIN and associated SharePoint compromised)**
+    **Iran-linked Cavern Manticore Uses Cavern (Cav3rn) Modular C2 Framework**
 
-    **Government Breach**{.cve-chip} **HSIN**{.cve-chip} **SharePoint**{.cve-chip} **Sensitive But Unclassified (SBU)**{.cve-chip} **Interagency Coordination Risk**{.cve-chip}
+    **Iran-Nexus Threat Actor**{.cve-chip} **Cavern (Cav3rn) C2**{.cve-chip} **DLL Sideloading**{.cve-chip} **Supply Chain Targeting**{.cve-chip} **CVE-2025-54068 Context**{.cve-chip}
 
-    DHS confirmed attackers breached HSIN and a connected SharePoint collaboration system in late May to early June 2026. Affected systems were isolated and patched, with DHS I&A and DOJ investigating scope. While classified systems were not impacted, potential exposure of sensitive unclassified coordination data creates high operational risk.
+    Cavern Manticore is using a modular .NET C2 framework and stealthy sideloading techniques to target Israeli IT providers and government organizations, with related Iran-linked activity exploiting internet-facing services and enabling credential theft and sensitive data exfiltration.
 
-    [Read more](2026/Week27/HSIN.md)
+    [Read more](2026/Week27/Cavern.md)
+
+-   ![Januscape](2026/Week27/images/Januscape.png)
+
+    **Januscape - Linux KVM/x86 Shadow MMU Use-After-Free (CVE-2026-53359)**
+
+    **CVE-2026-53359**{.cve-chip} **Linux KVM**{.cve-chip} **Shadow MMU UAF**{.cve-chip} **Guest-to-Host Escape Risk**{.cve-chip} **Nested Virtualization**{.cve-chip}
+
+    Januscape is a long-lived KVM shadow MMU use-after-free flaw that can let a malicious guest corrupt host kernel memory, trigger host panic, and potentially escape from guest to host in vulnerable nested virtualization environments.
+
+    [Read more](2026/Week27/Januscape.md)
 
 </div>

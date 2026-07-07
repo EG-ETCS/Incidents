@@ -483,3 +483,5 @@ nav:
           - "Bad Epoll (CVE-2026-46242)": 2026/Week27/BadEpoll.md
           - "NetNut Residential Proxy Network Disruption": 2026/Week27/NetNut.md
           - "DHS HSIN Information-Sharing Platform Breach": 2026/Week27/HSIN.md
+          - "Iran-linked Cavern Manticore Uses Cavern (Cav3rn) Modular C2 Framework": 2026/Week27/Cavern.md
+          - "Januscape - Linux KVM/x86 Shadow MMU Use-After-Free (CVE-2026-53359)": 2026/Week27/Januscape.md
