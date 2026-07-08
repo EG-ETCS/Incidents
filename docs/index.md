@@ -8,24 +8,24 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Cavern](2026/Week27/images/Cavern.png)
+-   ![RedWing](2026/Week27/images/RedWing.png)
 
-    **Iran-linked Cavern Manticore Uses Cavern (Cav3rn) Modular C2 Framework**
+    **RedWing Android Banking Malware-as-a-Service (MaaS)**
 
-    **Iran-Nexus Threat Actor**{.cve-chip} **Cavern (Cav3rn) C2**{.cve-chip} **DLL Sideloading**{.cve-chip} **Supply Chain Targeting**{.cve-chip} **CVE-2025-54068 Context**{.cve-chip}
+    **Android Banking Trojan**{.cve-chip} **Malware-as-a-Service**{.cve-chip} **Overlay Phishing**{.cve-chip} **Accessibility Abuse**{.cve-chip} **MFA Bypass**{.cve-chip}
 
-    Cavern Manticore is using a modular .NET C2 framework and stealthy sideloading techniques to target Israeli IT providers and government organizations, with related Iran-linked activity exploiting internet-facing services and enabling credential theft and sensitive data exfiltration.
+    RedWing is a Telegram-marketed Android MaaS platform that enables criminals to run banking and crypto account-takeover campaigns via malicious APK sideloading, fake overlays, OTP interception, and Accessibility abuse to automate fraudulent transactions.
 
-    [Read more](2026/Week27/Cavern.md)
+    [Read more](2026/Week27/RedWing.md)
 
--   ![Januscape](2026/Week27/images/Januscape.png)
+-   ![Tenda](2026/Week27/images/Tenda.png)
 
-    **Januscape - Linux KVM/x86 Shadow MMU Use-After-Free (CVE-2026-53359)**
+    **Hidden Backdoor in Tenda Router Firmware (CVE-2026-11405)**
 
-    **CVE-2026-53359**{.cve-chip} **Linux KVM**{.cve-chip} **Shadow MMU UAF**{.cve-chip} **Guest-to-Host Escape Risk**{.cve-chip} **Nested Virtualization**{.cve-chip}
+    **CVE-2026-11405**{.cve-chip} **Authentication Bypass**{.cve-chip} **Hardcoded Secret**{.cve-chip} **Router Backdoor**{.cve-chip} **No Patch at Disclosure**{.cve-chip}
 
-    Januscape is a long-lived KVM shadow MMU use-after-free flaw that can let a malicious guest corrupt host kernel memory, trigger host panic, and potentially escape from guest to host in vulnerable nested virtualization environments.
+    Multiple Tenda firmware versions contain a hidden authentication routine in `/bin/httpd` that accepts a hardcoded secret password and creates an admin session without verifying configured credentials. Attackers can gain full router control for DNS hijacking, traffic interception, and internal network pivoting.
 
-    [Read more](2026/Week27/Januscape.md)
+    [Read more](2026/Week27/Tenda.md)
 
 </div>

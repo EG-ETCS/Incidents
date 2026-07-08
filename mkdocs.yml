@@ -485,3 +485,5 @@ nav:
           - "DHS HSIN Information-Sharing Platform Breach": 2026/Week27/HSIN.md
           - "Iran-linked Cavern Manticore Uses Cavern (Cav3rn) Modular C2 Framework": 2026/Week27/Cavern.md
           - "Januscape - Linux KVM/x86 Shadow MMU Use-After-Free (CVE-2026-53359)": 2026/Week27/Januscape.md
+          - "RedWing Android Banking Malware-as-a-Service (MaaS)": 2026/Week27/RedWing.md
+          - "Hidden Backdoor in Tenda Router Firmware (CVE-2026-11405)": 2026/Week27/Tenda.md
