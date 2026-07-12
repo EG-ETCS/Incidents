@@ -8,24 +8,34 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![RedWing](2026/Week27/images/RedWing.png)
+-   ![U-Boot](2026/Week28/images/U-Boot.png)   
 
-    **RedWing Android Banking Malware-as-a-Service (MaaS)**
+    **Critical U-Boot Secure Boot Vulnerabilities (FIT Image Verification Flaws)**
 
-    **Android Banking Trojan**{.cve-chip} **Malware-as-a-Service**{.cve-chip} **Overlay Phishing**{.cve-chip} **Accessibility Abuse**{.cve-chip} **MFA Bypass**{.cve-chip}
+    **Firmware Security**{.cve-chip} **U-Boot**{.cve-chip} **FIT Parser**{.cve-chip} **Secure Boot Bypass**{.cve-chip} **Pre-OS RCE Risk**{.cve-chip}
 
-    RedWing is a Telegram-marketed Android MaaS platform that enables criminals to run banking and crypto account-takeover campaigns via malicious APK sideloading, fake overlays, OTP interception, and Accessibility abuse to automate fraudulent transactions.
+    Six newly disclosed U-Boot FIT verification flaws can be triggered before Secure Boot validation completes, enabling trusted-boot bypass and potential bootloader-level code execution that compromises devices before OS startup.
 
-    [Read more](2026/Week27/RedWing.md)
+    [Read more](2026/Week28/U-Boot.md)
 
--   ![Tenda](2026/Week27/images/Tenda.png)
+-   ![CMS](2026/Week28/images/CMS.png)   
 
-    **Hidden Backdoor in Tenda Router Firmware (CVE-2026-11405)**
+    **Global Campaign Targeting Vulnerable CMS Platforms with Webshell Deployment**
 
-    **CVE-2026-11405**{.cve-chip} **Authentication Bypass**{.cve-chip} **Hardcoded Secret**{.cve-chip} **Router Backdoor**{.cve-chip} **No Patch at Disclosure**{.cve-chip}
+    **Webshell Deployment**{.cve-chip} **Known CVE Exploitation**{.cve-chip} **CMS Platforms**{.cve-chip} **Persistence**{.cve-chip} **ACSC Alert**{.cve-chip}
 
-    Multiple Tenda firmware versions contain a hidden authentication routine in `/bin/httpd` that accepts a hardcoded secret password and creates an admin session without verifying configured credentials. Attackers can gain full router control for DNS hijacking, traffic interception, and internal network pivoting.
+    ACSC warns of a global campaign exploiting known but unpatched CMS and plugin flaws to implant webshells, establish persistent access, and enable credential theft, data exfiltration, ransomware deployment, and broader follow-on compromise.
 
-    [Read more](2026/Week27/Tenda.md)
+    [Read more](2026/Week28/CMS.md)
+
+-   ![Microsoft](2026/Week28/images/Microsoft.png)  
+
+    **Fake Microsoft Entra Passkey Enrollment Vishing Campaign**
+
+    **Vishing**{.cve-chip} **Microsoft Entra**{.cve-chip} **Passkey Abuse**{.cve-chip} **FIDO2/WebAuthn**{.cve-chip} **Account Persistence**{.cve-chip}
+
+    Threat actor O-UNC-066 impersonates Microsoft or IT support to trick users into fake passkey enrollment, then registers attacker-controlled FIDO2/WebAuthn credentials for persistent unauthorized Microsoft 365 access even after password changes.
+
+    [Read more](2026/Week28/Microsoft.md)
 
 </div>

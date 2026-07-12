@@ -487,3 +487,7 @@ nav:
           - "Januscape - Linux KVM/x86 Shadow MMU Use-After-Free (CVE-2026-53359)": 2026/Week27/Januscape.md
           - "RedWing Android Banking Malware-as-a-Service (MaaS)": 2026/Week27/RedWing.md
           - "Hidden Backdoor in Tenda Router Firmware (CVE-2026-11405)": 2026/Week27/Tenda.md
+        - "week28":
+          - "Critical U-Boot Secure Boot Vulnerabilities (FIT Image Verification Flaws)": 2026/Week28/U-Boot.md
+          - "Global Campaign Targeting Vulnerable CMS Platforms with Webshell Deployment": 2026/Week28/CMS.md
+          - "Fake Microsoft Entra Passkey Enrollment Vishing Campaign": 2026/Week28/Microsoft.md
