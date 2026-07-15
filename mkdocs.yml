@@ -491,3 +491,5 @@ nav:
           - "Critical U-Boot Secure Boot Vulnerabilities (FIT Image Verification Flaws)": 2026/Week28/U-Boot.md
           - "Global Campaign Targeting Vulnerable CMS Platforms with Webshell Deployment": 2026/Week28/CMS.md
           - "Fake Microsoft Entra Passkey Enrollment Vishing Campaign": 2026/Week28/Microsoft.md
+          - "SonicWall SMA Urgent Zero-Day Patch Warning": 2026/Week28/SonicWall.md
+          - "SAP NetWeaver ABAP CVE-2026-44747 (CVSS 9.9)": 2026/Week28/SAP.md
