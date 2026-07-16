@@ -493,3 +493,8 @@ nav:
           - "Fake Microsoft Entra Passkey Enrollment Vishing Campaign": 2026/Week28/Microsoft.md
           - "SonicWall SMA Urgent Zero-Day Patch Warning": 2026/Week28/SonicWall.md
           - "SAP NetWeaver ABAP CVE-2026-44747 (CVSS 9.9)": 2026/Week28/SAP.md
+          - "Cyberattack on Nichirei Logistics Disrupting KFC Japan and Food Supply Chain": 2026/Week28/KFC.md
+          - "Zoom Critical Account Takeover Vulnerability (CVE-2026-53412)": 2026/Week28/Zoom.md
+          - "US and Allies Warn of Russian APT Groups Targeting Routers and Network Devices": 2026/Week28/Russian.md
+          - "Unpatched Cursor IDE Local Git Executable Vulnerability": 2026/Week28/Cursor.md
+          - "AsyncAPI npm Supply Chain Attack": 2026/Week28/AsyncAPI.md
