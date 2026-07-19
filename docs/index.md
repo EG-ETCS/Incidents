@@ -8,54 +8,44 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![KFC](2026/Week28/images/KFC.png)
+-   ![Roaming](2026/Week29/images/Roaming.png)   
 
-    **Cyberattack on Nichirei Logistics Disrupting KFC Japan and Food Supply Chain**
+    **Iranian Mobile Tracking Campaign Targeting U.S. Military Personnel via SS7 Roaming and AdTech Data**
 
-    **Supply Chain Cyberattack**{.cve-chip} **Third-Party Risk**{.cve-chip} **Cold-Chain Logistics**{.cve-chip} **Operational Disruption**{.cve-chip} **Food Sector Impact**{.cve-chip}
+    **SS7 Abuse**{.cve-chip} **AdTech Data Correlation**{.cve-chip} **Location Intelligence**{.cve-chip} **OPSEC Risk**{.cve-chip} **Telecom Signaling**{.cve-chip}
 
-    A cyberattack on Nichirei disrupted frozen and refrigerated food distribution across Japan, affecting KFC Japan and other downstream organizations. Confirmed unauthorized access and logistics-system failures triggered shortages, delivery suspension, and service disruption across restaurants and related sectors.
+    Iranian-linked actors reportedly combined SS7 roaming query abuse with commercial AdTech location data correlation to map movement patterns of U.S. military personnel and contractors in the Gulf, creating significant operational security and force-protection risk.
 
-    [Read more](2026/Week28/KFC.md)
+    [Read more](2026/Week29/Roaming.md)
 
--   ![Zoom](2026/Week28/images/Zoom.png)
+-   ![Vacuum](2026/Week29/images/Vacuum.png)   
 
-    **Zoom Critical Account Takeover Vulnerability (CVE-2026-53412)**
+    **Unpatched Shark Robot Vacuum AWS IoT Authorization Vulnerability**
 
-    **CVE-2026-53412**{.cve-chip} **Account Takeover**{.cve-chip} **Improper Input Validation**{.cve-chip} **Zoom Windows Clients**{.cve-chip} **Critical Patch**{.cve-chip}
+    **IoT Cloud Misconfiguration**{.cve-chip} **AWS IoT Core**{.cve-chip} **Certificate Abuse**{.cve-chip} **Cross-Device Access**{.cve-chip} **Privacy Exposure**{.cve-chip}
 
-    Zoom disclosed CVE-2026-53412 (CVSS 9.8), a critical improper input validation flaw in Windows Zoom clients and SDK components that could allow unauthenticated remote account takeover. Zoom released fixes and recommends immediate patching; no active exploitation was publicly confirmed at disclosure.
+    Researchers found that extracting one Shark vacuum's AWS IoT certificate and key can enable unauthorized cross-device access in the same AWS region due to permissive cloud authorization policy, exposing map data, credentials, telemetry, and remote-control functions.
 
-    [Read more](2026/Week28/Zoom.md)
+    [Read more](2026/Week29/Vacuum.md)
 
--   ![Russian](2026/Week28/images/Russian.png)
+-   ![PhantomEnigma](2026/Week29/images/PhantomEnigma.png)   
 
-    **US and allies warn of Russian APT groups targeting routers and network devices**
+    **PhantomEnigma Malware Campaign Leveraging Hijacked Brazilian Government Websites**
 
-    **Russian State-Sponsored Activity**{.cve-chip} **Network Infrastructure Targeting**{.cve-chip} **Credential Abuse**{.cve-chip} **Router Hygiene**{.cve-chip} **Critical Infrastructure Risk**{.cve-chip}
+    **Supply-Chain Style Delivery**{.cve-chip} **Government Site Hijack**{.cve-chip} **Node.js Backdoor**{.cve-chip} **Trojanized Installers**{.cve-chip} **C2-Controlled Modules**{.cve-chip}
 
-    NSA, CISA, FBI, and allied agencies warn that FSB-linked actors are compromising internet-exposed routers and network appliances using weak/default credentials, known patched flaws, and legacy protocols, then stealing configuration data and VPN secrets for persistent espionage footholds.
+    Attackers compromised more than 20 Brazilian government websites and replaced legitimate software downloads with trojanized installers that deploy a modular Node.js backdoor, enabling persistent remote command execution and follow-on payload delivery.
 
-    [Read more](2026/Week28/Russian.md)
+    [Read more](2026/Week29/PhantomEnigma.md)
 
--   ![Cursor](2026/Week28/images/Cursor.png)
+-   ![7-Zip](2026/Week29/images/7-Zip.png)   
 
-    **Unpatched Cursor IDE Local Git Executable Vulnerability**
+    **7-Zip Remote Code Execution Vulnerability (CVE-2026-14266)**
 
-    **Cursor IDE**{.cve-chip} **Local Executable Hijack**{.cve-chip} **Arbitrary Code Execution**{.cve-chip} **Windows Developers**{.cve-chip} **Supply Chain Risk**{.cve-chip}
+    **CVE-2026-14266**{.cve-chip} **7-Zip**{.cve-chip} **Heap Overflow**{.cve-chip} **XZ Archive Parsing**{.cve-chip} **RCE Risk**{.cve-chip}
 
-    A Windows Cursor vulnerability allows attacker-controlled repositories to execute a local trojanized `git.exe` from the project directory instead of trusted system Git, enabling code execution on developer workstations and increasing software supply-chain compromise risk.
+    A heap-based buffer overflow in 7-Zip's XZ archive processing can enable arbitrary code execution when victims open malicious archives with vulnerable versions prior to 26.02.
 
-    [Read more](2026/Week28/Cursor.md)
-
--   ![AsyncAPI](2026/Week28/images/AsyncAPI.png)
-
-    **AsyncAPI npm Supply Chain Attack**
-
-    **Supply Chain Compromise**{.cve-chip} **npm Packages**{.cve-chip} **CI/CD Abuse**{.cve-chip} **GitHub Actions**{.cve-chip} **Miasma RAT**{.cve-chip}
-
-    Attackers abused an unsafe GitHub Actions workflow to hijack AsyncAPI release automation and publish malicious code in legitimate npm packages, exposing developer systems and CI/CD pipelines to RAT delivery and credential theft at significant ecosystem scale.
-
-    [Read more](2026/Week28/AsyncAPI.md)
+    [Read more](2026/Week29/7-Zip.md)
 
 </div>

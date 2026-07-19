@@ -8,94 +8,104 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![RedWing](2026/Week27/images/RedWing.png)
+-   ![KFC](2026/Week28/images/KFC.png)
 
-    **RedWing Android Banking Malware-as-a-Service (MaaS)**
+    **Cyberattack on Nichirei Logistics Disrupting KFC Japan and Food Supply Chain**
 
-    **Android Banking Trojan**{.cve-chip} **Malware-as-a-Service**{.cve-chip} **Overlay Phishing**{.cve-chip} **Accessibility Abuse**{.cve-chip} **MFA Bypass**{.cve-chip}
+    **Supply Chain Cyberattack**{.cve-chip} **Third-Party Risk**{.cve-chip} **Cold-Chain Logistics**{.cve-chip} **Operational Disruption**{.cve-chip} **Food Sector Impact**{.cve-chip}
 
-    RedWing is a Telegram-marketed Android MaaS platform that enables criminals to run banking and crypto account-takeover campaigns via malicious APK sideloading, fake overlays, OTP interception, and Accessibility abuse to automate fraudulent transactions.
+    A cyberattack on Nichirei disrupted frozen and refrigerated food distribution across Japan, affecting KFC Japan and other downstream organizations. Confirmed unauthorized access and logistics-system failures triggered shortages, delivery suspension, and service disruption across restaurants and related sectors.
 
-    [Read more](2026/Week27/RedWing.md)
+    [Read more](2026/Week28/KFC.md)
 
--   ![Tenda](2026/Week27/images/Tenda.png)
+-   ![Zoom](2026/Week28/images/Zoom.png)
 
-    **Hidden Backdoor in Tenda Router Firmware (CVE-2026-11405)**
+    **Zoom Critical Account Takeover Vulnerability (CVE-2026-53412)**
 
-    **CVE-2026-11405**{.cve-chip} **Authentication Bypass**{.cve-chip} **Hardcoded Secret**{.cve-chip} **Router Backdoor**{.cve-chip} **No Patch at Disclosure**{.cve-chip}
+    **CVE-2026-53412**{.cve-chip} **Account Takeover**{.cve-chip} **Improper Input Validation**{.cve-chip} **Zoom Windows Clients**{.cve-chip} **Critical Patch**{.cve-chip}
 
-    Multiple Tenda firmware versions contain a hidden authentication routine in `/bin/httpd` that accepts a hardcoded secret password and creates an admin session without verifying configured credentials. Attackers can gain full router control for DNS hijacking, traffic interception, and internal network pivoting.
+    Zoom disclosed CVE-2026-53412 (CVSS 9.8), a critical improper input validation flaw in Windows Zoom clients and SDK components that could allow unauthenticated remote account takeover. Zoom released fixes and recommends immediate patching; no active exploitation was publicly confirmed at disclosure.
 
-    [Read more](2026/Week27/Tenda.md)
+    [Read more](2026/Week28/Zoom.md)
 
--   ![Cavern](2026/Week27/images/Cavern.png)
+-   ![Russian](2026/Week28/images/Russian.png)
 
-    **Iran-linked Cavern Manticore Uses Cavern (Cav3rn) Modular C2 Framework**
+    **US and allies warn of Russian APT groups targeting routers and network devices**
 
-    **Iran-Nexus Threat Actor**{.cve-chip} **Cavern (Cav3rn) C2**{.cve-chip} **DLL Sideloading**{.cve-chip} **Supply Chain Targeting**{.cve-chip} **CVE-2025-54068 Context**{.cve-chip}
+    **Russian State-Sponsored Activity**{.cve-chip} **Network Infrastructure Targeting**{.cve-chip} **Credential Abuse**{.cve-chip} **Router Hygiene**{.cve-chip} **Critical Infrastructure Risk**{.cve-chip}
 
-    Cavern Manticore is using a modular .NET C2 framework and stealthy sideloading techniques to target Israeli IT providers and government organizations, with related Iran-linked activity exploiting internet-facing services and enabling credential theft and sensitive data exfiltration.
+    NSA, CISA, FBI, and allied agencies warn that FSB-linked actors are compromising internet-exposed routers and network appliances using weak/default credentials, known patched flaws, and legacy protocols, then stealing configuration data and VPN secrets for persistent espionage footholds.
 
-    [Read more](2026/Week27/Cavern.md)
+    [Read more](2026/Week28/Russian.md)
 
--   ![Januscape](2026/Week27/images/Januscape.png)
+-   ![Cursor](2026/Week28/images/Cursor.png)
 
-    **Januscape - Linux KVM/x86 Shadow MMU Use-After-Free (CVE-2026-53359)**
+    **Unpatched Cursor IDE Local Git Executable Vulnerability**
 
-    **CVE-2026-53359**{.cve-chip} **Linux KVM**{.cve-chip} **Shadow MMU UAF**{.cve-chip} **Guest-to-Host Escape Risk**{.cve-chip} **Nested Virtualization**{.cve-chip}
+    **Cursor IDE**{.cve-chip} **Local Executable Hijack**{.cve-chip} **Arbitrary Code Execution**{.cve-chip} **Windows Developers**{.cve-chip} **Supply Chain Risk**{.cve-chip}
 
-    Januscape is a long-lived KVM shadow MMU use-after-free flaw that can let a malicious guest corrupt host kernel memory, trigger host panic, and potentially escape from guest to host in vulnerable nested virtualization environments.
+    A Windows Cursor vulnerability allows attacker-controlled repositories to execute a local trojanized `git.exe` from the project directory instead of trusted system Git, enabling code execution on developer workstations and increasing software supply-chain compromise risk.
 
-    [Read more](2026/Week27/Januscape.md)
+    [Read more](2026/Week28/Cursor.md)
 
--   ![HSIN](2026/Week27/images/HSIN.png)
+-   ![AsyncAPI](2026/Week28/images/AsyncAPI.png)
 
-    **DHS HSIN information-sharing platform breach (HSIN and associated SharePoint compromised)**
+    **AsyncAPI npm Supply Chain Attack**
 
-    **Government Breach**{.cve-chip} **HSIN**{.cve-chip} **SharePoint**{.cve-chip} **Sensitive But Unclassified (SBU)**{.cve-chip} **Interagency Coordination Risk**{.cve-chip}
+    **Supply Chain Compromise**{.cve-chip} **npm Packages**{.cve-chip} **CI/CD Abuse**{.cve-chip} **GitHub Actions**{.cve-chip} **Miasma RAT**{.cve-chip}
 
-    DHS confirmed attackers breached HSIN and a connected SharePoint collaboration system in late May to early June 2026. Affected systems were isolated and patched, with DHS I&A and DOJ investigating scope. While classified systems were not impacted, potential exposure of sensitive unclassified coordination data creates high operational risk.
+    Attackers abused an unsafe GitHub Actions workflow to hijack AsyncAPI release automation and publish malicious code in legitimate npm packages, exposing developer systems and CI/CD pipelines to RAT delivery and credential theft at significant ecosystem scale.
 
-    [Read more](2026/Week27/HSIN.md)
+    [Read more](2026/Week28/AsyncAPI.md)
 
--   ![DuneSlide](2026/Week27/images/DuneSlide.png)
+-   ![SonicWall](2026/Week28/images/SonicWall.png)
 
-    **DuneSlide - Critical Cursor AI IDE Prompt Injection Vulnerabilities**
+    **SonicWall SMA urgent zero-day patch warning**
 
-    **CVE-2026-50548**{.cve-chip} **CVE-2026-50549**{.cve-chip} **Prompt Injection**{.cve-chip} **Sandbox Escape**{.cve-chip} **AI IDE RCE**{.cve-chip}
+    **CVE-2025-23006**{.cve-chip} **CVE-2025-40602**{.cve-chip} **SMA 1000**{.cve-chip} **Zero-Day Chain**{.cve-chip} **Root RCE**{.cve-chip}
 
-    DuneSlide is a vulnerability chain in Cursor versions before 3.0 where attacker-controlled content can trigger indirect prompt injection and sandbox escape, enabling arbitrary OS command execution on developer workstations. Impact includes credential and source-code theft, malware installation, and downstream software supply-chain risk.
+    SonicWall confirmed active in-the-wild chaining of CVE-2025-23006 and CVE-2025-40602 against SMA 1000 appliances, enabling unauthenticated remote compromise followed by root-level control through AMC/CMC management paths.
 
-    [Read more](2026/Week27/DuneSlide.md)
+    [Read more](2026/Week28/SonicWall.md)
 
--   ![FatFs](2026/Week27/images/FatFs.png)
+-   ![SAP](2026/Week28/images/SAP.png)
 
-    **Multiple Unpatched Vulnerabilities in FatFs Filesystem Library**
+    **SAP NetWeaver ABAP CVE-2026-44747 (CVSS 9.9)**
 
-    **CVE-2026-6682**{.cve-chip} **Embedded Systems**{.cve-chip} **FAT/exFAT Parsing**{.cve-chip} **Memory Corruption**{.cve-chip} **Potential RCE**{.cve-chip}
+    **CVE-2026-44747**{.cve-chip} **ABAP Platform**{.cve-chip} **Out-of-Bounds Write**{.cve-chip} **Memory Corruption**{.cve-chip} **Critical Patch**{.cve-chip}
 
-    Seven unpatched vulnerabilities in the FatFs filesystem library can be triggered by malicious FAT/exFAT metadata from removable media, leading to crashes, memory corruption, and possible code execution on embedded devices that integrate the library.
+    SAP's July 2026 updates fix CVE-2026-44747, a critical authenticated memory-corruption flaw in NetWeaver AS ABAP that can enable unauthorized data access/modification and potential denial of service, with additional high-severity SAP issues in the same patch cycle increasing enterprise urgency.
 
-    [Read more](2026/Week27/FatFs.md)
+    [Read more](2026/Week28/SAP.md)
 
--   ![Bad Epoll](2026/Week27/images/BadEpoll.png)
+-   ![U-Boot](2026/Week28/images/U-Boot.png)   
 
-    **Bad Epoll (CVE-2026-46242)**
+    **Critical U-Boot Secure Boot Vulnerabilities (FIT Image Verification Flaws)**
 
-    **CVE-2026-46242**{.cve-chip} **Linux Kernel LPE**{.cve-chip} **Use-After-Free**{.cve-chip} **Race Condition**{.cve-chip} **Android Impact**{.cve-chip}
+    **Firmware Security**{.cve-chip} **U-Boot**{.cve-chip} **FIT Parser**{.cve-chip} **Secure Boot Bypass**{.cve-chip} **Pre-OS RCE Risk**{.cve-chip}
 
-    Bad Epoll is a Linux kernel epoll/eventpoll race-condition vulnerability that enables unprivileged local users to gain root privileges via use-after-free memory corruption, affecting Linux and Android systems on vulnerable kernels.
+    Six newly disclosed U-Boot FIT verification flaws can be triggered before Secure Boot validation completes, enabling trusted-boot bypass and potential bootloader-level code execution that compromises devices before OS startup.
 
-    [Read more](2026/Week27/BadEpoll.md)
+    [Read more](2026/Week28/U-Boot.md)
 
--   ![NetNut](2026/Week27/images/NetNut.png)
+-   ![CMS](2026/Week28/images/CMS.png)   
 
-    **NetNut Residential Proxy Network Disruption**
+    **Global Campaign Targeting Vulnerable CMS Platforms with Webshell Deployment**
 
-    **Residential Proxy Abuse**{.cve-chip} **Android Botnet**{.cve-chip} **NetNut Disruption**{.cve-chip} **FBI Operation**{.cve-chip} **BadBox 2.0**{.cve-chip}
+    **Webshell Deployment**{.cve-chip} **Known CVE Exploitation**{.cve-chip} **CMS Platforms**{.cve-chip} **Persistence**{.cve-chip} **ACSC Alert**{.cve-chip}
 
-    Google and the FBI disrupted NetNut, a malicious residential proxy service powered by about 2 million compromised Android-based devices, which attackers used to hide identity during credential attacks, malware delivery, and command-and-control activity.
+    ACSC warns of a global campaign exploiting known but unpatched CMS and plugin flaws to implant webshells, establish persistent access, and enable credential theft, data exfiltration, ransomware deployment, and broader follow-on compromise.
 
-    [Read more](2026/Week27/NetNut.md)
+    [Read more](2026/Week28/CMS.md)
+
+-   ![Microsoft](2026/Week28/images/Microsoft.png)  
+
+    **Fake Microsoft Entra Passkey Enrollment Vishing Campaign**
+
+    **Vishing**{.cve-chip} **Microsoft Entra**{.cve-chip} **Passkey Abuse**{.cve-chip} **FIDO2/WebAuthn**{.cve-chip} **Account Persistence**{.cve-chip}
+
+    Threat actor O-UNC-066 impersonates Microsoft or IT support to trick users into fake passkey enrollment, then registers attacker-controlled FIDO2/WebAuthn credentials for persistent unauthorized Microsoft 365 access even after password changes.
+
+    [Read more](2026/Week28/Microsoft.md)
 
 </div>

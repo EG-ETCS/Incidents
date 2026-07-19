@@ -498,3 +498,8 @@ nav:
           - "US and Allies Warn of Russian APT Groups Targeting Routers and Network Devices": 2026/Week28/Russian.md
           - "Unpatched Cursor IDE Local Git Executable Vulnerability": 2026/Week28/Cursor.md
           - "AsyncAPI npm Supply Chain Attack": 2026/Week28/AsyncAPI.md
+        - "week29":
+          - "Iranian Mobile Tracking Campaign via SS7 Roaming and AdTech Data": 2026/Week29/Roaming.md
+          - "Unpatched Shark Robot Vacuum AWS IoT Authorization Vulnerability": 2026/Week29/Vacuum.md
+          - "PhantomEnigma Malware Campaign Leveraging Hijacked Brazilian Government Websites": 2026/Week29/PhantomEnigma.md
+          - "7-Zip Remote Code Execution Vulnerability (CVE-2026-14266)": 2026/Week29/7-Zip.md
