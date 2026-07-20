@@ -503,3 +503,5 @@ nav:
           - "Unpatched Shark Robot Vacuum AWS IoT Authorization Vulnerability": 2026/Week29/Vacuum.md
           - "PhantomEnigma Malware Campaign Leveraging Hijacked Brazilian Government Websites": 2026/Week29/PhantomEnigma.md
           - "7-Zip Remote Code Execution Vulnerability (CVE-2026-14266)": 2026/Week29/7-Zip.md
+          - "WP2Shell WordPress Vulnerabilities Exploited in the Wild": 2026/Week29/WP2Shell.md
+          - "SonicWall SMA 1000 SSRF + Post-Auth Code-Injection Zero-Days": 2026/Week29/SonicWall.md
