@@ -18,7 +18,7 @@ hide:
 
     [Read more](2026/Week29/WP2Shell.md)
 
-  -   ![SonicWall](2026/Week29/images/SonicWall.png)
+-   ![SonicWall](2026/Week29/images/SonicWall.png)
 
     **SonicWall SMA 1000 SSRF + post-auth code-injection zero-days**
 
