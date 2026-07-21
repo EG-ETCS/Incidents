@@ -8,24 +8,24 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![WP2Shell](2026/Week29/images/WP2Shell.png)
+-   ![Russian](2026/Week29/images/Russian.png)
 
-    **WP2Shell WordPress Vulnerabilities Exploited in the Wild**
+    **Russian Intelligence Campaign Targeting Internet-Connected IP Cameras for Military Espionage**
 
-    **CVE-2026-63030**{.cve-chip} **CVE-2026-60137**{.cve-chip} **Pre-Auth RCE**{.cve-chip} **WordPress Core**{.cve-chip} **Active Exploitation**{.cve-chip}
+    **Russian Espionage**{.cve-chip} **IP Camera Compromise**{.cve-chip} **Military Logistics Surveillance**{.cve-chip} **IoT Exposure**{.cve-chip} **OPSEC Risk**{.cve-chip}
 
-    Attackers are actively chaining two WordPress core flaws to achieve anonymous pre-auth remote code execution on default vulnerable installations, with public PoCs available and post-exploitation activity including rogue admin creation and web shell deployment.
+    Dutch intelligence warns Russian actors are compromising internet-exposed IP cameras near military-relevant logistics routes across Europe to monitor troop and equipment movement, using weak credentials, exposed services, and unpatched firmware rather than direct military-network intrusion.
 
-    [Read more](2026/Week29/WP2Shell.md)
+    [Read more](2026/Week29/Russian.md)
 
--   ![SonicWall](2026/Week29/images/SonicWall.png)
+-   ![Gemini](2026/Week29/images/Gemini.png)
 
-    **SonicWall SMA 1000 SSRF + post-auth code-injection zero-days**
+    **Russian-Speaking Threat Actor Uses Google Gemini CLI to Operate Botnet Infrastructure**
 
-    **CVE-2026-15409**{.cve-chip} **CVE-2026-15410**{.cve-chip} **SMA 1000**{.cve-chip} **Zero-Day Chain**{.cve-chip} **Root RCE**{.cve-chip}
+    **AI-Assisted Operations**{.cve-chip} **Botnet Management**{.cve-chip} **Gemini CLI Abuse**{.cve-chip} **Cloudflare Tunnel**{.cve-chip} **PowerShell Tradecraft**{.cve-chip}
 
-    SonicWall disclosed active exploitation of two SMA 1000 zero-days where CVE-2026-15409 (SSRF) can be chained with CVE-2026-15410 (post-auth code injection) to achieve effective unauthenticated root-level code execution on remote-access gateways.
+    Trend Micro reported a Russian-speaking actor using Gemini CLI across roughly 200 sessions to deploy, troubleshoot, and migrate botnet infrastructure, accelerating C2 operations and endpoint command execution through AI-generated administrative workflows.
 
-    [Read more](2026/Week29/SonicWall.md)
+    [Read more](2026/Week29/Gemini.md)
 
 </div>
