@@ -8,104 +8,85 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![KFC](2026/Week28/images/KFC.png)
+-   ![Russian](2026/Week29/images/Russian.png)
 
-    **Cyberattack on Nichirei Logistics Disrupting KFC Japan and Food Supply Chain**
+    **Russian Intelligence Campaign Targeting Internet-Connected IP Cameras for Military Espionage**
 
-    **Supply Chain Cyberattack**{.cve-chip} **Third-Party Risk**{.cve-chip} **Cold-Chain Logistics**{.cve-chip} **Operational Disruption**{.cve-chip} **Food Sector Impact**{.cve-chip}
+    **Russian Espionage**{.cve-chip} **IP Camera Compromise**{.cve-chip} **Military Logistics Surveillance**{.cve-chip} **IoT Exposure**{.cve-chip} **OPSEC Risk**{.cve-chip}
 
-    A cyberattack on Nichirei disrupted frozen and refrigerated food distribution across Japan, affecting KFC Japan and other downstream organizations. Confirmed unauthorized access and logistics-system failures triggered shortages, delivery suspension, and service disruption across restaurants and related sectors.
+    Dutch intelligence warns Russian actors are compromising internet-exposed IP cameras near military-relevant logistics routes across Europe to monitor troop and equipment movement, using weak credentials, exposed services, and unpatched firmware rather than direct military-network intrusion.
 
-    [Read more](2026/Week28/KFC.md)
+    [Read more](2026/Week29/Russian.md)
 
--   ![Zoom](2026/Week28/images/Zoom.png)
+-   ![Gemini](2026/Week29/images/Gemini.png)
 
-    **Zoom Critical Account Takeover Vulnerability (CVE-2026-53412)**
+    **Russian-Speaking Threat Actor Uses Google Gemini CLI to Operate Botnet Infrastructure**
 
-    **CVE-2026-53412**{.cve-chip} **Account Takeover**{.cve-chip} **Improper Input Validation**{.cve-chip} **Zoom Windows Clients**{.cve-chip} **Critical Patch**{.cve-chip}
+    **AI-Assisted Operations**{.cve-chip} **Botnet Management**{.cve-chip} **Gemini CLI Abuse**{.cve-chip} **Cloudflare Tunnel**{.cve-chip} **PowerShell Tradecraft**{.cve-chip}
 
-    Zoom disclosed CVE-2026-53412 (CVSS 9.8), a critical improper input validation flaw in Windows Zoom clients and SDK components that could allow unauthenticated remote account takeover. Zoom released fixes and recommends immediate patching; no active exploitation was publicly confirmed at disclosure.
+    Trend Micro reported a Russian-speaking actor using Gemini CLI across roughly 200 sessions to deploy, troubleshoot, and migrate botnet infrastructure, accelerating C2 operations and endpoint command execution through AI-generated administrative workflows.
 
-    [Read more](2026/Week28/Zoom.md)
+    [Read more](2026/Week29/Gemini.md)
 
--   ![Russian](2026/Week28/images/Russian.png)
+-   ![WP2Shell](2026/Week29/images/WP2Shell.png)
 
-    **US and allies warn of Russian APT groups targeting routers and network devices**
+    **WP2Shell WordPress Vulnerabilities Exploited in the Wild**
 
-    **Russian State-Sponsored Activity**{.cve-chip} **Network Infrastructure Targeting**{.cve-chip} **Credential Abuse**{.cve-chip} **Router Hygiene**{.cve-chip} **Critical Infrastructure Risk**{.cve-chip}
+    **CVE-2026-63030**{.cve-chip} **CVE-2026-60137**{.cve-chip} **Pre-Auth RCE**{.cve-chip} **WordPress Core**{.cve-chip} **Active Exploitation**{.cve-chip}
 
-    NSA, CISA, FBI, and allied agencies warn that FSB-linked actors are compromising internet-exposed routers and network appliances using weak/default credentials, known patched flaws, and legacy protocols, then stealing configuration data and VPN secrets for persistent espionage footholds.
+    Attackers are actively chaining two WordPress core flaws to achieve anonymous pre-auth remote code execution on default vulnerable installations, with public PoCs available and post-exploitation activity including rogue admin creation and web shell deployment.
 
-    [Read more](2026/Week28/Russian.md)
+    [Read more](2026/Week29/WP2Shell.md)
 
--   ![Cursor](2026/Week28/images/Cursor.png)
+-   ![SonicWall](2026/Week29/images/SonicWall.png)
 
-    **Unpatched Cursor IDE Local Git Executable Vulnerability**
+    **SonicWall SMA 1000 SSRF + post-auth code-injection zero-days**
 
-    **Cursor IDE**{.cve-chip} **Local Executable Hijack**{.cve-chip} **Arbitrary Code Execution**{.cve-chip} **Windows Developers**{.cve-chip} **Supply Chain Risk**{.cve-chip}
+    **CVE-2026-15409**{.cve-chip} **CVE-2026-15410**{.cve-chip} **SMA 1000**{.cve-chip} **Zero-Day Chain**{.cve-chip} **Root RCE**{.cve-chip}
 
-    A Windows Cursor vulnerability allows attacker-controlled repositories to execute a local trojanized `git.exe` from the project directory instead of trusted system Git, enabling code execution on developer workstations and increasing software supply-chain compromise risk.
+    SonicWall disclosed active exploitation of two SMA 1000 zero-days where CVE-2026-15409 (SSRF) can be chained with CVE-2026-15410 (post-auth code injection) to achieve effective unauthenticated root-level code execution on remote-access gateways.
 
-    [Read more](2026/Week28/Cursor.md)
+    [Read more](2026/Week29/SonicWall.md)
 
--   ![AsyncAPI](2026/Week28/images/AsyncAPI.png)
 
-    **AsyncAPI npm Supply Chain Attack**
+-   ![Roaming](2026/Week29/images/Roaming.png)   
 
-    **Supply Chain Compromise**{.cve-chip} **npm Packages**{.cve-chip} **CI/CD Abuse**{.cve-chip} **GitHub Actions**{.cve-chip} **Miasma RAT**{.cve-chip}
+    **Iranian Mobile Tracking Campaign Targeting U.S. Military Personnel via SS7 Roaming and AdTech Data**
 
-    Attackers abused an unsafe GitHub Actions workflow to hijack AsyncAPI release automation and publish malicious code in legitimate npm packages, exposing developer systems and CI/CD pipelines to RAT delivery and credential theft at significant ecosystem scale.
+    **SS7 Abuse**{.cve-chip} **AdTech Data Correlation**{.cve-chip} **Location Intelligence**{.cve-chip} **OPSEC Risk**{.cve-chip} **Telecom Signaling**{.cve-chip}
 
-    [Read more](2026/Week28/AsyncAPI.md)
+    Iranian-linked actors reportedly combined SS7 roaming query abuse with commercial AdTech location data correlation to map movement patterns of U.S. military personnel and contractors in the Gulf, creating significant operational security and force-protection risk.
 
--   ![SonicWall](2026/Week28/images/SonicWall.png)
+    [Read more](2026/Week29/Roaming.md)
 
-    **SonicWall SMA urgent zero-day patch warning**
+-   ![Vacuum](2026/Week29/images/Vacuum.png)   
 
-    **CVE-2025-23006**{.cve-chip} **CVE-2025-40602**{.cve-chip} **SMA 1000**{.cve-chip} **Zero-Day Chain**{.cve-chip} **Root RCE**{.cve-chip}
+    **Unpatched Shark Robot Vacuum AWS IoT Authorization Vulnerability**
 
-    SonicWall confirmed active in-the-wild chaining of CVE-2025-23006 and CVE-2025-40602 against SMA 1000 appliances, enabling unauthenticated remote compromise followed by root-level control through AMC/CMC management paths.
+    **IoT Cloud Misconfiguration**{.cve-chip} **AWS IoT Core**{.cve-chip} **Certificate Abuse**{.cve-chip} **Cross-Device Access**{.cve-chip} **Privacy Exposure**{.cve-chip}
 
-    [Read more](2026/Week28/SonicWall.md)
+    Researchers found that extracting one Shark vacuum's AWS IoT certificate and key can enable unauthorized cross-device access in the same AWS region due to permissive cloud authorization policy, exposing map data, credentials, telemetry, and remote-control functions.
 
--   ![SAP](2026/Week28/images/SAP.png)
+    [Read more](2026/Week29/Vacuum.md)
 
-    **SAP NetWeaver ABAP CVE-2026-44747 (CVSS 9.9)**
+-   ![PhantomEnigma](2026/Week29/images/PhantomEnigma.png)   
 
-    **CVE-2026-44747**{.cve-chip} **ABAP Platform**{.cve-chip} **Out-of-Bounds Write**{.cve-chip} **Memory Corruption**{.cve-chip} **Critical Patch**{.cve-chip}
+    **PhantomEnigma Malware Campaign Leveraging Hijacked Brazilian Government Websites**
 
-    SAP's July 2026 updates fix CVE-2026-44747, a critical authenticated memory-corruption flaw in NetWeaver AS ABAP that can enable unauthorized data access/modification and potential denial of service, with additional high-severity SAP issues in the same patch cycle increasing enterprise urgency.
+    **Supply-Chain Style Delivery**{.cve-chip} **Government Site Hijack**{.cve-chip} **Node.js Backdoor**{.cve-chip} **Trojanized Installers**{.cve-chip} **C2-Controlled Modules**{.cve-chip}
 
-    [Read more](2026/Week28/SAP.md)
+    Attackers compromised more than 20 Brazilian government websites and replaced legitimate software downloads with trojanized installers that deploy a modular Node.js backdoor, enabling persistent remote command execution and follow-on payload delivery.
 
--   ![U-Boot](2026/Week28/images/U-Boot.png)   
+    [Read more](2026/Week29/PhantomEnigma.md)
 
-    **Critical U-Boot Secure Boot Vulnerabilities (FIT Image Verification Flaws)**
+-   ![7-Zip](2026/Week29/images/7-Zip.png)   
 
-    **Firmware Security**{.cve-chip} **U-Boot**{.cve-chip} **FIT Parser**{.cve-chip} **Secure Boot Bypass**{.cve-chip} **Pre-OS RCE Risk**{.cve-chip}
+    **7-Zip Remote Code Execution Vulnerability (CVE-2026-14266)**
 
-    Six newly disclosed U-Boot FIT verification flaws can be triggered before Secure Boot validation completes, enabling trusted-boot bypass and potential bootloader-level code execution that compromises devices before OS startup.
+    **CVE-2026-14266**{.cve-chip} **7-Zip**{.cve-chip} **Heap Overflow**{.cve-chip} **XZ Archive Parsing**{.cve-chip} **RCE Risk**{.cve-chip}
 
-    [Read more](2026/Week28/U-Boot.md)
+    A heap-based buffer overflow in 7-Zip's XZ archive processing can enable arbitrary code execution when victims open malicious archives with vulnerable versions prior to 26.02.
 
--   ![CMS](2026/Week28/images/CMS.png)   
-
-    **Global Campaign Targeting Vulnerable CMS Platforms with Webshell Deployment**
-
-    **Webshell Deployment**{.cve-chip} **Known CVE Exploitation**{.cve-chip} **CMS Platforms**{.cve-chip} **Persistence**{.cve-chip} **ACSC Alert**{.cve-chip}
-
-    ACSC warns of a global campaign exploiting known but unpatched CMS and plugin flaws to implant webshells, establish persistent access, and enable credential theft, data exfiltration, ransomware deployment, and broader follow-on compromise.
-
-    [Read more](2026/Week28/CMS.md)
-
--   ![Microsoft](2026/Week28/images/Microsoft.png)  
-
-    **Fake Microsoft Entra Passkey Enrollment Vishing Campaign**
-
-    **Vishing**{.cve-chip} **Microsoft Entra**{.cve-chip} **Passkey Abuse**{.cve-chip} **FIDO2/WebAuthn**{.cve-chip} **Account Persistence**{.cve-chip}
-
-    Threat actor O-UNC-066 impersonates Microsoft or IT support to trick users into fake passkey enrollment, then registers attacker-controlled FIDO2/WebAuthn credentials for persistent unauthorized Microsoft 365 access even after password changes.
-
-    [Read more](2026/Week28/Microsoft.md)
+    [Read more](2026/Week29/7-Zip.md)
 
 </div>

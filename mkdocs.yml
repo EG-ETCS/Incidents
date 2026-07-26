@@ -507,3 +507,9 @@ nav:
           - "SonicWall SMA 1000 SSRF + Post-Auth Code-Injection Zero-Days": 2026/Week29/SonicWall.md
           - "Russian Intelligence Campaign Targeting Internet-Connected IP Cameras for Military Espionage": 2026/Week29/Russian.md
           - "Russian-Speaking Threat Actor Uses Google Gemini CLI to Operate Botnet Infrastructure": 2026/Week29/Gemini.md
+        - "week30":
+          - "Iran-Linked Threat Actors Target U.S. Water and Energy Control Systems": 2026/Week30/Iran.md
+          - "KARR/SWDS Bluetooth Vehicle Security System Vulnerability": 2026/Week30/KARR.md
+          - "Russian Espionage Group Exploited Zimbra Zero-Day (CVE-2025-66376) to Steal Emails": 2026/Week30/Russian.md
+          - "Hotel Wi-Fi DNS Hijacking Campaign Targeting Microsoft 365 Accounts": 2026/Week30/Hijacking.md
+          - "OpenAI-Hugging Face Model Evaluation Security Incident": 2026/Week30/OpenAI.md
