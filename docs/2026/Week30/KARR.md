@@ -9,7 +9,7 @@ Security researchers identified critical vulnerabilities in KARR and SWDS afterm
 
 Because the weakness is in an aftermarket module, the risk spans multiple vehicle brands regardless of original manufacturer electronics.
 
-[![](images/KARR1.png)](https://www.youtube.com/watch?v=xS_4dNRGkoA)
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/xS_4dNRGkoA" title="2 Million Cars with Anti-Theft Systems Installed by Dealers are at Higher Risk of Theft" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Technical Specifications
 
