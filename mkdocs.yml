@@ -514,3 +514,7 @@ nav:
           - "Hotel Wi-Fi DNS Hijacking Campaign Targeting Microsoft 365 Accounts": 2026/Week30/Hijacking.md
           - "OpenAI-Hugging Face Model Evaluation Security Incident": 2026/Week30/OpenAI.md
           - "Steam Forum ClickFix XMRig Cryptominer Campaign": 2026/Week30/Steam.md
+          - "Active Exploitation of Fastjson 1.x Zero-Day Remote Code Execution (CVE-2026-16723)": 2026/Week30/Fastjson.md
+          - "Arista VeloCloud Orchestrator Zero-Day (CVE-2026-16812)": 2026/Week30/Arista.md
+          - "Dysphoria IoT DDoS Botnet": 2026/Week30/Dysphoria.md
+          - "MedusaHVNC - Hidden Desktop Remote Access Trojan (HVNC)": 2026/Week30/MedusaHVNC.md
