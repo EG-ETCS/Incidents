@@ -8,44 +8,24 @@ hide:
 
 <div class="grid cards" markdown>
 
--   ![Fastjson](2026/Week30/images/Fastjson.png)
+-   ![Minnesota](2026/Week30/images/Minnesota.png)
 
-    **Active Exploitation of Fastjson 1.x Zero-Day Remote Code Execution (CVE-2026-16723)**
+    **Coordinated Cyberattack on Minnesota Municipal Water and Wastewater Utilities**
 
-    **CVE-2026-16723**{.cve-chip} **Fastjson 1.x Zero-Day**{.cve-chip} **Java Deserialization RCE**{.cve-chip} **Spring Boot Risk**{.cve-chip} **Active Exploitation**{.cve-chip}
+    **Critical Infrastructure**{.cve-chip} **Water Utility OT**{.cve-chip} **Coordinated Disruption**{.cve-chip} **Unauthorized Access**{.cve-chip} **SCADA/ICS Risk**{.cve-chip}
 
-    Attackers are actively exploiting a Fastjson 1.x deserialization zero-day in vulnerable Java services, enabling remote code execution via crafted JSON payloads without requiring AutoType or third-party gadget chains.
+    A coordinated cyberattack disrupted automated operations across more than 30 Minnesota municipal water and wastewater systems, forcing manual fallback operations and broad multi-agency containment and investigation.
 
-    [Read more](2026/Week30/Fastjson.md)
+    [Read more](2026/Week30/Minnesota.md)
 
--   ![Arista](2026/Week30/images/Arista.png)
+-   ![VMware](2026/Week30/images/VMware.png)
 
-    **Arista VeloCloud Orchestrator Zero-Day (CVE-2026-16812)**
+    **VMware vCenter Auth Bypass and RCE, and ESX VMXNET3 VM Escape**
 
-    **CVE-2026-16812**{.cve-chip} **Unauthenticated RCE**{.cve-chip} **OS Command Injection**{.cve-chip} **SD-WAN Infrastructure Risk**{.cve-chip} **Active Exploitation**{.cve-chip}
+    **VMware Critical Flaws**{.cve-chip} **vCenter Auth Bypass**{.cve-chip} **RCE Risk**{.cve-chip} **VM Escape**{.cve-chip} **Hypervisor Security**{.cve-chip}
 
-    A critical unauthenticated command-injection flaw in on-prem Arista VeloCloud Orchestrator is being exploited in the wild, allowing remote code execution and potential compromise of central SD-WAN management infrastructure.
+    Broadcom disclosed critical VMware flaws including vCenter authentication bypass plus traversal-to-RCE, and a VMXNET3 ESX out-of-bounds write explicitly characterized as a VM escape, requiring urgent patching despite no confirmed in-the-wild exploitation.
 
-    [Read more](2026/Week30/Arista.md)
-
--   ![Dysphoria](2026/Week30/images/Dysphoria.png)
-
-    **Dysphoria IoT DDoS Botnet**
-
-    **IoT Botnet**{.cve-chip} **DDoS Threat**{.cve-chip} **Blockchain C2**{.cve-chip} **ENS/SNS Abuse**{.cve-chip} **Proxy Relay Infrastructure**{.cve-chip}
-
-    Dysphoria has infected more than 200,000 IoT devices and uses ENS/SNS blockchain naming services with encoded C2 data to sustain resilient botnet control for large-scale DDoS and malicious traffic relay operations.
-
-    [Read more](2026/Week30/Dysphoria.md)
-
--   ![MedusaHVNC](2026/Week30/images/MedusaHVNC.png)
-
-    **MedusaHVNC - Hidden Desktop Remote Access Trojan (HVNC)**
-
-    **HVNC Malware**{.cve-chip} **MaaS Threat**{.cve-chip} **Session Hijacking**{.cve-chip} **Browser Abuse**{.cve-chip} **Stealth Persistence**{.cve-chip}
-
-    MedusaHVNC uses hidden Windows desktop sessions to remotely control legitimate victim browsers, steal credentials and cookies, hijack authenticated sessions, and exfiltrate sensitive data while remaining invisible to users.
-
-    [Read more](2026/Week30/MedusaHVNC.md)
+    [Read more](2026/Week30/VMware.md)
 
 </div>
