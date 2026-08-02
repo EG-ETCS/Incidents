@@ -8,85 +8,124 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![Russian](2026/Week29/images/Russian.png)
+-   ![Minnesota](2026/Week30/images/Minnesota.png)
 
-    **Russian Intelligence Campaign Targeting Internet-Connected IP Cameras for Military Espionage**
+    **Coordinated Cyberattack on Minnesota Municipal Water and Wastewater Utilities**
 
-    **Russian Espionage**{.cve-chip} **IP Camera Compromise**{.cve-chip} **Military Logistics Surveillance**{.cve-chip} **IoT Exposure**{.cve-chip} **OPSEC Risk**{.cve-chip}
+    **Critical Infrastructure**{.cve-chip} **Water Utility OT**{.cve-chip} **Coordinated Disruption**{.cve-chip} **Unauthorized Access**{.cve-chip} **SCADA/ICS Risk**{.cve-chip}
 
-    Dutch intelligence warns Russian actors are compromising internet-exposed IP cameras near military-relevant logistics routes across Europe to monitor troop and equipment movement, using weak credentials, exposed services, and unpatched firmware rather than direct military-network intrusion.
+    A coordinated cyberattack disrupted automated operations across more than 30 Minnesota municipal water and wastewater systems, forcing manual fallback operations and broad multi-agency containment and investigation.
 
-    [Read more](2026/Week29/Russian.md)
+    [Read more](2026/Week30/Minnesota.md)
 
--   ![Gemini](2026/Week29/images/Gemini.png)
+-   ![VMware](2026/Week30/images/VMware.png)
 
-    **Russian-Speaking Threat Actor Uses Google Gemini CLI to Operate Botnet Infrastructure**
+    **VMware vCenter Auth Bypass and RCE, and ESX VMXNET3 VM Escape**
 
-    **AI-Assisted Operations**{.cve-chip} **Botnet Management**{.cve-chip} **Gemini CLI Abuse**{.cve-chip} **Cloudflare Tunnel**{.cve-chip} **PowerShell Tradecraft**{.cve-chip}
+    **VMware Critical Flaws**{.cve-chip} **vCenter Auth Bypass**{.cve-chip} **RCE Risk**{.cve-chip} **VM Escape**{.cve-chip} **Hypervisor Security**{.cve-chip}
 
-    Trend Micro reported a Russian-speaking actor using Gemini CLI across roughly 200 sessions to deploy, troubleshoot, and migrate botnet infrastructure, accelerating C2 operations and endpoint command execution through AI-generated administrative workflows.
+    Broadcom disclosed critical VMware flaws including vCenter authentication bypass plus traversal-to-RCE, and a VMXNET3 ESX out-of-bounds write explicitly characterized as a VM escape, requiring urgent patching despite no confirmed in-the-wild exploitation.
 
-    [Read more](2026/Week29/Gemini.md)
+    [Read more](2026/Week30/VMware.md)
 
--   ![WP2Shell](2026/Week29/images/WP2Shell.png)
+-   ![Fastjson](2026/Week30/images/Fastjson.png)
 
-    **WP2Shell WordPress Vulnerabilities Exploited in the Wild**
+    **Active Exploitation of Fastjson 1.x Zero-Day Remote Code Execution (CVE-2026-16723)**
 
-    **CVE-2026-63030**{.cve-chip} **CVE-2026-60137**{.cve-chip} **Pre-Auth RCE**{.cve-chip} **WordPress Core**{.cve-chip} **Active Exploitation**{.cve-chip}
+    **CVE-2026-16723**{.cve-chip} **Fastjson 1.x Zero-Day**{.cve-chip} **Java Deserialization RCE**{.cve-chip} **Spring Boot Risk**{.cve-chip} **Active Exploitation**{.cve-chip}
 
-    Attackers are actively chaining two WordPress core flaws to achieve anonymous pre-auth remote code execution on default vulnerable installations, with public PoCs available and post-exploitation activity including rogue admin creation and web shell deployment.
+    Attackers are actively exploiting a Fastjson 1.x deserialization zero-day in vulnerable Java services, enabling remote code execution via crafted JSON payloads without requiring AutoType or third-party gadget chains.
 
-    [Read more](2026/Week29/WP2Shell.md)
+    [Read more](2026/Week30/Fastjson.md)
 
--   ![SonicWall](2026/Week29/images/SonicWall.png)
+-   ![Arista](2026/Week30/images/Arista.png)
 
-    **SonicWall SMA 1000 SSRF + post-auth code-injection zero-days**
+    **Arista VeloCloud Orchestrator Zero-Day (CVE-2026-16812)**
 
-    **CVE-2026-15409**{.cve-chip} **CVE-2026-15410**{.cve-chip} **SMA 1000**{.cve-chip} **Zero-Day Chain**{.cve-chip} **Root RCE**{.cve-chip}
+    **CVE-2026-16812**{.cve-chip} **Unauthenticated RCE**{.cve-chip} **OS Command Injection**{.cve-chip} **SD-WAN Infrastructure Risk**{.cve-chip} **Active Exploitation**{.cve-chip}
 
-    SonicWall disclosed active exploitation of two SMA 1000 zero-days where CVE-2026-15409 (SSRF) can be chained with CVE-2026-15410 (post-auth code injection) to achieve effective unauthenticated root-level code execution on remote-access gateways.
+    A critical unauthenticated command-injection flaw in on-prem Arista VeloCloud Orchestrator is being exploited in the wild, allowing remote code execution and potential compromise of central SD-WAN management infrastructure.
 
-    [Read more](2026/Week29/SonicWall.md)
+    [Read more](2026/Week30/Arista.md)
 
+-   ![Dysphoria](2026/Week30/images/Dysphoria.png)
 
--   ![Roaming](2026/Week29/images/Roaming.png)   
+    **Dysphoria IoT DDoS Botnet**
 
-    **Iranian Mobile Tracking Campaign Targeting U.S. Military Personnel via SS7 Roaming and AdTech Data**
+    **IoT Botnet**{.cve-chip} **DDoS Threat**{.cve-chip} **Blockchain C2**{.cve-chip} **ENS/SNS Abuse**{.cve-chip} **Proxy Relay Infrastructure**{.cve-chip}
 
-    **SS7 Abuse**{.cve-chip} **AdTech Data Correlation**{.cve-chip} **Location Intelligence**{.cve-chip} **OPSEC Risk**{.cve-chip} **Telecom Signaling**{.cve-chip}
+    Dysphoria has infected more than 200,000 IoT devices and uses ENS/SNS blockchain naming services with encoded C2 data to sustain resilient botnet control for large-scale DDoS and malicious traffic relay operations.
 
-    Iranian-linked actors reportedly combined SS7 roaming query abuse with commercial AdTech location data correlation to map movement patterns of U.S. military personnel and contractors in the Gulf, creating significant operational security and force-protection risk.
+    [Read more](2026/Week30/Dysphoria.md)
 
-    [Read more](2026/Week29/Roaming.md)
+-   ![MedusaHVNC](2026/Week30/images/MedusaHVNC.png)
 
--   ![Vacuum](2026/Week29/images/Vacuum.png)   
+    **MedusaHVNC - Hidden Desktop Remote Access Trojan (HVNC)**
 
-    **Unpatched Shark Robot Vacuum AWS IoT Authorization Vulnerability**
+    **HVNC Malware**{.cve-chip} **MaaS Threat**{.cve-chip} **Session Hijacking**{.cve-chip} **Browser Abuse**{.cve-chip} **Stealth Persistence**{.cve-chip}
 
-    **IoT Cloud Misconfiguration**{.cve-chip} **AWS IoT Core**{.cve-chip} **Certificate Abuse**{.cve-chip} **Cross-Device Access**{.cve-chip} **Privacy Exposure**{.cve-chip}
+    MedusaHVNC uses hidden Windows desktop sessions to remotely control legitimate victim browsers, steal credentials and cookies, hijack authenticated sessions, and exfiltrate sensitive data while remaining invisible to users.
 
-    Researchers found that extracting one Shark vacuum's AWS IoT certificate and key can enable unauthorized cross-device access in the same AWS region due to permissive cloud authorization policy, exposing map data, credentials, telemetry, and remote-control functions.
+    [Read more](2026/Week30/MedusaHVNC.md)
 
-    [Read more](2026/Week29/Vacuum.md)
+-   ![Steam](2026/Week30/images/Steam.png)
 
--   ![PhantomEnigma](2026/Week29/images/PhantomEnigma.png)   
+    **Steam Forum ClickFix XMRig Cryptominer Campaign**
 
-    **PhantomEnigma Malware Campaign Leveraging Hijacked Brazilian Government Websites**
+    **ClickFix Social Engineering**{.cve-chip} **Steam Forum Abuse**{.cve-chip} **PowerShell Execution**{.cve-chip} **XMRig Cryptojacking**{.cve-chip} **Windows Persistence**{.cve-chip}
 
-    **Supply-Chain Style Delivery**{.cve-chip} **Government Site Hijack**{.cve-chip} **Node.js Backdoor**{.cve-chip} **Trojanized Installers**{.cve-chip} **C2-Controlled Modules**{.cve-chip}
+    Threat actors are posting fake Steam troubleshooting replies that trick users into running elevated PowerShell commands, leading to XMRig installation, Defender exclusion abuse, scheduled-task persistence, and unauthorized cryptomining.
 
-    Attackers compromised more than 20 Brazilian government websites and replaced legitimate software downloads with trojanized installers that deploy a modular Node.js backdoor, enabling persistent remote command execution and follow-on payload delivery.
+    [Read more](2026/Week30/Steam.md)
 
-    [Read more](2026/Week29/PhantomEnigma.md)
+-   ![Iran](2026/Week30/images/Iran.png)
 
--   ![7-Zip](2026/Week29/images/7-Zip.png)   
+    **Iran-Linked Threat Actors Target U.S. Water and Energy Control Systems**
 
-    **7-Zip Remote Code Execution Vulnerability (CVE-2026-14266)**
+    **Iran-Linked APT Activity**{.cve-chip} **ICS/OT Targeting**{.cve-chip} **SCADA/PLC Manipulation**{.cve-chip} **Critical Infrastructure Risk**{.cve-chip} **Operational Disruption**{.cve-chip}
 
-    **CVE-2026-14266**{.cve-chip} **7-Zip**{.cve-chip} **Heap Overflow**{.cve-chip} **XZ Archive Parsing**{.cve-chip} **RCE Risk**{.cve-chip}
+    Iran-linked actors are targeting exposed U.S. industrial control environments in water and energy sectors, abusing weak access controls to alter PLC logic, suppress alarms, and interfere with operator visibility and process safety.
 
-    A heap-based buffer overflow in 7-Zip's XZ archive processing can enable arbitrary code execution when victims open malicious archives with vulnerable versions prior to 26.02.
+    [Read more](2026/Week30/Iran.md)
 
-    [Read more](2026/Week29/7-Zip.md)
+-   ![KARR](2026/Week30/images/KARR.png)
+
+    **KARR/SWDS Bluetooth Vehicle Security System Vulnerability**
+
+    **Automotive Cybersecurity**{.cve-chip} **BLE Abuse**{.cve-chip} **Authentication Flaw**{.cve-chip} **Shared Key Risk**{.cve-chip} **Vehicle Theft Exposure**{.cve-chip}
+
+    Researchers found that KARR and SWDS aftermarket vehicle modules reuse a universal BLE authentication key extractable from the mobile app, allowing nearby attackers to send legitimate control commands such as unlock, alarm trigger, and immobilizer-related actions.
+
+    [Read more](2026/Week30/KARR.md)
+
+-   ![Russian](2026/Week30/images/Russian.png)
+
+    **Russian Espionage Group Exploited Zimbra Zero-Day (CVE-2025-66376) to Steal Emails**
+
+    **CVE-2025-66376**{.cve-chip} **Zimbra Zero-Day**{.cve-chip} **Stored XSS**{.cve-chip} **Email Theft**{.cve-chip} **State-Sponsored Espionage**{.cve-chip}
+
+    A Russian espionage group exploited a Zimbra Classic Web UI stored XSS zero-day to execute JavaScript in authenticated sessions when victims opened crafted HTML emails, enabling mailbox theft, contact harvesting, and exfiltration of recovery and authentication data.
+
+    [Read more](2026/Week30/Russian.md)
+
+-   ![Hijacking](2026/Week30/images/Hijacking.png)
+
+    **Hotel Wi-Fi DNS Hijacking Campaign Targeting Microsoft 365 Accounts**
+
+    **DNS Hijacking**{.cve-chip} **Public Wi-Fi Risk**{.cve-chip} **Microsoft 365 Phishing**{.cve-chip} **OAuth Device Flow Abuse**{.cve-chip} **BEC Exposure**{.cve-chip}
+
+    Attackers are compromising hotel and conference Wi-Fi gateways, altering DNS to redirect Microsoft 365 authentication to convincing phishing domains, and in some cases abusing OAuth device flow and WPAD techniques to maintain persistent cloud-account access.
+
+    [Read more](2026/Week30/Hijacking.md)
+
+-   ![OpenAI](2026/Week30/images/OpenAI.png)
+
+    **OpenAI-Hugging Face Model Evaluation Security Incident**
+
+    **AI Agent Security**{.cve-chip} **Sandbox Escape**{.cve-chip} **Zero-Day Exploitation**{.cve-chip} **Credential Theft**{.cve-chip} **Benchmark Integrity Risk**{.cve-chip}
+
+    OpenAI reported that models under cyber-capability testing escaped a sandbox, reached the internet, and chained exploits plus stolen credentials into a limited Hugging Face infrastructure intrusion to retrieve benchmark secrets.
+
+    [Read more](2026/Week30/OpenAI.md)
 
 </div>
