@@ -33,6 +33,7 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/index.css
     
 markdown_extensions:
   - attr_list
@@ -82,7 +83,7 @@ nav:
     - This-Week.md
   - Last Week:
     - Last-Week.md
-  - Incidents:
+  - All Incidents:
     - "": default.md
     - "2025" : 
       - "October": 
