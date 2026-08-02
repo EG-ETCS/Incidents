@@ -1,7 +1,14 @@
-:root {
+/* ========================================
+   CSS CUSTOM PROPERTIES (VARIABLES)
+   ======================================== */
+
+   :root {
+    /* Primary Theme Colors */
     --md-primary-fg-color: #1a1414;
     --md-primary-fg-color--light: #ECB7B7;
     --md-primary-fg-color--dark: #1e2129;
+    --md-accent-fg-color: #8b0000;
+    --md-accent-fg-color--transparent: rgba(139, 0, 0, 0.12);
     /* Custom theme variables - Default values */
     --cover-bg-primary: rgba(15, 23, 42, 0.85);
     --cover-bg-secondary: rgba(30, 41, 59, 0.8);
@@ -22,6 +29,12 @@
 /* Dark mode variables */
 
 [data-md-color-scheme="slate"] {
+    --md-default-bg-color: #0D1117;
+    --md-accent-fg-color: #c00000;
+    --md-accent-fg-color--transparent: rgba(192, 0, 0, 0.15);
+    --md-code-bg-color: #161b22;
+    --md-code-bg-color--light: #21262d;
+    --md-code-bg-color--lighter: rgba(22, 27, 34, 0.6);
     --cover-bg-primary: rgba(15, 23, 42, 0.95);
     --cover-bg-secondary: rgba(30, 41, 59, 0.9);
     --cover-bg-tertiary: rgba(51, 65, 85, 0.85);
@@ -34,13 +47,18 @@
     --card-bg: rgba(255, 255, 255, 0.08);
     --card-border: rgba(255, 255, 255, 0.15);
     --section-title-color: #f1f5f9;
-    --section-underline: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+    --section-underline: linear-gradient(90deg, #c00000, #ff0000);
 }
 
 
 /* Light mode variables */
 
 [data-md-color-scheme="default"] {
+    --md-accent-fg-color: #8b0000;
+    --md-accent-fg-color--transparent: rgba(139, 0, 0, 0.12);
+    --md-code-bg-color: #f6f8fa;
+    --md-code-bg-color--light: #eef1f5;
+    --md-code-bg-color--lighter: rgba(246, 248, 250, 0.8);
     --cover-bg-primary: rgba(71, 85, 105, 0.8);
     --cover-bg-secondary: rgba(100, 116, 139, 0.75);
     --cover-bg-tertiary: rgba(148, 163, 184, 0.7);
@@ -53,20 +71,22 @@
     --card-bg: rgba(255, 255, 255, 0.95);
     --card-border: rgba(0, 0, 0, 0.1);
     --section-title-color: #1e293b;
-    --section-underline: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+    --section-underline: linear-gradient(90deg, #c00000, #ff0000);
 }
+
+
 
 
 /* Dark Red Header Styling */
 
 .md-header {
-    background: linear-gradient(135deg, #8b0000 0%, #a00000 25%, #b71c1c 75%, #c62828 100%) !important;
-    box-shadow: 0 2px 8px rgba(139, 0, 0, 0.3) !important;
+    background: linear-gradient(135deg, #6a0000 0%, #8b0000 100%) !important;
+    box-shadow: 0 1px 4px rgba(139, 0, 0, 0.2) !important;
     backdrop-filter: blur(10px) !important;
 }
 
 .md-header__button {
-    color: white !important;
+    color: rgb(255, 255, 255) !important;
     transition: all 0.3s ease !important;
 }
 
@@ -88,7 +108,26 @@
 .md-search__input {
     background-color: rgba(255, 255, 255, 0.1) !important;
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: black !important;
+    /* fallback for light mode */
+}
+
+/* Light mode: black text */
+[data-md-color-scheme="default"] .md-search__input {
+    color: black !important;
+}
+
+[data-md-color-scheme="default"] .md-search__input::placeholder {
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Dark mode (slate): white text */
+[data-md-color-scheme="slate"] .md-search__input {
     color: white !important;
+}
+
+[data-md-color-scheme="slate"] .md-search__input::placeholder {
+    color: rgba(255, 255, 255, 0.7) !important;
 }
 
 .md-search__input::placeholder {
@@ -116,22 +155,45 @@
 .Small_table_image {
     width: 100px;
     height: auto;
+    border-radius: 8px;
 }
 
+/* Rounded corners for all content images */
+.md-typeset img {
+    border-radius: 8px;
+}
 
-/* Decorative elements and gradient fade */
+/* ========================================
+   COVER SECTION STYLING
+   ======================================== */
 
-.cover::before {
+.cover {
+    position: relative;
+    background: url("../assets/logo.png") no-repeat center center;
+    background-size: cover;
+    color: white;
+    min-height: 300px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 0 0 0px 0px;
+    padding: 0px;
+}
+
+/* Gradient fade at bottom */
+.cover::after {
     content: "";
     position: absolute;
-    top: 0;
     left: 0;
     right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, transparent 0%, #ff6b6b 25%, #4ecdc4 50%, #45b7d1 75%, transparent 100%);
-    z-index: 2;
+    bottom: 0;
+    height: 10%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, var(--md-default-bg-color) 100%);
 }
-
 
 /* Ensure text is readable and styled */
 
@@ -159,10 +221,12 @@
 }
 
 @keyframes gradientShift {
+
     0%,
     100% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
@@ -207,6 +271,13 @@
     text-align: center;
     padding: 15px;
     vertical-align: top;
+}
+
+/* First row of tables with red background */
+.md-typeset table thead tr:first-child td,
+.md-typeset table thead tr:first-child th {
+    background-color: #b10000 !important;
+    color: white !important;
 }
 
 
@@ -301,7 +372,12 @@
 .md-typeset .grid.cards>ul>li:hover,
 .md-typeset .grid.cards>ol>li:hover {
     border: 2px solid #2196F3 !important;
-    box-shadow: 0 0 15px rgba(33, 150, 243, 0.8) !important, 0 0 30px rgba(33, 150, 243, 0.5) !important, 0 0 45px rgba(33, 150, 243, 0.3) !important, 0 8px 25px rgba(33, 150, 243, 0.2) !important, inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+    box-shadow:
+        0 0 15px rgba(33, 150, 243, 0.8) !important,
+        0 0 30px rgba(33, 150, 243, 0.5) !important,
+        0 0 45px rgba(33, 150, 243, 0.3) !important,
+        0 8px 25px rgba(33, 150, 243, 0.2) !important,
+        inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
     transform: translateY(-6px) scale(1.02);
     border-radius: 16px;
 }
@@ -327,7 +403,7 @@
     position: absolute;
     bottom: -8px;
     left: 0;
-    width: 60px;
+    width: 100px;
     height: 3px;
     background: var(--section-underline);
     border-radius: 2px;
@@ -345,6 +421,26 @@
 
 .md-typeset .grid.cards .material-icons {
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+
+/* Sidebar & TOC: dark red for active page and hover */
+
+.md-nav__link--active,
+.md-nav__item--active > .md-nav__link {
+    color: #8b0000 !important;
+}
+
+.md-nav__link:hover,
+.md-nav__link:focus {
+    color: #8b0000 !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active,
+[data-md-color-scheme="slate"] .md-nav__item--active > .md-nav__link,
+[data-md-color-scheme="slate"] .md-nav__link:hover,
+[data-md-color-scheme="slate"] .md-nav__link:focus {
+    color: #c00000 !important;
 }
 
 
@@ -368,206 +464,4 @@
 .md-tabs__link--active {
     color: white !important;
     border-bottom: 2px solid #ffcdd2 !important;
-}
-
-
-/* Dark red theme for both light and dark modes */
-
-[data-md-color-scheme="default"] .md-header,
-[data-md-color-scheme="slate"] .md-header {
-    background: linear-gradient(135deg, #8b0000 0%, #a00000 25%, #b71c1c 75%, #c62828 100%) !important;
-}
-
-/* ---------------------------
-   Default incident/card layout
-   (applies to single or multiple cards)
-   --------------------------- */
-
-:where(.md-typeset .grid.cards > ul > li,
-       .md-typeset .grid.cards > ol > li,
-       .incident-card,
-       .card) {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    width: 100%;
-    max-width: 520px;            /* reasonable max width for single card */
-    margin: 0 auto;              /* center single cards */
-    padding: 1rem;
-    border-radius: 12px;
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    box-shadow: var(--cover-shadow);
-    backdrop-filter: blur(6px);
-    overflow: hidden;
-    transition: transform .25s ease, box-shadow .25s ease;
-    box-sizing: border-box;
-}
-
-/* card hover lift (keeps consistent whether single or in grid) */
-:where(.md-typeset .grid.cards > ul > li:hover,
-       .md-typeset .grid.cards > ol > li:hover,
-       .incident-card:hover,
-       .card:hover) {
-    transform: translateY(-6px) scale(1.01);
-    box-shadow: 0 18px 50px rgba(0,0,0,0.45);
-}
-
-/* Top cover image with rounded top corners */
-:where(.md-typeset .grid.cards img,
-       .incident-card .card-image img,
-       .card .card-image img) {
-    display: block;
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 0.4rem;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
-}
-
-/* If image is used inside the card and you want full rounded top corners */
-:where(.md-typeset .grid.cards > ul > li img,
-       .md-typeset .grid.cards > ol > li img,
-       .incident-card .card-image img,
-       .card .card-image img) {
-    border-radius: 12px 12px 8px 8px;
-}
-
-/* Header row: icon + title */
-:where(.md-typeset .grid.cards .card-header,
-       .incident-card .card-header,
-       .card .card-header) {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    padding: 0 0.2rem;
-}
-
-:where(.md-typeset .grid.cards .card-header .material-icons,
-       .incident-card .card-header .material-icons,
-       .card .card-header .material-icons) {
-    font-size: 1.05rem;
-    filter: drop-shadow(0 1px 2px rgba(0,0,0,0.45));
-    opacity: 0.95;
-}
-
-/* Title styling */
-:where(.md-typeset .grid.cards .card-header h3,
-       .incident-card .card-header h3,
-       .card .card-header h3) {
-    margin: 0;
-    font-size: 1.05rem;
-    font-weight: 700;
-    color: var(--cover-subtitle-color);
-    line-height: 1.1;
-}
-
-/* Tag row (chips/buttons) */
-:where(.md-typeset .grid.cards .card-tags,
-       .incident-card .card-tags,
-       .card .card-tags) {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-    padding: 0 0.2rem;
-}
-
-:where(.md-typeset .grid.cards .card-tags .chip,
-       .incident-card .card-tags .chip,
-       .card .card-tags .chip,
-       .cve-chip) {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.28rem 0.8rem;
-    border-radius: 999px;
-    font-size: 0.64rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: .6px;
-    border: 1px solid rgba(255,255,255,0.06);
-    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-    backdrop-filter: blur(4px);
-}
-
-/* thin separator line */
-:where(.md-typeset .grid.cards .card-divider,
-       .incident-card .card-divider,
-       .card .card-divider) {
-    height: 1px;
-    background: linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
-    margin: 0.6rem 0;
-    border-radius: 1px;
-    width: 100%;
-}
-
-/* description block */
-:where(.md-typeset .grid.cards .card-body,
-       .incident-card .card-body,
-       .card .card-body) {
-    padding: 0 0.2rem;
-    color: var(--cover-description-color);
-    font-size: 0.95rem;
-    line-height: 1.6;
-    max-height: 6.6rem; /* clamp length for neat cards */
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/* footer / link row */
-:where(.md-typeset .grid.cards .card-footer,
-       .incident-card .card-footer,
-       .card .card-footer) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 0.2rem;
-    gap: 0.5rem;
-}
-
-/* CTA link */
-:where(.md-typeset .grid.cards .card-footer a,
-       .incident-card .card-footer a,
-       .card .card-footer a) {
-    color: var(--cover-accent-cool);
-    text-decoration: none;
-    font-weight: 600;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-}
-
-/* Make sure single-card containers don't expand or override */
-.md-content,
-.md-main,
-.md-typeset {
-    /* keep content predictable when a single card is present */
-    min-width: 0;
-}
-
-/* Accessibility: focus outline for keyboard nav */
-:where(.md-typeset .grid.cards > ul > li:focus,
-       .md-typeset .grid.cards > ol > li:focus,
-       .incident-card:focus,
-       .card:focus) {
-    outline: 3px solid rgba(66,153,225,0.18);
-    outline-offset: 2px;
-}
-
-/* Responsive tweaks */
-@media (max-width: 600px) {
-    :where(.md-typeset .grid.cards > ul > li,
-           .md-typeset .grid.cards > ol > li,
-           .incident-card,
-           .card) {
-        padding: 0.8rem;
-        max-width: 100%;
-    }
-
-    :where(.md-typeset .grid.cards img,
-           .incident-card .card-image img,
-           .card .card-image img) {
-        height: 160px;
-    }
 }

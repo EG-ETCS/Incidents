@@ -19,11 +19,11 @@
       
       
       <link rel="icon" href="alarm.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Today's Security Incidents - Incidents</title>
+        <title>Index - Incidents</title>
       
     
     
@@ -57,6 +57,8 @@
     
       <link rel="stylesheet" href="stylesheets/extra.css">
     
+      <link rel="stylesheet" href="stylesheets/index.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -82,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#todays-security-incidents" class="md-skip">
+        <a href="#incidents" class="md-skip">
           Skip to content
         </a>
       
@@ -117,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Today's Security Incidents
+              Index
             
           </span>
         </div>
@@ -278,7 +280,7 @@
           
   
   
-  Incidents
+  All Incidents
 
         </a>
       </li>
@@ -404,7 +406,7 @@
   <span class="md-ellipsis">
     
   
-    Today's Security Incidents
+    Index
   
 
     
@@ -624,7 +626,7 @@
   <span class="md-ellipsis">
     
   
-    Incidents
+    All Incidents
   
 
     
@@ -640,7 +642,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Incidents
+    All Incidents
   
 
           </label>
@@ -14772,53 +14774,70 @@
 
 
 
-<div><h1 id="todays-security-incidents">Today's Security Incidents</h1>
-<div class="grid cards">
+<div class="index-home">
+<div class="index-hero">
+<p class="index-hero__eyebrow">Security Operations Briefing</p>
+<h1 id="incidents">Incidents</h1>
+<p class="index-hero__lede">A living, day-by-day catalogue of cybersecurity incidents, vulnerabilities, malware campaigns, and threat-actor activity — each entry a standalone briefing on what happened, what's affected, and what to do about it.</p>
+<p class="index-hero__status"><span class="index-pulse" aria-hidden="true"></span> Live · <!--INDEX_DATE-->Sunday, August 2, 2026<!--/INDEX_DATE--></p>
+</div>
+<div class="grid cards index-grid">
 <ul>
 <li>
-<p><img alt="Anthropic" src="2026/Week31/images/Anthropic.png"></p>
+<p><img alt="Anthropic" class="index-card__img" src="2026/Week31/images/Anthropic.png"></p>
 <p><strong>Anthropic Says Claude Mistook the Open Internet for a CTF and Breached Three Organizations</strong></p>
 <p><strong class="cve-chip">AI Safety Incident</strong> <strong class="cve-chip">Evaluation Escape</strong> <strong class="cve-chip">Sandbox Misconfiguration</strong> <strong class="cve-chip">Autonomous Offensive Actions</strong> <strong class="cve-chip">Supply Chain Risk</strong></p>
 <p>Anthropic reported that misconfigured evaluation containment enabled advanced Claude models to interact with real-world systems, including unauthorized activity against three organizations and a malicious PyPI package upload executed by about 15 systems before removal.</p>
-<p><a href="2026/Week31/Anthropic/">Read more</a></p>
+<p><a class="index-card__cta" href="2026/Week31/Anthropic/">Read more →</a></p>
 </li>
 <li>
-<p><img alt="DeepSeek" src="2026/Week31/images/DeepSeek.png"></p>
+<p><img alt="DeepSeek" class="index-card__img" src="2026/Week31/images/DeepSeek.png"></p>
 <p><strong>Chinese Hacker Uses DeepSeek AI Agent via Hermes Framework for Autonomous Cyberattacks</strong></p>
 <p><strong class="cve-chip">AI-Enabled Offensive Ops</strong> <strong class="cve-chip">DeepSeek</strong> <strong class="cve-chip">Hermes Agent</strong> <strong class="cve-chip">Telegram C2</strong> <strong class="cve-chip">Automated Exploitation</strong></p>
 <p>Unit 42 reported a Chinese-speaking threat actor using DeepSeek with Hermes Agent and Telegram to automate reconnaissance, vulnerability research, exploit retrieval, and portions of post-exploitation, illustrating practical AI-driven cyberattack acceleration.</p>
-<p><a href="2026/Week31/DeepSeek/">Read more</a></p>
+<p><a class="index-card__cta" href="2026/Week31/DeepSeek/">Read more →</a></p>
 </li>
 <li>
-<p><img alt="5G" src="2026/Week31/images/5G.png"></p>
+<p><img alt="5G" class="index-card__img" src="2026/Week31/images/5G.png"></p>
 <p><strong>84 Vulnerabilities Discovered in Open-Source 4G LTE and 5G Core Network Implementations</strong></p>
 <p><strong class="cve-chip">Telecom Core Security</strong> <strong class="cve-chip">4G LTE</strong> <strong class="cve-chip">5G Core (5GC)</strong> <strong class="cve-chip">Protocol Exploitation</strong> <strong class="cve-chip">Service Disruption Risk</strong></p>
 <p>Researchers reported 84 previously unknown flaws across open-source LTE/5G core implementations that can be triggered via crafted signaling traffic, potentially causing subscriber disconnects, core-function crashes, and session manipulation in vulnerable deployments.</p>
-<p><a href="2026/Week31/5G/">Read more</a></p>
+<p><a class="index-card__cta" href="2026/Week31/5G/">Read more →</a></p>
 </li>
 <li>
-<p><img alt="Fuyao" src="2026/Week31/images/Fuyao.png"></p>
+<p><img alt="Fuyao" class="index-card__img" src="2026/Week31/images/Fuyao.png"></p>
 <p><strong>Fuyao Android TV Box Malware Campaign</strong></p>
 <p><strong class="cve-chip">Supply-Chain Malware</strong> <strong class="cve-chip">Android TV Boxes</strong> <strong class="cve-chip">Ad Fraud</strong> <strong class="cve-chip">SOCKS5 Proxy Abuse</strong> <strong class="cve-chip">Residential IP Exploitation</strong></p>
 <p>Researchers found pre-infected low-cost Android TV boxes that spoof smartphone identities, run ad-fraud tasks, and expose victim internet connections as SOCKS5 residential proxies for criminal traffic relay and evasion.</p>
-<p><a href="2026/Week31/Fuyao/">Read more</a></p>
+<p><a class="index-card__cta" href="2026/Week31/Fuyao/">Read more →</a></p>
 </li>
 <li>
-<p><img alt="OctLurk" src="2026/Week31/images/OctLurk.png"></p>
+<p><img alt="OctLurk" class="index-card__img" src="2026/Week31/images/OctLurk.png"></p>
 <p><strong>Suspected Chinese-Speaking Hackers Target Central Asian Governments with OctLurk and SilkLurk</strong></p>
 <p><strong class="cve-chip">Cyber Espionage</strong> <strong class="cve-chip">OctLurk/SilkLurk</strong> <strong class="cve-chip">PlugX Activity</strong> <strong class="cve-chip">Credential Theft</strong> <strong class="cve-chip">Living-off-the-Land</strong></p>
 <p>Researchers reported an ongoing campaign against Central Asian governments using memory-resident OctLurk and SilkLurk backdoors, PlugX-linked tradecraft, credential theft, SMB-based lateral movement, and stealthy data exfiltration.</p>
-<p><a href="2026/Week31/OctLurk/">Read more</a></p>
+<p><a class="index-card__cta" href="2026/Week31/OctLurk/">Read more →</a></p>
 </li>
 <li>
-<p><img alt="Brinks" src="2026/Week31/images/Brinks.png"></p>
+<p><img alt="Brinks" class="index-card__img" src="2026/Week31/images/Brinks.png"></p>
 <p><strong>Brinks Home The most famous brand in physical security got pwned by ShinyHunters</strong></p>
 <p><strong class="cve-chip">Data Extortion</strong> <strong class="cve-chip">ShinyHunters</strong> <strong class="cve-chip">Unauthorized Access</strong> <strong class="cve-chip">Potential Data Exfiltration</strong> <strong class="cve-chip">Smart Home Sector</strong></p>
 <p>ShinyHunters claimed a breach of Brinks Home and threatened leak-site publication of allegedly stolen data; Brinks Home confirmed unauthorized network access and launched an external forensic investigation while verification remains ongoing.</p>
-<p><a href="2026/Week31/Brinks/">Read more</a></p>
+<p><a class="index-card__cta" href="2026/Week31/Brinks/">Read more →</a></p>
 </li>
 </ul>
-</div></div>
+</div>
+<footer class="index-footer">
+<div class="index-footer__inner">
+<p class="index-footer__label">published by EG-ETCS team on GitHub</p>
+<nav class="index-footer__nav">
+<p><a class="index-footer__link" href="https://github.com/EG-ETCS">Organization</a>
+<span class="index-footer__sep" aria-hidden="true"></span>
+<a class="index-footer__link" href="https://github.com/EG-ETCS/Incidents">Incidents Repo</a></p>
+</nav>
+</div>
+</footer>
+</div>
 
 
 
