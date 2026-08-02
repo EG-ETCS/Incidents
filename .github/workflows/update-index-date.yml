@@ -55,7 +55,7 @@ jobs:
           git push
 
       - name: Install MkDocs
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || steps.date.outputs.changed == 'true'
+        if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || steps.date.outputs.changed == 'true' }}
         run: |
           python -m pip install --upgrade pip
           python -m pip install \
@@ -66,5 +66,5 @@ jobs:
             mkdocs-pdf
 
       - name: Deploy site to GitHub Pages
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || steps.date.outputs.changed == 'true'
-        run: mkdocs gh-deploy --force --clean --message "deploy: refresh index date"
+        if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || steps.date.outputs.changed == 'true' }}
+        run: mkdocs gh-deploy --force --clean --message "deploy - refresh index date"
