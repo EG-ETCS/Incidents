@@ -77,12 +77,9 @@ plugins:
 
 
 nav:
-  - Today's Incidents:
-    - index.md
-  - This Week:
-    - This-Week.md
-  - Last Week:
-    - Last-Week.md
+  - Today's Incidents: index.md
+  - This Week: This-Week.md
+  - Last Week: Last-Week.md
   - All Incidents:
     - "": default.md
     - "2025" : 

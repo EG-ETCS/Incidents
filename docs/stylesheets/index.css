@@ -196,9 +196,287 @@
     z-index: 1;
 }
 
-.md-main:has(.index-home) .md-sidebar,
+/* TOC stays hidden on index; primary nav only on mobile drawer */
 .md-main:has(.index-home) .md-sidebar--secondary {
     display: none;
+}
+
+/* Desktop/tablet with tabs: hide the primary sidebar so content is full-width */
+@media screen and (min-width: 76.25em) {
+    .md-main:has(.index-home) .md-sidebar--primary {
+        display: none;
+    }
+}
+
+/* Mobile/narrow: keep the drawer usable when tabs collapse */
+@media screen and (max-width: 76.1875em) {
+    body:has(.index-home) .md-sidebar--primary {
+        display: block !important;
+        width: 20rem !important;
+        min-width: 20rem !important;
+        left: -20rem !important;
+        height: 100% !important;
+        max-height: 100% !important;
+        overflow: hidden !important;
+        transform: translateX(0) !important;
+    }
+
+    /* Slide fully into view when the drawer toggle is checked */
+    body:has(.index-home) [data-md-toggle="drawer"]:checked ~ .md-container .md-sidebar--primary {
+        transform: translateX(20rem) !important;
+    }
+
+    body:has(.index-home) .md-sidebar--primary .md-sidebar__scrollwrap {
+        width: 100% !important;
+        height: 100% !important;
+        max-height: 100% !important;
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        overscroll-behavior: contain !important;
+        touch-action: pan-y !important;
+        scroll-behavior: auto !important;
+    }
+
+    body:has(.index-home) .md-sidebar--primary .md-sidebar__inner,
+    body:has(.index-home) .md-sidebar--primary .md-nav--primary {
+        width: 100% !important;
+        height: auto !important;
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+    body:has(.index-home) .md-nav--primary .md-nav__title[for="__drawer"] {
+        width: 100% !important;
+    }
+}
+
+/* ----- Side panel / mobile drawer (index only) ----- */
+
+body:has(.index-home) .md-sidebar--primary {
+    background: transparent;
+}
+
+body:has(.index-home) .md-sidebar--primary .md-sidebar__scrollwrap {
+    background: var(--index-ink-soft);
+    border-right: 1px solid var(--index-line);
+    box-shadow: 8px 0 28px rgba(0, 0, 0, 0.18);
+}
+
+body:has(.index-home) .md-nav,
+body:has(.index-home) .md-nav--primary {
+    background: transparent !important;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/* Always show a single brand header: logo + Incidents */
+body:has(.index-home) .md-nav--primary > .md-nav__title {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.7rem !important;
+    position: relative !important;
+    top: auto !important;
+    z-index: 1 !important;
+    height: auto !important;
+    min-height: 3.75rem !important;
+    padding: 0.95rem 1rem !important;
+    background: var(--index-ink-soft) !important;
+    color: var(--index-text) !important;
+    font-family: "Bebas Neue", "Impact", sans-serif !important;
+    font-size: 1.45rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.06em !important;
+    text-transform: uppercase !important;
+    line-height: 1 !important;
+    box-shadow: none !important;
+    border-bottom: 1px solid var(--index-line) !important;
+    overflow: visible !important;
+    flex-shrink: 0 !important;
+}
+
+body:has(.index-home) .md-nav--primary > .md-nav__title .md-nav__button.md-logo {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+    width: 2.1rem !important;
+    height: 2.1rem !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-shrink: 0 !important;
+}
+
+body:has(.index-home) .md-nav--primary > .md-nav__title .md-logo img,
+body:has(.index-home) .md-nav--primary > .md-nav__title img {
+    display: block !important;
+    width: 2.1rem !important;
+    height: 2.1rem !important;
+    object-fit: contain !important;
+}
+
+/* Kill Material drill-in headers that overlap the brand title */
+body:has(.index-home) .md-nav--primary .md-nav .md-nav__title,
+body:has(.index-home) .md-nav__item--nested > .md-nav > .md-nav__title {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+}
+
+/* Keep nested page lists visible (All Incidents tree, etc.) */
+body:has(.index-home) .md-nav--primary .md-nav__item--nested > .md-nav {
+    display: block !important;
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    max-height: none !important;
+    min-height: 0 !important;
+    visibility: visible !important;
+    transform: none !important;
+    overflow: visible !important;
+}
+
+body:has(.index-home) .md-nav--primary .md-nav__toggle:not(:checked) ~ .md-nav {
+    display: none !important;
+}
+
+body:has(.index-home) .md-nav--primary .md-nav__toggle:checked ~ .md-nav {
+    display: block !important;
+}
+
+body:has(.index-home) .md-nav__list {
+    padding: 0.5rem 0.75rem 1rem;
+}
+
+body:has(.index-home) .md-nav__item {
+    padding: 0;
+    border: none !important;
+    border-bottom: none !important;
+}
+
+body:has(.index-home) .md-nav__link {
+    display: flex !important;
+    align-items: center !important;
+    position: relative !important;
+    margin: 0 !important;
+    padding: 0.4rem 0.35rem !important;
+    border-radius: 0 !important;
+    color: var(--index-muted) !important;
+    font-family: "Source Sans 3", sans-serif !important;
+    font-size: 0.78rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.01em !important;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+    transition: color 0.2s ease !important;
+}
+
+/* No full-width pseudo line */
+body:has(.index-home) .md-nav__link::after {
+    display: none !important;
+    content: none !important;
+}
+
+body:has(.index-home) .md-nav__link:hover,
+body:has(.index-home) .md-nav__link:focus {
+    color: var(--index-text) !important;
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Current page: line under the label text only */
+body:has(.index-home) .md-nav__link--active,
+body:has(.index-home) .md-nav__item--active > .md-nav__link.md-nav__link--active {
+    color: var(--index-crimson-bright) !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    font-weight: 700 !important;
+}
+
+body:has(.index-home) .md-nav__link--active .md-ellipsis,
+body:has(.index-home) .md-nav__item--active > .md-nav__link.md-nav__link--active .md-ellipsis {
+    border-bottom: 2px solid var(--index-crimson-bright);
+    padding-bottom: 0.1rem;
+}
+
+/* Section toggles are not the current page — no underline */
+body:has(.index-home) .md-nav__item--nested > .md-nav__link .md-ellipsis {
+    border-bottom: none !important;
+}
+
+body:has(.index-home) .md-nav__icon {
+    color: var(--index-muted) !important;
+}
+
+body:has(.index-home) .md-nav__link:hover .md-nav__icon,
+body:has(.index-home) .md-nav__link--active .md-nav__icon {
+    color: var(--index-crimson-bright) !important;
+}
+
+body:has(.index-home) .md-nav__item--nested > .md-nav__link {
+    font-weight: 700 !important;
+    font-size: 0.78rem !important;
+    color: var(--index-text) !important;
+}
+
+body:has(.index-home) .md-nav--primary .md-nav__item--nested .md-nav__list {
+    padding: 0.1rem 0 0.25rem 0.65rem;
+    margin-left: 0.1rem;
+    border-left: none !important;
+}
+
+body:has(.index-home) .md-overlay {
+    background: color-mix(in srgb, var(--index-ink) 72%, transparent) !important;
+    backdrop-filter: blur(4px);
+}
+
+/* Light mode drawer surfaces */
+[data-md-color-scheme="default"] body:has(.index-home) .md-sidebar--primary .md-sidebar__scrollwrap,
+[data-md-color-scheme="default"] body:has(.index-home) .md-nav--primary > .md-nav__title {
+    background: #ffffff !important;
+    border-color: #e2e8f0 !important;
+}
+
+[data-md-color-scheme="default"] body:has(.index-home) .md-nav--primary > .md-nav__title {
+    color: #0f172a !important;
+}
+
+[data-md-color-scheme="default"] body:has(.index-home) .md-nav__link {
+    color: #64748b !important;
+}
+
+[data-md-color-scheme="default"] body:has(.index-home) .md-nav__link:hover,
+[data-md-color-scheme="default"] body:has(.index-home) .md-nav__link:focus {
+    color: #0f172a !important;
+    background: transparent !important;
+}
+
+[data-md-color-scheme="default"] body:has(.index-home) .md-nav__link--active,
+[data-md-color-scheme="default"] body:has(.index-home) .md-nav__item--active > .md-nav__link.md-nav__link--active {
+    color: #b91c1c !important;
+    background: transparent !important;
+}
+
+[data-md-color-scheme="default"] body:has(.index-home) .md-nav__link--active .md-ellipsis,
+[data-md-color-scheme="default"] body:has(.index-home) .md-nav__item--active > .md-nav__link.md-nav__link--active .md-ellipsis {
+    border-bottom-color: #b91c1c;
+}
+
+[data-md-color-scheme="default"] body:has(.index-home) .md-nav--primary .md-nav__item--nested .md-nav__list {
+    border-left: none !important;
+}
+
+[data-md-color-scheme="default"] body:has(.index-home) .md-overlay {
+    background: rgba(15, 23, 42, 0.35) !important;
 }
 
 .md-main:has(.index-home) .md-content {
@@ -792,6 +1070,9 @@ body:has(.index-home) .md-header[data-md-state="shadow"]::after {
 /* Soft continuous wash from header into body on index */
 body:has(.index-home) {
     background: var(--index-ink);
+}
+
+body:has(.index-home) .md-main {
     overflow-x: hidden;
 }
 
