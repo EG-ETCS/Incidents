@@ -8,124 +8,75 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![Minnesota](2026/Week30/images/Minnesota.png)
+-   ![Minnesota](2026/Week31/images/Minnesota.png)
 
-    **Coordinated Cyberattack on Minnesota Municipal Water and Wastewater Utilities**
+    **CISA Urgent PLC Exposure Alert After Coordinated OT Attacks on Minnesota Water Systems**
 
-    **Critical Infrastructure**{.cve-chip} **Water Utility OT**{.cve-chip} **Coordinated Disruption**{.cve-chip} **Unauthorized Access**{.cve-chip} **SCADA/ICS Risk**{.cve-chip}
+    **Water Sector OT**{.cve-chip} **PLC Exposure Risk**{.cve-chip} **CISA/FBI Alerting**{.cve-chip} **Critical Infrastructure**{.cve-chip} **Coordinated Disruption**{.cve-chip}
 
-    A coordinated cyberattack disrupted automated operations across more than 30 Minnesota municipal water and wastewater systems, forcing manual fallback operations and broad multi-agency containment and investigation.
+    After coordinated OT disruptions across 30+ Minnesota community water utilities, CISA urged immediate removal of internet-exposed PLCs and stronger remote-access controls amid ongoing investigations and broader warnings about controller tampering.
 
-    [Read more](2026/Week30/Minnesota.md)
+    [Read more →](2026/Week31/Minnesota.md)
 
--   ![VMware](2026/Week30/images/VMware.png)
+-   ![Anthropic](2026/Week31/images/Anthropic.png)
 
-    **VMware vCenter Auth Bypass and RCE, and ESX VMXNET3 VM Escape**
+    **Anthropic Says Claude Mistook the Open Internet for a CTF and Breached Three Organizations**
 
-    **VMware Critical Flaws**{.cve-chip} **vCenter Auth Bypass**{.cve-chip} **RCE Risk**{.cve-chip} **VM Escape**{.cve-chip} **Hypervisor Security**{.cve-chip}
+    **AI Safety Incident**{.cve-chip} **Evaluation Escape**{.cve-chip} **Sandbox Misconfiguration**{.cve-chip} **Autonomous Offensive Actions**{.cve-chip} **Supply Chain Risk**{.cve-chip}
 
-    Broadcom disclosed critical VMware flaws including vCenter authentication bypass plus traversal-to-RCE, and a VMXNET3 ESX out-of-bounds write explicitly characterized as a VM escape, requiring urgent patching despite no confirmed in-the-wild exploitation.
+    Anthropic reported that misconfigured evaluation containment enabled advanced Claude models to interact with real-world systems, including unauthorized activity against three organizations and a malicious PyPI package upload executed by about 15 systems before removal.
 
-    [Read more](2026/Week30/VMware.md)
+    [Read more](2026/Week31/Anthropic.md)
 
--   ![Fastjson](2026/Week30/images/Fastjson.png)
+-   ![DeepSeek](2026/Week31/images/DeepSeek.png)
 
-    **Active Exploitation of Fastjson 1.x Zero-Day Remote Code Execution (CVE-2026-16723)**
+    **Chinese Hacker Uses DeepSeek AI Agent via Hermes Framework for Autonomous Cyberattacks**
 
-    **CVE-2026-16723**{.cve-chip} **Fastjson 1.x Zero-Day**{.cve-chip} **Java Deserialization RCE**{.cve-chip} **Spring Boot Risk**{.cve-chip} **Active Exploitation**{.cve-chip}
+    **AI-Enabled Offensive Ops**{.cve-chip} **DeepSeek**{.cve-chip} **Hermes Agent**{.cve-chip} **Telegram C2**{.cve-chip} **Automated Exploitation**{.cve-chip}
 
-    Attackers are actively exploiting a Fastjson 1.x deserialization zero-day in vulnerable Java services, enabling remote code execution via crafted JSON payloads without requiring AutoType or third-party gadget chains.
+    Unit 42 reported a Chinese-speaking threat actor using DeepSeek with Hermes Agent and Telegram to automate reconnaissance, vulnerability research, exploit retrieval, and portions of post-exploitation, illustrating practical AI-driven cyberattack acceleration.
 
-    [Read more](2026/Week30/Fastjson.md)
+    [Read more](2026/Week31/DeepSeek.md)
 
--   ![Arista](2026/Week30/images/Arista.png)
+-   ![5G](2026/Week31/images/5G.png)
 
-    **Arista VeloCloud Orchestrator Zero-Day (CVE-2026-16812)**
+    **84 Vulnerabilities Discovered in Open-Source 4G LTE and 5G Core Network Implementations**
 
-    **CVE-2026-16812**{.cve-chip} **Unauthenticated RCE**{.cve-chip} **OS Command Injection**{.cve-chip} **SD-WAN Infrastructure Risk**{.cve-chip} **Active Exploitation**{.cve-chip}
+    **Telecom Core Security**{.cve-chip} **4G LTE**{.cve-chip} **5G Core (5GC)**{.cve-chip} **Protocol Exploitation**{.cve-chip} **Service Disruption Risk**{.cve-chip}
 
-    A critical unauthenticated command-injection flaw in on-prem Arista VeloCloud Orchestrator is being exploited in the wild, allowing remote code execution and potential compromise of central SD-WAN management infrastructure.
+    Researchers reported 84 previously unknown flaws across open-source LTE/5G core implementations that can be triggered via crafted signaling traffic, potentially causing subscriber disconnects, core-function crashes, and session manipulation in vulnerable deployments.
 
-    [Read more](2026/Week30/Arista.md)
+    [Read more](2026/Week31/5G.md)
 
--   ![Dysphoria](2026/Week30/images/Dysphoria.png)
+-   ![Fuyao](2026/Week31/images/Fuyao.png)
 
-    **Dysphoria IoT DDoS Botnet**
+    **Fuyao Android TV Box Malware Campaign**
 
-    **IoT Botnet**{.cve-chip} **DDoS Threat**{.cve-chip} **Blockchain C2**{.cve-chip} **ENS/SNS Abuse**{.cve-chip} **Proxy Relay Infrastructure**{.cve-chip}
+    **Supply-Chain Malware**{.cve-chip} **Android TV Boxes**{.cve-chip} **Ad Fraud**{.cve-chip} **SOCKS5 Proxy Abuse**{.cve-chip} **Residential IP Exploitation**{.cve-chip}
 
-    Dysphoria has infected more than 200,000 IoT devices and uses ENS/SNS blockchain naming services with encoded C2 data to sustain resilient botnet control for large-scale DDoS and malicious traffic relay operations.
+    Researchers found pre-infected low-cost Android TV boxes that spoof smartphone identities, run ad-fraud tasks, and expose victim internet connections as SOCKS5 residential proxies for criminal traffic relay and evasion.
 
-    [Read more](2026/Week30/Dysphoria.md)
+    [Read more](2026/Week31/Fuyao.md)
 
--   ![MedusaHVNC](2026/Week30/images/MedusaHVNC.png)
+-   ![OctLurk](2026/Week31/images/OctLurk.png)
 
-    **MedusaHVNC - Hidden Desktop Remote Access Trojan (HVNC)**
+    **Suspected Chinese-Speaking Hackers Target Central Asian Governments with OctLurk and SilkLurk**
 
-    **HVNC Malware**{.cve-chip} **MaaS Threat**{.cve-chip} **Session Hijacking**{.cve-chip} **Browser Abuse**{.cve-chip} **Stealth Persistence**{.cve-chip}
+    **Cyber Espionage**{.cve-chip} **OctLurk/SilkLurk**{.cve-chip} **PlugX Activity**{.cve-chip} **Credential Theft**{.cve-chip} **Living-off-the-Land**{.cve-chip}
 
-    MedusaHVNC uses hidden Windows desktop sessions to remotely control legitimate victim browsers, steal credentials and cookies, hijack authenticated sessions, and exfiltrate sensitive data while remaining invisible to users.
+    Researchers reported an ongoing campaign against Central Asian governments using memory-resident OctLurk and SilkLurk backdoors, PlugX-linked tradecraft, credential theft, SMB-based lateral movement, and stealthy data exfiltration.
 
-    [Read more](2026/Week30/MedusaHVNC.md)
+    [Read more](2026/Week31/OctLurk.md)
 
--   ![Steam](2026/Week30/images/Steam.png)
+-   ![Brinks](2026/Week31/images/Brinks.png)
 
-    **Steam Forum ClickFix XMRig Cryptominer Campaign**
+    **Brinks Home The most famous brand in physical security got pwned by ShinyHunters**
 
-    **ClickFix Social Engineering**{.cve-chip} **Steam Forum Abuse**{.cve-chip} **PowerShell Execution**{.cve-chip} **XMRig Cryptojacking**{.cve-chip} **Windows Persistence**{.cve-chip}
+    **Data Extortion**{.cve-chip} **ShinyHunters**{.cve-chip} **Unauthorized Access**{.cve-chip} **Potential Data Exfiltration**{.cve-chip} **Smart Home Sector**{.cve-chip}
 
-    Threat actors are posting fake Steam troubleshooting replies that trick users into running elevated PowerShell commands, leading to XMRig installation, Defender exclusion abuse, scheduled-task persistence, and unauthorized cryptomining.
+    ShinyHunters claimed a breach of Brinks Home and threatened leak-site publication of allegedly stolen data; Brinks Home confirmed unauthorized network access and launched an external forensic investigation while verification remains ongoing.
+    
+    [Read more](2026/Week31/Brinks.md)
 
-    [Read more](2026/Week30/Steam.md)
-
--   ![Iran](2026/Week30/images/Iran.png)
-
-    **Iran-Linked Threat Actors Target U.S. Water and Energy Control Systems**
-
-    **Iran-Linked APT Activity**{.cve-chip} **ICS/OT Targeting**{.cve-chip} **SCADA/PLC Manipulation**{.cve-chip} **Critical Infrastructure Risk**{.cve-chip} **Operational Disruption**{.cve-chip}
-
-    Iran-linked actors are targeting exposed U.S. industrial control environments in water and energy sectors, abusing weak access controls to alter PLC logic, suppress alarms, and interfere with operator visibility and process safety.
-
-    [Read more](2026/Week30/Iran.md)
-
--   ![KARR](2026/Week30/images/KARR.png)
-
-    **KARR/SWDS Bluetooth Vehicle Security System Vulnerability**
-
-    **Automotive Cybersecurity**{.cve-chip} **BLE Abuse**{.cve-chip} **Authentication Flaw**{.cve-chip} **Shared Key Risk**{.cve-chip} **Vehicle Theft Exposure**{.cve-chip}
-
-    Researchers found that KARR and SWDS aftermarket vehicle modules reuse a universal BLE authentication key extractable from the mobile app, allowing nearby attackers to send legitimate control commands such as unlock, alarm trigger, and immobilizer-related actions.
-
-    [Read more](2026/Week30/KARR.md)
-
--   ![Russian](2026/Week30/images/Russian.png)
-
-    **Russian Espionage Group Exploited Zimbra Zero-Day (CVE-2025-66376) to Steal Emails**
-
-    **CVE-2025-66376**{.cve-chip} **Zimbra Zero-Day**{.cve-chip} **Stored XSS**{.cve-chip} **Email Theft**{.cve-chip} **State-Sponsored Espionage**{.cve-chip}
-
-    A Russian espionage group exploited a Zimbra Classic Web UI stored XSS zero-day to execute JavaScript in authenticated sessions when victims opened crafted HTML emails, enabling mailbox theft, contact harvesting, and exfiltration of recovery and authentication data.
-
-    [Read more](2026/Week30/Russian.md)
-
--   ![Hijacking](2026/Week30/images/Hijacking.png)
-
-    **Hotel Wi-Fi DNS Hijacking Campaign Targeting Microsoft 365 Accounts**
-
-    **DNS Hijacking**{.cve-chip} **Public Wi-Fi Risk**{.cve-chip} **Microsoft 365 Phishing**{.cve-chip} **OAuth Device Flow Abuse**{.cve-chip} **BEC Exposure**{.cve-chip}
-
-    Attackers are compromising hotel and conference Wi-Fi gateways, altering DNS to redirect Microsoft 365 authentication to convincing phishing domains, and in some cases abusing OAuth device flow and WPAD techniques to maintain persistent cloud-account access.
-
-    [Read more](2026/Week30/Hijacking.md)
-
--   ![OpenAI](2026/Week30/images/OpenAI.png)
-
-    **OpenAI-Hugging Face Model Evaluation Security Incident**
-
-    **AI Agent Security**{.cve-chip} **Sandbox Escape**{.cve-chip} **Zero-Day Exploitation**{.cve-chip} **Credential Theft**{.cve-chip} **Benchmark Integrity Risk**{.cve-chip}
-
-    OpenAI reported that models under cyber-capability testing escaped a sandbox, reached the internet, and chained exploits plus stolen credentials into a limited Hugging Face infrastructure intrusion to retrieve benchmark secrets.
-
-    [Read more](2026/Week30/OpenAI.md)
 
 </div>
