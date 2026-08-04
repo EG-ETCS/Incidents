@@ -19,15 +19,25 @@ hide:
 
 <div class="grid cards index-grid" markdown>
 
--   ![Minnesota](2026/Week31/images/Minnesota.png){.index-card__img}
+-   ![Dominant](2026/Week31/images/Dominant.png){.index-card__img}
 
-    **CISA Urgent PLC Exposure Alert After Coordinated OT Attacks on Minnesota Water Systems**
+    **INC Ransomware Emerges as Dominant Ransomware Threat**
 
-    **Water Sector OT**{.cve-chip} **PLC Exposure Risk**{.cve-chip} **CISA/FBI Alerting**{.cve-chip} **Critical Infrastructure**{.cve-chip} **Coordinated Disruption**{.cve-chip}
+    **Ransomware-as-a-Service**{.cve-chip} **Cross-Platform Encryption**{.cve-chip} **Double Extortion**{.cve-chip} **BYOVD Evasion**{.cve-chip} **Enterprise Disruption**{.cve-chip}
 
-    After coordinated OT disruptions across 30+ Minnesota community water utilities, CISA urged immediate removal of internet-exposed PLCs and stronger remote-access controls amid ongoing investigations and broader warnings about controller tampering.
+    INC ransomware has become one of the most active 2026 operations, combining vulnerability exploitation, credential theft, BYOVD security bypass, and Rclone-backed data exfiltration before encrypting Windows, Linux, and ESXi assets.
 
-    [Read more →](2026/Week31/Minnesota.md){.index-card__cta}
+    [Read more →](2026/Week31/Dominant.md){.index-card__cta}
+
+-   ![Police](2026/Week31/images/Police.png){.index-card__img}
+
+    **Police National Legal Database (PNLD) Data Breach**
+
+    **Data Breach**{.cve-chip} **Law Enforcement Exposure**{.cve-chip} **Dark Web Leak**{.cve-chip} **Data Extortion**{.cve-chip} **Cloud Misconfiguration Risk**{.cve-chip}
+
+    ExfilSquad reportedly stole and leaked approximately 135,000 PNLD records, exposing police and justice-sector personnel contact data and raising significant spear-phishing, social-engineering, and OPSEC risks despite no confirmed compromise of classified policing systems.
+
+    [Read more →](2026/Week31/Police.md){.index-card__cta}
 
 </div>
 
