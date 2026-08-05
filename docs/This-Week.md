@@ -8,6 +8,26 @@ hide:
  
 <div class="grid cards" markdown>
 
+-   ![TP-Link](2026/Week31/images/TP-Link.png){.index-card__img}
+
+    **TP-Link Omada ZTP Vulnerabilities Enabling Network Compromise**
+
+    **ZTP Trust Breakdown**{.cve-chip} **Omada Ecosystem Risk**{.cve-chip} **Controller Compromise**{.cve-chip} **MitM and Adoption Hijack**{.cve-chip} **Enterprise and IoT Exposure**{.cve-chip}
+
+    Forescout disclosed 15 Omada ZTP weaknesses that undermine provisioning trust, enabling adoption hijack, credential exposure, and potential controller/gateway compromise, with expanded risk when chained with prior Omada command-injection flaws.
+
+    [Read more →](2026/Week31/TP-Link.md){.index-card__cta}
+
+-   ![water](2026/Week31/images/water.png){.index-card__img}
+
+    **Multi-state U.S. Water-System PLC Cyberattacks (Minnesota, Michigan, Georgia, and Other States)**
+
+    **Water Utility OT Threat**{.cve-chip} **PLC Intrusions**{.cve-chip} **Multi-State Disruption**{.cve-chip} **Iran-Linked Suspicion**{.cve-chip} **Critical Infrastructure Risk**{.cve-chip}
+
+    Utilities in multiple U.S. states reported unauthorized PLC access and operational disruption patterns consistent with broader CISA/FBI warnings on exposed OT systems, with Iran-linked actors widely cited as leading suspects pending formal attribution.
+
+    [Read more →](2026/Week31/water.md){.index-card__cta}
+
 -   ![Dominant](2026/Week31/images/Dominant.png){.index-card__img}
 
     **INC Ransomware Emerges as Dominant Ransomware Threat**

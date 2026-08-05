@@ -19,25 +19,25 @@ hide:
 
 <div class="grid cards index-grid" markdown>
 
--   ![Dominant](2026/Week31/images/Dominant.png){.index-card__img}
+-   ![TP-Link](2026/Week31/images/TP-Link.png){.index-card__img}
 
-    **INC Ransomware Emerges as Dominant Ransomware Threat**
+    **TP-Link Omada ZTP Vulnerabilities Enabling Network Compromise**
 
-    **Ransomware-as-a-Service**{.cve-chip} **Cross-Platform Encryption**{.cve-chip} **Double Extortion**{.cve-chip} **BYOVD Evasion**{.cve-chip} **Enterprise Disruption**{.cve-chip}
+    **ZTP Trust Breakdown**{.cve-chip} **Omada Ecosystem Risk**{.cve-chip} **Controller Compromise**{.cve-chip} **MitM and Adoption Hijack**{.cve-chip} **Enterprise and IoT Exposure**{.cve-chip}
 
-    INC ransomware has become one of the most active 2026 operations, combining vulnerability exploitation, credential theft, BYOVD security bypass, and Rclone-backed data exfiltration before encrypting Windows, Linux, and ESXi assets.
+    Forescout disclosed 15 Omada ZTP weaknesses that undermine provisioning trust, enabling adoption hijack, credential exposure, and potential controller/gateway compromise, with expanded risk when chained with prior Omada command-injection flaws.
 
-    [Read more →](2026/Week31/Dominant.md){.index-card__cta}
+    [Read more →](2026/Week31/TP-Link.md){.index-card__cta}
 
--   ![Police](2026/Week31/images/Police.png){.index-card__img}
+-   ![water](2026/Week31/images/water.png){.index-card__img}
 
-    **Police National Legal Database (PNLD) Data Breach**
+    **Multi-state U.S. Water-System PLC Cyberattacks (Minnesota, Michigan, Georgia, and Other States)**
 
-    **Data Breach**{.cve-chip} **Law Enforcement Exposure**{.cve-chip} **Dark Web Leak**{.cve-chip} **Data Extortion**{.cve-chip} **Cloud Misconfiguration Risk**{.cve-chip}
+    **Water Utility OT Threat**{.cve-chip} **PLC Intrusions**{.cve-chip} **Multi-State Disruption**{.cve-chip} **Iran-Linked Suspicion**{.cve-chip} **Critical Infrastructure Risk**{.cve-chip}
 
-    ExfilSquad reportedly stole and leaked approximately 135,000 PNLD records, exposing police and justice-sector personnel contact data and raising significant spear-phishing, social-engineering, and OPSEC risks despite no confirmed compromise of classified policing systems.
+    Utilities in multiple U.S. states reported unauthorized PLC access and operational disruption patterns consistent with broader CISA/FBI warnings on exposed OT systems, with Iran-linked actors widely cited as leading suspects pending formal attribution.
 
-    [Read more →](2026/Week31/Police.md){.index-card__cta}
+    [Read more →](2026/Week31/water.md){.index-card__cta}
 
 </div>
 
