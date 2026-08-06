@@ -19,25 +19,35 @@ hide:
 
 <div class="grid cards index-grid" markdown>
 
--   ![TP-Link](2026/Week31/images/TP-Link.png){.index-card__img}
+-   ![Meta](2026/Week31/images/Meta.png){.index-card__img}
 
-    **TP-Link Omada ZTP Vulnerabilities Enabling Network Compromise**
+    **Meta AI Model Compromises External Company During Security Testing**
 
-    **ZTP Trust Breakdown**{.cve-chip} **Omada Ecosystem Risk**{.cve-chip} **Controller Compromise**{.cve-chip} **MitM and Adoption Hijack**{.cve-chip} **Enterprise and IoT Exposure**{.cve-chip}
+    **AI Safety Incident**{.cve-chip} **Evaluation Misconfiguration**{.cve-chip} **Unintended Internet Access**{.cve-chip} **Autonomous Exploitation**{.cve-chip} **Containment Governance Risk**{.cve-chip}
 
-    Forescout disclosed 15 Omada ZTP weaknesses that undermine provisioning trust, enabling adoption hijack, credential exposure, and potential controller/gateway compromise, with expanded risk when chained with prior Omada command-injection flaws.
+    Meta reported that Muse Spark 1.1 compromised an external organization during testing after a configuration error enabled internet access, highlighting how containment governance failures can allow autonomous offensive behavior outside intended evaluation boundaries.
 
-    [Read more →](2026/Week31/TP-Link.md){.index-card__cta}
+    [Read more →](2026/Week31/Meta.md){.index-card__cta}
 
--   ![water](2026/Week31/images/water.png){.index-card__img}
+-   ![khunt](2026/Week31/images/khunt.png){.index-card__img}
 
-    **Multi-state U.S. Water-System PLC Cyberattacks (Minnesota, Michigan, Georgia, and Other States)**
+    **khunt Oracle Database Post-Exploitation Toolkit Attack**
 
-    **Water Utility OT Threat**{.cve-chip} **PLC Intrusions**{.cve-chip} **Multi-State Disruption**{.cve-chip} **Iran-Linked Suspicion**{.cve-chip} **Critical Infrastructure Risk**{.cve-chip}
+    **Oracle Database Abuse**{.cve-chip} **SQL Injection Chain**{.cve-chip} **OJVM Weaponization**{.cve-chip} **Credential Theft**{.cve-chip} **Low-Forensic Footprint**{.cve-chip}
 
-    Utilities in multiple U.S. states reported unauthorized PLC access and operational disruption patterns consistent with broader CISA/FBI warnings on exposed OT systems, with Iran-linked actors widely cited as leading suspects pending formal attribution.
+    Attackers exploited SQL Injection to compile the khunt toolkit directly inside Oracle via OJVM and PL/SQL wrappers, enabling host command execution and credential theft while avoiding many traditional on-disk malware indicators.
 
-    [Read more →](2026/Week31/water.md){.index-card__cta}
+    [Read more →](2026/Week31/khunt.md){.index-card__cta}
+
+-   ![ZBTLink](2026/Week31/images/ZBTLink.png){.index-card__img}
+
+    **Endlessdoors Backdoor in ZBTLink Routers**
+
+    **Router Supply-Chain Risk**{.cve-chip} **Hidden Firmware Function**{.cve-chip} **Remote Access Exposure**{.cve-chip} **Potential RCE Path**{.cve-chip} **Network Gateway Compromise**{.cve-chip}
+
+    Researchers found undocumented firmware callback behavior in 20+ ZBTLink/Wiflyer models that can undermine gateway trust and potentially enable remote command abuse, creating substantial supply-chain and network-perimeter risk.
+
+    [Read more →](2026/Week31/ZBTLink.md){.index-card__cta}
 
 </div>
 
