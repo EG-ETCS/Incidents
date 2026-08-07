@@ -13,7 +13,7 @@ hide:
 
 <p class="index-hero__lede">A living, day-by-day catalogue of cybersecurity incidents, vulnerabilities, malware campaigns, and threat-actor activity — each entry a standalone briefing on what happened, what's affected, and what to do about it.</p>
 
-<p class="index-hero__status"><span class="index-pulse" aria-hidden="true"></span><!--INDEX_DATE-->Thursday, August 6, 2026<!--/INDEX_DATE--></p>
+<p class="index-hero__status"><span class="index-pulse" aria-hidden="true"></span><!--INDEX_DATE-->Friday, August 7, 2026<!--/INDEX_DATE--></p>
 
 </div>
 
