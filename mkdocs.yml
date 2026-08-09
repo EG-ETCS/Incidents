@@ -534,3 +534,7 @@ nav:
           - "Meta AI Model Compromises External Company During Security Testing": 2026/Week31/Meta.md
           - "khunt Oracle Database Post-Exploitation Toolkit Attack": 2026/Week31/khunt.md
           - "Endlessdoors Backdoor in ZBTLink Routers": 2026/Week31/ZBTLink.md
+        - "week32":
+          - "Internet-Exposed Rockwell Automation PLCs": 2026/Week32/Rockwell.md
+          - "Cisco Catalyst SD-WAN & IOS XE Security Vulnerabilities – 12 CVEs": 2026/Week32/Cisco.md
+          - "Linux SCTP Flaw Could Let Local Users Gain Root": 2026/Week32/SCTP.md

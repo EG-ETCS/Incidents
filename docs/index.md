@@ -19,35 +19,35 @@ hide:
 
 <div class="grid cards index-grid" markdown>
 
--   ![Meta](2026/Week31/images/Meta.png){.index-card__img}
+-   ![Rockwell](2026/Week32/images/Rockwell.png){.index-card__img}
 
-    **Meta AI Model Compromises External Company During Security Testing**
+    **Internet-Exposed Rockwell Automation PLCs**
 
-    **AI Safety Incident**{.cve-chip} **Evaluation Misconfiguration**{.cve-chip} **Unintended Internet Access**{.cve-chip} **Autonomous Exploitation**{.cve-chip} **Containment Governance Risk**{.cve-chip}
+    **ICS Exposure**{.cve-chip} **Rockwell PLCs**{.cve-chip} **EtherNet/IP**{.cve-chip} **Water Sector Risk**{.cve-chip} **OT Attack Surface**{.cve-chip}
 
-    Meta reported that Muse Spark 1.1 compromised an external organization during testing after a configuration error enabled internet access, highlighting how containment governance failures can allow autonomous offensive behavior outside intended evaluation boundaries.
+    Forescout identified 4,407 internet-exposed Rockwell PLCs, including 2,844 in the U.S., with notable concentration in cellular-connected deployments and overlap with municipalities linked to recent water-sector cyber incidents.
 
-    [Read more →](2026/Week31/Meta.md){.index-card__cta}
+    [Read more →](2026/Week32/Rockwell.md){.index-card__cta}
 
--   ![khunt](2026/Week31/images/khunt.png){.index-card__img}
+-   ![Cisco](2026/Week32/images/Cisco.png){.index-card__img}
 
-    **khunt Oracle Database Post-Exploitation Toolkit Attack**
+    **Cisco Catalyst SD-WAN & IOS XE Security Vulnerabilities - 12 CVEs**
 
-    **Oracle Database Abuse**{.cve-chip} **SQL Injection Chain**{.cve-chip} **OJVM Weaponization**{.cve-chip} **Credential Theft**{.cve-chip} **Low-Forensic Footprint**{.cve-chip}
+    **Cisco SD-WAN**{.cve-chip} **Cisco IOS XE**{.cve-chip} **Multi-CVE Advisory**{.cve-chip} **Management-Plane Risk**{.cve-chip} **Network Infrastructure Security**{.cve-chip}
 
-    Attackers exploited SQL Injection to compile the khunt toolkit directly inside Oracle via OJVM and PL/SQL wrappers, enabling host command execution and credential theft while avoiding many traditional on-disk malware indicators.
+    Cisco patched 12 vulnerabilities in Catalyst SD-WAN and IOS XE, including multiple critical issues that could enable unauthorized access or command execution against reachable management and control-plane components.
 
-    [Read more →](2026/Week31/khunt.md){.index-card__cta}
+    [Read more →](2026/Week32/Cisco.md){.index-card__cta}
 
--   ![ZBTLink](2026/Week31/images/ZBTLink.png){.index-card__img}
+-   ![SCTP](2026/Week32/images/SCTP.png){.index-card__img}
 
-    **Endlessdoors Backdoor in ZBTLink Routers**
+    **Linux SCTP Flaw Could Let Local Users Gain Root**
 
-    **Router Supply-Chain Risk**{.cve-chip} **Hidden Firmware Function**{.cve-chip} **Remote Access Exposure**{.cve-chip} **Potential RCE Path**{.cve-chip} **Network Gateway Compromise**{.cve-chip}
+    **Kernel Privilege Escalation**{.cve-chip} **SCTP ASCONF**{.cve-chip} **Use-After-Free**{.cve-chip} **Container Escape Risk**{.cve-chip} **Local Exploitation**{.cve-chip}
 
-    Researchers found undocumented firmware callback behavior in 20+ ZBTLink/Wiflyer models that can undermine gateway trust and potentially enable remote command abuse, creating substantial supply-chain and network-perimeter risk.
+    An 18-year-old Linux SCTP use-after-free flaw in ASCONF handling can allow local root privilege escalation and, in some containerized scenarios, escape to host compromise when SCTP paths are reachable.
 
-    [Read more →](2026/Week31/ZBTLink.md){.index-card__cta}
+    [Read more →](2026/Week32/SCTP.md){.index-card__cta}
 
 </div>
 
