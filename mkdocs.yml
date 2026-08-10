@@ -538,3 +538,5 @@ nav:
           - "Internet-Exposed Rockwell Automation PLCs": 2026/Week32/Rockwell.md
           - "Cisco Catalyst SD-WAN & IOS XE Security Vulnerabilities – 12 CVEs": 2026/Week32/Cisco.md
           - "Linux SCTP Flaw Could Let Local Users Gain Root": 2026/Week32/SCTP.md
+          - "Metabase Zero-Day Exploited in Wild Allows Admin Access Without Authentication": 2026/Week32/Metabase.md
+          - "UNC6671 Vishing & Data-Extortion Campaign": 2026/Week32/Vishing.md
