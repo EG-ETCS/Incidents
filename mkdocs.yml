@@ -540,3 +540,7 @@ nav:
           - "Linux SCTP Flaw Could Let Local Users Gain Root": 2026/Week32/SCTP.md
           - "Metabase Zero-Day Exploited in Wild Allows Admin Access Without Authentication": 2026/Week32/Metabase.md
           - "UNC6671 Vishing & Data-Extortion Campaign": 2026/Week32/Vishing.md
+          - "Cisco Warns of Seven ClamAV Flaws, Two With Public PoCs": 2026/Week32/ClamAV.md
+          - "ZOOMSDAY – Zoom Zero-Click Remote Code Execution Vulnerability": 2026/Week32/Zoom.md
+          - "Gunra Ransomware Exploits Fortinet to Breach Networks": 2026/Week32/Gunra.md
+          - "Poland Energy Sector IT-to-OT Intrusion via Private APN": 2026/Week32/Poland.md
