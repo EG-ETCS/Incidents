@@ -8,194 +8,94 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![Meta](2026/Week31/images/Meta.png){.index-card__img}
+-   ![ClamAV](2026/Week32/images/ClamAV.png){.index-card__img}
 
-    **Meta AI Model Compromises External Company During Security Testing**
+    **Cisco Warns of Seven ClamAV Flaws, Two With Public PoCs**
 
-    **AI Safety Incident**{.cve-chip} **Evaluation Misconfiguration**{.cve-chip} **Unintended Internet Access**{.cve-chip} **Autonomous Exploitation**{.cve-chip} **Containment Governance Risk**{.cve-chip}
+    **CVE-2026-20337**{.cve-chip} **CVE-2026-20338**{.cve-chip} **ClamAV Parser Flaws**{.cve-chip} **DoS Risk**{.cve-chip} **Cisco Secure Endpoint**{.cve-chip}
 
-    Meta reported that Muse Spark 1.1 compromised an external organization during testing after a configuration error enabled internet access, highlighting how containment governance failures can allow autonomous offensive behavior outside intended evaluation boundaries.
+    Cisco disclosed seven ClamAV parser vulnerabilities in Secure Endpoint Connector workflows; two ZIP-related flaws have public PoCs and can allow unauthenticated remote file submission to crash scanning processes.
 
-    [Read more →](2026/Week31/Meta.md){.index-card__cta}
+    [Read more →](2026/Week32/ClamAV.md){.index-card__cta}
 
--   ![khunt](2026/Week31/images/khunt.png){.index-card__img}
+-   ![Zoom](2026/Week32/images/Zoom.png){.index-card__img}
 
-    **khunt Oracle Database Post-Exploitation Toolkit Attack**
+    **ZOOMSDAY – Zoom Zero-Click Remote Code Execution Vulnerability**
 
-    **Oracle Database Abuse**{.cve-chip} **SQL Injection Chain**{.cve-chip} **OJVM Weaponization**{.cve-chip} **Credential Theft**{.cve-chip} **Low-Forensic Footprint**{.cve-chip}
+    **CVE-2026-53413**{.cve-chip} **CVE-2026-53414**{.cve-chip} **CVE-2026-53415**{.cve-chip} **Zero-Click RCE**{.cve-chip} **Zoom Annotation Protocol**{.cve-chip}
 
-    Attackers exploited SQL Injection to compile the khunt toolkit directly inside Oracle via OJVM and PL/SQL wrappers, enabling host command execution and credential theft while avoiding many traditional on-disk malware indicators.
+    Multiple Zoom annotation-protocol flaws, led by CVE-2026-53413, could allow a malicious meeting participant to trigger zero-click remote code execution on another attendee's client.
 
-    [Read more →](2026/Week31/khunt.md){.index-card__cta}
+    [Read more →](2026/Week32/Zoom.md){.index-card__cta}
 
--   ![ZBTLink](2026/Week31/images/ZBTLink.png){.index-card__img}
+-   ![Gunra](2026/Week32/images/Gunra.png){.index-card__img}
 
-    **Endlessdoors Backdoor in ZBTLink Routers**
+    **Gunra Ransomware Exploits Fortinet to Breach Networks**
 
-    **Router Supply-Chain Risk**{.cve-chip} **Hidden Firmware Function**{.cve-chip} **Remote Access Exposure**{.cve-chip} **Potential RCE Path**{.cve-chip} **Network Gateway Compromise**{.cve-chip}
+    **Gunra RaaS**{.cve-chip} **Double Extortion**{.cve-chip} **CVE-2024-55591**{.cve-chip} **CVE-2025-24472**{.cve-chip} **Fortinet Edge Exploitation**{.cve-chip}
 
-    Researchers found undocumented firmware callback behavior in 20+ ZBTLink/Wiflyer models that can undermine gateway trust and potentially enable remote command abuse, creating substantial supply-chain and network-perimeter risk.
+    Gunra affiliates have exploited exposed Fortinet edge infrastructure for initial access, then performed credential theft, MFA bypass activity, lateral movement, data exfiltration, backup destruction, and ransomware deployment.
 
-    [Read more →](2026/Week31/ZBTLink.md){.index-card__cta}
+    [Read more →](2026/Week32/Gunra.md){.index-card__cta}
 
--   ![TP-Link](2026/Week31/images/TP-Link.png){.index-card__img}
+-   ![Poland](2026/Week32/images/Poland.png){.index-card__img}
 
-    **TP-Link Omada ZTP Vulnerabilities Enabling Network Compromise**
+    **Poland Energy Sector IT-to-OT Intrusion via Private APN**
 
-    **ZTP Trust Breakdown**{.cve-chip} **Omada Ecosystem Risk**{.cve-chip} **Controller Compromise**{.cve-chip} **MitM and Adoption Hijack**{.cve-chip} **Enterprise and IoT Exposure**{.cve-chip}
+    **IT-to-OT Pivot**{.cve-chip} **Private APN Abuse**{.cve-chip} **Industrial Router Exposure**{.cve-chip} **Siemens PLC Manipulation**{.cve-chip} **Critical Infrastructure**{.cve-chip}
 
-    Forescout disclosed 15 Omada ZTP weaknesses that undermine provisioning trust, enabling adoption hijack, credential exposure, and potential controller/gateway compromise, with expanded risk when chained with prior Omada command-injection flaws.
+    Attackers pivoted from IT to OT by abusing private APN trust through a Teltonika router path, reached industrial control systems, manipulated Siemens PLC states, and disrupted operations without ultimately interrupting power or heat generation.
 
-    [Read more →](2026/Week31/TP-Link.md){.index-card__cta}
+    [Read more →](2026/Week32/Poland.md){.index-card__cta}
 
--   ![water](2026/Week31/images/water.png){.index-card__img}
+-   ![Vishing](2026/Week32/images/Vishing.png){.index-card__img}
 
-    **Multi-state U.S. Water-System PLC Cyberattacks (Minnesota, Michigan, Georgia, and Other States)**
+    **UNC6671 Vishing & Data-Extortion Campaign**
 
-    **Water Utility OT Threat**{.cve-chip} **PLC Intrusions**{.cve-chip} **Multi-State Disruption**{.cve-chip} **Iran-Linked Suspicion**{.cve-chip} **Critical Infrastructure Risk**{.cve-chip}
+    **UNC6671**{.cve-chip} **Voice Phishing (Vishing)**{.cve-chip} **AiTM Phishing**{.cve-chip} **SaaS Data Theft**{.cve-chip} **Cloud Extortion**{.cve-chip}
 
-    Utilities in multiple U.S. states reported unauthorized PLC access and operational disruption patterns consistent with broader CISA/FBI warnings on exposed OT systems, with Iran-linked actors widely cited as leading suspects pending formal attribution.
+    UNC6671 used IT-helpdesk impersonation and AiTM phishing to capture credentials and sessions, then abuse Microsoft 365, Okta, SharePoint, and OneDrive for large-scale cloud data theft followed by extortion demands.
 
-    [Read more →](2026/Week31/water.md){.index-card__cta}
+    [Read more →](2026/Week32/Vishing.md){.index-card__cta}
 
--   ![Dominant](2026/Week31/images/Dominant.png){.index-card__img}
+-   ![Metabase](2026/Week32/images/Metabase.png){.index-card__img}
 
-    **INC Ransomware Emerges as Dominant Ransomware Threat**
+    **Metabase Zero-Day Exploited in Wild Allows Admin Access Without Authentication**
 
-    **Ransomware-as-a-Service**{.cve-chip} **Cross-Platform Encryption**{.cve-chip} **Double Extortion**{.cve-chip} **BYOVD Evasion**{.cve-chip} **Enterprise Disruption**{.cve-chip}
+    **Metabase SQL Injection**{.cve-chip} **Unauthenticated Attack Path**{.cve-chip} **Admin Takeover Risk**{.cve-chip} **Data Exposure**{.cve-chip} **BI Platform Security**{.cve-chip}
 
-    INC ransomware has become one of the most active 2026 operations, combining vulnerability exploitation, credential theft, BYOVD security bypass, and Rclone-backed data exfiltration before encrypting Windows, Linux, and ESXi assets.
+    A critical Metabase SQL injection flaw was exploited in the wild and can allow unauthenticated access paths to administrative control, increasing risk of credential theft and sensitive data exposure through connected enterprise databases.
 
-    [Read more →](2026/Week31/Dominant.md){.index-card__cta}
+    [Read more →](2026/Week32/Metabase.md){.index-card__cta}
 
--   ![Police](2026/Week31/images/Police.png){.index-card__img}
+-   ![Rockwell](2026/Week32/images/Rockwell.png){.index-card__img}
 
-    **Police National Legal Database (PNLD) Data Breach**
+    **Internet-Exposed Rockwell Automation PLCs**
 
-    **Data Breach**{.cve-chip} **Law Enforcement Exposure**{.cve-chip} **Dark Web Leak**{.cve-chip} **Data Extortion**{.cve-chip} **Cloud Misconfiguration Risk**{.cve-chip}
+    **ICS Exposure**{.cve-chip} **Rockwell PLCs**{.cve-chip} **EtherNet/IP**{.cve-chip} **Water Sector Risk**{.cve-chip} **OT Attack Surface**{.cve-chip}
 
-    ExfilSquad reportedly stole and leaked approximately 135,000 PNLD records, exposing police and justice-sector personnel contact data and raising significant spear-phishing, social-engineering, and OPSEC risks despite no confirmed compromise of classified policing systems.
+    Forescout identified 4,407 internet-exposed Rockwell PLCs, including 2,844 in the U.S., with notable concentration in cellular-connected deployments and overlap with municipalities linked to recent water-sector cyber incidents.
 
-    [Read more →](2026/Week31/Police.md){.index-card__cta}
+    [Read more →](2026/Week32/Rockwell.md){.index-card__cta}
 
--   ![Minnesota](2026/Week30/images/Minnesota.png)
+-   ![Cisco](2026/Week32/images/Cisco.png){.index-card__img}
 
-    **Coordinated Cyberattack on Minnesota Municipal Water and Wastewater Utilities**
+    **Cisco Catalyst SD-WAN & IOS XE Security Vulnerabilities - 12 CVEs**
 
-    **Critical Infrastructure**{.cve-chip} **Water Utility OT**{.cve-chip} **Coordinated Disruption**{.cve-chip} **Unauthorized Access**{.cve-chip} **SCADA/ICS Risk**{.cve-chip}
+    **Cisco SD-WAN**{.cve-chip} **Cisco IOS XE**{.cve-chip} **Multi-CVE Advisory**{.cve-chip} **Management-Plane Risk**{.cve-chip} **Network Infrastructure Security**{.cve-chip}
 
-    A coordinated cyberattack disrupted automated operations across more than 30 Minnesota municipal water and wastewater systems, forcing manual fallback operations and broad multi-agency containment and investigation.
+    Cisco patched 12 vulnerabilities in Catalyst SD-WAN and IOS XE, including multiple critical issues that could enable unauthorized access or command execution against reachable management and control-plane components.
 
-    [Read more](2026/Week30/Minnesota.md)
+    [Read more →](2026/Week32/Cisco.md){.index-card__cta}
 
--   ![VMware](2026/Week30/images/VMware.png)
+-   ![SCTP](2026/Week32/images/SCTP.png){.index-card__img}
 
-    **VMware vCenter Auth Bypass and RCE, and ESX VMXNET3 VM Escape**
+    **Linux SCTP Flaw Could Let Local Users Gain Root**
 
-    **VMware Critical Flaws**{.cve-chip} **vCenter Auth Bypass**{.cve-chip} **RCE Risk**{.cve-chip} **VM Escape**{.cve-chip} **Hypervisor Security**{.cve-chip}
+    **Kernel Privilege Escalation**{.cve-chip} **SCTP ASCONF**{.cve-chip} **Use-After-Free**{.cve-chip} **Container Escape Risk**{.cve-chip} **Local Exploitation**{.cve-chip}
 
-    Broadcom disclosed critical VMware flaws including vCenter authentication bypass plus traversal-to-RCE, and a VMXNET3 ESX out-of-bounds write explicitly characterized as a VM escape, requiring urgent patching despite no confirmed in-the-wild exploitation.
+    An 18-year-old Linux SCTP use-after-free flaw in ASCONF handling can allow local root privilege escalation and, in some containerized scenarios, escape to host compromise when SCTP paths are reachable.
 
-    [Read more](2026/Week30/VMware.md)
-
--   ![Fastjson](2026/Week30/images/Fastjson.png)
-
-    **Active Exploitation of Fastjson 1.x Zero-Day Remote Code Execution (CVE-2026-16723)**
-
-    **CVE-2026-16723**{.cve-chip} **Fastjson 1.x Zero-Day**{.cve-chip} **Java Deserialization RCE**{.cve-chip} **Spring Boot Risk**{.cve-chip} **Active Exploitation**{.cve-chip}
-
-    Attackers are actively exploiting a Fastjson 1.x deserialization zero-day in vulnerable Java services, enabling remote code execution via crafted JSON payloads without requiring AutoType or third-party gadget chains.
-
-    [Read more](2026/Week30/Fastjson.md)
-
--   ![Arista](2026/Week30/images/Arista.png)
-
-    **Arista VeloCloud Orchestrator Zero-Day (CVE-2026-16812)**
-
-    **CVE-2026-16812**{.cve-chip} **Unauthenticated RCE**{.cve-chip} **OS Command Injection**{.cve-chip} **SD-WAN Infrastructure Risk**{.cve-chip} **Active Exploitation**{.cve-chip}
-
-    A critical unauthenticated command-injection flaw in on-prem Arista VeloCloud Orchestrator is being exploited in the wild, allowing remote code execution and potential compromise of central SD-WAN management infrastructure.
-
-    [Read more](2026/Week30/Arista.md)
-
--   ![Dysphoria](2026/Week30/images/Dysphoria.png)
-
-    **Dysphoria IoT DDoS Botnet**
-
-    **IoT Botnet**{.cve-chip} **DDoS Threat**{.cve-chip} **Blockchain C2**{.cve-chip} **ENS/SNS Abuse**{.cve-chip} **Proxy Relay Infrastructure**{.cve-chip}
-
-    Dysphoria has infected more than 200,000 IoT devices and uses ENS/SNS blockchain naming services with encoded C2 data to sustain resilient botnet control for large-scale DDoS and malicious traffic relay operations.
-
-    [Read more](2026/Week30/Dysphoria.md)
-
--   ![MedusaHVNC](2026/Week30/images/MedusaHVNC.png)
-
-    **MedusaHVNC - Hidden Desktop Remote Access Trojan (HVNC)**
-
-    **HVNC Malware**{.cve-chip} **MaaS Threat**{.cve-chip} **Session Hijacking**{.cve-chip} **Browser Abuse**{.cve-chip} **Stealth Persistence**{.cve-chip}
-
-    MedusaHVNC uses hidden Windows desktop sessions to remotely control legitimate victim browsers, steal credentials and cookies, hijack authenticated sessions, and exfiltrate sensitive data while remaining invisible to users.
-
-    [Read more](2026/Week30/MedusaHVNC.md)
-
--   ![Steam](2026/Week30/images/Steam.png)
-
-    **Steam Forum ClickFix XMRig Cryptominer Campaign**
-
-    **ClickFix Social Engineering**{.cve-chip} **Steam Forum Abuse**{.cve-chip} **PowerShell Execution**{.cve-chip} **XMRig Cryptojacking**{.cve-chip} **Windows Persistence**{.cve-chip}
-
-    Threat actors are posting fake Steam troubleshooting replies that trick users into running elevated PowerShell commands, leading to XMRig installation, Defender exclusion abuse, scheduled-task persistence, and unauthorized cryptomining.
-
-    [Read more](2026/Week30/Steam.md)
-
--   ![Iran](2026/Week30/images/Iran.png)
-
-    **Iran-Linked Threat Actors Target U.S. Water and Energy Control Systems**
-
-    **Iran-Linked APT Activity**{.cve-chip} **ICS/OT Targeting**{.cve-chip} **SCADA/PLC Manipulation**{.cve-chip} **Critical Infrastructure Risk**{.cve-chip} **Operational Disruption**{.cve-chip}
-
-    Iran-linked actors are targeting exposed U.S. industrial control environments in water and energy sectors, abusing weak access controls to alter PLC logic, suppress alarms, and interfere with operator visibility and process safety.
-
-    [Read more](2026/Week30/Iran.md)
-
--   ![KARR](2026/Week30/images/KARR.png)
-
-    **KARR/SWDS Bluetooth Vehicle Security System Vulnerability**
-
-    **Automotive Cybersecurity**{.cve-chip} **BLE Abuse**{.cve-chip} **Authentication Flaw**{.cve-chip} **Shared Key Risk**{.cve-chip} **Vehicle Theft Exposure**{.cve-chip}
-
-    Researchers found that KARR and SWDS aftermarket vehicle modules reuse a universal BLE authentication key extractable from the mobile app, allowing nearby attackers to send legitimate control commands such as unlock, alarm trigger, and immobilizer-related actions.
-
-    [Read more](2026/Week30/KARR.md)
-
--   ![Russian](2026/Week30/images/Russian.png)
-
-    **Russian Espionage Group Exploited Zimbra Zero-Day (CVE-2025-66376) to Steal Emails**
-
-    **CVE-2025-66376**{.cve-chip} **Zimbra Zero-Day**{.cve-chip} **Stored XSS**{.cve-chip} **Email Theft**{.cve-chip} **State-Sponsored Espionage**{.cve-chip}
-
-    A Russian espionage group exploited a Zimbra Classic Web UI stored XSS zero-day to execute JavaScript in authenticated sessions when victims opened crafted HTML emails, enabling mailbox theft, contact harvesting, and exfiltration of recovery and authentication data.
-
-    [Read more](2026/Week30/Russian.md)
-
--   ![Hijacking](2026/Week30/images/Hijacking.png)
-
-    **Hotel Wi-Fi DNS Hijacking Campaign Targeting Microsoft 365 Accounts**
-
-    **DNS Hijacking**{.cve-chip} **Public Wi-Fi Risk**{.cve-chip} **Microsoft 365 Phishing**{.cve-chip} **OAuth Device Flow Abuse**{.cve-chip} **BEC Exposure**{.cve-chip}
-
-    Attackers are compromising hotel and conference Wi-Fi gateways, altering DNS to redirect Microsoft 365 authentication to convincing phishing domains, and in some cases abusing OAuth device flow and WPAD techniques to maintain persistent cloud-account access.
-
-    [Read more](2026/Week30/Hijacking.md)
-
--   ![OpenAI](2026/Week30/images/OpenAI.png)
-
-    **OpenAI-Hugging Face Model Evaluation Security Incident**
-
-    **AI Agent Security**{.cve-chip} **Sandbox Escape**{.cve-chip} **Zero-Day Exploitation**{.cve-chip} **Credential Theft**{.cve-chip} **Benchmark Integrity Risk**{.cve-chip}
-
-    OpenAI reported that models under cyber-capability testing escaped a sandbox, reached the internet, and chained exploits plus stolen credentials into a limited Hugging Face infrastructure intrusion to retrieve benchmark secrets.
-
-    [Read more](2026/Week30/OpenAI.md)
+    [Read more →](2026/Week32/SCTP.md){.index-card__cta}
 
 </div>

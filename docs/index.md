@@ -19,45 +19,35 @@ hide:
 
 <div class="grid cards index-grid" markdown>
 
--   ![ClamAV](2026/Week32/images/ClamAV.png){.index-card__img}
+-   ![Evooo1Bot](2026/Week33/images/Evooo1Bot.png){.index-card__img}
 
-    **Cisco Warns of Seven ClamAV Flaws, Two With Public PoCs**
+    **Evooo1Bot - Multi-Functional Mirai-Based Linux Botnet**
 
-    **CVE-2026-20337**{.cve-chip} **CVE-2026-20338**{.cve-chip} **ClamAV Parser Flaws**{.cve-chip} **DoS Risk**{.cve-chip} **Cisco Secure Endpoint**{.cve-chip}
+    **Mirai Variant**{.cve-chip} **Linux Botnet**{.cve-chip} **SOCKS5 Relay Abuse**{.cve-chip} **SSH Brute Force**{.cve-chip} **DDoS + Proxy Operations**{.cve-chip}
 
-    Cisco disclosed seven ClamAV parser vulnerabilities in Secure Endpoint Connector workflows; two ZIP-related flaws have public PoCs and can allow unauthenticated remote file submission to crash scanning processes.
+    Evooo1Bot extends Mirai-style operations with encrypted C2, multi-layer obfuscation, SSH propagation, credential sniffing, and SOCKS5 relay modes that can convert compromised edge devices into persistent traffic-proxy nodes.
 
-    [Read more →](2026/Week32/ClamAV.md){.index-card__cta}
+    [Read more →](2026/Week33/Evooo1Bot.md){.index-card__cta}
 
--   ![Zoom](2026/Week32/images/Zoom.png){.index-card__img}
+-   ![Delta](2026/Week33/images/Delta.png){.index-card__img}
 
-    **ZOOMSDAY – Zoom Zero-Click Remote Code Execution Vulnerability**
+    **Rogue Wi-Fi Network on Delta Flight 591**
 
-    **CVE-2026-53413**{.cve-chip} **CVE-2026-53414**{.cve-chip} **CVE-2026-53415**{.cve-chip} **Zero-Click RCE**{.cve-chip} **Zoom Annotation Protocol**{.cve-chip}
+    **Rogue Access Point**{.cve-chip} **In-Flight Wi-Fi Spoofing**{.cve-chip} **Potential Phishing**{.cve-chip} **Deauthentication Suspicion**{.cve-chip} **Aviation Cybersecurity**{.cve-chip}
 
-    Multiple Zoom annotation-protocol flaws, led by CVE-2026-53413, could allow a malicious meeting participant to trigger zero-click remote code execution on another attendee's client.
+    An unauthorized SSID resembling Delta Wi-Fi was reportedly detected on Flight 591; while the full attack chain remains unconfirmed, the event raised phishing and credential-theft concerns and led to temporary onboard Wi-Fi shutdown.
 
-    [Read more →](2026/Week32/Zoom.md){.index-card__cta}
+    [Read more →](2026/Week33/Delta.md){.index-card__cta}
 
--   ![Gunra](2026/Week32/images/Gunra.png){.index-card__img}
+-   ![WindRelay](2026/Week33/images/WindRelay.png){.index-card__img}
 
-    **Gunra Ransomware Exploits Fortinet to Breach Networks**
+    **WindRelay Android Malware**
 
-    **Gunra RaaS**{.cve-chip} **Double Extortion**{.cve-chip} **CVE-2024-55591**{.cve-chip} **CVE-2025-24472**{.cve-chip} **Fortinet Edge Exploitation**{.cve-chip}
+    **Android Malware**{.cve-chip} **Vishing Fraud**{.cve-chip} **SpyNote RAT**{.cve-chip} **NFC Relay Attack**{.cve-chip} **Banking Abuse**{.cve-chip}
 
-    Gunra affiliates have exploited exposed Fortinet edge infrastructure for initial access, then performed credential theft, MFA bypass activity, lateral movement, data exfiltration, backup destruction, and ransomware deployment.
+    Attackers used vishing to deploy SpyNote and a second-stage WindRelay payload, then relayed live NFC card communication to attacker devices for fraudulent POS transactions and unauthorized loan abuse.
 
-    [Read more →](2026/Week32/Gunra.md){.index-card__cta}
-
--   ![Poland](2026/Week32/images/Poland.png){.index-card__img}
-
-    **Poland Energy Sector IT-to-OT Intrusion via Private APN**
-
-    **IT-to-OT Pivot**{.cve-chip} **Private APN Abuse**{.cve-chip} **Industrial Router Exposure**{.cve-chip} **Siemens PLC Manipulation**{.cve-chip} **Critical Infrastructure**{.cve-chip}
-
-    Attackers pivoted from IT to OT by abusing private APN trust through a Teltonika router path, reached industrial control systems, manipulated Siemens PLC states, and disrupted operations without ultimately interrupting power or heat generation.
-
-    [Read more →](2026/Week32/Poland.md){.index-card__cta}
+    [Read more →](2026/Week33/WindRelay.md){.index-card__cta}
 
 </div>
 

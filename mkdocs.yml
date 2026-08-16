@@ -544,3 +544,7 @@ nav:
           - "ZOOMSDAY – Zoom Zero-Click Remote Code Execution Vulnerability": 2026/Week32/Zoom.md
           - "Gunra Ransomware Exploits Fortinet to Breach Networks": 2026/Week32/Gunra.md
           - "Poland Energy Sector IT-to-OT Intrusion via Private APN": 2026/Week32/Poland.md
+        - "week33":
+          - "WindRelay Android Malware": 2026/Week33/WindRelay.md
+          - "Rogue Wi-Fi Network on Delta Flight 591": 2026/Week33/Delta.md
+          - "Evooo1Bot - Multi-Functional Mirai-Based Linux Botnet": 2026/Week33/Evooo1Bot.md
