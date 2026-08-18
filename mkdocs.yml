@@ -548,3 +548,6 @@ nav:
           - "WindRelay Android Malware": 2026/Week33/WindRelay.md
           - "Rogue Wi-Fi Network on Delta Flight 591": 2026/Week33/Delta.md
           - "Evooo1Bot - Multi-Functional Mirai-Based Linux Botnet": 2026/Week33/Evooo1Bot.md
+          - "New PATCHCORD Backdoor Targets Afghan Telecom and Indian Critical Infrastructure": 2026/Week33/PATCHCORD.md
+          - "Apple Mercenary Spyware Threat Notifications – 2026": 2026/Week33/Apple.md
+          - "Unisoc VoLTE Video Call Exploit Chain – Modem-to-Android Kernel Privilege Escalation": 2026/Week33/VoLTE.md
