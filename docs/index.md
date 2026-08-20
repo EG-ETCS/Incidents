@@ -19,35 +19,25 @@ hide:
 
 <div class="grid cards index-grid" markdown>
 
--   ![VoLTE](2026/Week33/images/VoLTE.png){.index-card__img}
+-   ![CameraSwarm](2026/Week33/images/CameraSwarm.png){.index-card__img}
 
-    **Unisoc VoLTE Video Call Exploit Chain – Modem-to-Android Kernel Privilege Escalation**
+    **Operation CameraSwarm Dahua Device Compromise Campaign**
 
-    **Unisoc Baseband Security**{.cve-chip} **VoLTE Attack Surface**{.cve-chip} **Modem RCE**{.cve-chip} **CWE-1189**{.cve-chip} **Kernel Privilege Escalation**{.cve-chip}
+    **Dahua Device Targeting**{.cve-chip} **Credential Attacks**{.cve-chip} **CVE-2021-33044**{.cve-chip} **CVE-2021-33045**{.cve-chip} **Surveillance Infrastructure Risk**{.cve-chip}
 
-    Researchers demonstrated a two-stage Unisoc exploit path where malicious VoLTE call signaling can lead from modem compromise toward Android kernel-level impact on vulnerable devices.
+    Hunt.io reported a large Dahua-compromise campaign combining credential attacks, authentication-bypass exploitation, and possible P2P relay access paths, while independent validation remains limited to confirmed in-the-wild exploitation of the two CVEs.
 
-    [Read more →](2026/Week33/VoLTE.md){.index-card__cta}
+    [Read more →](2026/Week33/CameraSwarm.md){.index-card__cta}
 
--   ![Apple](2026/Week33/images/Apple.png){.index-card__img}
+-   ![PLCs](2026/Week33/images/PLCs.png){.index-card__img}
 
-    **Apple Mercenary Spyware Threat Notifications – 2026**
+    **AI-generated Python tooling targeting Siemens S7 PLCs in critical infrastructure**
 
-    **Apple Threat Notifications**{.cve-chip} **Mercenary Spyware**{.cve-chip} **High-Value Targeting**{.cve-chip} **Potential Zero-Click Exploits**{.cve-chip} **Mobile Surveillance Risk**{.cve-chip}
+    **Siemens S7 Targeting**{.cve-chip} **S7comm Abuse**{.cve-chip} **AI-Assisted Tooling**{.cve-chip} **python-snap7**{.cve-chip} **OT Reconnaissance Risk**{.cve-chip}
 
-    Apple warned users in 110 countries of potential mercenary-spyware targeting, highlighting sophisticated high-value surveillance operations and recommending Lockdown Mode and immediate device updates.
+    U.S. agencies warned that attackers are using AI-assisted Python tooling and exposed S7comm pathways to perform persistent reconnaissance and preparatory access development against Siemens S7 environments.
 
-    [Read more →](2026/Week33/Apple.md){.index-card__cta}
-
--   ![PATCHCORD](2026/Week33/images/PATCHCORD.png){.index-card__img}
-
-    **New PATCHCORD Backdoor Targets Afghan Telecom and Indian Critical Infrastructure**
-
-    **PATCHCORD Backdoor**{.cve-chip} **SHEETCORD Implant**{.cve-chip} **APT36 / Transparent Tribe**{.cve-chip} **Telecom Targeting**{.cve-chip} **Google Sheets C2**{.cve-chip}
-
-    A targeted espionage campaign used fake VPN and telecom installers to deploy PATCHCORD and a related SHEETCORD implant that abuses Google Sheets API traffic for covert command-and-control.
-
-    [Read more →](2026/Week33/PATCHCORD.md){.index-card__cta}
+    [Read more →](2026/Week33/PLCs.md){.index-card__cta}
 
 </div>
 

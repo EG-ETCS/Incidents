@@ -551,3 +551,5 @@ nav:
           - "New PATCHCORD Backdoor Targets Afghan Telecom and Indian Critical Infrastructure": 2026/Week33/PATCHCORD.md
           - "Apple Mercenary Spyware Threat Notifications – 2026": 2026/Week33/Apple.md
           - "Unisoc VoLTE Video Call Exploit Chain – Modem-to-Android Kernel Privilege Escalation": 2026/Week33/VoLTE.md
+          - "AI-generated Python tooling targeting Siemens S7 PLCs in critical infrastructure": 2026/Week33/PLCs.md
+          - "Operation CameraSwarm Dahua Device Compromise Campaign": 2026/Week33/CameraSwarm.md

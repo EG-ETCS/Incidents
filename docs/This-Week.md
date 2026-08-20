@@ -8,6 +8,26 @@ hide:
  
 <div class="grid cards" markdown>
 
+-   ![CameraSwarm](2026/Week33/images/CameraSwarm.png){.index-card__img}
+
+    **Operation CameraSwarm Dahua Device Compromise Campaign**
+
+    **Dahua Device Targeting**{.cve-chip} **Credential Attacks**{.cve-chip} **CVE-2021-33044**{.cve-chip} **CVE-2021-33045**{.cve-chip} **Surveillance Infrastructure Risk**{.cve-chip}
+
+    Hunt.io reported a large Dahua-compromise campaign combining credential attacks, authentication-bypass exploitation, and possible P2P relay access paths, while independent validation remains limited to confirmed in-the-wild exploitation of the two CVEs.
+
+    [Read more →](2026/Week33/CameraSwarm.md){.index-card__cta}
+
+-   ![PLCs](2026/Week33/images/PLCs.png){.index-card__img}
+
+    **AI-generated Python tooling targeting Siemens S7 PLCs in critical infrastructure**
+
+    **Siemens S7 Targeting**{.cve-chip} **S7comm Abuse**{.cve-chip} **AI-Assisted Tooling**{.cve-chip} **python-snap7**{.cve-chip} **OT Reconnaissance Risk**{.cve-chip}
+
+    U.S. agencies warned that attackers are using AI-assisted Python tooling and exposed S7comm pathways to perform persistent reconnaissance and preparatory access development against Siemens S7 environments.
+
+    [Read more →](2026/Week33/PLCs.md){.index-card__cta}
+
 -   ![VoLTE](2026/Week33/images/VoLTE.png){.index-card__img}
 
     **Unisoc VoLTE Video Call Exploit Chain – Modem-to-Android Kernel Privilege Escalation**
