@@ -8,94 +8,84 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![ClamAV](2026/Week32/images/ClamAV.png){.index-card__img}
+-   ![CameraSwarm](2026/Week33/images/CameraSwarm.png){.index-card__img}
 
-    **Cisco Warns of Seven ClamAV Flaws, Two With Public PoCs**
+    **Operation CameraSwarm Dahua Device Compromise Campaign**
 
-    **CVE-2026-20337**{.cve-chip} **CVE-2026-20338**{.cve-chip} **ClamAV Parser Flaws**{.cve-chip} **DoS Risk**{.cve-chip} **Cisco Secure Endpoint**{.cve-chip}
+    **Dahua Device Targeting**{.cve-chip} **Credential Attacks**{.cve-chip} **CVE-2021-33044**{.cve-chip} **CVE-2021-33045**{.cve-chip} **Surveillance Infrastructure Risk**{.cve-chip}
 
-    Cisco disclosed seven ClamAV parser vulnerabilities in Secure Endpoint Connector workflows; two ZIP-related flaws have public PoCs and can allow unauthenticated remote file submission to crash scanning processes.
+    Hunt.io reported a large Dahua-compromise campaign combining credential attacks, authentication-bypass exploitation, and possible P2P relay access paths, while independent validation remains limited to confirmed in-the-wild exploitation of the two CVEs.
 
-    [Read more →](2026/Week32/ClamAV.md){.index-card__cta}
+    [Read more →](2026/Week33/CameraSwarm.md){.index-card__cta}
 
--   ![Zoom](2026/Week32/images/Zoom.png){.index-card__img}
+-   ![PLCs](2026/Week33/images/PLCs.png){.index-card__img}
 
-    **ZOOMSDAY – Zoom Zero-Click Remote Code Execution Vulnerability**
+    **AI-generated Python tooling targeting Siemens S7 PLCs in critical infrastructure**
 
-    **CVE-2026-53413**{.cve-chip} **CVE-2026-53414**{.cve-chip} **CVE-2026-53415**{.cve-chip} **Zero-Click RCE**{.cve-chip} **Zoom Annotation Protocol**{.cve-chip}
+    **Siemens S7 Targeting**{.cve-chip} **S7comm Abuse**{.cve-chip} **AI-Assisted Tooling**{.cve-chip} **python-snap7**{.cve-chip} **OT Reconnaissance Risk**{.cve-chip}
 
-    Multiple Zoom annotation-protocol flaws, led by CVE-2026-53413, could allow a malicious meeting participant to trigger zero-click remote code execution on another attendee's client.
+    U.S. agencies warned that attackers are using AI-assisted Python tooling and exposed S7comm pathways to perform persistent reconnaissance and preparatory access development against Siemens S7 environments.
 
-    [Read more →](2026/Week32/Zoom.md){.index-card__cta}
+    [Read more →](2026/Week33/PLCs.md){.index-card__cta}
 
--   ![Gunra](2026/Week32/images/Gunra.png){.index-card__img}
+-   ![VoLTE](2026/Week33/images/VoLTE.png){.index-card__img}
 
-    **Gunra Ransomware Exploits Fortinet to Breach Networks**
+    **Unisoc VoLTE Video Call Exploit Chain – Modem-to-Android Kernel Privilege Escalation**
 
-    **Gunra RaaS**{.cve-chip} **Double Extortion**{.cve-chip} **CVE-2024-55591**{.cve-chip} **CVE-2025-24472**{.cve-chip} **Fortinet Edge Exploitation**{.cve-chip}
+    **Unisoc Baseband Security**{.cve-chip} **VoLTE Attack Surface**{.cve-chip} **Modem RCE**{.cve-chip} **CWE-1189**{.cve-chip} **Kernel Privilege Escalation**{.cve-chip}
 
-    Gunra affiliates have exploited exposed Fortinet edge infrastructure for initial access, then performed credential theft, MFA bypass activity, lateral movement, data exfiltration, backup destruction, and ransomware deployment.
+    Researchers demonstrated a two-stage Unisoc exploit path where malicious VoLTE call signaling can lead from modem compromise toward Android kernel-level impact on vulnerable devices.
 
-    [Read more →](2026/Week32/Gunra.md){.index-card__cta}
+    [Read more →](2026/Week33/VoLTE.md){.index-card__cta}
 
--   ![Poland](2026/Week32/images/Poland.png){.index-card__img}
+-   ![Apple](2026/Week33/images/Apple.png){.index-card__img}
 
-    **Poland Energy Sector IT-to-OT Intrusion via Private APN**
+    **Apple Mercenary Spyware Threat Notifications – 2026**
 
-    **IT-to-OT Pivot**{.cve-chip} **Private APN Abuse**{.cve-chip} **Industrial Router Exposure**{.cve-chip} **Siemens PLC Manipulation**{.cve-chip} **Critical Infrastructure**{.cve-chip}
+    **Apple Threat Notifications**{.cve-chip} **Mercenary Spyware**{.cve-chip} **High-Value Targeting**{.cve-chip} **Potential Zero-Click Exploits**{.cve-chip} **Mobile Surveillance Risk**{.cve-chip}
 
-    Attackers pivoted from IT to OT by abusing private APN trust through a Teltonika router path, reached industrial control systems, manipulated Siemens PLC states, and disrupted operations without ultimately interrupting power or heat generation.
+    Apple warned users in 110 countries of potential mercenary-spyware targeting, highlighting sophisticated high-value surveillance operations and recommending Lockdown Mode and immediate device updates.
 
-    [Read more →](2026/Week32/Poland.md){.index-card__cta}
+    [Read more →](2026/Week33/Apple.md){.index-card__cta}
 
--   ![Vishing](2026/Week32/images/Vishing.png){.index-card__img}
+-   ![PATCHCORD](2026/Week33/images/PATCHCORD.png){.index-card__img}
 
-    **UNC6671 Vishing & Data-Extortion Campaign**
+    **New PATCHCORD Backdoor Targets Afghan Telecom and Indian Critical Infrastructure**
 
-    **UNC6671**{.cve-chip} **Voice Phishing (Vishing)**{.cve-chip} **AiTM Phishing**{.cve-chip} **SaaS Data Theft**{.cve-chip} **Cloud Extortion**{.cve-chip}
+    **PATCHCORD Backdoor**{.cve-chip} **SHEETCORD Implant**{.cve-chip} **APT36 / Transparent Tribe**{.cve-chip} **Telecom Targeting**{.cve-chip} **Google Sheets C2**{.cve-chip}
 
-    UNC6671 used IT-helpdesk impersonation and AiTM phishing to capture credentials and sessions, then abuse Microsoft 365, Okta, SharePoint, and OneDrive for large-scale cloud data theft followed by extortion demands.
+    A targeted espionage campaign used fake VPN and telecom installers to deploy PATCHCORD and a related SHEETCORD implant that abuses Google Sheets API traffic for covert command-and-control.
 
-    [Read more →](2026/Week32/Vishing.md){.index-card__cta}
+    [Read more →](2026/Week33/PATCHCORD.md){.index-card__cta}
 
--   ![Metabase](2026/Week32/images/Metabase.png){.index-card__img}
+-   ![Evooo1Bot](2026/Week33/images/Evooo1Bot.png){.index-card__img}
 
-    **Metabase Zero-Day Exploited in Wild Allows Admin Access Without Authentication**
+    **Evooo1Bot - Multi-Functional Mirai-Based Linux Botnet**
 
-    **Metabase SQL Injection**{.cve-chip} **Unauthenticated Attack Path**{.cve-chip} **Admin Takeover Risk**{.cve-chip} **Data Exposure**{.cve-chip} **BI Platform Security**{.cve-chip}
+    **Mirai Variant**{.cve-chip} **Linux Botnet**{.cve-chip} **SOCKS5 Relay Abuse**{.cve-chip} **SSH Brute Force**{.cve-chip} **DDoS + Proxy Operations**{.cve-chip}
 
-    A critical Metabase SQL injection flaw was exploited in the wild and can allow unauthenticated access paths to administrative control, increasing risk of credential theft and sensitive data exposure through connected enterprise databases.
+    Evooo1Bot extends Mirai-style operations with encrypted C2, multi-layer obfuscation, SSH propagation, credential sniffing, and SOCKS5 relay modes that can convert compromised edge devices into persistent traffic-proxy nodes.
 
-    [Read more →](2026/Week32/Metabase.md){.index-card__cta}
+    [Read more →](2026/Week33/Evooo1Bot.md){.index-card__cta}
 
--   ![Rockwell](2026/Week32/images/Rockwell.png){.index-card__img}
+-   ![Delta](2026/Week33/images/Delta.png){.index-card__img}
 
-    **Internet-Exposed Rockwell Automation PLCs**
+    **Rogue Wi-Fi Network on Delta Flight 591**
 
-    **ICS Exposure**{.cve-chip} **Rockwell PLCs**{.cve-chip} **EtherNet/IP**{.cve-chip} **Water Sector Risk**{.cve-chip} **OT Attack Surface**{.cve-chip}
+    **Rogue Access Point**{.cve-chip} **In-Flight Wi-Fi Spoofing**{.cve-chip} **Potential Phishing**{.cve-chip} **Deauthentication Suspicion**{.cve-chip} **Aviation Cybersecurity**{.cve-chip}
 
-    Forescout identified 4,407 internet-exposed Rockwell PLCs, including 2,844 in the U.S., with notable concentration in cellular-connected deployments and overlap with municipalities linked to recent water-sector cyber incidents.
+    An unauthorized SSID resembling Delta Wi-Fi was reportedly detected on Flight 591; while the full attack chain remains unconfirmed, the event raised phishing and credential-theft concerns and led to temporary onboard Wi-Fi shutdown.
 
-    [Read more →](2026/Week32/Rockwell.md){.index-card__cta}
+    [Read more →](2026/Week33/Delta.md){.index-card__cta}
 
--   ![Cisco](2026/Week32/images/Cisco.png){.index-card__img}
+-   ![WindRelay](2026/Week33/images/WindRelay.png){.index-card__img}
 
-    **Cisco Catalyst SD-WAN & IOS XE Security Vulnerabilities - 12 CVEs**
+    **WindRelay Android Malware**
 
-    **Cisco SD-WAN**{.cve-chip} **Cisco IOS XE**{.cve-chip} **Multi-CVE Advisory**{.cve-chip} **Management-Plane Risk**{.cve-chip} **Network Infrastructure Security**{.cve-chip}
+    **Android Malware**{.cve-chip} **Vishing Fraud**{.cve-chip} **SpyNote RAT**{.cve-chip} **NFC Relay Attack**{.cve-chip} **Banking Abuse**{.cve-chip}
 
-    Cisco patched 12 vulnerabilities in Catalyst SD-WAN and IOS XE, including multiple critical issues that could enable unauthorized access or command execution against reachable management and control-plane components.
+    Attackers used vishing to deploy SpyNote and a second-stage WindRelay payload, then relayed live NFC card communication to attacker devices for fraudulent POS transactions and unauthorized loan abuse.
 
-    [Read more →](2026/Week32/Cisco.md){.index-card__cta}
-
--   ![SCTP](2026/Week32/images/SCTP.png){.index-card__img}
-
-    **Linux SCTP Flaw Could Let Local Users Gain Root**
-
-    **Kernel Privilege Escalation**{.cve-chip} **SCTP ASCONF**{.cve-chip} **Use-After-Free**{.cve-chip} **Container Escape Risk**{.cve-chip} **Local Exploitation**{.cve-chip}
-
-    An 18-year-old Linux SCTP use-after-free flaw in ASCONF handling can allow local root privilege escalation and, in some containerized scenarios, escape to host compromise when SCTP paths are reachable.
-
-    [Read more →](2026/Week32/SCTP.md){.index-card__cta}
+    [Read more →](2026/Week33/WindRelay.md){.index-card__cta}
 
 </div>

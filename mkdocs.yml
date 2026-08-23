@@ -553,3 +553,8 @@ nav:
           - "Unisoc VoLTE Video Call Exploit Chain – Modem-to-Android Kernel Privilege Escalation": 2026/Week33/VoLTE.md
           - "AI-generated Python tooling targeting Siemens S7 PLCs in critical infrastructure": 2026/Week33/PLCs.md
           - "Operation CameraSwarm Dahua Device Compromise Campaign": 2026/Week33/CameraSwarm.md
+        - "week34":
+          - "Encrypted Prompt Injection / AI Safety Guardrail Bypass": 2026/Week34/Encrypted.md
+          - "Six Maximum-Severity Flaws Found in Cisco Products": 2026/Week34/Cisco.md
+          - "Suspected Russian Hackers Abuse Google OAuth and WhatsApp Linking to Hijack Accounts": 2026/Week34/Hijack.md
+          - "TikTok / ByteDance Children's Privacy & COPPA Case — $400M Settlement": 2026/Week34/TikTok.md
