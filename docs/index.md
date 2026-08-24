@@ -19,45 +19,25 @@ hide:
 
 <div class="grid cards index-grid" markdown>
 
--   ![TikTok](2026/Week34/images/TikTok.png){.index-card__img}
+-   ![DoFun](2026/Week34/images/DoFun.png){.index-card__img}
 
-    **TikTok / ByteDance Children's Privacy & COPPA Case — $400M Settlement**
+    **DoFun Android Car Head Unit Supply-Chain Malware Campaign**
 
-    **Privacy Violation**{.cve-chip} **COPPA Violation**{.cve-chip} **Child Safety Failure**{.cve-chip} **Data Retention Abuse**{.cve-chip} **Regulatory Settlement**{.cve-chip} **Parental Consent Bypass**{.cve-chip}
+    **Supply-Chain Malware**{.cve-chip} **Android Head Units**{.cve-chip} **TWCore Abuse**{.cve-chip} **Ad Fraud**{.cve-chip} **Proxy Botnet**{.cve-chip}
 
-    The U.S. DOJ secured a $400 million settlement with TikTok/ByteDance for violations of COPPA, including unauthorized collection of children's personal information without parental consent and failures to delete data upon parental request.
+    Attackers abused DoFun's TWCore update workflow to install JarService and proxy-botnet payloads, turning infected Android automotive head units into ad-fraud and reverse-proxy nodes.
 
-    [Read more →](2026/Week34/TikTok.md){.index-card__cta}
+    [Read more →](2026/Week34/DoFun.md){.index-card__cta}
 
--   ![Hijack](2026/Week34/images/Hijack.png){.index-card__img}
+-   ![Power](2026/Week34/images/Power.png){.index-card__img}
 
-    **Suspected Russian Hackers Abuse Google OAuth and WhatsApp Linking to Hijack Accounts**
+    **UK Small-Scale Power Generator Shutdown Linked to Suspected Iran-Affiliated Cyber Activity**
 
-    **Account Hijacking**{.cve-chip} **OAuth Phishing**{.cve-chip} **Social Engineering**{.cve-chip} **Russian APT**{.cve-chip} **MFA Bypass**{.cve-chip} **Device Linking Abuse**{.cve-chip}
+    **Power Sector Disruption**{.cve-chip} **Suspected Iran-Affiliated Activity**{.cve-chip} **Operational Outage**{.cve-chip} **Attribution Unconfirmed**{.cve-chip} **Critical Infrastructure Risk**{.cve-chip}
 
-    Russian cyber-espionage clusters abused legitimate Google OAuth and WhatsApp device-linking flows in targeted social-engineering campaigns to hijack high-value accounts without requiring password compromise.
+    A UK small-scale generator experienced a four-day outage after a cyber incident; while media reports cite Iran-linked actors, official UK public attribution and technical details remain undisclosed.
 
-    [Read more →](2026/Week34/Hijack.md){.index-card__cta}
-
--   ![Cisco](2026/Week34/images/Cisco.png){.index-card__img}
-
-    **Six Maximum-Severity Flaws Found in Cisco Products**
-
-    **Critical Vulnerabilities**{.cve-chip} **Cisco Crosswork**{.cve-chip} **Cisco Secure Workload**{.cve-chip} **CVSS 10.0**{.cve-chip} **Authentication Bypass**{.cve-chip} **Injection Risks**{.cve-chip}
-
-    Cisco disclosed nine critical flaws in Cisco Crosswork and Cisco Secure Workload, including six CVSS 10.0 issues spanning SQL injection, authentication/control bypass classes, and command/path injection risks.
-
-    [Read more →](2026/Week34/Cisco.md){.index-card__cta}
-
--   ![Encrypted](2026/Week34/images/Encrypted.png){.index-card__img}
-
-    **Encrypted Prompt Injection / AI Safety Guardrail Bypass**
-
-    **Prompt Injection**{.cve-chip} **Cryptographic Context Injection**{.cve-chip} **Guardrail Bypass**{.cve-chip} **Agentic Tooling Risk**{.cve-chip} **Data Exfiltration**{.cve-chip}
-
-    Researchers described encrypted instruction payloads that can be decrypted inside model runtime/tool contexts, potentially bypassing prompt guardrails and enabling sensitive-data exfiltration in privileged agent workflows.
-
-    [Read more →](2026/Week34/Encrypted.md){.index-card__cta}
+    [Read more →](2026/Week34/Power.md){.index-card__cta}
 
 </div>
 
