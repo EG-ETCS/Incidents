@@ -8,6 +8,16 @@ hide:
  
 <div class="grid cards" markdown>
 
+-   ![DDoS](2026/Week34/images/DDoS.png){.index-card__img}
+
+    **DDoS Attack on Norway’s Shared Digital Government Infrastructure**
+
+    **Distributed Denial of Service**{.cve-chip} **Public Sector**{.cve-chip} **Availability Attack**{.cve-chip} **Government Services**{.cve-chip} **ID Porten**{.cve-chip} **DDoS Mitigation**{.cve-chip}
+
+    A large DDoS campaign disrupted Norway’s shared digital government stack, temporarily knocking out core public services such as identity, signing, and digital access workflows.
+
+    [Read more →](2026/Week34/DDoS.md){.index-card__cta}
+
 -   ![DoFun](2026/Week34/images/DoFun.png){.index-card__img}
 
     **DoFun Android Car Head Unit Supply-Chain Malware Campaign**

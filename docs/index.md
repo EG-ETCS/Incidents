@@ -19,25 +19,15 @@ hide:
 
 <div class="grid cards index-grid" markdown>
 
--   ![DoFun](2026/Week34/images/DoFun.png){.index-card__img}
+-   ![DDoS](2026/Week34/images/DDoS.png){.index-card__img}
 
-    **DoFun Android Car Head Unit Supply-Chain Malware Campaign**
+    **DDoS Attack on Norway’s Shared Digital Government Infrastructure**
 
-    **Supply-Chain Malware**{.cve-chip} **Android Head Units**{.cve-chip} **TWCore Abuse**{.cve-chip} **Ad Fraud**{.cve-chip} **Proxy Botnet**{.cve-chip}
+    **Distributed Denial of Service**{.cve-chip} **Public Sector**{.cve-chip} **Availability Attack**{.cve-chip} **Government Services**{.cve-chip} **ID Porten**{.cve-chip} **DDoS Mitigation**{.cve-chip}
 
-    Attackers abused DoFun's TWCore update workflow to install JarService and proxy-botnet payloads, turning infected Android automotive head units into ad-fraud and reverse-proxy nodes.
+    A large DDoS campaign disrupted Norway’s shared digital government stack, temporarily knocking out core public services such as identity, signing, and digital access workflows.
 
-    [Read more →](2026/Week34/DoFun.md){.index-card__cta}
-
--   ![Power](2026/Week34/images/Power.png){.index-card__img}
-
-    **UK Small-Scale Power Generator Shutdown Linked to Suspected Iran-Affiliated Cyber Activity**
-
-    **Power Sector Disruption**{.cve-chip} **Suspected Iran-Affiliated Activity**{.cve-chip} **Operational Outage**{.cve-chip} **Attribution Unconfirmed**{.cve-chip} **Critical Infrastructure Risk**{.cve-chip}
-
-    A UK small-scale generator experienced a four-day outage after a cyber incident; while media reports cite Iran-linked actors, official UK public attribution and technical details remain undisclosed.
-
-    [Read more →](2026/Week34/Power.md){.index-card__cta}
+    [Read more →](2026/Week34/DDoS.md){.index-card__cta}
 
 </div>
 
