@@ -8,84 +8,74 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![CameraSwarm](2026/Week33/images/CameraSwarm.png){.index-card__img}
+-   ![DDoS](2026/Week34/images/DDoS.png){.index-card__img}
 
-    **Operation CameraSwarm Dahua Device Compromise Campaign**
+    **DDoS Attack on Norway’s Shared Digital Government Infrastructure**
 
-    **Dahua Device Targeting**{.cve-chip} **Credential Attacks**{.cve-chip} **CVE-2021-33044**{.cve-chip} **CVE-2021-33045**{.cve-chip} **Surveillance Infrastructure Risk**{.cve-chip}
+    **Distributed Denial of Service**{.cve-chip} **Public Sector**{.cve-chip} **Availability Attack**{.cve-chip} **Government Services**{.cve-chip} **ID Porten**{.cve-chip} **DDoS Mitigation**{.cve-chip}
 
-    Hunt.io reported a large Dahua-compromise campaign combining credential attacks, authentication-bypass exploitation, and possible P2P relay access paths, while independent validation remains limited to confirmed in-the-wild exploitation of the two CVEs.
+    A large DDoS campaign disrupted Norway’s shared digital government stack, temporarily knocking out core public services such as identity, signing, and digital access workflows.
 
-    [Read more →](2026/Week33/CameraSwarm.md){.index-card__cta}
+    [Read more →](2026/Week34/DDoS.md){.index-card__cta}
 
--   ![PLCs](2026/Week33/images/PLCs.png){.index-card__img}
+-   ![DoFun](2026/Week34/images/DoFun.png){.index-card__img}
 
-    **AI-generated Python tooling targeting Siemens S7 PLCs in critical infrastructure**
+    **DoFun Android Car Head Unit Supply-Chain Malware Campaign**
 
-    **Siemens S7 Targeting**{.cve-chip} **S7comm Abuse**{.cve-chip} **AI-Assisted Tooling**{.cve-chip} **python-snap7**{.cve-chip} **OT Reconnaissance Risk**{.cve-chip}
+    **Supply-Chain Malware**{.cve-chip} **Android Head Units**{.cve-chip} **TWCore Abuse**{.cve-chip} **Ad Fraud**{.cve-chip} **Proxy Botnet**{.cve-chip}
 
-    U.S. agencies warned that attackers are using AI-assisted Python tooling and exposed S7comm pathways to perform persistent reconnaissance and preparatory access development against Siemens S7 environments.
+    Attackers abused DoFun's TWCore update workflow to install JarService and proxy-botnet payloads, turning infected Android automotive head units into ad-fraud and reverse-proxy nodes.
 
-    [Read more →](2026/Week33/PLCs.md){.index-card__cta}
+    [Read more →](2026/Week34/DoFun.md){.index-card__cta}
 
--   ![VoLTE](2026/Week33/images/VoLTE.png){.index-card__img}
+-   ![Power](2026/Week34/images/Power.png){.index-card__img}
 
-    **Unisoc VoLTE Video Call Exploit Chain – Modem-to-Android Kernel Privilege Escalation**
+    **UK Small-Scale Power Generator Shutdown Linked to Suspected Iran-Affiliated Cyber Activity**
 
-    **Unisoc Baseband Security**{.cve-chip} **VoLTE Attack Surface**{.cve-chip} **Modem RCE**{.cve-chip} **CWE-1189**{.cve-chip} **Kernel Privilege Escalation**{.cve-chip}
+    **Power Sector Disruption**{.cve-chip} **Suspected Iran-Affiliated Activity**{.cve-chip} **Operational Outage**{.cve-chip} **Attribution Unconfirmed**{.cve-chip} **Critical Infrastructure Risk**{.cve-chip}
 
-    Researchers demonstrated a two-stage Unisoc exploit path where malicious VoLTE call signaling can lead from modem compromise toward Android kernel-level impact on vulnerable devices.
+    A UK small-scale generator experienced a four-day outage after a cyber incident; while media reports cite Iran-linked actors, official UK public attribution and technical details remain undisclosed.
 
-    [Read more →](2026/Week33/VoLTE.md){.index-card__cta}
+    [Read more →](2026/Week34/Power.md){.index-card__cta}
 
--   ![Apple](2026/Week33/images/Apple.png){.index-card__img}
+-   ![TikTok](2026/Week34/images/TikTok.png){.index-card__img}
 
-    **Apple Mercenary Spyware Threat Notifications – 2026**
+    **TikTok / ByteDance Children's Privacy & COPPA Case — $400M Settlement**
 
-    **Apple Threat Notifications**{.cve-chip} **Mercenary Spyware**{.cve-chip} **High-Value Targeting**{.cve-chip} **Potential Zero-Click Exploits**{.cve-chip} **Mobile Surveillance Risk**{.cve-chip}
+    **Privacy Violation**{.cve-chip} **COPPA Violation**{.cve-chip} **Child Safety Failure**{.cve-chip} **Data Retention Abuse**{.cve-chip} **Regulatory Settlement**{.cve-chip} **Parental Consent Bypass**{.cve-chip}
 
-    Apple warned users in 110 countries of potential mercenary-spyware targeting, highlighting sophisticated high-value surveillance operations and recommending Lockdown Mode and immediate device updates.
+    The U.S. DOJ secured a $400 million settlement with TikTok/ByteDance for violations of COPPA, including unauthorized collection of children's personal information without parental consent and failures to delete data upon parental request.
 
-    [Read more →](2026/Week33/Apple.md){.index-card__cta}
+    [Read more →](2026/Week34/TikTok.md){.index-card__cta}
 
--   ![PATCHCORD](2026/Week33/images/PATCHCORD.png){.index-card__img}
+-   ![Hijack](2026/Week34/images/Hijack.png){.index-card__img}
 
-    **New PATCHCORD Backdoor Targets Afghan Telecom and Indian Critical Infrastructure**
+    **Suspected Russian Hackers Abuse Google OAuth and WhatsApp Linking to Hijack Accounts**
 
-    **PATCHCORD Backdoor**{.cve-chip} **SHEETCORD Implant**{.cve-chip} **APT36 / Transparent Tribe**{.cve-chip} **Telecom Targeting**{.cve-chip} **Google Sheets C2**{.cve-chip}
+    **Account Hijacking**{.cve-chip} **OAuth Phishing**{.cve-chip} **Social Engineering**{.cve-chip} **Russian APT**{.cve-chip} **MFA Bypass**{.cve-chip} **Device Linking Abuse**{.cve-chip}
 
-    A targeted espionage campaign used fake VPN and telecom installers to deploy PATCHCORD and a related SHEETCORD implant that abuses Google Sheets API traffic for covert command-and-control.
+    Russian cyber-espionage clusters abused legitimate Google OAuth and WhatsApp device-linking flows in targeted social-engineering campaigns to hijack high-value accounts without requiring password compromise.
 
-    [Read more →](2026/Week33/PATCHCORD.md){.index-card__cta}
+    [Read more →](2026/Week34/Hijack.md){.index-card__cta}
 
--   ![Evooo1Bot](2026/Week33/images/Evooo1Bot.png){.index-card__img}
+-   ![Cisco](2026/Week34/images/Cisco.png){.index-card__img}
 
-    **Evooo1Bot - Multi-Functional Mirai-Based Linux Botnet**
+    **Six Maximum-Severity Flaws Found in Cisco Products**
 
-    **Mirai Variant**{.cve-chip} **Linux Botnet**{.cve-chip} **SOCKS5 Relay Abuse**{.cve-chip} **SSH Brute Force**{.cve-chip} **DDoS + Proxy Operations**{.cve-chip}
+    **Critical Vulnerabilities**{.cve-chip} **Cisco Crosswork**{.cve-chip} **Cisco Secure Workload**{.cve-chip} **CVSS 10.0**{.cve-chip} **Authentication Bypass**{.cve-chip} **Injection Risks**{.cve-chip}
 
-    Evooo1Bot extends Mirai-style operations with encrypted C2, multi-layer obfuscation, SSH propagation, credential sniffing, and SOCKS5 relay modes that can convert compromised edge devices into persistent traffic-proxy nodes.
+    Cisco disclosed nine critical flaws in Cisco Crosswork and Cisco Secure Workload, including six CVSS 10.0 issues spanning SQL injection, authentication/control bypass classes, and command/path injection risks.
 
-    [Read more →](2026/Week33/Evooo1Bot.md){.index-card__cta}
+    [Read more →](2026/Week34/Cisco.md){.index-card__cta}
 
--   ![Delta](2026/Week33/images/Delta.png){.index-card__img}
+-   ![Encrypted](2026/Week34/images/Encrypted.png){.index-card__img}
 
-    **Rogue Wi-Fi Network on Delta Flight 591**
+    **Encrypted Prompt Injection / AI Safety Guardrail Bypass**
 
-    **Rogue Access Point**{.cve-chip} **In-Flight Wi-Fi Spoofing**{.cve-chip} **Potential Phishing**{.cve-chip} **Deauthentication Suspicion**{.cve-chip} **Aviation Cybersecurity**{.cve-chip}
+    **Prompt Injection**{.cve-chip} **Cryptographic Context Injection**{.cve-chip} **Guardrail Bypass**{.cve-chip} **Agentic Tooling Risk**{.cve-chip} **Data Exfiltration**{.cve-chip}
 
-    An unauthorized SSID resembling Delta Wi-Fi was reportedly detected on Flight 591; while the full attack chain remains unconfirmed, the event raised phishing and credential-theft concerns and led to temporary onboard Wi-Fi shutdown.
+    Researchers described encrypted instruction payloads that can be decrypted inside model runtime/tool contexts, potentially bypassing prompt guardrails and enabling sensitive-data exfiltration in privileged agent workflows.
 
-    [Read more →](2026/Week33/Delta.md){.index-card__cta}
-
--   ![WindRelay](2026/Week33/images/WindRelay.png){.index-card__img}
-
-    **WindRelay Android Malware**
-
-    **Android Malware**{.cve-chip} **Vishing Fraud**{.cve-chip} **SpyNote RAT**{.cve-chip} **NFC Relay Attack**{.cve-chip} **Banking Abuse**{.cve-chip}
-
-    Attackers used vishing to deploy SpyNote and a second-stage WindRelay payload, then relayed live NFC card communication to attacker devices for fraudulent POS transactions and unauthorized loan abuse.
-
-    [Read more →](2026/Week33/WindRelay.md){.index-card__cta}
+    [Read more →](2026/Week34/Encrypted.md){.index-card__cta}
 
 </div>

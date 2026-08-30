@@ -19,15 +19,25 @@ hide:
 
 <div class="grid cards index-grid" markdown>
 
--   ![DDoS](2026/Week34/images/DDoS.png){.index-card__img}
+-   ![HOOKEDGE](2026/Week34/images/HOOKEDGE.png){.index-card__img}
 
-    **DDoS Attack on Norway’s Shared Digital Government Infrastructure**
+    **HOOKEDGE Backdoor Campaign Targeting European Diplomatic and Defense Organizations**
 
-    **Distributed Denial of Service**{.cve-chip} **Public Sector**{.cve-chip} **Availability Attack**{.cve-chip} **Government Services**{.cve-chip} **ID Porten**{.cve-chip} **DDoS Mitigation**{.cve-chip}
+    **Cyber Espionage**{.cve-chip} **HOOKEDGE**{.cve-chip} **BlueDelta**{.cve-chip} **Spear Phishing**{.cve-chip} **Macro Abuse**{.cve-chip} **Scheduled Task Persistence**{.cve-chip}
 
-    A large DDoS campaign disrupted Norway’s shared digital government stack, temporarily knocking out core public services such as identity, signing, and digital access workflows.
+    A BlueDelta-linked espionage campaign used macro-enabled Word lures to install the HOOKEDGE backdoor, persist via scheduled tasks, and exfiltrate command output through webhook-based C2 channels.
 
-    [Read more →](2026/Week34/DDoS.md){.index-card__cta}
+    [Read more →](2026/Week35/HOOKEDGE.md){.index-card__cta}
+
+-   ![Manchester](2026/Week34/images/Manchester.png){.index-card__img}
+
+    **Manchester Airports Group (MAG) Customer Data Breach**
+
+    **Data Breach**{.cve-chip} **Aviation Sector**{.cve-chip} **Customer Data Exposure**{.cve-chip} **Third-Party Risk**{.cve-chip} **Extortion Attempt**{.cve-chip} **No Payment Data Exposed**{.cve-chip}
+
+    Unauthorized access at MAG exposed customer contact and travel-related metadata for about 8.7 million people across Manchester, London Stansted, and East Midlands airport service systems.
+
+    [Read more →](2026/Week35/Manchester.md){.index-card__cta}
 
 </div>
 
