@@ -19,7 +19,7 @@ hide:
 
 <div class="grid cards index-grid" markdown>
 
--   ![HOOKEDGE](2026/Week34/images/HOOKEDGE.png){.index-card__img}
+-   ![HOOKEDGE](2026/Week35/images/HOOKEDGE.png){.index-card__img}
 
     **HOOKEDGE Backdoor Campaign Targeting European Diplomatic and Defense Organizations**
 
@@ -29,7 +29,7 @@ hide:
 
     [Read more →](2026/Week35/HOOKEDGE.md){.index-card__cta}
 
--   ![Manchester](2026/Week34/images/Manchester.png){.index-card__img}
+-   ![Manchester](2026/Week35/images/Manchester.png){.index-card__img}
 
     **Manchester Airports Group (MAG) Customer Data Breach**
 
