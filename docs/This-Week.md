@@ -8,6 +8,26 @@ hide:
  
 <div class="grid cards" markdown>
 
+-   ![naval](2026/Week35/images/naval.png){.index-card__img}
+
+    **Exploitation against Philippine nuclear research and naval-support organizations**
+
+    **Cyber Espionage**{.cve-chip} **Nuclear Research Exposure**{.cve-chip} **Naval Support Targeting**{.cve-chip} **CVE-2023-49105**{.cve-chip} **CVE-2024-28000**{.cve-chip}
+
+    A suspected Chinese-speaking actor reportedly exploited known ownCloud and LiteSpeed Cache flaws to breach Philippine nuclear and naval-support organizations and expose sensitive strategic, personnel, and credential-related data.
+
+    [Read more →](2026/Week35/naval.md){.index-card__cta}
+
+-   ![SonicWall](2026/Week35/images/SonicWall.png){.index-card__img}
+
+    **SonicWall SMA 1000 zero-day SSRF and command-injection vulnerabilities - CVE-2026-83548 and CVE-2026-83549**
+
+    **Zero-Day Exploitation**{.cve-chip} **SonicWall SMA 1000**{.cve-chip} **CVE-2026-83548**{.cve-chip} **CVE-2026-83549**{.cve-chip} **Perimeter Appliance Risk**{.cve-chip}
+
+    SonicWall confirmed active exploitation of two SMA 1000 zero-days that may be chained from SSRF to command injection, with emergency hotfixes released and limited public forensic disclosure.
+
+    [Read more →](2026/Week35/SonicWall.md){.index-card__cta}
+
 -   ![Philippine](2026/Week35/images/Philippine.png){.index-card__img}
 
     **Philippine Nuclear and Naval Targets Hit by Suspected Chinese Operator**

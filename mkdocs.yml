@@ -567,3 +567,5 @@ nav:
           - "FBI Disrupts China-Linked QTFY Infrastructure (QScan and QTRouter)": 2026/Week35/FBI.md
           - "Rhysida Ransomware Group Targets Berlin Government Ahead of Vote": 2026/Week35/Rhysida.md
           - "Philippine Nuclear and Naval Targets Hit by Suspected Chinese Operator": 2026/Week35/Philippine.md
+          - "SonicWall SMA 1000 zero-day SSRF and command-injection vulnerabilities - CVE-2026-83548 and CVE-2026-83549": 2026/Week35/SonicWall.md
+          - "Exploitation against Philippine nuclear research and naval-support organizations": 2026/Week35/naval.md
