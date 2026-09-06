@@ -8,74 +8,44 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![naval](2026/Week35/images/naval.png){.index-card__img}
+-   ![FireAnt](2026/Week36/images/FireAnt.png){.index-card__img}
 
-    **Exploitation against Philippine nuclear research and naval-support organizations**
+    **Fire Ant - China-linked Cyber Espionage Campaign Targeting Trusted Infrastructure**
 
-    **Cyber Espionage**{.cve-chip} **Nuclear Research Exposure**{.cve-chip} **Naval Support Targeting**{.cve-chip} **CVE-2023-49105**{.cve-chip} **CVE-2024-28000**{.cve-chip}
+    **Cyber Espionage**{.cve-chip} **Trusted Infrastructure**{.cve-chip} **Cisco IOS XR**{.cve-chip} **TACACS Credential Theft**{.cve-chip} **Linux Backdoors**{.cve-chip} **Covert Tunneling**{.cve-chip}
 
-    A suspected Chinese-speaking actor reportedly exploited known ownCloud and LiteSpeed Cache flaws to breach Philippine nuclear and naval-support organizations and expose sensitive strategic, personnel, and credential-related data.
+    Fire Ant reportedly compromised trusted router, TACACS, and Linux management layers to intercept credentials, suppress telemetry, and pivot toward higher-value target networks.
 
-    [Read more →](2026/Week35/naval.md){.index-card__cta}
+    [Read more →](2026/Week36/FireAnt.md){.index-card__cta}
 
--   ![SonicWall](2026/Week35/images/SonicWall.png){.index-card__img}
+-   ![Cisco](2026/Week36/images/Cisco.png){.index-card__img}
 
-    **SonicWall SMA 1000 zero-day SSRF and command-injection vulnerabilities - CVE-2026-83548 and CVE-2026-83549**
+    **CVE-2026-20212 - Cisco Nexus 9000 Series Switches Silicon One Remote Code Execution Vulnerability**
 
-    **Zero-Day Exploitation**{.cve-chip} **SonicWall SMA 1000**{.cve-chip} **CVE-2026-83548**{.cve-chip} **CVE-2026-83549**{.cve-chip} **Perimeter Appliance Risk**{.cve-chip}
+    **Critical RCE**{.cve-chip} **Cisco Nexus 9000**{.cve-chip} **Silicon One**{.cve-chip} **Unauthenticated Attack**{.cve-chip} **Root Privileges**{.cve-chip} **NX-OS**{.cve-chip}
 
-    SonicWall confirmed active exploitation of two SMA 1000 zero-days that may be chained from SSRF to command injection, with emergency hotfixes released and limited public forensic disclosure.
+    Cisco fixed a critical Silicon One integration flaw in certain Nexus 9000 switches that could allow remote unauthenticated root-level code execution or trigger S1HAL crashes and device reloads.
 
-    [Read more →](2026/Week35/SonicWall.md){.index-card__cta}
+    [Read more →](2026/Week36/Cisco.md){.index-card__cta}
 
--   ![Philippine](2026/Week35/images/Philippine.png){.index-card__img}
+-   ![DarkWeb](2026/Week36/images/DarkWeb.png){.index-card__img}
 
-    **Philippine Nuclear and Naval Targets Hit by Suspected Chinese Operator**
+    **Dark Web Service Nexus Sells 153M+ Driver's Licenses**
 
-    **Cyber Espionage**{.cve-chip} **Critical Infrastructure Targeting**{.cve-chip} **Maritime Defense Sector**{.cve-chip} **CVE-2023-49105**{.cve-chip} **CVE-2024-28000**{.cve-chip}
+    **Dark Web Marketplace**{.cve-chip} **Identity Data Exposure**{.cve-chip} **Driver License Records**{.cve-chip} **Potential PII Breach**{.cve-chip} **Fraud Risk**{.cve-chip} **Investigation Ongoing**{.cve-chip}
 
-    A suspected Chinese-speaking operator reportedly exploited ownCloud and WordPress flaws to compromise Philippine nuclear research and naval-linked maritime organizations, with sensitive data theft and follow-on espionage risk.
+    Nexus advertised searchable access to massive identity-document datasets, including 153M+ claimed driver's licenses, creating significant long-term fraud and impersonation risk while source attribution remains under investigation.
 
-    [Read more →](2026/Week35/Philippine.md){.index-card__cta}
+    [Read more →](2026/Week36/DarkWeb.md){.index-card__cta}
 
--   ![Rhysida](2026/Week35/images/Rhysida.png){.index-card__img}
+-   ![AI](2026/Week36/images/AI.png){.index-card__img}
 
-    **Rhysida Ransomware Group Targets Berlin Government Ahead of Vote**
+    **Chinese Hackers Use AI Agents in Multi-Country Cyber Campaign**
 
-    **Rhysida Ransomware**{.cve-chip} **Government Targeting**{.cve-chip} **Pre-Election Pressure**{.cve-chip} **Data Extortion**{.cve-chip} **Attribution Unconfirmed**{.cve-chip}
+    **AI-Enabled Threat Activity**{.cve-chip} **Cyber Espionage**{.cve-chip} **SecFlow**{.cve-chip} **GLUTTON Webshell**{.cve-chip} **Credential Theft**{.cve-chip} **Data Exfiltration**{.cve-chip}
 
-    Rhysida claimed a large data theft and extortion attempt against Berlin's administrative network before elections, while officials refused payment and reported no impact to election infrastructure.
+    Hunt.io reported a Chinese-speaking threat actor using SecFlow to orchestrate AI-model-driven reconnaissance, exploitation, credential theft, and data exfiltration across multi-country targeting.
 
-    [Read more →](2026/Week35/Rhysida.md){.index-card__cta}
-
--   ![FBI](2026/Week35/images/FBI.png){.index-card__img}
-
-    **FBI Disrupts China-Linked QTFY Infrastructure (QScan and QTRouter)**
-
-    **QTFY Activity**{.cve-chip} **QScan**{.cve-chip} **QTRouter**{.cve-chip} **Proxy Obfuscation**{.cve-chip} **China-Linked Intrusions**{.cve-chip}
-
-    U.S. authorities disrupted QScan and QTRouter infrastructure used to compromise internet-connected devices and obfuscate espionage traffic, with later DOJ clarification that listed organizations were targets, not necessarily all confirmed victims.
-
-    [Read more →](2026/Week35/FBI.md){.index-card__cta}
-
--   ![HOOKEDGE](2026/Week35/images/HOOKEDGE.png){.index-card__img}
-
-    **HOOKEDGE Backdoor Campaign Targeting European Diplomatic and Defense Organizations**
-
-    **Cyber Espionage**{.cve-chip} **HOOKEDGE**{.cve-chip} **BlueDelta**{.cve-chip} **Spear Phishing**{.cve-chip} **Macro Abuse**{.cve-chip} **Scheduled Task Persistence**{.cve-chip}
-
-    A BlueDelta-linked espionage campaign used macro-enabled Word lures to install the HOOKEDGE backdoor, persist via scheduled tasks, and exfiltrate command output through webhook-based C2 channels.
-
-    [Read more →](2026/Week35/HOOKEDGE.md){.index-card__cta}
-
--   ![Manchester](2026/Week35/images/Manchester.png){.index-card__img}
-
-    **Manchester Airports Group (MAG) Customer Data Breach**
-
-    **Data Breach**{.cve-chip} **Aviation Sector**{.cve-chip} **Customer Data Exposure**{.cve-chip} **Third-Party Risk**{.cve-chip} **Extortion Attempt**{.cve-chip} **No Payment Data Exposed**{.cve-chip}
-
-    Unauthorized access at MAG exposed customer contact and travel-related metadata for about 8.7 million people across Manchester, London Stansted, and East Midlands airport service systems.
-
-    [Read more →](2026/Week35/Manchester.md){.index-card__cta}
+    [Read more →](2026/Week36/AI.md){.index-card__cta}
 
 </div>

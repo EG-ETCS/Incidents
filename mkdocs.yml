@@ -569,3 +569,9 @@ nav:
           - "Philippine Nuclear and Naval Targets Hit by Suspected Chinese Operator": 2026/Week35/Philippine.md
           - "SonicWall SMA 1000 zero-day SSRF and command-injection vulnerabilities - CVE-2026-83548 and CVE-2026-83549": 2026/Week35/SonicWall.md
           - "Exploitation against Philippine nuclear research and naval-support organizations": 2026/Week35/naval.md
+      - "September":
+        - "week36":
+          - "Chinese Hackers Use AI Agents in Multi-Country Cyber Campaign": 2026/Week36/AI.md
+          - "Dark Web Service Nexus Sells 153M+ Driver's Licenses": 2026/Week36/DarkWeb.md
+          - "CVE-2026-20212 - Cisco Nexus 9000 Series Switches Silicon One Remote Code Execution Vulnerability": 2026/Week36/Cisco.md
+          - "Fire Ant - China-linked Cyber Espionage Campaign Targeting Trusted Infrastructure": 2026/Week36/FireAnt.md

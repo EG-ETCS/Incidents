@@ -8,74 +8,74 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![DDoS](2026/Week34/images/DDoS.png){.index-card__img}
+-   ![naval](2026/Week35/images/naval.png){.index-card__img}
 
-    **DDoS Attack on Norway’s Shared Digital Government Infrastructure**
+    **Exploitation against Philippine nuclear research and naval-support organizations**
 
-    **Distributed Denial of Service**{.cve-chip} **Public Sector**{.cve-chip} **Availability Attack**{.cve-chip} **Government Services**{.cve-chip} **ID Porten**{.cve-chip} **DDoS Mitigation**{.cve-chip}
+    **Cyber Espionage**{.cve-chip} **Nuclear Research Exposure**{.cve-chip} **Naval Support Targeting**{.cve-chip} **CVE-2023-49105**{.cve-chip} **CVE-2024-28000**{.cve-chip}
 
-    A large DDoS campaign disrupted Norway’s shared digital government stack, temporarily knocking out core public services such as identity, signing, and digital access workflows.
+    A suspected Chinese-speaking actor reportedly exploited known ownCloud and LiteSpeed Cache flaws to breach Philippine nuclear and naval-support organizations and expose sensitive strategic, personnel, and credential-related data.
 
-    [Read more →](2026/Week34/DDoS.md){.index-card__cta}
+    [Read more →](2026/Week35/naval.md){.index-card__cta}
 
--   ![DoFun](2026/Week34/images/DoFun.png){.index-card__img}
+-   ![SonicWall](2026/Week35/images/SonicWall.png){.index-card__img}
 
-    **DoFun Android Car Head Unit Supply-Chain Malware Campaign**
+    **SonicWall SMA 1000 zero-day SSRF and command-injection vulnerabilities - CVE-2026-83548 and CVE-2026-83549**
 
-    **Supply-Chain Malware**{.cve-chip} **Android Head Units**{.cve-chip} **TWCore Abuse**{.cve-chip} **Ad Fraud**{.cve-chip} **Proxy Botnet**{.cve-chip}
+    **Zero-Day Exploitation**{.cve-chip} **SonicWall SMA 1000**{.cve-chip} **CVE-2026-83548**{.cve-chip} **CVE-2026-83549**{.cve-chip} **Perimeter Appliance Risk**{.cve-chip}
 
-    Attackers abused DoFun's TWCore update workflow to install JarService and proxy-botnet payloads, turning infected Android automotive head units into ad-fraud and reverse-proxy nodes.
+    SonicWall confirmed active exploitation of two SMA 1000 zero-days that may be chained from SSRF to command injection, with emergency hotfixes released and limited public forensic disclosure.
 
-    [Read more →](2026/Week34/DoFun.md){.index-card__cta}
+    [Read more →](2026/Week35/SonicWall.md){.index-card__cta}
 
--   ![Power](2026/Week34/images/Power.png){.index-card__img}
+-   ![Philippine](2026/Week35/images/Philippine.png){.index-card__img}
 
-    **UK Small-Scale Power Generator Shutdown Linked to Suspected Iran-Affiliated Cyber Activity**
+    **Philippine Nuclear and Naval Targets Hit by Suspected Chinese Operator**
 
-    **Power Sector Disruption**{.cve-chip} **Suspected Iran-Affiliated Activity**{.cve-chip} **Operational Outage**{.cve-chip} **Attribution Unconfirmed**{.cve-chip} **Critical Infrastructure Risk**{.cve-chip}
+    **Cyber Espionage**{.cve-chip} **Critical Infrastructure Targeting**{.cve-chip} **Maritime Defense Sector**{.cve-chip} **CVE-2023-49105**{.cve-chip} **CVE-2024-28000**{.cve-chip}
 
-    A UK small-scale generator experienced a four-day outage after a cyber incident; while media reports cite Iran-linked actors, official UK public attribution and technical details remain undisclosed.
+    A suspected Chinese-speaking operator reportedly exploited ownCloud and WordPress flaws to compromise Philippine nuclear research and naval-linked maritime organizations, with sensitive data theft and follow-on espionage risk.
 
-    [Read more →](2026/Week34/Power.md){.index-card__cta}
+    [Read more →](2026/Week35/Philippine.md){.index-card__cta}
 
--   ![TikTok](2026/Week34/images/TikTok.png){.index-card__img}
+-   ![Rhysida](2026/Week35/images/Rhysida.png){.index-card__img}
 
-    **TikTok / ByteDance Children's Privacy & COPPA Case — $400M Settlement**
+    **Rhysida Ransomware Group Targets Berlin Government Ahead of Vote**
 
-    **Privacy Violation**{.cve-chip} **COPPA Violation**{.cve-chip} **Child Safety Failure**{.cve-chip} **Data Retention Abuse**{.cve-chip} **Regulatory Settlement**{.cve-chip} **Parental Consent Bypass**{.cve-chip}
+    **Rhysida Ransomware**{.cve-chip} **Government Targeting**{.cve-chip} **Pre-Election Pressure**{.cve-chip} **Data Extortion**{.cve-chip} **Attribution Unconfirmed**{.cve-chip}
 
-    The U.S. DOJ secured a $400 million settlement with TikTok/ByteDance for violations of COPPA, including unauthorized collection of children's personal information without parental consent and failures to delete data upon parental request.
+    Rhysida claimed a large data theft and extortion attempt against Berlin's administrative network before elections, while officials refused payment and reported no impact to election infrastructure.
 
-    [Read more →](2026/Week34/TikTok.md){.index-card__cta}
+    [Read more →](2026/Week35/Rhysida.md){.index-card__cta}
 
--   ![Hijack](2026/Week34/images/Hijack.png){.index-card__img}
+-   ![FBI](2026/Week35/images/FBI.png){.index-card__img}
 
-    **Suspected Russian Hackers Abuse Google OAuth and WhatsApp Linking to Hijack Accounts**
+    **FBI Disrupts China-Linked QTFY Infrastructure (QScan and QTRouter)**
 
-    **Account Hijacking**{.cve-chip} **OAuth Phishing**{.cve-chip} **Social Engineering**{.cve-chip} **Russian APT**{.cve-chip} **MFA Bypass**{.cve-chip} **Device Linking Abuse**{.cve-chip}
+    **QTFY Activity**{.cve-chip} **QScan**{.cve-chip} **QTRouter**{.cve-chip} **Proxy Obfuscation**{.cve-chip} **China-Linked Intrusions**{.cve-chip}
 
-    Russian cyber-espionage clusters abused legitimate Google OAuth and WhatsApp device-linking flows in targeted social-engineering campaigns to hijack high-value accounts without requiring password compromise.
+    U.S. authorities disrupted QScan and QTRouter infrastructure used to compromise internet-connected devices and obfuscate espionage traffic, with later DOJ clarification that listed organizations were targets, not necessarily all confirmed victims.
 
-    [Read more →](2026/Week34/Hijack.md){.index-card__cta}
+    [Read more →](2026/Week35/FBI.md){.index-card__cta}
 
--   ![Cisco](2026/Week34/images/Cisco.png){.index-card__img}
+-   ![HOOKEDGE](2026/Week35/images/HOOKEDGE.png){.index-card__img}
 
-    **Six Maximum-Severity Flaws Found in Cisco Products**
+    **HOOKEDGE Backdoor Campaign Targeting European Diplomatic and Defense Organizations**
 
-    **Critical Vulnerabilities**{.cve-chip} **Cisco Crosswork**{.cve-chip} **Cisco Secure Workload**{.cve-chip} **CVSS 10.0**{.cve-chip} **Authentication Bypass**{.cve-chip} **Injection Risks**{.cve-chip}
+    **Cyber Espionage**{.cve-chip} **HOOKEDGE**{.cve-chip} **BlueDelta**{.cve-chip} **Spear Phishing**{.cve-chip} **Macro Abuse**{.cve-chip} **Scheduled Task Persistence**{.cve-chip}
 
-    Cisco disclosed nine critical flaws in Cisco Crosswork and Cisco Secure Workload, including six CVSS 10.0 issues spanning SQL injection, authentication/control bypass classes, and command/path injection risks.
+    A BlueDelta-linked espionage campaign used macro-enabled Word lures to install the HOOKEDGE backdoor, persist via scheduled tasks, and exfiltrate command output through webhook-based C2 channels.
 
-    [Read more →](2026/Week34/Cisco.md){.index-card__cta}
+    [Read more →](2026/Week35/HOOKEDGE.md){.index-card__cta}
 
--   ![Encrypted](2026/Week34/images/Encrypted.png){.index-card__img}
+-   ![Manchester](2026/Week35/images/Manchester.png){.index-card__img}
 
-    **Encrypted Prompt Injection / AI Safety Guardrail Bypass**
+    **Manchester Airports Group (MAG) Customer Data Breach**
 
-    **Prompt Injection**{.cve-chip} **Cryptographic Context Injection**{.cve-chip} **Guardrail Bypass**{.cve-chip} **Agentic Tooling Risk**{.cve-chip} **Data Exfiltration**{.cve-chip}
+    **Data Breach**{.cve-chip} **Aviation Sector**{.cve-chip} **Customer Data Exposure**{.cve-chip} **Third-Party Risk**{.cve-chip} **Extortion Attempt**{.cve-chip} **No Payment Data Exposed**{.cve-chip}
 
-    Researchers described encrypted instruction payloads that can be decrypted inside model runtime/tool contexts, potentially bypassing prompt guardrails and enabling sensitive-data exfiltration in privileged agent workflows.
+    Unauthorized access at MAG exposed customer contact and travel-related metadata for about 8.7 million people across Manchester, London Stansted, and East Midlands airport service systems.
 
-    [Read more →](2026/Week34/Encrypted.md){.index-card__cta}
+    [Read more →](2026/Week35/Manchester.md){.index-card__cta}
 
 </div>
