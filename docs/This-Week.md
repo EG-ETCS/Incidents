@@ -8,6 +8,16 @@ hide:
  
 <div class="grid cards" markdown>
 
+-   ![MikroTrick](2026/Week36/images/MikroTrick.png){.index-card__img}
+
+    **MikroTrick: Actively Exploited MikroTik RouterOS SSH Attack Chain**
+
+    **Active Exploitation**{.cve-chip} **MikroTik RouterOS**{.cve-chip} **SSH Exposure**{.cve-chip} **CVE-2026-67276**{.cve-chip} **CVE-2026-86060**{.cve-chip}
+
+    CERT Polska reported active exploitation of a two-CVE RouterOS SSH chain that can grant full administrative control of internet-exposed MikroTik devices, requiring urgent patching and compromise review.
+
+    [Read more →](2026/Week36/MikroTrick.md){.index-card__cta}
+
 -   ![FireAnt](2026/Week36/images/FireAnt.png){.index-card__img}
 
     **Fire Ant - China-linked Cyber Espionage Campaign Targeting Trusted Infrastructure**
