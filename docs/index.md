@@ -19,15 +19,25 @@ hide:
 
 <div class="grid cards index-grid" markdown>
 
--   ![MikroTrick](2026/Week36/images/MikroTrick.png){.index-card__img}
+-   ![Brazilian](2026/Week36/images/Brazilian.png){.index-card__img}
 
-    **MikroTrick: Actively Exploited MikroTik RouterOS SSH Attack Chain**
+    **Brazilian Government Traffic Hijacking Campaign**
 
-    **Active Exploitation**{.cve-chip} **MikroTik RouterOS**{.cve-chip} **SSH Exposure**{.cve-chip} **CVE-2026-67276**{.cve-chip} **CVE-2026-86060**{.cve-chip}
+    **Traffic Hijacking**{.cve-chip} **Malicious Apache Modules**{.cve-chip} **SEO Poisoning**{.cve-chip} **Government Domains**{.cve-chip} **Gambling Goblin**{.cve-chip}
 
-    CERT Polska reported active exploitation of a two-CVE RouterOS SSH chain that can grant full administrative control of internet-exposed MikroTik devices, requiring urgent patching and compromise review.
+    A reported Chinese-speaking group hijacked traffic on compromised Brazilian government and education domains using malicious Apache modules that proxied visitors to phishing and betting content.
 
-    [Read more →](2026/Week36/MikroTrick.md){.index-card__cta}
+    [Read more →](2026/Week36/Brazilian.md){.index-card__cta}
+
+-   ![Meta](2026/Week36/images/Meta.png){.index-card__img}
+
+    **Meta Ads Push StreamRat Android Trojan That Can Gain Near-Complete Device Control**
+
+    **Android Trojan**{.cve-chip} **Malvertising**{.cve-chip} **StreamRat**{.cve-chip} **Accessibility Abuse**{.cve-chip} **Remote Device Control**{.cve-chip}
+
+    StreamRat is being spread through malicious ad-to-sideload chains that abuse Accessibility permissions for credential theft, overlays, and near-complete remote control of infected Android devices.
+
+    [Read more →](2026/Week36/Meta.md){.index-card__cta}
 
 </div>
 

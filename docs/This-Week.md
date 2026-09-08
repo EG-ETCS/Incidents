@@ -8,6 +8,26 @@ hide:
  
 <div class="grid cards" markdown>
 
+-   ![Brazilian](2026/Week36/images/Brazilian.png){.index-card__img}
+
+    **Brazilian Government Traffic Hijacking Campaign**
+
+    **Traffic Hijacking**{.cve-chip} **Malicious Apache Modules**{.cve-chip} **SEO Poisoning**{.cve-chip} **Government Domains**{.cve-chip} **Gambling Goblin**{.cve-chip}
+
+    A reported Chinese-speaking group hijacked traffic on compromised Brazilian government and education domains using malicious Apache modules that proxied visitors to phishing and betting content.
+
+    [Read more →](2026/Week36/Brazilian.md){.index-card__cta}
+
+-   ![Meta](2026/Week36/images/Meta.png){.index-card__img}
+
+    **Meta Ads Push StreamRat Android Trojan That Can Gain Near-Complete Device Control**
+
+    **Android Trojan**{.cve-chip} **Malvertising**{.cve-chip} **StreamRat**{.cve-chip} **Accessibility Abuse**{.cve-chip} **Remote Device Control**{.cve-chip}
+
+    StreamRat is being spread through malicious ad-to-sideload chains that abuse Accessibility permissions for credential theft, overlays, and near-complete remote control of infected Android devices.
+
+    [Read more →](2026/Week36/Meta.md){.index-card__cta}
+
 -   ![MikroTrick](2026/Week36/images/MikroTrick.png){.index-card__img}
 
     **MikroTrick: Actively Exploited MikroTik RouterOS SSH Attack Chain**
