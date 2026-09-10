@@ -8,6 +8,16 @@ hide:
  
 <div class="grid cards" markdown>
 
+-   ![US](2026/Week36/images/US.png){.index-card__img}
+
+    **US Government Accuses Chinese AI Firms of Distilling Frontier Models**
+
+    **AI Security**{.cve-chip} **Model Distillation**{.cve-chip} **IP Extraction Risk**{.cve-chip} **Service Abuse**{.cve-chip} **Strategic Competition**{.cve-chip}
+
+    U.S. agencies allege industrial-scale extraction of proprietary frontier-model capabilities through distributed high-volume model interactions, while China publicly disputes the claims.
+
+    [Read more →](2026/Week36/US.md){.index-card__cta}
+
 -   ![Brazilian](2026/Week36/images/Brazilian.png){.index-card__img}
 
     **Brazilian Government Traffic Hijacking Campaign**

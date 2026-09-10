@@ -19,25 +19,15 @@ hide:
 
 <div class="grid cards index-grid" markdown>
 
--   ![Brazilian](2026/Week36/images/Brazilian.png){.index-card__img}
+-   ![US](2026/Week36/images/US.png){.index-card__img}
 
-    **Brazilian Government Traffic Hijacking Campaign**
+    **US Government Accuses Chinese AI Firms of Distilling Frontier Models**
 
-    **Traffic Hijacking**{.cve-chip} **Malicious Apache Modules**{.cve-chip} **SEO Poisoning**{.cve-chip} **Government Domains**{.cve-chip} **Gambling Goblin**{.cve-chip}
+    **AI Security**{.cve-chip} **Model Distillation**{.cve-chip} **IP Extraction Risk**{.cve-chip} **Service Abuse**{.cve-chip} **Strategic Competition**{.cve-chip}
 
-    A reported Chinese-speaking group hijacked traffic on compromised Brazilian government and education domains using malicious Apache modules that proxied visitors to phishing and betting content.
+    U.S. agencies allege industrial-scale extraction of proprietary frontier-model capabilities through distributed high-volume model interactions, while China publicly disputes the claims.
 
-    [Read more →](2026/Week36/Brazilian.md){.index-card__cta}
-
--   ![Meta](2026/Week36/images/Meta.png){.index-card__img}
-
-    **Meta Ads Push StreamRat Android Trojan That Can Gain Near-Complete Device Control**
-
-    **Android Trojan**{.cve-chip} **Malvertising**{.cve-chip} **StreamRat**{.cve-chip} **Accessibility Abuse**{.cve-chip} **Remote Device Control**{.cve-chip}
-
-    StreamRat is being spread through malicious ad-to-sideload chains that abuse Accessibility permissions for credential theft, overlays, and near-complete remote control of infected Android devices.
-
-    [Read more →](2026/Week36/Meta.md){.index-card__cta}
+    [Read more →](2026/Week36/US.md){.index-card__cta}
 
 </div>
 
