@@ -579,3 +579,8 @@ nav:
           - "Meta Ads Push StreamRat Android Trojan That Can Gain Near-Complete Device Control": 2026/Week36/Meta.md
           - "Brazilian Government Traffic Hijacking Campaign": 2026/Week36/Brazilian.md
           - "US Government Accuses Chinese AI Firms of Distilling Frontier Models": 2026/Week36/US.md
+        - "week37":
+          - "GitLab CVE-2026-85706 - Unauthenticated Path Traversal": 2026/Week37/GitLab.md
+          - "WeWorm - WeChat Zero-Click Worm": 2026/Week37/WeWorm.md
+          - "LG Smart TV Data Collection": 2026/Week37/LG.md
+          - "DoppelCart - Large-Scale Fake Online Shop Fraud Network": 2026/Week37/DoppelCart.md
