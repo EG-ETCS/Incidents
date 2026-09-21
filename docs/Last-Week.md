@@ -8,84 +8,84 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![US](2026/Week36/images/US.png){.index-card__img}
+-   ![CenterPoint](2026/Week37/images/CenterPoint.png){.index-card__img}
 
-    **US Government Accuses Chinese AI Firms of Distilling Frontier Models**
+    **CenterPoint Energy Customer Data Breach via External-Facing System**
 
-    **AI Security**{.cve-chip} **Model Distillation**{.cve-chip} **IP Extraction Risk**{.cve-chip} **Service Abuse**{.cve-chip} **Strategic Competition**{.cve-chip}
+    **CenterPoint Energy**{.cve-chip} **Utility Data Breach**{.cve-chip} **External-Facing System**{.cve-chip} **Unverified API Abuse Claims**{.cve-chip} **Customer PII Exposure**{.cve-chip}
 
-    U.S. agencies allege industrial-scale extraction of proprietary frontier-model capabilities through distributed high-volume model interactions, while China publicly disputes the claims.
+    CenterPoint confirmed unauthorized access to customer personal information via an external-facing system, while attacker claims of 7.49M+ stolen records and API weaknesses remain unverified.
 
-    [Read more →](2026/Week36/US.md){.index-card__cta}
+    [Read more →](2026/Week37/CenterPoint.md){.index-card__cta}
 
--   ![Brazilian](2026/Week36/images/Brazilian.png){.index-card__img}
+-   ![Russian Threat Clusters](2026/Week37/images/Russian.png){.index-card__img}
 
-    **Brazilian Government Traffic Hijacking Campaign**
+    **Three Threat Clusters Target Russian Enterprises With Backdoors, Ransomware, and Wipers**
 
-    **Traffic Hijacking**{.cve-chip} **Malicious Apache Modules**{.cve-chip} **SEO Poisoning**{.cve-chip} **Government Domains**{.cve-chip} **Gambling Goblin**{.cve-chip}
+    **NightEagle (APT-Q-95)**{.cve-chip} **Hacking Cat**{.cve-chip} **Toy Ghouls**{.cve-chip} **Exchange Exploitation**{.cve-chip} **Ransomware and Wipers**{.cve-chip}
 
-    A reported Chinese-speaking group hijacked traffic on compromised Brazilian government and education domains using malicious Apache modules that proxied visitors to phishing and betting content.
+    Kaspersky reports three distinct clusters targeting Russian enterprises through VPN credential abuse, Exchange exploitation, persistent backdoors, and destructive ransomware/wiper operations.
 
-    [Read more →](2026/Week36/Brazilian.md){.index-card__cta}
+    [Read more →](2026/Week37/Russian.md){.index-card__cta}
 
--   ![Meta](2026/Week36/images/Meta.png){.index-card__img}
+-   ![Cisco](2026/Week37/images/Cisco.png){.index-card__img}
 
-    **Meta Ads Push StreamRat Android Trojan That Can Gain Near-Complete Device Control**
+    **Actively Exploited Cisco ISE / ISE-PIC Authentication Bypass Zero-Day**
 
-    **Android Trojan**{.cve-chip} **Malvertising**{.cve-chip} **StreamRat**{.cve-chip} **Accessibility Abuse**{.cve-chip} **Remote Device Control**{.cve-chip}
+    **Cisco ISE**{.cve-chip} **ISE-PIC**{.cve-chip} **CVE-2026-76460**{.cve-chip} **Authentication Bypass**{.cve-chip} **Active Exploitation**{.cve-chip}
 
-    StreamRat is being spread through malicious ad-to-sideload chains that abuse Accessibility permissions for credential theft, overlays, and near-complete remote control of infected Android devices.
+    Cisco PSIRT confirmed active exploitation of a maximum-severity ISE/ISE-PIC authentication-bypass flaw that can expose centralized identity and network-access-control infrastructure.
 
-    [Read more →](2026/Week36/Meta.md){.index-card__cta}
+    [Read more →](2026/Week37/Cisco.md){.index-card__cta}
 
--   ![MikroTrick](2026/Week36/images/MikroTrick.png){.index-card__img}
+-   ![Iran](2026/Week37/images/Iran.png){.index-card__img}
 
-    **MikroTrick: Actively Exploited MikroTik RouterOS SSH Attack Chain**
+    **Iranian hackers use CHOSEN BRICK Windows malware to spy on targets**
 
-    **Active Exploitation**{.cve-chip} **MikroTik RouterOS**{.cve-chip} **SSH Exposure**{.cve-chip} **CVE-2026-67276**{.cve-chip} **CVE-2026-86060**{.cve-chip}
+    **State-Linked Espionage**{.cve-chip} **CHOSEN BRICK**{.cve-chip} **Social Engineering**{.cve-chip} **Telegram C2**{.cve-chip} **Windows Surveillance Malware**{.cve-chip}
 
-    CERT Polska reported active exploitation of a two-CVE RouterOS SSH chain that can grant full administrative control of internet-exposed MikroTik devices, requiring urgent patching and compromise review.
+    A joint U.S./U.K./Netherlands/FBI warning links Iranian state-backed operators to CHOSEN BRICK malware campaigns using messaging-app social engineering for surveillance, data theft, and harassment-oriented targeting.
 
-    [Read more →](2026/Week36/MikroTrick.md){.index-card__cta}
+    [Read more →](2026/Week37/Iran.md){.index-card__cta}
 
--   ![FireAnt](2026/Week36/images/FireAnt.png){.index-card__img}
+-   ![DoppelCart](2026/Week37/images/DoppelCart.png){.index-card__img}
 
-    **Fire Ant - China-linked Cyber Espionage Campaign Targeting Trusted Infrastructure**
+    **DoppelCart - Large-Scale Fake Online Shop Fraud Network**
 
-    **Cyber Espionage**{.cve-chip} **Trusted Infrastructure**{.cve-chip} **Cisco IOS XR**{.cve-chip} **TACACS Credential Theft**{.cve-chip} **Linux Backdoors**{.cve-chip} **Covert Tunneling**{.cve-chip}
+    **E-Commerce Fraud**{.cve-chip} **Fake Shops**{.cve-chip} **Card Theft**{.cve-chip} **Phishing Checkout**{.cve-chip} **Domain Churn**{.cve-chip}
 
-    Fire Ant reportedly compromised trusted router, TACACS, and Linux management layers to intercept credentials, suppress telemetry, and pivot toward higher-value target networks.
+    A large fraud network of about 119,000 fake shopping domains reportedly impersonates trusted retailers to steal payment-card and personal data through cloned checkout flows.
 
-    [Read more →](2026/Week36/FireAnt.md){.index-card__cta}
+    [Read more →](2026/Week37/DoppelCart.md){.index-card__cta}
 
--   ![Cisco](2026/Week36/images/Cisco.png){.index-card__img}
+-   ![LG](2026/Week37/images/LG.png){.index-card__img}
 
-    **CVE-2026-20212 - Cisco Nexus 9000 Series Switches Silicon One Remote Code Execution Vulnerability**
+    **LG Smart TV Data Collection**
 
-    **Critical RCE**{.cve-chip} **Cisco Nexus 9000**{.cve-chip} **Silicon One**{.cve-chip} **Unauthenticated Attack**{.cve-chip} **Root Privileges**{.cve-chip} **NX-OS**{.cve-chip}
+    **Smart TV Privacy**{.cve-chip} **webOS**{.cve-chip} **ACR Telemetry**{.cve-chip} **IoT Exposure**{.cve-chip} **Standby Concerns**{.cve-chip}
 
-    Cisco fixed a critical Silicon One integration flaw in certain Nexus 9000 switches that could allow remote unauthenticated root-level code execution or trigger S1HAL crashes and device reloads.
+    Researchers reported broad privacy concerns around ACR, telemetry, and standby behavior in LG webOS TVs, while LG disputes claims of secret recording and points to user controls.
 
-    [Read more →](2026/Week36/Cisco.md){.index-card__cta}
+    [Read more →](2026/Week37/LG.md){.index-card__cta}
 
--   ![DarkWeb](2026/Week36/images/DarkWeb.png){.index-card__img}
+-   ![WeWorm](2026/Week37/images/WeWorm.png){.index-card__img}
 
-    **Dark Web Service Nexus Sells 153M+ Driver's Licenses**
+    **WeWorm - WeChat Zero-Click Worm**
 
-    **Dark Web Marketplace**{.cve-chip} **Identity Data Exposure**{.cve-chip} **Driver License Records**{.cve-chip} **Potential PII Breach**{.cve-chip} **Fraud Risk**{.cve-chip} **Investigation Ongoing**{.cve-chip}
+    **WeChat Security**{.cve-chip} **Zero-Click Exploit**{.cve-chip} **Worm Propagation**{.cve-chip} **Cross-Platform Risk**{.cve-chip} **Account Takeover**{.cve-chip}
 
-    Nexus advertised searchable access to massive identity-document datasets, including 153M+ claimed driver's licenses, creating significant long-term fraud and impersonation risk while source attribution remains under investigation.
+    Researchers demonstrated a zero-click WeChat call-handling exploit chain that can enable account takeover and worm-like spread across Android and iOS contact networks.
 
-    [Read more →](2026/Week36/DarkWeb.md){.index-card__cta}
+    [Read more →](2026/Week37/WeWorm.md){.index-card__cta}
 
--   ![AI](2026/Week36/images/AI.png){.index-card__img}
+-   ![GitLab](2026/Week37/images/GitLab.png){.index-card__img}
 
-    **Chinese Hackers Use AI Agents in Multi-Country Cyber Campaign**
+    **GitLab CVE-2026-85706 - Unauthenticated Path Traversal**
 
-    **AI-Enabled Threat Activity**{.cve-chip} **Cyber Espionage**{.cve-chip} **SecFlow**{.cve-chip} **GLUTTON Webshell**{.cve-chip} **Credential Theft**{.cve-chip} **Data Exfiltration**{.cve-chip}
+    **CVE-2026-85706**{.cve-chip} **Path Traversal**{.cve-chip} **Unauthenticated Access**{.cve-chip} **GitLab CE/EE**{.cve-chip} **KEV-Listed**{.cve-chip}
 
-    Hunt.io reported a Chinese-speaking threat actor using SecFlow to orchestrate AI-model-driven reconnaissance, exploitation, credential theft, and data exfiltration across multi-country targeting.
+    A critical GitLab repository commits API flaw can allow unauthenticated arbitrary file read on vulnerable internet-facing instances, creating high risk of secret disclosure and follow-on compromise.
 
-    [Read more →](2026/Week36/AI.md){.index-card__cta}
+    [Read more →](2026/Week37/GitLab.md){.index-card__cta}
 
 </div>

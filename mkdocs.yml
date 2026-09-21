@@ -588,3 +588,7 @@ nav:
           - "Actively Exploited Cisco ISE / ISE-PIC Authentication Bypass Zero-Day": 2026/Week37/Cisco.md
           - "Three Threat Clusters Target Russian Enterprises With Backdoors, Ransomware, and Wipers": 2026/Week37/Russian.md
           - "CenterPoint Energy Customer Data Breach via External-Facing System": 2026/Week37/CenterPoint.md
+        - "week38":
+          - "HEAVYGRAM: A Telegram-based Surveillance Backdoor Linked to Handala Hack": 2026/Week38/HEAVYGRAM.md
+          - "RatHat Android Trojan": 2026/Week38/Android.md
+          - "Four Linux Kernel Local Privilege-Escalation Vulnerabilities": 2026/Week38/Linux.md
