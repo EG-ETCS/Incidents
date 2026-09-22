@@ -8,6 +8,26 @@ hide:
  
 <div class="grid cards" markdown>
 
+-   ![CISA Linux KEV](2026/Week38/images/CISA.png){.index-card__img}
+
+    **Three Actively Exploited Linux Kernel Vulnerabilities Added to CISA KEV**
+
+    **CISA KEV**{.cve-chip} **Linux Kernel**{.cve-chip} **Active Exploitation**{.cve-chip} **CVE-2025-39964**{.cve-chip} **CVE-2026-53266**{.cve-chip} **CVE-2025-39682**{.cve-chip}
+
+    CISA placed three actively exploited Linux kernel flaws into KEV and required urgent remediation and forensic triage, while public attribution and attack-chain details remain undisclosed.
+
+    [Read more →](2026/Week38/CISA.md){.index-card__cta}
+
+-   ![Colorado Water Utilities](2026/Week38/images/Colorado.png){.index-card__img}
+
+    **Foreign Cyber Intrusions Targeting Two Colorado Water Utilities**
+
+    **Water Utilities**{.cve-chip} **OT/ICS**{.cve-chip} **Alarm Disablement**{.cve-chip} **Pumping-Cycle Changes**{.cve-chip} **Foreign Actors**{.cve-chip}
+
+    Foreign actors reportedly changed OT settings at two small Colorado water utilities, including disabling alarms and remote access, though officials reported no impact to water quality or public safety.
+
+    [Read more →](2026/Week38/Colorado.md){.index-card__cta}
+
 -   ![HEAVYGRAM](2026/Week38/images/HEAVYGRAM.png){.index-card__img}
 
     **HEAVYGRAM: A Telegram-based Surveillance Backdoor Linked to Handala Hack**
