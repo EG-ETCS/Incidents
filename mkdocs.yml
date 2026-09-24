@@ -592,5 +592,9 @@ nav:
           - "HEAVYGRAM: A Telegram-based Surveillance Backdoor Linked to Handala Hack": 2026/Week38/HEAVYGRAM.md
           - "RatHat Android Trojan": 2026/Week38/Android.md
           - "Four Linux Kernel Local Privilege-Escalation Vulnerabilities": 2026/Week38/Linux.md
-          - "Foreign Cyber Intrusions Targeting Two Colorado Water Utilities": 2026/Week38/Colorado
+          - "Foreign Cyber Intrusions Targeting Two Colorado Water Utilities": 2026/Week38/Colorado.md
           - "Three Actively Exploited Linux Kernel Vulnerabilities Added to CISA KEV": 2026/Week38/CISA.md
+          - "D-Link DIR-822A - Stack-Based Buffer Overflow (CVE-2026-86296)": 2026/Week38/DLink.md
+          - "Zyxel GS1900 CVE-2026-7273 & Veeam Agent for Windows CVE-2026-32996": 2026/Week38/Zyxel.md
+          - "MikroTrick - MikroTik RouterOS SSH Exploitation Chain": 2026/Week38/MikroTrick.md
+          - "ShinyHunters - FBIJobs.gov Data Breach": 2026/Week38/ShinyHunters.md
