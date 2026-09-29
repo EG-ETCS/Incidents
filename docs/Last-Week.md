@@ -8,84 +8,94 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![CenterPoint](2026/Week37/images/CenterPoint.png){.index-card__img}
+-   ![MikroTrick](2026/Week38/images/MikroTrick.png){.index-card__img}
 
-    **CenterPoint Energy Customer Data Breach via External-Facing System**
+    **MikroTrick - MikroTik RouterOS SSH Exploitation Chain**
 
-    **CenterPoint Energy**{.cve-chip} **Utility Data Breach**{.cve-chip} **External-Facing System**{.cve-chip} **Unverified API Abuse Claims**{.cve-chip} **Customer PII Exposure**{.cve-chip}
+    **MikroTik RouterOS**{.cve-chip} **MikroTrick**{.cve-chip} **CVE-2026-67276**{.cve-chip} **CVE-2026-86060**{.cve-chip} **Admin Takeover**{.cve-chip}
 
-    CenterPoint confirmed unauthorized access to customer personal information via an external-facing system, while attacker claims of 7.49M+ stolen records and API weaknesses remain unverified.
+    Attackers are exploiting a RouterOS SSH chain that can grant full administrative access on vulnerable internet-exposed MikroTik routers without valid credentials.
 
-    [Read more →](2026/Week37/CenterPoint.md){.index-card__cta}
+    [Read more →](2026/Week38/MikroTrick.md){.index-card__cta}
 
--   ![Russian Threat Clusters](2026/Week37/images/Russian.png){.index-card__img}
+-   ![Zyxel and Veeam](2026/Week38/images/Zyxel.png){.index-card__img}
 
-    **Three Threat Clusters Target Russian Enterprises With Backdoors, Ransomware, and Wipers**
+    **Zyxel GS1900 CVE-2026-7273 & Veeam Agent for Windows CVE-2026-32996**
 
-    **NightEagle (APT-Q-95)**{.cve-chip} **Hacking Cat**{.cve-chip} **Toy Ghouls**{.cve-chip} **Exchange Exploitation**{.cve-chip} **Ransomware and Wipers**{.cve-chip}
+    **Zyxel GS1900**{.cve-chip} **CVE-2026-7273**{.cve-chip} **Veeam Agent**{.cve-chip} **CVE-2026-32996**{.cve-chip} **Active Exploitation**{.cve-chip}
 
-    Kaspersky reports three distinct clusters targeting Russian enterprises through VPN credential abuse, Exchange exploitation, persistent backdoors, and destructive ransomware/wiper operations.
+    Active attacks combine unauthenticated LAN command execution on Zyxel GS1900 switches and local SYSTEM privilege escalation on vulnerable Veeam Agent for Windows deployments.
 
-    [Read more →](2026/Week37/Russian.md){.index-card__cta}
+    [Read more →](2026/Week38/Zyxel.md){.index-card__cta}
 
--   ![Cisco](2026/Week37/images/Cisco.png){.index-card__img}
+-   ![D-Link DIR-822A](2026/Week38/images/DLink.png){.index-card__img}
 
-    **Actively Exploited Cisco ISE / ISE-PIC Authentication Bypass Zero-Day**
+    **D-Link DIR-822A - Stack-Based Buffer Overflow (CVE-2026-86296)**
 
-    **Cisco ISE**{.cve-chip} **ISE-PIC**{.cve-chip} **CVE-2026-76460**{.cve-chip} **Authentication Bypass**{.cve-chip} **Active Exploitation**{.cve-chip}
+    **D-Link DIR-822A**{.cve-chip} **CVE-2026-86296**{.cve-chip} **Stack Overflow**{.cve-chip} **Unauthenticated**{.cve-chip} **PoC Available**{.cve-chip}
 
-    Cisco PSIRT confirmed active exploitation of a maximum-severity ISE/ISE-PIC authentication-bypass flaw that can expose centralized identity and network-access-control infrastructure.
+    A critical unauthenticated overflow in DIR-822A DHCP processing can be triggered with crafted traffic and may cause router crash or potential code execution.
 
-    [Read more →](2026/Week37/Cisco.md){.index-card__cta}
+    [Read more →](2026/Week38/DLink.md){.index-card__cta}
 
--   ![Iran](2026/Week37/images/Iran.png){.index-card__img}
+-   ![ShinyHunters](2026/Week38/images/ShinyHunters.png){.index-card__img}
 
-    **Iranian hackers use CHOSEN BRICK Windows malware to spy on targets**
+    **ShinyHunters - FBIJobs.gov Data Breach**
 
-    **State-Linked Espionage**{.cve-chip} **CHOSEN BRICK**{.cve-chip} **Social Engineering**{.cve-chip} **Telegram C2**{.cve-chip} **Windows Surveillance Malware**{.cve-chip}
+    **ShinyHunters**{.cve-chip} **FBIJobs.gov**{.cve-chip} **PeopleSoft RCE Claim**{.cve-chip} **Personnel Data Risk**{.cve-chip} **Federal Portal Incident**{.cve-chip}
 
-    A joint U.S./U.K./Netherlands/FBI warning links Iranian state-backed operators to CHOSEN BRICK malware campaigns using messaging-app social engineering for surveillance, data theft, and harassment-oriented targeting.
+    ShinyHunters claimed a breach of FBIJobs.gov with sensitive personnel/applicant data exposure, while the FBI confirmed investigation of unauthorized activity and continued scope assessment.
 
-    [Read more →](2026/Week37/Iran.md){.index-card__cta}
+    [Read more →](2026/Week38/ShinyHunters.md){.index-card__cta}
 
--   ![DoppelCart](2026/Week37/images/DoppelCart.png){.index-card__img}
+-   ![CISA Linux KEV](2026/Week38/images/CISA.png){.index-card__img}
 
-    **DoppelCart - Large-Scale Fake Online Shop Fraud Network**
+    **Three Actively Exploited Linux Kernel Vulnerabilities Added to CISA KEV**
 
-    **E-Commerce Fraud**{.cve-chip} **Fake Shops**{.cve-chip} **Card Theft**{.cve-chip} **Phishing Checkout**{.cve-chip} **Domain Churn**{.cve-chip}
+    **CISA KEV**{.cve-chip} **Linux Kernel**{.cve-chip} **Active Exploitation**{.cve-chip} **CVE-2025-39964**{.cve-chip} **CVE-2026-53266**{.cve-chip} **CVE-2025-39682**{.cve-chip}
 
-    A large fraud network of about 119,000 fake shopping domains reportedly impersonates trusted retailers to steal payment-card and personal data through cloned checkout flows.
+    CISA placed three actively exploited Linux kernel flaws into KEV and required urgent remediation and forensic triage, while public attribution and attack-chain details remain undisclosed.
 
-    [Read more →](2026/Week37/DoppelCart.md){.index-card__cta}
+    [Read more →](2026/Week38/CISA.md){.index-card__cta}
 
--   ![LG](2026/Week37/images/LG.png){.index-card__img}
+-   ![Colorado Water Utilities](2026/Week38/images/Colorado.png){.index-card__img}
 
-    **LG Smart TV Data Collection**
+    **Foreign Cyber Intrusions Targeting Two Colorado Water Utilities**
 
-    **Smart TV Privacy**{.cve-chip} **webOS**{.cve-chip} **ACR Telemetry**{.cve-chip} **IoT Exposure**{.cve-chip} **Standby Concerns**{.cve-chip}
+    **Water Utilities**{.cve-chip} **OT/ICS**{.cve-chip} **Alarm Disablement**{.cve-chip} **Pumping-Cycle Changes**{.cve-chip} **Foreign Actors**{.cve-chip}
 
-    Researchers reported broad privacy concerns around ACR, telemetry, and standby behavior in LG webOS TVs, while LG disputes claims of secret recording and points to user controls.
+    Foreign actors reportedly changed OT settings at two small Colorado water utilities, including disabling alarms and remote access, though officials reported no impact to water quality or public safety.
 
-    [Read more →](2026/Week37/LG.md){.index-card__cta}
+    [Read more →](2026/Week38/Colorado.md){.index-card__cta}
 
--   ![WeWorm](2026/Week37/images/WeWorm.png){.index-card__img}
+-   ![HEAVYGRAM](2026/Week38/images/HEAVYGRAM.png){.index-card__img}
 
-    **WeWorm - WeChat Zero-Click Worm**
+    **HEAVYGRAM: A Telegram-based Surveillance Backdoor Linked to Handala Hack**
 
-    **WeChat Security**{.cve-chip} **Zero-Click Exploit**{.cve-chip} **Worm Propagation**{.cve-chip} **Cross-Platform Risk**{.cve-chip} **Account Takeover**{.cve-chip}
+    **HEAVYGRAM**{.cve-chip} **Handala Hack**{.cve-chip} **Telegram C2**{.cve-chip} **Windows Backdoor**{.cve-chip} **Surveillance Malware**{.cve-chip}
 
-    Researchers demonstrated a zero-click WeChat call-handling exploit chain that can enable account takeover and worm-like spread across Android and iOS contact networks.
+    Iran-linked activity reportedly uses the HEAVYGRAM Windows backdoor with Telegram-based C2 to execute commands, capture surveillance data, steal sensitive information, and persist on victim systems.
 
-    [Read more →](2026/Week37/WeWorm.md){.index-card__cta}
+    [Read more →](2026/Week38/HEAVYGRAM.md){.index-card__cta}
 
--   ![GitLab](2026/Week37/images/GitLab.png){.index-card__img}
+-   ![RatHat Android](2026/Week38/images/Android.png){.index-card__img}
 
-    **GitLab CVE-2026-85706 - Unauthenticated Path Traversal**
+    **RatHat Android Trojan**
 
-    **CVE-2026-85706**{.cve-chip} **Path Traversal**{.cve-chip} **Unauthenticated Access**{.cve-chip} **GitLab CE/EE**{.cve-chip} **KEV-Listed**{.cve-chip}
+    **RatHat**{.cve-chip} **Android Trojan**{.cve-chip} **Accessibility Abuse**{.cve-chip} **ADB Self-Pairing**{.cve-chip} **AI-Assisted UI Automation**{.cve-chip}
 
-    A critical GitLab repository commits API flaw can allow unauthenticated arbitrary file read on vulnerable internet-facing instances, creating high risk of secret disclosure and follow-on compromise.
+    RatHat abuses Accessibility and Wireless Debugging to self-pair ADB, gain shell-level control, steal credentials/OTPs, and automate attack flows with AI-assisted UI navigation.
 
-    [Read more →](2026/Week37/GitLab.md){.index-card__cta}
+    [Read more →](2026/Week38/Android.md){.index-card__cta}
+
+-   ![Linux Kernel LPE](2026/Week38/images/Linux.png){.index-card__img}
+
+    **Four Linux Kernel Local Privilege-Escalation Vulnerabilities**
+
+    **Linux Kernel**{.cve-chip} **LPE**{.cve-chip} **DirtyAH6**{.cve-chip} **TUNderflow**{.cve-chip} **PPPoEject**{.cve-chip} **DiagSpill**{.cve-chip}
+
+    Public exploit code was released for four Linux kernel memory-corruption flaws that can enable root escalation from low-privileged access under affected configurations.
+
+    [Read more →](2026/Week38/Linux.md){.index-card__cta}
 
 </div>

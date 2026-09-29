@@ -19,45 +19,65 @@ hide:
 
 <div class="grid cards index-grid" markdown>
 
--   ![MikroTrick](2026/Week38/images/MikroTrick.png){.index-card__img}
+-   ![AI-Agent E-Commerce Skimming](2026/Week39/images/Skimming.png){.index-card__img}
 
-    **MikroTrick - MikroTik RouterOS SSH Exploitation Chain**
+    **AI-Agent E-Commerce Skimming Campaign**
 
-    **MikroTik RouterOS**{.cve-chip} **MikroTrick**{.cve-chip} **CVE-2026-67276**{.cve-chip} **CVE-2026-86060**{.cve-chip} **Admin Takeover**{.cve-chip}
+    **AI-Agent Campaign**{.cve-chip} **E-Commerce Skimming**{.cve-chip} **Magecart-style JS**{.cve-chip} **600K+ Cards**{.cve-chip} **100+ Sites**{.cve-chip}
 
-    Attackers are exploiting a RouterOS SSH chain that can grant full administrative access on vulnerable internet-exposed MikroTik routers without valid credentials.
+    Threat actors reportedly used AI-agent frameworks to automate recon, exploitation, credential theft, and checkout skimmer deployment at scale across online retailers.
 
-    [Read more →](2026/Week38/MikroTrick.md){.index-card__cta}
+    [Read more →](2026/Week39/Skimming.md){.index-card__cta}
 
--   ![Zyxel and Veeam](2026/Week38/images/Zyxel.png){.index-card__img}
+-   ![ShinyHunters PeopleSoft](2026/Week39/images/ShinyHunters.png){.index-card__img}
 
-    **Zyxel GS1900 CVE-2026-7273 & Veeam Agent for Windows CVE-2026-32996**
+    **ShinyHunters / UNC6240 - Oracle PeopleSoft WAF Bypass Campaign**
 
-    **Zyxel GS1900**{.cve-chip} **CVE-2026-7273**{.cve-chip} **Veeam Agent**{.cve-chip} **CVE-2026-32996**{.cve-chip} **Active Exploitation**{.cve-chip}
+    **ShinyHunters**{.cve-chip} **UNC6240**{.cve-chip} **CVE-2026-35273**{.cve-chip} **PeopleSoft**{.cve-chip} **WAF Bypass**{.cve-chip}
 
-    Active attacks combine unauthenticated LAN command execution on Zyxel GS1900 switches and local SYSTEM privilege escalation on vulnerable Veeam Agent for Windows deployments.
+    Attackers resumed mass exploitation of vulnerable PeopleSoft systems by URL-encoding the PSEMHUB path to bypass some WAF-only protections and deploy JSP web shells.
 
-    [Read more →](2026/Week38/Zyxel.md){.index-card__cta}
+    [Read more →](2026/Week39/ShinyHunters.md){.index-card__cta}
 
--   ![D-Link DIR-822A](2026/Week38/images/DLink.png){.index-card__img}
+-   ![Lunex Stealer](2026/Week39/images/Lunex.png){.index-card__img}
 
-    **D-Link DIR-822A - Stack-Based Buffer Overflow (CVE-2026-86296)**
+    **Lunex Stealer Abuses AMD Driver**
 
-    **D-Link DIR-822A**{.cve-chip} **CVE-2026-86296**{.cve-chip} **Stack Overflow**{.cve-chip} **Unauthenticated**{.cve-chip} **PoC Available**{.cve-chip}
+    **Lunex**{.cve-chip} **Psychedelic Stealer**{.cve-chip} **BYOVD**{.cve-chip} **CVE-2023-20598**{.cve-chip} **ClickFix**{.cve-chip}
 
-    A critical unauthenticated overflow in DIR-822A DHCP processing can be triggered with crafted traffic and may cause router crash or potential code execution.
+    Campaigns use fake CAPTCHA/ClickFix delivery, UAC bypass, and vulnerable AMD driver loading to weaken security visibility before stealing browser credentials, cookies, and wallet data.
 
-    [Read more →](2026/Week38/DLink.md){.index-card__cta}
+    [Read more →](2026/Week39/Lunex.md){.index-card__cta}
 
--   ![ShinyHunters](2026/Week38/images/ShinyHunters.png){.index-card__img}
+-   ![UAE and Saudi Cyberattacks](2026/Week39/images/Cyberattacks.png){.index-card__img}
 
-    **ShinyHunters - FBIJobs.gov Data Breach**
+    **Increasingly Complex Cyberattacks Targeting UAE and Saudi Arabia**
 
-    **ShinyHunters**{.cve-chip} **FBIJobs.gov**{.cve-chip} **PeopleSoft RCE Claim**{.cve-chip} **Personnel Data Risk**{.cve-chip} **Federal Portal Incident**{.cve-chip}
+    **UAE**{.cve-chip} **Saudi Arabia**{.cve-chip} **RAT Activity**{.cve-chip} **Ransomware Pressure**{.cve-chip} **Critical Infrastructure Risk**{.cve-chip}
 
-    ShinyHunters claimed a breach of FBIJobs.gov with sensitive personnel/applicant data exposure, while the FBI confirmed investigation of unauthorized activity and continued scope assessment.
+    H1 2026 reporting highlights a concentrated cyber-threat burden in the UAE and Saudi Arabia, with vulnerability exploitation, malware deployment, and social engineering driving complex regional incidents.
 
-    [Read more →](2026/Week38/ShinyHunters.md){.index-card__cta}
+    [Read more →](2026/Week39/Cyberattacks.md){.index-card__cta}
+
+-   ![Times Car](2026/Week39/images/Times.png){.index-card__img}
+
+    **Times Car Data Breach**
+
+    **Times Mobility**{.cve-chip} **Times Car**{.cve-chip} **6.6M Accounts**{.cve-chip} **Personal Data Exposure**{.cve-chip} **Web-System Breach**{.cve-chip}
+
+    Times Mobility confirmed unauthorized access affecting information associated with roughly 6.6 million Times Car accounts, including member and application-related records.
+
+    [Read more →](2026/Week39/Times.md){.index-card__cta}
+
+-   ![U.S.-China AI Communication](2026/Week39/images/Communication.png){.index-card__img}
+
+    **U.S.-China AI Incident Communication Channel**
+
+    **U.S.-China Relations**{.cve-chip} **AI Governance**{.cve-chip} **Incident Channel**{.cve-chip} **Crisis De-escalation**{.cve-chip} **Policy Coordination**{.cve-chip}
+
+    Washington summit outcomes established a bilateral government channel for AI-related incident communication and a broader AI dialogue framework.
+
+    [Read more →](2026/Week39/Communication.md){.index-card__cta}
 
 </div>
 

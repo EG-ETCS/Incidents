@@ -598,3 +598,10 @@ nav:
           - "Zyxel GS1900 CVE-2026-7273 & Veeam Agent for Windows CVE-2026-32996": 2026/Week38/Zyxel.md
           - "MikroTrick - MikroTik RouterOS SSH Exploitation Chain": 2026/Week38/MikroTrick.md
           - "ShinyHunters - FBIJobs.gov Data Breach": 2026/Week38/ShinyHunters.md
+        - "week39":
+          - "Times Car Data Breach": 2026/Week39/Times.md
+          - "Increasingly Complex Cyberattacks Targeting UAE and Saudi Arabia": 2026/Week39/Cyberattacks.md
+          - "Lunex Stealer Abuses AMD Driver": 2026/Week39/Lunex.md
+          - "ShinyHunters / UNC6240 - Oracle PeopleSoft WAF Bypass Campaign": 2026/Week39/ShinyHunters.md
+          - "AI-Agent E-Commerce Skimming Campaign": 2026/Week39/Skimming.md
+          - "U.S.-China AI Incident Communication Channel": 2026/Week39/Communication.md
