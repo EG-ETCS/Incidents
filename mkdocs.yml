@@ -609,3 +609,6 @@ nav:
           - "Cisco Catalyst SD-WAN Manager Authentication Bypass": 2026/Week39/Cisco.md
           - "UAT-11587 - Antino Backdoor Campaign": 2026/Week39/Antino.md
           - "Star Blizzard - RedFlick / CosmicPulse Campaign": 2026/Week39/Blizzard.md
+      - "October":
+        - "week40":
+          - "Warlock Ransomware Exploiting Unpatched SharePoint ToolShell Vulnerabilities": 2026/Week40/Warlock.md

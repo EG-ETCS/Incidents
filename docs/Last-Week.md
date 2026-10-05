@@ -8,94 +8,104 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![MikroTrick](2026/Week38/images/MikroTrick.png){.index-card__img}
+-   ![Star Blizzard RedFlick](2026/Week39/images/Blizzard.png){.index-card__img}
 
-    **MikroTrick - MikroTik RouterOS SSH Exploitation Chain**
+    **Star Blizzard - RedFlick / CosmicPulse Campaign**
 
-    **MikroTik RouterOS**{.cve-chip} **MikroTrick**{.cve-chip} **CVE-2026-67276**{.cve-chip} **CVE-2026-86060**{.cve-chip} **Admin Takeover**{.cve-chip}
+    **Star Blizzard**{.cve-chip} **RedFlick**{.cve-chip} **CosmicPulse**{.cve-chip} **Phishing Operations**{.cve-chip} **Scheduled Tasks**{.cve-chip}
 
-    Attackers are exploiting a RouterOS SSH chain that can grant full administrative access on vulnerable internet-exposed MikroTik routers without valid credentials.
+    Microsoft links this campaign to expanded Star Blizzard phishing operations using fake event invites, staged payload delivery, and RedFlick task-based execution that deploys CosmicPulse.
 
-    [Read more →](2026/Week38/MikroTrick.md){.index-card__cta}
+    [Read more →](2026/Week39/Blizzard.md){.index-card__cta}
 
--   ![Zyxel and Veeam](2026/Week38/images/Zyxel.png){.index-card__img}
+-   ![UAT-11587 Antino](2026/Week39/images/Antino.png){.index-card__img}
 
-    **Zyxel GS1900 CVE-2026-7273 & Veeam Agent for Windows CVE-2026-32996**
+    **UAT-11587 - Antino Backdoor Campaign**
 
-    **Zyxel GS1900**{.cve-chip} **CVE-2026-7273**{.cve-chip} **Veeam Agent**{.cve-chip} **CVE-2026-32996**{.cve-chip} **Active Exploitation**{.cve-chip}
+    **UAT-11587**{.cve-chip} **China-nexus**{.cve-chip} **Antino**{.cve-chip} **Rust Backdoor**{.cve-chip} **Microsoft Graph C2**{.cve-chip}
 
-    Active attacks combine unauthenticated LAN command execution on Zyxel GS1900 switches and local SYSTEM privilege escalation on vulnerable Veeam Agent for Windows deployments.
+    Talos links this campaign to a China-nexus cluster using tailored phishing, multi-stage loaders, and Microsoft 365 dead-drop style C2 via Graph, Outlook, and OneDrive.
 
-    [Read more →](2026/Week38/Zyxel.md){.index-card__cta}
+    [Read more →](2026/Week39/Antino.md){.index-card__cta}
 
--   ![D-Link DIR-822A](2026/Week38/images/DLink.png){.index-card__img}
+-   ![Cisco SD-WAN Authentication Bypass](2026/Week39/images/Cisco.png){.index-card__img}
 
-    **D-Link DIR-822A - Stack-Based Buffer Overflow (CVE-2026-86296)**
+    **Cisco Catalyst SD-WAN Manager Authentication Bypass**
 
-    **D-Link DIR-822A**{.cve-chip} **CVE-2026-86296**{.cve-chip} **Stack Overflow**{.cve-chip} **Unauthenticated**{.cve-chip} **PoC Available**{.cve-chip}
+    **Cisco**{.cve-chip} **CVE-2026-76504**{.cve-chip} **SD-WAN Manager**{.cve-chip} **Auth Bypass**{.cve-chip} **Actively Exploited**{.cve-chip}
 
-    A critical unauthenticated overflow in DIR-822A DHCP processing can be triggered with crafted traffic and may cause router crash or potential code execution.
+    A URI-encoding flaw in SD-WAN Manager authentication handling can allow unauthenticated attackers to bypass login controls and gain administrator-level API access.
 
-    [Read more →](2026/Week38/DLink.md){.index-card__cta}
+    [Read more →](2026/Week39/Cisco.md){.index-card__cta}
 
--   ![ShinyHunters](2026/Week38/images/ShinyHunters.png){.index-card__img}
+-   ![Apple CoreGraphics Zero-Day](2026/Week39/images/CoreGraphics.png){.index-card__img}
 
-    **ShinyHunters - FBIJobs.gov Data Breach**
+    **Apple CoreGraphics Zero-Day - CVE-2026-86950**
 
-    **ShinyHunters**{.cve-chip} **FBIJobs.gov**{.cve-chip} **PeopleSoft RCE Claim**{.cve-chip} **Personnel Data Risk**{.cve-chip} **Federal Portal Incident**{.cve-chip}
+    **Apple**{.cve-chip} **CoreGraphics**{.cve-chip} **CVE-2026-86950**{.cve-chip} **PDF Exploit Path**{.cve-chip} **Memory Corruption**{.cve-chip}
 
-    ShinyHunters claimed a breach of FBIJobs.gov with sensitive personnel/applicant data exposure, while the FBI confirmed investigation of unauthorized activity and continued scope assessment.
+    Apple patched a CoreGraphics out-of-bounds write vulnerability that may have been exploited in highly targeted attacks, with public research showing a PDF/font-based memory-corruption path.
 
-    [Read more →](2026/Week38/ShinyHunters.md){.index-card__cta}
+    [Read more →](2026/Week39/CoreGraphics.md){.index-card__cta}
 
--   ![CISA Linux KEV](2026/Week38/images/CISA.png){.index-card__img}
+-   ![AI-Agent E-Commerce Skimming](2026/Week39/images/Skimming.png){.index-card__img}
 
-    **Three Actively Exploited Linux Kernel Vulnerabilities Added to CISA KEV**
+    **AI-Agent E-Commerce Skimming Campaign**
 
-    **CISA KEV**{.cve-chip} **Linux Kernel**{.cve-chip} **Active Exploitation**{.cve-chip} **CVE-2025-39964**{.cve-chip} **CVE-2026-53266**{.cve-chip} **CVE-2025-39682**{.cve-chip}
+    **AI-Agent Campaign**{.cve-chip} **E-Commerce Skimming**{.cve-chip} **Magecart-style JS**{.cve-chip} **600K+ Cards**{.cve-chip} **100+ Sites**{.cve-chip}
 
-    CISA placed three actively exploited Linux kernel flaws into KEV and required urgent remediation and forensic triage, while public attribution and attack-chain details remain undisclosed.
+    Threat actors reportedly used AI-agent frameworks to automate recon, exploitation, credential theft, and checkout skimmer deployment at scale across online retailers.
 
-    [Read more →](2026/Week38/CISA.md){.index-card__cta}
+    [Read more →](2026/Week39/Skimming.md){.index-card__cta}
 
--   ![Colorado Water Utilities](2026/Week38/images/Colorado.png){.index-card__img}
+-   ![ShinyHunters PeopleSoft](2026/Week39/images/ShinyHunters.png){.index-card__img}
 
-    **Foreign Cyber Intrusions Targeting Two Colorado Water Utilities**
+    **ShinyHunters / UNC6240 - Oracle PeopleSoft WAF Bypass Campaign**
 
-    **Water Utilities**{.cve-chip} **OT/ICS**{.cve-chip} **Alarm Disablement**{.cve-chip} **Pumping-Cycle Changes**{.cve-chip} **Foreign Actors**{.cve-chip}
+    **ShinyHunters**{.cve-chip} **UNC6240**{.cve-chip} **CVE-2026-35273**{.cve-chip} **PeopleSoft**{.cve-chip} **WAF Bypass**{.cve-chip}
 
-    Foreign actors reportedly changed OT settings at two small Colorado water utilities, including disabling alarms and remote access, though officials reported no impact to water quality or public safety.
+    Attackers resumed mass exploitation of vulnerable PeopleSoft systems by URL-encoding the PSEMHUB path to bypass some WAF-only protections and deploy JSP web shells.
 
-    [Read more →](2026/Week38/Colorado.md){.index-card__cta}
+    [Read more →](2026/Week39/ShinyHunters.md){.index-card__cta}
 
--   ![HEAVYGRAM](2026/Week38/images/HEAVYGRAM.png){.index-card__img}
+-   ![Lunex Stealer](2026/Week39/images/Lunex.png){.index-card__img}
 
-    **HEAVYGRAM: A Telegram-based Surveillance Backdoor Linked to Handala Hack**
+    **Lunex Stealer Abuses AMD Driver**
 
-    **HEAVYGRAM**{.cve-chip} **Handala Hack**{.cve-chip} **Telegram C2**{.cve-chip} **Windows Backdoor**{.cve-chip} **Surveillance Malware**{.cve-chip}
+    **Lunex**{.cve-chip} **Psychedelic Stealer**{.cve-chip} **BYOVD**{.cve-chip} **CVE-2023-20598**{.cve-chip} **ClickFix**{.cve-chip}
 
-    Iran-linked activity reportedly uses the HEAVYGRAM Windows backdoor with Telegram-based C2 to execute commands, capture surveillance data, steal sensitive information, and persist on victim systems.
+    Campaigns use fake CAPTCHA/ClickFix delivery, UAC bypass, and vulnerable AMD driver loading to weaken security visibility before stealing browser credentials, cookies, and wallet data.
 
-    [Read more →](2026/Week38/HEAVYGRAM.md){.index-card__cta}
+    [Read more →](2026/Week39/Lunex.md){.index-card__cta}
 
--   ![RatHat Android](2026/Week38/images/Android.png){.index-card__img}
+-   ![UAE and Saudi Cyberattacks](2026/Week39/images/Cyberattacks.png){.index-card__img}
 
-    **RatHat Android Trojan**
+    **Increasingly Complex Cyberattacks Targeting UAE and Saudi Arabia**
 
-    **RatHat**{.cve-chip} **Android Trojan**{.cve-chip} **Accessibility Abuse**{.cve-chip} **ADB Self-Pairing**{.cve-chip} **AI-Assisted UI Automation**{.cve-chip}
+    **UAE**{.cve-chip} **Saudi Arabia**{.cve-chip} **RAT Activity**{.cve-chip} **Ransomware Pressure**{.cve-chip} **Critical Infrastructure Risk**{.cve-chip}
 
-    RatHat abuses Accessibility and Wireless Debugging to self-pair ADB, gain shell-level control, steal credentials/OTPs, and automate attack flows with AI-assisted UI navigation.
+    H1 2026 reporting highlights a concentrated cyber-threat burden in the UAE and Saudi Arabia, with vulnerability exploitation, malware deployment, and social engineering driving complex regional incidents.
 
-    [Read more →](2026/Week38/Android.md){.index-card__cta}
+    [Read more →](2026/Week39/Cyberattacks.md){.index-card__cta}
 
--   ![Linux Kernel LPE](2026/Week38/images/Linux.png){.index-card__img}
+-   ![Times Car](2026/Week39/images/Times.png){.index-card__img}
 
-    **Four Linux Kernel Local Privilege-Escalation Vulnerabilities**
+    **Times Car Data Breach**
 
-    **Linux Kernel**{.cve-chip} **LPE**{.cve-chip} **DirtyAH6**{.cve-chip} **TUNderflow**{.cve-chip} **PPPoEject**{.cve-chip} **DiagSpill**{.cve-chip}
+    **Times Mobility**{.cve-chip} **Times Car**{.cve-chip} **6.6M Accounts**{.cve-chip} **Personal Data Exposure**{.cve-chip} **Web-System Breach**{.cve-chip}
 
-    Public exploit code was released for four Linux kernel memory-corruption flaws that can enable root escalation from low-privileged access under affected configurations.
+    Times Mobility confirmed unauthorized access affecting information associated with roughly 6.6 million Times Car accounts, including member and application-related records.
 
-    [Read more →](2026/Week38/Linux.md){.index-card__cta}
+    [Read more →](2026/Week39/Times.md){.index-card__cta}
+
+-   ![U.S.-China AI Communication](2026/Week39/images/Communication.png){.index-card__img}
+
+    **U.S.-China AI Incident Communication Channel**
+
+    **U.S.-China Relations**{.cve-chip} **AI Governance**{.cve-chip} **Incident Channel**{.cve-chip} **Crisis De-escalation**{.cve-chip} **Policy Coordination**{.cve-chip}
+
+    Washington summit outcomes established a bilateral government channel for AI-related incident communication and a broader AI dialogue framework.
+
+    [Read more →](2026/Week39/Communication.md){.index-card__cta}
 
 </div>

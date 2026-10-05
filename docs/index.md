@@ -19,45 +19,15 @@ hide:
 
 <div class="grid cards index-grid" markdown>
 
--   ![Star Blizzard RedFlick](2026/Week39/images/Blizzard.png){.index-card__img}
+-   ![Warlock SharePoint ToolShell](2026/Week40/images/Warlock.png){.index-card__img}
 
-    **Star Blizzard - RedFlick / CosmicPulse Campaign**
+    **Warlock Ransomware Exploiting Unpatched SharePoint ToolShell Vulnerabilities**
 
-    **Star Blizzard**{.cve-chip} **RedFlick**{.cve-chip} **CosmicPulse**{.cve-chip} **Phishing Operations**{.cve-chip} **Scheduled Tasks**{.cve-chip}
+    **Warlock**{.cve-chip} **Longlegs**{.cve-chip} **Storm-2603**{.cve-chip} **SharePoint**{.cve-chip} **Ransomware**{.cve-chip}
 
-    Microsoft links this campaign to expanded Star Blizzard phishing operations using fake event invites, staged payload delivery, and RedFlick task-based execution that deploys CosmicPulse.
+    Longlegs activity continues to abuse unpatched on-prem SharePoint ToolShell weaknesses, using web shells, BYOVD security disablement, and SYSVOL/DFS-assisted ransomware deployment.
 
-    [Read more →](2026/Week39/Blizzard.md){.index-card__cta}
-
--   ![UAT-11587 Antino](2026/Week39/images/Antino.png){.index-card__img}
-
-    **UAT-11587 - Antino Backdoor Campaign**
-
-    **UAT-11587**{.cve-chip} **China-nexus**{.cve-chip} **Antino**{.cve-chip} **Rust Backdoor**{.cve-chip} **Microsoft Graph C2**{.cve-chip}
-
-    Talos links this campaign to a China-nexus cluster using tailored phishing, multi-stage loaders, and Microsoft 365 dead-drop style C2 via Graph, Outlook, and OneDrive.
-
-    [Read more →](2026/Week39/Antino.md){.index-card__cta}
-
--   ![Cisco SD-WAN Authentication Bypass](2026/Week39/images/Cisco.png){.index-card__img}
-
-    **Cisco Catalyst SD-WAN Manager Authentication Bypass**
-
-    **Cisco**{.cve-chip} **CVE-2026-76504**{.cve-chip} **SD-WAN Manager**{.cve-chip} **Auth Bypass**{.cve-chip} **Actively Exploited**{.cve-chip}
-
-    A URI-encoding flaw in SD-WAN Manager authentication handling can allow unauthenticated attackers to bypass login controls and gain administrator-level API access.
-
-    [Read more →](2026/Week39/Cisco.md){.index-card__cta}
-
--   ![Apple CoreGraphics Zero-Day](2026/Week39/images/CoreGraphics.png){.index-card__img}
-
-    **Apple CoreGraphics Zero-Day - CVE-2026-86950**
-
-    **Apple**{.cve-chip} **CoreGraphics**{.cve-chip} **CVE-2026-86950**{.cve-chip} **PDF Exploit Path**{.cve-chip} **Memory Corruption**{.cve-chip}
-
-    Apple patched a CoreGraphics out-of-bounds write vulnerability that may have been exploited in highly targeted attacks, with public research showing a PDF/font-based memory-corruption path.
-
-    [Read more →](2026/Week39/CoreGraphics.md){.index-card__cta}
+    [Read more →](2026/Week40/Warlock.md){.index-card__cta}
 
 </div>
 
