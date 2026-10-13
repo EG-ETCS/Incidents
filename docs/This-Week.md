@@ -8,54 +8,34 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![Mabna Academic Cyber Theft](2026/Week40/images/Mabna.png){.index-card__img}
+-   ![French Supermarket Refrigeration Attack](2026/Week41/images/Supermarkets.png){.index-card__img}
 
-    **Mabna Institute Cyber-Theft Campaign**
+    **Cyberattack Disrupts Refrigeration at French Supermarkets**
 
-    **Mabna Institute**{.cve-chip} **Academic IP Theft**{.cve-chip} **Spear-Phishing**{.cve-chip} **31+ TB**{.cve-chip} **8,000 Accounts**{.cve-chip}
+    **French Retail**{.cve-chip} **Refrigeration Controls**{.cve-chip} **Danfoss Context**{.cve-chip} **Cold-Chain Risk**{.cve-chip} **Operational Disruption**{.cve-chip}
 
-    Prosecutors allege a years-long campaign targeting universities, compromising professor accounts and exfiltrating large volumes of research and intellectual property.
+    Reported unauthorized defrost-trigger activity disrupted refrigeration at multiple French supermarket chains, forcing product-removal precautions and incident investigation.
 
-    [Read more →](2026/Week40/Mabna.md){.index-card__cta}
+    [Read more →](2026/Week41/Supermarkets.md){.index-card__cta}
 
--   ![Realtek Cling Botnet](2026/Week40/images/Realtek.png){.index-card__img}
+-   ![CyberXero AI-Assisted Intrusions](2026/Week41/images/CyberXero.png){.index-card__img}
 
-    **Realtek Jungle SDK Exploitation - Cling IoT Botnet**
+    **CyberXero AI-Assisted Intrusions and Ukrainian Data Theft**
 
-    **Realtek**{.cve-chip} **CVE-2021-35394**{.cve-chip} **Cling**{.cve-chip} **IoT Botnet**{.cve-chip} **STUN C2**{.cve-chip}
+    **CyberXero**{.cve-chip} **AI-Assisted Intrusions**{.cve-chip} **WordPress Targeting**{.cve-chip} **628K+ Records**{.cve-chip} **IAB Activity**{.cve-chip}
 
-    Active exploitation of Realtek Jungle SDK devices is delivering Cling malware, which persists on IoT systems and uses STUN-like command channels to blend C2 traffic.
+    Researchers reported an ongoing campaign blending automated global exploitation with selective targeting of Ukrainian organizations, with confirmed exfiltration evidence from multiple victims.
 
-    [Read more →](2026/Week40/Realtek.md){.index-card__cta}
+    [Read more →](2026/Week41/CyberXero.md){.index-card__cta}
 
--   ![TA419 Targeted Phishing](2026/Week40/images/TA419.png){.index-card__img}
+-   ![SonicWall SMA 1000 SSRF](2026/Week41/images/SonicWall.png){.index-card__img}
 
-    **TA419 - China-Aligned Targeted Phishing**
+    **Exploitation Attempts Against SonicWall SMA 1000 SSRF Vulnerability**
 
-    **TA419**{.cve-chip} **AitM**{.cve-chip} **Frameless BitB**{.cve-chip} **Microsoft 365**{.cve-chip} **AI Policy**{.cve-chip}
+    **SonicWall SMA 1000**{.cve-chip} **CVE-2026-102255**{.cve-chip} **Pre-Auth SSRF**{.cve-chip} **CVSS 10.0**{.cve-chip} **Observed Attempts**{.cve-chip}
 
-    Targeted phishing reportedly impersonated trusted policy figures to steal Microsoft cloud credentials and sessions from U.S. AI-policy experts through AitM and fake sign-in workflows.
+    Researchers reported exploitation attempts against a critical pre-auth SSRF flaw in SMA 1000 appliances shortly after patch release, while public reporting has not verified production compromise.
 
-    [Read more →](2026/Week40/TA419.md){.index-card__cta}
-
--   ![ShinyHunters Rey Detention](2026/Week40/images/ShinyHunters.png){.index-card__img}
-
-    **ShinyHunters Suspect "Rey" Detained in Jordan**
-
-    **ShinyHunters**{.cve-chip} **Rey / ReyXBF**{.cve-chip} **Jordan**{.cve-chip} **FBI Cooperation**{.cve-chip} **Law Enforcement**{.cve-chip}
-
-    Public reporting says Jordanian authorities detained an alleged ShinyHunters-linked suspect and that cooperation with investigators may help identify additional members and infrastructure.
-
-    [Read more →](2026/Week40/ShinyHunters.md){.index-card__cta}
-
--   ![Warlock SharePoint ToolShell](2026/Week40/images/Warlock.png){.index-card__img}
-
-    **Warlock Ransomware Exploiting Unpatched SharePoint ToolShell Vulnerabilities**
-
-    **Warlock**{.cve-chip} **Longlegs**{.cve-chip} **Storm-2603**{.cve-chip} **SharePoint**{.cve-chip} **Ransomware**{.cve-chip}
-
-    Longlegs activity continues to abuse unpatched on-prem SharePoint ToolShell weaknesses, using web shells, BYOVD security disablement, and SYSVOL/DFS-assisted ransomware deployment.
-
-    [Read more →](2026/Week40/Warlock.md){.index-card__cta}
+    [Read more →](2026/Week41/SonicWall.md){.index-card__cta}
 
 </div>

@@ -616,3 +616,7 @@ nav:
           - "TA419 - China-Aligned Targeted Phishing": 2026/Week40/TA419.md
           - "Realtek Jungle SDK Exploitation - Cling IoT Botnet": 2026/Week40/Realtek.md
           - "Mabna Institute Cyber-Theft Campaign": 2026/Week40/Mabna.md
+        - "week41":
+          - "Exploitation Attempts Against SonicWall SMA 1000 SSRF Vulnerability": 2026/Week41/SonicWall.md
+          - "CyberXero AI-Assisted Intrusions and Ukrainian Data Theft": 2026/Week41/CyberXero.md
+          - "Cyberattack Disrupts Refrigeration at French Supermarkets": 2026/Week41/Supermarkets.md
