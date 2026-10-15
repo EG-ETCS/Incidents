@@ -620,3 +620,7 @@ nav:
           - "Exploitation Attempts Against SonicWall SMA 1000 SSRF Vulnerability": 2026/Week41/SonicWall.md
           - "CyberXero AI-Assisted Intrusions and Ukrainian Data Theft": 2026/Week41/CyberXero.md
           - "Cyberattack Disrupts Refrigeration at French Supermarkets": 2026/Week41/Supermarkets.md
+          - "Cisco Secure Email Gateway Arbitrary File Write Vulnerability - CVE-2026-76519": 2026/Week41/Cisco.md
+          - "Hirudo Android Banking Trojan": 2026/Week41/Hirudo.md
+          - "TP-Link Faces Lawsuits Over Router Security, Privacy, and China-Related Concerns": 2026/Week41/TP-Link.md
+          - "FortiBleed Campaign": 2026/Week41/FortiBleed.md
