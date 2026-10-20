@@ -624,3 +624,7 @@ nav:
           - "Hirudo Android Banking Trojan": 2026/Week41/Hirudo.md
           - "TP-Link Faces Lawsuits Over Router Security, Privacy, and China-Related Concerns": 2026/Week41/TP-Link.md
           - "FortiBleed Campaign": 2026/Week41/FortiBleed.md
+        - "week42":
+          - "Fortinet Vulnerability Exploitation and PeerStitch FortiGate Implant": 2026/Week42/Fortinet.md
+          - "WPSplinter - Broadcom Wi-Fi / WPS Implementation Vulnerability": 2026/Week42/WPSplinter.md
+          - "Potential AI-Powered Self-Propagating IoT Botnets": 2026/Week42/Botnets.md
