@@ -628,3 +628,7 @@ nav:
           - "Fortinet Vulnerability Exploitation and PeerStitch FortiGate Implant": 2026/Week42/Fortinet.md
           - "WPSplinter - Broadcom Wi-Fi / WPS Implementation Vulnerability": 2026/Week42/WPSplinter.md
           - "Potential AI-Powered Self-Propagating IoT Botnets": 2026/Week42/Botnets.md
+        - "week43":
+          - "AdFection Advertising-Based Delivery of Candiru Spyware": 2026/Week43/AdFection.md
+          - "BlackX UEFI Bootkit Targeting Central Asian Diplomatic Organizations": 2026/Week43/BlackX.md
+          - "Google AI Personalization and Cross-Service Advertising Data Use": 2026/Week43/Google.md

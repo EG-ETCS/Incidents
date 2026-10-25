@@ -8,34 +8,34 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![Potential AI-Powered Self-Propagating IoT Botnets](2026/Week42/images/Botnets.png){.index-card__img}
+-   ![Google AI Personalization Policy](2026/Week43/images/Google.png){.index-card__img}
 
-    **Potential AI-Powered Self-Propagating IoT Botnets**
+    **Google AI Personalization and Cross-Service Advertising Data Use**
 
-    **AI Botnets**{.cve-chip} **IoT Security**{.cve-chip} **Self-Propagation Risk**{.cve-chip} **Distributed Inference**{.cve-chip} **Research Warning**{.cve-chip}
+    **Google Policy Update**{.cve-chip} **Privacy Governance**{.cve-chip} **Cross-Service Data Use**{.cve-chip} **Personalized Ads**{.cve-chip} **No Breach Reported**{.cve-chip}
 
-    Research warns that small AI models may eventually replicate across insecure IoT fleets, potentially enabling distributed botnet-style inference operations.
+    Google clarified policy conditions where user-enabled cross-service data sharing can contribute to ad personalization in receiving services that support it.
 
-    [Read more →](2026/Week42/Botnets.md){.index-card__cta}
+    [Read more →](2026/Week43/Google.md){.index-card__cta}
 
--   ![WPSplinter Broadcom Wi-Fi Vulnerability](2026/Week42/images/WPSplinter.png){.index-card__img}
+-   ![BlackX UEFI Bootkit](2026/Week43/images/BlackX.png){.index-card__img}
 
-    **WPSplinter - Broadcom Wi-Fi / WPS Implementation Vulnerability**
+    **BlackX UEFI Bootkit Targeting Central Asian Diplomatic Organizations**
 
-    **WPSplinter**{.cve-chip} **Broadcom Wi-Fi**{.cve-chip} **WPS/EAP**{.cve-chip} **Unauthenticated RCE**{.cve-chip} **Wireless Proximity**{.cve-chip}
+    **BlackX**{.cve-chip} **UEFI Bootkit**{.cve-chip} **Secure Boot Bypass**{.cve-chip} **APT41 (Medium Confidence)**{.cve-chip} **Diplomatic Targeting**{.cve-chip}
 
-    A long-standing Broadcom WPS reassembly flaw may allow nearby attackers to trigger memory corruption and potentially execute code on vulnerable routers without authentication.
+    Kaspersky reports a campaign using the BlackX bootkit to bypass Secure Boot and deploy kernel-level espionage payloads against diplomatic organizations in Central Asia.
 
-    [Read more →](2026/Week42/WPSplinter.md){.index-card__cta}
+    [Read more →](2026/Week43/BlackX.md){.index-card__cta}
 
--   ![Fortinet PeerStitch FortiGate Implant](2026/Week42/images/Fortinet.png){.index-card__img}
+-   ![AdFection Advertising-Based Candiru Delivery](2026/Week43/images/AdFection.png){.index-card__img}
 
-    **Fortinet Vulnerability Exploitation and PeerStitch FortiGate Implant**
+    **AdFection Advertising-Based Delivery of Candiru Spyware**
 
-    **Fortinet**{.cve-chip} **CVE-2024-47575**{.cve-chip} **CVE-2025-61624**{.cve-chip} **PeerStitch**{.cve-chip} **UNC5820**{.cve-chip}
+    **AdFection**{.cve-chip} **Candiru**{.cve-chip} **Zero-Click**{.cve-chip} **Ad Ecosystem Abuse**{.cve-chip} **Targeted Surveillance**{.cve-chip}
 
-    A telecom intrusion linked to UNC5820 reportedly leveraged FortiManager and FortiGate vulnerabilities to deploy the in-memory PeerStitch implant and maintain covert persistence.
+    Citizen Lab reports a campaign using targeted ad infrastructure for selective profiling and zero-click spyware delivery workflows linked to Candiru operations.
 
-    [Read more →](2026/Week42/Fortinet.md){.index-card__cta}
+    [Read more →](2026/Week43/AdFection.md){.index-card__cta}
 
 </div>
