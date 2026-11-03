@@ -19,35 +19,45 @@ hide:
 
 <div class="grid cards index-grid" markdown>
 
--   ![Signal Call-Termination Vulnerability](2026/Week43/images/Signal.png){.index-card__img}
+-   ![European Supermarket Refrigeration Cyberattacks](2026/Week44/images/Supermarket.png){.index-card__img}
 
-    **Signal Call-Termination Vulnerability - CVE-2026-113380**
+    **European Supermarket Refrigeration System Cyberattacks**
 
-    **Signal**{.cve-chip} **RingRTC**{.cve-chip} **CVE-2026-113380**{.cve-chip} **CVSS 9.3**{.cve-chip} **Call Privacy Risk**{.cve-chip}
+    **OT Security**{.cve-chip} **Retail Infrastructure**{.cve-chip} **Forced Defrost Abuse**{.cve-chip} **Credential Risk**{.cve-chip} **Food-Safety Impact**{.cve-chip}
 
-    A critical RingRTC queue-saturation flaw could block hang-up handling, potentially leaving call media active after users believe a call ended.
+    Coordinated attacks reportedly manipulated refrigeration controls across multiple European supermarket chains, causing temperature spikes and operational disruption.
 
-    [Read more →](2026/Week43/Signal.md){.index-card__cta}
+    [Read more →](2026/Week44/Supermarket.md){.index-card__cta}
 
--   ![uCreator Android Spyware](2026/Week43/images/uCreator.png){.index-card__img}
+-   ![Google XCPE Android TV Botnet Takedown](2026/Week44/images/Google.png){.index-card__img}
 
-    **uCreator Android Spyware (YingGai)**
+    **Google Disrupts a Botnet Affecting More Than 1.3 Million Android TV Devices**
 
-    **uCreator**{.cve-chip} **Android Spyware**{.cve-chip} **Telegram 2FA Theft**{.cve-chip} **WeChat Cloning**{.cve-chip} **Virtualization Abuse**{.cve-chip}
+    **XCPE Botnet**{.cve-chip} **Android TV**{.cve-chip} **Firmware Backdoor**{.cve-chip} **MQTT C2**{.cve-chip} **Supply-Chain Risk**{.cve-chip}
 
-    Researchers report a commercial spyware platform that abuses app virtualization and modified messaging clients to steal credentials, sessions, and messaging data.
+    Google and partners reported disruption of a large Android TV botnet tied to persistent firmware-level backdoor behavior and downstream criminal abuse.
 
-    [Read more →](2026/Week43/uCreator.md){.index-card__cta}
+    [Read more →](2026/Week44/Google.md){.index-card__cta}
 
--   ![Dahua Easy4IP Unauthorized Access](2026/Week43/images/Dahua.png){.index-card__img}
+-   ![Telegram Android Voice Call Vulnerability](2026/Week44/images/Telegram.png){.index-card__img}
 
-    **Unauthorized Access to Dahua Surveillance Cameras and Video Recorders via Easy4IP**
+    **Telegram Android Voice Call Vulnerability - Remote Code Execution (RCE).**
 
-    **Dahua**{.cve-chip} **Easy4IP P2P**{.cve-chip} **CVE-2021-33044**{.cve-chip} **CVE-2021-33045**{.cve-chip} **Surveillance Access**{.cve-chip}
+    **Telegram Android**{.cve-chip} **Voice Calls**{.cve-chip} **Potential RCE**{.cve-chip} **No CVE Assigned**{.cve-chip} **Patched in 12.10.4**{.cve-chip}
 
-    CERT-UA reported unauthorized access activity affecting Dahua camera and recorder deployments through Easy4IP pathways, weak credentials, and auth-bypass exposure.
+    A Telegram Android call-handling flaw in MediaState processing may allow code execution after a victim answers a maliciously crafted voice call.
 
-    [Read more →](2026/Week43/Dahua.md){.index-card__cta}
+    [Read more →](2026/Week44/Telegram.md){.index-card__cta}
+
+-   ![Android SMS of Death](2026/Week44/images/Android.png){.index-card__img}
+
+    **Android SMS of Death - CVE-2026-58882**
+
+    **Android**{.cve-chip} **WAP Push**{.cve-chip} **CVE-2026-58882**{.cve-chip} **Zero-Click**{.cve-chip} **Telephony DoS**{.cve-chip}
+
+    A crafted invisible WAP Push SMS can crash Android telephony services with no user interaction, causing call disruption and potential emergency-call impact.
+
+    [Read more →](2026/Week44/Android.md){.index-card__cta}
 
 </div>
 
