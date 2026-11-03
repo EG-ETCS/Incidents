@@ -635,6 +635,7 @@ nav:
           - "Unauthorized Access to Dahua Surveillance Cameras and Video Recorders via Easy4IP": 2026/Week43/Dahua.md
           - "uCreator Android Spyware (YingGai)": 2026/Week43/uCreator.md
           - "Signal Call-Termination Vulnerability - CVE-2026-113380": 2026/Week43/Signal.md
+      - "November":
         - "week44":
           - "Android SMS of Death - CVE-2026-58882": 2026/Week44/Android.md
           - "Telegram Android Voice Call Vulnerability - Remote Code Execution (RCE).": 2026/Week44/Telegram.md
