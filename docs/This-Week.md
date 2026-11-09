@@ -8,44 +8,44 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![European Supermarket Refrigeration Cyberattacks](2026/Week44/images/Supermarket.png){.index-card__img}
+-   ![Critical Android Zero-Click RCE](2026/Week45/images/Android.png){.index-card__img}
 
-    **European Supermarket Refrigeration System Cyberattacks**
+    **Critical Android Zero-Click Remote Code Execution Vulnerability**
 
-    **OT Security**{.cve-chip} **Retail Infrastructure**{.cve-chip} **Forced Defrost Abuse**{.cve-chip} **Credential Risk**{.cve-chip} **Food-Safety Impact**{.cve-chip}
+    **Android**{.cve-chip} **CVE-2026-58868**{.cve-chip} **Zero-Click**{.cve-chip} **Heap Overflow**{.cve-chip} **Framework**{.cve-chip}
 
-    Coordinated attacks reportedly manipulated refrigeration controls across multiple European supermarket chains, causing temperature spikes and operational disruption.
+    Google patched a critical Android framework flaw that may enable remote code execution on Android 14 to 17 without user interaction.
 
-    [Read more →](2026/Week44/Supermarket.md){.index-card__cta}
+    [Read more →](2026/Week45/Android.md){.index-card__cta}
 
--   ![Google XCPE Android TV Botnet Takedown](2026/Week44/images/Google.png){.index-card__img}
+-   ![APT29 Mobile Watering Hole Campaign](2026/Week45/images/APT29.png){.index-card__img}
 
-    **Google Disrupts a Botnet Affecting More Than 1.3 Million Android TV Devices**
+    **APT29 Mobile Watering Hole Campaign**
 
-    **XCPE Botnet**{.cve-chip} **Android TV**{.cve-chip} **Firmware Backdoor**{.cve-chip} **MQTT C2**{.cve-chip} **Supply-Chain Risk**{.cve-chip}
+    **APT29**{.cve-chip} **iOS/Android Exploits**{.cve-chip} **Watering Hole**{.cve-chip} **Plerdy Supply-Chain**{.cve-chip} **Data Exfiltration**{.cve-chip}
 
-    Google and partners reported disruption of a large Android TV botnet tied to persistent firmware-level backdoor behavior and downstream criminal abuse.
+    Sekoia-reported activity used compromised sites and analytics supply chain access to fingerprint mobile visitors and deliver targeted exploit chains.
 
-    [Read more →](2026/Week44/Google.md){.index-card__cta}
+    [Read more →](2026/Week45/APT29.md){.index-card__cta}
 
--   ![Telegram Android Voice Call Vulnerability](2026/Week44/images/Telegram.png){.index-card__img}
+-   ![OpenSSH SSHole Authentication Bypass](2026/Week45/images/OpenSSH.png){.index-card__img}
 
-    **Telegram Android Voice Call Vulnerability - Remote Code Execution (RCE).**
+    **OpenSSH SSHole Authentication Bypass**
 
-    **Telegram Android**{.cve-chip} **Voice Calls**{.cve-chip} **Potential RCE**{.cve-chip} **No CVE Assigned**{.cve-chip} **Patched in 12.10.4**{.cve-chip}
+    **OpenSSH**{.cve-chip} **CVE-2026-123158**{.cve-chip} **SSHole**{.cve-chip} **Auth Bypass**{.cve-chip} **musl/PAM Condition**{.cve-chip}
 
-    A Telegram Android call-handling flaw in MediaState processing may allow code execution after a victim answers a maliciously crafted voice call.
+    A conditional OpenSSH flaw in musl-based environments can mis-handle failed password hashing and allow unauthorized SSH login bypass under specific account states.
 
-    [Read more →](2026/Week44/Telegram.md){.index-card__cta}
+    [Read more →](2026/Week45/OpenSSH.md){.index-card__cta}
 
--   ![Android SMS of Death](2026/Week44/images/Android.png){.index-card__img}
+-   ![D-Link DGS-3130 Zero-Day Vulnerabilities](2026/Week45/images/D-Link.png){.index-card__img}
 
-    **Android SMS of Death - CVE-2026-58882**
+    **Multiple Zero-Day Vulnerabilities in D-Link DGS-3130 Series Managed Switches**
 
-    **Android**{.cve-chip} **WAP Push**{.cve-chip} **CVE-2026-58882**{.cve-chip} **Zero-Click**{.cve-chip} **Telephony DoS**{.cve-chip}
+    **D-Link DGS-3130**{.cve-chip} **Zero-Day**{.cve-chip} **DDP Weaknesses**{.cve-chip} **Switch Security**{.cve-chip} **Patch Pending**{.cve-chip}
 
-    A crafted invisible WAP Push SMS can crash Android telephony services with no user interaction, causing call disruption and potential emergency-call impact.
+    D-Link disclosed multiple unpatched DGS-3130 weaknesses that can expose management data and enable unauthorized switch operations from reachable network segments.
 
-    [Read more →](2026/Week44/Android.md){.index-card__cta}
+    [Read more →](2026/Week45/D-Link.md){.index-card__cta}
 
 </div>
