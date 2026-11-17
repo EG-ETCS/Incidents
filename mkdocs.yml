@@ -646,4 +646,8 @@ nav:
           - "OpenSSH SSHole Authentication Bypass": 2026/Week45/OpenSSH.md
           - "APT29 Mobile Watering Hole Campaign": 2026/Week45/APT29.md
           - "Critical Android Zero-Click Remote Code Execution Vulnerability": 2026/Week45/Android.md
-          
+        - "week46":
+          - "U.S. Banks Struggle With Outages Amid Wider Technology Disruptions": 2026/Week46/Banks.md
+          - "Optimizely Supply Chain Attack – Malicious JavaScript Injection Targeting Major Websites": 2026/Week46/Malicious.md
+          - "SilentAir – Telecom Network Espionage Campaign": 2026/Week46/SilentAir.md
+          - "Apple Bluetooth and AirPlay Pairing Vulnerabilities (Multiple CVEs)": 2026/Week46/AirPlay.md
