@@ -8,44 +8,44 @@ hide:
  
 <div class="grid cards" markdown>
 
--   ![Critical Android Zero-Click RCE](2026/Week45/images/Android.png){.index-card__img}
+-   ![U.S. Banks Struggle With Outages](2026/Week46/images/Banks.png){.index-card__img}
 
-    **Critical Android Zero-Click Remote Code Execution Vulnerability**
+    **U.S. Banks Struggle With Outages Amid Wider Technology Disruptions**
 
-    **Android**{.cve-chip} **CVE-2026-58868**{.cve-chip} **Zero-Click**{.cve-chip} **Heap Overflow**{.cve-chip} **Framework**{.cve-chip}
+    **Infrastructure Outage**{.cve-chip} **Banking Systems**{.cve-chip} **Service Disruption**{.cve-chip} **JPMorgan Chase**{.cve-chip}
 
-    Google patched a critical Android framework flaw that may enable remote code execution on Android 14 to 17 without user interaction.
+    Multiple major U.S. banks experienced significant service disruptions affecting online banking, mobile applications, and financial transactions. JPMorgan Chase attributed the outage to a software bug in on-premises hardware systems, with no evidence of cyberattack.
 
-    [Read more →](2026/Week45/Android.md){.index-card__cta}
+    [Read more →](2026/Week46/Banks.md){.index-card__cta}
 
--   ![APT29 Mobile Watering Hole Campaign](2026/Week45/images/APT29.png){.index-card__img}
+-   ![Optimizely Supply Chain Attack](2026/Week46/images/Malicious.png){.index-card__img}
 
-    **APT29 Mobile Watering Hole Campaign**
+    **Optimizely Supply Chain Attack – Malicious JavaScript Injection Targeting Major Websites**
 
-    **APT29**{.cve-chip} **iOS/Android Exploits**{.cve-chip} **Watering Hole**{.cve-chip} **Plerdy Supply-Chain**{.cve-chip} **Data Exfiltration**{.cve-chip}
+    **Supply Chain Attack**{.cve-chip} **Malicious JavaScript**{.cve-chip} **Data Theft**{.cve-chip} **CDN Compromise**{.cve-chip}
 
-    Sekoia-reported activity used compromised sites and analytics supply chain access to fingerprint mobile visitors and deliver targeted exploit chains.
+    Attackers exploited a vulnerability in Optimizely's account registration process to inject malicious JavaScript into 188 files across 178 organizations, including CNN, BBC, Fox News, Zoom, and Salesforce. Malware targeted payment card theft, cryptocurrency wallet hijacking, and iOS device exploitation.
 
-    [Read more →](2026/Week45/APT29.md){.index-card__cta}
+    [Read more →](2026/Week46/Malicious.md){.index-card__cta}
 
--   ![OpenSSH SSHole Authentication Bypass](2026/Week45/images/OpenSSH.png){.index-card__img}
+-   ![SilentAir Telecom Espionage](2026/Week46/images/SilentAir.png){.index-card__img}
 
-    **OpenSSH SSHole Authentication Bypass**
+    **SilentAir – Telecom Network Espionage Campaign**
 
-    **OpenSSH**{.cve-chip} **CVE-2026-123158**{.cve-chip} **SSHole**{.cve-chip} **Auth Bypass**{.cve-chip} **musl/PAM Condition**{.cve-chip}
+    **Telecom Espionage**{.cve-chip} **SS7/Diameter Exploitation**{.cve-chip} **State-Sponsored**{.cve-chip} **Taiwan**{.cve-chip}
 
-    A conditional OpenSSH flaw in musl-based environments can mis-handle failed password hashing and allow unauthorized SSH login bypass under specific account states.
+    SilentAir, a suspected state-level cyber-espionage actor, compromised telecommunications infrastructure across multiple Asian countries to intercept SMS messages, obtain subscriber information, and capture SMS-based 2FA codes from government officials and political figures in Taiwan.
 
-    [Read more →](2026/Week45/OpenSSH.md){.index-card__cta}
+    [Read more →](2026/Week46/SilentAir.md){.index-card__cta}
 
--   ![D-Link DGS-3130 Zero-Day Vulnerabilities](2026/Week45/images/D-Link.png){.index-card__img}
+-   ![Apple Bluetooth and AirPlay Vulnerabilities](2026/Week46/images/AirPlay.png){.index-card__img}
 
-    **Multiple Zero-Day Vulnerabilities in D-Link DGS-3130 Series Managed Switches**
+    **Apple Bluetooth and AirPlay Pairing Vulnerabilities (Multiple CVEs)**
 
-    **D-Link DGS-3130**{.cve-chip} **Zero-Day**{.cve-chip} **DDP Weaknesses**{.cve-chip} **Switch Security**{.cve-chip} **Patch Pending**{.cve-chip}
+    **Bluetooth Vulnerabilities**{.cve-chip} **AirPlay Pairing Bypass**{.cve-chip} **CVE-2026-113964**{.cve-chip} **Apple**{.cve-chip}
 
-    D-Link disclosed multiple unpatched DGS-3130 weaknesses that can expose management data and enable unauthorized switch operations from reachable network segments.
+    Apple released critical security updates addressing five vulnerabilities affecting Bluetooth and AirPlay pairing mechanisms. These flaws allow attackers to bypass pairing-code restrictions, establish unauthorized connections without user interaction, or trigger memory corruption on affected devices.
 
-    [Read more →](2026/Week45/D-Link.md){.index-card__cta}
+    [Read more →](2026/Week46/AirPlay.md){.index-card__cta}
 
 </div>

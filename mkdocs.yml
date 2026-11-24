@@ -651,3 +651,8 @@ nav:
           - "Optimizely Supply Chain Attack – Malicious JavaScript Injection Targeting Major Websites": 2026/Week46/Malicious.md
           - "SilentAir – Telecom Network Espionage Campaign": 2026/Week46/SilentAir.md
           - "Apple Bluetooth and AirPlay Pairing Vulnerabilities (Multiple CVEs)": 2026/Week46/AirPlay.md
+        - "week47":
+          - "GL.iNet GoodCloud Cloud Management Platform Exploitation – Router and KVM Malware Infection": 2026/Week47/GLiNet.md
+          - "SonicWall Gen 6 Firewall End-of-Life (EOL) Security Warning": 2026/Week47/SonicWall.md
+          - "Exploitation of Critical Cisco Expressway Remote Code Execution Vulnerability (CVE-2026-76466)": 2026/Week47/Cisco.md
+          - "FaceStealer – North Korean Cryptocurrency Theft and Social Engineering Campaign": 2026/Week47/FaceStealer.md

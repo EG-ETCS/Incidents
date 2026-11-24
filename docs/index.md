@@ -19,45 +19,45 @@ hide:
 
 <div class="grid cards index-grid" markdown>
 
--   ![U.S. Banks Struggle With Outages](2026/Week46/images/Banks.png){.index-card__img}
+-   ![](2026/Week47/images/GLiNet.png){.index-card__img}
 
-    **U.S. Banks Struggle With Outages Amid Wider Technology Disruptions**
+    **GL.iNet GoodCloud Cloud Management Platform Exploitation – Router and KVM Malware Infection**
 
-    **Infrastructure Outage**{.cve-chip} **Banking Systems**{.cve-chip} **Service Disruption**{.cve-chip} **JPMorgan Chase**{.cve-chip}
+    **Cloud Management Exploitation**{.cve-chip} **Router and KVM Malware**{.cve-chip} **Remote Command Execution**{.cve-chip}
 
-    Multiple major U.S. banks experienced significant service disruptions affecting online banking, mobile applications, and financial transactions. JPMorgan Chase attributed the outage to a software bug in on-premises hardware systems, with no evidence of cyberattack.
+    Attackers abused an authorization flaw in GL.iNet GoodCloud to send malicious management messages to routers and KVM devices, leading to malware deployment and unauthorized remote access. The affected device count remains unknown.
 
-    [Read more →](2026/Week46/Banks.md){.index-card__cta}
+    [Read more →](2026/Week47/GLiNet.md){.index-card__cta}
 
--   ![Optimizely Supply Chain Attack](2026/Week46/images/Malicious.png){.index-card__img}
+-   ![](2026/Week47/images/SonicWall.png){.index-card__img}
 
-    **Optimizely Supply Chain Attack – Malicious JavaScript Injection Targeting Major Websites**
+    **SonicWall Gen 6 Firewall End-of-Life (EOL) Security Warning**
 
-    **Supply Chain Attack**{.cve-chip} **Malicious JavaScript**{.cve-chip} **Data Theft**{.cve-chip} **CDN Compromise**{.cve-chip}
+    **End-of-Life Firewalls**{.cve-chip} **Unsupported SonicOS 6.x**{.cve-chip} **Network Security Risk**{.cve-chip}
 
-    Attackers exploited a vulnerability in Optimizely's account registration process to inject malicious JavaScript into 188 files across 178 organizations, including CNN, BBC, Fox News, Zoom, and Salesforce. Malware targeted payment card theft, cryptocurrency wallet hijacking, and iOS device exploitation.
+    SonicWall Gen 6 and 6.5 firewalls running SonicOS 6.x will no longer receive security updates. SonicWall recommends replacing them with supported Gen 8 devices.
 
-    [Read more →](2026/Week46/Malicious.md){.index-card__cta}
+    [Read more →](2026/Week47/SonicWall.md){.index-card__cta}
 
--   ![SilentAir Telecom Espionage](2026/Week46/images/SilentAir.png){.index-card__img}
+-   ![](2026/Week47/images/Cisco.png){.index-card__img}
 
-    **SilentAir – Telecom Network Espionage Campaign**
+    **Exploitation of Critical Cisco Expressway Remote Code Execution Vulnerability (CVE-2026-76466)**
 
-    **Telecom Espionage**{.cve-chip} **SS7/Diameter Exploitation**{.cve-chip} **State-Sponsored**{.cve-chip} **Taiwan**{.cve-chip}
+    **CVE-2026-76466**{.cve-chip} **Remote Code Execution**{.cve-chip} **Cisco Expressway**{.cve-chip}
 
-    SilentAir, a suspected state-level cyber-espionage actor, compromised telecommunications infrastructure across multiple Asian countries to intercept SMS messages, obtain subscriber information, and capture SMS-based 2FA codes from government officials and political figures in Taiwan.
+    Attackers exploited a critical Cisco Expressway flaw to gain root access on four devices, move from internet-facing systems to internal cluster nodes, and conduct reconnaissance.
 
-    [Read more →](2026/Week46/SilentAir.md){.index-card__cta}
+    [Read more →](2026/Week47/Cisco.md){.index-card__cta}
 
--   ![Apple Bluetooth and AirPlay Vulnerabilities](2026/Week46/images/AirPlay.png){.index-card__img}
+-   ![](2026/Week47/images/FaceStealer.png){.index-card__img}
 
-    **Apple Bluetooth and AirPlay Pairing Vulnerabilities (Multiple CVEs)**
+    **FaceStealer – North Korean Cryptocurrency Theft and Social Engineering Campaign**
 
-    **Bluetooth Vulnerabilities**{.cve-chip} **AirPlay Pairing Bypass**{.cve-chip} **CVE-2026-113964**{.cve-chip} **Apple**{.cve-chip}
+    **Cryptocurrency Theft**{.cve-chip} **Social Engineering**{.cve-chip} **Deepfake Impersonation**{.cve-chip}
 
-    Apple released critical security updates addressing five vulnerabilities affecting Bluetooth and AirPlay pairing mechanisms. These flaws allow attackers to bypass pairing-code restrictions, establish unauthorized connections without user interaction, or trigger memory corruption on affected devices.
+    The campaign reportedly stole more than $400 million in cryptocurrency using hijacked accounts, fake video meetings, deepfake impersonation, and malware disguised as technical fixes.
 
-    [Read more →](2026/Week46/AirPlay.md){.index-card__cta}
+    [Read more →](2026/Week47/FaceStealer.md){.index-card__cta}
 
 </div>
 
